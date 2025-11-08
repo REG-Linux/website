@@ -1,0 +1,7 @@
+title: REG Linux
+description: Retro Emulation Gaming Linux community builds for SBCs, handhelds, and mini PCs.
+baseurl: ""
+url: ""
+markdown: kramdown
+exclude:
+  - download-source.html
