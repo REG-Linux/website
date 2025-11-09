@@ -1,8 +1,8 @@
 site_name: REG Linux Wiki
 site_description: Immutable Linux for retro gaming devices
 site_url: https://wiki.reglinux.org
-repo_url: https://github.com/REG-Linux/reglinux
-repo_name: REG-Linux/reglinux
+repo_url: https://github.com/REG-Linux/wiki
+repo_name: REG-Linux/wiki
 edit_uri: edit/main/docs/
 
 theme:
