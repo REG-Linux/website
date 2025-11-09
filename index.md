@@ -7,7 +7,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
 <header class="site-header">
   <div class="logo">
     <img
-      src="https://reglinux.org/sites/default/files/reg_linux_logo.png"
+      src="{{ '/assets/images/reg_linux_logo.png' | relative_url }}"
       alt="REG Linux"
       width="120"
       height="42"
@@ -50,7 +50,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     <div class="hero-media">
       <figure>
         <img
-          src="https://reglinux.org/sites/default/files/styles/large/public/2024-06/logo-es.png"
+          src="{{ '/assets/images/logo-es.png' | relative_url }}"
           alt="REG EmulationStation screenshot"
           loading="lazy"
         />
@@ -112,9 +112,9 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
         </ul>
       </div>
       <div class="stack-logotypes" aria-label="Supported emulation projects">
-        <img src="https://reglinux.org/sites/default/files/styles/large/public/2024-06/logo-retroarch.png" alt="RetroArch" loading="lazy" />
-        <img src="https://reglinux.org/sites/default/files/styles/large/public/2024-06/logo-mame.png" alt="MAME" loading="lazy" />
-        <img src="https://reglinux.org/sites/default/files/styles/large/public/2024-06/logo-linux.png" alt="Linux kernel" loading="lazy" />
+        <img src="{{ '/assets/images/logo-retroarch.png' | relative_url }}" alt="RetroArch" loading="lazy" />
+        <img src="{{ '/assets/images/logo-mame.png' | relative_url }}" alt="MAME" loading="lazy" />
+        <img src="{{ '/assets/images/logo-linux.png' | relative_url }}" alt="Linux kernel" loading="lazy" />
       </div>
     </div>
   </section>
