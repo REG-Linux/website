@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HardKernel ODROID C4 | REG Linux</title>
+    
+    <meta name="description" content="REG Linux image for HardKernel ODROID C4 powered by Amlogic S905X3." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body class="">
+    <header class="site-header">
+  <div class="logo">
+    <img src="/assets/images/reg_linux_logo.png" alt="REG Linux" width="120" height="42" loading="lazy" />
+  </div>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="/#features">Features</a>
+    <a href="/#stack">Stack</a>
+    <a href="/#hardware">Hardware</a>
+    <a href="/#get-started">Get Started</a>
+    <a href="/#community">Community</a>
+    <a href="/download/" aria-current="page">Download</a>
+  </nav>
+  <a class="btn ghost" href="/download/">Back to downloads</a>
+</header>
+
+<main>
+  <section class="hero download-hero device-hero">
+    <div class="hero-text">
+      <p class="eyebrow">REG Linux device image</p>
+      <h1>HardKernel ODROID C4</h1>
+      <p class="lede">HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="/download/#brand-hardkernel">More HardKernel devices</a>
+        <a class="btn secondary" href="https://reglinux.org/board/hardkernel-odroid-c4" target="_blank" rel="noreferrer">Official board page</a>
+      </div>
+      <ul class="hero-highlights">
+        <li>Manufacturer: HardKernel</li>
+        <li>SoC: Amlogic S905X3</li>
+        <li>Maintained on the REG Linux download channel</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <figure>
+        <img src="/assets/images/odroidc4.png" alt="HardKernel ODROID C4" loading="lazy" width="220" height="193" />
+        <figcaption>HardKernel ODROID C4 running REG Linux.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="device-specs">
+    <div class="section-heading">
+      <p class="eyebrow">Hardware specifications</p>
+      <h2>Built for HardKernel</h2>
+      <p>REG Linux targets this hardware profile so you can flash and play without manual tweaking.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Manufacturer</h3>
+        <p>HardKernel</p>
+      </div>
+      <div class="spec-card">
+        <h3>SoC</h3>
+        <p>Amlogic S905X3</p>
+      </div>
+      <div class="spec-card">
+        <h3>Image availability</h3>
+        <p>Download the latest build from the REG Linux <a href="/download/">downloads hub</a> (HardKernel section).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="install-notes">
+    <div class="section-heading">
+      <p class="eyebrow">Install notes</p>
+      <h2>Flash HardKernel ODROID C4 and boot</h2>
+      <p>Follow the workflow below; the official board page contains any extra quirks for the Amlogic S905X3 platform.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <strong>Grab the image.</strong> Download the latest HardKernel ODROID C4 build from the downloads page or the <a href="https://reglinux.org/board/hardkernel-odroid-c4" target="_blank" rel="noreferrer">official board entry</a>.
+      </li>
+      <li>
+        <strong>Flash to storage.</strong> Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
+      </li>
+      <li>
+        <strong>First boot setup.</strong> Insert the media into your HardKernel ODROID C4, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+      </li>
+      <li>
+        <strong>Troubleshoot with rescue tools.</strong> REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
+      </li>
+    </ol>
+    <div class="cta-panel">
+      <div>
+        <h3>Need a refresher?</h3>
+        <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="https://reglinux.org/board/hardkernel-odroid-c4" target="_blank" rel="noreferrer">HardKernel ODROID C4 board page</a>.</p>
+      </div>
+      <a class="btn primary" href="/download/">Back to downloads</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.</p>
+  <p class="small">Board metadata sourced from <a href="https://reglinux.org" target="_blank" rel="noreferrer">reglinux.org</a>.</p>
+</footer>
+
+  </body>
+</html>

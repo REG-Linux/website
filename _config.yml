@@ -5,3 +5,7 @@ url: ""
 markdown: kramdown
 exclude:
   - download-source.html
+collections:
+  devices:
+    output: true
+    permalink: /download/:name/
