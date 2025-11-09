@@ -1,0 +1,444 @@
+- name: "Amoeba Jump"
+  platform: "Atari2600"
+  description: |
+    The aim of the game is to guide the amoeba (a single-celled creature) up a never-ending
+    series of platforms without falling. The higher you get, the higher your score will be.
+    There are three different platform types: Yellow - these are the basic, stable platforms
+    White - these are unstable platforms that disappear after you bounce off them once Blue -
+    these platforms are harder to hit because they move back and forth horizontally Jumping on
+    a red or green spring-button will give you a short boost and some bonus points, but best
+    of all: it makes the little amoeba rejoice! When your score gets beyond 1000 points,
+    little oval-shaped bacteria start appearing on the platforms, which can be eaten by the
+    amoeba. Each bacteria holds one of the six letters from the word A-M-O-E-B-A. Collect all
+    six and the single next time you jump on a spring, you will get a super long boost.
+  developer: "Dionoid"
+  publisher: "https://atariage.com/forums/topic/280211-amoeba-jump/"
+  players: "1"
+  genre: "Platform"
+  language: "en"
+  release_year: "2019"
+  image: "/assets/images/games/amoeba-jump-atari2600.png"
+  video: "./videos/Amoeba.Jump-video.mp4"
+- name: "Relentless 64"
+  platform: "C64"
+  description: |
+    Similar to the original, Relentless 64 is a high speed, non-stop score-chasing shmup with
+    some neat score chaining mechanics. The enemy waves come at you thick and fast, and taking
+    out an entire wave rewards you with an increasing score multipler, resetting back to 1x
+    should you miss a ship or crash.
+  developer: "RGCD.DEV"
+  publisher: "https://rgcddev.itch.io/relentless-64"
+  players: "1"
+  genre: "Shooter"
+  language: "en"
+  release_year: "2019"
+  image: "/assets/images/games/relentless-64-c64.png"
+  video: "./videos/Relentless64-video.mp4"
+- name: "Showdown"
+  platform: "C64"
+  description: |
+    A game is inspired by a host of older titles with the same theme, going all the way back
+    to Gun Fight from 1975. You play a cowboy out to win a fierce gun duel. The first one to
+    outwit and knock down the opponent 5 times is the winner of the duel.  Instructions: Each
+    gun can carry 5 bullets. You reload by manually replacing the bullets with a click of the
+    joystick button, or you can pick up bullet packs from the ground. But beware! If your
+    opponent catches you out of the safety of the cacti, then you might get knocked down!
+    Explosive crates appear around the play area. They explode when shot, so better stay away
+    from them if you value you life, cowboy!
+  developer: "Badgerpunch Games; Henning Ludvigsen"
+  publisher: "https://www.badgerpunch.com/title/showdown/"
+  players: "1-2"
+  genre: "Shooter"
+  language: "en"
+  release_year: "2020"
+  image: "/assets/images/games/showdown-c64.png"
+  video: "./videos/Showdown-video.mp4"
+- name: "Cannonball"
+  platform: "Cannonball"
+  description: |
+    Cannonball is an enhanced OutRun engine
+  developer: "Chris White"
+  publisher: "Chris White"
+  players: "1"
+  genre: "Racing"
+  language: "en"
+  release_year: ""
+  image: "/assets/images/games/cannonball-cannonball.png"
+  video: "./videos/Cannonball-video.mp4"
+- name: "Diablo 1"
+  platform: "Devilutionx"
+  description: |
+    Classic Hack & Slash Action RPG
+  developer: "Blizzard North"
+  publisher: ""
+  players: "1"
+  genre: "Action RPG"
+  language: ""
+  release_year: "1997"
+  image: "/assets/images/games/diablo-1-devilutionx.png"
+  video: ""
+- name: "Diablo 1: Hellfire"
+  platform: "Devilutionx"
+  description: |
+    Classic Hack & Slash Action RPG Expansion Pack
+  developer: "Synergistic Software"
+  publisher: ""
+  players: "1"
+  genre: "Action RPG"
+  language: ""
+  release_year: "1997"
+  image: "/assets/images/games/diablo-1-hellfire-devilutionx.png"
+  video: ""
+- name: "devilutionx"
+  platform: "Devilutionx"
+  description: |
+    No description provided.
+  developer: ""
+  publisher: ""
+  players: ""
+  genre: ""
+  language: ""
+  release_year: ""
+  image: ""
+  video: ""
+- name: "devilutionx"
+  platform: "Devilutionx"
+  description: |
+    No description provided.
+  developer: ""
+  publisher: ""
+  players: ""
+  genre: ""
+  language: ""
+  release_year: ""
+  image: ""
+  video: ""
+- name: "devilutionx"
+  platform: "Devilutionx"
+  description: |
+    No description provided.
+  developer: ""
+  publisher: ""
+  players: ""
+  genre: ""
+  language: ""
+  release_year: ""
+  image: ""
+  video: ""
+- name: "devilutionx"
+  platform: "Devilutionx"
+  description: |
+    No description provided.
+  developer: ""
+  publisher: ""
+  players: ""
+  genre: ""
+  language: ""
+  release_year: ""
+  image: ""
+  video: ""
+- name: "devilutionx"
+  platform: "Devilutionx"
+  description: |
+    No description provided.
+  developer: ""
+  publisher: ""
+  players: ""
+  genre: ""
+  language: ""
+  release_year: ""
+  image: ""
+  video: ""
+- name: "devilutionx"
+  platform: "Devilutionx"
+  description: |
+    No description provided.
+  developer: ""
+  publisher: ""
+  players: ""
+  genre: ""
+  language: ""
+  release_year: ""
+  image: ""
+  video: ""
+- name: "Anguna - Warriors of Virtue"
+  platform: "GBA"
+  description: |
+    Anguna is a short top-down fantasy action adventure game, reminiscent of the original
+    Legend of Zelda. Featuring art by Chris Hildenbrand, it has 5 dungeons to explore.
+    Controls: A - Attack B - Secondary item X/Y - Switch secondary item (if you have more then
+    one) Start - Pause, View subscreen Select - Save menu L/R - Switch between subscreen pages
+  developer: "Bite The Chili"
+  publisher: "http://www.tolberts.net/anguna/"
+  players: "1"
+  genre: "Adventure"
+  language: "en"
+  release_year: "2008"
+  image: "/assets/images/games/anguna-warriors-of-virtue-gba.png"
+  video: "./videos/Anguna-video.mp4"
+- name: "Petris"
+  platform: "GBC"
+  description: |
+    Build your favorite pets in all shapes and sizes, keep ahead of dropping pieces and make
+    it to the next level.  There are several game play types to choose from:  - Long Pet -
+    Complete progressively longer pets to reach the next level - Tails Cleanup - Clear all
+    tails off the screen per level - Crunch-up - Keep ahead as the screen crunches upward and
+    new pets appear - Level Up - Classic level-up style -  Marathon - For the long distance
+    player  Difficulty levels for all players.
+  developer: "bbbbbr"
+  publisher: "https://bbbbbr.itch.io/petris"
+  players: "1-2"
+  genre: "Puzzle"
+  language: "en"
+  release_year: "2020"
+  image: "/assets/images/games/petris-gbc.png"
+  video: "./videos/Petris-video.mp4"
+- name: "Mai Nurse"
+  platform: "Mastersystem"
+  description: |
+    Help Mai get rid of viruses with pills, line up 4 slots of the same color horizontally or
+    vertically to destroy them and progress through the levels in this classic puzzle game!
+  developer: "lunoka"
+  publisher: "https://lunoka.itch.io/mai-nurse"
+  players: "1"
+  genre: "Puzzle"
+  language: "en"
+  release_year: "2024"
+  image: "/assets/images/games/mai-nurse-mastersystem.png"
+  video: "./videos/Mai-Nurse-video.mp4"
+- name: "Hayato's Journey"
+  platform: "Megadrive"
+  description: |
+    A homebrew game that works like an unofficial spiritual sucessor of Kenseiden, a cult-
+    classic SEGA Master System game.
+  developer: "Master Linkuei"
+  publisher: "https://master-linkuei.itch.io/hayatos-journey"
+  players: "1"
+  genre: "Action"
+  language: "en"
+  release_year: "2024"
+  image: "/assets/images/games/hayato-s-journey-megadrive.png"
+  video: "./videos/Hayato-Journey-video.mp4"
+- name: "Old Towers"
+  platform: "Megadrive"
+  description: |
+    You play as a little explorers in a towers full of deadly traps and ugly skullz. Your only
+    weapons to help you win: quick-thinking and skill.
+  developer: "Denis Grachev"
+  publisher: "https://retrosouls.itch.io/old-towers"
+  players: "1"
+  genre: "Puzzle"
+  language: "en"
+  release_year: "2019"
+  image: "/assets/images/games/old-towers-megadrive.png"
+  video: "./videos/Old-Towers-video.mp4"
+- name: "MrBoom"
+  platform: "Mrboom"
+  description: |
+    Mr.Boom is an 8 player Bomberman clone. The goal of the game is to bomb away your enemies
+    and other players. Bomberman is controlled with the keyboard or with (up to 8) joypads.
+  developer: "Remdy Software"
+  publisher: "https://github.com/Javanaise/mrboom-libretro"
+  players: "1-8"
+  genre: "Action"
+  language: "en"
+  release_year: "1999"
+  image: "/assets/images/games/mrboom-mrboom.png"
+  video: "./videos/MrBoom-video.mp4"
+- name: "Alter Ego"
+  platform: "NES"
+  description: |
+    Freeware puzzle game for NES, a port of the original (by Denis Grachev for the ZX
+    Spectrum). Swap positions with your 'alter ego' to move about the level and obtain all the
+    bouncing pixels.
+  developer: "Shiru"
+  publisher: "https://shiru.untergrund.net/"
+  players: "1"
+  genre: "Puzzle"
+  language: "en"
+  release_year: "2011"
+  image: "/assets/images/games/alter-ego-nes.png"
+  video: "./videos/Alter-Ego-video.mp4"
+- name: "OD-Commander"
+  platform: "Odcommander"
+  description: |
+    A two-pane file manager, similar to Norton/Midnight commander, useful to manage all the
+    /userdata files on your Batocera system.
+  developer: "glebm"
+  publisher: "https://github.com/od-contrib/commander"
+  players: "1"
+  genre: "File manager"
+  language: "en"
+  release_year: "2020"
+  image: "/assets/images/games/od-commander-odcommander.png"
+  video: ""
+- name: "Dinoforce"
+  platform: "Pcengine"
+  description: |
+    Take control of the DINO-JAEGER and battle an army of alien invaders. Your ship is
+    equipped with the DELTA IMPULSE NUCLEAR OVERDRIVE, an energy weapon that's neurally linked
+    to the ship's pilot and will transform into countless weapon variations in a blink of an
+    eye. Enjoy a tactical horizontal shoot-em up with lots of secrets to discover.   - Number
+    of Players: 1 - Number of Stages: 7 (+1)  - Special Features: Hidden Bosses, Hidden Bonus
+    Stage, 25 Extra Weapons and Special Items - Ages: 10 years and up
+  developer: "PCE Works"
+  publisher: "https://dinoforce.pceworks.net/"
+  players: "1"
+  genre: "Shooter"
+  language: "en"
+  release_year: "2023"
+  image: "/assets/images/games/dinoforce-pcengine.png"
+  video: "./videos/Dinoforce-video.mp4"
+- name: "Doom"
+  platform: "Prboom"
+  description: |
+    In Doom, a nameless space marine is posted to a Martian base where secret teleportation
+    experiments are being conducted. One of these experiments goes horribly wrong and
+    "something fragging evil" starts pouring out of the gateways, killing or possessing all
+    the base personnel!  Responding to a frantic distress call from the overrun scientists,
+    the Martian marine unit is quickly sent to Phobos to investigate, where you, the space
+    marine, are left to guard the hangar with only a pistol while the rest of the group
+    proceed inside to discover their worst nightmare. As you advance further, terrifying
+    screams echo through the vast halls, followed by a disturbing silence ... it seems, all
+    your buddies are dead and you're all on your own now - fight back, exterminate every evil
+    creature and get your ticket back home to earth!
+  developer: "id Software"
+  publisher: "GT Interactive"
+  players: "1-4"
+  genre: "Shooter / 1st person"
+  language: "en"
+  release_year: "1993"
+  image: "/assets/images/games/doom-prboom.png"
+  video: "./videos/doom1_shareware-video.mp4"
+- name: "Doom"
+  platform: "Prboom"
+  description: |
+    In Doom, a nameless space marine is posted to a Martian base where secret teleportation
+    experiments are being conducted. One of these experiments goes horribly wrong and
+    "something fragging evil" starts pouring out of the gateways, killing or possessing all
+    the base personnel!  Responding to a frantic distress call from the overrun scientists,
+    the Martian marine unit is quickly sent to Phobos to investigate, where you, the space
+    marine, are left to guard the hangar with only a pistol while the rest of the group
+    proceed inside to discover their worst nightmare. As you advance further, terrifying
+    screams echo through the vast halls, followed by a disturbing silence ... it seems, all
+    your buddies are dead and you're all on your own now - fight back, exterminate every evil
+    creature and get your ticket back home to earth!
+  developer: "id Software"
+  publisher: "GT Interactive"
+  players: "1-4"
+  genre: "Shooter / 1st person"
+  language: "en"
+  release_year: "1993"
+  image: "/assets/images/games/doom-prboom.png"
+  video: "./videos/doom1_shareware-video.mp4"
+- name: "SDLPoP"
+  platform: "Sdlpop"
+  description: |
+    An open-source port of Prince of Persia, based on the disassembly of the DOS version,
+    extended with new features, including save states and modding. The player character has an
+    infinite amount of lives, but has to restart at the beginning of a level each time he
+    dies, and must complete the game within an hour.
+  developer: "NagyD"
+  publisher: "https://github.com/NagyD/SDLPoP"
+  players: "1"
+  genre: "Adventure"
+  language: "en"
+  release_year: "2015"
+  image: "/assets/images/games/sdlpop-sdlpop.png"
+  video: "./videos/sdlpop-video.mp4"
+- name: "Dottie Flowers"
+  platform: "SNES"
+  description: |
+    A charming platformer game created as a tribute to the fantastic SNES community and an
+    homage to the German 16-bit video game developers of the early nineties. In this game,
+    players step into the shoes - or rather, fly on the broom - of a witch named Dottie
+    Flowers. Dottie has the critical task of saving her city using her magical powers and
+    trusty broom.
+  developer: "Goldlocke"
+  publisher: "https://goldlocke.itch.io/dottie-flowers"
+  players: "1"
+  genre: "Platformer"
+  language: "en"
+  release_year: "2023"
+  image: "/assets/images/games/dottie-flowers-snes.png"
+  video: "./videos/Dottie-Flowers-video.mp4"
+- name: "Super Boss Gaiden"
+  platform: "SNES"
+  description: |
+    Humorous beat'em up game, where the fictional President of a video game company gets angry
+    when his executives deliver the news that the last remaining prototype has fallen into the
+    hands of the general public and has been emulated. Being a very hands-on executive,
+    instead of calmly discussing the situation and planning out the proper legal counter
+    action, the titular Boss takes on employees and resources with both fists and feet.
+  developer: "Dieter von Laser; Chrono Moogle"
+  publisher: "https://superbossgaiden.superfamicom.org/"
+  players: "1"
+  genre: "Beat'em up"
+  language: "en"
+  release_year: "2018"
+  image: "/assets/images/games/super-boss-gaiden-snes.png"
+  video: "./videos/Super-Boss-Gaiden-video.mp4"
+- name: "Half-Life"
+  platform: "Xash3D Fwgs"
+  description: |
+    Classic Sci-Fi FPS
+  developer: "Valve"
+  publisher: ""
+  players: "1"
+  genre: "FPS"
+  language: ""
+  release_year: "1998"
+  image: "/assets/images/games/half-life-xash3d-fwgs.jpg"
+  video: ""
+- name: "Half-Life: Opposing Force"
+  platform: "Xash3D Fwgs"
+  description: |
+    Return to the Black Mesa Research Facility as one of the military specialists assigned to
+    eliminate Gordon Freeman. Experience an entirely new episode of single player action. Meet
+    fierce alien opponents, and experiment with new weaponry.
+  developer: "Gearbox Software, Valve"
+  publisher: ""
+  players: "1"
+  genre: "FPS"
+  language: ""
+  release_year: "1999"
+  image: "/assets/images/games/half-life-opposing-force-xash3d-fwgs.jpg"
+  video: ""
+- name: "Half-Life: Blue Shift"
+  platform: "Xash3D Fwgs"
+  description: |
+    Return to the Black Mesa Research Facility as Barney Calhoun, the secuity guard sidekick
+    who helped Gordon out of so many sticky situations.
+  developer: "Gearbox Software, Valve"
+  publisher: ""
+  players: "1"
+  genre: "FPS"
+  language: ""
+  release_year: "2001"
+  image: "/assets/images/games/half-life-blue-shift-xash3d-fwgs.jpg"
+  video: ""
+- name: "Counter-Strike"
+  platform: "Xash3D Fwgs"
+  description: |
+    Classic online PvP FPS
+  developer: "Valve"
+  publisher: ""
+  players: "1"
+  genre: "PvP multiplayer FPS"
+  language: ""
+  release_year: "2000"
+  image: "/assets/images/games/counter-strike-xash3d-fwgs.jpg"
+  video: ""
+- name: "Deathmatch Classic"
+  platform: "Xash3D Fwgs"
+  description: |
+    Valve's tribute to the work of id software, DMC invites players to grab their rocket
+    launchers and put their reflexes to the test in a collection of futuristic settings.
+  developer: "Valve"
+  publisher: ""
+  players: "1"
+  genre: "PvP multiplayer FPS"
+  language: ""
+  release_year: "2001"
+  image: "/assets/images/games/deathmatch-classic-xash3d-fwgs.jpg"
+  video: ""

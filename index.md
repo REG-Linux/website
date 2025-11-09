@@ -20,6 +20,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     <a href="#hardware">Hardware</a>
     <a href="#get-started">Get Started</a>
     <a href="#community">Community</a>
+    <a href="{{ '/bundled-games/' | relative_url }}">Bundled games</a>
     <a href="{{ '/download/' | relative_url }}">Download</a>
   </nav>
   <a class="btn ghost" href="{{ '/download/' | relative_url }}">Download</a>
@@ -110,11 +111,21 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
           <li>MAME builds tuned for arcade accuracy</li>
           <li>Additional native ports for DOS, ScummVM, Pico-8–style engines, and more</li>
         </ul>
+        <p class="small">
+          Highlights below mirror the <a href="https://github.com/REG-Linux/REG-Linux/tree/master/package/emulators" target="_blank" rel="noreferrer">REG-Linux <code>package/emulators</code> tree</a>, giving a quick glance at what is maintained upstream.
+        </p>
       </div>
-      <div class="stack-logotypes" aria-label="Supported emulation projects">
-        <img src="{{ '/assets/images/logo-retroarch.png' | relative_url }}" alt="RetroArch" loading="lazy" />
-        <img src="{{ '/assets/images/logo-mame.png' | relative_url }}" alt="MAME" loading="lazy" />
-        <img src="{{ '/assets/images/logo-linux.png' | relative_url }}" alt="Linux kernel" loading="lazy" />
+      <div class="stack-logo-grid" aria-label="Supported emulation projects">
+        {% assign featured_emulators = "retroarch.png::RetroArch|mame.png::MAME|dolphin.png::Dolphin|ppsspp.png::PPSSPP|duckstation.png::DuckStation|flycast.png::Flycast|pcsx2.png::PCSX2|citra.png::Citra|scummvm.png::ScummVM|dosbox.png::DOSBox|mupen64plus.png::Mupen64Plus|melonds.png::melonDS|openbor.png::OpenBOR|sameboy.png::SameBoy" | split: "|" %}
+        {% for entry in featured_emulators %}
+          {% assign parts = entry | split: "::" %}
+          {% assign file = parts[0] %}
+          {% assign label = parts[1] %}
+          <figure class="stack-logo">
+            <img src="{{ '/assets/images/emulators/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
+            <figcaption>{{ label }}</figcaption>
+          </figure>
+        {% endfor %}
       </div>
     </div>
   </section>

@@ -17,6 +17,7 @@ description: Choose your REG Linux image by vendor or architecture across the su
     <a href="{{ '/' | relative_url }}#hardware">Hardware</a>
     <a href="{{ '/' | relative_url }}#get-started">Get Started</a>
     <a href="{{ '/' | relative_url }}#community">Community</a>
+    <a href="{{ '/bundled-games/' | relative_url }}">Bundled games</a>
     <a href="{{ '/download/' | relative_url }}" aria-current="page">Download</a>
   </nav>
   <a class="btn ghost" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">GitHub</a>
