@@ -25,4 +25,7 @@ This wiki documents everything from installation to internal architecture, build
 docs/
 ├── index.md              → Home page
 ├── getting-started.md    → Installation & setup
-├── architecture.
+├── architecture.md       → System architecture & design
+├── installation.md       → Flashing & supported devices
+├── dev-guide.md          → Developer build instructions
+└── community.md          → Links, credits, and social
