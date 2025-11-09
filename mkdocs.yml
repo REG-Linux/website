@@ -1,0 +1,58 @@
+site_name: REG Linux Wiki
+site_description: Immutable Linux for retro gaming devices
+site_url: https://wiki.reglinux.org
+repo_url: https://github.com/REG-Linux/reglinux
+repo_name: REG-Linux/reglinux
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.expand
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Installation: installation.md
+  - Developer Guide: dev-guide.md
+  - Community: community.md
+
+plugins:
+  - search
+  - git-revision-date
+  - tags
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/REG-Linux
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/reglinux
