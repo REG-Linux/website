@@ -49,14 +49,30 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       </ul>
     </div>
     <div class="hero-media">
-      <figure>
-        <img
-          src="{{ '/assets/images/logo-es.png' | relative_url }}"
-          alt="REG EmulationStation screenshot"
-          loading="lazy"
-        />
-        <figcaption>A re-engineered EmulationStation experience made for REG.</figcaption>
-      </figure>
+      {% assign hero_logos = "logo-es.png::EmulationStation|logo-retroarch.png::RetroArch|logo-linux.png::Linux Kernel|reg_linux_logo.png::REG Linux" | split: "|" %}
+      <div class="hero-logo-marquee" aria-label="REG Linux stack logos">
+        <div class="hero-logo-track">
+          {% for entry in hero_logos %}
+            {% assign parts = entry | split: "::" %}
+            {% assign file = parts[0] %}
+            {% assign label = parts[1] %}
+            <figure class="hero-logo">
+              <img src="{{ '/assets/images/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
+              <figcaption>{{ label }}</figcaption>
+            </figure>
+          {% endfor %}
+          {% for entry in hero_logos %}
+            {% assign parts = entry | split: "::" %}
+            {% assign file = parts[0] %}
+            {% assign label = parts[1] %}
+            <figure class="hero-logo">
+              <img src="{{ '/assets/images/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
+              <figcaption>{{ label }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      </div>
+      <p class="hero-media-note">REG Linux blends a customized EmulationStation frontend with curated RetroArch cores on top of a rock-solid Linux foundation.</p>
     </div>
   </section>
 
@@ -111,21 +127,29 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
           <li>MAME builds tuned for arcade accuracy</li>
           <li>Additional native ports for DOS, ScummVM, Pico-8–style engines, and more</li>
         </ul>
-        <p class="small">
-          Highlights below mirror the <a href="https://github.com/REG-Linux/REG-Linux/tree/master/package/emulators" target="_blank" rel="noreferrer">REG-Linux <code>package/emulators</code> tree</a>, giving a quick glance at what is maintained upstream.
-        </p>
       </div>
-      <div class="stack-logo-grid" aria-label="Supported emulation projects">
-        {% assign featured_emulators = "retroarch.png::RetroArch|mame.png::MAME|dolphin.png::Dolphin|ppsspp.png::PPSSPP|duckstation.png::DuckStation|flycast.png::Flycast|pcsx2.png::PCSX2|citra.png::Citra|scummvm.png::ScummVM|dosbox.png::DOSBox|mupen64plus.png::Mupen64Plus|melonds.png::melonDS|openbor.png::OpenBOR|sameboy.png::SameBoy" | split: "|" %}
-        {% for entry in featured_emulators %}
-          {% assign parts = entry | split: "::" %}
-          {% assign file = parts[0] %}
-          {% assign label = parts[1] %}
-          <figure class="stack-logo">
-            <img src="{{ '/assets/images/emulators/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
-            <figcaption>{{ label }}</figcaption>
-          </figure>
-        {% endfor %}
+      {% assign featured_emulators = "retroarch.png::RetroArch|mame.png::MAME|dolphin.png::Dolphin|ppsspp.png::PPSSPP|duckstation.png::DuckStation|flycast.png::Flycast|pcsx2.png::PCSX2|citra.png::Citra|scummvm.png::ScummVM|dosbox.png::DOSBox|mupen64plus.png::Mupen64Plus|melonds.png::melonDS|openbor.png::OpenBOR" | split: "|" %}
+      <div class="stack-logo-marquee" aria-label="Supported emulation projects">
+        <div class="stack-logo-track">
+          {% for entry in featured_emulators %}
+            {% assign parts = entry | split: "::" %}
+            {% assign file = parts[0] %}
+            {% assign label = parts[1] %}
+            <figure class="stack-logo">
+              <img src="{{ '/assets/images/emulators/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
+              <figcaption>{{ label }}</figcaption>
+            </figure>
+          {% endfor %}
+          {% for entry in featured_emulators %}
+            {% assign parts = entry | split: "::" %}
+            {% assign file = parts[0] %}
+            {% assign label = parts[1] %}
+            <figure class="stack-logo">
+              <img src="{{ '/assets/images/emulators/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
+              <figcaption>{{ label }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </section>
@@ -210,6 +234,11 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
 </main>
 
 <footer class="site-footer">
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.</p>
-  <p class="small">This site is an unofficial GitHub Pages snapshot built from the public information available at <a href="https://reglinux.org">reglinux.org</a>.</p>
+  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.<br/>All rights reserved.</p>
+  <p class="small">
+    All product names, logos, and brands are property of their respective owners.<br/>
+    Linux® is the registered trademark of Linus Torvalds.<br/>
+    Other names may be trademarks of their respective holders.<br/>
+    Use of third-party marks is for identification only and does not imply endorsement.
+  </p>
 </footer>
