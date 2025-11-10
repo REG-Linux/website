@@ -117,7 +117,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
           <li>Additional native ports for DOS, ScummVM, Pico-8–style engines, and more</li>
         </ul>
       </div>
-      {% assign featured_emulators = "retroarch.png::RetroArch|mame.png::MAME|dolphin.png::Dolphin|ppsspp.png::PPSSPP|duckstation.png::DuckStation|flycast.png::Flycast|pcsx2.png::PCSX2|citra.png::Citra|scummvm.png::ScummVM|dosbox.png::DOSBox|mupen64plus.png::Mupen64Plus|melonds.png::melonDS|openbor.png::OpenBOR" | split: "|" %}
+      {% assign featured_emulators = "retroarch.png::RetroArch|mame.png::MAME|dolphin.png::Dolphin|ppsspp.png::PPSSPP|duckstation.png::DuckStation|flycast.png::Flycast|pcsx2.png::PCSX2|citra.png::Azahar|scummvm.png::ScummVM|dosbox.png::DOSBox Staging|mupen64plus.png::Mupen64Plus|melonds.png::melonDS|openbor.png::OpenBOR" | split: "|" %}
       <div class="stack-logo-marquee" aria-label="Supported emulation projects">
         <div class="stack-logo-track">
           {% for entry in featured_emulators %}
