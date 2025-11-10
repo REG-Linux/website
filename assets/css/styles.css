@@ -202,67 +202,41 @@ h1 {
   gap: 1rem;
   justify-content: center;
   text-align: center;
+  height: 100%;
+  min-height: 360px;
 }
 
-.hero-logo-marquee {
-  overflow: hidden;
+.hero-slideshow {
+  position: relative;
+  flex: 1;
   border-radius: calc(var(--radius) - 6px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background: radial-gradient(circle at top, rgba(43, 176, 233, 0.15), transparent 55%),
-    rgba(3, 9, 27, 0.8);
-  position: relative;
+  background: radial-gradient(circle at top, rgba(43, 176, 233, 0.18), transparent 55%),
+    rgba(3, 9, 27, 0.85);
+  overflow: hidden;
+  isolation: isolate;
 }
 
-.hero-logo-marquee::before,
-.hero-logo-marquee::after {
-  content: '';
+.hero-slide {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 3.5rem;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.hero-logo-marquee::before {
-  left: 0;
-  background: linear-gradient(90deg, rgba(5, 7, 15, 0.95), transparent);
-}
-
-.hero-logo-marquee::after {
-  right: 0;
-  background: linear-gradient(270deg, rgba(5, 7, 15, 0.95), transparent);
-}
-
-.hero-logo-track {
-  display: flex;
-  gap: clamp(1rem, 2.5vw, 2rem);
-  width: max-content;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  animation: hero-marquee 20s linear infinite;
-  align-items: center;
-}
-
-.hero-logo-marquee:hover .hero-logo-track {
-  animation-play-state: paused;
-}
-
-.hero-logo {
+  inset: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
   align-items: center;
   justify-content: center;
-  min-width: clamp(140px, 15vw, 220px);
+  gap: 0.75rem;
+  opacity: 0;
+  animation: hero-fade 20s infinite;
 }
 
-.hero-logo img {
-  max-height: clamp(80px, 14vw, 140px);
-  width: auto;
-  filter: drop-shadow(0 16px 30px rgba(3, 9, 27, 0.65));
+.hero-slide img {
+  width: min(80%, 420px);
+  max-height: min(65%, 360px);
+  object-fit: contain;
+  filter: drop-shadow(0 18px 40px rgba(3, 9, 27, 0.7));
 }
 
-.hero-logo figcaption {
+.hero-slide figcaption {
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -275,12 +249,21 @@ h1 {
   color: var(--text-muted);
 }
 
-@keyframes hero-marquee {
-  from {
-    transform: translateX(0);
+@keyframes hero-fade {
+  0% {
+    opacity: 1;
   }
-  to {
-    transform: translateX(-50%);
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -694,8 +677,14 @@ h2 {
 
 @media (prefers-reduced-motion: reduce) {
   .stack-logo-track,
-  .hero-logo-track {
-    animation: none;
+  .hero-slide {
+    animation: none !important;
+  }
+  .hero-slide {
+    opacity: 0;
+  }
+  .hero-slide:first-child {
+    opacity: 1;
   }
 }
 

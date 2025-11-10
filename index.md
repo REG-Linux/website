@@ -50,27 +50,16 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
     <div class="hero-media">
       {% assign hero_logos = "logo-es.png::EmulationStation|logo-retroarch.png::RetroArch|logo-linux.png::Linux Kernel|reg_linux_logo.png::REG Linux" | split: "|" %}
-      <div class="hero-logo-marquee" aria-label="REG Linux stack logos">
-        <div class="hero-logo-track">
-          {% for entry in hero_logos %}
-            {% assign parts = entry | split: "::" %}
-            {% assign file = parts[0] %}
-            {% assign label = parts[1] %}
-            <figure class="hero-logo">
-              <img src="{{ '/assets/images/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
-              <figcaption>{{ label }}</figcaption>
-            </figure>
-          {% endfor %}
-          {% for entry in hero_logos %}
-            {% assign parts = entry | split: "::" %}
-            {% assign file = parts[0] %}
-            {% assign label = parts[1] %}
-            <figure class="hero-logo">
-              <img src="{{ '/assets/images/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
-              <figcaption>{{ label }}</figcaption>
-            </figure>
-          {% endfor %}
-        </div>
+      <div class="hero-slideshow" aria-live="polite">
+        {% for entry in hero_logos %}
+          {% assign parts = entry | split: "::" %}
+          {% assign file = parts[0] %}
+          {% assign label = parts[1] %}
+          <figure class="hero-slide" style="animation-delay: {{ forloop.index0 | times: 5 }}s">
+            <img src="{{ '/assets/images/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
+            <figcaption>{{ label }}</figcaption>
+          </figure>
+        {% endfor %}
       </div>
       <p class="hero-media-note">REG Linux blends a customized EmulationStation frontend with curated RetroArch cores on top of a rock-solid Linux foundation.</p>
     </div>

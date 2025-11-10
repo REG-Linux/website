@@ -50,10 +50,11 @@ description: Play the legally licensed indie and open-source titles that ship wi
 
   {% assign grouped = site.data.bundled_games | group_by: 'platform' | sort: 'name' %}
   {% for group in grouped %}
+    {% assign title_count = group.items | size %}
     <section class="games-platform" id="platform-{{ group.name | slugify }}">
       <div class="brand-heading">
         <h2>{{ group.name }}</h2>
-        <p>{{ group.items | size }} title{% if group.items | size != 1 %}s{% endif %}</p>
+        <p>{{ title_count }} title{% if title_count != 1 %}s{% endif %}</p>
       </div>
       <div class="games-grid">
         {% for game in group.items %}
