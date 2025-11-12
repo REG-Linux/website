@@ -155,7 +155,7 @@
   platform: "Odcommander"
   description: |
     A two-pane file manager, similar to Norton/Midnight commander, useful to manage all the
-    /userdata files on your Batocera system.
+    /userdata files on your system.
   developer: "glebm"
   publisher: "https://github.com/od-contrib/commander"
   players: "1"
@@ -181,48 +181,6 @@
   release_year: "2023"
   image: "/assets/images/games/dinoforce-pcengine.png"
   video: "./videos/Dinoforce-video.mp4"
-- name: "Doom"
-  platform: "Prboom"
-  description: |
-    In Doom, a nameless space marine is posted to a Martian base where secret teleportation
-    experiments are being conducted. One of these experiments goes horribly wrong and
-    "something fragging evil" starts pouring out of the gateways, killing or possessing all
-    the base personnel!  Responding to a frantic distress call from the overrun scientists,
-    the Martian marine unit is quickly sent to Phobos to investigate, where you, the space
-    marine, are left to guard the hangar with only a pistol while the rest of the group
-    proceed inside to discover their worst nightmare. As you advance further, terrifying
-    screams echo through the vast halls, followed by a disturbing silence ... it seems, all
-    your buddies are dead and you're all on your own now - fight back, exterminate every evil
-    creature and get your ticket back home to earth!
-  developer: "id Software"
-  publisher: "GT Interactive"
-  players: "1-4"
-  genre: "Shooter / 1st person"
-  language: "en"
-  release_year: "1993"
-  image: "/assets/images/games/doom-prboom.png"
-  video: "./videos/doom1_shareware-video.mp4"
-- name: "Doom"
-  platform: "Prboom"
-  description: |
-    In Doom, a nameless space marine is posted to a Martian base where secret teleportation
-    experiments are being conducted. One of these experiments goes horribly wrong and
-    "something fragging evil" starts pouring out of the gateways, killing or possessing all
-    the base personnel!  Responding to a frantic distress call from the overrun scientists,
-    the Martian marine unit is quickly sent to Phobos to investigate, where you, the space
-    marine, are left to guard the hangar with only a pistol while the rest of the group
-    proceed inside to discover their worst nightmare. As you advance further, terrifying
-    screams echo through the vast halls, followed by a disturbing silence ... it seems, all
-    your buddies are dead and you're all on your own now - fight back, exterminate every evil
-    creature and get your ticket back home to earth!
-  developer: "id Software"
-  publisher: "GT Interactive"
-  players: "1-4"
-  genre: "Shooter / 1st person"
-  language: "en"
-  release_year: "1993"
-  image: "/assets/images/games/doom-prboom.png"
-  video: "./videos/doom1_shareware-video.mp4"
 - name: "SDLPoP"
   platform: "Sdlpop"
   description: |
