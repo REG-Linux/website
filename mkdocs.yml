@@ -34,6 +34,7 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Architecture: architecture.md
+  - Allwinner Boards: allwinner.md
   - Installation: installation.md
   - Developer Guide: dev-guide.md
   - Community: community.md
