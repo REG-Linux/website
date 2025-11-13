@@ -48,7 +48,6 @@ MIDI:
 SoundFonts (.sf2) files need to be placed in the /userdata/bios folder.
 MT32_CONTROL.ROM file needs to be present inside /userdata/bios/scummvm/extra.
 
-For more info: https://wiki.batocera.org/systems:dos
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

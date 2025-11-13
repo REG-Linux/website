@@ -37,7 +37,6 @@ i.e. Tekken 4 - tekken4.zip
                 |
                 ---tef1dvd0.chd
 
-For more info: https://wiki.batocera.org/systems:namco2x6
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

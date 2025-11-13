@@ -31,7 +31,6 @@ PS3 roms are directories must be renamed to end with .ps3.
 PSN digital games are installed in rpcs3-config, create a text file ending with .psn that contains the game's ID.
 First time you load a game, it takes time (a progress bar is visible). It doesn't happen next times.
 
-For more info: https://wiki.batocera.org/systems:ps3
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

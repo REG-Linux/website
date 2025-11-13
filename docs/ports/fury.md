@@ -29,7 +29,6 @@ Place the following files in this directory:
   * fury.grpinfo
   * fury.def
 
-More info: https://wiki.batocera.org/systems:fury
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -39,7 +39,6 @@ Repeat this step for each mod you wish to play, giving the file a logical name t
 
 Please note that menu options in Team Arena and other mods can only be selected using a mouse, once the game is started the controller will function normally.
 
-For more info: https://wiki.batocera.org/systems:ioquake3
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

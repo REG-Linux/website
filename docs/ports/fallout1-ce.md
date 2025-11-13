@@ -38,7 +38,6 @@ Create a blank file called `Fallout.f1ce` this allows for scrapping & helps laun
 
 Note: This game currently requires a mouse and keyboard to play.
 
-For more info: https://wiki.batocera.org/systems:fallout1-ce
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

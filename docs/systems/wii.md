@@ -33,7 +33,6 @@ You can choose the axis controls among i(nfrared), s(wing), t(ilt) or n(unchuk) 
     for example, to play mario galaxy, rename it mario_galaxy.ni.iso (got get the nunchuk on the first axis and infrared on the 2nd one (ni))
 To use custom textures, put them in /userdata/saves/dolphin-emu/Load/Textures/<game id>.
 
-For more info: https://wiki.batocera.org/systems:wii
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -36,9 +36,7 @@ Notes: For the best experience you need a mouse & keyboard.
        Game controllers can also be configured for your user.
        The set language only applies on initial boot. Any previous profiles will need to be changed manually.
        You may have to create a user profile twice for it to save.
-       Batocera only provides the client with mods & NOT the server to host matches.
-
-For more info: https://wiki.batocera.org/systems:etlegacy
+       We only provide the client with mods & NOT the server to host matches.
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

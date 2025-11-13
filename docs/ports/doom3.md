@@ -50,7 +50,6 @@ If you have the Resurrection of Evil mod then Create a `Doom 3 - Resurrection of
 The `Doom 3.d3` file should contain the path to the base game. - i.e. base/pak000.pk4
 Similarly `Doom 3 - Resurrection of Evil.d3` should be - d3xp/pak000.pk4
 
-For more info: https://wiki.batocera.org/systems:doom3
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

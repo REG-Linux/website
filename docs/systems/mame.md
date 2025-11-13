@@ -39,7 +39,6 @@ Depending on your hardware, other mame cores are included:
 Special files for mame2003 core:
 - Add your samples files in /userdata/bios/mame2003/samples/
 
-For more info: https://wiki.batocera.org/arcade
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

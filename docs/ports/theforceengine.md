@@ -26,13 +26,13 @@ tfe
 
 ## Notes
 
-The Force Engine (TFE) uses the games files from older LucasArts games like `Dark Forces` & soon `Outlaws` in Batocera.
-To use TFE in Batocera, you need to do the following:
+The Force Engine (TFE) uses the games files from older LucasArts games like `Dark Forces` & soon `Outlaws`.
+To use TFE, you need to do the following:
 
 1. Install the game you wish to use with The Force Engine in Windows (Steam or GOG receommended)
 2. In this example, go to your C:\GOG folder and copy the `Star Wars - Dark Forces` folder to your roms/theforceengine folder.
 3. Create an initial file with a tfe extension, like so: `Star Wars - Dark Forces.tfe`.
-4. Update you games list in Batocera EmulationStation and the game should be available under `Ports`.
+4. Update you games list in EmulationStation and the game should be available under `Ports`.
 
 Mods:
 
@@ -45,7 +45,7 @@ i.e. `Assasssination at Nar Shaddaa.tfe`
 Then edit the file with the name of the mod zip file only.
 i.e. aons_modern.zip
 
-Update the games list and Batocera can now launch the mod directly.
+Update the games list and you can now launch the mod directly.
 
 A good source of missions to try are available here: https://df-21.net/downloads/levels/
 
@@ -58,8 +58,6 @@ Notes:
 
 It is important to use the exact directory name above.
 A keyboard and mouse / touchscreen is required to create the initial user profile & game start.
-
-For more info: https://wiki.batocera.org/systems:theforceengine
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

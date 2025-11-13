@@ -31,7 +31,6 @@ ROMs must come from the FBNeo romset version 1.0.0.0
 
 The file FinalBurn Neo (ClrMame Pro XML, Arcade only).dat in bios/FBNeo may be used to check ROMs with clrmamepro available at http://mamedev.emulab.it/clrmamepro/
 
-For more info: https://wiki.batocera.org/arcade
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

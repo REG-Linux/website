@@ -118,7 +118,6 @@ For the World War II GI: Platoon Leader expansion, create an .raze file with the
 
 For mod support and troubleshooting, please visit the wiki for more information.
 
-More info: https://wiki.batocera.org/systems:raze
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -31,7 +31,6 @@ Playable - Mario Kart GP 1, Mario Kart GP 2 (after loading save state).
 Intro - F-Zero AX, Virtua Striker 2002.
 Nothing - All other Triforce games.
 
-For the most up-to-date information and questions about manual save state download, visit https://wiki.batocera.org/systems:triforce
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

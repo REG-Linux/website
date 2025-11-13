@@ -26,7 +26,6 @@ wua, wup, wud, wux, rpx, zar, wuhb
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:wiiu
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

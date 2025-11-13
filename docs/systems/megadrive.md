@@ -28,7 +28,6 @@ bin, gen, md, sg, smd, zip, 7z
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:megadrive
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

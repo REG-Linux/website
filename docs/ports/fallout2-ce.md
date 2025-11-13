@@ -38,7 +38,6 @@ Create a blank file called `Fallout 2.f2ce` this allows for scrapping & helps la
 
 Note: This game currently requires a mouse and keyboard to play.
 
-For more info: https://wiki.batocera.org/systems:fallout2-ce
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

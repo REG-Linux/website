@@ -38,7 +38,6 @@ roms
         |-- maddog.m2v
         |-- maddog.ogg
 
-For more info: https://wiki.batocera.org/systems:singe
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

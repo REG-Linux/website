@@ -38,7 +38,6 @@ LOAD "WARS.PRG"
 ...
 RUN
 
-For more info: https://wiki.batocera.org/systems:commanderx16
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

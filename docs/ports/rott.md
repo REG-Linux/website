@@ -32,7 +32,6 @@ Then create the file `Rise of the Triad.rott`. This will enable EmulationStation
 You do not need to enable the joystick or gamepad as compatiblity doesn't work well yet.
 We have mapped the controller to keyboard events as a result.
 
-For more info: https://wiki.batocera.org/systems:taradino
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

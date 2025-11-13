@@ -23,12 +23,12 @@ rtcw
 ## Notes
 
 IORTCW uses the games files from your 2001 version of the game `Return to Castle Wolfenstein`.
-To use IORTCW in Batocera, you need to do the following:
+To use IORTCW, you need to do the following:
 
 1. Install Return to Castle Wolfenstein in Windows or Linux (Steam or GOG receommended)
 2. Copy the .pk3 files only from your installation locations `Main` folder to /userdata/roms/iortcw in it's own `main` folder.
 3. Create an initial file with a rtcw extension, like so: `Return to Castle Wolfenstein.rtcw`.
-4. Update you games list in Batocera EmulationStation and the game should be available under `Ports`.
+4. Update you games list in EmulationStation and the game should be available under `Ports`.
 
 Notes:
 

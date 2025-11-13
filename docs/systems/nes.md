@@ -28,7 +28,6 @@ nes, unif, unf, zip, 7z
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:nes
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

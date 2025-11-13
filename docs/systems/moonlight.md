@@ -24,7 +24,6 @@ moonlight
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:moonlight
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

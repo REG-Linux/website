@@ -27,7 +27,6 @@ iso, cso, pbp, chd
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:psp
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

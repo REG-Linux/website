@@ -31,7 +31,6 @@ cue, img, mdf, pbp, toc, cbn, m3u, ccd, chd, iso
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:psx
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml
