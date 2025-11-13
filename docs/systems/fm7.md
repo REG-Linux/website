@@ -11,9 +11,10 @@ Introduced in 1982 by Fujitsu, the FM-7 was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Fujitsu
-- Release year: 1982
-- Hardware type: computer
+- CPU: Motorola 6809E dual-processor setup running at 2 MHz (with two CPUs for foreground/background tasks).
+- Memory: 64 KB RAM (expandable with external RAM boards) plus 32 KB ROM for BASIC/OS.
+- Display: Two Motorola MC6847 graphics chips providing 320×200 resolution with 8 colors per pixel, plus 640×200 monochrome text modes.
+- Sound: PSG audio via AY-3-8910 offering three square-wave channels and one noise channel.
 
 ## Supported ROM extensions
 
