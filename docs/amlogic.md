@@ -16,15 +16,6 @@ Supported devices:
 * `meson8-minix-neo-x8`
 * `meson8-tronsmart-s82`
 
-## Amlogic A3 Gen2 (A311D2)
-
-Targets the Khadas VIM4 devices.
-Please note this uses a vendor 5.15 kernel we adjusted best-effort.
-
-Supported devices:
-
-* `khadas-vim4` (`kvim4`, `kvim4n`)
-
 ## Amlogic S905/S905X/S905D
 
 * Khadas VIM (also known as Khadas VIM1)
@@ -96,6 +87,15 @@ Supported devices:
 * `odroid-n2l`
 * `odroid-go-ultra`
 * `radxa-zero2pro`
+
+## Amlogic A311D2
+
+Targets the Khadas VIM4 devices.
+Please note this uses a vendor 5.15 kernel we adjusted best-effort.
+
+Supported devices:
+
+* `khadas-vim4` (`kvim4`, `kvim4n`)
 
 ## Amlogic S9 Gen4 (S905Y4 – Khadas VIM1S)
 
