@@ -11,10 +11,10 @@ Introduced in 2003 by Sammy, the Atomiswave was a arcade system. Its platform ta
 
 ## Technical specifications
 
-- Manufacturer: Sammy
-- Release year: 2003
-- Hardware type: arcade
-- Platform tag: atomiswave, arcade
+- CPU: Hitachi SH-4 RISC processor running at 200 MHz, derived from the Sega Dreamcast platform.
+- Memory: 32 MB main RAM, 16 MB video RAM plus 8 MB sound RAM stored on removable cartridges.
+- Display: 496×384 resolution (480i/p) up to 4,096 colors with PowerVR2 GPU handling sprites and textures.
+- Sound: Yamaha AICA DSP with 64 channels of ADPCM playback and built-in 45 MHz DSP core, identical to Dreamcast audio.
 
 ## Supported ROM extensions
 

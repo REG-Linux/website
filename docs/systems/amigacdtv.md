@@ -11,9 +11,10 @@ Introduced in 1991 by Commodore, the Amiga CDTV was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Commodore
-- Release year: 1991
-- Hardware type: console
+- CPU: Motorola 68000 at 7.09 MHz, matching the A500/ECS family.
+- Memory: 1 MB Chip RAM standard with expansion slots for more Fast RAM.
+- Display: OCS/ECS graphics with 32 colors out of a 4096 palette at 320×256 plus HAM mode support.
+- Sound: Paula chip with four-channel PCM playback; CD audio handled via CDTV-specific circuitry.
 
 ## Supported ROM extensions
 

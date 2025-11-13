@@ -11,9 +11,10 @@ Introduced in 1985 by Atari, the Atari ST was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Atari
-- Release year: 1985
-- Hardware type: computer
+- CPU: Motorola 68000 running at 8 MHz.
+- Memory: 512 KB base RAM, expandable to 4 MB via SIMM slots on STFM/STE boards.
+- Display: 320×200 with 16 colors or 640×400 with 4 colors in monochrome mode; STE adds 4096-color palette and hardware scrolling.
+- Sound: Yamaha YM2149F PSG providing three square-wave channels plus noise, with the STE adding DMA-driven 8-bit stereo.
 
 ## Supported ROM extensions
 

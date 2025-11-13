@@ -11,9 +11,10 @@ Introduced in 1984 by Amstrad, the Amstrad CPC was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Amstrad
-- Release year: 1984
-- Hardware type: computer
+- CPU: Zilog Z80A clocked at 4 MHz (CPC464/664) or 3.5 MHz (CPC6128) with built-in tape storage on early models.
+- Memory: 64 KB RAM on the CPC464, 128 KB on the CPC6128 with additional ROM expansion ports.
+- Display: Three palette modes (Mode 0: 160×200/16 colors, Mode 1: 320×200/4 colors, Mode 2: 640×200/2 colors) using a 27-color palette.
+- Sound: AY-3-8912 PSG delivering three square-wave channels plus noise, expandable via external sound cartridges.
 
 ## Supported ROM extensions
 

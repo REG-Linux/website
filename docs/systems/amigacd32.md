@@ -11,9 +11,10 @@ Introduced in 1994 by Commodore, the Amiga CD32 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Commodore
-- Release year: 1994
-- Hardware type: console
+- CPU: Motorola 68EC020 clocked at 14.3 MHz, same core as the A1200.
+- Memory: 2 MB Chip RAM with additional 1 MB FAST RAM optionally installed via jumpers.
+- Display: AGA graphics, 256 colors at 320×256 and 64 colors in HAM mode with 262k palette support.
+- Sound: Paula audio with four-channel stereo PCM playback and support for CD-quality Redbook audio.
 
 ## Supported ROM extensions
 

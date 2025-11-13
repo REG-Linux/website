@@ -11,11 +11,10 @@ Introduced in 1987 by Commodore, the Amiga OCS/ECS was a computer system. It is 
 
 ## Technical specifications
 
-- Manufacturer: Commodore
-- Release year: 1987
-- Hardware type: computer
-- Platform tag: amiga
-- EmulationStation group: amiga
+- CPU: Motorola 68000 running at approximately 7.16 MHz (NTSC) / 7.09 MHz (PAL).
+- Memory: 512 KB Chip RAM standard with easy expansions up to several megabytes.
+- Display: OCS/ECS chipset providing 32 colors (4096 palette) at 320×256 or 64 colors in HAM mode with interlaced support.
+- Sound: Paula chip powering four-channel stereo PCM sampling up to 28 kHz.
 
 ## Supported ROM extensions
 
