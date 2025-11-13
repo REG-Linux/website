@@ -11,9 +11,10 @@ Introduced in 1982 by Sinclair, the ZX Spectrum was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Sinclair
-- Release year: 1982
-- Hardware type: computer
+- CPU: Zilog Z80A clocked at 3.5 MHz.
+- Memory: 16 KB RAM in the 16K model, 48 KB or 128 KB RAM in later variants, with banked ROM/RAM in the 128K models.
+- Display: 256×192 pixel color display with an attribute grid limiting colors to 8 per 8×8 block from a 15-color palette.
+- Sound: Single-channel beeper (later models add AY-3-8912 PSG) for simple square waves and noise.
 
 ## Supported ROM extensions
 

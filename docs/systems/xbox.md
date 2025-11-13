@@ -11,9 +11,10 @@ Introduced in 2003 by Microsoft, the Xbox was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Microsoft
-- Release year: 2003
-- Hardware type: console
+- CPU: Custom Intel Pentium III-derived 32-bit processor at 733 MHz with 3.2 MB of on-die cache.
+- Memory: 64 MB of unified DDR SDRAM shared between the CPU and ATI NV2A graphics chip.
+- Display: NVIDIA NV2A GPU running at 233 MHz capable of 480p/720p output with hardware transform-and-lighting and texture mapping.
+- Sound: Realtek ALC650-based audio subsystem supporting Dolby Digital 5.1 pass-through and multi-channel PCM mixing.
 
 ## Supported ROM extensions
 

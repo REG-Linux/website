@@ -11,9 +11,10 @@ Introduced in 2005 by Microsoft, the Xbox 360 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Microsoft
-- Release year: 2005
-- Hardware type: console
+- CPU: Custom 3.2 GHz triple-core PowerPC-based Xenon processor with one core disabled and one geared for system functions.
+- Memory: 512 MB of GDDR3 RAM clocked at 700 MHz shared between CPU and ATI Xenos GPU (10 MB eDRAM for framebuffer).
+- Display: ATI Xenos GPU with unified shader architecture, capable of 720p/1080p rendering and embedded tessellation hardware.
+- Sound: Custom 5.1 surround audio engine with Dolby Digital Live and DTS support plus PCM mixing for headset output.
 
 ## Supported ROM extensions
 
