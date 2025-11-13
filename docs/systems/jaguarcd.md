@@ -1,11 +1,15 @@
 # Jaguar CD
 
-## Metadata
+## Overview
+
+Introduced in 1995 by Atari, the Jaguar CD was a console system. It is grouped with jaguar titles in EmulationStation.
+
+## Technical specifications
 
 - Manufacturer: Atari
-- Release Year: 1995
-- Hardware: console
-- Group: jaguar
+- Release year: 1995
+- Hardware type: console
+- EmulationStation group: jaguar
 
 ## Supported ROM extensions
 
@@ -17,4 +21,4 @@ cue, cdi, zip, 7z
 - **virtualjaguar** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VIRTUALJAGUAR | Incompatible extensions: zip, 7z
 
 ---
-Source: `jaguarcd.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

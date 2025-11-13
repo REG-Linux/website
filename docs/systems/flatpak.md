@@ -1,9 +1,13 @@
 # Applications
 
-## Metadata
+## Overview
+
+The Applications system is supported on REG Linux. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -27,4 +31,4 @@ Remove intalled app : flatpak remove xmoto
 then, run batocera-flatpak-update to update the roms directory according to your installed applications.
 
 ---
-Source: `flatpak.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

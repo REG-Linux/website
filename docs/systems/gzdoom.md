@@ -1,15 +1,19 @@
 # GZDoom
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gzdoom.png" alt="gzdoom logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gzdoom.png" alt="GZDoom logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+The GZDoom is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Hardware: port
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -32,4 +36,4 @@ Additional music can be added to /userdata/system/configs/gzdoom in the fm_banks
 More info: https://wiki.batocera.org/systems:gzdoom
 
 ---
-Source: `gzdoom.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,12 +1,16 @@
 # Wolfenstein - Enemy Territory
 
-## Metadata
+## Overview
+
+Introduced in 2010 by Ports, the Wolfenstein - Enemy Territory was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 2010
-- Hardware: port
+- Release year: 2010
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -37,4 +41,4 @@ Notes: For the best experience you need a mouse & keyboard.
 For more info: https://wiki.batocera.org/systems:etlegacy
 
 ---
-Source: `etlegacy.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

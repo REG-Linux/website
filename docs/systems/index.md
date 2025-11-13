@@ -1,5 +1,13 @@
 # Emulated Systems
 
+## Overview
+
+The Emulated Systems system is supported on REG Linux.
+
+## Overview
+
+The Emulated Systems system is supported by REG Linux. Its platform tag is `None` for proper filtering.
+
 This folder exposes the EmulationStation `es_systems.yml` data that REG Linux ships with.
 Each file is named after the corresponding system (for example `snes.yml`) and contains:
 

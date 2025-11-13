@@ -1,15 +1,19 @@
 # Commander Genius
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/cgenius.webp" alt="cgenius icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/cgenius.png" alt="cgenius logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/cgenius.webp" alt="Commander Genius icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/cgenius.png" alt="Commander Genius logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1990 by The Commander Genius Team, the Commander Genius was a port system. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: The Commander Genius Team
-- Release Year: 1990
-- Hardware: port
+- Release year: 1990
+- Hardware type: port
 - Platform tag: pc
 
 ## Supported ROM extensions
@@ -41,4 +45,4 @@ This will be the file that helps launch the game directly but also should be nam
 Note: Some 'mods' can also be downloaded via Commander Genius also.
 
 ---
-Source: `cgenius.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

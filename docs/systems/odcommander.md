@@ -1,15 +1,19 @@
 # OD-Commander
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/odcommander.png" alt="odcommander logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/odcommander.png" alt="OD-Commander logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 2022 by Ports, the OD-Commander was a port system. It is grouped with ports titles in EmulationStation.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 2022
-- Hardware: port
-- Group: ports
+- Release year: 2022
+- Hardware type: port
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -24,4 +28,4 @@ odc
 A two-pane file manager in the style of Norton/Midnight Commander.
 
 ---
-Source: `odcommander.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,15 +1,19 @@
 # ZX Spectrum
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/zxspectrum.webp" alt="zxspectrum icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/zxspectrum.png" alt="zxspectrum logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/zxspectrum.webp" alt="ZX Spectrum icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/zxspectrum.png" alt="ZX Spectrum logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1982 by Sinclair, the ZX Spectrum was a computer system.
+
+## Technical specifications
 
 - Manufacturer: Sinclair
-- Release Year: 1982
-- Hardware: computer
+- Release year: 1982
+- Hardware type: computer
 
 ## Supported ROM extensions
 
@@ -47,4 +51,4 @@ There are some conflicts in the way the input devices interact because of the us
 If you set a joystick along with the keyboard, the joystick will work just fine except for the bindings to RETURN and SPACE, and the keyboard won't register the keys assigned to the Cursor joystick, or to the L1 and R1 buttons for all other joystick types.
 
 ---
-Source: `zxspectrum.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,15 +1,19 @@
 # CD-i
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/cdi.webp" alt="cdi icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/cdi.png" alt="cdi logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/cdi.webp" alt="CD-i icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/cdi.png" alt="CD-i logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1990 by Philips, the CD-i was a console system.
+
+## Technical specifications
 
 - Manufacturer: Philips
-- Release Year: 1990
-- Hardware: console
+- Release year: 1990
+- Hardware type: console
 
 ## Supported ROM extensions
 
@@ -25,4 +29,4 @@ chd, cue, toc, nrg, gdi, iso, cdr
 Requires MAME BIOS file cdimono1.zip
 
 ---
-Source: `cdi.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

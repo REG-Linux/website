@@ -1,15 +1,19 @@
 # Model 3
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/model3.webp" alt="model3 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/model3.png" alt="model3 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/model3.webp" alt="Model 3 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/model3.png" alt="Model 3 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1996 by Sega, the Model 3 was a arcade system. Its platform tag is `model3, arcade` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Sega
-- Release Year: 1996
-- Hardware: arcade
+- Release year: 1996
+- Hardware type: arcade
 - Platform tag: model3, arcade
 
 ## Supported ROM extensions
@@ -72,4 +76,4 @@ Troubleshooting:
 See the Supermodel FAQ here - https://www.supermodel3.com/FAQ.html
 
 ---
-Source: `model3.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,10 +1,14 @@
 # Commander X16
 
-## Metadata
+## Overview
+
+Introduced in 2019 by The 8-Bit Guy, the Commander X16 was a computer system. Its platform tag is `commanderx16` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: The 8-Bit Guy
-- Release Year: 2019
-- Hardware: computer
+- Release year: 2019
+- Hardware type: computer
 - Platform tag: commanderx16
 
 ## Supported ROM extensions
@@ -37,4 +41,4 @@ RUN
 For more info: https://wiki.batocera.org/systems:commanderx16
 
 ---
-Source: `commanderx16.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

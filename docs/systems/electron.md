@@ -1,15 +1,19 @@
 # Electron
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/electron.webp" alt="electron icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/electron.png" alt="electron logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/electron.webp" alt="Electron icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/electron.png" alt="Electron logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1983 by Acorn Computers, the Electron was a computer system.
+
+## Technical specifications
 
 - Manufacturer: Acorn Computers
-- Release Year: 1983
-- Hardware: computer
+- Release year: 1983
+- Hardware type: computer
 
 ## Supported ROM extensions
 
@@ -27,4 +31,4 @@ Using software list mode (cassette) is recommended.
 Tapes should auto-load, use the MAME menu to stop/play/rewind if needed.
 
 ---
-Source: `electron.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

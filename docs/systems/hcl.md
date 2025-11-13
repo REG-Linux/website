@@ -1,12 +1,16 @@
 # Hydra Castle Labyrinth
 
-## Metadata
+## Overview
+
+Introduced in 2011 by Ports, the Hydra Castle Labyrinth was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 2011
-- Hardware: port
+- Release year: 2011
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -21,4 +25,4 @@ game
 This system is a standalone game. No rom required, get the game assets files from the Content Downloader.
 
 ---
-Source: `hcl.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,10 +1,14 @@
 # Atari Lynx
 
-## Metadata
+## Overview
+
+Introduced in 1989 by Atari, the Atari Lynx was a portable system. Its platform tag is `atarilynx` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Atari
-- Release Year: 1989
-- Hardware: portable
+- Release year: 1989
+- Hardware type: portable
 - Platform tag: atarilynx
 
 ## Supported ROM extensions
@@ -18,4 +22,4 @@ lnx, lyx, o, zip, 7z
 - **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
 
 ---
-Source: `lynx.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

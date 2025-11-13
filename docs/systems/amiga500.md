@@ -1,17 +1,21 @@
 # Amiga OCS/ECS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/amiga500.webp" alt="amiga500 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/amiga500.png" alt="amiga500 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/amiga500.webp" alt="Amiga OCS/ECS icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/amiga500.png" alt="Amiga OCS/ECS logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1987 by Commodore, the Amiga OCS/ECS was a computer system. It is grouped with amiga titles in EmulationStation. Its platform tag is `amiga` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Commodore
-- Release Year: 1987
-- Hardware: computer
+- Release year: 1987
+- Hardware type: computer
 - Platform tag: amiga
-- Group: amiga
+- EmulationStation group: amiga
 
 ## Supported ROM extensions
 
@@ -33,4 +37,4 @@ adf, uae, ipf, dms, dmz, adz, lha, hdf, exe, m3u, zip, raw, scp
 For more info: https://wiki.batocera.org/systems:amiga500
 
 ---
-Source: `amiga500.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

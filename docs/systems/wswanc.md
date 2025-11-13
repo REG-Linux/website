@@ -1,10 +1,14 @@
 # WonderSwan Color
 
-## Metadata
+## Overview
+
+Introduced in 2000 by Bandai, the WonderSwan Color was a portable system. Its platform tag is `wonderswancolor` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Bandai
-- Release Year: 2000
-- Hardware: portable
+- Release year: 2000
+- Hardware type: portable
 - Platform tag: wonderswancolor
 
 ## Supported ROM extensions
@@ -17,4 +21,4 @@ wsc, zip, 7z
 - **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
 
 ---
-Source: `wswanc.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

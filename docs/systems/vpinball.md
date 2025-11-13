@@ -1,15 +1,19 @@
 # Visual Pinball X
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/vpinball.webp" alt="vpinball icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/vpinball.png" alt="vpinball logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/vpinball.webp" alt="Visual Pinball X icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/vpinball.png" alt="Visual Pinball X logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 2000 by Randy Davis, the Visual Pinball X was a pinball system.
+
+## Technical specifications
 
 - Manufacturer: Randy Davis
-- Release Year: 2000
-- Hardware: pinball
+- Release year: 2000
+- Hardware type: pinball
 
 ## Supported ROM extensions
 
@@ -58,4 +62,4 @@ or in the same folder as your vpx file in it's own 'music' folder.
 The music folder, should be lowercase - i.e. /userdata/roms/vpinball/Kiss/music
 
 ---
-Source: `vpinball.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

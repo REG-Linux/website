@@ -1,16 +1,20 @@
 # Doom 3
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/doom3.png" alt="doom3 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/doom3.png" alt="Doom 3 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 2004 by Ports, the Doom 3 was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 2004
-- Hardware: port
+- Release year: 2004
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -49,4 +53,4 @@ Similarly `Doom 3 - Resurrection of Evil.d3` should be - d3xp/pak000.pk4
 For more info: https://wiki.batocera.org/systems:doom3
 
 ---
-Source: `doom3.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

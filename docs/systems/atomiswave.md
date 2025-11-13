@@ -1,15 +1,19 @@
 # Atomiswave
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/atomiswave.webp" alt="atomiswave icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/atomiswave.png" alt="atomiswave logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/atomiswave.webp" alt="Atomiswave icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/atomiswave.png" alt="Atomiswave logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 2003 by Sammy, the Atomiswave was a arcade system. Its platform tag is `atomiswave, arcade` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Sammy
-- Release Year: 2003
-- Hardware: arcade
+- Release year: 2003
+- Hardware type: arcade
 - Platform tag: atomiswave, arcade
 
 ## Supported ROM extensions
@@ -23,4 +27,4 @@ lst, bin, dat, zip, 7z
 - **flycastvl** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FLYCASTVL
 
 ---
-Source: `atomiswave.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml
