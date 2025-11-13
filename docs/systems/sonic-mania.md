@@ -1,5 +1,9 @@
 # Sonic Mania
 
+<div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
+<img src="/assets/systems/icons/sonic-mania.webp" alt="sonic-mania icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+</div>
+
 ## Metadata
 
 - Manufacturer: Sega

@@ -1,5 +1,10 @@
 # Xash3D-FWGS
 
+<div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
+<img src="/assets/systems/icons/xash3d_fwgs.webp" alt="xash3d_fwgs icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/xash3d_fwgs.png" alt="xash3d_fwgs logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+</div>
+
 ## Metadata
 
 - Manufacturer: Ports
