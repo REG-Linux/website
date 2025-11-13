@@ -1,14 +1,10 @@
 # Allwinner Boards
 
-REG Linux keeps a dedicated subtree `board/allwinner/` for everything that targets the
-Allwinner SoCs the project supports. Each subfolder owns the boot scripts, DTBs, and helper
-assets that make REG Linux images bootable on those devices.
+REG Linux supports a wide range of Allwinner-based devices.
 
-## Allwinner H3
+## Allwinner H2+/H3
 
-`board/allwinner/h3/` is home to the H2+/H3 Cortex-A7 platforms (Banana Pi M2 Zero, Capcom Home Arcade, Orange Pi One/PC/PC Plus/Plus 2E).
-The shared helpers copy the right DTB, kernel, and update bundles into the boot partition and provide the Capcom-specific
-overlays when that variant is built.
+Allwinner H2+/H3 Cortex-A7 platforms (Banana Pi M2 Zero, Capcom Home Arcade, Orange Pi One/PC/PC Plus/Plus 2E).
 
 Supported devices:
 
@@ -21,9 +17,7 @@ Supported devices:
 
 ## Allwinner H5
 
-`board/allwinner/h5/` targets the Orange Pi PC2 and Libretech Tritium H5 platforms. Each directory delivers
-the DTB, SPL, and post-image script that `make` needs to stage the REG Linux payloads, and `genimage` packages a
-2 GiB boot + 256 MiB userdata image with the SPL at 8 KiB.
+Orange Pi PC2 and Libretech Tritium H5 devices are supported.
 
 Supported devices:
 
@@ -32,8 +26,7 @@ Supported devices:
 
 ## Allwinner H6
 
-`board/allwinner/h6/` contains Orange Pi 3, Orange Pi 3 LTS, and Orange Pi One Plus support. Each subfolder stages its boot artifacts
-before `genimage` packages the familiar FAT32/EXT4 layout.
+Orange Pi 3, Orange Pi 3 LTS, and Orange Pi One Plus are supported.
 
 Supported devices:
 
@@ -43,8 +36,8 @@ Supported devices:
 
 ## Allwinner H616 / H618
 
-`board/allwinner/h616/` and `board/allwinner/linux_patches/` cover the H616 and H618 silicon in the Orange Pi Zero2 family, Banana Pi M4 Berry, and X96 Mate.
-Every board follows the same workflow: build U-Boot, stage `/boot`, and run `genimage` with the 2 GiB/256 MiB scheme.
+Orange Pi Zero2 and Orange Pi Zero3 families are supported.
+There is also support for Banana Pi M4 Berry and X96 Mate TV Box.
 
 Supported devices:
 
@@ -56,8 +49,9 @@ Supported devices:
 
 ## Allwinner H700 (Anbernic handhelds)
 
-`board/allwinner/h700/` is dedicated to Anbernic’s H700 handhelds (RG35XX series, RG40XX, RG34XX, RG28XX, and RGCubeXX).
-The single `anbernic-h700` folder delivers every DTB and boot script needed across these variants, with a common `fsoverlay/`, `dracut.conf`, and `kernel-firmware.txt`.
+Most if not all Anbernic’s H700 handhelds are supported, including those series : RG35XX, RG40XX, RG34XX, RG28XX, and RGCubeXX.
+Beware there is currently no device detection, you need to manually edit DTB after burning the image to match your exact device.
+This might change in the future if a reliable way of detecting devices is found.
 
 Supported devices:
 
