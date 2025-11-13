@@ -11,11 +11,10 @@ Introduced in 1992 by Commodore, the Amiga AGA was a computer system. It is grou
 
 ## Technical specifications
 
-- Manufacturer: Commodore
-- Release year: 1992
-- Hardware type: computer
-- Platform tag: amiga
-- EmulationStation group: amiga
+- CPU: Motorola 68EC020 at 14 MHz with a 32-bit internal data path and 24-bit external address bus.
+- Memory: 2 MB Chip RAM standard (expandable with Fast RAM via the CPU slot and expansions up to 8 MB+).
+- Display: AGA chipset capable of 256 colors at 320×256/512×256 or 64 colors in HAM-8 mode from a 16.8-million-color palette.
+- Sound: Paula audio engine with four-channel stereo PCM and same-featured audio pipeline as other ECS/AGA machines.
 
 ## Supported ROM extensions
 

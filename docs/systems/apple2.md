@@ -11,9 +11,10 @@ Introduced in 1977 by Apple, the Apple II was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Apple
-- Release year: 1977
-- Hardware type: computer
+- CPU: MOS Technology 6502 clocked at approximately 1.0 MHz.
+- Memory: 4 KB RAM built into the motherboard, expandable up to 48–64 KB via expansion cards.
+- Display: NTSC/PAL composite output; hi-res mode offered 280×192 resolution with six colors and text modes up to 80 columns.
+- Sound: Single-bit speaker (toggle pin) for simple beeps; no dedicated sound chip.
 
 ## Supported ROM extensions
 

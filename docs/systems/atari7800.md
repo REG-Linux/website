@@ -11,9 +11,10 @@ Introduced in 1986 by Atari, the Atari 7800 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Atari
-- Release year: 1986
-- Hardware type: console
+- CPU: Ricoh 65c02 running at 1.79 MHz.
+- Memory: 4 KB RAM plus 48 KB built-in BIOS/OS ROM.
+- Display: MARIA graphics chip capable of 160×240 resolution with 256 colors and hardware sprites/screen objects.
+- Sound: TIA-compatible audio offering two square-wave channels with stereo output and additional PWM control.
 
 ## Supported ROM extensions
 

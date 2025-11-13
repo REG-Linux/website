@@ -11,9 +11,10 @@ Introduced in 1982 by Atari, the Atari 5200 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Atari
-- Release year: 1982
-- Hardware type: console
+- CPU: MOS Technology 6502C clocked at 1.79 MHz with custom Pokey-based I/O.
+- Memory: 16 KB RAM plus 4 KB BIOS/OS ROM; cartridges could add more RAM.
+- Display: ANTIC/TIA-inspired chipset outputting 320×192 resolution with palette control for 256 colors and multiple sprites per scanline.
+- Sound: Atari POKEY chip powering four square-wave channels plus noise and keyboard scanning.
 
 ## Supported ROM extensions
 

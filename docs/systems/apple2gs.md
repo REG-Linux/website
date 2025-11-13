@@ -11,9 +11,10 @@ Introduced in 1986 by Apple, the Apple IIGS was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Apple
-- Release year: 1986
-- Hardware type: computer
+- CPU: Western Design Center 65C816 processor running at 2.8 MHz.
+- Memory: 256 KB RAM on board, expandable to 1 MB (and beyond with third-party cards).
+- Display: Super High-Res mode delivering 320×200 resolution with up to 256 colors from a palette of 4,096.
+- Sound: Ensoniq 5503 DOC chip with 32-channel wavetable synthesis plus stereo outputs.
 
 ## Supported ROM extensions
 
