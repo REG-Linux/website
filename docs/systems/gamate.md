@@ -11,9 +11,10 @@ Introduced in 1990 by Bitcorp, the Gamate was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Bitcorp
-- Release year: 1990
-- Hardware type: portable
+- CPU: Zilog Z80A operating at 4 MHz with cartridge-based bank switching.
+- Memory: 16 KB RAM with 8 KB dedicated video RAM.
+- Display: 160×144 LCD screen with 4-bit color depth (up to 256 colors using dithering).
+- Sound: SN76489-compatible PSG providing three square-wave channels and one noise channel.
 
 ## Supported ROM extensions
 

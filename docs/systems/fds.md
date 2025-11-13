@@ -11,10 +11,10 @@ Introduced in 1986 by Nintendo, the Family Computer Disk System was a console sy
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1986
-- Hardware type: console
-- EmulationStation group: nes
+- CPU: Ricoh 2A03 variant running at 1.79 MHz (NTSC) / 1.66 MHz (PAL) inside the Disk System adaptor.
+- Memory: 2 KB base RAM plus added Disk System RAM (32 KB) for disk buffering and disk-based expansion.
+- Display: Same PPU as the Nintendo Famicom (256×240, 48-color palette, tile/sprite support) powered by the host console.
+- Sound: Ricoh RP2A03's APU with two pulse, one triangle, noise, and optional DPCM; Disk System adds PCM channels via mapper.
 
 ## Supported ROM extensions
 

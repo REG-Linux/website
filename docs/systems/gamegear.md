@@ -11,9 +11,10 @@ Introduced in 1990 by Sega, the Game Gear was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1990
-- Hardware type: portable
+- CPU: Zilog Z80 running at 3.58 MHz (compatible with Master System hardware).
+- Memory: 8 KB RAM plus 16 KB video RAM mirroring the SMS.
+- Display: 160×144 backlit color LCD capable of 32 simultaneous colors from a 4096 palette.
+- Sound: Texas Instruments SN76489A PSG providing three square-wave channels plus noise.
 
 ## Supported ROM extensions
 

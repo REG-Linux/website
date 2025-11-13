@@ -11,9 +11,10 @@ Introduced in 1979 by Mattel, the Mattel Intellivision was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Mattel
-- Release year: 1979
-- Hardware type: console
+- CPU: General Instrument CP1610 16-bit processor running at 1.789 MHz.
+- Memory: 1 KB RAM and 2 KB ROM augmented by cartridge ROM up to 16 KB.
+- Display: GI CP1610-driven graphics with 160×96 resolution and 16 colors via the custom STIC video chip.
+- Sound: AY-3-8914 PSG offering three square-wave audio channels and noise.
 
 ## Supported ROM extensions
 

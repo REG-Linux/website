@@ -11,10 +11,10 @@ Introduced in 1987 by Fujitsu, the FM-TOWNS was a computer system. Its platform 
 
 ## Technical specifications
 
-- Manufacturer: Fujitsu
-- Release year: 1987
-- Hardware type: computer
-- Platform tag: fmtowns
+- CPU: Intel 80386SX running at 16 MHz with optional 486SX upgrades via expansion bus.
+- Memory: 640 KB conventional RAM plus 2 MB standard RAM and 2 MB VRAM in the FM Towns base units.
+- Display: Video subsystem supporting 320×240 up to 640×480 resolutions with 256 colors from 16.7 million and hardware video overlay.
+- Sound: Yamaha YM2612 FM chip and Ricoh RF5C68 PCM chip delivering multi-channel stereo audio.
 
 ## Supported ROM extensions
 

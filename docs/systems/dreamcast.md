@@ -11,9 +11,10 @@ Introduced in 1998 by Sega, the Dreamcast was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1998
-- Hardware type: console
+- CPU: Hitachi SH-4 32-bit RISC processor at 200 MHz with integrated FPU and SIMD extensions.
+- Memory: 16 MB main RAM plus 8 MB video RAM and 2 MB sound RAM shared with the PowerVR2 GPU/dac.
+- Display: PowerVR2 CLX2 GPU delivering 640×480 resolution with programmable T&L, 3D textures, and alpha blending.
+- Sound: Yamaha AICA chip with 64-channel ADPCM audio and a dedicated ARM7 co-processor for streaming CD-quality audio.
 
 ## Supported ROM extensions
 

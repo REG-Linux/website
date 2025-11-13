@@ -6,10 +6,10 @@ Introduced in 2001 by Nintendo, the GameCube was a console system. Its platform 
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 2001
-- Hardware type: console
-- Platform tag: gc
+- CPU: IBM PowerPC “Gekko” processor at 485 MHz, derived from the Broadway chip with SPE extensions.
+- Memory: 24 MB of 1T-SRAM main memory plus 16 MB of embedded 1T-SRAM for texture storage.
+- Display: ATI “Flipper” GPU outputting 640×480 (NTSC) / 720×480 (PAL) with hardware transform-and-lighting and 12 texture layers.
+- Sound: 16-bit ADPCM DSP with support for Dolby Pro Logic II and multi-channel stereo, fed via 64 MB/s audio bus.
 
 ## Supported ROM extensions
 
