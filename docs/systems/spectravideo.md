@@ -11,10 +11,10 @@ Introduced in 1983 by Spectravideo, the Spectravideo SV-328 was a computer syste
 
 ## Technical specifications
 
-- Manufacturer: Spectravideo
-- Release year: 1983
-- Hardware type: computer
-- Platform tag: spectravideo
+- CPU: Zilog Z80A running at 3.579545 MHz.
+- Memory: 64 KB of main RAM with cartridge-based bank switching for extra storage.
+- Display: TMS9918A video chip providing 256×192 graphics in 16 colors plus 16 KB VRAM.
+- Sound: AY-3-8910 PSG with three square-wave channels and programmable noise.
 
 ## Supported ROM extensions
 

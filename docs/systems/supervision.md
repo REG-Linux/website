@@ -11,9 +11,10 @@ Introduced in 1992 by Watara, the Supervision was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Watara
-- Release year: 1992
-- Hardware type: portable
+- CPU: 65SC02-compatible 8-bit processor running at 4 MHz.
+- Memory: 32 KB system RAM backed by 8 KB video memory and cartridge ROM banks.
+- Display: 160×160 pixel LCD with four shades of gray and hardware sprite blitting.
+- Sound: Mono speaker or headphone jack driven by a single square-wave channel.
 
 ## Supported ROM extensions
 

@@ -11,10 +11,10 @@ Introduced in 1994 by Nintendo, the Super Game Boy was a console system. It is g
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1994
-- Hardware type: console
-- EmulationStation group: snes
+- CPU: Sharp LR35902 (Game Boy) core clocked at 4.19 MHz inside the Super Game Boy cartridge.
+- Memory: 8 KB work RAM plus 8 KB video RAM inherited from the Game Boy hardware.
+- Display: Original 160×144 Game Boy screen rendered through the SNES PPU with decorative borders.
+- Sound: Game Boy APU with two pulse, one wave, and one noise channel routed through the SNES audio pipeline for stereo output.
 
 ## Supported ROM extensions
 

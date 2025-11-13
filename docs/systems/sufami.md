@@ -11,10 +11,10 @@ Introduced in 1996 by Bandai, the SuFami Turbo was a console system. It is group
 
 ## Technical specifications
 
-- Manufacturer: Bandai
-- Release year: 1996
-- Hardware type: console
-- EmulationStation group: snes
+- CPU: Ricoh 5A22 (Super Nintendo) processor clocked at 3.58 MHz.
+- Memory: Uses the SNES’s 128 KB work RAM and 64 KB VRAM while the adaptor adds 256 KB buffering for Sufami Turbo cartridges.
+- Display: SNES PPU with Mode 7/scaling capable of 256×224 resolution and rich palette effects.
+- Sound: Sony SPC700 8-bit PCM audio processor shared with the host SNES system.
 
 ## Supported ROM extensions
 

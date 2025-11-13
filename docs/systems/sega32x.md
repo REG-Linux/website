@@ -11,10 +11,10 @@ Introduced in 1994 by Sega, the 32x was a console system. It is grouped with meg
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1994
-- Hardware type: console
-- EmulationStation group: megadrive
+- CPU: Dual Hitachi SH-2 32-bit RISC cores running at 23 MHz alongside the Genesis 68000.
+- Memory: 256 KB general RAM, 256 KB video RAM, and 128 KB ROM for firmware.
+- Display: 32-bit color rendering with two extra sprite layers on top of the Genesis video output, plus hardware scaling/rotation.
+- Sound: Genesis YM2612 FM and SN76489 PSG chips with supplementary PCM support from the 32X hardware.
 
 ## Supported ROM extensions
 

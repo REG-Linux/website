@@ -11,10 +11,10 @@ Introduced in 1995 by Nintendo, the Satellaview was a console system. It is grou
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1995
-- Hardware type: console
-- EmulationStation group: snes
+- CPU: Ricoh 5A22 (WDC 65C816 derivative) running at 3.58 MHz, identical to the Super Famicom processor.
+- Memory: SNES main RAM plus 512 KB of BS-X RAM and 8 MB of Flash storage for downloaded broadcasts.
+- Display: SNES PPU with Mode 7/scroll layers, rendering 256×224 resolution with up to 32,768 colors.
+- Sound: Sony SPC700 audio engine with 64 KB of dedicated PCM RAM for stereo playback.
 
 ## Supported ROM extensions
 

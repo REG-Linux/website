@@ -11,9 +11,10 @@ Introduced in 1989 by NEC, the Supergrafx was a console system.
 
 ## Technical specifications
 
-- Manufacturer: NEC
-- Release year: 1989
-- Hardware type: console
+- CPU: Hudson HuC6280 8-bit microprocessor clocked at 7.16 MHz with integrated mapper and DMA.
+- Memory: 8 KB work RAM plus 64 KB VRAM split between dual HuC6270 video controllers.
+- Display: Dual HuC6270 VDCs offering 32,768 colors, 256 sprites, and resolutions up to 512×242.
+- Sound: HuC6230 PSG with six channels plus PCM support.
 
 ## Supported ROM extensions
 
