@@ -11,9 +11,10 @@ Introduced in 1994 by SNK, the Neo-Geo CD was a console system.
 
 ## Technical specifications
 
-- Manufacturer: SNK
-- Release year: 1994
-- Hardware type: console
+- CPU: Motorola 68000 at 12 MHz with a Zilog Z80 co-processor, mirroring the arcade MVS architecture.
+- Memory: 64 KB main RAM, 64 KB video RAM, and cartridge/ROM-backed sprite storage supplemented by CD streaming buffers.
+- Display: 320×224 resolution, 4,096 simultaneous colors, spriting identical to the Neo Geo AES arcade board.
+- Sound: Yamaha YM2610B FM/ADPCM chipset with dedicated stereo DACs plus CD audio track playback.
 
 ## Supported ROM extensions
 

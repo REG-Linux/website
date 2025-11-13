@@ -11,10 +11,10 @@ Introduced in 1990 by SNK, the Neo-Geo was a console system. Its platform tag is
 
 ## Technical specifications
 
-- Manufacturer: SNK
-- Release year: 1990
-- Hardware type: console
-- Platform tag: neogeo, arcade
+- CPU: Motorola 68000 running at 12 MHz with a Zilog Z80 co-processor dedicated to sound playback.
+- Memory: 64 KB main RAM, 64 KB video RAM plus a separate 2 MB sprite ROM space provided by the cartridges.
+- Display: 320×224 resolution capable of showing 4,096 colors simultaneously using hardware sprites (over 900 on-screen objects).
+- Sound: Yamaha YM2610B FM/ADPCM chip delivering six FM channels plus crystal-clear ADPCM sample playback and stereo output.
 
 ## Supported ROM extensions
 

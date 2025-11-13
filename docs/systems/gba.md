@@ -11,9 +11,10 @@ Introduced in 2001 by Nintendo, the Game Boy Advance was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 2001
-- Hardware type: portable
+- CPU: 32-bit ARM7TDMI running at 16.78 MHz alongside a dormant 8-bit Z80 for backward compatibility.
+- Memory: 32 KB IWRAM plus 96 KB VRAM and 256 KB onboard palette/graphics RAM with support for external flash.
+- Display: 240×160 TFT color display supporting 32,768 colors and up to 512 sprites with affine transformation.
+- Sound: Direct Sound stereo with two 16-bit DAC channels and a 6-voice PSG compatible with legacy hardware.
 
 ## Supported ROM extensions
 

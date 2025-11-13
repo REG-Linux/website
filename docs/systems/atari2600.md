@@ -11,9 +11,10 @@ Introduced in 1977 by Atari, the Atari 2600 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Atari
-- Release year: 1977
-- Hardware type: console
+- CPU: MOS Technology 6507 clocked at 1.19 MHz, a cost-reduced variant of the 6502 central to early VCS games.
+- Memory: 128 bytes of RAM and no onboard video RAM; cartridges could add more via banked chips.
+- Display: TIA video chip rendered 160×192 resolution using scanline timing and a 128-color palette (through artifacting).
+- Sound: TIA audio subsystem providing two simple pulse/noise channels tied to the video circuitry.
 
 ## Supported ROM extensions
 

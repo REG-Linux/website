@@ -11,9 +11,10 @@ Introduced in 1985 by Sega, the Master System was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1985
-- Hardware type: console
+- CPU: Zilog Z80A running at 3.58 MHz, the same core as the Game Gear/ZX Spectrum.
+- Memory: 8 KB main RAM plus 16 KB VRAM for tile graphics and palettes.
+- Display: 256×192 resolution (32 colors from a 64-shade palette) with support for 64 sprites and eight background planes.
+- Sound: Texas Instruments SN76489 PSG offering three tone channels and one noise channel.
 
 ## Supported ROM extensions
 

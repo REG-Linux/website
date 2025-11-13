@@ -11,10 +11,10 @@ Introduced in 1990 by Nintendo, the Super Nintendo Entertainment System was a co
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1990
-- Hardware type: console
-- EmulationStation group: snes
+- CPU: Ricoh 5A22 (based on the WDC 65C816) running up to 3.58 MHz with integrated DMA and coprocessor extensions for graphics/math helpers.
+- Memory: 128 KB main work RAM, 64 KB video RAM, and 64 KB audio RAM for the SPC700 sound engine.
+- Display: 256×224 (or 512×448 high-resolution mode) up to 32,768 on‑screen colors and eight background layers with 256 sprites.
+- Sound: Sony SPC700 + S-DSP sampler producing 8-bit PCM stereo with 64 KB of dedicated RAM.
 
 ## Supported ROM extensions
 

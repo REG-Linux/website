@@ -11,10 +11,10 @@ Introduced in 1983 by Nintendo, the Nintendo Entertainment System was a console 
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1983
-- Hardware type: console
-- EmulationStation group: nes
+- CPU: Ricoh 2A03 (NTSC) / 2A07 (PAL), a MOS Technology 6502-derived core clocked at 1.79 MHz (NTSC) or 1.66 MHz (PAL).
+- Memory: 2 KB internal RAM, 2 KB PPU VRAM plus mapper-backed cartridge RAM per title.
+- Display: 256×240 resolution with a 48-color palette and 64 sprites; scanline timing matched to CRTs.
+- Sound: Built-in APU with two pulse waves, one triangle wave, one noise channel and optional DPCM sample playback.
 
 ## Supported ROM extensions
 
