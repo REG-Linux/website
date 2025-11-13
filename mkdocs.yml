@@ -40,7 +40,6 @@ nav:
   - Emulated Systems:
     - 3DO Interactive Multiplayer: systems/3do.md
     - 3DS: systems/3ds.md
-    - Abuse: systems/abuse.md
     - ADAM: systems/adam.md
     - Adventure Vision: systems/advision.md
     - Amiga: systems/amiga.md
@@ -68,39 +67,23 @@ nav:
     - Commodore VIC-20: systems/c20.md
     - Commodore 64: systems/c64.md
     - Camputers Lynx: systems/camplynx.md
-    - Cannonball: systems/cannonball.md
-    - Cave Story: systems/cavestory.md
     - CD-i: systems/cdi.md
-    - C-Dogs SDL: systems/cdogs.md
-    - Commander Genius: systems/cgenius.md
     - Channel-F: systems/channelf.md
     - Sega Chihiro: systems/chihiro.md
     - Color Computer: systems/coco.md
     - ColecoVision: systems/colecovision.md
     - Commander X16: systems/commanderx16.md
-    - CorsixTH: systems/corsixth.md
     - Commodore Plus4: systems/cplus4.md
     - CreatiVision: systems/crvision.md
     - Daphne: systems/daphne.md
-    - DevilutionX: systems/devilutionx.md
-    - Doom 3: systems/doom3.md
     - Dos (x86): systems/dos.md
     - Dreamcast: systems/dreamcast.md
-    - DXX Rebirth: systems/dxx-rebirth.md
-    - EasyRPG: systems/easyrpg.md
-    - ECWolf: systems/ecwolf.md
-    - EDuke32: systems/eduke32.md
     - Electron: systems/electron.md
-    - Wolfenstein - Enemy Territory: systems/etlegacy.md
-    - Fallout Community Edition: systems/fallout1-ce.md
-    - Fallout 2 Community Edition: systems/fallout2-ce.md
     - Final Burn Neo: systems/fbneo.md
     - Family Computer Disk System: systems/fds.md
-    - Flash Player: systems/flash.md
     - Applications: systems/flatpak.md
     - FM-7: systems/fm7.md
     - FM-TOWNS: systems/fmtowns.md
-    - Ion Fury: systems/fury.md
     - Gamate: systems/gamate.md
     - Game and Watch: systems/gameandwatch.md
     - Game.com: systems/gamecom.md
@@ -114,16 +97,10 @@ nav:
     - Pong: systems/gong.md
     - GP32: systems/gp32.md
     - GX4000: systems/gx4000.md
-    - GZDoom: systems/gzdoom.md
-    - Hydra Castle Labyrinth: systems/hcl.md
-    - Hurrican: systems/hurrican.md
-    - IKEMEN: systems/ikemen.md
     - Mattel Intellivision: systems/intellivision.md
-    - Return To Castle Wolfenstein: systems/iortcw.md
     - Java 2 MicroEdition: systems/j2me.md
     - Jaguar: systems/jaguar.md
     - Jaguar CD: systems/jaguarcd.md
-    - Jazz Jackrabbit 2: systems/jazz2.md
     - Laser 310: systems/laser310.md
     - LCD Games: systems/lcdgames.md
     - Atari Lynx: systems/lynx.md
@@ -134,12 +111,11 @@ nav:
     - Mega Duck / Cougar Boy: systems/megaduck.md
     - Model 3: systems/model3.md
     - Moonlight Embedded: systems/moonlight.md
-    - MrBoom: systems/mrboom.md
     - MSU-MD: systems/msu-md.md
     - Msx: systems/msx.md
     - MSX1: systems/msx1.md
-    - MSX2+: systems/msx2+.md
     - MSX2: systems/msx2.md
+    - MSX2+: systems/msx2+.md
     - MSX Turbo-R: systems/msxturbor.md
     - Othello Multivision: systems/multivision.md
     - Nintendo 64: systems/n64.md
@@ -155,10 +131,6 @@ nav:
     - Neo-Geo Pocket: systems/ngp.md
     - Neo-Geo Pocket Color: systems/ngpc.md
     - Odyssey2: systems/o2em.md
-    - OD-Commander: systems/odcommander.md
-    - OpenBOR: systems/openbor.md
-    - Jazz Jackrabbit: systems/openjazz.md
-    - OpenLara: systems/openlara.md
     - PC-8800: systems/pc88.md
     - PC-9800: systems/pc98.md
     - PC Engine: systems/pcengine.md
@@ -169,8 +141,6 @@ nav:
     - Sega Pico: systems/pico.md
     - Plug and Play TV Games: systems/plugnplay.md
     - Pokemon Mini: systems/pokemini.md
-    - Ports: systems/ports.md
-    - PrBoom: systems/prboom.md
     - PlayStation 2: systems/ps2.md
     - PlayStation 3: systems/ps3.md
     - PlayStation 4: systems/ps4.md
@@ -178,46 +148,31 @@ nav:
     - PlayStation Vita: systems/psvita.md
     - PlayStation: systems/psx.md
     - PV-1000: systems/pv1000.md
-    - Quake III: systems/quake3.md
-    - Raze: systems/raze.md
-    - REminiscence: systems/reminiscence.md
-    - Rise of the Triad: systems/rott.md
     - "SAM Coup\xE9": systems/samcoupe.md
     - Satellaview: systems/satellaview.md
     - Saturn: systems/saturn.md
     - ScummVM: systems/scummvm.md
     - Super Cassette Vision: systems/scv.md
-    - SdlPop: systems/sdlpop.md
     - 32x: systems/sega32x.md
     - Sega CD: systems/segacd.md
     - SG-1000: systems/sg1000.md
     - Super Game Boy: systems/sgb.md
     - Singe: systems/singe.md
-    - Super Disc System (MSU1): systems/snes-msu1.md
     - Super Nintendo Entertainment System: systems/snes.md
+    - Super Disc System (MSU1): systems/snes-msu1.md
     - Socrates: systems/socrates.md
-    - Solarus: systems/solarus.md
-    - Sonic Mania: systems/sonic-mania.md
-    - Sonic 3 A.I.R.: systems/sonic3-air.md
-    - Sonic Retro Engine: systems/sonicretro.md
     - Spectravideo SV-328: systems/spectravideo.md
     - Steam: systems/steam.md
     - SuFami Turbo: systems/sufami.md
-    - Super Mario War: systems/superbroswar.md
     - Supergrafx: systems/supergrafx.md
     - Supervision: systems/supervision.md
     - Super A'Can: systems/supracan.md
     - Switch: systems/switch.md
     - Sega System SP: systems/systemsp.md
-    - The Force Engine: systems/theforceengine.md
-    - TheXTech: systems/thextech.md
     - Thomson - MO/TO (Theodore): systems/thomson.md
     - TI-99: systems/ti99.md
     - Triforce: systems/triforce.md
     - Tutor: systems/tutor.md
-    - Tyrian: systems/tyrian.md
-    - TyrQuake: systems/tyrquake.md
-    - Ur-Quan Masters: systems/uqm.md
     - Uzebox: systems/uzebox.md
     - VC 4000: systems/vc4000.md
     - Vectrex: systems/vectrex.md
@@ -225,7 +180,6 @@ nav:
     - Videopac+ G7400: systems/videopacplus.md
     - Virtual Boy: systems/virtualboy.md
     - Tandy Video Information System: systems/vis.md
-    - Quake II: systems/vitaquake2.md
     - Visual Pinball X: systems/vpinball.md
     - V.Smile: systems/vsmile.md
     - Wii: systems/wii.md
@@ -234,14 +188,63 @@ nav:
     - WonderSwan Color: systems/wswanc.md
     - Sharp X1: systems/x1.md
     - Sharp X68000: systems/x68000.md
-    - Xash3D-FWGS: systems/xash3d_fwgs.md
     - Xbox: systems/xbox.md
     - Xbox 360: systems/xbox360.md
     - Atari XE Game System: systems/xegs.md
-    - xrick: systems/xrick.md
     - Zelda Classic: systems/zc210.md
     - ZX81: systems/zx81.md
     - ZX Spectrum: systems/zxspectrum.md
+- Ports:
+  - Overview: ports/index.md
+  - Ported Systems:
+    - Abuse: ports/abuse.md
+    - Cannonball: ports/cannonball.md
+    - Cave Story: ports/cavestory.md
+    - C-Dogs SDL: ports/cdogs.md
+    - Commander Genius: ports/cgenius.md
+    - CorsixTH: ports/corsixth.md
+    - DevilutionX: ports/devilutionx.md
+    - Doom 3: ports/doom3.md
+    - DXX Rebirth: ports/dxx-rebirth.md
+    - EasyRPG: ports/easyrpg.md
+    - ECWolf: ports/ecwolf.md
+    - EDuke32: ports/eduke32.md
+    - Wolfenstein - Enemy Territory: ports/etlegacy.md
+    - Fallout Community Edition: ports/fallout1-ce.md
+    - Fallout 2 Community Edition: ports/fallout2-ce.md
+    - Flash Player: ports/flash.md
+    - Ion Fury: ports/fury.md
+    - GZDoom: ports/gzdoom.md
+    - Hydra Castle Labyrinth: ports/hcl.md
+    - Hurrican: ports/hurrican.md
+    - IKEMEN: ports/ikemen.md
+    - Return To Castle Wolfenstein: ports/iortcw.md
+    - Jazz Jackrabbit 2: ports/jazz2.md
+    - MrBoom: ports/mrboom.md
+    - OD-Commander: ports/odcommander.md
+    - OpenBOR: ports/openbor.md
+    - Jazz Jackrabbit: ports/openjazz.md
+    - OpenLara: ports/openlara.md
+    - Ports: ports/ports.md
+    - PrBoom: ports/prboom.md
+    - Quake III: ports/quake3.md
+    - Raze: ports/raze.md
+    - REminiscence: ports/reminiscence.md
+    - Rise of the Triad: ports/rott.md
+    - SdlPop: ports/sdlpop.md
+    - Solarus: ports/solarus.md
+    - Sonic Mania: ports/sonic-mania.md
+    - Sonic 3 A.I.R.: ports/sonic3-air.md
+    - Sonic Retro Engine: ports/sonicretro.md
+    - Super Mario War: ports/superbroswar.md
+    - The Force Engine: ports/theforceengine.md
+    - TheXTech: ports/thextech.md
+    - Tyrian: ports/tyrian.md
+    - TyrQuake: ports/tyrquake.md
+    - Ur-Quan Masters: ports/uqm.md
+    - Quake II: ports/vitaquake2.md
+    - Xash3D-FWGS: ports/xash3d_fwgs.md
+    - xrick: ports/xrick.md
 - Installation: installation.md
 - Developer Guide: dev-guide.md
 - Community: community.md
