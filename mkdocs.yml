@@ -225,7 +225,6 @@ nav:
     - OpenBOR: ports/openbor.md
     - Jazz Jackrabbit: ports/openjazz.md
     - OpenLara: ports/openlara.md
-    - Ports: ports/ports.md
     - PrBoom: ports/prboom.md
     - Quake III: ports/quake3.md
     - Raze: ports/raze.md
