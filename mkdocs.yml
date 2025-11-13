@@ -40,7 +40,7 @@ nav:
 
 plugins:
   - search
-  - git-revision-date
+  - git-revision-date-localized
 
 markdown_extensions:
   - admonition
