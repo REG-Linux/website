@@ -11,9 +11,10 @@ Introduced in 2008 by Atmel, the Uzebox was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Atmel
-- Release year: 2008
-- Hardware type: console
+- CPU: Microchip PIC32MX360F512L (32-bit MIPS) running at 80 MHz.
+- Memory: 512 KB flash for programs plus 32 KB data RAM and 16 KB of video RAM for tile maps.
+- Display: Tile-based 320×240 (or stretched) display rendered by MCU-driven video engine with hardware sprites.
+- Sound: Two-channel audio mixer using DAC output with PWM-driven sample playback.
 
 ## Supported ROM extensions
 

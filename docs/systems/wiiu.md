@@ -11,10 +11,10 @@ Introduced in 2012 by Nintendo, the Wii U was a console system. Its platform tag
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 2012
-- Hardware type: console
-- Platform tag: wiiu
+- CPU: Custom IBM “Espresso” tri-core CPU at 1.24 GHz with 1 MB L2 cache per core.
+- Memory: 2 GB DDR3 system RAM plus 1 GB dedicated to GPU operations.
+- Display: AMD Radeon-based “Latte” GPU supporting 1080p rendering and GamePad off-screen streaming.
+- Sound: High-definition audio engine with 7.1-channel output and AAC/DTS passthrough.
 
 ## Supported ROM extensions
 

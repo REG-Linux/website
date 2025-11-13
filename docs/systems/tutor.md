@@ -11,9 +11,10 @@ Introduced in 1983 by Tomy, the Tutor was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Tomy
-- Release year: 1983
-- Hardware type: computer
+- CPU: Motorola 6809E processor clocked at 1.79 MHz with additional gate-array support for floppy and video timing.
+- Memory: 64 KB RAM standard with room for up to 512 KB via expansion cards and ROM overlays.
+- Display: Thomson VDG supporting 320×200 graphics in 16 colors plus dedicated character/text modes.
+- Sound: SN76489A-compatible PSG offering three tone channels and noise.
 
 ## Supported ROM extensions
 

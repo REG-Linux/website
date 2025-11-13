@@ -11,9 +11,10 @@ Introduced in 1984 by Thomson, the Thomson - MO/TO (Theodore) was a computer sys
 
 ## Technical specifications
 
-- Manufacturer: Thomson
-- Release year: 1984
-- Hardware type: computer
+- CPU: Motorola 6809E running at 1.79 MHz in the MO5/MO6/Tutor series with bank switching for memory extensions.
+- Memory: 48 KB RAM (expandable via side cartridges and floppy expansions) plus 32 KB ROM for the built-in BASIC interpreter.
+- Display: Thomson VDG offering 320×200 or 320×240 graphics with 16 colors plus firmware-assisted text modes.
+- Sound: Texas Instruments SN76489A PSG providing three tone channels and one noise channel through the onboard speaker.
 
 ## Supported ROM extensions
 
