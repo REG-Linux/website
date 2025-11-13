@@ -11,9 +11,10 @@ Introduced in 2012 by Sony, the PlayStation Vita was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Sony
-- Release year: 2012
-- Hardware type: portable
+- CPU: ARM Cortex-A9 MPCore quad-core main processor paired with a dual-core PowerVR SGX543MP4+ GPU.
+- Memory: 512 MB RAM for the system and 128 MB VRAM dedicated to graphics.
+- Display: 5-inch OLED (later LCD) touchscreen at 960×544 with multi-touch support.
+- Sound: Dual stereo speakers plus a headphone jack with multi-channel PCM/audio effects.
 
 ## Supported ROM extensions
 

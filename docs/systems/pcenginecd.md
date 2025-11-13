@@ -11,9 +11,10 @@ Introduced in 1988 by NEC, the PC Engine CD was a console system.
 
 ## Technical specifications
 
-- Manufacturer: NEC
-- Release year: 1988
-- Hardware type: console
+- CPU: Same HuC6280 as the base system at 7.16 MHz with CD-ROM controller augmenting the cartridge bus.
+- Memory: 8 KB work RAM, 64 KB VRAM plus CD buffer RAM for streaming data.
+- Display: Carpentry of the HuC6270 video chip providing 256×239 resolution plus extra sprites, suitable for full-motion video overlays.
+- Sound: 6-channel PSG plus CD-DA playback and PCM sample streaming from the CD-ROM drive.
 
 ## Supported ROM extensions
 

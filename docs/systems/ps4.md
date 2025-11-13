@@ -11,9 +11,10 @@ Introduced in 2013 by Sony, the PlayStation 4 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Sony
-- Release year: 2013
-- Hardware type: console
+- CPU: Custom AMD “Jaguar” 8-core x86-64 CPU running up to 1.6 GHz (later revisions 1.84 GHz).
+- Memory: 8 GB of unified GDDR5 with 176 GB/s bandwidth shared between CPU and GPU.
+- Display: Custom AMD Radeon-based GPU delivering 1.84 TFLOPS with support for 1080p/4K rendering and hardware geometry/tessellation.
+- Sound: Custom AMD audio engine with 64-channel PCM mixing and support for Dolby Atmos/DTS:X formats.
 
 ## Supported ROM extensions
 

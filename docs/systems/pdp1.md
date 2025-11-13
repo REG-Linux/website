@@ -11,9 +11,10 @@ Introduced in 1961 by Digital Equipment Corporation, the PDP-1 was a computer sy
 
 ## Technical specifications
 
-- Manufacturer: Digital Equipment Corporation
-- Release year: 1961
-- Hardware type: computer
+- CPU: DEC PDP-1 18-bit word machine clocked at 200 kHz with a single accumulator and index registers.
+- Memory: Up to 4 KB of magnetic-core memory (expandable) for program/data storage.
+- Display: Direct-view CRT with vector graphics at up to 1024 vertical points and a light pen for input.
+- Sound: Simple relay activated buzzer for timing and operator feedback.
 
 ## Supported ROM extensions
 
