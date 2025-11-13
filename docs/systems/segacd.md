@@ -11,10 +11,10 @@ Introduced in 1991 by Sega, the Sega CD was a console system. Its platform tag i
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1991
-- Hardware type: console
-- Platform tag: segacd
+- CPU: Motorola 68000 clocked at 12.5 MHz with a dedicated co-processor for CD-ROM streaming.
+- Memory: 512 KB main RAM, 512 KB video RAM, 256 KB audio RAM, plus buffers for CD data.
+- Display: HuC6270-based video controller augmenting the HuC6280 core with overscan sprites and scaling for FMV.
+- Sound: 16-bit PCM plus Redbook audio streaming combined with the HuC6280 PSG channels.
 
 ## Supported ROM extensions
 

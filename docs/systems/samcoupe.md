@@ -11,9 +11,10 @@ Introduced in 1989 by Miles Gordon Technology, the SAM Coupé was a computer sys
 
 ## Technical specifications
 
-- Manufacturer: Miles Gordon Technology
-- Release year: 1989
-- Hardware type: computer
+- CPU: Zilog Z80B running at 6 MHz with support for banked ROMs and hardware sprites.
+- Memory: 256 KB of RAM on board (expandable to 512 KB and beyond) plus 48 KB ROM for the OS.
+- Display: Custom Video Display Generator offering 256×192 resolution, 256 colors from a 4096 palette, and sprite-based zoom/scroll support.
+- Sound: General Instrument AY-3-8912 PSG with three tone channels and noise, routed through stereo outputs.
 
 ## Supported ROM extensions
 

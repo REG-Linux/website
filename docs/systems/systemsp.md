@@ -11,10 +11,10 @@ Introduced in 2004 by Sega, the Sega System SP was a arcade system. Its platform
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 2004
-- Hardware type: arcade
-- Platform tag: systemsp, arcade
+- CPU: Hitachi SH-4 32-bit RISC processor at 200 MHz (NAOMI2-derived architecture).
+- Memory: 64 MB of RDRAM plus 16 MB texture/graphics buffers and 8 MB sound RAM.
+- Display: PowerVR2 GPU supporting 640×480+ textured polygons, perspective correction, and per-pixel effects.
+- Sound: Yamaha AICA DSP with 64 ADPCM channels plus hardware mixer, identical to the Dreamcast/Naomi audio stack.
 
 ## Supported ROM extensions
 
