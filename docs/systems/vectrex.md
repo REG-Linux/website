@@ -11,9 +11,10 @@ Introduced in 1982 by MB, the Vectrex was a console system.
 
 ## Technical specifications
 
-- Manufacturer: MB
-- Release year: 1982
-- Hardware type: console
+- CPU: Motorola 6809 running at 1.5 MHz.
+- Memory: 1 KB RAM and 8 KB ROM (expanded via cartridges) plus vector buffer memory.
+- Display: Custom vector CRT rendering 256×256 wireframe graphics with analog vector control.
+- Sound: AY-3-8912 PSG supplying three tone channels and noise via built-in speaker.
 
 ## Supported ROM extensions
 

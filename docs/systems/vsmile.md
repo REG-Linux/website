@@ -11,9 +11,10 @@ Introduced in 2005 by VTech, the V.Smile was a console system.
 
 ## Technical specifications
 
-- Manufacturer: VTech
-- Release year: 2005
-- Hardware type: console
+- CPU: MediaTek MT8127 (ARM926EJ-S) running around 96 MHz.
+- Memory: 16 MB RAM and 32 MB onboard flash plus cartridge-based game storage.
+- Display: 480×272 TFT LCD rendered via a simple GPU pipeline with hardware sprite support.
+- Sound: Stereo PCM with a dedicated DAC and multi-channel mixing.
 
 ## Supported ROM extensions
 

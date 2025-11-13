@@ -11,10 +11,10 @@ Introduced in 1983 by Philips, the Videopac+ G7400 was a console system. Its pla
 
 ## Technical specifications
 
-- Manufacturer: Philips
-- Release year: 1983
-- Hardware type: console
-- Platform tag: videopac
+- CPU: General Instrument CP1610 running at 1.79 MHz.
+- Memory: 1 KB RAM plus 16 KB of VRAM linked to the TMS9928 video chip.
+- Display: TMS9928A VDP providing 256×192 resolution with 16 colors and hardware sprites.
+- Sound: AY-3-8912 PSG delivering three square-wave channels and noise.
 
 ## Supported ROM extensions
 

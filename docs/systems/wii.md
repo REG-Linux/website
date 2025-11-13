@@ -11,9 +11,10 @@ Introduced in 2006 by Nintendo, the Wii was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 2006
-- Hardware type: console
+- CPU: IBM “Broadway” PowerPC processor clocked at 729 MHz.
+- Memory: 88 MB of unified memory (24 MB ‘main’ + 64 MB ‘external’) shared with the GPU.
+- Display: ATI Hollywood GPU delivering 422 MHz pipelines capable of 480p output with anti-aliasing.
+- Sound: Integrated Dolby Pro Logic II-equipped PCM audio with hardware mixing.
 
 ## Supported ROM extensions
 

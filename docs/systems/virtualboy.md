@@ -11,9 +11,10 @@ Introduced in 1995 by Nintendo, the Virtual Boy was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1995
-- Hardware type: console
+- CPU: NEC V810 32-bit RISC processor running at 20 MHz.
+- Memory: 1 MB of DRAM shared between the CPU and graphics pipeline.
+- Display: Dual 384×224 LED panels (one per eye) delivering red monochrome images with 3D parallax.
+- Sound: 16-bit PCM audio with stereo DACs and hardware mixing.
 
 ## Supported ROM extensions
 

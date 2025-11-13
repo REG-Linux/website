@@ -11,10 +11,10 @@ Introduced in 2003 by Namco, Sega, Nintendo, the Triforce was a arcade system. I
 
 ## Technical specifications
 
-- Manufacturer: Namco, Sega, Nintendo
-- Release year: 2003
-- Hardware type: arcade
-- Platform tag: triforce, arcade
+- CPU: IBM PowerPC Gekko core at 485 MHz (GameCube-based) with a 256-bit SIMD unit.
+- Memory: 24 MB of 1T-SRAM plus 16 MB of auxiliary texture RAM and 4 MB of embedded framebuffer memory.
+- Display: ATI “Flipper”-derived GPU capable of 480p/720p tiled 3D polygons with hardware lighting and texture mapping.
+- Sound: Custom Dolby Pro Logic II-capable audio pipeline with 24-bit PCM mixing derived from the GameCube architecture.
 
 ## Supported ROM extensions
 
