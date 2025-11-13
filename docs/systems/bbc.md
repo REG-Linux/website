@@ -1,10 +1,14 @@
 # BBC Micro
 
-## Metadata
+## Overview
+
+Introduced in 1981 by Acorn Computers, the BBC Micro was a computer system.
+
+## Technical specifications
 
 - Manufacturer: Acorn Computers
-- Release Year: 1981
-- Hardware: computer
+- Release year: 1981
+- Hardware type: computer
 
 ## Supported ROM extensions
 
@@ -21,4 +25,4 @@ Requires MAME BIOS files bbcb.zip, bbc_acorn8271.zip, & saa5050.zip
 Also sample pack bbc.zip in bios/mame/samples
 
 ---
-Source: `bbc.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,12 +1,16 @@
 # Sonic 3 A.I.R.
 
-## Metadata
+## Overview
+
+Introduced in 2019 by Sega, the Sonic 3 A.I.R. was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Sega
-- Release Year: 2019
-- Hardware: port
+- Release year: 2019
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -26,4 +30,4 @@ This file will allow EmulationStation to launch Sonic 3 A.I.R. and scrape artwor
 For more info: https://wiki.batocera.org/systems:sonic3-air
 
 ---
-Source: `sonic3-air.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,12 +1,16 @@
 # Ur-Quan Masters
 
-## Metadata
+## Overview
+
+Introduced in 1992 by Ports, the Ur-Quan Masters was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 1992
-- Hardware: port
+- Release year: 1992
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -22,4 +26,4 @@ Create a folder called 'packages' in this folder. This is where you place your g
 Then create a file called 'Ur-Quan Masters.game'. This is used to launch the game.
 
 ---
-Source: `uqm.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

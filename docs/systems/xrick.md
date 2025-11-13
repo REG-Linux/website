@@ -5,12 +5,16 @@
 <span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/xrick.png" alt="xrick logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+The xrick is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Hardware: port
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -26,4 +30,4 @@ Put the data.zip file in this directory.
 Or you can add the game data files directly from the Batocera content downloader.
 
 ---
-Source: `xrick.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

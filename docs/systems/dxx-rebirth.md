@@ -1,12 +1,16 @@
 # DXX Rebirth
 
-## Metadata
+## Overview
+
+Introduced in 1998 by Ports, the DXX Rebirth was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 1998
-- Hardware: port
+- Release year: 1998
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -41,4 +45,4 @@ A mouse & keyboard is required initially but you can configure a controller per 
 For more info: https://wiki.batocera.org/systems:dxx-rebirth
 
 ---
-Source: `dxx-rebirth.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,12 +1,16 @@
 # Rise of the Triad
 
-## Metadata
+## Overview
+
+Introduced in 1994 by Ports, the Rise of the Triad was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 1994
-- Hardware: port
+- Release year: 1994
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -31,4 +35,4 @@ We have mapped the controller to keyboard events as a result.
 For more info: https://wiki.batocera.org/systems:taradino
 
 ---
-Source: `rott.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

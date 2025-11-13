@@ -1,15 +1,19 @@
 # Mame
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/mame.webp" alt="mame icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/mame.png" alt="mame logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/mame.webp" alt="Mame icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/mame.png" alt="Mame logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1997 by Arcade, the Mame was a arcade system. Its platform tag is `arcade` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Arcade
-- Release Year: 1997
-- Hardware: arcade
+- Release year: 1997
+- Hardware type: arcade
 - Platform tag: arcade
 
 ## Supported ROM extensions
@@ -38,4 +42,4 @@ Special files for mame2003 core:
 For more info: https://wiki.batocera.org/arcade
 
 ---
-Source: `mame.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -1,12 +1,16 @@
 # Return To Castle Wolfenstein
 
-## Metadata
+## Overview
+
+Introduced in 2001 by Ports, the Return To Castle Wolfenstein was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 2001
-- Hardware: port
+- Release year: 2001
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -35,4 +39,4 @@ A keyboard and mouse / touchscreen is required for game start.
 For more info: https://wiki.batocera.org/systems:iortcw
 
 ---
-Source: `iortcw.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

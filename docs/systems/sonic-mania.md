@@ -1,16 +1,20 @@
 # Sonic Mania
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/sonic-mania.webp" alt="sonic-mania icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<img src="/assets/systems/icons/sonic-mania.webp" alt="Sonic Mania icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 2017 by Sega, the Sonic Mania was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Sega
-- Release Year: 2017
-- Hardware: port
+- Release year: 2017
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -49,4 +53,4 @@ TargetVersion=5
 For more info: https://wiki.batocera.org/systems:sonic-mania
 
 ---
-Source: `sonic-mania.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

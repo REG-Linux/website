@@ -1,15 +1,19 @@
 # ColecoVision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/colecovision.webp" alt="colecovision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/colecovision.png" alt="colecovision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/colecovision.webp" alt="ColecoVision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/colecovision.png" alt="ColecoVision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1982 by Coleco, the ColecoVision was a console system.
+
+## Technical specifications
 
 - Manufacturer: Coleco
-- Release Year: 1982
-- Hardware: console
+- Release year: 1982
+- Hardware type: console
 
 ## Supported ROM extensions
 
@@ -58,4 +62,4 @@ JOYPAD_SELECT = COLECO STAR
 JOYPAD_START  = COLECO HASH
 
 ---
-Source: `colecovision.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

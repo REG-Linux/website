@@ -1,10 +1,14 @@
 # Dreamcast VMU
 
-## Metadata
+## Overview
+
+Introduced in 1998 by Sega, the Dreamcast VMU was a console system.
+
+## Technical specifications
 
 - Manufacturer: Sega
-- Release Year: 1998
-- Hardware: console
+- Release year: 1998
+- Hardware type: console
 
 ## Supported ROM extensions
 
@@ -15,4 +19,4 @@ vms, dci, bin
 - **vemulator** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VEMULATOR
 
 ---
-Source: `vemulator.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

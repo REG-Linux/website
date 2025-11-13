@@ -1,16 +1,20 @@
 # CorsixTH
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/corsixth.webp" alt="corsixth icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/corsixth.png" alt="corsixth logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/assets/systems/icons/corsixth.webp" alt="CorsixTH icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/corsixth.png" alt="CorsixTH logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
-## Metadata
+## Overview
+
+The CorsixTH is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Hardware: port
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -30,4 +34,4 @@ If you want to listen to non-Theme-Hospital music or use an remastered version o
 If you want to change the names of songs ingame, into MP3 folder make a file called names.txt and write the file name on one row, followed by the desired ingame name on the next row.
 
 ---
-Source: `corsixth.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

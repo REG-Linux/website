@@ -1,10 +1,14 @@
 # GameCube
 
-## Metadata
+## Overview
+
+Introduced in 2001 by Nintendo, the GameCube was a console system. Its platform tag is `gc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Nintendo
-- Release Year: 2001
-- Hardware: console
+- Release year: 2001
+- Hardware type: console
 - Platform tag: gc
 
 ## Supported ROM extensions
@@ -29,4 +33,4 @@ You can access the BIOS settings by holding down the 'A' or 'east' button.
 For more info: https://wiki.batocera.org/systems:gamecube
 
 ---
-Source: `gamecube.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

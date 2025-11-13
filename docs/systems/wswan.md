@@ -1,10 +1,14 @@
 # WonderSwan
 
-## Metadata
+## Overview
+
+Introduced in 1999 by Bandai, the WonderSwan was a portable system. Its platform tag is `wonderswan` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Bandai
-- Release Year: 1999
-- Hardware: portable
+- Release year: 1999
+- Hardware type: portable
 - Platform tag: wonderswan
 
 ## Supported ROM extensions
@@ -17,4 +21,4 @@ ws, zip, 7z
 - **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
 
 ---
-Source: `wswan.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml

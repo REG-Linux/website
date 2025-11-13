@@ -1,16 +1,20 @@
 # The Force Engine
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/theforceengine.webp" alt="theforceengine icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<img src="/assets/systems/icons/theforceengine.webp" alt="The Force Engine icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
 </div>
 
-## Metadata
+## Overview
+
+Introduced in 1995 by Ports, the The Force Engine was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+
+## Technical specifications
 
 - Manufacturer: Ports
-- Release Year: 1995
-- Hardware: port
+- Release year: 1995
+- Hardware type: port
 - Platform tag: pc
-- Group: ports
+- EmulationStation group: ports
 
 ## Supported ROM extensions
 
@@ -58,4 +62,4 @@ A keyboard and mouse / touchscreen is required to create the initial user profil
 For more info: https://wiki.batocera.org/systems:theforceengine
 
 ---
-Source: `theforceengine.yml`
+Source data: REG Linux emulationstation/es-system/es_systems.yml
