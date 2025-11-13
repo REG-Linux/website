@@ -11,11 +11,10 @@ Introduced in 1988 by Sega, the Mega Drive was a console system. It is grouped w
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1988
-- Hardware type: console
-- Platform tag: genesis, megadrive
-- EmulationStation group: megadrive
+- CPU: Motorola 68000 main CPU at 7.67 MHz with a Zilog Z80 co-processor at 3.58 MHz handling audio/backwards compatibility.
+- Memory: 64 KB main RAM, 64 KB video RAM, and 8 KB dedicated audio RAM for the YM2612/FM sound chip.
+- Display: 320×224 resolution (up to 61 colors on-screen from a 512-color palette) with up to 80 sprites per frame.
+- Sound: Yamaha YM2612 six-channel FM synthesizer plus Texas Instruments SN76489 PSG for square/noise channels.
 
 ## Supported ROM extensions
 

@@ -11,9 +11,10 @@ Introduced in 1989 by Nintendo, the Game Boy was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1989
-- Hardware type: portable
+- CPU: Sharp LR35902 (hybrid Z80/Intel 8080) clocked at 4.19 MHz.
+- Memory: 8 KB internal work RAM plus 8 KB video RAM dedicated to the LCD controller.
+- Display: 160×144 monochrome reflective LCD with four shades of gray and 59.7 Hz refresh.
+- Sound: Four-channel audio (two pulse, one wave, one noise) with stereo headphone output.
 
 ## Supported ROM extensions
 

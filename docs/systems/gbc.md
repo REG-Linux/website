@@ -11,9 +11,10 @@ Introduced in 1998 by Nintendo, the Game Boy Color was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1998
-- Hardware type: portable
+- CPU: Dual-speed Sharp LR35902, running at up to 8 MHz in color mode and 4.19 MHz for original Game Boy compatibility.
+- Memory: 32 KB internal work RAM (switchable banks) and 16 KB video RAM for tile/palette data.
+- Display: 160×144 reflective color LCD capable of 32,768 colors with 56 pixel-per-line sprites.
+- Sound: Four-channel stereo (two square, one wave, one noise) with enhanced channel control over the original Game Boy.
 
 ## Supported ROM extensions
 
