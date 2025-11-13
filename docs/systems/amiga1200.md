@@ -30,7 +30,6 @@ adf, uae, ipf, dms, dmz, adz, lha, hdf, exe, m3u, zip, raw, scp
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:amiga500
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

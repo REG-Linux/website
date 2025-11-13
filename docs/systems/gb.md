@@ -31,7 +31,6 @@ gb, zip, 7z
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:gb
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

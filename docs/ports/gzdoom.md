@@ -33,7 +33,6 @@ Note: The command must be on one line and the casing of the filenames and extens
 
 Additional music can be added to /userdata/system/configs/gzdoom in the fm_banks & soundfonts folders respectively.
 
-More info: https://wiki.batocera.org/systems:gzdoom
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

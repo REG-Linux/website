@@ -40,7 +40,6 @@ DLC content will be stored in: /userdata/roms/ps4/DLC
 Very important: To play games you typically need the system modules from your PS4 that has been jailbroken.
 Place the decrypted system module files in: /userdata/system/configs/shadps4/user/sys_modules
 
-For more info: https://wiki.batocera.org/systems:ps4
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

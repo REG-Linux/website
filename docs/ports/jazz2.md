@@ -26,7 +26,6 @@ Jazz2 Native requires the original Jazz Jackrabbit 2 game files.
 Copy all game files into this directory.
 Then create an empty `Jazz Jackrabbit 2.game` file for EmulationStation to be able to launch the game.
 
-For more info: https://wiki.batocera.org/systems:jazz2-native
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

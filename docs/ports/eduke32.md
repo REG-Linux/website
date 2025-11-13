@@ -62,7 +62,6 @@ For the World War II GI: Platoon Leader expansion, create an .eduke32 file with 
 
 For mod support and troubleshooting, please visit the wiki for more information.
 
-More info: https://wiki.batocera.org/systems:eduke32
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

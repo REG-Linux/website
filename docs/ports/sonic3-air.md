@@ -27,7 +27,6 @@ It is important that the rom file matches this name exactly.
 Additionally, create a blank `Sonic 3 - Angel Island Revisited.s3air` file.
 This file will allow EmulationStation to launch Sonic 3 A.I.R. and scrape artwork etc.
 
-For more info: https://wiki.batocera.org/systems:sonic3-air
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

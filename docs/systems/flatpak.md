@@ -28,7 +28,6 @@ Search app from Repo : flatpak search xmoto
 Install app from Repo : flatpak install xmoto
 List your apps : flatpak list
 Remove intalled app : flatpak remove xmoto
-then, run batocera-flatpak-update to update the roms directory according to your installed applications.
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

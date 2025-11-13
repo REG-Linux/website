@@ -31,7 +31,6 @@ smc, fig, sfc, gd3, gd7, dx2, bsx, swc, zip, 7z
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:snes
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

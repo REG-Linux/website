@@ -35,7 +35,6 @@ Currently support ISO's are:
 You will also need the Cerbios flashrom in your bios directory.
 - Most modern Cerbios versions will work with the udma variants not being necessary.
 
-For more info: https://wiki.batocera.org/systems:chihiro
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

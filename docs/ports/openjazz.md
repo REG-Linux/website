@@ -26,7 +26,6 @@ OpenJazz requires the original Jazz Jackrabbit game files.
 Copy all game files into this directory.
 Then create an empty `Jazz Jackrabbit.game` file for EmulationStation to be able to launch the game.
 
-For more info: https://wiki.batocera.org/systems:openjazz
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

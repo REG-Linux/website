@@ -31,7 +31,6 @@ gbc, zip, 7z
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:gbc
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

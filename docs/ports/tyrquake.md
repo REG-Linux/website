@@ -28,7 +28,6 @@ pak
 
 Put your Quake 1 .PAK games in this directory.
 
-For more info: https://wiki.batocera.org/systems:tyrquake
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

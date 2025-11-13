@@ -28,7 +28,6 @@ cdi, cue, gdi, chd, m3u
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:dreamcast
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

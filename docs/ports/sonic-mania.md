@@ -50,7 +50,6 @@ Version=1.0.0
 TargetVersion=5
 ```
 
-For more info: https://wiki.batocera.org/systems:sonic-mania
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

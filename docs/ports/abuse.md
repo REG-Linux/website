@@ -27,7 +27,7 @@ game
 ## Notes
 
 This system is a standalone game. No rom required.
-You can add the game data files directly from the Batocera content downloader.
+You can add the game data files directly from the content downloader.
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

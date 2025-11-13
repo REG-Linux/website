@@ -36,7 +36,6 @@ For example, for "Broken Sword" create the file "Broken Sword/sword1.scummvm"
 
 If you wish to use Midi ROM's i.e. the MT-32 synth, put you files in /userdata/bios/scummvm/extra
 
-For more info: https://wiki.batocera.org/systems:scummvm
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -71,7 +71,6 @@ roms
 
 Singe games should now be run out of the singe rom directory.
 
-For more info: https://wiki.batocera.org/systems:daphne
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

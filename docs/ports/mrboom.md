@@ -26,7 +26,6 @@ libretro
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:mrboom
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -29,7 +29,6 @@ iso, mdf, nrg, bin, img, dump, gz, cso, chd, m3u
 
 ## Notes
 
-For more info: https://wiki.batocera.org/systems:ps2
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

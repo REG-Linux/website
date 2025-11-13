@@ -29,7 +29,6 @@ pak
 
 Note: For some games to work, pak files cannot be renamed and need to be in a folder called Paks.
 
-For more info: https://wiki.batocera.org/systems:openbor
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

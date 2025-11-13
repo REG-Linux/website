@@ -30,7 +30,6 @@ Please ensure that you have the necessary BIOS file (IPL.bin) available in one o
 - /userdata/bios/GC/JAP/IPL.bin
 
 You can access the BIOS settings by holding down the 'A' or 'east' button.
-For more info: https://wiki.batocera.org/systems:gamecube
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

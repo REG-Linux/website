@@ -71,7 +71,6 @@ i.e. Street Fighter X Tekken (USA) [PCSE00005].psvita
 
 This will enable Emulation Station to see your installed game & launch it via the ES GUI.
 
-Please refer to the wiki - https://wiki.batocera.org/playground:systems:psvita
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml

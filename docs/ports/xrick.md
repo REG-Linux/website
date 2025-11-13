@@ -27,7 +27,6 @@ zip
 ## Notes
 
 Put the data.zip file in this directory.
-Or you can add the game data files directly from the Batocera content downloader.
 
 ---
 Source data: REG Linux emulationstation/es-system/es_systems.yml
