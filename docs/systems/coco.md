@@ -11,9 +11,10 @@ Introduced in 1980 by Tandy Radio Shack, the Color Computer was a computer syste
 
 ## Technical specifications
 
-- Manufacturer: Tandy Radio Shack
-- Release year: 1980
-- Hardware type: computer
+- CPU: Motorola 6809E running at 0.895 MHz (in early models) or double-speed 1.79 MHz in later revisions.
+- Memory: 4 KB RAM on Model I rising to 64 KB on the Model III/4 with ROM-on-cartridge for BASIC and OS.
+- Display: MC6847 VDG capable of 256×192 pixels with four colors (always referencing palette of 9 base colors) and 6 rows of text.
+- Sound: Basic single-channel square wave generator with limited volume control provided by the MC6847 video chip.
 
 ## Supported ROM extensions
 

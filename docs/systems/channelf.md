@@ -11,9 +11,10 @@ Introduced in 1976 by Fairchild, the Channel-F was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Fairchild
-- Release year: 1976
-- Hardware type: console
+- CPU: Fairchild F8 microprocessor operating at 1.79 MHz.
+- Memory: 2 KB ROM (cartridge) plus 64 bytes of scratchpad RAM on the console.
+- Display: Video circuitry supporting 192×144 resolution with 64 selectable colors and eight hardware sprites.
+- Sound: Two-tone generation via dedicated audio channels integrated into the video chip.
 
 ## Supported ROM extensions
 

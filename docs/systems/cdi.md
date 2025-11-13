@@ -11,9 +11,10 @@ Introduced in 1990 by Philips, the CD-i was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Philips
-- Release year: 1990
-- Hardware type: console
+- CPU: Philips PCD70332 (68k-derived) running at 15.5 MHz with dedicated CD-i OS support.
+- Memory: 1 MB RAM plus 1 MB VRAM dedicated to the VDG graphics pipeline, expandable via expansion modules.
+- Display: Custom VDG chip rendering 384×280 and 768×512 interlaced graphics with 24-bit color and sprite overlays.
+- Sound: Philips SAA1099 (6-channel PSG) plus PCM digital audio streamed from CD-ROM.
 
 ## Supported ROM extensions
 

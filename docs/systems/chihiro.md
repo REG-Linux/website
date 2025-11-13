@@ -11,10 +11,10 @@ Introduced in 2002 by Sega & Microsoft, the Sega Chihiro was a arcade system. It
 
 ## Technical specifications
 
-- Manufacturer: Sega & Microsoft
-- Release year: 2002
-- Hardware type: arcade
-- Platform tag: chihiro
+- CPU: Intel Pentium III (Coppermine) clocked at 733 MHz, the same core used in the original Xbox.
+- Memory: 128 MB DDR SDRAM shared between CPU and GPU, plus 128 MB internal graphics memory on the NV2A chipset.
+- Display: Nvidia NV2A GPU (GeForce3-class) outputting 640×480 progressive or 720×480 interlaced with full hardware transform and lighting.
+- Sound: Integrated AC'97 audio controller delivering multi-channel PCM and hardware mixing identical to Xbox audio subsystems.
 
 ## Supported ROM extensions
 

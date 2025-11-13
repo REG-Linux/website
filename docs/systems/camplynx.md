@@ -11,9 +11,10 @@ Introduced in 1983 by Camputers, the Camputers Lynx was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Camputers
-- Release year: 1983
-- Hardware type: computer
+- CPU: Zilog Z80A clocked at 4 MHz with banked memory support for BASIC/CP/M states.
+- Memory: 64 KB RAM standard with 16 KB ROM plus up to 128 KB of video memory in extended models.
+- Display: 256×192 resolution with eight colors per line, handled by a dedicated video controller inspired by Sinclair/Amstrad.
+- Sound: AY-3-8912 PSG providing three square-wave audio channels plus noise.
 
 ## Supported ROM extensions
 
