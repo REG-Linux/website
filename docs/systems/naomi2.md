@@ -11,10 +11,10 @@ Introduced in 2000 by Sega, the Naomi 2 was a arcade system. Its platform tag is
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 2000
-- Hardware type: arcade
-- Platform tag: naomi2, arcade
+- CPU: Dual Hitachi SH-4 cores at 200 MHz along with PowerVR2 GPU enhancements for Naomi2-specific lighting.
+- Memory: Typically 64 MB RDRAM with extra 8 MB texture RAM and optional 32 MB expansion.
+- Display: Enhanced PowerVR2 capable of higher polygon counts, 16.7 million colors, and improved post-processing.
+- Sound: Yamaha AICA with 64 channels of ADPCM and DSP effects, plus optional CD-quality streaming.
 
 ## Supported ROM extensions
 

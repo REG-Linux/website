@@ -11,9 +11,10 @@ Introduced in 1998 by SNK, the Neo-Geo Pocket was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: SNK
-- Release year: 1998
-- Hardware type: portable
+- CPU: Toshiba TLCS-900H core at 6.144 MHz with a supplementary Zilog Z80 at 3.072 MHz for audio tasks.
+- Memory: 12 KB working RAM for the main core, 4 KB for the Z80, and 64 KB ROM for system firmware.
+- Display: 2.7-inch reflective LCD at 160×152 resolution with 146 colors on-screen from 4,096.
+- Sound: T6W28 PSG (enhanced SN76489) with 6-bit DACs for rich handheld tone and noise generation.
 
 ## Supported ROM extensions
 

@@ -11,10 +11,10 @@ Introduced in 1990 by Microsoft, the MSX Turbo-R was a computer system. Its plat
 
 ## Technical specifications
 
-- Manufacturer: Microsoft
-- Release year: 1990
-- Hardware type: computer
-- Platform tag: msxturbor
+- CPU: R800 (a 16-bit tweaked Z80-compatible) running at 7.16 MHz plus a secondary Zilog Z80 for backward compatibility.
+- Memory: 64 KB main RAM with bank-switching, dedicated 32 KB for video/ROM windows, and optional cartridge RAM.
+- Display: Yamaha V9958 VDP with 192 colors on-screen, hardware sprite rotation/scaling, and support for interlaced 512 resolutions.
+- Sound: AY-3-8910 PSG plus high-quality PCM channels exposed through the V9958 DACs.
 
 ## Supported ROM extensions
 

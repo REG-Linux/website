@@ -11,9 +11,10 @@ Introduced in 1993 by Welback Holdings, the Mega Duck / Cougar Boy was a portabl
 
 ## Technical specifications
 
-- Manufacturer: Welback Holdings
-- Release year: 1993
-- Hardware type: portable
+- CPU: Sharp SM83 (Sharp LR35902 derivative) clocked at 4.194304 MHz.
+- Memory: 16 KB of general RAM with an additional 8 KB reserved for tile/line buffers in the LCD controller.
+- Display: 160×144 pixel color LCD panel, 4-bit color depth and hardware-supported sprites.
+- Sound: Built-in mono speaker leveraging the same SN76489-compatible PSG as the Game Gear for three square waves and noise.
 
 ## Supported ROM extensions
 

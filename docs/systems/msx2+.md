@@ -11,10 +11,10 @@ Introduced in 1988 by Microsoft, the MSX2+ was a computer system. Its platform t
 
 ## Technical specifications
 
-- Manufacturer: Microsoft
-- Release year: 1988
-- Hardware type: computer
-- Platform tag: msx2+
+- CPU: Zilog Z80-compatible core (around 3.58 MHz) with the V9958 video chip managing advanced graphics.
+- Memory: 64–512 KB RAM with expanded video RAM and mapper banks, allowing more sprites and tile data.
+- Display: Yamaha V9958 offering 1920×212 interlaced modes, 192 colors on-screen, hardware palettes, and sprite scaling.
+- Sound: AY-3-8910 PSG plus PCM and DAC capabilities from the V9958 for richer audio.
 
 ## Supported ROM extensions
 

@@ -11,10 +11,10 @@ Introduced in 2003 by Nokia, the N-Gage was a portable system. Its platform tag 
 
 ## Technical specifications
 
-- Manufacturer: Nokia
-- Release year: 2003
-- Hardware type: portable
-- Platform tag: ngage
+- CPU: ARM920T running at 104 MHz inside the Symbian-powered handset.
+- Memory: 3 MB RAM (approx.) with expandable flash for games.
+- Display: 2.1-inch TFT LCD at 176×208 pixels showing 4,096 colors.
+- Sound: Mono/stereo speaker plus the ARM audio codec, supporting multi-channel PCM and MIDI music.
 
 ## Supported ROM extensions
 
