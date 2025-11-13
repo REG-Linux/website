@@ -11,9 +11,10 @@ Introduced in 2004 by Sony, the PlayStation Portable was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Sony
-- Release year: 2004
-- Hardware type: portable
+- CPU: MIPS R4000-based PSP CPU (Allegrex) at 333 MHz with vector floating-point capabilities.
+- Memory: 32 MB (PSP-1000) or 64 MB (PSP-2000+) RAM plus 4 MB VRAM for the GPU.
+- Display: 4.3-inch 16:9 TFT LCD at 480×272 pixels with 16.77 million colors.
+- Sound: Stereo output via two DACs with digital signal processing and headphone jack.
 
 ## Supported ROM extensions
 

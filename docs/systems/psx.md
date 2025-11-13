@@ -11,9 +11,10 @@ Introduced in 1994 by Sony, the PlayStation was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Sony
-- Release year: 1994
-- Hardware type: console
+- CPU: MIPS R3000A-compatible 32-bit RISC processor running at 33.8688 MHz.
+- Memory: 2 MB main RAM, 1 MB VRAM for graphics, 512 KB cache, and 512 KB sound RAM.
+- Display: GPU capable of 640×480 (NTSC) resolution with 16.7 million color palette and polygon throughput.
+- Sound: SPU with 24 channels of ADPCM PCM audio supporting MIDI-style sequencing.
 
 ## Supported ROM extensions
 

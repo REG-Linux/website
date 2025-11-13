@@ -11,10 +11,10 @@ Introduced in 1977 by Commodore, the Commodore PET was a computer system. Its pl
 
 ## Technical specifications
 
-- Manufacturer: Commodore
-- Release year: 1977
-- Hardware type: computer
-- Platform tag: pet
+- CPU: MOS Technology 6502 clocked at 1 MHz.
+- Memory: Models shipped with 4 KB, 8 KB, 16 KB, or 32 KB of RAM plus built-in ROM for BASIC.
+- Display: Built-in monochrome screen at 40×25 text or 80×25 (with optional high-resolution kit) controlled via a MOS 6545 CRT controller.
+- Sound: Single-bit beeper driven by the VIA 6522 chip for simple tones.
 
 ## Supported ROM extensions
 

@@ -11,9 +11,10 @@ Introduced in 2006 by Sony, the PlayStation 3 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Sony
-- Release year: 2006
-- Hardware type: console
+- CPU: Cell Broadband Engine running at 3.2 GHz with one PowerPC PPE and eight Synergistic Processing Elements (seven usable).
+- Memory: 256 MB XDR main RAM and 256 MB GDDR3 video RAM shared with the RSX GPU.
+- Display: NVIDIA RSX “Reality Synthesizer” GPU clocked at 550 MHz producing 1080p-ready raster graphics.
+- Sound: SPU-like digital audio processor with 256 simultaneous audio channels and AAC/MP3 decode acceleration.
 
 ## Supported ROM extensions
 

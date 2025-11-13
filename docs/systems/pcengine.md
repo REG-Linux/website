@@ -11,9 +11,10 @@ Introduced in 1987 by NEC, the PC Engine was a console system.
 
 ## Technical specifications
 
-- Manufacturer: NEC
-- Release year: 1987
-- Hardware type: console
+- CPU: Hudson Soft HuC6280 8-bit processor running at 7.16 MHz (or 1.79 MHz in low-power mode) with memory mapper.
+- Memory: 8 KB work RAM plus 64 KB video RAM for sprite/tile data.
+- Display: 256×239 resolution with 482 colors per scanline out of a 512-color palette, hardware sprites and scrolling layers.
+- Sound: 6-channel wavetable (PSG) output with DAC for PCM sampling.
 
 ## Supported ROM extensions
 

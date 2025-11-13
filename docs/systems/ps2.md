@@ -11,9 +11,10 @@ Introduced in 2000 by Sony, the PlayStation 2 was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Sony
-- Release year: 2000
-- Hardware type: console
+- CPU: Sony/Toshiba/IBM Emotion Engine RISC processor at 294 MHz with integrated FPUs.
+- Memory: 32 MB of RDRAM working memory plus 4 MB of embedded DRAM in the Graphics Synthesizer.
+- Display: Graphics Synthesizer GPU clocked at 147 MHz supporting 640×480 up to 1280×1024 with hardware transform-and-lighting.
+- Sound: SPU2 chip offering 48 channels of PCM with Dolby Digital/DTS passthrough.
 
 ## Supported ROM extensions
 
