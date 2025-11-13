@@ -11,10 +11,10 @@ Introduced in 1983 by Microsoft, the MSX1 was a computer system. Its platform ta
 
 ## Technical specifications
 
-- Manufacturer: Microsoft
-- Release year: 1983
-- Hardware type: computer
-- Platform tag: msx
+- CPU: Zilog Z80A running at 3.58 MHz (or compatible clones) with 8-bit bus.
+- Memory: Base 64 KB RAM (banks of 16 KB) expandable via mapper cartridges.
+- Display: Texas Instruments TMS9918 video chip delivering 256×192 resolution, 16 colors out of 32, and 32 sprites.
+- Sound: General Instrument AY-3-8910 PSG providing three square-wave channels and one noise channel.
 
 ## Supported ROM extensions
 

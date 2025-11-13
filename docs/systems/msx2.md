@@ -11,10 +11,10 @@ Introduced in 1985 by Microsoft, the MSX2 was a computer system. Its platform ta
 
 ## Technical specifications
 
-- Manufacturer: Microsoft
-- Release year: 1985
-- Hardware type: computer
-- Platform tag: msx2
+- CPU: Zilog Z80-compatible (typically 3.58 MHz) with the same 8-bit bus as MSX1.
+- Memory: 64–512 KB of main RAM in firmware plus mapper expansions up to 4 MB.
+- Display: Yamaha V9938 VDP supporting 256×212/512×212 resolutions, 256 colors per palette and smooth hardware scrolling.
+- Sound: AY-3-8910 PSG reused from MSX1 families.
 
 ## Supported ROM extensions
 

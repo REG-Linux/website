@@ -11,10 +11,10 @@ Introduced in 1998 by Sega, the Naomi was a arcade system. Its platform tag is `
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1998
-- Hardware type: arcade
-- Platform tag: naomi, arcade
+- CPU: Hitachi SH-4 32-bit RISC processor running at 200 MHz.
+- Memory: 16 MB main RAM, 8 MB video RAM, and 2 MB sound RAM matching Dreamcast-style architecture.
+- Display: PowerVR2 GPU pushing 640×480 textured polygons with perspective correction and per-pixel transparency.
+- Sound: Yamaha AICA DSP delivering 64-channel ADPCM audio plus MIDI-style synthesis, identical to Dreamcast audio.
 
 ## Supported ROM extensions
 

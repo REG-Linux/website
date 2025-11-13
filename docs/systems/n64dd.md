@@ -11,9 +11,10 @@ Introduced in 1999 by Nintendo, the Nintendo 64 Disk Drive was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 1999
-- Hardware type: console
+- CPU: Same NEC VR4300 93.75 MHz core as the Nintendo 64 with the addition of magnetic disk interfacing logic.
+- Memory: Shares the N64's 4 MB RAM plus a 36 MB ROM module and 64 MB of magnetic disk storage; Randnet modem adds 28.8 kbps connectivity.
+- Display: Identical SGI RCP pipeline as the base console, with additional DMA buffers for streaming full-motion video from disk.
+- Sound: Uses the standard N64 audio subsystem with added DMA paths for CD-quality disk audio playback.
 
 ## Supported ROM extensions
 

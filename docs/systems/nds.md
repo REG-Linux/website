@@ -11,9 +11,10 @@ Introduced in 2004 by Nintendo, the Nintendo DS was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: Nintendo
-- Release year: 2004
-- Hardware type: portable
+- CPU: 67 MHz ARM946E-S as the main processor with a secondary 33 MHz ARM7TDMI for legacy Game Boy Advance compatibility.
+- Memory: 4 MB onboard RAM and 656 KB of WRAM for the video engines.
+- Display: Dual 3-inch TFT LCDs at 256×192 pixels (upper display with touch input, lower for stylus) supporting 262k colors.
+- Sound: Stereo DAC with support for 16-bit PCM samples, MIDI playback, and DS-specific hardware audio mixing.
 
 ## Supported ROM extensions
 

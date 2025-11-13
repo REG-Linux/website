@@ -11,10 +11,10 @@ Introduced in 1983 by Tsukuda Original, the Othello Multivision was a console sy
 
 ## Technical specifications
 
-- Manufacturer: Tsukuda Original
-- Release year: 1983
-- Hardware type: console
-- Platform tag: sg-1000
+- CPU: Zilog Z80A clocked at 3.58 MHz, the de facto standard of early 8-bit consoles.
+- Memory: 2 KB of system RAM with 16 KB of VRAM dedicated to tile and sprite data.
+- Display: TMS9918A-style video chip rendering 256×192 output with 16 colors and hardware sprites.
+- Sound: AY-3-8912 PSG offering three square-wave channels plus programmable noise.
 
 ## Supported ROM extensions
 

@@ -11,9 +11,10 @@ Introduced in 1999 by SNK, the Neo-Geo Pocket Color was a portable system.
 
 ## Technical specifications
 
-- Manufacturer: SNK
-- Release year: 1999
-- Hardware type: portable
+- CPU: Toshiba TLCS-900H main processor at 6.144 MHz with a Zilog Z80 sound co-processor at 3.072 MHz.
+- Memory: 12 KB RAM for the main chip, 4 KB for the audio chip, and 64 KB ROM for system code.
+- Display: Same 2.7-inch LCD as the Neo Geo Pocket with 160×152 resolution and 146 colors on-screen.
+- Sound: T6W28 (enhanced SN76489) PSG with 6-bit DAC outputs for stereo audio.
 
 ## Supported ROM extensions
 

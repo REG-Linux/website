@@ -11,10 +11,10 @@ Introduced in 1996 by Sega, the Model 3 was a arcade system. Its platform tag is
 
 ## Technical specifications
 
-- Manufacturer: Sega
-- Release year: 1996
-- Hardware type: arcade
-- Platform tag: model3, arcade
+- CPU: Multi-processor Sega Model 3 setup using a PowerPC 603/604 main CPU with Hitachi SH-2 helper chips (Step 1) and a Hitachi SH-4 RISC core (Step 2) for 3D geometry.
+- Memory: Custom board carries 32 MB of main DRAM with dedicated buffers for texture and polygon storage plus extra RAM for the geometry pipeline.
+- Display: Sega CG Board capable of ~180,000 texture-mapped polygons per second with lighting and perspective correction, made for 640×480+ raster output.
+- Sound: CD-quality PCM audio with multiple simultaneous streams and hardware mixing plus Yamaha/QSound-style spatial effects.
 
 ## Supported ROM extensions
 

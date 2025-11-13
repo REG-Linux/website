@@ -11,10 +11,10 @@ Introduced in 2000 by Sony / Namco, the Namco System 246/256 was a arcade system
 
 ## Technical specifications
 
-- Manufacturer: Sony / Namco
-- Release year: 2000
-- Hardware type: arcade
-- Platform tag: namco, sega, arcade
+- CPU: PlayStation 2-derived Emotion Engine (MIPS III) main processor clocked around 294 MHz with a separate I/O controller.
+- Memory: 32 MB of RDRAM plus 4 MB embedded frame buffer and texture memory.
+- Display: Graphics Synthesizer GPU (147 MHz) with 16.7 million color output, capable of 2D/3D GPU features at 640×480.
+- Sound: SPU2 multi-channel audio (48 channels) with ADPCM decoding and PCM playback synchronized to the GPU.
 
 ## Supported ROM extensions
 

@@ -11,9 +11,10 @@ Introduced in 1984 by Apple, the Macintosh was a computer system.
 
 ## Technical specifications
 
-- Manufacturer: Apple
-- Release year: 1984
-- Hardware type: computer
+- CPU: Motorola 68000 running at 8 MHz with 16-bit data bus and 32-bit registers.
+- Memory: 128 KB of RAM onboard (expandable to 512 KB) plus 64 KB of video RAM for the built-in frame buffer.
+- Display: 9-inch monochrome 512×342 bit-mapped screen at 72 dpi with 1-bit grey levels.
+- Sound: Simple 8-bit mono speaker driven directly by the VIA/adder, no dedicated DAC.
 
 ## Supported ROM extensions
 
