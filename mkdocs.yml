@@ -41,7 +41,6 @@ nav:
 plugins:
   - search
   - git-revision-date
-  - tags
 
 markdown_extensions:
   - admonition
