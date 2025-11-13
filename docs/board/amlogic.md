@@ -23,14 +23,12 @@ Supported devices:
 * Minix Neo U1 (untested)
 * NanoPi K2
 * HardKernel ODROID C2
-* FunKey R1 (untested)
 * Generic TV-box image for boxes based on S905 / S905X that bundles a dozen S905 DTBs.
 
 For TV-Box image, you will probably need to adjust your DTB to get your device working properly.
 
 Supported devices:
 
-* `fun-r1`
 * `khadas-vim1`
 * `lepotato`
 * `lepotato-v2`
