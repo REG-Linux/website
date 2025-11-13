@@ -1,0 +1,25 @@
+# Nintendo Entertainment System
+
+## Metadata
+
+- Manufacturer: Nintendo
+- Release Year: 1983
+- Hardware: console
+- Group: nes
+
+## Supported ROM extensions
+
+nes, unif, unf, zip, 7z
+
+## Emulators
+
+- **fceumm** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FCEUMM
+- **mesen** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MESEN
+- **nestopia** (libretro) – Requires BR2_PACKAGE_LIBRETRO_NESTOPIA
+
+## Notes
+
+For more info: https://wiki.batocera.org/systems:nes
+
+---
+Source: `nes.yml`

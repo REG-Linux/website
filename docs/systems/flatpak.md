@@ -1,0 +1,30 @@
+# Applications
+
+## Metadata
+
+- Platform tag: pc
+- Group: ports
+
+## Supported ROM extensions
+
+flatpak
+
+## Emulators
+
+- **flatpak** (flatpak) – Requires BR2_PACKAGE_FLATPAK
+
+## Notes
+
+Play games (and programs) from https://flathub.org.
+Programs must be installed from command line.
+Example:
+Install Flathub Repo : flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+Install app from url : flatpak install https://dl.flathub.org/repo/appstream/org.tuxfamily.XMoto.flatpakref
+Search app from Repo : flatpak search xmoto
+Install app from Repo : flatpak install xmoto
+List your apps : flatpak list
+Remove intalled app : flatpak remove xmoto
+then, run batocera-flatpak-update to update the roms directory according to your installed applications.
+
+---
+Source: `flatpak.yml`
