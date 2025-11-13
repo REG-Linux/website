@@ -11,11 +11,10 @@ Introduced in 1984 by Commodore, the Commodore Plus4 was a computer system. It i
 
 ## Technical specifications
 
-- Manufacturer: Commodore
-- Release year: 1984
-- Hardware type: computer
-- Platform tag: cplus4
-- EmulationStation group: c64
+- CPU: MOS Technology 7501/8501 (6502-derived) running at 1.77 MHz, driving integrated BASIC and productivity software.
+- Memory: 64 KB RAM with an additional 96 KB ROM space for built-in software including Word Writer and Spreadsheet.
+- Display: VIC-II compatible graphics with 320×200 resolution, 256 colors from a 16-bit palette, and hardware sprites.
+- Sound: TED chip giving three square-wave channels plus a digital-to-analog converter for simple sampled audio.
 
 ## Supported ROM extensions
 

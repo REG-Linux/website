@@ -6,10 +6,10 @@ Introduced in 2019 by The 8-Bit Guy, the Commander X16 was a computer system. It
 
 ## Technical specifications
 
-- Manufacturer: The 8-Bit Guy
-- Release year: 2019
-- Hardware type: computer
-- Platform tag: commanderx16
+- CPU: WDC 65C816 running at 8 MHz with a 24-bit address bus and compatibility with 6502 assembly.
+- Memory: 512 KB of main RAM plus a dedicated 512 KB of VERA video RAM, expandable via cartridge headers.
+- Display: VERA graphics co-processor supporting 256×240 resolution (text/sprite layers) with 256 colors per tile and hardware sprite blending.
+- Sound: VERA includes four stereo wave channels with DMA-driven sample playback and software mixing for PSG-style effects.
 
 ## Supported ROM extensions
 

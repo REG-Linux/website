@@ -11,9 +11,10 @@ Introduced in 1982 by VTech, the CreatiVision was a console system.
 
 ## Technical specifications
 
-- Manufacturer: VTech
-- Release year: 1982
-- Hardware type: console
+- CPU: MOS Technology 6502 running at 1.79 MHz.
+- Memory: 1 KB RAM with 16 KB ROM on board plus cartridge-based expansions.
+- Display: TMS9918A VDP providing 256×192 resolution, 16 colors, and hardware sprites similar to MSX/ColecoVision.
+- Sound: General Instrument AY-3-8910 PSG offering three square-wave channels and noise.
 
 ## Supported ROM extensions
 

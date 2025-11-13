@@ -11,9 +11,10 @@ Introduced in 1982 by Coleco, the ColecoVision was a console system.
 
 ## Technical specifications
 
-- Manufacturer: Coleco
-- Release year: 1982
-- Hardware type: console
+- CPU: Zilog Z80A running at 3.58 MHz.
+- Memory: 8 KB RAM and 16 KB video RAM handled by the Texas Instruments TMS9918A VDP.
+- Display: 256×192 resolution with 16 colors and hardware sprites provided by the TMS9918A.
+- Sound: General Instrument AY-3-8910 PSG delivering three channels of square waves and noise.
 
 ## Supported ROM extensions
 
