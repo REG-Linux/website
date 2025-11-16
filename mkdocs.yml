@@ -35,6 +35,11 @@ nav:
 - Board:
   - Allwinner Boards: board/allwinner.md
   - Amlogic Boards: board/amlogic.md
+  - Broadcom Boards: board/broadcom.md
+  - Qualcomm Boards: board/qualcomm.md
+  - Mediatek Boards: board/mediatek.md
+  - Samsung Boards: board/samsung.md
+  - Rockchip Boards: board/rockchip.md
 - Systems:
   - Overview: systems/index.md
   - Emulated Systems:
