@@ -1,0 +1,113 @@
+allwinner:
+  title: "Allwinner SoCs"
+  wiki_url: "https://wiki.reglinux.org/board/allwinner/"
+  summary: "REG Linux ships board support for Allwinner H2+/H3, H5, H6, H616/H618, and the H700 handheld tree; keep this reference page synced so contributors can find every directory."
+  soCs:
+    - "H2+"
+    - "H3"
+    - "H5"
+    - "H6"
+    - "H616"
+    - "H618"
+    - "H700"
+  highlights:
+    - "Each SoC section lists the supported devices, from Banana Pi M2 Zero, Capcom Home Arcade, and Orange Pi One/PC/Plus boards to the Zero, 3, and M4 family."
+    - "H700 handhelds (Anbernic RG35xx, RG40xx, RG34xx, RG28xx, RGCube) currently require you to flash and then manually edit the DTB because device detection is not yet available."
+    - "Keep this wiki page in sync with the repo so contributors can quickly locate the proper Allwinner board tree."
+
+amlogic:
+  title: "Amlogic SoCs"
+  wiki_url: "https://wiki.reglinux.org/board/amlogic/"
+  summary: "The wiki tracks Amlogic S812 through the latest S9 Gen4 / S905X3 families, covering TV boxes, NanoPi, Khadas, Radxa, Beelink, and HardKernel boards."
+  soCs:
+    - "S812"
+    - "S905"
+    - "S905X"
+    - "S905D"
+    - "S905Y2"
+    - "S905Y4"
+    - "S905 Gen2"
+    - "S905 Gen3"
+    - "SM1"
+    - "S922X"
+    - "S922X-H"
+    - "A311D"
+    - "A311D2"
+    - "S905D3"
+    - "S912"
+    - "S905X3"
+  highlights:
+    - "S812 and the S905/S905X/S905D lines list Meson/Meson8 clones plus Khadas NanoPi, Libretech, and HardKernel TV boxes that usually require you to adjust DTBs or boot scripts for generic builds."
+    - "The S905 Gen2 (GXM/G12A) and Gen3 (SM1 / S905X3) sections extend support to Khadas VIM2, Radxa Zero, Banana Pi M5, Khadas VIM3L, HardKernel ODROID C4, and other devices tied to vendor 5.15 kernels."
+    - "S922X/A311D and A311D2 families cover Khadas VIM3/VIM4, Banana Pi M2S, Beelink GT-King/GT-King Pro, Radxa Zero 2, and the ODROID N2 series, while the S9 Gen4 notes Khadas VIM1S and its bespoke boot scripts."
+
+broadcom:
+  title: "Broadcom (Raspberry Pi) SoCs"
+  wiki_url: "https://wiki.reglinux.org/board/broadcom/"
+  summary: "Each Broadcom board directory (BCM2711/BCM2712/BCM2837/BCM2836/BCM2835) stages kernels, DTBs, firmware, overlays, and patches before genimage builds the FAT/Share layout for Pi and Compute Module hardware."
+  soCs:
+    - "BCM2711"
+    - "BCM2712"
+    - "BCM2837"
+    - "BCM2836"
+    - "BCM2835"
+  highlights:
+    - "Board scripts copy Image, initrd, DTBs, and firmware while rewiring `boot/config.txt` + `cmdline.txt` to enable DRM/KMS helpers, fastboot, `noswap`, and other runtime defaults."
+    - "`genimage.cfg` produces a 2 GiB REGLINUX FAT32 boot volume plus a 256 MiB userdata/SHARE slice for BCM2711/BCM2712 builds, while the older SoCs keep their legacy layouts."
+    - "Overlays/patches load modules such as `snd_seq`, `i2c_dev`, and other audio helpers so GroovyMAME, RetroArch, and libretro cores stay compatible with the VC4/VC6 GPUs."
+
+mediatek:
+  title: "Mediatek MT8395"
+  wiki_url: "https://wiki.reglinux.org/board/mediatek/"
+  summary: "Radxa NIO 12L (Genio 1200/MT8395) board trees supply overlays, kernel configs, patches, and firmware helpers tailored to the Mediatek chipset."
+  soCs:
+    - "MT8395"
+    - "Genio 1200"
+  highlights:
+    - "The overlay copies MT7961/MT7668/MT8183/MT8188/MT8195 firmware under `/lib/firmware` so Wi-Fi, Bluetooth, and audio work correctly."
+    - "Kernel configs and patches capture the Linux 6.15.0-rc2 options plus HDMI/ALSA wiring required by the MT8395 Genio 1200 board."
+    - "`genimage.cfg` stages the kernel, initrd, modules, firmware, rescue blobs, and bootloader artifacts into a GPT image with a 2 GiB REGLINUX boot partition plus a 256 MiB SHARE userdata slice."
+
+qualcomm:
+  title: "Qualcomm Snapdragon SoCs"
+  wiki_url: "https://wiki.reglinux.org/board/qualcomm/"
+  summary: "Snapdragon board trees (SM8250, SM8550, and others) bundle dracut configs, firmware, overlays, and LinuxLoader/EFI artifacts for handhelds like the Retroid Pocket and AYN Odin families."
+  soCs:
+    - "SM8250"
+    - "SM8550"
+    - "QP"
+    - "sd845"
+    - "sm6115"
+  highlights:
+    - "Dracut, firmware, and overlays stage Qualcomm/BRCM firmware plus fan, Bluetooth, and deterministic MAC helpers before the build copies those resources to LinuxLoader."
+    - "Each board scripts stage Image/initrd/DTBs/modules/rescue blobs into `REGLINUX_BINARIES_DIR/boot/boot` while `genimage.cfg` produces a 2 GiB FAT32 boot and 512 MiB userdata layout."
+    - "LinuxLoader configs contain flags such as `fbcon=rotate:3`, `DisableDisplayHW`, and device-specific DTBs; the AYANEO Pocket S entry warns that the stock Android bootloader is still missing."
+
+rockchip:
+  title: "Rockchip SoCs"
+  wiki_url: "https://wiki.reglinux.org/board/rockchip/"
+  summary: "Rockchip support spans RK3128 through RK3588 boards, where each SoC directory brings `create-boot-script`, `genimage`, overlays, DTBs, and patch fragments plus shared wiring."
+  soCs:
+    - "RK3128"
+    - "RK3288"
+    - "RK3326"
+    - "RK3328"
+    - "RK3399"
+    - "RK3566"
+    - "RK3568"
+    - "RK3588"
+  highlights:
+    - "REG Linux keeps per-SoC trees (RK3128, RK3288, RK3326, RK3328, RK3399, RK3568, RK3588) with targeted kernel versions, overlays, and DTBs that stage scripts and update blobs before `genimage` packages the image."
+    - "Highlights cover Linux 6.10 for RK3128, 6.6 for RK3288, 6.12 for RK3326, and 6.1+ for RK3588, along with overlay helpers for temperature, ALSA cards, and Moonlight/GPU patches."
+    - "Helpful reminders remind maintainers to run each `create-boot-script.sh`, sync `linux-defconfig`/`linux_patches`, refresh overlays, and document new board layouts."
+
+samsung:
+  title: "Samsung Exynos 5422"
+  wiki_url: "https://wiki.reglinux.org/board/samsung/"
+  summary: "The Samsung board tree powers the ODROID XU3/XU4 (Exynos 5422) with kernel configs, patches, overlays, and bootloader wiring."
+  soCs:
+    - "Exynos 5422"
+  highlights:
+    - "Kernel configs (linux-exynos5422-defconfig) and patches tune LZ4 compression, REG Linux branding, preemption, and DRM/HID quirks for the ODROID platform."
+    - "Board scripts stage zImage, DTBs, initrd, modules, firmware, rescue data, and U-Boot blobs before `genimage` creates FAT32 boot + userdata partitions with the proper `extlinux.conf` command line."
+    - "Overlays install `asound.conf`, fan scripts, and patch sets for Sugarbox/SwitchRes; the integration tips remind maintainers to build U-Boot, stage artifacts, and document overlay/cmdline changes."

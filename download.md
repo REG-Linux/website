@@ -7,21 +7,7 @@ description: Choose your REG Linux image by vendor or architecture across the su
 ---
 {% assign total_devices = site.devices | size %}
 {% assign brands = site.data.brand_order %}
-<header class="site-header">
-  <div class="logo">
-    <img src="{{ '/assets/images/reg_linux_logo.png' | relative_url }}" alt="REG Linux" width="120" height="42" loading="lazy" />
-  </div>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="{{ '/' | relative_url }}#features">Features</a>
-    <a href="{{ '/' | relative_url }}#stack">Stack</a>
-    <a href="{{ '/' | relative_url }}#hardware">Hardware</a>
-    <a href="{{ '/' | relative_url }}#get-started">Get Started</a>
-    <a href="{{ '/' | relative_url }}#community">Community</a>
-    <a href="{{ '/bundled-games/' | relative_url }}">Bundled games</a>
-    <a href="{{ '/download/' | relative_url }}" aria-current="page">Download</a>
-  </nav>
-  <a class="btn ghost" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">GitHub</a>
-</header>
+{% include site-header.html nav_current="download" %}
 
 <main>
   <section class="hero download-hero">

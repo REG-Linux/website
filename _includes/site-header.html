@@ -1,0 +1,47 @@
+{% assign nav_current = include.nav_current %}
+{% assign ghost_label = include.ghost_label | default: "Download" %}
+{% assign ghost_href = include.ghost_href | default: "/download/" %}
+{% if ghost_href contains "http" %}
+  {% assign ghost_target = ghost_href %}
+{% else %}
+  {% assign ghost_target = ghost_href | relative_url %}
+{% endif %}
+  <header class="site-header">
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}">
+        <img
+          src="{{ '/assets/images/reg_linux_logo.png' | relative_url }}"
+          alt="REG Linux"
+          width="120"
+          height="42"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  {% assign dropdown_active = nav_current == "emulators" or nav_current == "engines" or nav_current == "ports" %}
+  {% assign home_active = nav_current == "home" %}
+  <nav class="site-nav" aria-label="Primary">
+    <div class="nav-dropdown home-dropdown {% if home_active %}is-active{% endif %}" aria-haspopup="true">
+      <a class="dropdown-label" href="{{ '/' | relative_url }}">Home</a>
+      <div class="dropdown-menu">
+        <a href="{{ '/' | relative_url }}#features">Features</a>
+        <a href="{{ '/' | relative_url }}#stack">Stack</a>
+        <a href="{{ '/' | relative_url }}#docs">Docs</a>
+        <a href="{{ '/' | relative_url }}#get-started">Get Started</a>
+      </div>
+    </div>
+    <div class="nav-dropdown {% if dropdown_active %}is-active{% endif %}" aria-haspopup="true">
+      <span class="dropdown-label">Play everything</span>
+      <div class="dropdown-menu">
+        <a href="{{ '/emulators/' | relative_url }}" {% if nav_current == "emulators" %}aria-current="page"{% endif %}>Emulators</a>
+        <a href="{{ '/engines/' | relative_url }}" {% if nav_current == "engines" %}aria-current="page"{% endif %}>Engines</a>
+        <a href="{{ '/ports/' | relative_url }}" {% if nav_current == "ports" %}aria-current="page"{% endif %}>Ports</a>
+      </div>
+    </div>
+    <a href="{{ '/hardware/' | relative_url }}" {% if nav_current == "hardware" %}aria-current="page"{% endif %}>Hardware</a>
+    <a href="{{ '/community/' | relative_url }}" {% if nav_current == "community" %}aria-current="page"{% endif %}>Community</a>
+    <a href="{{ '/bundled-games/' | relative_url }}" {% if nav_current == "bundled-games" %}aria-current="page"{% endif %}>Bundled games</a>
+    <a href="{{ '/download/' | relative_url }}" {% if nav_current == "download" %}aria-current="page"{% endif %}>Download</a>
+  </nav>
+  <a class="btn ghost" href="{{ ghost_target }}">{{ ghost_label }}</a>
+</header>

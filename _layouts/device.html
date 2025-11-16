@@ -1,21 +1,7 @@
 ---
 layout: default
 ---
-<header class="site-header">
-  <div class="logo">
-    <img src="{{ '/assets/images/reg_linux_logo.png' | relative_url }}" alt="REG Linux" width="120" height="42" loading="lazy" />
-  </div>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="{{ '/' | relative_url }}#features">Features</a>
-    <a href="{{ '/' | relative_url }}#stack">Stack</a>
-    <a href="{{ '/' | relative_url }}#hardware">Hardware</a>
-    <a href="{{ '/' | relative_url }}#get-started">Get Started</a>
-    <a href="{{ '/' | relative_url }}#community">Community</a>
-    <a href="{{ '/bundled-games/' | relative_url }}">Bundled games</a>
-    <a href="{{ '/download/' | relative_url }}" aria-current="page">Download</a>
-  </nav>
-  <a class="btn ghost" href="{{ '/download/' | relative_url }}">Back to downloads</a>
-</header>
+{% include site-header.html nav_current="download" ghost_label="Back to downloads" %}
 
 <main>
   <section class="hero download-hero device-hero">
@@ -83,14 +69,57 @@ layout: default
         <strong>Troubleshoot with rescue tools.</strong> REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
       </li>
     </ol>
-    <div class="cta-panel">
-      <div>
-        <h3>Need a refresher?</h3>
-        <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ page.board_url }}" target="_blank" rel="noreferrer">{{ page.title }} board page</a>.</p>
-      </div>
-      <a class="btn primary" href="{{ '/download/' | relative_url }}">Back to downloads</a>
-    </div>
   </section>
+
+  {% assign soc_identifier = page.soc | first | default: '' %}
+  {% assign soc_identifier = soc_identifier | downcase %}
+  {% assign board_info = nil %}
+  {% for board_entry in site.data.board_families %}
+    {% if board_info == nil %}
+      {% assign family = board_entry[1] %}
+      {% for soc_key in family.soCs %}
+        {% assign normalized_key = soc_key | downcase %}
+        {% if soc_identifier contains normalized_key %}
+          {% assign board_info = family %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% if board_info %}
+    <section class="board-details">
+      <div class="section-heading">
+        <p class="eyebrow">Board family guidance</p>
+        <h2>{{ board_info.title }}</h2>
+        <p>{{ board_info.summary }}</p>
+        <p class="small">SoCs tracked: {{ board_info.soCs | join: ', ' }}</p>
+      </div>
+      <div class="board-grid">
+        <article class="card">
+          <h3>What to keep in mind</h3>
+          <ul>
+            {% for highlight in board_info.highlights %}
+              <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Learn more</h3>
+          <p>Drill into the wiki board entry for scripts, overlays, and developer reminders.</p>
+          <a class="btn secondary" href="{{ board_info.wiki_url }}" target="_blank" rel="noreferrer">
+            View wiki guide
+          </a>
+        </article>
+      </div>
+    </section>
+  {% endif %}
+
+  <div class="cta-panel">
+    <div>
+      <h3>Need a refresher?</h3>
+      <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ page.board_url }}" target="_blank" rel="noreferrer">{{ page.title }} board page</a>.</p>
+    </div>
+    <a class="btn primary" href="{{ '/download/' | relative_url }}">Back to downloads</a>
+  </div>
 </main>
 
 <footer class="site-footer">

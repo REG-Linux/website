@@ -1,16 +1,9 @@
 - name: "Amoeba Jump"
   platform: "Atari2600"
-  description: |
-    The aim of the game is to guide the amoeba (a single-celled creature) up a never-ending
-    series of platforms without falling. The higher you get, the higher your score will be.
-    There are three different platform types: Yellow - these are the basic, stable platforms
-    White - these are unstable platforms that disappear after you bounce off them once Blue -
-    these platforms are harder to hit because they move back and forth horizontally Jumping on
-    a red or green spring-button will give you a short boost and some bonus points, but best
-    of all: it makes the little amoeba rejoice! When your score gets beyond 1000 points,
-    little oval-shaped bacteria start appearing on the platforms, which can be eaten by the
-    amoeba. Each bacteria holds one of the six letters from the word A-M-O-E-B-A. Collect all
-    six and the single next time you jump on a spring, you will get a super long boost.
+  description: >
+    Leap the amoeba up endless platforms, hopping on color-coded tiles and spring buttons to
+    climb for higher scores. Once you pass 1,000 points, collect the letters A-M-O-E-B-A that
+    appear on the platforms to trigger a super boost.
   developer: "Dionoid"
   publisher: "https://atariage.com/forums/topic/280211-amoeba-jump/"
   players: "1"
@@ -22,10 +15,7 @@
 - name: "Relentless 64"
   platform: "C64"
   description: |
-    Similar to the original, Relentless 64 is a high speed, non-stop score-chasing shmup with
-    some neat score chaining mechanics. The enemy waves come at you thick and fast, and taking
-    out an entire wave rewards you with an increasing score multipler, resetting back to 1x
-    should you miss a ship or crash.
+    A high-speed C64 shmup whose wave-clearing score chains keep the multiplier climbing until a hit resets it.
   developer: "RGCD.DEV"
   publisher: "https://rgcddev.itch.io/relentless-64"
   players: "1"
@@ -37,14 +27,8 @@
 - name: "Showdown"
   platform: "C64"
   description: |
-    A game is inspired by a host of older titles with the same theme, going all the way back
-    to Gun Fight from 1975. You play a cowboy out to win a fierce gun duel. The first one to
-    outwit and knock down the opponent 5 times is the winner of the duel.  Instructions: Each
-    gun can carry 5 bullets. You reload by manually replacing the bullets with a click of the
-    joystick button, or you can pick up bullet packs from the ground. But beware! If your
-    opponent catches you out of the safety of the cacti, then you might get knocked down!
-    Explosive crates appear around the play area. They explode when shot, so better stay away
-    from them if you value you life, cowboy!
+    Head into a retro-styled duel inspired by classics like Gun Fight, trading shots to reach
+    five knocks before your opponent while dodging crates and reloading between volleys.
   developer: "Badgerpunch Games; Henning Ludvigsen"
   publisher: "https://www.badgerpunch.com/title/showdown/"
   players: "1-2"
@@ -56,10 +40,7 @@
 - name: "Anguna - Warriors of Virtue"
   platform: "GBA"
   description: |
-    Anguna is a short top-down fantasy action adventure game, reminiscent of the original
-    Legend of Zelda. Featuring art by Chris Hildenbrand, it has 5 dungeons to explore.
-    Controls: A - Attack B - Secondary item X/Y - Switch secondary item (if you have more then
-    one) Start - Pause, View subscreen Select - Save menu L/R - Switch between subscreen pages
+    Zelda-inspired top-down fantasy adventure by Chris Hildenbrand; explore five dungeons while juggling attack, secondary items, and menu controls.
   developer: "Bite The Chili"
   publisher: "http://www.tolberts.net/anguna/"
   players: "1"
@@ -70,13 +51,9 @@
   video: "./videos/Anguna-video.mp4"
 - name: "Petris"
   platform: "GBC"
-  description: |
-    Build your favorite pets in all shapes and sizes, keep ahead of dropping pieces and make
-    it to the next level.  There are several game play types to choose from:  - Long Pet -
-    Complete progressively longer pets to reach the next level - Tails Cleanup - Clear all
-    tails off the screen per level - Crunch-up - Keep ahead as the screen crunches upward and
-    new pets appear - Level Up - Classic level-up style -  Marathon - For the long distance
-    player  Difficulty levels for all players.
+  description: >
+    Stack cute pet-themed blocks, chase the next level, and tackle modes like Tails Cleanup,
+    Crunch-up, Level Up, Marathon, and Long Pet for varying speed and difficulty.
   developer: "bbbbbr"
   publisher: "https://bbbbbr.itch.io/petris"
   players: "1-2"
@@ -151,28 +128,11 @@
   release_year: "2011"
   image: "/assets/images/games/alter-ego-nes.png"
   video: "./videos/Alter-Ego-video.mp4"
-- name: "OD-Commander"
-  platform: "Odcommander"
-  description: |
-    A two-pane file manager, similar to Norton/Midnight commander, useful to manage all the
-    /userdata files on your system.
-  developer: "glebm"
-  publisher: "https://github.com/od-contrib/commander"
-  players: "1"
-  genre: "File manager"
-  language: "en"
-  release_year: "2020"
-  image: "/assets/images/games/od-commander-odcommander.png"
-  video: ""
 - name: "Dinoforce"
   platform: "Pcengine"
-  description: |
-    Take control of the DINO-JAEGER and battle an army of alien invaders. Your ship is
-    equipped with the DELTA IMPULSE NUCLEAR OVERDRIVE, an energy weapon that's neurally linked
-    to the ship's pilot and will transform into countless weapon variations in a blink of an
-    eye. Enjoy a tactical horizontal shoot-em up with lots of secrets to discover.   - Number
-    of Players: 1 - Number of Stages: 7 (+1)  - Special Features: Hidden Bosses, Hidden Bonus
-    Stage, 25 Extra Weapons and Special Items - Ages: 10 years and up
+  description: >
+    Pilot the DINO-JAEGER across seven main stages (plus a bonus) with a mutable arsenal,
+    hunting alien waves, hidden bosses, bonus areas, and 25 weapons to discover.
   developer: "PCE Works"
   publisher: "https://dinoforce.pceworks.net/"
   players: "1"
@@ -184,10 +144,7 @@
 - name: "SDLPoP"
   platform: "Sdlpop"
   description: |
-    An open-source port of Prince of Persia, based on the disassembly of the DOS version,
-    extended with new features, including save states and modding. The player character has an
-    infinite amount of lives, but has to restart at the beginning of a level each time he
-    dies, and must complete the game within an hour.
+    Open-source Prince of Persia port rebuilt from the DOS disassembly with save states, modding, unlimited lives, and per-level retries.
   developer: "NagyD"
   publisher: "https://github.com/NagyD/SDLPoP"
   players: "1"
@@ -199,11 +156,7 @@
 - name: "Dottie Flowers"
   platform: "SNES"
   description: |
-    A charming platformer game created as a tribute to the fantastic SNES community and an
-    homage to the German 16-bit video game developers of the early nineties. In this game,
-    players step into the shoes - or rather, fly on the broom - of a witch named Dottie
-    Flowers. Dottie has the critical task of saving her city using her magical powers and
-    trusty broom.
+    A witchy praise to SNES-era creators, Dottie Flowers flies on her broom to protect the city with magic and platforming flair.
   developer: "Goldlocke"
   publisher: "https://goldlocke.itch.io/dottie-flowers"
   players: "1"
@@ -215,11 +168,8 @@
 - name: "Super Boss Gaiden"
   platform: "SNES"
   description: |
-    Humorous beat'em up game, where the fictional President of a video game company gets angry
-    when his executives deliver the news that the last remaining prototype has fallen into the
-    hands of the general public and has been emulated. Being a very hands-on executive,
-    instead of calmly discussing the situation and planning out the proper legal counter
-    action, the titular Boss takes on employees and resources with both fists and feet.
+    A tongue-in-cheek beat'em up where an enraged game company President punches through
+    employees and resources after a leaked prototype escapes into the wild.
   developer: "Dieter von Laser; Chrono Moogle"
   publisher: "https://superbossgaiden.superfamicom.org/"
   players: "1"

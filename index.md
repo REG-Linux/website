@@ -4,27 +4,7 @@ title: REG Linux
 body_class: home
 description: REG Linux turns SBCs, laptops, and handhelds into polished retro emulation consoles with a curated frontend, pre-configured emulators, and an immutable Buildroot base.
 ---
-<header class="site-header">
-  <div class="logo">
-    <img
-      src="{{ '/assets/images/reg_linux_logo.png' | relative_url }}"
-      alt="REG Linux"
-      width="120"
-      height="42"
-      loading="lazy"
-    />
-  </div>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="#features">Features</a>
-    <a href="#stack">Stack</a>
-    <a href="#hardware">Hardware</a>
-    <a href="#get-started">Get Started</a>
-    <a href="#community">Community</a>
-    <a href="{{ '/bundled-games/' | relative_url }}">Bundled games</a>
-    <a href="{{ '/download/' | relative_url }}">Download</a>
-  </nav>
-  <a class="btn ghost" href="{{ '/download/' | relative_url }}">Download</a>
-</header>
+{% include site-header.html nav_current="home" %}
 
 <main>
   <section class="hero" id="home">
@@ -32,9 +12,9 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       <p class="eyebrow">Retro Emulation Gaming Linux</p>
       <h1>Turn any device into a purpose-built retro console.</h1>
       <p class="lede">
-        Founded by a collective of retro gaming enthusiasts and open source developers,
-        REG Linux transforms SBCs, handhelds, laptops, and desktops into polished gaming rigs with
-        curated software and resilient system tooling.
+        Founded by retro gaming enthusiasts and open source developers, REG Linux turns SBCs, handhelds, laptops,
+        and desktops into polished gaming rigs with curated software grounded in Buildroot, a custom OpenRC init,
+        and official wiki documentation that guides every release.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
@@ -43,9 +23,9 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
         </a>
       </div>
       <ul class="hero-highlights">
-        <li>Immutable core + rescue system resilience</li>
-        <li>EmulationStation frontend tailored by the REG team</li>
-        <li>Mainline LTS kernels via Buildroot for wide hardware support</li>
+        <li>Immutable Buildroot base with squashfs root, custom OpenRC, and rescue workflows</li>
+        <li>EmulationStation frontend tailored by the REG team with curated RetroArch cores</li>
+        <li>Wiki documentation covering flashing, architecture, builds, and community resources</li>
       </ul>
     </div>
     <div class="hero-media">
@@ -147,10 +127,12 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     <div class="section-heading">
       <p class="eyebrow">Hardware coverage</p>
       <h2>Works where you play</h2>
-      <p>
+        <p>
         REG relies on mainline LTS kernels whenever possible, making it easier to support SBC boards, handhelds,
-        mini PCs, and traditional desktops alike.
-      </p>
+        mini consoles, and desktops. The wiki installation guide lists coverage for ARM (Allwinner, Rockchip, Amlogic),
+        AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs, so you can pick the profile that matches
+        your hardware.
+        </p>
     </div>
     <div class="hardware-grid">
       <article class="card">
@@ -168,6 +150,42 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
+  <section class="docs" id="docs">
+    <div class="section-heading">
+      <p class="eyebrow">Official wiki</p>
+      <h2>Documentation built on GitHub Pages</h2>
+      <p>
+        The REG Linux wiki runs on MkDocs Material and mirrors every release, covering installation,
+        architecture, developer builds, and community resources for hardware enthusiasts.
+      </p>
+    </div>
+    <div class="doc-grid">
+      <article class="card doc-card">
+        <h3>Getting Started</h3>
+        <p>Choose an image, flash it safely, and get controller-friendly onboarding tips for EmulationStation.</p>
+        <a href="https://wiki.reglinux.org/getting-started/" target="_blank" rel="noreferrer">Open guide</a>
+      </article>
+      <article class="card doc-card">
+        <h3>Installation</h3>
+        <p>Supported platforms span ARM (Allwinner, Rockchip, Amlogic), AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs.</p>
+        <a href="https://wiki.reglinux.org/installation/" target="_blank" rel="noreferrer">View devices</a>
+      </article>
+      <article class="card doc-card">
+        <h3>Architecture</h3>
+        <p>Immutable Buildroot layout with sysvinit, a squashfs root, and configurable /userdata partitions for game storage.</p>
+        <a href="https://wiki.reglinux.org/architecture/" target="_blank" rel="noreferrer">Explore architecture</a>
+      </article>
+      <article class="card doc-card">
+        <h3>Developer Guide</h3>
+        <p>Build from source with commands like <code>make h700-build</code> and tweak configurations inside the configs directory.</p>
+        <a href="https://wiki.reglinux.org/dev-guide/" target="_blank" rel="noreferrer">See build notes</a>
+      </article>
+    </div>
+    <div class="doc-actions">
+      <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">Browse the wiki</a>
+    </div>
+  </section>
+
   <section class="get-started" id="get-started">
     <div class="section-heading">
       <p class="eyebrow">Boot and play</p>
@@ -175,22 +193,22 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
     <ol class="steps">
       <li>
-        <strong>Choose the right image.</strong> Visit the download page, pick the build for your hardware, and grab the latest release.
+        <strong>Choose the right image.</strong> Visit the download page, consult the wiki installation guide for supported devices, and grab the latest release that matches your hardware.
       </li>
       <li>
-        <strong>Flash to storage.</strong> Use tools like balenaEtcher or Raspberry Pi Imager to write the image to an SD card or SSD.
+        <strong>Flash to storage.</strong> Follow the wiki's recommended tools—balenaEtcher, Raspberry Pi Imager, or plain `dd`—and verify the image on your SD card or SSD.
       </li>
       <li>
-        <strong>First boot & setup.</strong> Power on, walk through the EmulationStation onboarding, and pair your controllers.
+        <strong>First boot & setup.</strong> Power on, run through the EmulationStation onboarding, pair controllers, and reference the wiki for troubleshooting or controller mapping tips.
       </li>
       <li>
-        <strong>Load your library.</strong> Add ROMs via network share, USB drive, or the built-in file manager, then refresh the gamelist.
+        <strong>Load your library.</strong> Add ROMs via network share, USB drive, or the built-in file manager, then refresh the gamelist per the wiki's guidance.
       </li>
     </ol>
     <div class="cta-panel">
       <div>
         <h3>Need help?</h3>
-        <p>Join the community channels or open an issue on GitHub—contributors are active and eager to assist.</p>
+        <p>Read the wiki, join Discord, or open a GitHub issue—contributors are active and eager to assist.</p>
       </div>
       <a class="btn primary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Get support</a>
     </div>
@@ -206,12 +224,12 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       </p>
     </div>
     <div class="community-links">
-      <a href="https://twitter.com/dewdots" target="_blank" rel="noreferrer" class="community-card">
-        <span>Follow updates on X (Twitter)</span>
+      <a href="https://discord.gg/reglinux" target="_blank" rel="noreferrer" class="community-card">
+        <span>Join the Discord</span>
         <span class="arrow">→</span>
       </a>
-      <a href="https://www.youtube.com/user/Google" target="_blank" rel="noreferrer" class="community-card">
-        <span>Watch showcase builds</span>
+      <a href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer" class="community-card">
+        <span>Browse the official wiki</span>
         <span class="arrow">→</span>
       </a>
       <a href="https://github.com/REG-Linux" target="_blank" rel="noreferrer" class="community-card">
