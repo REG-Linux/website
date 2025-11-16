@@ -7,7 +7,7 @@
 
 ## Overview
 
-OpenBOR (Open Beats of Rage, https://www.chronocrash.com/openbor/) is a community-driven 2D beat’em-up engine inspired by Sega’s “Streets of Rage” series. It loads `.pak` archives containing sprites, stages, music, and Lua scripting logic, and ships with configurable combos, AI, and multiplayer support. REG Linux uses OpenBOR to run fan-made campaigns, crossovers, and remixed beat’em-up adventures.
+[OpenBOR](https://www.chronocrash.com/openbor/) (Open Beats of Rage) is a community-driven 2D beat’em-up engine inspired by Sega’s “Streets of Rage” series. It loads `.pak` archives containing sprites, stages, music, and Lua scripting logic, and ships with configurable combos, AI, and multiplayer support. REG Linux uses OpenBOR to run fan-made campaigns, crossovers, and remixed beat’em-up adventures.
 
 ## Supported formats
 

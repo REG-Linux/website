@@ -7,7 +7,7 @@
 
 ## Overview
 
-Solarus (https://www.solarus-games.org) is an open-source engine for action-RPG games inspired by The Legend of Zelda. It uses Lua scripts to orchestrate puzzles, dialogs, and behaviors while rendering hero sprites, top-down rooms, and particle effects. The project ships both a game editor and runtime so REG Linux can load Solarus adventures with the same user interface and controller support available on desktop builds.
+[Solarus](https://www.solarus-games.org) is an open-source engine for action-RPG games inspired by The Legend of Zelda. It uses Lua scripts to orchestrate puzzles, dialogs, and behaviors while rendering hero sprites, top-down rooms, and particle effects. The project ships both a game editor and runtime so REG Linux can load Solarus adventures with the same user interface and controller support available on desktop builds.
 
 ## Supported formats
 

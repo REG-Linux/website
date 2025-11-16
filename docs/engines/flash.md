@@ -7,7 +7,7 @@
 
 ## Overview
 
-Adobe Flash Player once powered interactive web experiences and light games (https://www.adobe.com/products/flashplayer), but the official plug-in reached end-of-life in 2020. REG Linux relies on open-source reimplementations such as Ruffle (https://ruffle.rs) and Lightspark (https://lightspark.github.io) to continue running SWF content safely. These engines reverse-engineer the Flash virtual machine, cover most ActionScript 1/2 features, and drop in where the legacy player used to sit.
+[Adobe Flash Player](https://www.adobe.com/products/flashplayer) once powered interactive web experiences and light games, but the official plug-in reached end-of-life in 2020. REG Linux relies on open-source reimplementations such as [Ruffle](https://ruffle.rs) and [Lightspark](https://lightspark.github.io) to continue running SWF content safely. These engines reverse-engineer the Flash virtual machine, cover most ActionScript 1/2 features, and drop in where the legacy player used to sit.
 
 ## Supported formats
 

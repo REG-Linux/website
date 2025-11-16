@@ -7,7 +7,7 @@
 
 ## Overview
 
-Singe is the open-source layer that runs the full-motion-video games originally produced by companies such as American Laser Games and Action Max. It is maintained inside the Hypseus project (https://github.com/hypseus/hypseus) and emulates the Lua-based framefiles, audio codecs, and input handling these experiences rely on, while exposing proper mapping for light guns, keyboards, and gamepads.
+Singe is the open-source layer that runs the full-motion-video games originally produced by companies such as American Laser Games and Action Max. It is maintained inside the [Hypseus project](https://github.com/hypseus/hypseus) and emulates the Lua-based framefiles, audio codecs, and input handling these experiences rely on, while exposing proper mapping for light guns, keyboards, and gamepads.
 
 ## Supported formats
 
