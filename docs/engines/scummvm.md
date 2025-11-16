@@ -52,7 +52,7 @@ Put scummvm games in this folder.
 
 For each game, you must create a file named from the short name of the game and with the extension ".scummvm"
 
-Short game names can be found at http://scummvm.org/compatibility/
+Short game names can be found at [scummvm.org/compatibility](https://www.scummvm.org/compatibility/).
 For example, for "Broken Sword" create the file "Broken Sword/sword1.scummvm"
 
 If you wish to use Midi ROM's i.e. the MT-32 synth, put you files in /userdata/bios/scummvm/extra

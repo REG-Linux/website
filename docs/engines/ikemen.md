@@ -7,7 +7,7 @@
 
 ## Overview
 
-IKEMEN (https://github.com/Ikemen-Next/Ikemen-GO) is an open-source evolution of the M.U.G.E.N fighting engine. It keeps the familiar `.def` configuration format while introducing rollback netcode, Lua scripting hooks, and higher framerates. REG Linux uses IKEMEN to run the vast amount of community-made content originally written for Elecbyte’s M.U.G.E.N, including character sprites, stages, and gameplay logic.
+IKEMEN is an open-source evolution of the M.U.G.E.N fighting engine that keeps the familiar `.def` configuration format while introducing rollback netcode, Lua scripting hooks, and higher framerates. REG Linux uses IKEMEN to run the vast amount of community-made content originally written for Elecbyte’s M.U.G.E.N, including character sprites, stages, and gameplay logic. See the [Ikemen GO repository](https://github.com/Ikemen-Next/Ikemen-GO) for the source and tooling.
 
 ## Supported content
 

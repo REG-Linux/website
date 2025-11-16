@@ -7,7 +7,7 @@
 
 ## Overview
 
-EasyRPG is the open-source implementation of the RPG Maker 2000/2003 runtime (https://easyrpg.org). Instead of relying on the proprietary interpreter, the engine replays events, audio, tilesets, and battle scripts with modern rendering (OpenGL), controller mappings, and save/load hooks so REG Linux can run the classic JRPG toolset on contemporary hardware.
+EasyRPG is the open-source implementation of the RPG Maker 2000/2003 runtime. Instead of relying on the proprietary interpreter, the engine replays events, audio, tilesets, and battle scripts with modern rendering (OpenGL), controller mappings, and save/load hooks so REG Linux can run the classic JRPG toolset on contemporary hardware. Visit the [EasyRPG site](https://easyrpg.org) for downloads.
 
 ## Supported formats
 
@@ -22,7 +22,7 @@ EasyRPG is the open-source implementation of the RPG Maker 2000/2003 runtime (ht
 * `Ib`
 * `The Witch's House`
 
-Thousands of other titles are listed on https://wiki.easyrpg.org/compatibility, so check the official catalog for the latest compatibility status.
+Thousands of other titles are listed on the [EasyRPG compatibility wiki](https://wiki.easyrpg.org/compatibility), so check the official catalog for the latest compatibility status.
 
 ## Engines
 

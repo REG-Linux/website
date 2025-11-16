@@ -7,7 +7,7 @@
 
 ## Overview
 
-TheXTech (https://thextech.com) is an open-source recreation of Super Mario Bros. X (SMBX), bringing the classic fan-made Mario platformer to new platforms. It loads `smbx` worlds, handles tile-based physics, bosses, and NPC scripts, and adds optional modern features such as widescreen resolutions, touch support, and an integrated level editor.
+TheXTech is an open-source recreation of Super Mario Bros. X (SMBX), bringing the classic fan-made Mario platformer to new platforms. It loads `smbx` worlds, handles tile-based physics, bosses, and NPC scripts, and adds optional modern features such as widescreen resolutions, touch support, and an integrated level editor. Learn more at the [TheXTech website](https://thextech.com).
 
 ## Supported formats
 
