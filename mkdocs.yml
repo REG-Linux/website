@@ -156,13 +156,11 @@ nav:
     - "SAM Coup\xE9": systems/samcoupe.md
     - Satellaview: systems/satellaview.md
     - Saturn: systems/saturn.md
-    - ScummVM: systems/scummvm.md
     - Super Cassette Vision: systems/scv.md
     - 32x: systems/sega32x.md
     - Sega CD: systems/segacd.md
     - SG-1000: systems/sg1000.md
     - Super Game Boy: systems/sgb.md
-    - Singe: systems/singe.md
     - Super Nintendo Entertainment System: systems/snes.md
     - Super Disc System (MSU1): systems/snes-msu1.md
     - Socrates: systems/socrates.md
@@ -211,23 +209,19 @@ nav:
     - DevilutionX: ports/devilutionx.md
     - Doom 3: ports/doom3.md
     - DXX Rebirth: ports/dxx-rebirth.md
-    - EasyRPG: ports/easyrpg.md
     - ECWolf: ports/ecwolf.md
     - EDuke32: ports/eduke32.md
     - Wolfenstein - Enemy Territory: ports/etlegacy.md
     - Fallout Community Edition: ports/fallout1-ce.md
     - Fallout 2 Community Edition: ports/fallout2-ce.md
-    - Flash Player: ports/flash.md
     - Ion Fury: ports/fury.md
     - GZDoom: ports/gzdoom.md
     - Hydra Castle Labyrinth: ports/hcl.md
     - Hurrican: ports/hurrican.md
-    - IKEMEN: ports/ikemen.md
     - Return To Castle Wolfenstein: ports/iortcw.md
     - Jazz Jackrabbit 2: ports/jazz2.md
     - MrBoom: ports/mrboom.md
     - OD-Commander: ports/odcommander.md
-    - OpenBOR: ports/openbor.md
     - Jazz Jackrabbit: ports/openjazz.md
     - OpenLara: ports/openlara.md
     - PrBoom: ports/prboom.md
@@ -236,19 +230,26 @@ nav:
     - REminiscence: ports/reminiscence.md
     - Rise of the Triad: ports/rott.md
     - SdlPop: ports/sdlpop.md
-    - Solarus: ports/solarus.md
     - Sonic Mania: ports/sonic-mania.md
     - Sonic 3 A.I.R.: ports/sonic3-air.md
     - Sonic Retro Engine: ports/sonicretro.md
     - Super Mario War: ports/superbroswar.md
     - The Force Engine: ports/theforceengine.md
-    - TheXTech: ports/thextech.md
     - Tyrian: ports/tyrian.md
     - TyrQuake: ports/tyrquake.md
     - Ur-Quan Masters: ports/uqm.md
     - Quake II: ports/vitaquake2.md
     - Xash3D-FWGS: ports/xash3d_fwgs.md
     - xrick: ports/xrick.md
+  - Engines:
+    - EasyRPG: engines/easyrpg.md
+    - Flash Player: engines/flash.md
+    - IKEMEN: engines/ikemen.md
+    - OpenBOR: engines/openbor.md
+    - Solarus: engines/solarus.md
+    - Singe: engines/singe.md
+    - ScummVM: engines/scummvm.md
+    - TheXTech: engines/thextech.md
 - Installation: installation.md
 - Developer Guide: dev-guide.md
 - Community: community.md
