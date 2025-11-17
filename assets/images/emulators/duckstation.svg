@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" aria-label="DuckStation logo">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#f9f373"/>
+      <stop offset="70%" stop-color="#eca300"/>
+      <stop offset="100%" stop-color="#b96400"/>
+    </radialGradient>
+  </defs>
+  <rect width="360" height="200" rx="30" fill="url(#grad)" />
+  <text x="52%" y="54%" fill="#081019" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="36" font-weight="800" text-anchor="middle" dominant-baseline="middle">DuckStation</text>
+  <text x="52%" y="76%" fill="#2a0b00" font-family="'Inter', sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle">PS1 &amp; classics</text>
+</svg>

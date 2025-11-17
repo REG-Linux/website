@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" aria-label="Hatari logo">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="1" x2="1" y2="1">
+      <stop offset="0%" stop-color="#342127"/>
+      <stop offset="100%" stop-color="#f15a24"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="200" rx="30" fill="url(#grad)" />
+  <text x="50%" y="48%" fill="#fff5f0" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="38" font-weight="700" text-anchor="middle" dominant-baseline="middle">Hatari</text>
+  <text x="50%" y="70%" fill="#ffd4c1" font-family="'Inter', sans-serif" font-size="16" text-anchor="middle" dominant-baseline="middle">Atari ST/TT</text>
+</svg>
