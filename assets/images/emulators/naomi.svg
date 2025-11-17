@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" aria-label="Sega Naomi logo">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#042b15"/>
+      <stop offset="100%" stop-color="#12cc80"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="200" rx="30" fill="url(#grad)" />
+  <rect x="18" y="18" width="324" height="164" rx="20" fill="rgba(255, 255, 255, 0.08)" />
+  <text x="50%" y="48%" fill="#ecffe7" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="34" font-weight="700" text-anchor="middle" dominant-baseline="middle">Naomi</text>
+  <text x="50%" y="68%" fill="#c4ffda" font-family="'Inter', sans-serif" font-size="16" text-anchor="middle" dominant-baseline="middle">Sega arcade outline</text>
+  <circle cx="60" cy="50" r="10" fill="rgba(255, 255, 255, 0.3)" />
+</svg>

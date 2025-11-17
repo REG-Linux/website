@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" aria-label="Genesis Plus GX logo">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1026"/>
+      <stop offset="100%" stop-color="#26d7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="200" rx="30" fill="url(#grad)" />
+  <text x="50%" y="50%" fill="#f3ffff" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="28" font-weight="700" text-anchor="middle" dominant-baseline="middle">Genesis Plus GX</text>
+  <text x="50%" y="74%" fill="#8de6ff" font-family="'Inter', sans-serif" font-size="14" text-anchor="middle" dominant-baseline="middle">Sega Genesis/MegaDrive</text>
+</svg>
