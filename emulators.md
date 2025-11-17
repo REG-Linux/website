@@ -43,7 +43,7 @@ description: REG Linux supported emulators through EmulationStation frontend.
         <p>A broad and curated list of arcade emulators for all your needs.</p>
         <div class="emulator-grid">
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/mame.svg' | relative_url }}" alt="MAME logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/mame.png' | relative_url }}" alt="MAME logo" loading="lazy" />
             <figcaption>
               <strong>MAME</strong>
               <span>Multiple Arcade Machine Emulator</span>
@@ -57,7 +57,7 @@ description: REG Linux supported emulators through EmulationStation frontend.
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/supermodel.svg' | relative_url }}" alt="SuperModel logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/supermodel.png' | relative_url }}" alt="SuperModel logo" loading="lazy" />
             <figcaption>
               <strong>SuperModel</strong>
               <span>Sega Model 3 cabinets</span>
@@ -71,7 +71,7 @@ description: REG Linux supported emulators through EmulationStation frontend.
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/flycast.svg' | relative_url }}" alt="Flycast logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/flycast.png' | relative_url }}" alt="Flycast logo" loading="lazy" />
             <figcaption>
               <strong>Flycast</strong>
               <span>Sega Dreamcast &amp; Naomi / Naomi 2</span>
@@ -105,14 +105,14 @@ description: REG Linux supported emulators through EmulationStation frontend.
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/genesis-plus-gx.svg' | relative_url }}" alt="Genesis Plus GX logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/genesis-plus-gx.png' | relative_url }}" alt="Genesis Plus GX logo" loading="lazy" />
             <figcaption>
               <strong>Genesis Plus GX</strong>
               <span>Mega Drive &amp; Master System</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/picodrive.svg' | relative_url }}" alt="Picodrive logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/picodrive.png' | relative_url }}" alt="Picodrive logo" loading="lazy" />
             <figcaption>
               <strong>Picodrive</strong>
               <span>Sega Genesis + 32X + Pico</span>
@@ -126,14 +126,14 @@ description: REG Linux supported emulators through EmulationStation frontend.
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/pcsx2.svg' | relative_url }}" alt="PCSX2 logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/pcsx2.png' | relative_url }}" alt="PCSX2 logo" loading="lazy" />
             <figcaption>
               <strong>PCSX2</strong>
               <span>PlayStation 2</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/rpcs3.svg' | relative_url }}" alt="RPCS3 logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/rpcs3.png' | relative_url }}" alt="RPCS3 logo" loading="lazy" />
             <figcaption>
               <strong>RPCS3</strong>
               <span>PlayStation 3</span>
@@ -147,9 +147,9 @@ description: REG Linux supported emulators through EmulationStation frontend.
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/gambatte.svg' | relative_url }}" alt="Gambatte logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/sameboy.svg' | relative_url }}" alt="Gambatte logo" loading="lazy" />
             <figcaption>
-              <strong>Gambatte</strong>
+              <strong>SameBoy</strong>
               <span>Game Boy / Color</span>
             </figcaption>
           </figure>
@@ -174,7 +174,7 @@ description: REG Linux supported emulators through EmulationStation frontend.
         <p>From Amiga to Apple II, classic computers history and preservation is not forgotten.</p>
         <div class="emulator-grid">
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/amiberry.svg' | relative_url }}" alt="Amiberry logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/amiberry.png' | relative_url }}" alt="Amiberry logo" loading="lazy" />
             <figcaption>
               <strong>Amiberry</strong>
               <span>Commodore Amiga computers</span>
@@ -190,26 +190,26 @@ description: REG Linux supported emulators through EmulationStation frontend.
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/dosbox.svg' | relative_url }}" alt="DOSBox logo" loading="lazy" />
             <figcaption>
-              <strong>DOSBox</strong>
+              <strong>DOSBox Staging</strong>
               <span>MS-DOS and early PCs</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/hatari.svg' | relative_url }}" alt="Hatari logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/hatari.png' | relative_url }}" alt="Hatari logo" loading="lazy" />
             <figcaption>
               <strong>Hatari</strong>
               <span>Atari ST, Atari TT and Falcon</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/openmsx.svg' | relative_url }}" alt="openMSX logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/openmsx.png' | relative_url }}" alt="openMSX logo" loading="lazy" />
             <figcaption>
               <strong>openMSX</strong>
               <span>MSX1/2/2+</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/applewin.svg' | relative_url }}" alt="AppleWin logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/applewin.png' | relative_url }}" alt="AppleWin logo" loading="lazy" />
             <figcaption>
               <strong>AppleWin</strong>
               <span>Apple IIgs &amp; IIe</span>
