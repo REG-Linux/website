@@ -40,7 +40,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>Reimplements SCUMM, SCI, AGI, and other adventure engines so classics like Monkey Island, Day of the Tentacle, Grim Fandango, and Broken Sword run with controller-friendly menus.</p>
       <ul>
         <li>Supported extensions: `.scummvm`, `.zar`</li>
-        <li>Engine packages: `BR2_PACKAGE_SCUMMVM`, `BR2_PACKAGE_LIBRETRO_SCUMMVM`, `BR2_PACKAGE_LIBRETRO_SCUMM`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/scummvm/" target="_blank" rel="noreferrer">Read ScummVM guide</a>
     </article>
@@ -49,7 +48,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>The Zelda-inspired Solarus engine loads `game.solarus` archives and honors Lua scripts, sounds, and top-down maps while preserving save states and controller layouts.</p>
       <ul>
         <li>Supported extensions: `.solarus`, `.zip`, `.tar`</li>
-        <li>Engine package: `BR2_PACKAGE_SOLARUS_ENGINE`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/solarus/" target="_blank" rel="noreferrer">Read Solarus guide</a>
     </article>
@@ -58,7 +56,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>Recreates the RPG Maker 2000/2003 runtime so you can drop `.easyrpg` project folders, `.zip` archives, or `.zar` bundles that contain `RPG_RT.exe` data.</p>
       <ul>
         <li>Supported extensions: `.easyrpg`, `.zip`, `.zar`</li>
-        <li>Engine packages: `BR2_PACKAGE_EASYRPG_PLAYER`, `BR2_PACKAGE_LIBRETRO_EASYRPG`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/easyrpg/" target="_blank" rel="noreferrer">Read EasyRPG guide</a>
     </article>
@@ -67,7 +64,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>A modern revival of the M.U.G.E.N engine with rollback, Lua hooks, and high framerates, powering community-made fighters from Street Fighter to King of Fighters.</p>
       <ul>
         <li>Load `.def`, `.air`, `.cmd`, and Lua scripts like classic M.U.G.E.N builds.</li>
-        <li>Engine package: `BR2_PACKAGE_IKEMEN`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/ikemen/" target="_blank" rel="noreferrer">Read IKEMEN guide</a>
     </article>
@@ -76,7 +72,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>Community-driven beat ’em up engine that loads `.pak` archives or `.pak.txt` manifests containing sprites, Lua logic, music, and Ai adjustments.</p>
       <ul>
         <li>Engine builds: `openbor4432`, `openbor6412`, `openbor7142`, `openbor7530`</li>
-        <li>Packages: `BR2_PACKAGE_OPENBORxxxx` for each architecture</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/openbor/" target="_blank" rel="noreferrer">Read OpenBOR guide</a>
     </article>
@@ -85,7 +80,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>Replaces the retired Adobe player with Ruffle and Lightspark so SWF/ABC adventure and ActionScript titles keep running safely in REG Linux.</p>
       <ul>
         <li>Supported formats: `.swf`, `.abc`, `.flex`</li>
-        <li>Engine packages: `BR2_PACKAGE_RUFFLE`, `BR2_PACKAGE_LIGHTSPARK`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/flash/" target="_blank" rel="noreferrer">Read Flash guide</a>
     </article>
@@ -94,7 +88,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>Runs Super Mario Bros. X worlds, reading `System` folders, Lua scripts, and SMBX archives while adding widescreen, touch, and editor features.</p>
       <ul>
         <li>Supported extensions: `.smbx`, `.zip`</li>
-        <li>Engine package: `BR2_PACKAGE_THEXTECH`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/thextech/" target="_blank" rel="noreferrer">Read TheXTech guide</a>
     </article>
@@ -103,7 +96,6 @@ description: Learn about the curated engines REG Linux pairs with its ROM metada
       <p>Hypseus’s FMV interpreter for LaserDisc-era arcade shooters—Mad Dog McCree, Crime Patrol, Space Pirates, and Dragon’s Lair—using `.singe` framefiles.</p>
       <ul>
         <li>Supported extensions: `.singe`, `.framefile.txt`, `.m2v`, `.ogm`, `.ogg`</li>
-        <li>Engine package: `BR2_PACKAGE_HYPSEUS_SINGE`</li>
       </ul>
       <a class="btn secondary" href="https://wiki.reglinux.org/engines/singe/" target="_blank" rel="noreferrer">Read Singe guide</a>
     </article>

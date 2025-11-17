@@ -13,7 +13,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       <h1>Turn any device into a purpose-built retro console.</h1>
       <p class="lede">
         Founded by retro gaming enthusiasts and open source developers, REG Linux turns SBCs, handhelds, laptops,
-        and desktops into polished gaming rigs with curated software grounded in Buildroot, a custom OpenRC init,
+        and desktops into polished gaming rigs with curated software grounded in Buildroot, systemd-free system,
         and official wiki documentation that guides every release.
       </p>
       <div class="hero-cta">
@@ -23,7 +23,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
         </a>
       </div>
       <ul class="hero-highlights">
-        <li>Immutable Buildroot base with squashfs root, custom OpenRC, and rescue workflows</li>
+        <li>Immutable Buildroot-based root filesystem, optimized builds, and rescue workflows</li>
         <li>EmulationStation frontend tailored by the REG team with curated RetroArch cores</li>
         <li>Wiki documentation covering flashing, architecture, builds, and community resources</li>
       </ul>

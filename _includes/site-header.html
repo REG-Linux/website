@@ -18,9 +18,14 @@
         />
       </a>
     </div>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   {% assign dropdown_active = nav_current == "emulators" or nav_current == "engines" or nav_current == "ports" %}
   {% assign home_active = nav_current == "home" %}
-  <nav class="site-nav" aria-label="Primary">
+  <nav class="site-nav" id="primary-navigation" aria-label="Primary">
     <div class="nav-dropdown home-dropdown {% if home_active %}is-active{% endif %}" aria-haspopup="true">
       <a class="dropdown-label" href="{{ '/' | relative_url }}">Home</a>
       <div class="dropdown-menu">
@@ -41,7 +46,17 @@
     <a href="{{ '/hardware/' | relative_url }}" {% if nav_current == "hardware" %}aria-current="page"{% endif %}>Hardware</a>
     <a href="{{ '/community/' | relative_url }}" {% if nav_current == "community" %}aria-current="page"{% endif %}>Community</a>
     <a href="{{ '/bundled-games/' | relative_url }}" {% if nav_current == "bundled-games" %}aria-current="page"{% endif %}>Bundled games</a>
-    <a href="{{ '/download/' | relative_url }}" {% if nav_current == "download" %}aria-current="page"{% endif %}>Download</a>
   </nav>
   <a class="btn ghost" href="{{ ghost_target }}">{{ ghost_label }}</a>
+  <script>
+    (function () {
+      const header = document.querySelector('.site-header');
+      const toggle = header?.querySelector('.menu-toggle');
+      if (!toggle || !header) return;
+      toggle.addEventListener('click', function () {
+        const isOpen = header.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    })();
+  </script>
 </header>

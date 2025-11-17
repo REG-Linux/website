@@ -3,27 +3,25 @@ layout: default
 title: Emulators
 body_class: emulators
 permalink: /emulators/
-description: Explore the EmulatedStation systems the REG Linux wiki documents so you can plan your ROM folders with confidence.
+description: REG Linux supported emulators through EmulationStation frontend.
 ---
 {% include site-header.html nav_current="emulators" %}
 
 <main>
   <section class="hero doc-hero">
     <div class="hero-text">
-      <p class="eyebrow">Official wiki data</p>
-      <h1>Every supported emulator profile</h1>
+      <p class="eyebrow">Emulators are amazing</p>
+      <h1>Enjoy faithful retro games with REG Linux</h1>
       <p class="lede">
-        The REG Linux wiki mirrors the EmulationStation `es_systems.yml` bundle with metadata for 150+ systems, so you can see which manufacturer,
-        release year, hardware type, ROM extensions, and upstream notes ship with each entry.
+        REG Linux blends EmulationStation frontend with curated emulators for an outstanding out of the box experience.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Browse emulator index</a>
-        <a class="btn secondary" href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">View the repo</a>
+        <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Browse emulator wiki index</a>
+        <a class="btn secondary" href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">View the GitHub repo</a>
       </div>
       <ul class="hero-highlights">
-        <li>150+ systems tracked across arcade, console, and computer folders</li>
-        <li>Each wiki page publishes ROM extensions for accurate folder names</li>
-        <li>Use the same metadata when curating shaders, playlists, and dat files</li>
+        <li>50+ systems tracked across arcade, console, and computer folders</li>
+        <li>Use wiki to organize your game collection accurately</li>
       </ul>
     </div>
     <div class="hero-media">
@@ -36,69 +34,54 @@ description: Explore the EmulatedStation systems the REG Linux wiki documents so
 
   <section class="doc-section">
     <div class="section-heading">
-      <p class="eyebrow">Organized by hardware</p>
-      <h2>Plan your ROM tree with context</h2>
-      <p>The wiki breaks the systems folder into familiar groupings so you can match ROM sets and BIOS files with the right emulator.</p>
+      <p class="eyebrow">Hardware</p>
+      <h2>Plan your retrogaming experience with confidence</h2>
     </div>
     <div class="grid">
       <article class="card">
-        <h3>Arcade & cabinets</h3>
-        <p>The wiki surfaces the metadata for every arcade driver, BIOS set, and command-line tweak so REG Linux can ship curated folders for each release.</p>
+        <h3>Arcade games &amp; cabinets</h3>
+        <p>A broad and curated list of arcade emulators for all your needs.</p>
         <div class="emulator-grid">
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/mame.svg' | relative_url }}" alt="MAME logo" loading="lazy" />
             <figcaption>
               <strong>MAME</strong>
-              <span>Multi-hardware arcade backbone</span>
+              <span>Multiple Arcade Machine Emulator</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/finalburn-neo.svg' | relative_url }}" alt="FinalBurn Neo logo" loading="lazy" />
             <figcaption>
               <strong>FinalBurn NEO</strong>
-              <span>Neo Geo, CPS, ST-V fighters</span>
+              <span>SNK Neo Geo, Capcom CPS and more</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/supermodel.svg' | relative_url }}" alt="SuperModel logo" loading="lazy" />
             <figcaption>
               <strong>SuperModel</strong>
-              <span>Sega Model 3 &amp; 2 cabinets</span>
+              <span>Sega Model 3 cabinets</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/daphne.svg' | relative_url }}" alt="Daphne logo" loading="lazy" />
+            <img src="{{ '/assets/images/emulators/hypseus.svg' | relative_url }}" alt="Daphne logo" loading="lazy" />
             <figcaption>
-              <strong>Daphne</strong>
-              <span>Laserdisc &amp; arcade classics</span>
-            </figcaption>
-          </figure>
-          <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/hypseus.svg' | relative_url }}" alt="Hypseus logo" loading="lazy" />
-            <figcaption>
-              <strong>Hypseus</strong>
-              <span>Naomi, Naomi 2, and board layers</span>
+              <strong>Hypseus Singe / Daphne</strong>
+              <span>Laserdisc arcade classics</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/flycast.svg' | relative_url }}" alt="Flycast logo" loading="lazy" />
             <figcaption>
               <strong>Flycast</strong>
-              <span>Dreamcast &amp; Naomi drivers</span>
-            </figcaption>
-          </figure>
-          <figure class="emulator-tile">
-            <img src="{{ '/assets/images/emulators/naomi.svg' | relative_url }}" alt="Naomi logo" loading="lazy" />
-            <figcaption>
-              <strong>Naomi</strong>
-              <span>Official Sega Naomi hardware</span>
+              <span>Sega Dreamcast &amp; Naomi / Naomi 2</span>
             </figcaption>
           </figure>
         </div>
       </article>
       <article class="card">
         <h3>Consoles & handhelds</h3>
-        <p>The wiki profiles NES, SNES, Mega Drive, GameCube, Dreamcast, PSX, PSP, Switch, Wii, and Xbox systems so you know which cores, shaders, and controllers to pair.</p>
+        <p>NES, SNES, Mega Drive, GameCube, Dreamcast, PSX, PSP, Switch, Wii, and Xbox systems.</p>
         <div class="console-grid">
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/nestopia.svg' | relative_url }}" alt="Nestopia logo" loading="lazy" />
@@ -139,7 +122,7 @@ description: Explore the EmulatedStation systems the REG Linux wiki documents so
             <img src="{{ '/assets/images/emulators/duckstation.svg' | relative_url }}" alt="DuckStation logo" loading="lazy" />
             <figcaption>
               <strong>DuckStation</strong>
-              <span>PlayStation 1 &amp; ports</span>
+              <span>PlayStation 1</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
@@ -188,20 +171,20 @@ description: Explore the EmulatedStation systems the REG Linux wiki documents so
       </article>
       <article class="card">
         <h3>Computers</h3>
-        <p>From Amiga to Apple II, the wiki outlines the emulator version, BIOS/ROM shortcuts, and configuration splits for each classic computer profile.</p>
+        <p>From Amiga to Apple II, classic computers history and preservation is not forgotten.</p>
         <div class="emulator-grid">
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/amiberry.svg' | relative_url }}" alt="Amiberry logo" loading="lazy" />
             <figcaption>
               <strong>Amiberry</strong>
-              <span>ARM Amiga accelerator</span>
+              <span>Commodore Amiga computers</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
             <img src="{{ '/assets/images/emulators/vice.svg' | relative_url }}" alt="VICE logo" loading="lazy" />
             <figcaption>
               <strong>VICE</strong>
-              <span>Commodore 64/128/Amiga</span>
+              <span>Commodore 64 and more</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
@@ -215,7 +198,7 @@ description: Explore the EmulatedStation systems the REG Linux wiki documents so
             <img src="{{ '/assets/images/emulators/hatari.svg' | relative_url }}" alt="Hatari logo" loading="lazy" />
             <figcaption>
               <strong>Hatari</strong>
-              <span>Atari ST/TT</span>
+              <span>Atari ST, Atari TT and Falcon</span>
             </figcaption>
           </figure>
           <figure class="emulator-tile">
@@ -234,27 +217,10 @@ description: Explore the EmulatedStation systems the REG Linux wiki documents so
           </figure>
         </div>
       </article>
-      <article class="card">
-        <h3>Ports</h3>
-        <p>The port entries cover remaining niche builds, whether the distro ships a native binary or applies community patches to keep the experience consistent.</p>
-      </article>
     </div>
-  </section>
-
-  <section class="doc-section">
-    <div class="section-heading">
-      <p class="eyebrow">What each page includes</p>
-      <h2>Metadata you can trust</h2>
-    </div>
-    <ul class="doc-list">
-      <li>Manufacturer, release year, and hardware type pulled straight from the upstream EmulationStation data.</li>
-      <li>Supported ROM extensions, compatible emulator packages, and folder tags so REG Linux can auto-detect your content.</li>
-      <li>Notes in English, French, and Portuguese to explain BIOS dependencies, translation tips, or community fixes.</li>
-    </ul>
-    <p>Use these entries when drafting README files, reorganizing playlists, or documenting the ROM requirements for friends and contributors.</p>
   </section>
 
   <section class="doc-actions">
-    <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Open the system catalog</a>
+    <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Open the wiki for an extensive catalog of emulated systems</a>
   </section>
 </main>
