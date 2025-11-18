@@ -4,6 +4,9 @@ title: REG Linux
 body_class: home
 description: REG Linux turns SBCs, laptops, and handhelds into polished retro emulation consoles with a curated frontend, pre-configured emulators, and an immutable Buildroot base.
 ---
+{% assign home = site.data.home %}
+{% assign community_channels = site.data.community.channels %}
+{% assign home_channel_order = "discord|wiki|github" | split: "|" %}
 {% include site-header.html nav_current="home" %}
 
 <main>
@@ -23,21 +26,17 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
         </a>
       </div>
       <ul class="hero-highlights">
-        <li>Immutable Buildroot-based root filesystem, optimized builds, and rescue workflows</li>
-        <li>EmulationStation frontend tailored by the REG team with curated RetroArch cores</li>
-        <li>Wiki documentation covering flashing, architecture, builds, and community resources</li>
+        {% for highlight in home.hero.highlights %}
+          <li>{{ highlight }}</li>
+        {% endfor %}
       </ul>
     </div>
     <div class="hero-media">
-      {% assign hero_logos = "logo-es.png::EmulationStation|logo-retroarch.png::RetroArch|logo-linux.png::Linux Kernel|reg_linux_logo.png::REG Linux" | split: "|" %}
       <div class="hero-slideshow" aria-live="polite">
-        {% for entry in hero_logos %}
-          {% assign parts = entry | split: "::" %}
-          {% assign file = parts[0] %}
-          {% assign label = parts[1] %}
+        {% for logo in home.hero.logos %}
           <figure class="hero-slide" style="animation-delay: {{ forloop.index0 | times: 5 }}s">
-            <img src="{{ '/assets/images/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
-            <figcaption>{{ label }}</figcaption>
+            <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }} logo" loading="lazy" />
+            <figcaption>{{ logo.label }}</figcaption>
           </figure>
         {% endfor %}
       </div>
@@ -55,30 +54,12 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       </p>
     </div>
     <div class="grid">
-      <article class="card">
-        <h3>EmulationStation Frontend</h3>
-        <p>REG ES, a bespoke EmulationStation build, delivers a slick nostalgic UI that is simple to tweak.</p>
-      </article>
-      <article class="card">
-        <h3>Feature rich curation</h3>
-        <p>An ever-growing catalog of native ports, engines, and tools sits alongside the default emulator stack.</p>
-      </article>
-      <article class="card">
-        <h3>Rock solid OS</h3>
-        <p>Immutable Buildroot base plus an integrated rescue workflow keep experiments safe.</p>
-      </article>
-      <article class="card">
-        <h3>Open source forever</h3>
-        <p>REG Linux is community-driven, transparent, and licensed for tinkering without restrictions.</p>
-      </article>
-      <article class="card">
-        <h3>Endless gaming possibilities</h3>
-        <p>Play arcade, console, and computer classics, switching cores or ports with a single menu action.</p>
-      </article>
-      <article class="card">
-        <h3>Wide hardware support</h3>
-        <p>From aging laptops to modern SBCs and handhelds, REG targets diverse devices with tuned kernels.</p>
-      </article>
+      {% for feature in home.features %}
+        <article class="card">
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+        </article>
+      {% endfor %}
     </div>
   </section>
 
@@ -92,30 +73,23 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
           can jump straight into the fun.
         </p>
         <ul class="stack-list">
-          <li>RetroArch (multi-system) with curated core presets</li>
-          <li>MAME builds tuned for arcade accuracy</li>
-          <li>Additional native ports for DOS, ScummVM, Pico-8–style engines, and more</li>
+          {% for item in home.stack.highlights %}
+            <li>{{ item }}</li>
+          {% endfor %}
         </ul>
       </div>
-      {% assign featured_emulators = "retroarch.png::RetroArch|mame.png::MAME|dolphin.png::Dolphin|ppsspp.png::PPSSPP|duckstation.png::DuckStation|flycast.png::Flycast|pcsx2.png::PCSX2|citra.png::Azahar|scummvm.png::ScummVM|dosbox.png::DOSBox Staging|mupen64plus.png::Mupen64Plus|melonds.png::melonDS|openbor.png::OpenBOR" | split: "|" %}
       <div class="stack-logo-marquee" aria-label="Supported emulation projects">
         <div class="stack-logo-track">
-          {% for entry in featured_emulators %}
-            {% assign parts = entry | split: "::" %}
-            {% assign file = parts[0] %}
-            {% assign label = parts[1] %}
+          {% for logo in home.stack.logos %}
             <figure class="stack-logo">
-              <img src="{{ '/assets/images/emulators/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
-              <figcaption>{{ label }}</figcaption>
+              <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }} logo" loading="lazy" />
+              <figcaption>{{ logo.label }}</figcaption>
             </figure>
           {% endfor %}
-          {% for entry in featured_emulators %}
-            {% assign parts = entry | split: "::" %}
-            {% assign file = parts[0] %}
-            {% assign label = parts[1] %}
+          {% for logo in home.stack.logos %}
             <figure class="stack-logo">
-              <img src="{{ '/assets/images/emulators/' | append: file | relative_url }}" alt="{{ label }} logo" loading="lazy" />
-              <figcaption>{{ label }}</figcaption>
+              <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }} logo" loading="lazy" />
+              <figcaption>{{ logo.label }}</figcaption>
             </figure>
           {% endfor %}
         </div>
@@ -135,18 +109,12 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
         </p>
     </div>
     <div class="hardware-grid">
-      <article class="card">
-        <h3>Single-board computers</h3>
-        <p>From Raspberry Pi-style boards to RK3588 powerhouses, profiles ensure video, audio, and I/O just work.</p>
-      </article>
-      <article class="card">
-        <h3>Handhelds & mini consoles</h3>
-        <p>REG keeps controls responsive and includes handheld-friendly themes plus suspend-safe defaults.</p>
-      </article>
-      <article class="card">
-        <h3>Laptops & desktops</h3>
-        <p>Install on internal storage or boot from USB for a dedicated gaming partition that remains isolated.</p>
-      </article>
+      {% for card in home.hardware_cards %}
+        <article class="card">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.body }}</p>
+        </article>
+      {% endfor %}
     </div>
   </section>
 
@@ -160,26 +128,13 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       </p>
     </div>
     <div class="doc-grid">
-      <article class="card doc-card">
-        <h3>Getting Started</h3>
-        <p>Choose an image, flash it safely, and get controller-friendly onboarding tips for EmulationStation.</p>
-        <a href="https://wiki.reglinux.org/getting-started/" target="_blank" rel="noreferrer">Open guide</a>
-      </article>
-      <article class="card doc-card">
-        <h3>Installation</h3>
-        <p>Supported platforms span ARM (Allwinner, Rockchip, Amlogic), AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs.</p>
-        <a href="https://wiki.reglinux.org/installation/" target="_blank" rel="noreferrer">View devices</a>
-      </article>
-      <article class="card doc-card">
-        <h3>Architecture</h3>
-        <p>Immutable Buildroot layout with sysvinit, a squashfs root, and configurable /userdata partitions for game storage.</p>
-        <a href="https://wiki.reglinux.org/architecture/" target="_blank" rel="noreferrer">Explore architecture</a>
-      </article>
-      <article class="card doc-card">
-        <h3>Developer Guide</h3>
-        <p>Build from source with commands like <code>make h700-build</code> and tweak configurations inside the configs directory.</p>
-        <a href="https://wiki.reglinux.org/dev-guide/" target="_blank" rel="noreferrer">See build notes</a>
-      </article>
+      {% for card in home.doc_cards %}
+        <article class="card doc-card">
+          <h3>{{ card.title }}</h3>
+          {{ card.body | markdownify }}
+          <a href="{{ card.url }}" target="_blank" rel="noreferrer">{{ card.link_label }}</a>
+        </article>
+      {% endfor %}
     </div>
     <div class="doc-actions">
       <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">Browse the wiki</a>
@@ -192,18 +147,11 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       <h2>Getting started with REG Linux</h2>
     </div>
     <ol class="steps">
-      <li>
-        <strong>Choose the right image.</strong> Visit the download page, consult the wiki installation guide for supported devices, and grab the latest release that matches your hardware.
-      </li>
-      <li>
-        <strong>Flash to storage.</strong> Follow the wiki's recommended tools—balenaEtcher, Raspberry Pi Imager, or plain `dd`—and verify the image on your SD card or SSD.
-      </li>
-      <li>
-        <strong>First boot & setup.</strong> Power on, run through the EmulationStation onboarding, pair controllers, and reference the wiki for troubleshooting or controller mapping tips.
-      </li>
-      <li>
-        <strong>Load your library.</strong> Add ROMs via network share, USB drive, or the built-in file manager, then refresh the gamelist per the wiki's guidance.
-      </li>
+      {% for step in home.getting_started_steps %}
+        <li>
+          <strong>{{ step.title }}</strong> {{ step.body }}
+        </li>
+      {% endfor %}
     </ol>
     <div class="cta-panel">
       <div>
@@ -224,18 +172,15 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       </p>
     </div>
     <div class="community-links">
-      <a href="https://discord.gg/reglinux" target="_blank" rel="noreferrer" class="community-card">
-        <span>Join the Discord</span>
-        <span class="arrow">→</span>
-      </a>
-      <a href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer" class="community-card">
-        <span>Browse the official wiki</span>
-        <span class="arrow">→</span>
-      </a>
-      <a href="https://github.com/REG-Linux" target="_blank" rel="noreferrer" class="community-card">
-        <span>Contribute on GitHub</span>
-        <span class="arrow">→</span>
-      </a>
+      {% for channel_id in home_channel_order %}
+        {% assign channel = community_channels | where: "id", channel_id | first %}
+        {% if channel %}
+          <a href="{{ channel.url }}" target="_blank" rel="noreferrer" class="community-card">
+            <span>{{ channel.home_label }}</span>
+            <span class="arrow">→</span>
+          </a>
+        {% endif %}
+      {% endfor %}
     </div>
   </section>
 </main>

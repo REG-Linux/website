@@ -1,0 +1,105 @@
+# Emulator catalog for /emulators
+- title: Arcade games & cabinets
+  description: A broad and curated list of arcade emulators for all your needs.
+  grid_class: emulator-grid
+  systems:
+    - name: MAME
+      image: /assets/images/emulators/mame.png
+      alt: MAME logo
+      caption: Multiple Arcade Machine Emulator
+    - name: FinalBurn NEO
+      image: /assets/images/emulators/finalburn-neo.svg
+      alt: FinalBurn Neo logo
+      caption: SNK Neo Geo, Capcom CPS and more
+    - name: SuperModel
+      image: /assets/images/emulators/supermodel.png
+      alt: SuperModel logo
+      caption: Sega Model 3 cabinets
+    - name: Hypseus Singe / Daphne
+      image: /assets/images/emulators/hypseus.svg
+      alt: Daphne logo
+      caption: Laserdisc arcade classics
+    - name: Flycast
+      image: /assets/images/emulators/flycast.png
+      alt: Flycast logo
+      caption: Sega Dreamcast & Naomi / Naomi 2
+- title: Consoles & handhelds
+  description: NES, SNES, Mega Drive, GameCube, Dreamcast, PSX, PSP, Switch, Wii, and Xbox systems.
+  grid_class: console-grid
+  systems:
+    - name: Nestopia
+      image: /assets/images/emulators/nestopia.svg
+      alt: Nestopia logo
+      caption: Nintendo Entertainment System
+    - name: SNES9X
+      image: /assets/images/emulators/snes9x.svg
+      alt: SNES9X logo
+      caption: Super Nintendo / Super Famicom
+    - name: Mupen64Plus
+      image: /assets/images/emulators/mupen64plus.svg
+      alt: Mupen64Plus logo
+      caption: Nintendo 64 pioneers
+    - name: Genesis Plus GX
+      image: /assets/images/emulators/genesis-plus-gx.png
+      alt: Genesis Plus GX logo
+      caption: Mega Drive & Master System
+    - name: Picodrive
+      image: /assets/images/emulators/picodrive.png
+      alt: Picodrive logo
+      caption: Sega Genesis + 32X + Pico
+    - name: DuckStation
+      image: /assets/images/emulators/duckstation.svg
+      alt: DuckStation logo
+      caption: PlayStation 1
+    - name: PCSX2
+      image: /assets/images/emulators/pcsx2.png
+      alt: PCSX2 logo
+      caption: PlayStation 2
+    - name: RPCS3
+      image: /assets/images/emulators/rpcs3.png
+      alt: RPCS3 logo
+      caption: PlayStation 3
+    - name: Xemu
+      image: /assets/images/emulators/xemu.svg
+      alt: Xemu logo
+      caption: Original Xbox
+    - name: SameBoy
+      image: /assets/images/emulators/sameboy.svg
+      alt: Gambatte logo
+      caption: Game Boy / Color
+    - name: mGBA
+      image: /assets/images/emulators/mgba.svg
+      alt: mGBA logo
+      caption: Game Boy Advance
+    - name: MelonDS
+      image: /assets/images/emulators/melonds.svg
+      alt: MelonDS logo
+      caption: Nintendo DS
+- title: Computers
+  description: From Amiga to Apple II, classic computers history and preservation is not forgotten.
+  grid_class: emulator-grid
+  systems:
+    - name: Amiberry
+      image: /assets/images/emulators/amiberry.png
+      alt: Amiberry logo
+      caption: Commodore Amiga computers
+    - name: VICE
+      image: /assets/images/emulators/vice.svg
+      alt: VICE logo
+      caption: Commodore 64 and more
+    - name: DOSBox Staging
+      image: /assets/images/emulators/dosbox.svg
+      alt: DOSBox logo
+      caption: MS-DOS and early PCs
+    - name: Hatari
+      image: /assets/images/emulators/hatari.png
+      alt: Hatari logo
+      caption: Atari ST, Atari TT and Falcon
+    - name: openMSX
+      image: /assets/images/emulators/openmsx.png
+      alt: openMSX logo
+      caption: MSX1/2/2+
+    - name: AppleWin
+      image: /assets/images/emulators/applewin.png
+      alt: AppleWin logo
+      caption: Apple IIgs & IIe

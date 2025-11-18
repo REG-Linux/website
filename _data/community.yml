@@ -1,0 +1,26 @@
+# Shared community channel data for multiple pages
+channels:
+  - id: discord
+    title: Discord
+    home_label: Join the Discord
+    description: Real-time chat for support, hardware mods, and show-and-tell builds. There are dedicated channels for device flashes, wiki whispers, and preview releases.
+    icon: /assets/images/discord-logo.svg
+    icon_alt: Discord logo
+    cta_label: Open Discord
+    url: https://discord.gg/reglinux
+  - id: github
+    title: GitHub
+    home_label: Contribute on GitHub
+    description: Host your PRs, report issues, and explore the Buildroot configs that power REG Linux. Repo-driven releases, CI builds, and packaging live here.
+    icon: /assets/images/github-mark.png
+    icon_alt: GitHub logo
+    cta_label: Visit GitHub
+    url: https://github.com/REG-Linux
+  - id: wiki
+    title: Wiki & docs
+    home_label: Browse the official wiki
+    description: Installation guides, device-specific notes, emulated systems, engines, and ports live on the MkDocs wiki. Bookmark it for flashing, debugging, or developer references.
+    icon: /assets/images/docs-icon.svg
+    icon_alt: Documentation
+    cta_label: Open the wiki
+    url: https://wiki.reglinux.org/
