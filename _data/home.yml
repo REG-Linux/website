@@ -1,0 +1,98 @@
+# Content blocks that power the home page cards and lists
+hero:
+  highlights:
+    - Immutable Buildroot-based root filesystem, optimized builds, and rescue workflows
+    - EmulationStation frontend tailored by the REG team with curated RetroArch cores
+    - Wiki documentation covering flashing, architecture, builds, and community resources
+  logos:
+    - image: /assets/images/logo-es.png
+      label: EmulationStation
+    - image: /assets/images/logo-retroarch.png
+      label: RetroArch
+    - image: /assets/images/logo-linux.png
+      label: Linux Kernel
+    - image: /assets/images/reg_linux_logo.png
+      label: REG Linux
+
+features:
+  - title: EmulationStation Frontend
+    description: REG ES, a bespoke EmulationStation build, delivers a slick nostalgic UI that is simple to tweak.
+  - title: Feature rich curation
+    description: An ever-growing catalog of native ports, engines, and tools sits alongside the default emulator stack.
+  - title: Rock solid OS
+    description: Immutable Buildroot base plus an integrated rescue workflow keep experiments safe.
+  - title: Open source forever
+    description: REG Linux is community-driven, transparent, and licensed for tinkering without restrictions.
+  - title: Endless gaming possibilities
+    description: Play arcade, console, and computer classics, switching cores or ports with a single menu action.
+  - title: Wide hardware support
+    description: From aging laptops to modern SBCs and handhelds, REG targets diverse devices with tuned kernels.
+
+stack:
+  highlights:
+    - RetroArch (multi-system) with curated core presets
+    - MAME builds tuned for arcade accuracy
+    - Additional native ports for DOS, ScummVM, Pico-8–style engines, and more
+  logos:
+    - image: /assets/images/emulators/retroarch.png
+      label: RetroArch
+    - image: /assets/images/emulators/mame.png
+      label: MAME
+    - image: /assets/images/emulators/dolphin.png
+      label: Dolphin
+    - image: /assets/images/emulators/ppsspp.png
+      label: PPSSPP
+    - image: /assets/images/emulators/duckstation.png
+      label: DuckStation
+    - image: /assets/images/emulators/flycast.png
+      label: Flycast
+    - image: /assets/images/emulators/pcsx2.png
+      label: PCSX2
+    - image: /assets/images/emulators/citra.png
+      label: Azahar
+    - image: /assets/images/emulators/scummvm.png
+      label: ScummVM
+    - image: /assets/images/emulators/dosbox.png
+      label: DOSBox Staging
+    - image: /assets/images/emulators/mupen64plus.png
+      label: Mupen64Plus
+    - image: /assets/images/emulators/melonds.png
+      label: melonDS
+    - image: /assets/images/emulators/openbor.png
+      label: OpenBOR
+
+hardware_cards:
+  - title: Single-board computers
+    body: From Raspberry Pi-style boards to RK3588 powerhouses, profiles ensure video, audio, and I/O just work.
+  - title: Handhelds & mini consoles
+    body: REG keeps controls responsive and includes handheld-friendly themes plus suspend-safe defaults.
+  - title: Laptops & desktops
+    body: Install on internal storage or boot from USB for a dedicated gaming partition that remains isolated.
+
+doc_cards:
+  - title: Getting Started
+    body: Choose an image, flash it safely, and get controller-friendly onboarding tips for EmulationStation.
+    url: https://wiki.reglinux.org/getting-started/
+    link_label: Open guide
+  - title: Installation
+    body: Supported platforms span ARM (Allwinner, Rockchip, Amlogic), AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs.
+    url: https://wiki.reglinux.org/installation/
+    link_label: View devices
+  - title: Architecture
+    body: Immutable Buildroot layout with sysvinit, a squashfs root, and configurable /userdata partitions for game storage.
+    url: https://wiki.reglinux.org/architecture/
+    link_label: Explore architecture
+  - title: Developer Guide
+    body: Build from source with commands like `make h700-build` and tweak configurations inside the configs directory.
+    url: https://wiki.reglinux.org/dev-guide/
+    link_label: See build notes
+
+getting_started_steps:
+  - title: Choose the right image.
+    body: Visit the download page, consult the wiki installation guide for supported devices, and grab the latest release that matches your hardware.
+  - title: Flash to storage.
+    body: Follow the wiki's recommended tools—balenaEtcher, Raspberry Pi Imager, or plain `dd`—and verify the image on your SD card or SSD.
+  - title: First boot & setup.
+    body: Power on, run through the EmulationStation onboarding, pair controllers, and reference the wiki for troubleshooting or controller mapping tips.
+  - title: Load your library.
+    body: Add ROMs via network share, USB drive, or the built-in file manager, then refresh the gamelist per the wiki's guidance.

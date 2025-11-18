@@ -1,0 +1,281 @@
+# Auto-generated from ports.md content
+- name: "Abuse"
+  overview: |
+    Introduced in 1996 by Ports, the Abuse was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1996"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/abuse/"
+- name: "Cannonball"
+  overview: |
+    The Cannonball is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "cannonball"
+  url: "https://wiki.reglinux.org/ports/cannonball/"
+- name: "Cave Story"
+  overview: |
+    Introduced in 2004 by Daisuke "Pixel" Amaya, the Cave Story was a port system. It is grouped with
+    ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2004"
+  extensions: "exe"
+  url: "https://wiki.reglinux.org/ports/cavestory/"
+- name: "C-Dogs SDL"
+  overview: |
+    Introduced in 1997 by Ports, the C-Dogs SDL was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1997"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/cdogs/"
+- name: "Commander Genius"
+  overview: |
+    Introduced in 1990 by The Commander Genius Team, the Commander Genius was a port system. Its
+    platform tag is `pc` for proper filtering.
+  release_year: "1990"
+  extensions: "cgenius"
+  url: "https://wiki.reglinux.org/ports/cgenius/"
+- name: "CorsixTH"
+  overview: |
+    The CorsixTH is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/corsixth/"
+- name: "DevilutionX"
+  overview: |
+    The DevilutionX is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "mpq"
+  url: "https://wiki.reglinux.org/ports/devilutionx/"
+- name: "Doom 3"
+  overview: |
+    Introduced in 2004 by Ports, the Doom 3 was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2004"
+  extensions: "d3"
+  url: "https://wiki.reglinux.org/ports/doom3/"
+- name: "DXX Rebirth"
+  overview: |
+    Introduced in 1998 by Ports, the DXX Rebirth was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1998"
+  extensions: "d1x, d2x"
+  url: "https://wiki.reglinux.org/ports/dxx-rebirth/"
+- name: "ECWolf"
+  overview: |
+    Introduced in 2013 by Ports, the ECWolf was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2013"
+  extensions: "ecwolf, pk3, zar"
+  url: "https://wiki.reglinux.org/ports/ecwolf/"
+- name: "EDuke32"
+  overview: |
+    The EDuke32 is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "eduke32"
+  url: "https://wiki.reglinux.org/ports/eduke32/"
+- name: "Wolfenstein - Enemy Territory"
+  overview: |
+    Introduced in 2010 by Ports, the Wolfenstein - Enemy Territory was a port system. It is grouped with
+    ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2010"
+  extensions: "etl"
+  url: "https://wiki.reglinux.org/ports/etlegacy/"
+- name: "Fallout Community Edition"
+  overview: |
+    Introduced in 1997 by Ports, the Fallout Community Edition was a port system. It is grouped with
+    ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1997"
+  extensions: "f1ce"
+  url: "https://wiki.reglinux.org/ports/fallout1-ce/"
+- name: "Fallout 2 Community Edition"
+  overview: |
+    Introduced in 1998 by Ports, the Fallout 2 Community Edition was a port system. It is grouped with
+    ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1998"
+  extensions: "f2ce"
+  url: "https://wiki.reglinux.org/ports/fallout2-ce/"
+- name: "Ion Fury"
+  overview: |
+    Introduced in 2019 by Ports, the Ion Fury was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2019"
+  extensions: "grp"
+  url: "https://wiki.reglinux.org/ports/fury/"
+- name: "GZDoom"
+  overview: |
+    The GZDoom is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "wad, iwad, pwad, gzdoom"
+  url: "https://wiki.reglinux.org/ports/gzdoom/"
+- name: "Hydra Castle Labyrinth"
+  overview: |
+    Introduced in 2011 by Ports, the Hydra Castle Labyrinth was a port system. It is grouped with ports
+    titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2011"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/hcl/"
+- name: "Hurrican"
+  overview: |
+    Introduced in 2007 by Ports, the Hurrican was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2007"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/hurrican/"
+- name: "Return To Castle Wolfenstein"
+  overview: |
+    Introduced in 2001 by Ports, the Return To Castle Wolfenstein was a port system. It is grouped with
+    ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2001"
+  extensions: "rtcw"
+  url: "https://wiki.reglinux.org/ports/iortcw/"
+- name: "Jazz Jackrabbit 2"
+  overview: |
+    Introduced in 1998 by Ports, the Jazz Jackrabbit 2 was a port system. It is grouped with ports
+    titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1998"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/jazz2/"
+- name: "MrBoom"
+  overview: |
+    The MrBoom is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "libretro"
+  url: "https://wiki.reglinux.org/ports/mrboom/"
+- name: "Jazz Jackrabbit"
+  overview: |
+    Introduced in 1994 by Ports, the Jazz Jackrabbit was a port system. It is grouped with ports titles
+    in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1994"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/openjazz/"
+- name: "OpenLara"
+  overview: |
+    Introduced in 1996 by Ports, the OpenLara was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1996"
+  extensions: "croft"
+  url: "https://wiki.reglinux.org/ports/openlara/"
+- name: "PrBoom"
+  overview: |
+    The PrBoom is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "wad, iwad, pwad"
+  url: "https://wiki.reglinux.org/ports/prboom/"
+- name: "Quake III"
+  overview: |
+    Introduced in 1999 by Ports, the Quake III was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1999"
+  extensions: "quake3"
+  url: "https://wiki.reglinux.org/ports/quake3/"
+- name: "Raze"
+  overview: |
+    The Raze is a port platform developed by Ports. It is grouped with ports titles in EmulationStation.
+    Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "raze"
+  url: "https://wiki.reglinux.org/ports/raze/"
+- name: "REminiscence"
+  overview: |
+    Introduced in 1992 by Ports, the REminiscence was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1992"
+  extensions: "rem"
+  url: "https://wiki.reglinux.org/ports/reminiscence/"
+- name: "Rise of the Triad"
+  overview: |
+    Introduced in 1994 by Ports, the Rise of the Triad was a port system. It is grouped with ports
+    titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1994"
+  extensions: "rott"
+  url: "https://wiki.reglinux.org/ports/rott/"
+- name: "SdlPop"
+  overview: |
+    The SdlPop is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "sdlpop"
+  url: "https://wiki.reglinux.org/ports/sdlpop/"
+- name: "Sonic Mania"
+  overview: |
+    Introduced in 2017 by Sega, the Sonic Mania was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2017"
+  extensions: "sman"
+  url: "https://wiki.reglinux.org/ports/sonic-mania/"
+- name: "Sonic 3 A.I.R."
+  overview: |
+    Introduced in 2019 by Sega, the Sonic 3 A.I.R. was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2019"
+  extensions: "s3air"
+  url: "https://wiki.reglinux.org/ports/sonic3-air/"
+- name: "Sonic Retro Engine"
+  overview: |
+    Introduced in 2021 by Sega, the Sonic Retro Engine was a port system. It is grouped with ports
+    titles in EmulationStation.
+  release_year: "2021"
+  extensions: "son, scd"
+  url: "https://wiki.reglinux.org/ports/sonicretro/"
+- name: "Super Mario War"
+  overview: |
+    Introduced in 2006 by Ports, the Super Mario War was a port system. It is grouped with ports titles
+    in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "2006"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/superbroswar/"
+- name: "The Force Engine"
+  overview: |
+    Introduced in 1995 by Ports, the The Force Engine was a port system. It is grouped with ports titles
+    in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1995"
+  extensions: "tfe"
+  url: "https://wiki.reglinux.org/ports/theforceengine/"
+- name: "Tyrian"
+  overview: |
+    Introduced in 1995 by Ports, the Tyrian was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1995"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/tyrian/"
+- name: "TyrQuake"
+  overview: |
+    The TyrQuake is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "pak"
+  url: "https://wiki.reglinux.org/ports/tyrquake/"
+- name: "Ur-Quan Masters"
+  overview: |
+    Introduced in 1992 by Ports, the Ur-Quan Masters was a port system. It is grouped with ports titles
+    in EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1992"
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/uqm/"
+- name: "Quake II"
+  overview: |
+    Introduced in 1997 by Ports, the Quake II was a port system. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: "1997"
+  extensions: "pak, zip, 7zip"
+  url: "https://wiki.reglinux.org/ports/vitaquake2/"
+- name: "Xash3D-FWGS"
+  overview: |
+    The Xash3D-FWGS is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "game"
+  url: "https://wiki.reglinux.org/ports/xash3d_fwgs/"
+- name: "xrick"
+  overview: |
+    The xrick is a port platform developed by Ports. It is grouped with ports titles in
+    EmulationStation. Its platform tag is `pc` for proper filtering.
+  release_year: ""
+  extensions: "zip"
+  url: "https://wiki.reglinux.org/ports/xrick/"

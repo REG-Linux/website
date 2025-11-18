@@ -5,6 +5,7 @@ permalink: /community/
 body_class: community
 description: Engage with Discord, GitHub, and the wiki to collaborate on REG Linux.
 ---
+{% assign community_channels = site.data.community.channels %}
 {% include site-header.html nav_current="community" %}
 
 <main>
@@ -29,29 +30,15 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
   </section>
 
   <section class="community-grid">
-    <article class="community-card">
-      <div class="community-icon">
-        <img src="{{ '/assets/images/discord-logo.svg' | relative_url }}" alt="Discord logo" loading="lazy" />
-      </div>
-      <h3>Discord</h3>
-      <p>Real-time chat for support, hardware mods, and show-and-tell builds. There are dedicated channels for device flashes, wiki whispers, and preview releases.</p>
-      <a class="btn secondary" href="https://discord.gg/reglinux" target="_blank" rel="noreferrer">Open Discord</a>
-    </article>
-    <article class="community-card">
-      <div class="community-icon">
-        <img src="{{ '/assets/images/github-mark.png' | relative_url }}" alt="GitHub logo" loading="lazy" />
-      </div>
-      <h3>GitHub</h3>
-      <p>Host your PRs, report issues, and explore the Buildroot configs that power REG Linux. Repo-driven releases, CI builds, and packaging live here.</p>
-      <a class="btn secondary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Visit GitHub</a>
-    </article>
-    <article class="community-card">
-      <div class="community-icon">
-        <img src="{{ '/assets/images/docs-icon.svg' | relative_url }}" alt="Documentation" loading="lazy" />
-      </div>
-      <h3>Wiki & docs</h3>
-      <p>Installation guides, device-specific notes, emulated systems, engines, and ports live on the MkDocs wiki. Bookmark it for flashing, debugging, or developer references.</p>
-      <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">Open the wiki</a>
-    </article>
+    {% for channel in community_channels %}
+      <article class="community-card">
+        <div class="community-icon">
+          <img src="{{ channel.icon | relative_url }}" alt="{{ channel.icon_alt }}" loading="lazy" />
+        </div>
+        <h3>{{ channel.title }}</h3>
+        <p>{{ channel.description }}</p>
+        <a class="btn secondary" href="{{ channel.url }}" target="_blank" rel="noreferrer">{{ channel.cta_label }}</a>
+      </article>
+    {% endfor %}
   </section>
 </main>
