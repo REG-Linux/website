@@ -27,7 +27,7 @@ description: Discover engine ports and community remakes that REG Linux handles 
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-mame.png' | relative_url }}" alt="Ported engines" loading="lazy" />
+        <img src="{{ '/assets/images/ports.png' | relative_url }}" alt="Ported engines" loading="lazy" />
         <figcaption>Ports rely on community builds and external assets.</figcaption>
       </figure>
     </div>
