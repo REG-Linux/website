@@ -5,38 +5,47 @@ permalink: /hardware/
 body_class: hardware
 description: Learn how REG Linux supports Arm, Rockchip, Qualcomm, Broadcom, and other silicon via board-specific configs and overlays.
 ---
+{% assign hardware = site.data.hardware %}
 {% include site-header.html nav_current="hardware" %}
 
 <main>
   <section class="hero hardware-hero">
     <div class="hero-text">
-      <p class="eyebrow">Board support</p>
-      <h1>Hardware families supported by REG Linux</h1>
-      <p class="lede">
-        Each REG Linux release ships tuned kernels, overlays, firmware, DTBs, and rescue workflows per board tree.
-        The wiki’s board directory documents how we handle Broadcom, Allwinner, Amlogic, Rockchip, Qualcomm, Mediatek, and Samsung devices.
-      </p>
+      <p class="eyebrow">{{ hardware.hero.eyebrow }}</p>
+      <h1>{{ hardware.hero.title }}</h1>
+      <p class="lede">{{ hardware.hero.lede }}</p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://wiki.reglinux.org/board/" target="_blank" rel="noreferrer">Browse the board directory</a>
-        <a class="btn secondary" href="{{ '/download/' | relative_url }}">Download builds</a>
+        {% for cta in hardware.hero.ctas %}
+          {% assign classes = 'btn ' | append: cta.style %}
+          {% assign cta_href = cta.href %}
+          {% assign cta_first_char = cta_href | slice: 0, 1 %}
+          {% if cta_href contains 'http' %}
+            {% assign resolved_href = cta_href %}
+            {% assign cta_attrs = ' target="_blank" rel="noreferrer"' %}
+          {% elsif cta_first_char == '#' %}
+            {% assign resolved_href = cta_href %}
+            {% assign cta_attrs = '' %}
+          {% else %}
+            {% assign resolved_href = cta_href | relative_url %}
+            {% assign cta_attrs = '' %}
+          {% endif %}
+          <a class="{{ classes }}" href="{{ resolved_href }}"{{ cta_attrs }}>{{ cta.label }}</a>
+        {% endfor %}
       </div>
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-linux.png' | relative_url }}" alt="Hardware logos" loading="lazy" />
-        <figcaption>Mainline kernels, blend of ARM/RISC-V/x86 hardware.</figcaption>
+        <img src="{{ hardware.hero.media.image | relative_url }}" alt="{{ hardware.hero.media.alt }}" loading="lazy" />
+        <figcaption>{{ hardware.hero.media.caption }}</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="hardware-grid">
     <div class="section-heading">
-      <p class="eyebrow">SoC families</p>
-      <h2>Detailed board notes</h2>
-      <p>
-        The wiki keeps each SoC’s `create-boot-script`, `genimage`, overlays, and patches in a dedicated folder.
-        Use the cards below as a quick index before diving into the full wiki pages and device subdirectories.
-      </p>
+      <p class="eyebrow">{{ hardware.doc_section.eyebrow }}</p>
+      <h2>{{ hardware.doc_section.title }}</h2>
+      <p>{{ hardware.doc_section.body }}</p>
     </div>
   </section>
   <section class="board-section">
@@ -60,15 +69,19 @@ description: Learn how REG Linux supports Arm, Rockchip, Qualcomm, Broadcom, and
   </section>
 
   <section class="section-heading">
-    <p class="eyebrow">Need deeper context?</p>
-    <h2>Drill into the wiki board trees</h2>
-    <p>
-      The board README files walk through kernel config, overlays, firmware, DTB layout, and `genimage.cfg` partitions per device.
-      Follow the wiki links above to see which DTBs, firmware blobs, or u-boot binaries belong to an SoC before flashing.
-    </p>
+    <p class="eyebrow">{{ hardware.closing.eyebrow }}</p>
+    <h2>{{ hardware.closing.title }}</h2>
+    <p>{{ hardware.closing.body }}</p>
   </section>
 
   <section class="doc-actions">
-    <a class="btn primary" href="https://wiki.reglinux.org/board/" target="_blank" rel="noreferrer">Open board docs</a>
+    {% if hardware.cta_href contains 'http' %}
+      {% assign hardware_cta_href = hardware.cta_href %}
+      {% assign hardware_cta_attrs = ' target="_blank" rel="noreferrer"' %}
+    {% else %}
+      {% assign hardware_cta_href = hardware.cta_href | relative_url %}
+      {% assign hardware_cta_attrs = '' %}
+    {% endif %}
+    <a class="btn primary" href="{{ hardware_cta_href }}"{{ hardware_cta_attrs }}>{{ hardware.cta_label }}</a>
   </section>
 </main>

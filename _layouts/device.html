@@ -1,28 +1,72 @@
 ---
 layout: default
 ---
+{% assign device_slug = page.slug | default: page.name | split: "." | first %}
+{% assign device_lookup = site.data.devices[device_slug] %}
+{% assign device_title = page.title %}
+{% if device_title == nil or device_title == "" %}
+  {% assign device_title = device_lookup.title | default: "Device" %}
+{% endif %}
+{% assign device_brand = page.brand | default: device_lookup.brand | default: "REG" %}
+{% assign device_image = page.image | default: device_lookup.image %}
+{% assign device_image_width = page.image_width | default: device_lookup.image_width %}
+{% assign device_image_height = page.image_height | default: device_lookup.image_height %}
+{% assign device_board_url = page.board_url | default: device_lookup.board_url %}
+{% assign device_description = page.description | default: device_lookup.description | default: "REG Linux image for " | append: device_title | append: "." %}
+{% assign raw_manufacturer = page.manufacturer | default: device_lookup.manufacturer %}
+{% if raw_manufacturer %}
+  {% assign manufacturers_list = raw_manufacturer %}
+{% else %}
+  {% assign manufacturers_list = 'Unknown' | split: "|" %}
+{% endif %}
+{% assign raw_soc = page.soc | default: device_lookup.soc %}
+{% if raw_soc %}
+  {% assign soc_list = raw_soc %}
+{% else %}
+  {% assign soc_list = 'Unknown' | split: "|" %}
+{% endif %}
+{% assign soc_text = soc_list | join: ', ' %}
+{% assign device_lede = page.lede | default: device_lookup.lede | default: device_title | append: " pairs the " | append: soc_text | append: " SoC with the REG Linux stack for a polished retro console." %}
+{% assign board_link = device_board_url | default: "https://reglinux.org" %}
+{% assign device_url = '/download/' | append: device_slug | append: '/' | relative_url %}
+{% assign soc_identifier = soc_list | first | default: '' %}
+{% assign normalized_soc = soc_identifier | downcase %}
+{% assign board_info = nil %}
+{% for board_entry in site.data.board_families %}
+  {% if board_info == nil %}
+    {% assign family = board_entry[1] %}
+    {% for soc_key in family.soCs %}
+      {% assign normalized_key = soc_key | downcase %}
+      {% if normalized_soc contains normalized_key %}
+        {% assign board_info = family %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 {% include site-header.html nav_current="download" ghost_label="Back to downloads" %}
 
 <main>
   <section class="hero download-hero device-hero">
     <div class="hero-text">
       <p class="eyebrow">REG Linux device image</p>
-      <h1>{{ page.title }}</h1>
-      <p class="lede">{{ page.lede }}</p>
+      <h1>{{ device_title }}</h1>
+      <p class="lede">{{ device_lede }}</p>
       <div class="hero-cta">
-        <a class="btn primary" href="{{ '/download/' | relative_url }}#brand-{{ page.brand | slugify }}">More {{ page.brand }} devices</a>
-        <a class="btn secondary" href="{{ page.board_url }}" target="_blank" rel="noreferrer">Official board page</a>
+        <a class="btn primary" href="{{ '/download/' | relative_url }}#brand-{{ device_brand | slugify }}">More {{ device_brand }} devices</a>
+        <a class="btn secondary" href="{{ board_link }}" target="_blank" rel="noreferrer">Official board page</a>
       </div>
       <ul class="hero-highlights">
-        <li>Manufacturer: {{ page.manufacturer | join: ', ' }}</li>
-        <li>SoC: {{ page.soc | join: ', ' }}</li>
+        <li>Manufacturer: {{ manufacturers_list | join: ', ' }}</li>
+        <li>SoC: {{ soc_list | join: ', ' }}</li>
         <li>Maintained on the REG Linux download channel</li>
       </ul>
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy" {% if page.image_width %}width="{{ page.image_width }}"{% endif %}{% if page.image_height %} height="{{ page.image_height }}"{% endif %} />
-        <figcaption>{{ page.title }} running REG Linux.</figcaption>
+        {% if device_image %}
+          <img src="{{ device_image | relative_url }}" alt="{{ device_title }}" loading="lazy"{% if device_image_width %} width="{{ device_image_width }}"{% endif %}{% if device_image_height %} height="{{ device_image_height }}"{% endif %} />
+        {% endif %}
+        <figcaption>{{ device_title }} running REG Linux.</figcaption>
       </figure>
     </div>
   </section>
@@ -30,21 +74,21 @@ layout: default
   <section class="device-specs">
     <div class="section-heading">
       <p class="eyebrow">Hardware specifications</p>
-      <h2>Built for {{ page.brand }}</h2>
+      <h2>Built for {{ device_brand }}</h2>
       <p>REG Linux targets this hardware profile so you can flash and play without manual tweaking.</p>
     </div>
     <div class="spec-grid">
       <div class="spec-card">
         <h3>Manufacturer</h3>
-        <p>{{ page.manufacturer | join: ', ' }}</p>
+        <p>{{ manufacturers_list | join: ', ' }}</p>
       </div>
       <div class="spec-card">
         <h3>SoC</h3>
-        <p>{{ page.soc | join: ', ' }}</p>
+        <p>{{ soc_list | join: ', ' }}</p>
       </div>
       <div class="spec-card">
         <h3>Image availability</h3>
-        <p>Download the latest build from the REG Linux <a href="{{ '/download/' | relative_url }}">downloads hub</a> ({{ page.brand }} section).</p>
+        <p>Download the latest build from the REG Linux <a href="{{ '/download/' | relative_url }}">downloads hub</a> ({{ device_brand }} section).</p>
       </div>
     </div>
   </section>
@@ -52,18 +96,18 @@ layout: default
   <section class="install-notes">
     <div class="section-heading">
       <p class="eyebrow">Install notes</p>
-      <h2>Flash {{ page.title }} and boot</h2>
-      <p>Follow the workflow below; the official board page contains any extra quirks for the {{ page.soc | join: ', ' }} platform.</p>
+      <h2>Flash {{ device_title }} and boot</h2>
+      <p>Follow the workflow below; the official board page contains any extra quirks for the {{ soc_list | join: ', ' }} platform.</p>
     </div>
     <ol class="steps">
       <li>
-        <strong>Grab the image.</strong> Download the latest {{ page.title }} build from the downloads page or the <a href="{{ page.board_url }}" target="_blank" rel="noreferrer">official board entry</a>.
+        <strong>Grab the image.</strong> Download the latest {{ device_title }} build from the downloads page or the <a href="{{ board_link }}" target="_blank" rel="noreferrer">official board entry</a>.
       </li>
       <li>
         <strong>Flash to storage.</strong> Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
       </li>
       <li>
-        <strong>First boot setup.</strong> Insert the media into your {{ page.title }}, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+        <strong>First boot setup.</strong> Insert the media into your {{ device_title }}, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
       </li>
       <li>
         <strong>Troubleshoot with rescue tools.</strong> REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
@@ -71,20 +115,6 @@ layout: default
     </ol>
   </section>
 
-  {% assign soc_identifier = page.soc | first | default: '' %}
-  {% assign soc_identifier = soc_identifier | downcase %}
-  {% assign board_info = nil %}
-  {% for board_entry in site.data.board_families %}
-    {% if board_info == nil %}
-      {% assign family = board_entry[1] %}
-      {% for soc_key in family.soCs %}
-        {% assign normalized_key = soc_key | downcase %}
-        {% if soc_identifier contains normalized_key %}
-          {% assign board_info = family %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
   {% if board_info %}
     <section class="board-details">
       <div class="section-heading">
@@ -116,7 +146,7 @@ layout: default
   <div class="cta-panel">
     <div>
       <h3>Need a refresher?</h3>
-      <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ page.board_url }}" target="_blank" rel="noreferrer">{{ page.title }} board page</a>.</p>
+      <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ board_link }}" target="_blank" rel="noreferrer">{{ device_title }} board page</a>.</p>
     </div>
     <a class="btn primary" href="{{ '/download/' | relative_url }}">Back to downloads</a>
   </div>

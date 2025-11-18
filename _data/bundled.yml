@@ -1,0 +1,20 @@
+hero:
+  eyebrow: Curated legal content
+  title: Bundled games with REG Linux
+  lede: >
+    REG Linux ships with a hand-picked pack of indie and open-source games whose authors have explicitly granted us
+    permission to redistribute their work. Every title below includes proper credits so you know who to thank.
+  highlights:
+    - Playable out of the box on first boot
+    - Verified licenses / permissions from original creators
+    - Great demos for showcasing REG to friends
+  media:
+    image: /assets/images/games/amoeba-jump-atari2600.png
+    alt: Bundled game mosaic
+    caption: Sample gameplay art from the bundled collection.
+legal: >
+  Every bundled ROM or game asset is provided either under an open-source license or through written permission from the creators.
+  We keep proof of these grants on file and can provide them to users upon request.
+footer:
+  text: "&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported."
+  note: Bundled titles are included with explicit permission from their respective creators or via approved open-source licenses.

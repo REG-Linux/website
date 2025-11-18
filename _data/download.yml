@@ -1,0 +1,32 @@
+hero:
+  eyebrow: Pick your hardware
+  title: Download REG Linux builds
+  lede: >
+    Browse curated images for %TOTAL% handhelds, SBCs, and mini PCs. Each board page includes flashing instructions,
+    release notes, and troubleshooting tips.
+  media:
+    image: /assets/images/logo-retroarch.png
+    alt: REG Linux builds
+    caption: Images stay close to mainline kernels for stability.
+  ctas:
+    - label: Jump to vendors
+      href: "#brands"
+      style: primary
+    - label: Contribute images
+      href: https://github.com/REG-Linux
+      style: secondary
+summary:
+  architectures_heading: Supported architectures
+  architectures_body: >
+    REG focuses on common retro hardware classes. Pick your CPU family if you are unsure about the device vendor.
+  architectures:
+    - AArch64
+    - ARMv6
+    - ARMv7
+    - RISC-V
+    - x86-64
+  vendor_heading: Vendors
+  vendor_body: Quick links to each vendor section.
+footer:
+  text: "&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported."
+  note: 'Images and board descriptions are referenced from <a href="https://reglinux.org/download" target="_blank" rel="noreferrer">reglinux.org/download</a>.'

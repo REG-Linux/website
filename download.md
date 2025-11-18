@@ -5,45 +5,74 @@ permalink: /download/
 body_class: download
 description: Choose your REG Linux image by vendor or architecture across the supported device matrix.
 ---
-{% assign total_devices = site.devices | size %}
+{% assign download_content = site.data.download %}
+{% assign total_devices = site.data.devices | size %}
 {% assign brands = site.data.brand_order %}
 {% include site-header.html nav_current="download" %}
 
 <main>
   <section class="hero download-hero">
     <div class="hero-text">
-      <p class="eyebrow">Pick your hardware</p>
-      <h1>Download REG Linux builds</h1>
-      <p class="lede">Browse curated images for {{ total_devices }} handhelds, SBCs, and mini PCs. Each board page includes flashing instructions, release notes, and troubleshooting tips.</p>
+      <p class="eyebrow">{{ download_content.hero.eyebrow }}</p>
+      <h1>{{ download_content.hero.title }}</h1>
+      <p class="lede">{{ download_content.hero.lede | replace: '%TOTAL%', total_devices }}</p>
       <div class="hero-cta">
-        <a class="btn primary" href="#brands">Jump to vendors</a>
-        <a class="btn secondary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Contribute images</a>
+        {% for cta in download_content.hero.ctas %}
+          {% assign classes = 'btn ' | append: cta.style %}
+          {% assign cta_href = cta.href %}
+          {% assign cta_first_char = cta_href | slice: 0, 1 %}
+          {% if cta_href contains 'http' %}
+            {% assign resolved_href = cta_href %}
+            {% assign cta_attrs = ' target="_blank" rel="noreferrer"' %}
+          {% elsif cta_first_char == '#' %}
+            {% assign resolved_href = cta_href %}
+            {% assign cta_attrs = '' %}
+          {% else %}
+            {% assign resolved_href = cta_href | relative_url %}
+            {% assign cta_attrs = '' %}
+          {% endif %}
+          <a class="{{ classes }}" href="{{ resolved_href }}"{{ cta_attrs }}>{{ cta.label }}</a>
+        {% endfor %}
       </div>
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-retroarch.png' | relative_url }}" alt="REG Linux builds" loading="lazy" />
-        <figcaption>Images stay close to mainline kernels for stability.</figcaption>
+        <img src="{{ download_content.hero.media.image | relative_url }}" alt="{{ download_content.hero.media.alt }}" loading="lazy" />
+        <figcaption>{{ download_content.hero.media.caption }}</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="download-summary" id="brands">
     <div>
-      <h2>Supported architectures</h2>
-      <p>REG focuses on common retro hardware classes. Pick your CPU family if you are unsure about the device vendor.</p>
+      <h2>{{ download_content.summary.architectures_heading }}</h2>
+      <p>{{ download_content.summary.architectures_body }}</p>
       <div class="arch-pills">
-        <span class="chip">AArch64</span><span class="chip">ARMv6</span><span class="chip">ARMv7</span><span class="chip">RISC-V</span><span class="chip">x86-64</span>
+        {% for arch in download_content.summary.architectures %}
+          <span class="chip">{{ arch }}</span>
+        {% endfor %}
       </div>
     </div>
     <div class="brand-pills">
-      <h2>Vendors</h2>
-      <p>Quick links to each vendor section.</p>
+      <h2>{{ download_content.summary.vendor_heading }}</h2>
+      <p>{{ download_content.summary.vendor_body }}</p>
       <div class="pill-grid">
         {% for brand in brands %}
-          {% assign brand_devices = site.devices | where: "brand", brand %}
-          {% if brand_devices.size > 0 %}
-            <a href="#brand-{{ brand | slugify }}">{{ brand }} <span>{{ brand_devices.size }} devices</span></a>
+          {% assign brand_slugs = "" %}
+          {% for entry in site.data.devices %}
+            {% assign slug = entry[0] %}
+            {% assign device = entry[1] %}
+            {% if device.brand == brand %}
+              {% if brand_slugs == "" %}
+                {% assign brand_slugs = slug %}
+              {% else %}
+                {% assign brand_slugs = brand_slugs | append: "," | append: slug %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% if brand_slugs != "" %}
+            {% assign brand_device_slugs = brand_slugs | split: "," %}
+            <a href="#brand-{{ brand | slugify }}">{{ brand }} <span>{{ brand_device_slugs | size }} devices</span></a>
           {% endif %}
         {% endfor %}
       </div>
@@ -51,16 +80,31 @@ description: Choose your REG Linux image by vendor or architecture across the su
   </section>
 
   {% for brand in brands %}
-    {% assign brand_devices = site.devices | where: "brand", brand %}
-    {% if brand_devices.size == 0 %}{% continue %}{% endif %}
+    {% assign brand_slugs = "" %}
+    {% for entry in site.data.devices %}
+      {% assign slug = entry[0] %}
+      {% assign device = entry[1] %}
+      {% if device.brand == brand %}
+        {% if brand_slugs == "" %}
+          {% assign brand_slugs = slug %}
+        {% else %}
+          {% assign brand_slugs = brand_slugs | append: "," | append: slug %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if brand_slugs == "" %}{% continue %}{% endif %}
+    {% assign brand_device_slugs = brand_slugs | split: "," %}
+    {% assign brand_device_count = brand_device_slugs | size %}
     <section class="download-brand" id="brand-{{ brand | slugify }}">
       <div class="brand-heading">
         <h2>{{ brand }}</h2>
-        <p>{{ brand_devices.size }} supported device{% if brand_devices.size > 1 %}s{% endif %}</p>
+        <p>{{ brand_device_count }} supported device{% if brand_device_count > 1 %}s{% endif %}</p>
       </div>
       <div class="download-grid">
-        {% for device in brand_devices %}
-          <a class="device-card" href="{{ device.url }}" aria-label="{{ device.title }} details">
+        {% for slug in brand_device_slugs %}
+          {% assign device = site.data.devices[slug] %}
+          {% assign device_url = '/download/' | append: slug | append: '/' | relative_url %}
+          <a class="device-card" href="{{ device_url }}" aria-label="{{ device.title }} details">
             <div class="device-media">
               <img src="{{ device.image | relative_url }}" alt="{{ device.title }}" loading="lazy"{% if device.image_width %} width="{{ device.image_width }}"{% endif %}{% if device.image_height %} height="{{ device.image_height }}"{% endif %} />
             </div>
@@ -77,6 +121,6 @@ description: Choose your REG Linux image by vendor or architecture across the su
 </main>
 
 <footer class="site-footer">
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.</p>
-  <p class="small">Images and board descriptions are referenced from <a href="https://reglinux.org/download" target="_blank" rel="noreferrer">reglinux.org/download</a>.</p>
+  <p>{{ download_content.footer.text }}</p>
+  <p class="small">{{ download_content.footer.note }}</p>
 </footer>

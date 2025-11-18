@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
+    {% assign computed_title = page.title %}
+    {% assign computed_description = page.description %}
+    {% if page.layout == "device" %}
+      {% assign device_slug = page.slug | default: page.name | split: "." | first %}
+      {% assign device_lookup = site.data.devices[device_slug] %}
+      {% if device_lookup %}
+        {% if computed_title == nil or computed_title == "" %}
+          {% assign computed_title = device_lookup.title %}
+        {% endif %}
+        {% if computed_description == nil or computed_description == "" %}
+          {% assign computed_description = device_lookup.description %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    <title>{% if computed_title %}{{ computed_title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if computed_description %}
+    <meta name="description" content="{{ computed_description }}" />
     {% elsif site.description %}
     <meta name="description" content="{{ site.description }}" />
     {% endif %}

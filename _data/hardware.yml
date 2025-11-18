@@ -1,0 +1,31 @@
+hero:
+  eyebrow: Board support
+  title: Hardware families supported by REG Linux
+  lede: >
+    Each REG Linux release ships tuned kernels, overlays, firmware, DTBs, and rescue workflows per board tree.
+    The wiki’s board directory documents how we handle Broadcom, Allwinner, Amlogic, Rockchip, Qualcomm, Mediatek, and Samsung devices.
+  ctas:
+    - label: Browse the board directory
+      href: https://wiki.reglinux.org/board/
+      style: primary
+    - label: Download builds
+      href: /download/
+      style: secondary
+  media:
+    image: /assets/images/logo-linux.png
+    alt: Hardware logos
+    caption: Mainline kernels, blend of ARM/RISC-V/x86 hardware.
+doc_section:
+  eyebrow: SoC families
+  title: Detailed board notes
+  body: >
+    The wiki keeps each SoC’s `create-boot-script`, `genimage`, overlays, and patches in a dedicated folder.
+    Use the cards below as a quick index before diving into the full wiki pages and device subdirectories.
+closing:
+  eyebrow: Need deeper context?
+  title: Drill into the wiki board trees
+  body: >
+    The board README files walk through kernel config, overlays, firmware, DTB layout, and `genimage.cfg` partitions per device.
+    Follow the wiki links above to see which DTBs, firmware blobs, or u-boot binaries belong to an SoC before flashing.
+cta_label: Open board docs
+cta_href: https://wiki.reglinux.org/board/

@@ -5,33 +5,31 @@ permalink: /bundled-games/
 body_class: games
 description: Play the legally licensed indie and open-source titles that ship with REG Linux out of the box.
 ---
+{% assign bundled = site.data.bundled %}
 {% include site-header.html nav_current="bundled-games" ghost_label="Get REG Linux" %}
 
 <main>
   <section class="hero games-hero">
     <div class="hero-text">
-      <p class="eyebrow">Curated legal content</p>
-      <h1>Bundled games with REG Linux</h1>
-      <p class="lede">
-        REG Linux ships with a hand-picked pack of indie and open-source games whose authors have explicitly granted us
-        permission to redistribute their work. Every title below includes proper credits so you know who to thank.
-      </p>
+      <p class="eyebrow">{{ bundled.hero.eyebrow }}</p>
+      <h1>{{ bundled.hero.title }}</h1>
+      <p class="lede">{{ bundled.hero.lede }}</p>
       <ul class="hero-highlights">
-        <li>Playable out of the box on first boot</li>
-        <li>Verified licenses / permissions from original creators</li>
-        <li>Great demos for showcasing REG to friends</li>
+        {% for item in bundled.hero.highlights %}
+          <li>{{ item }}</li>
+        {% endfor %}
       </ul>
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/games/amoeba-jump-atari2600.png' | relative_url }}" alt="Bundled game mosaic" loading="lazy" />
-        <figcaption>Sample gameplay art from the bundled collection.</figcaption>
+        <img src="{{ bundled.hero.media.image | relative_url }}" alt="{{ bundled.hero.media.alt }}" loading="lazy" />
+        <figcaption>{{ bundled.hero.media.caption }}</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="games-legal">
-    <p>Every bundled ROM or game asset is provided either under an open-source license or through written permission from the creators. We keep proof of these grants on file and can provide them to users upon request.</p>
+    <p>{{ bundled.legal }}</p>
   </section>
 
   {% assign all_games = site.data.bundled_games | sort: 'name' %}
@@ -83,6 +81,6 @@ description: Play the legally licensed indie and open-source titles that ship wi
 </main>
 
 <footer class="site-footer">
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.</p>
-  <p class="small">Bundled titles are included with explicit permission from their respective creators or via approved open-source licenses.</p>
+  <p>{{ bundled.footer.text }}</p>
+  <p class="small">{{ bundled.footer.note }}</p>
 </footer>

@@ -17,6 +17,7 @@ DOWNLOAD_URL = urljoin(BASE, "/download")
 ASSETS_DIR = ROOT / "assets" / "images"
 DEVICES_DIR = ROOT / "_devices"
 DATA_DIR = ROOT / "_data"
+DEVICES_DATA_PATH = DATA_DIR / "devices.yml"
 
 
 def slugify(text: str) -> str:
@@ -105,39 +106,51 @@ def write_brand_order(brands: list[str]) -> None:
             fh.write(f"- {brand}\n")
 
 
-def write_device_file(device: dict) -> None:
+def write_device_page(device: dict) -> None:
     DEVICES_DIR.mkdir(parents=True, exist_ok=True)
     slug = device["slug"]
-    manufacturer_lines = "\n".join(f"  - \"{m}\"" for m in device["manufacturers"])
-    soc_lines = "\n".join(f"  - \"{s}\"" for s in device["socs"])
-    description = (
-        f"REG Linux image for {device['title']} powered by {', '.join(device['socs'])}."
-        if device["socs"]
-        else f"REG Linux image for {device['title']}."
-    )
-    lede = (
-        f"{device['title']} pairs the {device['socs'][0]} SoC with the REG Linux stack for a polished retro console."
-        if device["socs"]
-        else f"{device['title']} runs REG Linux for a reliable retro gaming setup."
-    )
+    title = device["title"].replace('"', '\\"')
     content = f"""---
 layout: device
-permalink: /download/{slug}/
-title: {device['title']}
-brand: "{device['brand']}"
-manufacturer:
-{manufacturer_lines or '  - "Unknown"'}
-soc:
-{soc_lines or '  - "Unknown"'}
-image: {device['image_path']}
-image_width: {device['image_width'] or ''}
-image_height: {device['image_height'] or ''}
-board_url: {device['board_url']}
-description: "{description}"
-lede: "{lede}"
+title: "{title}"
 ---
 """
     (DEVICES_DIR / f"{slug}.md").write_text(content)
+
+
+def quote(value: str | int | None) -> str:
+    if value is None:
+        return '""'
+    if isinstance(value, (int, float)):
+        return f"{value}"
+    text = str(value).replace('"', '\\"')
+    return f"\"{text}\""
+
+
+def write_devices_data(devices: list[dict]) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    lines: list[str] = ["---"]
+    for record in sorted(devices, key=lambda item: item["slug"]):
+        lines.append(f"{record['slug']}:")
+        lines.append(f"  title: {quote(record['title'])}")
+        lines.append(f"  brand: {quote(record['brand'])}")
+        manufacturers = record["manufacturers"] or [record["brand"]]
+        lines.append("  manufacturer:")
+        for name in manufacturers:
+            lines.append(f"  - {quote(name)}")
+        socs = record["socs"] or ["Unknown"]
+        lines.append("  soc:")
+        for soc in socs:
+            lines.append(f"  - {quote(soc)}")
+        lines.append(f"  image: {quote(record['image_path'] or '')}")
+        image_width = record["image_width"] or ""
+        image_height = record["image_height"] or ""
+        lines.append(f"  image_width: {image_width}")
+        lines.append(f"  image_height: {image_height}")
+        lines.append(f"  board_url: {quote(record['board_url'])}")
+        lines.append(f"  description: {quote(record['description'])}")
+        lines.append(f"  lede: {quote(record['lede'])}")
+    DEVICES_DATA_PATH.write_text("\n".join(lines) + "\n")
 
 
 def main() -> None:
@@ -150,6 +163,17 @@ def main() -> None:
         slug = slugify(device["title"])
         manufacturers, socs = extract_board_meta(device["board_url"])
         image_path, _, _ = download_image(device["image"], slug, used_names)
+        soc_list = socs or ["Unknown"]
+        description = (
+            f"REG Linux image for {device['title']} powered by {', '.join(soc_list)}."
+            if soc_list and soc_list[0] != "Unknown"
+            else f"REG Linux image for {device['title']}."
+        )
+        lede = (
+            f"{device['title']} pairs the {soc_list[0]} SoC with the REG Linux stack for a polished retro console."
+            if soc_list and soc_list[0] != "Unknown"
+            else f"{device['title']} runs REG Linux for a reliable retro gaming setup."
+        )
         dataset.append(
             {
                 **device,
@@ -159,11 +183,14 @@ def main() -> None:
                 "image_path": image_path,
                 "image_width": int(device["image_width"]) if device["image_width"] else "",
                 "image_height": int(device["image_height"]) if device["image_height"] else "",
+                "description": description,
+                "lede": lede,
             }
         )
     write_brand_order(brand_order)
+    write_devices_data(dataset)
     for record in dataset:
-        write_device_file(record)
+        write_device_page(record)
     print(f"Generated {len(dataset)} device files.")
 
 
