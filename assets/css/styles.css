@@ -288,6 +288,56 @@ main {
   gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
+.ports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(1.25rem, 2vw, 2rem);
+}
+
+.port-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.port-overview {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.port-meta {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+.port-meta strong {
+  color: var(--text);
+}
+
+.port-extensions {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.engine-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+@media (max-width: 720px) {
+  .engine-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .community-card {
   background: var(--card);
   border-radius: var(--radius);
@@ -563,6 +613,27 @@ h2 {
 
 .card p {
   color: var(--text-muted);
+}
+
+.engine-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.engine-logo {
+  margin: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.engine-logo img {
+  max-height: 64px;
+  width: auto;
+  display: block;
 }
 
 .download-hero {
