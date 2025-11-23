@@ -22,7 +22,6 @@ cpm, dsk, sad, mgt, sdf, td0, sbt, zip
 
 ## Emulators
 
-- **samcoupe** (samcoupe) – Requires BR2_PACKAGE_SIMCOUPE
+- **samcoupe** (samcoupe)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

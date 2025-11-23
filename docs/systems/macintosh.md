@@ -22,9 +22,9 @@ dsk, zip, 7z, mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, dsk, ima, i
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **minivmac** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MINIVMAC | Incompatible extensions: 7z, mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, ima, ufi, ipf, dc42, woz, 2mg, 360, chd, cue, toc, nrg, gdi, iso, cdr, hd, hdv, 2mg, hdi
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **minivmac** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -44,4 +44,3 @@ If booting from a hard drive, floppies may not load at boot. For best results, m
 Disk images will only load on Mac IIx and are not bootable.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

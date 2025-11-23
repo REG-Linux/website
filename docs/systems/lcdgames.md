@@ -22,8 +22,7 @@ mgw, zip, 7z
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME | Incompatible extensions: mgw
+- **mame** (libretro)
+- **mame** (mame)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

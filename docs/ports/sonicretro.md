@@ -52,4 +52,3 @@ different between the two, so you may need to manually select the emulator to ch
 The dev menu option is needed to run mods.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

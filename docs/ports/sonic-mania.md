@@ -52,4 +52,3 @@ TargetVersion=5
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

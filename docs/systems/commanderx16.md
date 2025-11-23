@@ -17,7 +17,7 @@ bas, img, prg
 
 ## Emulators
 
-- **x16emu** (x16emu) – Requires BR2_PACKAGE_X16EMU
+- **x16emu** (x16emu)
 
 ## Notes
 
@@ -40,4 +40,3 @@ RUN
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

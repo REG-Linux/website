@@ -15,4 +15,3 @@ The Msx is a computer platform developed by Microsoft.
 - Hardware type: computer
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

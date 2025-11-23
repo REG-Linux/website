@@ -29,4 +29,3 @@ rem
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

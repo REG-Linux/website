@@ -22,8 +22,7 @@ rom, xfd, atr, atx, cdm, cas, car, bin, a52, xex, zip, 7z
 
 ## Emulators
 
-- **a5200** (libretro) – Requires BR2_PACKAGE_LIBRETRO_A5200
-- **atari800** (libretro) – Requires BR2_PACKAGE_LIBRETRO_ATARI800
+- **a5200** (libretro)
+- **atari800** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

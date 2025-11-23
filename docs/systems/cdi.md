@@ -22,12 +22,11 @@ chd, cue, toc, nrg, gdi, iso, cdr
 
 ## Emulators
 
-- **same_cdi** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SAME_CDI | Incompatible extensions: cue, toc, nrg, gdi, cdr
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **same_cdi** (libretro)
+- **mame** (mame)
 
 ## Notes
 
 Requires MAME BIOS file cdimono1.zip
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -15,7 +15,7 @@ flatpak
 
 ## Emulators
 
-- **flatpak** (flatpak) – Requires BR2_PACKAGE_FLATPAK
+- **flatpak** (flatpak)
 
 ## Notes
 
@@ -30,4 +30,3 @@ List your apps : flatpak list
 Remove intalled app : flatpak remove xmoto
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

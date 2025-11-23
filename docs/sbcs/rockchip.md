@@ -25,7 +25,7 @@ REG Linux packages Rockchip support across multiple SoC families; each board tre
 * Linux 6.6.40 with `CONFIG_LOCALVERSION=-reglinux` plus patches for SDMMC/SPI pinctrls, Broadcom/Realtek wireless, V4L2, Moonlight/libretro, and RK3288 display adjustments.
 * MiQi and Tinker Board S directories provide `create-boot-script.sh`, `genimage.cfg`, and `boot/extlinux.conf` pointing to `rk3288-miqi.dtb`, `rk3288-tinker.dtb`, or `rk3288-tinker-s.dtb`.
 * `fsoverlay/` installs temperature helpers and ALSA card configs; `patches/` holds downstream tweaks such as `bluez5_utils` and `moonlight-embedded`.
-* Board scripts ensure the Rockchip bootloaders (`uboot-multiboard/.../u-boot-rockchip.bin`) and DTBs land in `REGLINUX_BINARIES_DIR`.
+* Board scripts ensure the Rockchip bootloaders (`uboot-multisbcs/.../u-boot-rockchip.bin`) and DTBs land in `REGLINUX_BINARIES_DIR`.
 
 ## RK3326
 
@@ -37,7 +37,7 @@ REG Linux packages Rockchip support across multiple SoC families; each board tre
 ## RK3328
 
 * Support for Renegade and ROCK64 with Linux `linux-rk3328-defconfig.config`.
-* `renegade/` and `rock64/` directories stage the proper DTB (`rk3328-roc-cc.dtb`, `rk3328-rock64.dtb`), `extlinux.conf`, `uboot-multiboard/.../u-boot-rockchip.bin`, and update blobs before `genimage`.
+* `renegade/` and `rock64/` directories stage the proper DTB (`rk3328-roc-cc.dtb`, `rk3328-rock64.dtb`), `extlinux.conf`, `uboot-multisbcs/.../u-boot-rockchip.bin`, and update blobs before `genimage`.
 * Overlay adds `cputemp`/`gputemp` helpers and ALSA card definitions; `patches/` reserved for board-specific fixes.
 
 ## RK3399

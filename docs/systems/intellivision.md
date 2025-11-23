@@ -22,7 +22,6 @@ int, bin, rom, zip, 7z
 
 ## Emulators
 
-- **freeintv** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FREEINTV
+- **freeintv** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

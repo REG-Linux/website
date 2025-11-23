@@ -22,10 +22,9 @@ bin, sms, zip, 7z
 
 ## Emulators
 
-- **gearsystem** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GEARSYSTEM
-- **genesisplusgx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GENESISPLUSGX
-- **picodrive** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PICODRIVE
-- **smsplus** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SMSPLUS_GX
+- **gearsystem** (libretro)
+- **genesisplusgx** (libretro)
+- **picodrive** (libretro)
+- **smsplus** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

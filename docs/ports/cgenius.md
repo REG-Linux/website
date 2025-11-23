@@ -45,4 +45,3 @@ This will be the file that helps launch the game directly but also should be nam
 Note: Some 'mods' can also be downloaded via Commander Genius also.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

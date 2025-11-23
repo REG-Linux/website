@@ -34,4 +34,3 @@ It is recommended to use the English version.
 Other versions may freeze the system.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

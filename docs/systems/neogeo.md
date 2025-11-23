@@ -22,14 +22,13 @@ Introduced in 1990 by SNK, the Neo-Geo was a console system. Its platform tag is
 
 ## Emulators
 
-- **fbalpha** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FBALPHA | Incompatible extensions: neo
-- **fbneo** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FBNEO | Incompatible extensions: neo
-- **geolith** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GEOLITH | Incompatible extensions: 7z, zip
-- **imame4all** (libretro) – Requires BR2_PACKAGE_LIBRETRO_IMAME | Incompatible extensions: neo
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME | Incompatible extensions: neo
-- **mame0139** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME2010 | Incompatible extensions: neo
-- **mame078plus** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME2003_PLUS | Incompatible extensions: neo
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME | Incompatible extensions: neo
+- **fbalpha** (libretro)
+- **fbneo** (libretro)
+- **geolith** (libretro)
+- **imame4all** (libretro)
+- **mame** (libretro)
+- **mame0139** (libretro)
+- **mame078plus** (libretro)
+- **mame** (mame)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

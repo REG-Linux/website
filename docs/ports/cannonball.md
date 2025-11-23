@@ -30,4 +30,3 @@ Add mame 'OutRun rev. B' ROMs (epr-10187.88, epr-10327a.76.. ) in this directory
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

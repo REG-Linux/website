@@ -22,15 +22,14 @@ gbc, zip, 7z
 
 ## Emulators
 
-- **gambatte** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GAMBATTE
-- **gearboy** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GEARBOY
-- **mesen-s** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MESENS
-- **mgba** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MGBA
-- **sameboy** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SAMEBOY
-- **vba-m** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VBA_M
+- **gambatte** (libretro)
+- **gearboy** (libretro)
+- **mesen-s** (libretro)
+- **mgba** (libretro)
+- **sameboy** (libretro)
+- **vba-m** (libretro)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

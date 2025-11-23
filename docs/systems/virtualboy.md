@@ -22,8 +22,7 @@ vb, zip, 7z
 
 ## Emulators
 
-- **vb** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_VB
-- **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
+- **vb** (libretro)
+- **mednafen** (mednafen)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

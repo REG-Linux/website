@@ -22,7 +22,7 @@ dsk, sna, tap, cdt, voc, m3u, zip, 7z
 
 ## Emulators
 
-- **cap32** (libretro) – Requires BR2_PACKAGE_LIBRETRO_CAP32
+- **cap32** (libretro)
 
 ## Notes
 
@@ -30,4 +30,3 @@ To enable gamepad support, go in RetroArch menu with "Hotkey + B", then switch t
 "Quick Menu/Core Input Options/User 1 Device type: Retropad" with "Amstrad Joystick"
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

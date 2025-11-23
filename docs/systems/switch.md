@@ -22,8 +22,7 @@ xci, nsp
 
 ## Emulators
 
-- **eden** (eden) – Requires BR2_PACKAGE_EDEN
-- **ryujinx** (ryujinx) – Requires BR2_PACKAGE_RYUJINX
+- **eden** (eden)
+- **ryujinx** (ryujinx)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

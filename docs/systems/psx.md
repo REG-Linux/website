@@ -22,15 +22,14 @@ cue, img, mdf, pbp, toc, cbn, m3u, ccd, chd, iso
 
 ## Emulators
 
-- **duckstation** (duckstation) – Requires BR2_PACKAGE_DUCKSTATION, BR2_PACKAGE_DUCKSTATION_MINI
-- **duckstation-gpl** (duckstation) – Requires BR2_PACKAGE_DUCKSTATION_GPL
-- **mednafen_psx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_PSX
-- **pcsx_rearmed** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PCSX
-- **swanstation** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SWANSTATION
-- **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN_PSX
+- **duckstation** (duckstation)
+- **duckstation-gpl** (duckstation)
+- **mednafen_psx** (libretro)
+- **pcsx_rearmed** (libretro)
+- **swanstation** (libretro)
+- **mednafen** (mednafen)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

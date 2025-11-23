@@ -44,4 +44,3 @@ A mouse & keyboard is required initially but you can configure a controller per 
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

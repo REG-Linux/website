@@ -60,4 +60,3 @@ It is important to use the exact directory name above.
 A keyboard and mouse / touchscreen is required to create the initial user profile & game start.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

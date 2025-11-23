@@ -22,7 +22,7 @@ daphne, zar
 
 ## Emulators
 
-- **hypseus-singe** (hypseus-singe) – Requires BR2_PACKAGE_HYPSEUS_SINGE
+- **hypseus-singe** (hypseus-singe)
 
 ## Notes
 
@@ -73,4 +73,3 @@ Singe games should now be run out of the singe rom directory.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

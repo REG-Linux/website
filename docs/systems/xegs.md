@@ -22,8 +22,8 @@ atr, dsk, xfd, bin, rom, car, zip, 7z
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -31,4 +31,3 @@ Requires MAME BIOS file xegs.zip
 Software list mode recommended
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

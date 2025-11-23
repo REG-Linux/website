@@ -22,7 +22,6 @@ iso, xex, xbox360, zar
 
 ## Emulators
 
-- **xenia-canary** (xenia-canary) – Requires BR2_PACKAGE_XENIA_CANARY
+- **xenia-canary** (xenia-canary)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

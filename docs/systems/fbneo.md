@@ -22,8 +22,8 @@ zip, 7z
 
 ## Emulators
 
-- **fbalpha** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FBALPHA
-- **fbneo** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FBNEO
+- **fbalpha** (libretro)
+- **fbneo** (libretro)
 
 ## Notes
 
@@ -33,4 +33,3 @@ The file FinalBurn Neo (ClrMame Pro XML, Arcade only).dat in bios/FBNeo may be u
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

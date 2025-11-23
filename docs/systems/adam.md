@@ -21,8 +21,8 @@ wav, ddp, mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, dsk, rom, col, 
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -30,4 +30,3 @@ Requires the following MAME BIOS files:
 adam.zip, adam_ddp.zip, adam_fdc.zip, adam_kb.zip, & adam_prn.zip
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

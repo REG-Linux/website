@@ -17,11 +17,10 @@ game
 
 ## Emulators
 
-- **gong** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GONG
+- **gong** (libretro)
 
 ## Notes
 
 This system is a standalone libretro game. No rom required.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

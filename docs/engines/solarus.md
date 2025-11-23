@@ -32,4 +32,3 @@
 - Use RegLinux’s ROM tree to include the same directory structure the Solarus Builder generates so controllers and audio load without extra configuration.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

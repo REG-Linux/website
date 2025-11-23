@@ -22,11 +22,10 @@ iso, cso, pbp, chd
 
 ## Emulators
 
-- **ppsspp** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PPSSPP
-- **ppsspp** (ppsspp) – Requires BR2_PACKAGE_PPSSPP
+- **ppsspp** (libretro)
+- **ppsspp** (ppsspp)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

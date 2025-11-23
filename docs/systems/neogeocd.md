@@ -22,7 +22,6 @@ cue, iso, chd
 
 ## Emulators
 
-- **neocd** (libretro) – Requires BR2_PACKAGE_LIBRETRO_NEOCD
+- **neocd** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

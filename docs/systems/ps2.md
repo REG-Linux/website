@@ -22,13 +22,15 @@ iso, mdf, nrg, bin, img, dump, gz, cso, chd, m3u
 
 ## Emulators
 
-- **pcsx2** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PCSX2
-- **play** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PLAY | Incompatible extensions: m3u
-- **pcsx2** (pcsx2) – Requires BR2_PACKAGE_PCSX2 | Incompatible extensions: m3u
-- **play** (play) – Requires BR2_PACKAGE_PLAY | Incompatible extensions: m3u
+- **pcsx2** (libretro)
+- **play** (libretro) | Incompatible extensions: m3u
+- **pcsx2** (pcsx2) | Incompatible extensions: m3u
+- **play** (play) | Incompatible extensions: m3u
+
+## ROM layout and BIOS
+
+REG Linux mounts a `roms/ps2` folder for disc images, mirroring the layout described in the handheld guides; keep your `.iso`, `.cso`, `.chd`, and related files inside that directory so front ends can discover them without additional tuning.
+
+PCSX2 depends on the PlayStation 2 BIOS (`SCPH-70012.bin`) and expects it in the same area as other emulator firmware, so copy it into `roms/bios/pcsx2/bios`. The community-focused AetherSX2 builds that run on RK-based devices share the same BIOS requirement, so a single copy satisfies both `pcsx2` and those portable-friendly builds.
 
 ## Notes
-
-
----
-Source data: REG Linux emulationstation/es-system/es_systems.yml

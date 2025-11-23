@@ -17,8 +17,8 @@ gcm, iso, gcz, ciso, wbfs, rvz, elf, dol, m3u, json
 
 ## Emulators
 
-- **dolphin** (dolphin) – Requires BR2_PACKAGE_DOLPHIN_EMU
-- **dolphin** (libretro) – Requires BR2_PACKAGE_LIBRETRO_DOLPHIN
+- **dolphin** (dolphin)
+- **dolphin** (libretro)
 
 ## Notes
 
@@ -32,4 +32,3 @@ Please ensure that you have the necessary BIOS file (IPL.bin) available in one o
 You can access the BIOS settings by holding down the 'A' or 'east' button.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

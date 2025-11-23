@@ -22,8 +22,7 @@ zip, 7z
 
 ## Emulators
 
-- **flycast** (flycast) – Requires BR2_PACKAGE_FLYCAST
-- **flycast** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FLYCAST
+- **flycast** (flycast)
+- **flycast** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

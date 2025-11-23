@@ -28,4 +28,3 @@ The supported subdirectories for mission pack ROMs are: xatrix, rogue, and zaero
 For the standard Quake II directory, use 'baseq2' to utilize the standard vitaquake2 core.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

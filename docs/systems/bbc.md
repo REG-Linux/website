@@ -16,8 +16,8 @@ mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, dsk, ima, img, ufi, 360, 
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -25,4 +25,3 @@ Requires MAME BIOS files bbcb.zip, bbc_acorn8271.zip, & saa5050.zip
 Also sample pack bbc.zip in bios/mame/samples
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

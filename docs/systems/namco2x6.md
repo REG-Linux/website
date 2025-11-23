@@ -22,7 +22,7 @@ zip
 
 ## Emulators
 
-- **play** (play) – Requires BR2_PACKAGE_PLAY
+- **play** (play)
 
 ## Notes
 
@@ -39,4 +39,3 @@ i.e. Tekken 4 - tekken4.zip
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -33,4 +33,3 @@ Singe is the open-source layer that runs the full-motion-video games originally 
 - Light guns and shooting overlays rely on accurate timing, so do not rename the `.txt` framefiles.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

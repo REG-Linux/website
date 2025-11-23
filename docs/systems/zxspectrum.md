@@ -22,7 +22,7 @@ tzx, tap, z80, rzx, scl, trd, dsk, zip, 7z
 
 ## Emulators
 
-- **fuse** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FUSE
+- **fuse** (libretro)
 
 ## Notes
 
@@ -52,4 +52,3 @@ There are some conflicts in the way the input devices interact because of the us
 If you set a joystick along with the keyboard, the joystick will work just fine except for the bindings to RETURN and SPACE, and the keyboard won't register the keys assigned to the Cursor joystick, or to the L1 and R1 buttons for all other joystick types.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

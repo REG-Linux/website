@@ -22,8 +22,7 @@ bin, gam, vec, zip, 7z
 
 ## Emulators
 
-- **vecx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VECX
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **vecx** (libretro)
+- **mame** (mame)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -17,8 +17,7 @@ wsc, zip, 7z
 
 ## Emulators
 
-- **mednafen_wswan** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_WSWAN
-- **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
+- **mednafen_wswan** (libretro)
+- **mednafen** (mednafen)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

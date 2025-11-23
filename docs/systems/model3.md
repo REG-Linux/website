@@ -22,7 +22,7 @@ zip
 
 ## Emulators
 
-- **supermodel** (supermodel) – Requires BR2_PACKAGE_SUPERMODEL
+- **supermodel** (supermodel)
 
 ## Notes
 
@@ -76,4 +76,3 @@ Troubleshooting:
 See the Supermodel FAQ here - https://www.supermodel3.com/FAQ.html
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -22,8 +22,7 @@ gb, gbc, zip, 7z
 
 ## Emulators
 
-- **mesen-s** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MESENS
-- **mgba** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MGBA
+- **mesen-s** (libretro)
+- **mgba** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

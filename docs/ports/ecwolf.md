@@ -26,4 +26,3 @@ ecwolf, pk3, zar
 - **ecwolf** (ecwolf) – Requires BR2_PACKAGE_ECWOLF
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

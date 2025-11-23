@@ -22,10 +22,9 @@ wua, wup, wud, wux, rpx, zar, wuhb
 
 ## Emulators
 
-- **cemu** (cemu) – Requires BR2_PACKAGE_CEMU
+- **cemu** (cemu)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

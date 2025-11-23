@@ -21,8 +21,8 @@ wav, tap, csw, uef, mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, dsk, 
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -31,4 +31,3 @@ Using software list mode is recommended. Software list cassettes don't work but 
 Disks will automatically show contents, if the program isn't auto-launched, type the program name followed by a double quote (mapped to shift-2) and hit enter to run.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

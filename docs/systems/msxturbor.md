@@ -22,8 +22,7 @@ dsk, mx2, rom, zip, 7z, openmsx, m3u
 
 ## Emulators
 
-- **bluemsx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BLUEMSX | Incompatible extensions: openmsx
-- **openmsx** (openmsx) – Requires BR2_PACKAGE_OPENMSX
+- **bluemsx** (libretro)
+- **openmsx** (openmsx)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

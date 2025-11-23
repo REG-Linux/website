@@ -22,7 +22,7 @@ ps4
 
 ## Emulators
 
-- **shadps4** (shadps4) – Requires BR2_PACKAGE_SHADPS4
+- **shadps4** (shadps4)
 
 ## Notes
 
@@ -42,4 +42,3 @@ Place the decrypted system module files in: /userdata/system/configs/shadps4/use
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

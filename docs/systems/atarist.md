@@ -22,9 +22,9 @@ st, msa, stx, dim, ipf, m3u, zip, 7z, hd, gemdos, vhd, gem, ide
 
 ## Emulators
 
-- **hatari** (hatari) – Requires BR2_PACKAGE_HATARI
-- **hatari** (libretro) – Requires BR2_PACKAGE_LIBRETRO_HATARI | Incompatible extensions: hd, gemdos
-- **hatarib** (libretro) – Requires BR2_PACKAGE_LIBRETRO_HATARIB | Incompatible extensions: hd, gemdos
+- **hatari** (hatari)
+- **hatari** (libretro)
+- **hatarib** (libretro)
 
 ## Notes
 
@@ -33,4 +33,3 @@ Create a directory within the roms folder that has a .gemdos extension.
 i.e. /userdata/roms/atarist/<drive name>.gemdos
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

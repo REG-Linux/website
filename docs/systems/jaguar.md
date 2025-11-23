@@ -17,8 +17,7 @@ cue, j64, jag, cof, abs, cdi, rom, zip, 7z
 
 ## Emulators
 
-- **bigpemu** (bigpemu) – Requires BR2_PACKAGE_BIGPEMU
-- **virtualjaguar** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VIRTUALJAGUAR | Incompatible extensions: zip, 7z
+- **bigpemu** (bigpemu)
+- **virtualjaguar** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

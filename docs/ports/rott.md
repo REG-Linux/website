@@ -34,4 +34,3 @@ We have mapped the controller to keyboard events as a result.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

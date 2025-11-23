@@ -28,4 +28,3 @@ Then create an empty `Jazz Jackrabbit 2.game` file for EmulationStation to be ab
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

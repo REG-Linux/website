@@ -29,4 +29,3 @@ sdlpop
 An open-source port of Prince of Persia, based on the disassembly of the DOS version.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml
