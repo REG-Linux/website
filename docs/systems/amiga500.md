@@ -22,17 +22,16 @@ adf, uae, ipf, dms, dmz, adz, lha, hdf, exe, m3u, zip, raw, scp
 
 ## Emulators
 
-- **A1000** (amiberry) – Requires BR2_PACKAGE_AMIBERRY, BR2_PACKAGE_AMIBERRY_LITE | Incompatible extensions: m3u
-- **A3000** (amiberry) – Requires BR2_PACKAGE_AMIBERRY, BR2_PACKAGE_AMIBERRY_LITE | Incompatible extensions: m3u
-- **A500** (amiberry) – Requires BR2_PACKAGE_AMIBERRY, BR2_PACKAGE_AMIBERRY_LITE | Incompatible extensions: m3u
-- **A500+** (amiberry) – Requires BR2_PACKAGE_AMIBERRY, BR2_PACKAGE_AMIBERRY_LITE | Incompatible extensions: m3u
-- **A600** (amiberry) – Requires BR2_PACKAGE_AMIBERRY, BR2_PACKAGE_AMIBERRY_LITE | Incompatible extensions: m3u
-- **puae** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PUAE
-- **puae2021** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PUAE2021
-- **uae4arm** (libretro) – Requires BR2_PACKAGE_LIBRETRO_UAE4ARM
+- **A1000** (amiberry)
+- **A3000** (amiberry)
+- **A500** (amiberry)
+- **A500+** (amiberry)
+- **A600** (amiberry)
+- **puae** (libretro)
+- **puae2021** (libretro)
+- **uae4arm** (libretro)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

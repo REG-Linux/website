@@ -22,11 +22,11 @@ zip, 7z
 
 ## Emulators
 
-- **imame4all** (libretro) – Requires BR2_PACKAGE_LIBRETRO_IMAME
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame0139** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME2010
-- **mame078plus** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME2003_PLUS
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **imame4all** (libretro)
+- **mame** (libretro)
+- **mame0139** (libretro)
+- **mame078plus** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -41,4 +41,3 @@ Special files for mame2003 core:
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

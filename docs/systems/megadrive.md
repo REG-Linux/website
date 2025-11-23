@@ -22,12 +22,11 @@ bin, gen, md, sg, smd, zip, 7z
 
 ## Emulators
 
-- **blastem** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BLASTEM
-- **genesisplusgx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GENESISPLUSGX
-- **picodrive** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PICODRIVE
+- **blastem** (libretro)
+- **genesisplusgx** (libretro)
+- **picodrive** (libretro)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

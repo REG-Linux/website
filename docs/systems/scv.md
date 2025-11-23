@@ -21,7 +21,6 @@ bin, zip, 0
 
 ## Emulators
 
-- **emuscv** (libretro) – Requires BR2_PACKAGE_LIBRETRO_EMUSCV
+- **emuscv** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

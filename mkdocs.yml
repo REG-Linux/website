@@ -4,6 +4,7 @@ site_url: https://wiki.reglinux.org
 repo_url: https://github.com/REG-Linux/wiki
 repo_name: REG-Linux/wiki
 edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2025 REG Linux Team
 theme:
   name: material
   logo: assets/logo.svg
@@ -32,15 +33,73 @@ nav:
 - Home: index.md
 - Getting Started: getting-started.md
 - Architecture: architecture.md
-- Board:
-  - Allwinner Boards: board/allwinner.md
-  - Amlogic Boards: board/amlogic.md
-  - Broadcom Boards: board/broadcom.md
-  - Qualcomm Boards: board/qualcomm.md
-  - Mediatek Boards: board/mediatek.md
-  - Samsung Boards: board/samsung.md
-  - Rockchip Boards: board/rockchip.md
-- Systems:
+- Single-Board Computers:
+  - Allwinner Boards: sbcs/allwinner.md
+  - Amlogic Boards: sbcs/amlogic.md
+  - Broadcom Boards: sbcs/broadcom.md
+  - Qualcomm Boards: sbcs/qualcomm.md
+  - Mediatek Boards: sbcs/mediatek.md
+  - Samsung Boards: sbcs/samsung.md
+  - Rockchip Boards: sbcs/rockchip.md
+- Handhelds:
+  - Overview: handhelds/index.md
+  - Catalog:
+    - Anbernic:
+      - Overview: handhelds/anbernic.md
+      - Anbernic RG351: handhelds/anbernic/rg351pmv.md
+      - Anbernic RG353: handhelds/anbernic/rg353pmvvs.md
+      - Anbernic RG503: handhelds/anbernic/rg503.md
+      - Anbernic RG552: handhelds/anbernic/rg552.md
+      - Anbernic RG ARC: handhelds/anbernic/rgarc.md
+      - Anbernic RG35XX Plus: handhelds/anbernic/rg35xx-plus.md
+      - Anbernic RG35XX Pro: handhelds/anbernic/rg35xx-pro.md
+      - Anbernic RG35XX 2024: handhelds/anbernic/rg35xx-2024.md
+      - Anbernic RG35XX H: handhelds/anbernic/rg35xx-h.md
+      - Anbernic RG35XX SP: handhelds/anbernic/rg35xx-sp.md
+      - Anbernic RG28XX: handhelds/anbernic/rg28xx.md
+      - Anbernic RG40XX V: handhelds/anbernic/rg40xx-v.md
+      - Anbernic RG40XX H: handhelds/anbernic/rg40xx-h.md
+      - Anbernic RG CubeXX: handhelds/anbernic/rg-cubexx.md
+      - Anbernic RG34XX: handhelds/anbernic/rg34xx.md
+    - Ayn:
+      - Overview: handhelds/ayn.md
+      - Ayn Odin 2: handhelds/ayn/odin2.md
+    - AYANEO:
+      - Overview: handhelds/ayaneo.md
+      - Pocket S: handhelds/ayaneo/pockets.md
+    - GameForce:
+      - GameForce Ace: handhelds/gameforce/gameforce-ace.md
+    - Hardkernel:
+      - Overview: handhelds/hardkernel.md
+      - Odroid Go Advance: handhelds/hardkernel/odroid-go-advance.md
+      - Odroid Go Super: handhelds/hardkernel/odroid-go-super.md
+      - Odroid Go Ultra: handhelds/hardkernel/odroid-go-ultra.md
+    - MagicX:
+      - XU Mini M: handhelds/magicx/xu-mini-m.md
+    - Powkiddy:
+      - Overview: handhelds/powkiddy.md
+      - RGB10: handhelds/powkiddy/rgb10.md
+      - RGB10 Max 3 Pro: handhelds/powkiddy/rgb10-max-3-pro.md
+      - RGB10 Max 3: handhelds/powkiddy/rgb10-max-3.md
+      - RGB10X: handhelds/powkiddy/rgb10x.md
+      - RK2023: handhelds/powkiddy/rk2023.md
+      - RGB20SX: handhelds/powkiddy/rgb20sx.md
+      - RGB20 Pro: handhelds/powkiddy/rgb20-pro.md
+      - RGB30: handhelds/powkiddy/rgb30.md
+      - X35S: handhelds/powkiddy/x35s.md
+      - X35H: handhelds/powkiddy/x35h.md
+      - X55: handhelds/powkiddy/x55.md
+      - XU10: handhelds/powkiddy/xu10.md
+    - Retroid:
+      - Overview: handhelds/retroid.md
+      - Retroid Pocket 5: handhelds/retroid/retroid-pocket-5.md
+      - Retroid Pocket Mini: handhelds/retroid/retroid-pocket-mini.md
+      - Retroid Pocket Flip2: handhelds/retroid/retroid-pocket-flip2.md
+    - Unbranded:
+      - Game Console R33S: handhelds/unbranded/game-console-r33s.md
+      - Game Console R35S R36S: handhelds/unbranded/game-console-r35s-r36s.md
+      - RK3326 clones: handhelds/unbranded/rk3326-clones.md
+- Emulators:
   - Overview: systems/index.md
   - Emulated Systems:
     - 3DO Interactive Multiplayer: systems/3do.md
@@ -199,11 +258,9 @@ nav:
     - ZX Spectrum: systems/zxspectrum.md
 - Ports:
   - Overview: ports/index.md
-  - Ported Systems:
-    - Abuse: ports/abuse.md
+  - Game ports:
     - Cannonball: ports/cannonball.md
     - Cave Story: ports/cavestory.md
-    - C-Dogs SDL: ports/cdogs.md
     - Commander Genius: ports/cgenius.md
     - CorsixTH: ports/corsixth.md
     - DevilutionX: ports/devilutionx.md
@@ -216,12 +273,9 @@ nav:
     - Fallout 2 Community Edition: ports/fallout2-ce.md
     - Ion Fury: ports/fury.md
     - GZDoom: ports/gzdoom.md
-    - Hydra Castle Labyrinth: ports/hcl.md
-    - Hurrican: ports/hurrican.md
     - Return To Castle Wolfenstein: ports/iortcw.md
     - Jazz Jackrabbit 2: ports/jazz2.md
     - MrBoom: ports/mrboom.md
-    - OD-Commander: ports/odcommander.md
     - Jazz Jackrabbit: ports/openjazz.md
     - OpenLara: ports/openlara.md
     - PrBoom: ports/prboom.md
@@ -241,7 +295,9 @@ nav:
     - Quake II: ports/vitaquake2.md
     - Xash3D-FWGS: ports/xash3d_fwgs.md
     - xrick: ports/xrick.md
-  - Engines:
+- Engines:
+  - Overview: engines/index.md
+  - Supported Engines:
     - EasyRPG: engines/easyrpg.md
     - Flash Player: engines/flash.md
     - IKEMEN: engines/ikemen.md
@@ -250,6 +306,11 @@ nav:
     - Singe: engines/singe.md
     - ScummVM: engines/scummvm.md
     - TheXTech: engines/thextech.md
+- Games:
+  - Abuse: games/abuse.md
+  - C-Dogs SDL: games/cdogs.md
+  - Hydra Castle Labyrinth: games/hcl.md
+  - Hurrican: games/hurrican.md
 - Installation: installation.md
 - Developer Guide: dev-guide.md
 - Community: community.md
@@ -262,6 +323,8 @@ markdown_extensions:
 - toc:
     permalink: true
 - footnotes
+extra_css:
+  - assets/reglinux-theme.css
 extra:
   social:
   - icon: fontawesome/brands/github

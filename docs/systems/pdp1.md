@@ -22,8 +22,8 @@ zip, 7z, tap, rim, drm
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -33,4 +33,3 @@ if the green lights are blinking, it is loading.
 Spacewar is two player only, if you only have one controller connected, it will control both ships.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

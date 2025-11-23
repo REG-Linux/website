@@ -32,4 +32,3 @@
 - Use the `pak.txt` development driver when editing a mod locally so you can load unpacked sprites without rebuilding the `.pak` file.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

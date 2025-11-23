@@ -29,4 +29,3 @@ This file will allow EmulationStation to launch Sonic 3 A.I.R. and scrape artwor
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

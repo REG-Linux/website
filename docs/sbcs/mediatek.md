@@ -1,6 +1,6 @@
 # Mediatek Boards
 
-`board/mediatek/mt8395/` hosts the REG Linux artifacts for the Radxa NIO 12L (Mediatek MT8395). The directory supplies the firmware overlay, kernel config/patches, board scripts, and flash layout that make the board bootable.
+`sbcs/mediatek/mt8395/` hosts the REG Linux artifacts for the Radxa NIO 12L (Mediatek MT8395). The directory supplies the firmware overlay, kernel config/patches, board scripts, and flash layout that make the board bootable.
 
 ## Supported devices
 - `radxa-nio-12l` (Mediatek MT8395)

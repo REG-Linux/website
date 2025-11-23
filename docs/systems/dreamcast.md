@@ -22,12 +22,14 @@ cdi, cue, gdi, chd, m3u
 
 ## Emulators
 
-- **flycast** (flycast) – Requires BR2_PACKAGE_FLYCAST
-- **flycast** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FLYCAST
-- **flycastvl** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FLYCASTVL
+- **flycast** (flycast)
+- **flycast** (libretro)
+- **flycastvl** (libretro)
+
+## ROM layout and BIOS
+
+Dreamcast titles live in `roms/dreamcast` and keep the extensions listed above; that folder is the default path EmulationStation and any front end scans when they mount the Dreamcast collection.
+
+Flycast and RetroArch require the official BIOS files described in the libretro documentation (see `docs.libretro.com/library/flycast/#bios`). Drop those files inside your ROM tree so the emulator can locate them without additional configuration.
 
 ## Notes
-
-
----
-Source data: REG Linux emulationstation/es-system/es_systems.yml

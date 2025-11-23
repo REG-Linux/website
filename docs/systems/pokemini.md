@@ -21,7 +21,6 @@ min, zip, 7z
 
 ## Emulators
 
-- **pokemini** (libretro) – Requires BR2_PACKAGE_LIBRETRO_POKEMINI
+- **pokemini** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

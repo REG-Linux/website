@@ -25,4 +25,3 @@ IKEMEN is an open-source evolution of the M.U.G.E.N fighting engine that keeps t
 - Additional scripts such as `data/SFX.def` or `system.cfg` fine-tune audio, display resolution, and controller configuration.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

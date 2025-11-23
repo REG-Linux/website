@@ -59,4 +59,3 @@ If you wish to use Midi ROM's i.e. the MT-32 synth, put you files in /userdata/b
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -22,7 +22,6 @@ zip, rom, bin, chf
 
 ## Emulators
 
-- **freechaf** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FREECHAF
+- **freechaf** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

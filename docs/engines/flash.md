@@ -33,4 +33,3 @@
 - Some games request external assets, so keep their asset folders relative to the SWF file for correct loading.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

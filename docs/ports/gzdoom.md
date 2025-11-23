@@ -35,4 +35,3 @@ Additional music can be added to /userdata/system/configs/gzdoom in the fm_banks
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

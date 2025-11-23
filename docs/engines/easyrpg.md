@@ -35,4 +35,3 @@ Thousands of other titles are listed on the [EasyRPG compatibility wiki](https:/
 - Keep `Game.ini`, `System.lmu`, and `RPG_RT.ldb` intact; EasyRPG reads them to configure resolution, audio, and event scripts.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

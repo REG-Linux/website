@@ -22,11 +22,10 @@ nds, bin, zip, 7z
 
 ## Emulators
 
-- **drastic** (drastic) – Requires BR2_PACKAGE_DRASTIC | Incompatible extensions: 7z
-- **desmume** (libretro) – Requires BR2_PACKAGE_LIBRETRO_DESMUME
-- **melonds** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MELONDS
-- **melondsds** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MELONDS_DS
-- **melonds** (melonds) – Requires BR2_PACKAGE_MELONDS
+- **drastic** (drastic)
+- **desmume** (libretro)
+- **melonds** (libretro)
+- **melondsds** (libretro)
+- **melonds** (melonds)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

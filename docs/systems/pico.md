@@ -22,8 +22,7 @@ bin, md, zip, 7z
 
 ## Emulators
 
-- **genesisplusgx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GENESISPLUSGX
-- **picodrive** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PICODRIVE
+- **genesisplusgx** (libretro)
+- **picodrive** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

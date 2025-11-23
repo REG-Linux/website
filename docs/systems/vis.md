@@ -21,7 +21,6 @@ chd, cue, toc, nrg, gdi, iso, cdr
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
+- **mame** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

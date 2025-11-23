@@ -22,7 +22,6 @@ bin, zip, 7z
 
 ## Emulators
 
-- **o2em** (libretro) – Requires BR2_PACKAGE_LIBRETRO_O2EM
+- **o2em** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

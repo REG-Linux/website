@@ -22,7 +22,7 @@ iso
 
 ## Emulators
 
-- **xemu** (xemu) – Requires BR2_PACKAGE_XEMU
+- **xemu** (xemu)
 
 ## Notes
 
@@ -37,4 +37,3 @@ You will also need the Cerbios flashrom in your bios directory.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

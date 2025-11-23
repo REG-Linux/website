@@ -52,4 +52,3 @@ Similarly `Doom 3 - Resurrection of Evil.d3` should be - d3xp/pak000.pk4
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

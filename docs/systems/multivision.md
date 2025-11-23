@@ -22,7 +22,6 @@ bin, sg, zip, 7z
 
 ## Emulators
 
-- **gearsystem** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GEARSYSTEM
+- **gearsystem** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

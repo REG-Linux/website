@@ -15,4 +15,3 @@ The Amiga is a computer platform developed by Commodore.
 - Hardware type: computer
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

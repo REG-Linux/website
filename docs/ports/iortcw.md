@@ -36,7 +36,5 @@ It is important to use the exact directory name above.
 i.e. /userdata/roms/iortcw/main is where your .pk3 should be located.
 A keyboard and mouse / touchscreen is required for game start.
 
-For more info: https://wiki.batocera.org/systems:iortcw
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

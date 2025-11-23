@@ -28,4 +28,3 @@ Then create an empty `Jazz Jackrabbit.game` file for EmulationStation to be able
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

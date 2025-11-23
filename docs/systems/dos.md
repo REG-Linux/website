@@ -22,9 +22,9 @@ pc, dos, zip, zar, dosz, m3u, iso, cue
 
 ## Emulators
 
-- **dosbox_staging** (dosbox_staging) – Requires BR2_PACKAGE_DOSBOX_STAGING | Incompatible extensions: zip
-- **dosbox-x** (dosboxx) – Requires BR2_PACKAGE_DOSBOX_X | Incompatible extensions: zip
-- **dosbox_pure** (libretro) – Requires BR2_PACKAGE_LIBRETRO_DOSBOX_PURE
+- **dosbox_staging** (dosbox_staging)
+- **dosbox-x** (dosboxx)
+- **dosbox_pure** (libretro)
 
 ## Notes
 
@@ -50,4 +50,3 @@ MT32_CONTROL.ROM file needs to be present inside /userdata/bios/scummvm/extra.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

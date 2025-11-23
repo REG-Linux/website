@@ -22,7 +22,6 @@ Introduced in 1994 by Sega, the 32x was a console system. It is grouped with meg
 
 ## Emulators
 
-- **picodrive** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PICODRIVE
+- **picodrive** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -40,4 +40,3 @@ Note: This game currently requires a mouse and keyboard to play.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -42,4 +42,3 @@ Voice packs:
 * Spanish: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/es.mpq
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

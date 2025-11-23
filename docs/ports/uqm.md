@@ -26,4 +26,3 @@ Create a folder called 'packages' in this folder. This is where you place your g
 Then create a file called 'Ur-Quan Masters.game'. This is used to launch the game.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -22,15 +22,14 @@ smc, fig, sfc, gd3, gd7, dx2, bsx, swc, zip, 7z
 
 ## Emulators
 
-- **bsnes** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BSNES
-- **bsnes_jg** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BSNES_JG
-- **mesen-s** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MESENS
-- **pocketsnes** (libretro) – Requires BR2_PACKAGE_LIBRETRO_POCKETSNES
-- **snes9x** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SNES9X
-- **snes9x_next** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SNES9X_NEXT
+- **bsnes** (libretro)
+- **bsnes_jg** (libretro)
+- **mesen-s** (libretro)
+- **pocketsnes** (libretro)
+- **snes9x** (libretro)
+- **snes9x_next** (libretro)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

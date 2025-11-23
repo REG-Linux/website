@@ -22,7 +22,6 @@ a78, bin, zip, 7z
 
 ## Emulators
 
-- **prosystem** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PROSYSTEM
+- **prosystem** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

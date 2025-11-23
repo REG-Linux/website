@@ -22,9 +22,8 @@ a26, bin, zip, 7z
 
 ## Emulators
 
-- **stella** (libretro) – Requires BR2_PACKAGE_LIBRETRO_STELLA
-- **stella2014** (libretro) – Requires BR2_PACKAGE_LIBRETRO_STELLA2014
-- **stella** (stella) – Requires BR2_PACKAGE_STELLA
+- **stella** (libretro)
+- **stella2014** (libretro)
+- **stella** (stella)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

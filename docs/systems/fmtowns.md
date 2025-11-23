@@ -22,9 +22,8 @@ bin, m3u, cue, d88, d77, xdf, iso, chd, toc, nrg, gdi, cdr, mfi, dfi, hfe, mfm, 
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME | Incompatible extensions: xdf, m3u
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME | Incompatible extensions: xdf, m3u
-- **tsugaru** (tsugaru) – Requires BR2_PACKAGE_TSUGARU | Incompatible extensions: chd, toc, nrg, gdi, cdr, mfi, dfi, hfe, mfm, td0, imd, 1dd, cqm, cqi, dsk, zip, 7z
+- **mame** (libretro)
+- **mame** (mame)
+- **tsugaru** (tsugaru)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

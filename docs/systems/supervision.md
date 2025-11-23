@@ -22,7 +22,6 @@ sv, zip, 7z
 
 ## Emulators
 
-- **potator** (libretro) – Requires BR2_PACKAGE_LIBRETRO_WATARA
+- **potator** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

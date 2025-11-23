@@ -16,7 +16,6 @@ vms, dci, bin
 
 ## Emulators
 
-- **vemulator** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VEMULATOR
+- **vemulator** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -22,10 +22,12 @@ iso, zar
 
 ## Emulators
 
-- **xemu** (xemu) – Requires BR2_PACKAGE_XEMU
+- **xemu** (xemu)
+
+## ROM layout and BIOS
+
+Xbox disc images belong under the default `roms/xbox` folder and the only officially recognized file type is `.iso`, which keeps RetroArch and front ends from picking up unrelated artifacts.
+
+Xemu requires a BIOS such as `mcpx_1.0.bin` or the later `Complex_4627v1.03.bin`, and it will look for those files in the same `roms/bios/xemu/bios` tree that other REG Linux emulators use. Optional artifacts like `eeprom.bin` and `xbox_hdd.qcow2` can be staged in `roms/bios/xemu/eeprom` and `/roms/bios/xemu/hdd` if you want save partitions or HDD images to be reused across boots.
 
 ## Notes
-
-
----
-Source data: REG Linux emulationstation/es-system/es_systems.yml

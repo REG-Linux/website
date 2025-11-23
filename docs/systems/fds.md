@@ -22,9 +22,8 @@ fds, zip, 7z
 
 ## Emulators
 
-- **fceumm** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FCEUMM
-- **mesen** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MESEN
-- **nestopia** (libretro) – Requires BR2_PACKAGE_LIBRETRO_NESTOPIA
+- **fceumm** (libretro)
+- **mesen** (libretro)
+- **nestopia** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

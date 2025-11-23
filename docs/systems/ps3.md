@@ -22,7 +22,7 @@ ps3, psn, zar
 
 ## Emulators
 
-- **rpcs3** (rpcs3) – Requires BR2_PACKAGE_RPCS3
+- **rpcs3** (rpcs3)
 
 ## Notes
 
@@ -33,4 +33,3 @@ First time you load a game, it takes time (a progress bar is visible). It doesn'
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

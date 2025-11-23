@@ -41,4 +41,3 @@ Please note that menu options in Team Arena and other mods can only be selected 
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

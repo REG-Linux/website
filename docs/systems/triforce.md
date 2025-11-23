@@ -22,7 +22,7 @@ gcm, iso, gcz, ciso, wbfs, elf, dol, m3u
 
 ## Emulators
 
-- **dolphin_triforce** (dolphin_triforce) – Requires BR2_PACKAGE_DOLPHIN_TRIFORCE
+- **dolphin_triforce** (dolphin_triforce)
 
 ## Notes
 
@@ -33,4 +33,3 @@ Nothing - All other Triforce games.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

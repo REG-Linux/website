@@ -22,8 +22,7 @@ ngp, zip, 7z
 
 ## Emulators
 
-- **mednafen_ngp** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_NGP
-- **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
+- **mednafen_ngp** (libretro)
+- **mednafen** (mednafen)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

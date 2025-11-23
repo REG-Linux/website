@@ -21,9 +21,8 @@ Introduced in 2011 by Nintendo, the 3DS was a portable system.
 
 ## Emulators
 
-- **azahar** (azahar) – Requires BR2_PACKAGE_AZAHAR
-- **panda3ds** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PANDA3DS
-- **panda3ds** (panda3ds) – Requires BR2_PACKAGE_PANDA3DS
+- **azahar** (azahar)
+- **panda3ds** (libretro)
+- **panda3ds** (panda3ds)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

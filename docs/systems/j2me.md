@@ -21,8 +21,7 @@ jar
 
 ## Emulators
 
-- **freej2me** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FREEJ2ME
-- **squirreljme** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SQUIRRELJME
+- **freej2me** (libretro)
+- **squirreljme** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -31,4 +31,3 @@ Super Mario War - smash opponents by stomping on them, in a fun multiplayer game
 Get the game assets files from the Content Downloader.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

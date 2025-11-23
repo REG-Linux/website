@@ -22,10 +22,9 @@ pce, bin, zip, 7z
 
 ## Emulators
 
-- **geargrafx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GEARGRAFX
-- **pce** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_PCE
-- **pce_fast** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_PCE_FAST
-- **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN
+- **geargrafx** (libretro)
+- **pce** (libretro)
+- **pce_fast** (libretro)
+- **mednafen** (mednafen)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

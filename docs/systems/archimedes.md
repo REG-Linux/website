@@ -21,8 +21,8 @@ mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, dsk, ima, img, ufi, 360, 
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -31,4 +31,3 @@ Using software list mode is recommended.
 Double-click the floppy drive in the lower left to open the contents, double-click the app/game to run it.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

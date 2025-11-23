@@ -22,9 +22,9 @@ bin, col, rom, zip, 7z
 
 ## Emulators
 
-- **bluemsx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BLUEMSX
-- **gearcoleco** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GEARCOLECO
-- **openmsx** (openmsx) – Requires BR2_PACKAGE_OPENMSX
+- **bluemsx** (libretro)
+- **gearcoleco** (libretro)
+- **openmsx** (openmsx)
 
 ## Notes
 
@@ -63,4 +63,3 @@ JOYPAD_SELECT = COLECO STAR
 JOYPAD_START  = COLECO HASH
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

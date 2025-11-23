@@ -22,8 +22,8 @@ wav, cas, dsk, ccc, rom, zip, 7z
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -41,4 +41,3 @@ user definable autoload overrides in: `system/configs/mame/autoload/coco_{cass,f
 syntax: <romBasename>;<autoload command> (see comments in .csv files for detailed help & examples)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

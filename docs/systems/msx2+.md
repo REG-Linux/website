@@ -22,9 +22,9 @@ dsk, mx2, rom, zip, 7z, cas, m3u, openmsx
 
 ## Emulators
 
-- **bluemsx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BLUEMSX | Incompatible extensions: openmsx
-- **fmsx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_FMSX | Incompatible extensions: openmsx
-- **openmsx** (openmsx) – Requires BR2_PACKAGE_OPENMSX | Incompatible extensions: m3u
+- **bluemsx** (libretro)
+- **fmsx** (libretro)
+- **openmsx** (openmsx)
 
 ## Notes
 
@@ -59,4 +59,3 @@ Various BIOS files for OpenMSX should be in either folder below:
     3. userdata/bios/openmsx
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

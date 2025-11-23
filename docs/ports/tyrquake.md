@@ -30,4 +30,3 @@ Put your Quake 1 .PAK games in this directory.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

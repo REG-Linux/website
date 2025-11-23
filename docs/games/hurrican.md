@@ -29,4 +29,3 @@ game
 This system is a standalone game. No rom required, get the game assets files from the Content Downloader.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -22,8 +22,7 @@ cue, ccd, toc, chd, zip, 7z, m3u
 
 ## Emulators
 
-- **pcfx** (libretro) – Requires BR2_PACKAGE_LIBRETRO_BEETLE_PCFX
-- **mednafen** (mednafen) – Requires BR2_PACKAGE_MEDNAFEN_PCFX
+- **pcfx** (libretro)
+- **mednafen** (mednafen)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

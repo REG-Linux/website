@@ -34,4 +34,3 @@ If you want to listen to non-Theme-Hospital music or use an remastered version o
 If you want to change the names of songs ingame, into MP3 folder make a file called names.txt and write the file name on one row, followed by the desired ingame name on the next row.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

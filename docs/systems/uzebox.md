@@ -22,7 +22,6 @@ uze
 
 ## Emulators
 
-- **uzem** (libretro) – Requires BR2_PACKAGE_LIBRETRO_UZEM
+- **uzem** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

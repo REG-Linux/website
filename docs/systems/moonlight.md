@@ -20,10 +20,9 @@ moonlight
 
 ## Emulators
 
-- **moonlight** (moonlight) – Requires BR2_PACKAGE_MOONLIGHT_EMBEDDED
+- **moonlight** (moonlight)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

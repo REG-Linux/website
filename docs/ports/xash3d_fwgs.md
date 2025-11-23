@@ -42,4 +42,3 @@ to /userdata/roms/xash3d_fwgs/<game folder> and create an empty `<game folder>.g
 For Half-Life 1, the game folder is `valve/`.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

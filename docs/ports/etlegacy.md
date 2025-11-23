@@ -39,4 +39,3 @@ Notes: For the best experience you need a mouse & keyboard.
        We only provide the client with mods & NOT the server to host matches.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

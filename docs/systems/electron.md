@@ -21,8 +21,8 @@ wav, csw, uef, mfi, dfi, hfe, mfm, td0, imd, d77, d88, 1dd, cqm, cqi, dsk, ssd, 
 
 ## Emulators
 
-- **mame** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MAME, BR2_PACKAGE_HAS_LIBRETRO_MAME
-- **mame** (mame) – Requires BR2_PACKAGE_MAME, BR2_PACKAGE_HAS_MAME
+- **mame** (libretro)
+- **mame** (mame)
 
 ## Notes
 
@@ -31,4 +31,3 @@ Using software list mode (cassette) is recommended.
 Tapes should auto-load, use the MAME menu to stop/play/rewind if needed.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

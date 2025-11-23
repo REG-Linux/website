@@ -22,8 +22,8 @@ gcm, iso, gcz, ciso, wbfs, wad, rvz, elf, dol, m3u, json
 
 ## Emulators
 
-- **dolphin** (dolphin) – Requires BR2_PACKAGE_DOLPHIN_EMU
-- **dolphin** (libretro) – Requires BR2_PACKAGE_LIBRETRO_DOLPHIN
+- **dolphin** (dolphin)
+- **dolphin** (libretro)
 
 ## Notes
 
@@ -35,4 +35,3 @@ To use custom textures, put them in /userdata/saves/dolphin-emu/Load/Textures/<g
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

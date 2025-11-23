@@ -22,12 +22,11 @@ gba, zip, 7z
 
 ## Emulators
 
-- **gpsp** (libretro) – Requires BR2_PACKAGE_LIBRETRO_GPSP
-- **mgba** (libretro) – Requires BR2_PACKAGE_LIBRETRO_MGBA
-- **vba-m** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VBA_M
+- **gpsp** (libretro)
+- **mgba** (libretro)
+- **vba-m** (libretro)
 
 ## Notes
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

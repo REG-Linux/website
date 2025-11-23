@@ -21,7 +21,7 @@ vpx
 
 ## Emulators
 
-- **vpinball** (vpinball) – Requires BR2_PACKAGE_VPINBALL
+- **vpinball** (vpinball)
 
 ## Notes
 
@@ -62,4 +62,3 @@ or in the same folder as your vpx file in it's own 'music' folder.
 The music folder, should be lowercase - i.e. /userdata/roms/vpinball/Kiss/music
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

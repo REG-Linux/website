@@ -22,7 +22,7 @@ zip, psvita
 
 ## Emulators
 
-- **vita3k** (vita3k) – Requires BR2_PACKAGE_VITA3K
+- **vita3k** (vita3k)
 
 ## Notes
 
@@ -73,4 +73,3 @@ This will enable Emulation Station to see your installed game & launch it via th
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

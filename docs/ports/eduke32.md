@@ -64,4 +64,3 @@ For mod support and troubleshooting, please visit the wiki for more information.
 
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

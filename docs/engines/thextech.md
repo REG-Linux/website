@@ -31,4 +31,3 @@ TheXTech is an open-source recreation of Super Mario Bros. X (SMBX), bringing th
 - TheXTech includes online mode support and its own launcher; reuse the same file structure when dropping worlds into REG Linux.
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

@@ -104,4 +104,4 @@ Supported devices:
 
 * `khadas-vim1s` (`kvim1s`)
 
-Link back to this summary whenever you touch `board/amlogic/` so the supported SoC/board matrix stays obvious.
+Link back to this summary whenever you touch `sbcs/amlogic/` so the supported SoC/board matrix stays obvious.

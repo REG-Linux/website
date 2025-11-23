@@ -21,7 +21,6 @@ hex, zip, 7z
 
 ## Emulators
 
-- **arduous** (libretro) – Requires BR2_PACKAGE_LIBRETRO_ARDUOUS
+- **arduous** (libretro)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml

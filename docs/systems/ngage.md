@@ -22,7 +22,6 @@ n-gage, sisx, sis, zip
 
 ## Emulators
 
-- **eka2l1** (eka2l1) – Requires BR2_PACKAGE_EKA2L1
+- **eka2l1** (eka2l1)
 
 ---
-Source data: REG Linux emulationstation/es-system/es_systems.yml
