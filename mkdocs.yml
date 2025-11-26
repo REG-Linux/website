@@ -33,18 +33,18 @@ nav:
 - Home: index.md
 - Getting Started: getting-started.md
 - Architecture: architecture.md
-- Single-Board Computers:
-  - Allwinner Boards: sbcs/allwinner.md
-  - Amlogic Boards: sbcs/amlogic.md
-  - Broadcom Boards: sbcs/broadcom.md
-  - Qualcomm Boards: sbcs/qualcomm.md
-  - Mediatek Boards: sbcs/mediatek.md
-  - Samsung Boards: sbcs/samsung.md
-  - Rockchip Boards: sbcs/rockchip.md
 - Consoles:
   - Capcom Home Arcade: sbcs/capcom-home-arcade.md
-- SBCs:
-  - Catalog: sbcs/catalog.md
+- Single-Board Computers:
+  - Overview:
+    - Catalog: sbcs/catalog.md
+    - Allwinner Boards: sbcs/allwinner.md
+    - Amlogic Boards: sbcs/amlogic.md
+    - Broadcom Boards: sbcs/broadcom.md
+    - Qualcomm Boards: sbcs/qualcomm.md
+    - Mediatek Boards: sbcs/mediatek.md
+    - Samsung Boards: sbcs/samsung.md
+    - Rockchip Boards: sbcs/rockchip.md
   - Asus:
     - Asus Tinker Board S: sbcs/asus-tinker-board-s.md
   - Banana Pi:
