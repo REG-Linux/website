@@ -7,7 +7,9 @@
 
 ## Overview
 
-Introduced in 1984 by Epoch, the Game Pocket Computer was a portable system.
+Epoch launched the Game Pocket Computer (known as Pokekon in Japan) in 1984. It was the first handheld console to ship with interchangeable cartridges, five titles, and four AA batteries. The tiny grayscale LCD offered adjustable contrast, and the control set consisted of an eight-way d-pad, four buttons, and a sound on/off switch. Despite its innovation, the system was a commercial failure in Japan and never expanded internationally.
+
+REG-Linux assigns the Game Pocket Computer to the `gamepock` system group so metadata scraping and theming stay focused on this unique platform.
 
 ## Technical specifications
 
@@ -19,13 +21,36 @@ Introduced in 1984 by Epoch, the Game Pocket Computer was a portable system.
 
 bin, zip, 7z
 
+## Quick reference
+
+- **Emulators:** [MAME](#mame), [RetroArch](#retroarch)
+- **Core:** [libretro: mame](/#libretro/mame)
+- **ROM folder:** `/userdata/roms/gamepock`
+- **Accepted ROM formats:** `.bin`, `.zip`, `.7z`
+- **System group:** `gamepock`
+
+## BIOS
+
+No Game Pocket Computer emulator in REG-Linux requires a BIOS file.
+
+## ROMs
+
+Place your Game Pocket Computer ROMs in `/userdata/roms/gamepock`.
+
 ## Emulators
 
-- **mame** (libretro)
-- **mame** (mame)
+### MAME
 
-## Notes
+The standalone MAME builds replicate the original hardware with high accuracy. Use the system's configuration interfaces to tweak video, sound and input options per title.
 
-Requires MAME BIOS file gamepock.zip
+### RetroArch
 
----
+[RetroArch](https://docs.libretro.com/) is the frontend that runs the libretro MAME core. It provides shared shaders, overlays, rewinding, netplay and hotkey systems on top of the core's accuracy.
+
+#### RetroArch configuration
+
+While a core is running, press `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) to open the Quick Menu. From there you can change inputs, overrides, shaders and the [RetroArch advanced settings](/advanced_retroarch_settings). REG-Linux also exposes many of those toggles within EmulationStation for convenience.
+
+## Controls
+
+The default Game Pocket Computer mapping follows the REG-Linux Retropad layout. Adjust it using the [controller configuration menu](/configure_a_controller).

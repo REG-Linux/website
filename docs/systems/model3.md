@@ -7,72 +7,53 @@
 
 ## Overview
 
-Introduced in 1996 by Sega, the Model 3 was a arcade system. Its platform tag is `model3, arcade` for proper filtering.
+The Sega Model 3 arcade board arrived in 1996 as a high-end successor to Model 2, powering arcade hits such as *Sega Rally 2*, *Virtua Fighter 3* and *Star Wars Trilogy Arcade*. REG-Linux uses the `model3`/`arcade` system groups so the platform aligns with existing arcade metadata and artwork collections.
 
 ## Technical specifications
-
+ 
 - CPU: Multi-processor Sega Model 3 setup using a PowerPC 603/604 main CPU with Hitachi SH-2 helper chips (Step 1) and a Hitachi SH-4 RISC core (Step 2) for 3D geometry.
 - Memory: Custom board carries 32 MB of main DRAM with dedicated buffers for texture and polygon storage plus extra RAM for the geometry pipeline.
 - Display: Sega CG Board capable of ~180,000 texture-mapped polygons per second with lighting and perspective correction, made for 640×480+ raster output.
 - Sound: CD-quality PCM audio with multiple simultaneous streams and hardware mixing plus Yamaha/QSound-style spatial effects.
 
-## Supported ROM extensions
+## Quick reference
 
-zip
+- **Emulator:** Supermodel
+- **ROM folder:** `/userdata/roms/model3`
+- **Accepted ROM formats:** `.zip` (matching the board ROM + CRC)
+- **System group:** `model3`, `arcade`
+
+## ROMs
+
+Drop each official Model 3 ZIP into `/userdata/roms/model3`. Supermodel expects one compressed archive per game containing the required ROM and MIPS data; do not extract the archive or rename files. Use the [Supermodel compatibility list](https://www.supermodel3.com/About.html) to verify supported titles (all officially dumped games except “Boat Race GP” are playable).
 
 ## Emulators
 
-- **supermodel** (supermodel)
+### Supermodel
 
-## Notes
+[Supermodel](https://www.supermodel3.com/) is the dedicated Sega Model 3 emulator bundled with REG-Linux. It exposes `model3.videomode` plus the options below; configuration is also stored in `/userdata/system/configs/supermodel/supermodel.ini`.
 
-## SEGA MODEL 3 IMPORTANT INFO ##
+| ES setting name | REG-Linux.conf_key | Description & values |
+| --- | --- | --- |
+| 3D ENGINE | `model3.engine3D` | Select Legacy3D (`legacy3d`) or New3D (`new3d`). |
+| QUAD RENDERING | `model3.quadRendering` | Enable modern quad rendering (`0` Off, `1` On). |
+| ENABLE WIDESCREEN | `model3.wideScreen` | Stretch to widescreen (glitches may appear). |
+| CROSSHAIRS | `model3.crosshairs` | Toggle shooting-game crosshairs per player. |
+| ENABLE FORCE FEEDBACK | `model3.forceFeedback` | Allow force feedback on supported controllers. |
+| MODERN PEDAL CONTROLS | `model3.pedalSwap` | Swap accelerator / brake to triggers. |
+| POWERPC FREQUENCY | `model3.ppcFreq` | Adjust emulated PPC speed (25–150). |
 
-Put your model3 roms in this directory.
+Supermodel also supports save states (F5 save, F7 load, select slot with F6) stored under `/saves/supermodel/`. Non-volatile settings (high scores, config) persist in `/system/configs/supermodel/NVRAM/`.
 
-Rom files must have a ".zip" extension from the latest MAME ROM set (currently 0.245).
+## Controls
 
-Files inside the .zip must match the board rom & CRC info expected of the emulator or they will not work.
-Each .zip file must contain only one compressed rom and be named correctly for compatibility.
-Specific rom details can be found in the emulators games.xml file.
+The default arcade layout maps to the [REG-Linux Retropad](/configure_a_controller); heavy use of keyboard (F5–F12) handles save states and volume controls. Use the overlays in `docs/images/controller-overlays/model3.png` for a visual guide.
 
-Note: The Raspberry Pi4 is limited to 720x576 or 720x480 with decorations & hud disabled.
+![Model3 controller overlay](../images/controller-overlays/model3.png)
 
-Game Compatibility:
--------------------
+## Troubleshooting
 
-Game compatibility can be found here - https://www.supermodel3.com/About.html
-
-The Configuration File:
------------------------
-
-The configuration file, Supermodel.ini, located in the Config folder (/system/configs/supermodel/), which stores input settings as well as most of what can be set on the command line.
-
-Audio:
-------
-
-Sound and music volume can be adjusted during run-time using the F9-F12 keys.
-Volume settings can be specified in the configuration file as well, globally for all games or tailored on a game-by-game basis.
-
-Save States And Non-Volatile Memory:
-------------------------------------
-
-Save states are fully supported. Up to 10 different slots can be selected with keyboard - F6. To save and restore states, press F5 and F7.
-State files are saved in the Saves folder (/saves/supermodel/), which must exist in order for save operations to succeed.
-Non-volatile memory (NVRAM) consists of battery-backed backup RAM (typically used for high score data) and an EEPROM (machine settings).
-It is saved to the NVRAM folder (/system/configs/supermodel/NVRAM/) each time Supermodel exits and is re-loaded at start-up.
-Save states will also save and overwrite NVRAM data.
-If you alter any machine settings, loading an earlier state will return them to their former configuration.
-Be sure to save these files for future use.
-
-Emulation Exit
---------------
-
-Configuration is set as Select & Start controller buttons.
-
-Troubleshooting:
-----------------
-
-See the Supermodel FAQ here - https://www.supermodel3.com/FAQ.html
-
----
+- Refer to the [Supermodel FAQ](https://www.supermodel3.com/FAQ.html) for game-specific fixes.
+- Use the service menu (`6`) when prompted, navigate with `5`/`6`, and exit via the **Exit** option.
+- If “Network Board Not Present” appears, set **Game Assignments → Link ID** to “Single” to bypass multiplayer checks.
+- For light-gun reloads, press the right mouse button when using pointer input. For further help, see the [generic support pages](/support).

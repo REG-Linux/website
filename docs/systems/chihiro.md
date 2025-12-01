@@ -7,33 +7,55 @@
 
 ## Overview
 
-Introduced in 2002 by Sega & Microsoft, the Sega Chihiro was a arcade system. Its platform tag is `chihiro` for proper filtering.
+The Sega Chihiro arcade board is essentially a custom Xbox designed by Sega and Microsoft in 2002 to follow up the Dreamcast hardware. It runs a Pentium III (733 MHz) and the Nvidia NV2A GPU found in the original Xbox, plus AC'97 audio—the same components that make the Xbox a PC-like console. REG-Linux exposes Chihiro games via the `chihiro` system group so themes can show the dedicated artwork set while you launch arcade titles like *Ghost Squad*, *OutRun 2* and *Virtual Cop 3*.
 
 ## Technical specifications
 
-- CPU: Intel Pentium III (Coppermine) clocked at 733 MHz, the same core used in the original Xbox.
-- Memory: 128 MB DDR SDRAM shared between CPU and GPU, plus 128 MB internal graphics memory on the NV2A chipset.
-- Display: Nvidia NV2A GPU (GeForce3-class) outputting 640×480 progressive or 720×480 interlaced with full hardware transform and lighting.
-- Sound: Integrated AC'97 audio controller delivering multi-channel PCM and hardware mixing identical to Xbox audio subsystems.
+- CPU: Intel Pentium III (Coppermine) at 733 MHz
+- RAM: 64 MB + onboard graphics RAM (similar to Xbox)
+- Graphics: Nvidia NV2A (GeForce 3 class) for 640×480/720×480 output with transform & lighting
+- Sound: AC'97 controller matching the original Xbox audio pipeline
 
 ## Supported ROM extensions
 
-iso
+- `.iso` (Xbox/XISO format)
+
+## Quick reference
+
+- **Emulator:** xemu
+- **ROM folder:** `/userdata/roms/chihiro`
+- **Accepted formats:** `.iso` (provided in Xbox XISO layout)
+
+## BIOS
+
+The Chihiro firmware is shared with the original Xbox, so xemu requires the same BIOS files plus the Cerbios flash image you find on official guides. Put these files in `bios/`:
+
+| MD5 checksum | Share file path | Description |
+| --- | --- | --- |
+| `d49c52a4102f6df7bcf8d0617ac475ed` | `bios/mcpx_1.0.bin` | MCPX boot ROM (Xbox) |
+| `39cee882148a87f93cb440b99dde3ceb` | `bios/Complex_4627.bin` | Flash ROM image (Xbox) |
+| `<latest>` (varies) | `bios/cerbios.bin` | Cerbios flash ROM for Chihiro (see xemu docs)
+
+Use the version recommended by xemu’s documentation; many modern Cerbios images target the udma flash ROM and are compatible with the supported games.
+
+## ROMs
+
+Put Chihiro/Xbox game ISOs under `/userdata/roms/chihiro`. The images must be in XISO format (the game partition only). If you only have a full disc image or folders of extracted files, use `extract-xiso` to rebuild an XISO suitable for xemu.
 
 ## Emulators
 
-- **xemu** (xemu)
+### xemu
 
-## Notes
+[xemu](https://xemu.app/) is an open-source Xbox emulator that doubles as the Chihiro driver by sharing the same hardware base. It uses the same BIOS files and disc formats described above.
 
-Place your Xbox compatible Chihiro roms in here.
-Currently support ISO's are:
-- Ghost Squad
-- Outrun 2
-- Virtual Cop 3
+Open xemu’s **Docs** section for the latest extraction tools and recommended command lines. REG-Linux surfaces xemu through the `xemu` entry in the emulator list, exposing standard features such as `xbox.videomode`, `xbox.decoration`, `xbox.padtokeyboard` and shared shader/overlay settings.
 
-You will also need the Cerbios flashrom in your bios directory.
-- Most modern Cerbios versions will work with the udma variants not being necessary.
+## Controls
 
+Chihiro games rely on standard Xbox controls plus arcade peripherals (lightguns, steering wheels). The default mapping appears on the [REG-Linux Retropad](/configure_a_controller) so typical Pad buttons match Xbox inputs and allow you to trigger lightgun/triggers for supported titles.
 
----
+## Troubleshooting
+
+- Ensure `/userdata/roms/chihiro` only contains XISO-format ISOs stripped of the standard Xbox header; use `extract-xiso` if necessary.
+- Confirm the BIOS files (`mcpx_1.0.bin`, `Complex_4627.bin`) and Cerbios image are present under `bios/` and match the values recommended by xemu.
+- Games requiring optional hardware (gun, wheel) may need additional configuration inside xemu’s menu; check the emulator docs for hooking up peripherals.

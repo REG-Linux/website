@@ -7,22 +7,48 @@
 
 ## Overview
 
-The Moonlight Embedded is a system platform developed by Misc. System.
+[Moonlight](https://moonlight-stream.org) mirrors NVIDIA GameStream (and Sunshine) to stream PC games to REG-Linux devices. The bundled [Moonlight Embedded](https://github.com/irtimmer/moonlight-embedded) client turns your console into a low-latency receiver for your PC library; it cannot stream from cloud services such as GeForce Now.
 
-## Technical specifications
+## Quick reference
 
-- Manufacturer: Misc. System
-- Hardware type: system
+- **ROM folder:** `/userdata/roms/moonlight`
+- **Accepted ROM formats:** `.moonlight`
+- **Emulator:** `moonlight`
+- **System group:** `moonlight`
 
-## Supported ROM extensions
+## Prerequisites
 
-moonlight
+1. Install or enable [Sunshine](https://docs.lizardbyte.dev/projects/sunshine/en/latest/) or another GameStream server on your gaming PC.
+2. Ensure the PC has compatible hardware (NVENC for NVIDIA, VAAPI for Intel, VCE for AMD) and launch Sunshine with an accessible username/password.
+3. REG-Linux and the PC must share the same LAN/VLAN unless you configure a VPN.
 
-## Emulators
+## Pairing and setup
 
-- **moonlight** (moonlight)
+1. SSH into REG-Linux and run `REG-Linux-moonlight list` to discover your Sunshine server.
+2. Pair with `REG-Linux-moonlight pair <IP>` and enter the PIN that appears in the terminal into Sunshine’s prompt.
+3. After pairing, run `REG-Linux-moonlight init` to generate `.moonlight` launchers, update `gamelist.xml`, and download metadata/artwork.
+4. Use `REG-Linux-moonlight scrape` later to refresh the library.
 
-## Notes
+Moonlight writes its library data into `/userdata/system/configs/moonlight/gamelist.txt`.
 
+## Configuration
 
----
+Streaming resolution, bitrate, and framerate are set via the Advanced System Options menu inside EmulationStation. For fine-grained control, drop a `moonlight.conf` file into `/userdata/system/configs/moonlight/`; the upstream `moonlight.conf` samples at https://github.com/moonlight-stream/moonlight-embedded/blob/master/moonlight.conf provide useful defaults.
+
+On some devices (e.g., Odroid Go Advance), add `platform = sdl` to `moonlight.conf` or select “SDL” as the Preferred AV Decoder to ensure correct orientation.
+
+## Shortcuts
+
+- `Start+Select+L1+R1`: quit session.
+- `Start`: open Moonlight settings.
+- Hold `Start`: toggle mouse mode.
+- `Ctrl+Alt+Shift+Q`: quit on keyboard.
+- `Ctrl+Alt+Shift+X`: toggle windowed/full-screen.
+- `Ctrl+Alt+Shift+Z`: toggle mouse control.
+- `Ctrl+Alt+Shift+S`: toggle performance stats.
+
+## Troubleshooting
+
+- If games do not appear, re-run `REG-Linux-moonlight list` after verifying Sunshine is running.
+- Ignore occasional `KeyError: ''` traces; they only signal missing metadata.
+- For further help check the [generic support pages](/support).

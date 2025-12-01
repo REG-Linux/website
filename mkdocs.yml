@@ -175,11 +175,11 @@ nav:
     - 3DS: systems/3ds.md
     - ADAM: systems/adam.md
     - Adventure Vision: systems/advision.md
-    - Amiga: systems/amiga.md
-    - Amiga AGA: systems/amiga1200.md
-    - Amiga OCS/ECS: systems/amiga500.md
-    - Amiga CD32: systems/amigacd32.md
-    - Amiga CDTV: systems/amigacdtv.md
+    - Amiga:
+      - Amiga AGA: systems/amiga1200.md
+      - Amiga OCS/ECS: systems/amiga500.md
+      - Amiga CD32: systems/amigacd32.md
+      - Amiga CDTV: systems/amigacdtv.md
     - Amstrad CPC: systems/amstradcpc.md
     - M-1000: systems/apfm1000.md
     - Apple II: systems/apple2.md
