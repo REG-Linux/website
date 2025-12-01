@@ -89,7 +89,7 @@ Updates therefore behave like file swaps on the boot partition, while customizat
 ## 7. Gaming & Application Stack
 
 - **Front-end** – REG Linux ships a customized EmulationStation build responsible for display selection, rotation, and launching Wayland or X11 sessions when needed.
-- **Standalone emulators** – Flagship engines (DuckStation, PCSX2, PPSSPP, Ryujinx, Vita3K, RPCS3, Yuzu replacements, and more) are bundled as self-contained applications. Each can install shaders, BIOS stubs, or configuration templates into the `datainit` bundle so users always start from sane defaults.
+- **Standalone emulators** – Flagship engines (DuckStation, PCSX2, PPSSPP, Ryujinx, Vita3K, RPCS3, NS emulation, and more) are bundled as self-contained applications. Each can install shaders, BIOS stubs, or configuration templates into the `datainit` bundle so users always start from sane defaults.
 - **RetroArch & libretro** – RetroArch plus its shader packs, assets, and per-core libraries cover lighter systems. Joypad autoconfigs live in `datainit` so handheld controls map properly.
 - **Native ports & engines** – Game ports such as OpenJazz, Cannonball, and TheForceEngine install their configs into the shared `datainit` tree to keep saves and tweaks inside `/userdata`.
 - **System helpers** – A lightweight configuration generator ties front-ends to emulator settings on a per-game basis, reading metadata from the seeded runtime database.
