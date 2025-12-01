@@ -171,34 +171,100 @@ nav:
 - Emulators:
   - Overview: systems/index.md
   - Emulated Systems:
+    - Apple:
+      - Apple II: systems/apple2.md
+      - Apple IIGS: systems/apple2gs.md
+      - Macintosh: systems/macintosh.md
+    - Atari:
+      - Atari Lynx: systems/lynx.md
+      - Atari 2600: systems/atari2600.md
+      - Atari 5200: systems/atari5200.md
+      - Atari 7800: systems/atari7800.md
+      - Atari XE Game System: systems/xegs.md
+      - Jaguar: systems/jaguar.md
+      - Jaguar CD: systems/jaguarcd.md
+      - Atari 800: systems/atari800.md
+      - Atari ST: systems/atarist.md
+    - Commodore:
+      - Commodore VIC-20: systems/c20.md
+      - Commodore 64: systems/c64.md
+      - Commodore 128: systems/c128.md
+      - Commodore Plus4: systems/cplus4.md
+      - Commodore PET: systems/pet.md
+      - Amiga:
+        - Amiga AGA: systems/amiga1200.md
+        - Amiga OCS/ECS: systems/amiga500.md
+        - Amiga CD32: systems/amigacd32.md
+        - Amiga CDTV: systems/amigacdtv.md
+    - Microsoft:
+      - MSX:
+        - MSX1: systems/msx1.md
+        - MSX2: systems/msx2.md
+        - MSX2+: systems/msx2+.md
+        - MSX Turbo-R: systems/msxturbor.md
+      - Xbox: systems/xbox.md
+      - Xbox 360: systems/xbox360.md
+    - Nintendo:
+      - Nintendo Entertainment System: systems/nes.md
+      - Family Computer Disk System: systems/fds.md
+      - Super Nintendo Entertainment System: systems/snes.md
+      - Super Disc System (MSU1): systems/snes-msu1.md
+      - Nintendo 64: systems/n64.md
+      - Nintendo 64 Disk Drive: systems/n64dd.md
+      - GameCube: systems/gamecube.md
+      - Wii: systems/wii.md
+      - Wii U: systems/wiiu.md
+      - Switch: systems/switch.md
+      - Game Boy: systems/gb.md
+      - Virtual Boy: systems/virtualboy.md
+      - Game Boy Color: systems/gbc.md
+      - Game Boy Advance: systems/gba.md
+      - Nintendo DS: systems/nds.md
+      - 3DS: systems/3ds.md
+    - NEC:
+      - PC Engine: systems/pcengine.md
+      - PC Engine CD: systems/pcenginecd.md
+      - Supergrafx: systems/supergrafx.md
+      - PC-FX: systems/pcfx.md
+    - Sega:
+      - SG-1000: systems/sg1000.md
+      - Master System: systems/mastersystem.md
+      - Game Gear: systems/gamegear.md
+      - Mega Drive: systems/megadrive.md
+      - Sega CD: systems/segacd.md
+      - MSU-MD: systems/msu-md.md
+      - 32x: systems/sega32x.md
+      - Saturn: systems/saturn.md
+      - Sega Pico: systems/pico.md
+      - Dreamcast: systems/dreamcast.md
+      - Dreamcast VMU: systems/vemulator.md
+      - Model 3: systems/model3.md
+      - Naomi: systems/naomi.md
+      - Naomi 2: systems/naomi2.md
+    - Sony:
+      - PlayStation: systems/psx.md
+      - PlayStation 2: systems/ps2.md
+      - PlayStation 3: systems/ps3.md
+      - PlayStation 4: systems/ps4.md
+      - PlayStation Portable: systems/psp.md
+      - PlayStation Vita: systems/psvita.md
+    - SNK:
+      - Neo-Geo: systems/neogeo.md
+      - Neo-Geo CD: systems/neogeocd.md
+      - Neo-Geo Pocket: systems/ngp.md
+      - Neo-Geo Pocket Color: systems/ngpc.md
     - 3DO Interactive Multiplayer: systems/3do.md
-    - 3DS: systems/3ds.md
     - ADAM: systems/adam.md
     - Adventure Vision: systems/advision.md
-    - Amiga:
-      - Amiga AGA: systems/amiga1200.md
-      - Amiga OCS/ECS: systems/amiga500.md
-      - Amiga CD32: systems/amigacd32.md
-      - Amiga CDTV: systems/amigacdtv.md
     - Amstrad CPC: systems/amstradcpc.md
     - M-1000: systems/apfm1000.md
-    - Apple II: systems/apple2.md
-    - Apple IIGS: systems/apple2gs.md
     - Arcadia 2001: systems/arcadia.md
     - Archimedes: systems/archimedes.md
     - Arduboy: systems/arduboy.md
     - Astrocade: systems/astrocde.md
-    - Atari 2600: systems/atari2600.md
-    - Atari 5200: systems/atari5200.md
-    - Atari 7800: systems/atari7800.md
-    - Atari 800: systems/atari800.md
-    - Atari ST: systems/atarist.md
     - Atom: systems/atom.md
     - Atomiswave: systems/atomiswave.md
     - BBC Micro: systems/bbc.md
-    - Commodore 128: systems/c128.md
-    - Commodore VIC-20: systems/c20.md
-    - Commodore 64: systems/c64.md
     - Camputers Lynx: systems/camplynx.md
     - CD-i: systems/cdi.md
     - Channel-F: systems/channelf.md
@@ -206,99 +272,49 @@ nav:
     - Color Computer: systems/coco.md
     - ColecoVision: systems/colecovision.md
     - Commander X16: systems/commanderx16.md
-    - Commodore Plus4: systems/cplus4.md
     - CreatiVision: systems/crvision.md
     - Daphne: systems/daphne.md
     - Dos (x86): systems/dos.md
-    - Dreamcast: systems/dreamcast.md
     - Electron: systems/electron.md
     - Final Burn Neo: systems/fbneo.md
-    - Family Computer Disk System: systems/fds.md
     - Applications: systems/flatpak.md
     - FM-7: systems/fm7.md
     - FM-TOWNS: systems/fmtowns.md
     - Gamate: systems/gamate.md
     - Game and Watch: systems/gameandwatch.md
     - Game.com: systems/gamecom.md
-    - GameCube: systems/gamecube.md
-    - Game Gear: systems/gamegear.md
     - Game Pocket Computer: systems/gamepock.md
-    - Game Boy: systems/gb.md
-    - Game Boy Advance: systems/gba.md
-    - Game Boy Color: systems/gbc.md
     - Game Master: systems/gmaster.md
     - Pong: systems/gong.md
     - GP32: systems/gp32.md
     - GX4000: systems/gx4000.md
     - Mattel Intellivision: systems/intellivision.md
     - Java 2 MicroEdition: systems/j2me.md
-    - Jaguar: systems/jaguar.md
-    - Jaguar CD: systems/jaguarcd.md
     - Laser 310: systems/laser310.md
     - LCD Games: systems/lcdgames.md
-    - Atari Lynx: systems/lynx.md
-    - Macintosh: systems/macintosh.md
     - Mame: systems/mame.md
-    - Master System: systems/mastersystem.md
-    - Mega Drive: systems/megadrive.md
     - Mega Duck / Cougar Boy: systems/megaduck.md
-    - Model 3: systems/model3.md
     - Moonlight Embedded: systems/moonlight.md
-    - MSU-MD: systems/msu-md.md
-    - Msx: systems/msx.md
-    - MSX1: systems/msx1.md
-    - MSX2: systems/msx2.md
-    - MSX2+: systems/msx2+.md
-    - MSX Turbo-R: systems/msxturbor.md
     - Othello Multivision: systems/multivision.md
-    - Nintendo 64: systems/n64.md
-    - Nintendo 64 Disk Drive: systems/n64dd.md
     - Namco System 246/256: systems/namco2x6.md
-    - Naomi: systems/naomi.md
-    - Naomi 2: systems/naomi2.md
-    - Nintendo DS: systems/nds.md
-    - Neo-Geo: systems/neogeo.md
-    - Neo-Geo CD: systems/neogeocd.md
-    - Nintendo Entertainment System: systems/nes.md
     - N-Gage: systems/ngage.md
-    - Neo-Geo Pocket: systems/ngp.md
-    - Neo-Geo Pocket Color: systems/ngpc.md
     - Odyssey2: systems/o2em.md
     - PC-8800: systems/pc88.md
     - PC-9800: systems/pc98.md
-    - PC Engine: systems/pcengine.md
-    - PC Engine CD: systems/pcenginecd.md
-    - PC-FX: systems/pcfx.md
     - PDP-1: systems/pdp1.md
-    - Commodore PET: systems/pet.md
-    - Sega Pico: systems/pico.md
     - Plug and Play TV Games: systems/plugnplay.md
     - Pokemon Mini: systems/pokemini.md
-    - PlayStation 2: systems/ps2.md
-    - PlayStation 3: systems/ps3.md
-    - PlayStation 4: systems/ps4.md
-    - PlayStation Portable: systems/psp.md
-    - PlayStation Vita: systems/psvita.md
-    - PlayStation: systems/psx.md
     - PV-1000: systems/pv1000.md
     - "SAM Coup\xE9": systems/samcoupe.md
     - Satellaview: systems/satellaview.md
-    - Saturn: systems/saturn.md
     - Super Cassette Vision: systems/scv.md
-    - 32x: systems/sega32x.md
-    - Sega CD: systems/segacd.md
-    - SG-1000: systems/sg1000.md
     - Super Game Boy: systems/sgb.md
-    - Super Nintendo Entertainment System: systems/snes.md
-    - Super Disc System (MSU1): systems/snes-msu1.md
     - Socrates: systems/socrates.md
     - Spectravideo SV-328: systems/spectravideo.md
     - Steam: systems/steam.md
     - SuFami Turbo: systems/sufami.md
-    - Supergrafx: systems/supergrafx.md
     - Supervision: systems/supervision.md
     - Super A'Can: systems/supracan.md
-    - Switch: systems/switch.md
     - Sega System SP: systems/systemsp.md
     - Thomson - MO/TO (Theodore): systems/thomson.md
     - TI-99: systems/ti99.md
@@ -307,21 +323,14 @@ nav:
     - Uzebox: systems/uzebox.md
     - VC 4000: systems/vc4000.md
     - Vectrex: systems/vectrex.md
-    - Dreamcast VMU: systems/vemulator.md
     - Videopac+ G7400: systems/videopacplus.md
-    - Virtual Boy: systems/virtualboy.md
     - Tandy Video Information System: systems/vis.md
     - Visual Pinball X: systems/vpinball.md
     - V.Smile: systems/vsmile.md
-    - Wii: systems/wii.md
-    - Wii U: systems/wiiu.md
     - WonderSwan: systems/wswan.md
     - WonderSwan Color: systems/wswanc.md
     - Sharp X1: systems/x1.md
     - Sharp X68000: systems/x68000.md
-    - Xbox: systems/xbox.md
-    - Xbox 360: systems/xbox360.md
-    - Atari XE Game System: systems/xegs.md
     - Zelda Classic: systems/zc210.md
     - ZX81: systems/zx81.md
     - ZX Spectrum: systems/zxspectrum.md
