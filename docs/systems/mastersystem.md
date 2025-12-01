@@ -7,24 +7,66 @@
 
 ## Overview
 
-Introduced in 1985 by Sega, the Master System was a console system.
+The Sega Master System launched in 1985/1986 as an 8-bit challenger to the NES. Built around a 4 MHz Zilog Z80A CPU with 8 KB of RAM and 16 KB of video RAM, it found its strongest markets in Europe, Brazil, South Korea and Australia. REG-Linux treats the platform as the `mastersystem` system group so metadata scraping, themes and visual sets stay in sync with its Sega siblings.
 
 ## Technical specifications
 
-- CPU: Zilog Z80A running at 3.58 MHz, the same core as the Game Gear/ZX Spectrum.
-- Memory: 8 KB main RAM plus 16 KB VRAM for tile graphics and palettes.
-- Display: 256×192 resolution (32 colors from a 64-shade palette) with support for 64 sprites and eight background planes.
-- Sound: Texas Instruments SN76489 PSG offering three tone channels and one noise channel.
+- CPU: Zilog Z80A at 4 MHz (compatible with Game Gear/ZX Spectrum hardware)
+- Memory: 8 KB RAM + 16 KB VRAM (TMS9918A-derived tile engine)
+- Display: 256×192 resolution, 32 colors per tile, 64 sprites and hardware scrolling
+- Sound: Texas Instruments SN76489 PSG (three tone channels plus noise)
 
 ## Supported ROM extensions
 
-bin, sms, zip, 7z
+`bin`, `sms`, `zip`, `7z`
+
+## Quick reference
+
+- **ROM folder:** `/userdata/roms/mastersystem`
+- **Accepted ROM formats:** `.bin`, `.sms`, `.zip`, `.7z`
+- **Emulators:** RetroArch (`libretro: GenesisPlusGX`, `libretro: Picodrive`), [CLK](#clk)
+- **System group:** `mastersystem`
+
+## BIOS
+
+No BIOS archive is required for Master System emulation.
+
+## ROMs
+
+Place every Master System ROM in `/userdata/roms/mastersystem`. The same cores also run Game Gear and Mega Drive/Genesis titles, so you can keep the Sega hierarchy tidy inside the `roms/` tree if you prefer.
 
 ## Emulators
 
-- **gearsystem** (libretro)
-- **genesisplusgx** (libretro)
-- **picodrive** (libretro)
-- **smsplus** (libretro)
+### RetroArch
 
----
+[RetroArch](https://docs.libretro.com/) serves the Sega 8-bit cores. Open the Quick Menu with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) to adjust shaders, controllers and overrides.
+
+Standardized options: `mastersystem.videomode`, `mastersystem.ratio`, `mastersystem.smooth`, `mastersystem.shaders`, `mastersystem.pixel_perfect`, `mastersystem.decoration`, `mastersystem.game_translation`, `mastersystem.audio_latency`, `mastersystem.video_threaded`.
+
+| ES setting name | REG-Linux.conf_key | Description & values |
+| --- | --- | --- |
+| GRAPHICS BACKEND | `mastersystem.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
+| AUDIO LATENCY | `mastersystem.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase if you hear pops. |
+| THREADED VIDEO | `mastersystem.video_threaded` | Offload video rendering to another thread (`true` On, `false` Off). |
+
+#### libretro: GenesisPlusGX
+
+GenesisPlusGX covers Master System, Game Gear, SG-1000 and more. Additional Master System–specific controls include `mastersystem.gpgx_blargg_filter_ms`, `mastersystem.ym2413`, `mastersystem.gun_cursor_ms`, `mastersystem.controller1_ms` and `mastersystem.controller2_ms`.
+
+#### libretro: Picodrive
+
+Picodrive is a lightweight alternative with similar Sega 8-bit settings referenced in `megadrive.md`.
+
+### CLK (Clock Signal)
+
+[CLK](https://github.com/TomHarte/CLK) arrived in REG-Linux v42+. It offers a low-latency, accurate Banana-style emulation path for the Master System alongside other retro platforms.
+
+## Controls
+
+Master System controllers included the two-button gamepad, Light Phaser, paddle and sports pad. The [REG-Linux Retropad](/configure_a_controller) overlay matches the standard pad layout; use RetroArch's Input menu or the controller configuration tool for special peripherals.
+
+![mastersystem controller overlay](../images/controller-overlays/mastersystem-1.png)
+
+## Troubleshooting
+
+When a title misbehaves, consult the [generic support pages](/support) and consider switching between GenesisPlusGX and Picodrive to see which core handles the ROM best.
