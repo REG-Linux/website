@@ -7,7 +7,7 @@
 
 ## Overview
 
-Introduced in 1989 by Miles Gordon Technology, the SAM Coupé was a computer system.
+The British SAM Coupé (1989) mixes a Z80-compatible CPU with a palette richer than the ZX Spectrum, aiming squarely at home and hobbyist programmers. REG-Linux includes it under the `samcoupe` metadata tag so the themed art appears alongside the rest of the retro computers.
 
 ## Technical specifications
 
@@ -16,12 +16,28 @@ Introduced in 1989 by Miles Gordon Technology, the SAM Coupé was a computer sys
 - Display: Custom Video Display Generator offering 256×192 resolution, 256 colors from a 4096 palette, and sprite-based zoom/scroll support.
 - Sound: General Instrument AY-3-8912 PSG with three tone channels and noise, routed through stereo outputs.
 
-## Supported ROM extensions
+### Quick reference
 
-cpm, dsk, sad, mgt, sdf, td0, sbt, zip
+- **ROM folder:** `/userdata/roms/samcoupe`
+- **Accepted formats:** `.cpm`, `.dsk`, `.sad`, `.mgt`, `.sdf`, `.td0`, `.sbt`, `.zip`
+- **Emulator:** `samcoupe`
+- **System group:** `samcoupe`
 
-## Emulators
+## ROMs
 
-- **samcoupe** (samcoupe)
+Drop disk, tape or cartridge dumps into `/userdata/roms/samcoupe`. The emulator recognizes CPM/TIP images without renaming, so leave the files as you obtained them.
 
----
+## Emulator
+
+### samcoupe
+
+The integrated core reproduces the original keyboard, joystick and expansion chips. It runs inside EmulationStation with sensible defaults; use `/remapping_controls_per_emulator` to tweak the keyboard or joystick mapping when necessary.
+
+## Controls
+
+Refer to the controller overlay for the keyboard-inspired layout and single-button joystick reference if you need to map keys manually.
+
+## Troubleshooting
+
+- Ensure your archive contains the expected disk types (e.g., `.sad`, `.td0`).
+- Consult the [generic support pages](/support) if a title refuses to load.

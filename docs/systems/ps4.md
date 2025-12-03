@@ -8,6 +8,7 @@
 ## Overview
 
 Introduced in 2013 by Sony, the PlayStation 4 was a console system.
+ShadPS4 is the experimental PlayStation 4 emulator included in REG-Linux. It demands a 64-bit CPU with AVX2 and a Vulkan 1.3+ GPU, and it only works on systems that can provide the decrypted firmware modules from a jailbroken PS4.
 
 ## Technical specifications
 
@@ -16,29 +17,37 @@ Introduced in 2013 by Sony, the PlayStation 4 was a console system.
 - Display: Custom AMD Radeon-based GPU delivering 1.84 TFLOPS with support for 1080p/4K rendering and hardware geometry/tessellation.
 - Sound: Custom AMD audio engine with 64-channel PCM mixing and support for Dolby Atmos/DTS:X formats.
 
-## Supported ROM extensions
+### Quick reference
 
-ps4
+- **ROM folder:** `/userdata/roms/ps4`
+- **Accepted formats:** `.ps4` (folder or placeholder file)
+- **Emulator:** ShadPS4
+- **System group:** `ps4`
+
+## ROMs
+
+1. Install the `.pkg` packages via `rpcs3-config`–style tools inside the ShadPS4 interface; the extracted data lands in `/userdata/system/configs/shadps4/`.
+2. Create an empty `.ps4` launcher (e.g., `/userdata/roms/ps4/CUSA03173/Bloodborne.ps4`). The filename is what EmulationStation uses to display the entry.
+3. Copy DLC into `/userdata/roms/ps4/DLC`.
+
+RPCS4 reads the `.ps4` placeholder and redirects to the installed files; the game folder needs only the metadata filename.
+
+## System modules
+
+ShadPS4 requires decrypted system module files extracted from a jailbroken PS4. Place them in `/userdata/system/configs/shadps4/user/sys_modules`. The emulator log reports any missing modules when a game refuses to boot.
 
 ## Emulators
 
-- **shadps4** (shadps4)
+### ShadPS4
 
-## Notes
+ShadPS4 is the lone option for PS4 content. It runs only on x86_64 machines with Vulkan drivers. Check the [compatibility list](https://shadps4.net/compatibility/) before loading a title because the emulator is still in early development.
 
-Do not attempt to use this emulator unless you have a jailbroken PS4 console with back-up games.
-PS4 emulation is very experiemental & required a high specified x86_64 PC.
+## Controls
 
-Before you can play a game you must install the game via the associated .PKG file of your backed-up game using the F1 menu.
-Then in the new installation directory for the installed game, create a file with a .ps4 extension so EmularionStation will see it.
-i.e. /userdata/roms/ps4/CUSA03173/Bloodborne.ps4
+The emulator mimics the DualShock 4 layout, so the REG-Linux PSX/PS2 overlay (`../images/controller-overlays/psx-1.png`) already applies.
 
-Then you can launch the game from EmulationStation accordingly.
+## Troubleshooting
 
-DLC content will be stored in: /userdata/roms/ps4/DLC
-
-Very important: To play games you typically need the system modules from your PS4 that has been jailbroken.
-Place the decrypted system module files in: /userdata/system/configs/shadps4/user/sys_modules
-
-
----
+- Expect early-stage behaviour: missing audio, crashes, or incomplete features are common.
+- Make sure the `.ps4` launcher points to an installed game and that the system modules folder contains the decrypted binaries.
+- Visit the [generic support pages](/support) for help if the emulator keeps crashing.

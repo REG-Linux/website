@@ -7,55 +7,75 @@
 
 ## Overview
 
-Introduced in 1985 by Microsoft, the MSX2 was a computer system. Its platform tag is `msx2` for proper filtering.
+Microsoft updated the original MSX1 in 1985 with the MSX2 standard, bringing better video and mapper support. REG-Linux keeps it under the `msx2` tag so metadata stays in sync.
+
+### Quick reference
+
+* **ROM folder:** `/userdata/roms/msx2`
+* **Accepted ROM formats:** `.dsk`, `.mx2`, `.rom`, `.zip`, `.7z`, `.cas`, `.m3u`
+* **Emulators:** RetroArch (`libretro: bluemsx`, `libretro: fmsx`), [openMSX](#openmsx), [CLK](#clk)
+* **System group:** `msx`
+
+| Emulator/Core | Notes |
+| --- | --- |
+| `libretro: bluemsx` | High-accuracy MSX2 emulation with sprite limit toggles |
+| `libretro: fmsx` | Speed-friendly core with netplay |
+| `openmsx` | Official openMSX implementation supporting MSX2 |
+| `CLK` | Clock Signal still leverages MSX2 BIOS dumps as of REG-Linux 42 |
 
 ## Technical specifications
 
 - CPU: Zilog Z80-compatible (typically 3.58 MHz) with the same 8-bit bus as MSX1.
-- Memory: 64–512 KB of main RAM in firmware plus mapper expansions up to 4 MB.
+- Memory: 64–512 KB of main RAM with mapper expansions up to 4 MB.
 - Display: Yamaha V9938 VDP supporting 256×212/512×212 resolutions, 256 colors per palette and smooth hardware scrolling.
 - Sound: AY-3-8910 PSG reused from MSX1 families.
 
 ## Supported ROM extensions
 
-dsk, mx2, rom, zip, 7z, cas, m3u, ogv, openmsx
+`dsk`, `mx2`, `rom`, `zip`, `7z`, `cas`, `m3u`, `ogv`, `openmsx`
+
+## ROMs
+
+Place MSX2 titles inside `/userdata/roms/msx2`. Wrap multi-disk games in `.m3u` playlists for a cleaner EmulationStation entry (see `/cd_image_formats#multi-disc_games`).
+
+## BIOS
+
+MSX2 uses the same BlueMSX/FMSX ROM bundle detailed in `msx1.md`. Copy BlueMSX’s `Databases`/`Machines` into `/userdata/bios` and drop the FMSX files from that page as well.
+
+CLK also checks for these MSX2-exclusive binaries:
+
+| MD5 checksum                       | Share file path      | Description |
+|------------------------------------|----------------------|-------------|
+| `ec3a01c91f24fbddcbcab0ad301bc9ef` | `bios/MSX2.ROM`      | MSX2 BIOS (BlueMSX/openMSX) |
+| `2183c2aff17cf4297bdb496de78c2e8a` | `bios/MSX2EXT.ROM`   | MSX2 extension BIOS |
 
 ## Emulators
 
-- **bluemsx** (libretro)
-- **fmsx** (libretro)
-- **openmsx** (openmsx)
+### RetroArch
 
-## Notes
+RetroArch runs `libretro: bluemsx` and `libretro: fmsx` for MSX2; the shared `msx2.*` options match those described in `msx1.md`.
 
-## BIOS ##
+#### libretro: bluemsx
 
-- BlueMSX (DEFAULT) :
-You must download the BlueMSX standalone version, available to this adresse: http://bluemsx.msxblue.com/rel_download/blueMSXv282full.zip
-Then extract the "Databases" and "Machines" folders and add them to the bios folder.
+Use `global.bluemsx_nospritelimits` to remove the per-line sprite limit and the same rewinding/autosave/achievements
+options (`msx2.rewind`, `msx2.autosave`, `msx2.padtokeyboard`, `msx2.cheevos`).
 
-- FMSX :
-You must have these following files, available with fmsx distribution, in the bios folder:
-CARTS.SHA
-CYRILLIC.FNT
-DISK.ROM
-FMPAC.ROM
-FMPAC16.ROM
-ITALIC.FNT
-KANJI.ROM
-MSX.ROM
-MSX2.ROM
-MSX2EXT.ROM
-MSX2P.ROM
-MSX2PEXT.ROM
-MSXDOS2.ROM
-PAINTER.ROM
-RS232.ROM
+#### libretro: fmsx
 
-- OpenMSX
-Various BIOS files for OpenMSX should be in either folder below:
-    1. userdata/system/configs/openmsx/share/systemroms
-    2. userdata/bios/Machines
-    3. userdata/bios/openmsx
+fMSX mirrors the option set and adds `msx2.netplay`.
 
----
+### openMSX
+
+openMSX shares the `msx2.*` configuration tree and uses the MSX2 BIOS files recorded above.
+
+### CLK
+
+CLK (Clock Signal) included MSX2 support in REG-Linux 42. It uses the BIOS table above and exposes the usual `msx*` option set.
+
+## Controls
+
+Use the REG-Linux RetroPad overlay for MSX2 games; the Turbo-R/MX1 overlays apply equally.
+
+## Troubleshooting
+
+See the [generic support pages](/support) if you need extra help.

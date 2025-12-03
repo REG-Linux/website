@@ -7,25 +7,43 @@
 
 ## Overview
 
-Introduced in 2004 by Nintendo, the Nintendo DS was a portable system.
+Released in 2004, the Nintendo DS injected dual displays, touchscreen control, and backwards compatibility into handheld gaming.
+
+### Quick reference
+
+* **ROM folder:** `/userdata/roms/nds`
+* **Accepted formats:** `.nds`, `.bin`, `.zip`, `.7z`
+* **Cores:** `libretro: melonDS`, `libretro: DeSmuME`, standalone `melonDS`, `Drastic`
+* **System group:** `nds`
 
 ## Technical specifications
 
-- CPU: 67 MHz ARM946E-S as the main processor with a secondary 33 MHz ARM7TDMI for legacy Game Boy Advance compatibility.
-- Memory: 4 MB onboard RAM and 656 KB of WRAM for the video engines.
-- Display: Dual 3-inch TFT LCDs at 256×192 pixels (upper display with touch input, lower for stylus) supporting 262k colors.
-- Sound: Stereo DAC with support for 16-bit PCM samples, MIDI playback, and DS-specific hardware audio mixing.
+- CPU: 67 MHz ARM946E-S with secondary 33 MHz ARM7TDMI for legacy Game Boy Advance compatibility.
+- Memory: 4 MB onboard RAM and 656 KB WRAM working with the video engines.
+- Display: Dual 3-inch TFT LCDs at 256×192 (upper screen touchscreen, lower for stylus) supporting 262k colors.
+- Sound: Stereo DAC with 16-bit PCM samples, MIDI playback, and DS-specific hardware mixing.
 
-## Supported ROM extensions
+## BIOS & firmware
 
-nds, bin, zip, 7z
+Place the Nintendo DS firmware trio (`firmware.bin`, `bios7.bin`, `bios9.bin`) in `/userdata/bios/`, matching the MD5s shipped with REG-Linux. DSi titles additionally need `dsi_bios7.bin`, `dsi_bios9.bin`, `dsi_firmware.bin` and `dsi_nand.bin`.
 
-## Emulators
+## ROMs
 
-- **drastic** (drastic)
-- **desmume** (libretro)
-- **melonds** (libretro)
-- **melondsds** (libretro)
-- **melonds** (melonds)
+Copy `.nds` files directly into `/userdata/roms/nds`. Zip archives are supported, but unpack them if the emulator fails to detect the game. Titles that depend on DSi enhancements require the DSi BIOS set noted earlier.
 
----
+## Emulator options
+
+### RetroArch
+
+Both [melonDS](https://melonds.kuribo64.net/) and [DeSmuME](https://desmume.org/) rely on RetroArch’s Quick Menu (`[HOTKEY]` + south face button) to tweak internal resolution, texture filtering, screen layout and frameskip. Additional per-core options include `global.melonds_screen_layout`, `global.internal_resolution_desmume`, and `global.texture_scaling`.
+
+### Standalone & Drastic
+
+- **Standalone melonDS:** Adjust save slots, touchscreen calibration and per-game tweaks via the built-in UI.
+- **Drastic:** Present on compatible SBC images; enable `nds.drastic_hires` for sharper graphics and `nds.drastic_threaded` to smooth out performance.
+
+## Troubleshooting
+
+- If you receive “BIOS missing”, make sure every firmware file resides under `/userdata/bios/`.
+- Use the DSi BIOS bundle for modern ROMs that require additional features.
+- See the [generic support pages](/support) for general issues.
