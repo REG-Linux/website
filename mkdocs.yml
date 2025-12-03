@@ -365,7 +365,6 @@ nav:
     - Sonic Mania: ports/sonic-mania.md
     - Sonic 3 A.I.R.: ports/sonic3-air.md
     - Sonic Retro Engine: ports/sonicretro.md
-    - Super Mario War: ports/superbroswar.md
     - The Force Engine: ports/theforceengine.md
     - TyrQuake: ports/tyrquake.md
     - Ur-Quan Masters: ports/uqm.md
@@ -388,6 +387,7 @@ nav:
     - C-Dogs SDL: games/cdogs.md
     - Hydra Castle Labyrinth: games/hcl.md
     - Hurrican: games/hurrican.md
+    - Super Mario War: games/superbroswar.md
     - Tyrian: games/tyrian.md
 - Installation: installation.md
 - Developer Guide: dev-guide.md
