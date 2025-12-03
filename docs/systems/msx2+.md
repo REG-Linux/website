@@ -7,7 +7,21 @@
 
 ## Overview
 
-Introduced in 1988 by Microsoft, the MSX2+ was a computer system. Its platform tag is `msx2+` for proper filtering.
+MSX2+ arrived in 1988 as an incremental MSX2 revision with richer video features and sprite handling. REG-Linux labels it `msx2+` for metadata grouping.
+
+### Quick reference
+
+* **ROM folder:** `/userdata/roms/msx2+`
+* **Accepted ROM formats:** `.dsk`, `.mx2`, `.rom`, `.zip`, `.7z`, `.cas`, `.m3u`
+* **Emulators:** RetroArch (`libretro: bluemsx`, `libretro: fmsx`), [openMSX](#openmsx), [CLK](#clk)
+* **System group:** `msx`
+
+| Emulator/Core | Notes |
+| --- | --- |
+| `libretro: bluemsx` | Same options as MSX2 with extra focus on MSX2+ sprites |
+| `libretro: fmsx` | Smaller core tuned for handheld-style performance |
+| `openmsx` | openMSX implements the MSX2+ BIOS list described in `msx2.md` |
+| `CLK` | Clock Signal reuses the MSX2+ ROMs introduced earlier |
 
 ## Technical specifications
 
@@ -18,44 +32,45 @@ Introduced in 1988 by Microsoft, the MSX2+ was a computer system. Its platform t
 
 ## Supported ROM extensions
 
-dsk, mx2, rom, zip, 7z, cas, m3u, openmsx
+`dsk`, `mx2`, `rom`, `zip`, `7z`, `cas`, `m3u`, `ogv`, `openmsx`
+
+## ROMs
+
+Store MSX2+ titles in `/userdata/roms/msx2+` and wrap multi-disk games in `.m3u` playlists for tidy gamelist entries.
+
+## BIOS
+
+Use the same BlueMSX/FMSX BIOS collection described in `msx2.md`; the MSX2+ relies on `MSX2.ROM`, `MSX2EXT.ROM`
+and the additional mapper files listed earlier.
 
 ## Emulators
 
-- **bluemsx** (libretro)
-- **fmsx** (libretro)
-- **openmsx** (openmsx)
+### RetroArch
 
-## Notes
+RetroArch hosts `libretro: bluemsx` and `libretro: fmsx` for MSX2+ games. They expose the same `msx2.*` / `msxturbor.*`
+options as the lower-tier MSX systems.
 
-## BIOS ##
+#### libretro: bluemsx
 
-- BlueMSX (DEFAULT) :
-You must download the BlueMSX standalone version, available to this adresse: http://bluemsx.msxblue.com/rel_download/blueMSXv282full.zip
-Then extract the "Databases" and "Machines" folders and add them to the bios folder.
+Same configuration as MSX2; include `global.bluemsx_nospritelimits` and the rewinding/autosave options (`msx2.rewind`,
+`msx2.autosave`, `msx2.padtokeyboard`, `msx2.cheevos`).
 
-- FMSX :
-You must have these following files, available with fmsx distribution, in the bios folder:
-CARTS.SHA
-CYRILLIC.FNT
-DISK.ROM
-FMPAC.ROM
-FMPAC16.ROM
-ITALIC.FNT
-KANJI.ROM
-MSX.ROM
-MSX2.ROM
-MSX2EXT.ROM
-MSX2P.ROM
-MSX2PEXT.ROM
-MSXDOS2.ROM
-PAINTER.ROM
-RS232.ROM
+#### libretro: fmsx
 
-- OpenMSX
-Various BIOS files for OpenMSX should be in either folder below:
-    1. userdata/system/configs/openmsx/share/systemroms
-    2. userdata/bios/Machines
-    3. userdata/bios/openmsx
+Mirrors the MSX2 settings and adds `msx2.netplay`.
 
----
+### openMSX
+
+openMSX reuses the `msx2.*` option group and the BIOS list from `msx2.md`.
+
+### CLK
+
+CLK began supporting the MSX2+ standard at REG-Linux 42, sharing the same BIOS files and `msx` option tree with other cores.
+
+## Controls
+
+MSX2+ uses the same REG-Linux RetroPad overlay as MSX1/2.
+
+## Troubleshooting
+
+Consult the [generic support pages](/support) for additional help.

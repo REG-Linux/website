@@ -7,7 +7,7 @@
 
 ## Overview
 
-Introduced in 2005 by Microsoft, the Xbox 360 was a console system.
+The Xbox 360 continues Microsoft’s PC-inspired console lineage. REG-Linux exposes its `xbox360` group and relies on the xenia and xenia-canary builds so the most compatible titles launch with up-to-date fixes when they exist.
 
 ## Technical specifications
 
@@ -16,12 +16,45 @@ Introduced in 2005 by Microsoft, the Xbox 360 was a console system.
 - Display: ATI Xenos GPU with unified shader architecture, capable of 720p/1080p rendering and embedded tessellation hardware.
 - Sound: Custom 5.1 surround audio engine with Dolby Digital Live and DTS support plus PCM mixing for headset output.
 
-## Supported ROM extensions
+### Quick reference
 
-iso, xex, xbox360, zar
+- **ROM folder:** `/userdata/roms/xbox360`
+- **Accepted formats:** `.iso`, `.xex`, `.xbox360`
+- **Emulators:** `xenia`, `xenia-canary`
+- **System group:** `xbox360`
+
+## BIOS
+
+No external BIOS files are required for xenia’s public builds.
+
+## ROMs
+
+Place Xbox 360 disc images inside `/userdata/roms/xbox360`. Standard `.iso` files work when ripped with the Xbox 360 game dumping tools.
+
+### Digital installs and Xbox Live Arcade
+
+If you have a directory that represents a ripped installation or a digital purchase, create a `.xbox360` playlist file whose name matches the title and whose contents point to the actual `.iso`, `.xex`, or folder name. Keep the folder structure intact when launching the title. This format mirrors what the official console writes and allows xenia to mount the correct container.
+
+## Saves
+
+Save data for xenia is stored under `/userdata/saves/xenia-bottle/xenia/content/########`. Older titles prompt for a new save profile and may require mouse clicks inside xenia to accept prompts.
 
 ## Emulators
 
-- **xenia-canary** (xenia-canary)
+### xenia
 
----
+Xenia is the experimental research emulator bundled with REG-Linux. It exposes `xbox360.videomode` under the RetroArch-style options so you can enforce render scaling or swap aspect ratios.
+
+### xenia-canary
+
+The canary build chases the latest fixes and exposes the same configuration keys as xenia. Use it if a title is known to work there but not on the stable branch.
+
+## Controls
+
+The overlay illustrates the Xbox 360 controller layout. The retired `xbox360.videomode` option is all that the emulator exposes, so rely on the Quick Menu if you need additional remapping.
+
+## Troubleshooting
+
+- Check [xenia’s compatibility list](https://github.com/xenia-project/game-compatibility/issues) before spending time ripping a title; many games still fail.
+- When a digital install won’t start, ensure the `.xbox360` playlist matches the folder name exactly and omits extra dots.
+- See xenia’s own [FAQ](https://github.com/xenia-project/xenia/wiki/faq) or the [generic support pages](/support) for general problems.

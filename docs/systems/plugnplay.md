@@ -7,7 +7,7 @@
 
 ## Overview
 
-Introduced in 2002 by Various, the Plug and Play TV Games was a console system.
+This grouping covers self-contained Plug ‘n’ Play TV game units such as Jakks Pacific/AtGames dongles that run off built-in ROMs. Because those systems are hardware-specific, REG-Linux launches them through MAME and tags everything as `plugnplay` so themes know which artwork to use.
 
 ## Technical specifications
 
@@ -15,13 +15,33 @@ Introduced in 2002 by Various, the Plug and Play TV Games was a console system.
 - Release year: 2002
 - Hardware type: console
 
-## Supported ROM extensions
+### Quick reference
 
-zip, 7z
+- **ROM folder:** `/userdata/roms/plugnplay`
+- **Accepted formats:** `.zip`, `.7z`
+- **Emulator:** MAME
+- **System group:** `plugnplay`
+
+## ROMs
+
+Drop each ROM archive into `/userdata/roms/plugnplay` and refresh EmulationStation so the new entries appear. EmulationStation treats these as MAME games, so include any ZIP/7z container that holds the plug-and-play image.
+
+## Native Linux ports
+
+REG-Linux also accepts native Linux ports under the same system. Place the unpacked game data in `/userdata/roms/ports/.data/<Game>` and create an executable launcher script in `/userdata/roms/ports/` that changes into the `.data/<Game>` directory before launching the binary. After marking the script executable (`chmod +x <script>.sh`), refresh the gamelist and launch the script from EmulationStation.
 
 ## Emulators
 
-- **mame** (libretro)
-- **mame** (mame)
+### MAME
 
----
+MAME handles both the plug-and-play archives and the native Linux port wrappers. Configure options through the in-game menu (`[HOTKEY]` + south face button or `[Tab]`) or via `mame.ini`. REG-Linux exposes shared settings such as `plugnplay.videomode`, `plugnplay.decoration`, `plugnplay.padtokeyboard`, and BGFX options (`plugnplay.video`, `plugnplay.bgfxbackend`, `plugnplay.bgfxshaders`, `plugnplay.switchres`). Tweak rotation (`plugnplay.rotation`) and D-pad orientation (`plugnplay.altdpad`) when needed.
+
+## Controls
+
+Plug-and-play titles shipped with proprietary controllers, so MAME indexes the inputs numerically. Use `/remapping_controls_per_emulator` to swap buttons if the layout feels wrong; the default overlay is the generic MAME mapping shown inside the repository.
+
+## Troubleshooting
+
+- If a new ROM does not appear, re-run **Refresh Gamelist** from the `[START]` → **Game Settings** menu to rebuild the list.
+- Vulkan-based native ports require Vulkan 1.1+ hardware; they will not run on GPUs without adequate support.
+- For general issues consult the [arcade guide](/arcade) and the [generic support pages](/support).

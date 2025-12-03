@@ -2,12 +2,13 @@
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
 <img src="/assets/systems/icons/psvita.webp" alt="PlayStation Vita icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/psvita.png" alt="PlayStation Vita logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/psvita.png" alt="PlayStation Vita logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
 
 Introduced in 2012 by Sony, the PlayStation Vita was a portable system.
+Vita3K is the experimental PS Vita emulator included with REG-Linux v36+. It targets x86_64 machines and requires decrypted firmware components; compatibility is limited and depends on ongoing development.
 
 ## Technical specifications
 
@@ -16,60 +17,40 @@ Introduced in 2012 by Sony, the PlayStation Vita was a portable system.
 - Display: 5-inch OLED (later LCD) touchscreen at 960×544 with multi-touch support.
 - Sound: Dual stereo speakers plus a headphone jack with multi-channel PCM/audio effects.
 
-## Supported ROM extensions
+### Quick reference
 
-zip, psvita
+- **ROM folder:** `/userdata/roms/psvita`
+- **Accepted formats:** `.psvita` launchers, `.zip` Mai dump archives
+- **Emulator:** Vita3K
+- **System group:** `psvita`
+
+## BIOS / system modules
+
+Copy the official PS Vita firmware (`PSP2UPDAT.PUP`) and the font firmware package into `/userdata/bios/psvita/`. Run `vita3k-emu-config` from `[F1]` → **Applications**, follow the setup wizard (accept defaults), and install both `.PUP` files via **File → Install Firmware**. Create an account and enable automatic login for the smoothest experience.
+
+## ROMs
+
+Mai dump ZIPs are the only confirmed playable files. Install each archive through Vita3K’s **File → Install archive** menu; the emulator unpacks the data into `/userdata/saves/psvita/ux0/app/<TITLEID>/`. After installation, create a `.psvita` launcher in `/userdata/roms/psvita/<Title>[<TITLEID>].psvita` (e.g., `Street Fighter X Tekken (USA) [PCSE00005].psvita`). The `.psvita` file can be empty—its filename carries the metadata and tells EmulationStation what to launch.
 
 ## Emulators
 
-- **vita3k** (vita3k)
+### Vita3K
 
-## Notes
+Vita3K is the only supported PS Vita emulator. It demands a Vulkan 1.3+ GPU and an x86_64 CPU. Use the `vita3k-emu-config` tool (found under `[F1]` → **Applications**) to finish the wizard, install firmware, and adjust the basics.
 
-The world's first emulator for the PlayStation Vita.
+Key frontend options:
 
----------------------------------
-## VITA3K IMPORTANT INFO ##
----------------------------------
+- `psvita.vita3k_gfxbackend`: switch between OpenGL or Vulkan (use Vulkan when available).
+- `psvita.vita3k_resolution`: scale the render resolution (1x–8x).
+- `psvita.vita3k_fxaa`: toggle FXAA.
+- `psvita.vita3k_vsync`: enable to combat tearing (enabled by default).
 
-Games require the system modules be present for Vita3K to (low level) emulate them.
-This can be done by installing the PS Vita firmware through Vita3K.
+## Controls
 
-Note: You MUST set-up Vita3k using the F1 option, choose applications & then run the Vita3K-config program
+Vita3K maps the PS Vita/ DualShock layout onto your controller. Use the PSP overlay (`../images/controller-overlays/psp-1.png`) as a reference, and remap buttons via `[HOTKEY]` + south or the remapping guide if something behaves oddly.
 
-1. Go through the wizard hitting next for all the default options & create a user account.
+## Troubleshooting
 
-Note: do not change the path for Vita3k to run.
-
-2. You must install the required firmware:
-
-The firmware can be downloaded from the official PlayStation website here:
-https://www.playstation.com/en-us/support/hardware/psvita/system-software/
-
-There's also an additional firmware package that contains the system fonts that needs to be installed.
-The font firmware package can be downloaded straight from the PlayStation servers, here:
-http://dus01.psp2.update.playstation.net/update/psp2/image/2022_0209/sd_59dcf059d3328fb67be7e51f8aa33418/PSP2UPDAT.PUP?dest=us
-
-Ideally save them to /userdata/bios/psvita
-
-Install both firmware packages using the File > Install Firmware menu option to where you have the firmware saved on your system.
-
-Game compatibility is here:
-https://vita3k.org/compatibility.html?lang=en#
-
-3. You must install a game rom via a maidump package format only for now with the .zip extension. vpk packages do not currently work.
-Again via the File menu install the zip file(s) needed.
-
-This will create the ROM which can be chosen from the list - take note of the Game ID.
-i.e. PCSE00005
-
-4. Now in your /userdata/roms/psvita folder ensure the rom has the Game ID embedded in the zip file between square brackets [].
-i.e. Street Fighter X Tekken (USA) [PCSE00005].zip
-Alternatively to save space & because the rom is installed in the psvita config directory you can remove the rom zip files.
-Just be sure the replace the file with a .psvita extension alternative.
-i.e. Street Fighter X Tekken (USA) [PCSE00005].psvita
-
-This will enable Emulation Station to see your installed game & launch it via the ES GUI.
-
-
----
+- Vita3K is experimental—expect instability, crashes, and missing audio. Check the [Vita3K quick start guide](https://vita3k.org/quickstart.html) and compatibility list before playing.
+- Ensure system modules live under `/userdata/system/configs/shadps4/user/sys_modules` if required (decrypted modules from a jailbroken Vita).
+- The [generic support pages](/support) cover general emulator issues.
