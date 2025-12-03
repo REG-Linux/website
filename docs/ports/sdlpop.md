@@ -7,25 +7,34 @@
 
 ## Overview
 
-The SdlPop is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+SdlPop is the open-source port of the original Prince of Persia. REG-Linux links it to the `ports` group and expects the original assets inside the `sdlpop` directory.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/sdlpop`
+- **Accepted formats:** `.sdlpop`, `.squashfs`
+- **Emulator:** `sdlpop`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-sdlpop
+No BIOS is required.
+
+## ROMs
+
+Drop a valid `.sdlpop` archive—or a `.squashfs` container that includes it—into `/userdata/roms/sdlpop/`. The core reads the archive directly; no additional folders or config files are needed.
 
 ## Emulators
 
-- **sdlpop** (sdlpop) – Requires BR2_PACKAGE_SDLPOP
+### SDLPop
 
-## Notes
+The SDLPop binary exposes the usual video/input overrides (`sdlpop.videomode`, `sdlpop.ratio`, `sdlpop.padtokeyboard`, `sdlpop.decoration`). Use the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) or the EmulationStation advanced options to adjust shaders, scaling, or controller mapping.
 
-An open-source port of Prince of Persia, based on the disassembly of the DOS version.
+## Controls
 
----
+The default overlay maps movement to the d-pad and actions to the face buttons, with shoulder buttons triggering jump or sword swings. Refer to the overlay if you need to remap the controls.
+
+## Troubleshooting
+
+- If SDLPop fails to launch, double-check the `.sdlpop` file is intact and case-sensitive.
+- Visit the [generic support pages](/support) if you encounter odd input or video behavior.

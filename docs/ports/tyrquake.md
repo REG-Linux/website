@@ -7,26 +7,41 @@
 
 ## Overview
 
-The TyrQuake is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+TyrQuake is the libretro port of the original Quake shareware and retail episodes. REG-Linux keeps it inside the `ports` group so each episode resides in its own folder and the front end shows the proper artwork.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/tyrquake`
+- **Accepted format:** `.pak`
+- **Emulator/Core:** `libretro: tyrquake`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-pak
+Place the shareware `pak0.pak` at the root of `/userdata/roms/tyrquake/` and keep the registered episode packs inside dedicated subfolders such as `id1/`, `hipnotic/`, `rogue/`, and `dopa/`. Streaming music tracks belong inside each folder’s `music/` directory (e.g., `track02.ogg`). Save files appear under `/userdata/saves/tyrquake/<episode>/`.
 
-## Emulators
+## Emulator options
 
-- **tyrquake** (libretro) – Requires BR2_PACKAGE_LIBRETRO_TYRQUAKE
+RetroArch exposes the usual `tyrquake.*` settings plus additional toggles for video, framerate, and rumble:
 
-## Notes
+| Setting | Description |
+| --- | --- |
+| `tyrquake.gfxbackend` | Choose OpenGL or Vulkan rendering. |
+| `tyrquake.audio_latency` | Increase to remove crackling. |
+| `tyrquake.video_threaded` | Enable threaded video for heavier scenes. |
+| `global.tyrquake_resolution` | Force an internal resolution up to 1920×1080+. |
+| `global.tyrquake_framerate` | Lock FPS between 10–160 or leave it Automatic. |
+| `global.tyrquake_rumble` | Toggle controller vibration. |
+| `global.tyrquake_controller1` | Pick a controller profile (Gamepad, Modern, Keyboard+Mouse). |
 
-Put your Quake 1 .PAK games in this directory.
+Adjust these options from the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) or by editing the config file inside each episode’s save folder.
 
+## Controls
 
----
+The overlay mirrors the PC-style FPS layout. Save a custom remap via `/remapping_controls_per_emulator` if you prefer WASD, alternate strafing, or deeper joystick tweaks.
+
+## Troubleshooting
+
+- Verify every episode folder contains the correct `.pak` files and optional `music/` tracks. Missing files stop TyrQuake from launching.
+- Launch the shareware `pak0.pak` first to ensure the core runs before adding paid episodes or mission packs.
+- When in doubt, consult the [generic support pages](/support) for additional help.

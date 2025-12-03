@@ -1,28 +1,42 @@
 # Ur-Quan Masters
 
+<div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
+<img src="/assets/systems/icons/uqm.webp" alt="Ur-Quan Masters icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/uqm.png" alt="Ur-Quan Masters logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+</div>
+
 ## Overview
 
-Introduced in 1992 by Ports, the Ur-Quan Masters was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Ur-Quan Masters is the open-source revival of Star Control II. REG-Linux places it under the `ports` group and loads the `uqm` engine with the community content package.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1992
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/uqm`
+- **Accepted format:** `.game`
+- **Emulator:** `uqm`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-game
+Create a `packages/` subfolder inside `/userdata/roms/uqm/` and place your `uqm-0.8.0-content.uqm` (or a later content bundle) there. Then add a placeholder launcher:
+
+```
+touch "/userdata/roms/uqm/Ur-Quan Masters.game"
+```
+
+The `.game` file tells EmulationStation to expose the entry while the content bundle supplies all of the assets.
 
 ## Emulators
 
-- **uqm** (uqm) – Requires BR2_PACKAGE_UQM
+### UQM
 
-## Notes
+The `uqm` binary loads the content package directly and honors the standard options for RetroArch-style frontends. Use the Quick Menu to adjust video, audio, or controller overrides if needed.
 
-Create a folder called 'packages' in this folder. This is where you place your game engine file 'uqm-0.8.0-content.uqm'.
-Then create a file called 'Ur-Quan Masters.game'. This is used to launch the game.
+## Controls
 
----
+Ur-Quan Masters was built for keyboard and mouse, but the newer client also supports gamepads. Map your preferred hotkeys through the in-game controls menu.
+
+## Troubleshooting
+
+- Ensure the `packages/uqm-0.8.0-content.uqm` file is intact and zipped correctly; corrupted bundles prevent the game from starting.
+- Delete `/userdata/system/configs/uqm/` if you need to reset saved controls or settings.

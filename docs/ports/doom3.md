@@ -6,49 +6,48 @@
 
 ## Overview
 
-Introduced in 2004 by Ports, the Doom 3 was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Doom 3 (2004) is launched as a `ports` entry and relies on the `dhewm3` open-source engine so REG-Linux can run the modernized build with the same input/shader pipeline as the rest of the menu.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 2004
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/doom3`
+- **Accepted formats:** `.d3`, `.pk4`
+- **Emulators:** `dhewm3`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-d3
+DHEWM3 does not require additional BIOS files.
+
+## ROMs
+
+Copy the Doom 3 data archives from your retail CD, Steam, or GOG install into `/userdata/roms/doom3/`. The standard layout looks like:
+
+```
+/userdata/roms/doom3/
+├── base/
+│   ├── pak000.pk4
+│   ├── pak001.pk4
+│   └── ...
+└── d3xp/
+    ├── pak000.pk4
+    └── pak001.pk4
+```
+
+`base` holds the original release, while `d3xp` contains the Resurrection of Evil expansion. For each playable collection create a `.d3` descriptor inside `/userdata/roms/doom3/` that points to the appropriate `pak` folder (for example, `base/pak000.pk4` for Doom 3, or `d3xp/pak000.pk4` for the expansion). These `.d3` files tell REG-Linux how to launch the matching data set from the ports menu.
 
 ## Emulators
 
-- **dhewm3** (dhewm3) – Requires BR2_PACKAGE_DHEWM3
+### DHEWM3
 
-## Notes
+DHEWM3 is the Doom 3 engine fork maintained for modern platforms. It mirrors the front-end’s Quick Menu conventions and exposes overrides such as `dhewm3.videomode` for display scaling and `dhewm3.bezel` for framebuffer tuning.
 
-Add your Doom 3 (and if you have the Resurrection of Evil mod) pk4 files here like so:
+## Controls
 
-└── roms/
-    └── doom3/
-        ├── base/
-        │   ├── pak000.pk4
-        │   ├── pak001.pk4
-        │   ├── pak002.pk4
-        │   ├── pak003.pk4
-        │   ├── pak004.pk4
-        │   ├── pak005.pk4
-        │   ├── pak006.pk4
-        │   ├── pak007.pk4
-        │   └── pak008.pk4
-        └── d3xp/
-            ├── pak000.pk4
-            └── pak001.pk4
+Doom 3 prefers a mouse + keyboard setup, but you can map movement and firing actions to a controller by editing REG-Linux’s controller profile or by running `dhewm3` with its native `autoexec.cfg`.
 
-Create a `Doom 3.d3` file in the roms/doom3 directory.
-If you have the Resurrection of Evil mod then Create a `Doom 3 - Resurrection of Evil.d3` file too.
+## Troubleshooting
 
-The `Doom 3.d3` file should contain the path to the base game. - i.e. base/pak000.pk4
-Similarly `Doom 3 - Resurrection of Evil.d3` should be - d3xp/pak000.pk4
-
-
----
+- Ensure your `.d3` file references the correct folder (for example, `base/pak000.pk4`) and that the `pak` files all exist inside `base/` or `d3xp/`.
+- If the expansion data is missing, remove the `d3xp` line from the `.d3` descriptor so the engine does not try to load nonexistent assets.
+- Use DHEWM3’s logging (`-logfile`) to capture startup errors if the game exits before showing the menu.

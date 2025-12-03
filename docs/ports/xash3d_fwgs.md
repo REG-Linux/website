@@ -7,38 +7,40 @@
 
 ## Overview
 
-The Xash3D-FWGS is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Xash3D-FWGS is a fork of the Half-Life/Source engine that runs Half-Life, Blue Shift, Opposing Force, and other compatible mods. REG-Linux groups it under `ports` and relies on your licensed data folders.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/xash3d_fwgs`
+- **Accepted format:** `.game`
+- **Emulator:** `xash3d_fwgs`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## Game data setup
 
-game
+1. Copy a game directory from your Steam install (e.g., `Half-Life/`, `bshift/`, `cstrike/`) into `/userdata/roms/xash3d_fwgs/<game folder>/`.
+2. Create a matching `.game` placeholder in the same destination (e.g., `/userdata/roms/xash3d_fwgs/Half-Life.game`).
+3. Download `extras.pak` (https://github.com/FWGS/xash-extras/releases/latest/download/extras.pak) and drop it into `/userdata/roms/xash3d_fwgs/extras.pak`.
+4. Repeat for every mod or Source game you want to install.
+
+The resulting layout looks like:
+
+```
+roms/xash3d_fwgs/
+├─ Half-Life/
+├─ Half-Life.game/
+├─ bshift/
+├─ bshift.game/
+├─ extras.pak
+└─ gamelist.xml (optional)
+```
 
 ## Emulators
 
-- **xash3d_fwgs** (xash3d_fwgs) – Requires BR2_PACKAGE_XASH3D_FWGS
+### Xash3D-FWGS
 
-## Notes
+The binary automatically runs the selected `.game` entry and uses the data folder next to it. Use the Quick Menu to adjust performance or to remap controller bindings.
 
-Half-Life 1 engine.
+## Controls & Troubleshooting
 
-Supports the following games:
-
-* Half-Life, including Blue Shift and Opposing Force.
-* Deathmatch Classic.
-* Several other mods: https://github.com/FWGS/hlsdk-xash3d/blob/mobile_hacks/dlls/moddef.h
-
-Installation:
-
-Copy the game's directory from your Steam installation (Steam/steamapps/common/Half-Life/<game data folder>/)
-to /userdata/roms/xash3d_fwgs/<game folder> and create an empty `<game folder>.game` file in the same directory.
-
-For Half-Life 1, the game folder is `valve/`.
-
----
+The default overlay covers the FPS-style controls. If Xash3D refuses to start, confirm every `.game` folder pairs with a proper data directory and that `extras.pak` is present. For general issues, consult the [generic support pages](/support).

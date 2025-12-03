@@ -6,27 +6,33 @@
 
 ## Overview
 
-Introduced in 1996 by Ports, the Abuse was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Abuse is a 2D run-and-gun classic that ships as a native SDL port on REG-Linux. It lives in the `ports` category so it stays apart from console systems while still sharing the familiar front-end controls.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1996
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/abuse`
+- **Accepted format:** `.game`
+- **Engine:** SDL-based Abuse port
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-game
+No BIOS files are needed.
 
-## Emulators
+## Game data
 
-- **abuse** (abuse) – Requires BR2_PACKAGE_ABUSE
+Install the data via the Content Downloader (`ports-abuse` package) or manually extract one of the archives such as `abuse-data-2.00.tar.gz` into `/userdata/roms/abuse/abuse_data/`. Create a blank marker file `/userdata/roms/abuse/abuse.game` so the system appears in the ports list.
 
-## Notes
+## Engine
 
-This system is a standalone game. No rom required.
-You can add the game data files directly from the content downloader.
+The SDL-based Abuse engine reads the files from `abuse_data` and launches them using the `.game` entry. The port exposes `abuse.videomode` for display scaling.
 
----
+## Controls
+
+Abuse defaults to keyboard + mouse, but REG-Linux ships with a pad2key profile that maps movement/aim to the Retropad. Adjust buttons in `/remapping_controls_per_emulator` if you prefer a different layout.
+
+## Troubleshooting
+
+- Ensure `abuse.game` exists and that `abuse_data/` contains the unpacked content.
+- If files go missing or the engine crashes, reinstall via the Content Downloader or re-extract the archive.
+- For broader bugs consult the [generic support pages](/support).

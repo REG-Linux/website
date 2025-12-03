@@ -7,30 +7,46 @@
 
 ## Overview
 
-Introduced in 2004 by Daisuke "Pixel" Amaya, the Cave Story was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Cave Story (2004) is the freeware indie adventure by Daisuke “Pixel” Amaya. REG-Linux
+classifies the experience as a `ports` entry and relaunches it through RetroArch’s
+`libretro: nxengine` core so you can use the same controller remapping, shaders, and
+Quick Menu flow as with other RetroArch games.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Daisuke "Pixel" Amaya
-- Release year: 2004
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/cavestory`
+- **Accepted format:** `.exe`
+- **Emulators:** `libretro: nxengine`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-exe
+No BIOS is needed. Cave Story loads directly from its executable and data archives.
+
+## Game files
+
+Extract the official English zip (`cavestoryen.zip`) into `/userdata/roms/cavestory/`
+so that `Doukutsu.exe` and the supporting data files sit at the folder root. Avoid
+language ports or fan mods when troubleshooting; the vanilla English package is the
+most stable build REG-Linux targets.
 
 ## Emulators
 
-- **nxengine** (libretro) – Requires BR2_PACKAGE_LIBRETRO_NXENGINE
+### libretro: nxengine
 
-## Notes
+RetroArch hosts the `nxengine` core, preserving the original game logic while
+exposing familiar options such as `cavestory.videomode`, `cavestory.ratio`, and
+`cavestory.shaders`. Open the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) to
+alter display, audio latency, or button bindings, and use the controller remap screen
+if your pad differs from the Retropad layout.
 
-Download the game from the following URL and uncompress it in this folder.
-http://www.cavestory.org/downloads/cavestoryen.zip
+## Controls
 
-It is recommended to use the English version.
-Other versions may freeze the system.
+The default overlay matches the Cave Story input scheme. You can adjust the button
+profiles in EmulationStation’s controller settings or within RetroArch’s input menu.
 
----
+## Troubleshooting
+
+- If the game crashes on boot, ensure the `Doukutsu.exe` executable sits directly in `/userdata/roms/cavestory` rather than a nested folder.
+- Use the official English download (http://www.cavestory.org/downloads/cavestoryen.zip) when possible; community translations may freeze or desync.
+- Visit the [generic support pages](/support) for RetroArch-specific questions.

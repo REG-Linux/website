@@ -7,22 +7,57 @@
 
 ## Overview
 
-Introduced in 2013 by Ports, the ECWolf was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+ECWolf is a modernized Wolfenstein 3D engine that builds on Wolf4SDL and adds mod support, modern input controls, and configuration polish. REG-Linux keeps it under the `ports` heading with its own `ecwolf` metadata group.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 2013
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/ecwolf`
+- **Accepted formats:** `.ecwolf`, `.pk3`, `.squashfs`
+- **Saves:** `/userdata/saves/ecwolf/[romname]/`
+- **Emulator:** `ecwolf`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-ecwolf, pk3, zar
+ECWolf loads the original Wolfenstein-era data and does not need a BIOS file.
+
+## Game files
+
+Install Wolfenstein 3D, Spear of Destiny, or other supported collections into dedicated `.ecwolf` folders inside `/userdata/roms/ecwolf/`. Each folder holds the data archives for that release (e.g., `audiohed.wl6`, `config.sod`, `gamemaps.sod`, `vgagraph.n3d`, etc.), so the hierarchy might look like:
+
+```
+/userdata/roms/ecwolf/Wolfenstein 3D.ecwolf/
+  audiohed.wl6
+  audiot.wl6
+  ...
+
+/userdata/roms/ecwolf/Spear of Destiny.ecwolf/
+  audiohed.sod
+  audiot.sod
+  dgamemaps.sd2
+  ...
+
+/userdata/roms/ecwolf/Super 3D Noah's Ark.ecwolf/
+  audiohed.n3d
+  ...
+```
+
+ECWolf also accepts `.pk3` mods placed alongside the base data. When mixing HD packs, high-detail textures, or campaign mods, wrap the command line in a `.ecwolf` script that contains the arguments you normally pass to the binary (for example, `--data wl6 --file ../HD/pack.pk3`). This makes it easy to combine multiple `.pk3` files while preserving the base dataset.
+
+Really custom setups can mix `.pk3` archives directly next to the `.ecwolf` folder, but the wrapper files give you full control over command-line switches such as `-gamegrp`, `-data`, and `-file`.
 
 ## Emulators
 
-- **ecwolf** (ecwolf) – Requires BR2_PACKAGE_ECWOLF
+### ECWolf
 
----
+REG-Linux bundles the ECWolf binary with the standard `ecwolf.*` ES options (`videomode`, `padtokeyboard`, `decoration`, etc.). Most tuning is done inside ECWolf’s native menu or by editing its `config.wl6`/`config.sod` files.
+
+## Controls
+
+Mouse and keyboard remain the primary controls, but you can bind retropad buttons with the Quick Menu and global controller configuration. The default overlay shows the classic keyboard layout; adjust as needed from within ECWolf’s Options screen.
+
+## Troubleshooting
+
+- If a folder fails to launch, verify that the expected `.wl6`, `.sod`, `.n3d`, or `.pk3` files are present and that their extensions match the title you are starting.
+- When combining mods, keep track of file order in the `.ecwolf` wrapper; typos or missing paths cause ECWolf to ignore the custom pack.
+- For deep dives on modding or data structures, refer to the ECWolf wiki and the modding guides linked in the original documentation.

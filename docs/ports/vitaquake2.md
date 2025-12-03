@@ -1,30 +1,36 @@
-# Quake II
+# Quake II (VitaQuake2)
+
+<div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
+<img src="/assets/systems/icons/vitaquake2.webp" alt="Quake II icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/vitaquake2.png" alt="Quake II logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+</div>
 
 ## Overview
 
-Introduced in 1997 by Ports, the Quake II was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+VitaQuake2 is the libretro port that runs Quake II and its mission packs (Xatrix, Rogue, Zaero). REG-Linux exposes it in the ports section and uses the base and subdirectories to identify each episode.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1997
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/vitaquake2`
+- **Accepted formats:** `.pak`, `.zip`, `.7z`
+- **Emulator/Core:** `libretro: vitaquake2`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-pak, zip, 7zip
+The base game resides inside the `baseq2/` folder, while the mission packs live in their own directories (`xatrix/`, `rogue/`, `zaero/`). Drop the `.pak` files into the appropriate subfolders so the core can detect them. VitaQuake2 automatically loads the folder when you navigate to the entry.
 
 ## Emulators
 
-- **vitaquake2** (libretro) – Requires BR2_PACKAGE_LIBRETRO_VITAQUAKE2
+### RetroArch / libretro: VitaQuake2
 
-## Notes
+The core honors the usual `vitaquake2.*` overrides. Adjust video, shaders, and controllers through the Quick Menu or EmulationStation advanced options.
 
-The libretro vitaquake2 core offers several mission packs.
-To ensure the correct vitaquake2 core loads for a mission pack, make sure it is placed in a subdirectory within this ROM directory.
-The supported subdirectories for mission pack ROMs are: xatrix, rogue, and zaero.
-For the standard Quake II directory, use 'baseq2' to utilize the standard vitaquake2 core.
+## Controls
 
----
+The overlay demonstrates the FPS layout; configure movement, jump, and fire through the standard `remapping_controls_per_emulator` workflow if you need adjustments.
+
+## Troubleshooting
+
+- Verify each mission pack folder contains the proper `.pak` files for that episode.
+- Use the shareware `baseq2` data to confirm the core works before adding the mission packs.

@@ -7,48 +7,54 @@
 
 ## Overview
 
-Introduced in 2021 by Sega, the Sonic Retro Engine was a port system. It is grouped with ports titles in EmulationStation.
+The Sonic Retro Engine (formerly Star Engine) bundles modern builds of Sonic 1, Sonic 2, and Sonic CD using RSDKv5. REG-Linux deploys both `sonic2013` (for `.son`) and `soniccd` (for `.scd`) cores so the ports appear under the `sonicretro` metadata group alongside the other `ports` entries.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Sega
-- Release year: 2021
-- Hardware type: port
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/sonicretro`
+- **Accepted formats:** `.son`, `.scd` (zip/squashfs archives are allowed as long as the directory structure stays intact)
+- **Emulators:** `sonic2013` (RSDKv5 for Sonic 1/2), `soniccd` (RSDKv3/4 for Sonic CD)
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-son, scd
+Extract the `Data.rsdk` assets from the Android/iOS/Steam packages and place them into folders named `<Game>.son` or `<Game>.scd`. For example:
+
+- `/userdata/roms/sonicretro/Sonic 1.son/Data.rsdk`
+- `/userdata/roms/sonicretro/Sonic CD.scd/Data.rsdk` plus the `videos/*.ogv` files from the Steam release if you want the cutscenes.
+
+The Android assets live inside `assets/Data.rsdk.xmf`; rename them to `Data.rsdk` after extraction. Keep the `Framework` and related subfolders exactly as shipped.
+
+Use the included MD5 table values to verify you have a compatible release (e.g., `f679e87477bbed17ff1bdb9a6793f49c` for Sonic 1 iOS, `2b2e44eaacbed7a12823e87a500f236f` for Sonic 2 Android).
 
 ## Emulators
 
-- **sonic2013** (sonic2013) – Requires BR2_PACKAGE_SONIC2013
-- **soniccd** (soniccd) – Requires BR2_PACKAGE_SONICCD
+### sonic2013 (`.son` folders)
 
-## Notes
+This core handles Sonic 1/2 data. Exposed options include:
 
----------------------
-Data File Setup
----------------------
+| Setting | Description |
+| --- | --- |
+| `sonicretro.language` | Choose localization (English, French, German, etc.). |
+| `sonicretro.vsync` | Toggle vsync. |
+| `sonicretro.scalingmode` | Pick a pixel scaling mode (Nearest, Integer, Bilinear). |
+| `sonicretro.hqmode` | Enable HQ filtering in special stages. |
+| `sonicretro.skipstart` | Skip the launcher menu. |
+| `sonicretro.devmenu` | Show the developer/mod menu (useful for mods). |
 
-This port requires the .rsdk files from the Android or iOS versions of Sonic 1 & 2.
+### soniccd (`.scd` folders)
 
-The Android APKs can be opened in 7zip, extract the file /assets/Data.rsdk.xmf, rename to Data.rsdk, and place in
-a folder named [Game Name].son - ie "Sonic 1.son"
+This core expects Sonic CD data plus optional cutscenes. Supported options include the same scaling/language flags plus `sonicretro.spindash` to mimic Sonic 2/CD-style spin dash behavior.
 
-For Sonic CD, you can use the files from the Android, iOS, or Steam versions, as well as the video files from the Steam version.
+REG-Linux auto-selects the correct core based on the folder extension (`.son` → `sonic2013`, `.scd` → `soniccd`). Manually picking the wrong emulator will not launch the game.
 
-The APK can be extracted the same way. If you're using the Steam version, the Data.rsdk is in the game's folder.
-The rsdk and videos folder should be in a folder named [Game Name].scd - ie "Sonic CD.scd"
+## Controls
 
----------------------
-Options and Emulators
----------------------
+The overlay mirrors the classic Sonic controller. Use `[HOTKEY]` + ![south](/wiki/south.png) to access the Quick Menu if you need to remap jump, spin dash, or action buttons before loading mods.
 
-REG will auto-select the port to use based on the folder's extension - sonic2013/rsdk4 for .son folders, soniccd/rsdk3 for
-.scd folders. Selecting the wrong emulator will be ignored as the two versions are not compatible. The options are slightly
-different between the two, so you may need to manually select the emulator to change them.
+## Troubleshooting
 
-The dev menu option is needed to run mods.
-
----
+- Always match `.son` folders with `sonic2013` and `.scd` folders with `soniccd`.
+- Verify your `Data.rsdk` MD5 matches a known-good release to avoid launch failures.
+- Include the `videos/` folder when using Steam’s Sonic CD so the cutscenes play correctly.
+- Enable the Dev Menu via `sonicretro.devmenu` before installing mods; otherwise, it stays hidden.
