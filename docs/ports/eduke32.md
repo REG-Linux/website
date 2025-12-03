@@ -7,60 +7,67 @@
 
 ## Overview
 
-The EDuke32 is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+EDuke32 is the Build Engine source port that runs Duke Nukem 3D, its expansions, and a wide array of official mods with improved rendering and scripting support. REG-Linux treats it as a `ports` engine so you can keep these games separated from the regular console/a rcade listings.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/eduke32`
+- **Accepted format:** `.eduke32`
+- **Emulator:** `eduke32`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-eduke32
+EDuke32 has no BIOS dependency.
+
+## ROMs & launchers
+
+Put each Build Engine game or mod inside a dedicated subdirectory under `/userdata/roms/eduke32/` and provide the required data files (`.grp`, `.dat`, `.def`, etc.). Common supported titles include:
+
+- Duke Nukem 3D (`DUKE3D.GRP`)
+- Duke It Out in D.C. (`DUKEDC.GRP`)
+- Duke Caribbean: Life’s a Beach (`VACATION.GRP`)
+- Duke: Nuclear Winter (`NWINTER.GRP`)
+- Duke Nukem Atomic Edition (`DUKE3DA.GRP`)
+- NAM (`NAM.GRP`, `NAM.CON`)
+- Napalm (`NAPALM.GRP`, `NAPALM.CON`)
+- World War II GI (`WW2GI.GRP`)
+- World War II GI: Platoon Leader (`PLATOONL.DAT`, `PLATOONL.DEF`)
+- Duke Nukem 3D: 20th Anniversary World Tour (via community patch)
+- Plus fan-made packs such as Duke Assault and Duke!Zone.
+
+Each entry needs a `.eduke32` launcher with commands that mirror the Build Engine’s command-line switches. The files live in the same top-level folder and look like:
+
+```
+FILE  = /duke/DUKE3D.GRP
+FILE+ = /duke/DUKEDC.GRP
+```
+
+or for NAM:
+
+```
+FILE = /nam/NAM.GRP
+CON  = /nam/NAM.CON
+```
+
+Use `FILE` to specify the primary group, `FILE+` for extra archives, `CON/CON+` for custom scripts, `DEF/DEF+` for replacements, and `DIR` to add search paths. Keep the commands uppercase and the paths relative to `/userdata/roms/eduke32/`. Underscore the launcher name (e.g., `Duke_Nukem_3D.eduke32`) to help the scraper match the entry.
+
+## Saves
+
+Save games go into `saves/eduke32/<game>` using the default Build Engine layout.
 
 ## Emulators
 
-- **eduke32** (eduke32) – Requires BR2_PACKAGE_EDUKE32
+### EDuke32
 
-## Notes
+REG-Linux launches the EDuke32 binary with the usual `eduke32.*` options (`videomode`, `pad_to_keyboard`, `bezel`, etc.). Additionally, it exposes `eduke32.nologo` so you can skip the vanilla intro movies.
 
-EDuke32 is a Build Engine source port for playing games like Duke Nukem 3D.
+## Controls
 
-The following games are officially supported, and should be placed in the designated directory with their required
-files:
-  * duke:   Duke Nukem 3D (DUKE3D.GRP)
-  * duke:   Duke Nukem 3D: Duke It Out in D.C. (DUKEDC.GRP)
-  * duke:   Duke Nukem 3D: Duke Caribbean: Life's a Beach (VACATION.GRP)
-  * duke:   Duke Nukem 3D: Duke: Nuclear Winter (NWINTER.GRP)
-  * nam:    NAM (NAM.GRP, NAM.CON)
-  * ww2gi:  World War II GI (WW2GI.GRP)
-  * ww2gi:  World War II GI: Platoon Leader (PLATOONL.DAT, PLATOONL.DEF)
+The provided overlay documents the Retropad mapping for movement and actions. Adjust bindings through the `Controls` menu inside EDuke32 if a mod repurposes a key or button.
 
-Note: If you want to play Ion Fury, check out the fury roms directory as it uses a slightly different binary.
+## Troubleshooting
 
-Each game needs an .eduke32 file. The purpose of this file is to tell EDuke32 how to launch the game. This is simple
-for most cases but can be more complicated if you are installing mods. It is recommended to underscore the name so
-the scraper has an easier time getting a match e.g. Duke_Nukem_3D.eduke32.
-
-For each Duke Nukem 3D game, create an .eduke32 file with the following text:
-  FILE  = /duke/DUKE3D.GRP
-  FILE+ = /duke/DUKEDC.GRP  <-- Note: Omit this line for the base game, update filename for each expansion
-
-For Nam, create an .eduke32 file with the following text:
-  FILE = /nam/NAM.GRP
-  CON  = /nam/NAM.CON
-
-For World War II GI, create an .eduke32 file with the following text:
-  FILE = /ww2gi/WW2GI.GRP
-
-For the World War II GI: Platoon Leader expansion, create an .eduke32 file with the following text:
-  FILE  = /ww2gi/WW2GI.GRP
-  FILE+ = /ww2gi/PLATOONL.DAT
-  CON   = /ww2gi/PLATOONL.DEF
-
-For mod support and troubleshooting, please visit the wiki for more information.
-
-
----
+- Confirm each `.eduke32` launcher contains the correct commands (`FILE`, `FILE+`, `CON`, etc.) with relative paths to the target data.
+- If a mod mixes multiple data archives, add multiple `FILE+` lines in the order the mod expects so the right assets load.
+- Delete `system/configs/eduke32/` if you need to reset the configuration or when switching between radically different game sets.

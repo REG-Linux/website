@@ -7,25 +7,41 @@
 
 ## Overview
 
-Introduced in 1992 by Ports, the REminiscence was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+REminiscence is the libretro wrapper around Gregory Montoir’s Flashback engine. It uses the original Flashback PC data with improved compatibility and modern controller handling. REG-Linux associates it with the `reminiscence` metadata group inside the `ports` collection.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1992
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/reminiscence`
+- **Accepted format:** `.rem`
+- **Emulator/Core:** `libretro: reminiscence`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-rem
+No BIOS is needed.
+
+## ROMs
+
+Copy the `DATA/` directory from your Flashback installation into `/userdata/roms/reminiscence/DATA/` and ensure the essential files (`FLORI.INS`, `GLOBES.POL`, `STRING2.INS`, etc.) exist. Next, create a blank placeholder file such as:
+
+```
+touch "/userdata/roms/reminiscence/Flashback.rem"
+```
+
+The `.rem` file acts as the launcher while the real assets stay in the `DATA/` folder. Keep the directory relative to the launcher so the core can load the files without needing absolute paths.
 
 ## Emulators
 
-- **reminiscence** (libretro) – Requires BR2_PACKAGE_LIBRETRO_REMINISCENCE
+### RetroArch / libretro: REminiscence
 
-## Notes
+The core exposes the usual RetroArch options (`reminiscence.videomode`, `reminiscence.ratio`, `reminiscence.shaders`, etc.). Simply open the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) to swap aspect ratios, toggle shaders, or remap the controller.
 
+## Controls
 
----
+REminiscence supports both keyboard/mouse and gamepads. Use the in-game controls screen to bind actions to additional buttons if the default layout is not enough.
+
+## Troubleshooting
+
+- If the game refuses to start, double-check that the `DATA/` folder contains all the Flashback files and that the `.rem` launcher sits alongside it.
+- The core is case-sensitive; verify that your file names match the ones referenced in the `DATA/` directory.
+- Consult the [REminiscence GitHub](https://github.com/libretro/reminiscence) for core-specific notes if you run into compatibility issues.

@@ -7,41 +7,48 @@
 
 ## Overview
 
-Introduced in 1990 by The Commander Genius Team, the Commander Genius was a port system. Its platform tag is `pc` for proper filtering.
+Commander Genius is a fan-built engine for the Commander Keen and Cosmos the Cosmic Adventure series.
+REG-Linux treats it as a port-style platform, grouping its entries under `ports` and launching the
+`cgenius` binary so you can enjoy those DOS adventures without leaving the frontend.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: The Commander Genius Team
-- Release year: 1990
-- Hardware type: port
-- Platform tag: pc
+- **ROM folder:** `/userdata/roms/cgenius`
+- **Accepted format:** `.cgenius`
+- **Emulators:** `cgenius`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## Requirements
 
-cgenius
+The engine itself is open source, but you still need the original Commander Keen or Cosmos game files.
+Extract each DOS release into its own subfolder inside `/userdata/roms/cgenius/games/`. Shareware
+episodes (e.g., *Marooned on Mars*, *Secret of the Oracle*) are freely available, while registered
+packs (such as *The Earth Explodes* or *Keen Must Die!*) must be purchased from their respective
+publishers.
+
+## ROMs
+
+Once the DOS resources are extracted, create a `.cgenius` launcher file for each title (e.g.,
+`Commander Keen 1 - Marooned on Mars.cgenius`). The launcher helps REG-Linux scrape the entry and
+starts the right game folder when selected. Mods distributed through Commander Genius can reside
+alongside the originals; just keep each game’s files in its own directory to avoid confusion.
 
 ## Emulators
 
-- **cgenius** (cgenius) – Requires BR2_PACKAGE_CGENIUS
+### cgenius
 
-## Notes
+The `cgenius` executable is the only emulator for this entry and requires `BR2_PACKAGE_CGENIUS` to be
+built. It honors EmulationStation’s standard video and input mappings, so you can adjust controller
+bindings through the Quick Menu if the default Retropad layout doesn’t feel accurate.
 
-Commander Genius is a software piece that interprets the Commander Keen and Cosmos the Cosmic Adventure series.
+## Controls
 
-Requirements:
+Controller remapping is available via REG-Linux’s controller configuration and the RetroArch-style
+Quick Menu. You can bind the action keys to South/East/West and keep the D-pad tied to movement to
+mirror the original keyboard-based setup.
 
-You need the original DOS game files in a directory under /userdata/roms/cgenius in order to play on Commander Genius games.
-`Commander Keen: Marooned on Mars` and `Secret of the Oracle` are shareware. They can also be downloaded from Commander Genius.
-`Commander Keen: The Earth Explodes` and `Commander Keen: Keen Must Die!` are registered versions which can be purchased from 3D Realms or Apogee.
-Keen 5 and 6 also need to be purchased.
+## Troubleshooting
 
-Games need to be extracted into the /userdata/roms/cgenius/games directory in their own directory per game.
-i.e. /userdata/roms/cgenius/games/Keen1/
-
-You then need to create a .cgenius filename extension in that folder.
-i.e. /userdata/roms/cgenius/games/Keen1/Commander Keen 1 - Marooned on Mars.cgenius
-This will be the file that helps launch the game directly but also should be named to make it easier to scrape.
-
-Note: Some 'mods' can also be downloaded via Commander Genius also.
-
----
+- Ensure each `.cgenius` file points to the correct subfolder; misnamed launchers will prevent the game from appearing in EmulationStation.
+- Verify that the DOS data (IWAD/TWAD equivalents) reside beneath `/userdata/roms/cgenius/games/<title>/`.
+- Consult the [generic support pages](/support) if you run into input issues or if REG-Linux refuses to start the launcher.

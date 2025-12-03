@@ -7,30 +7,49 @@
 
 ## Overview
 
-The CorsixTH is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+CorsixTH is a Lua-based reimplementation of Theme Hospital. It boots the original data files with quality-of-life tweaks while remaining grouped under `ports` in EmulationStation so it keeps pace with REG-Linux’s other non-console engines.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/corsixth`
+- **Accepted format:** `.game`
+- **Emulators:** `corsixth`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-game
+CorsixTH does not require a BIOS dump; it directly reads the Theme Hospital data folder.
+
+## Game files
+
+Purchase or locate the Theme Hospital install (GoG, Steam, or original CD) and extract the entire folder tree into `/userdata/roms/corsixth/Theme Hospital/`. At the root of `/userdata/roms/corsixth/` create one or more `.game` files that point to each data set—for example:
+
+```
+Theme Hospital.game
+```
+
+Each `.game` file should contain the relative folder name (e.g., `Theme Hospital/`) so REG-Linux knows where to scrape the executable. This file also names the entry shown in EmulationStation.
+
+### Custom music
+
+If you prefer alternate audio, drop MP3 tracks into `/userdata/roms/corsixth/MP3/`. Add a `names.txt` file alongside the MP3s where each odd line is the actual filename and the following line is the in-game song name. CorsixTH will list these names when you browse the soundtrack options.
+
+## ROMs
+
+Having a complete Theme Hospital directory with its `data` subfolder, `executable`, and `art` assets is mandatory. Missing files cause CorsixTH to bail with a “missing data file” error, so double-check your extraction.
 
 ## Emulators
 
-- **corsixth** (corsixth) – Requires BR2_PACKAGE_CORSIXTH
+### CorsixTH
 
-## Notes
+The dedicated CorsixTH executable lives under `/usr/bin/corsixth`. Launching it from EmulationStation exposes options for fullscreen or windowed display, vsync, and controller polling. Use the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) if you need to tweak inputs or override video settings at runtime.
 
-Theme Hospital engine written in LUA.
-Grab a copy of your game or get it on GoG.
-Copy the extracted folder with their contents from your Theme Hospital install (or use innoextract) into `/userdata/roms/corsixth/`
-Create a corsixth.game file into '/userdata/roms/corsixth/'
-If you want to listen to non-Theme-Hospital music or use an remastered version of original soundtracks, create a folder MP3 inside '/userdata/roms/corsixth/' and add your MP3 files.
-If you want to change the names of songs ingame, into MP3 folder make a file called names.txt and write the file name on one row, followed by the desired ingame name on the next row.
+## Controls
 
----
+CorsixTH ships with a mouse-first control scheme, but you can also use gamepads by remapping buttons through REG-Linux’s controller configuration. The Quick Menu lets you bind keys to retropad directions if necessary for cursor movement.
+
+## Troubleshooting
+
+- Double-check that each `.game` file matches a valid subfolder inside `/userdata/roms/corsixth`; typos keep the system from appearing in the list.
+- If CorsixTH complains about missing WAV or art assets, re-extract the Theme Hospital folder from a clean install rather than copying only the `base` assets.
+- Custom MP3 playlists require both the track and `names.txt`; CorsixTH silently ignores tracks without a matching name entry.

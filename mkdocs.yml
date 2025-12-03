@@ -367,7 +367,6 @@ nav:
     - Sonic Retro Engine: ports/sonicretro.md
     - Super Mario War: ports/superbroswar.md
     - The Force Engine: ports/theforceengine.md
-    - Tyrian: ports/tyrian.md
     - TyrQuake: ports/tyrquake.md
     - Ur-Quan Masters: ports/uqm.md
     - Quake II: ports/vitaquake2.md
@@ -384,11 +383,12 @@ nav:
     - Singe: engines/singe.md
     - ScummVM: engines/scummvm.md
     - TheXTech: engines/thextech.md
-- Games:
-  - Abuse: games/abuse.md
-  - C-Dogs SDL: games/cdogs.md
-  - Hydra Castle Labyrinth: games/hcl.md
-  - Hurrican: games/hurrican.md
+  - Games:
+    - Abuse: games/abuse.md
+    - C-Dogs SDL: games/cdogs.md
+    - Hydra Castle Labyrinth: games/hcl.md
+    - Hurrican: games/hurrican.md
+    - Tyrian: games/tyrian.md
 - Installation: installation.md
 - Developer Guide: dev-guide.md
 - Community: community.md

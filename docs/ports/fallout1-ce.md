@@ -7,36 +7,71 @@
 
 ## Overview
 
-Introduced in 1997 by Ports, the Fallout Community Edition was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Fallout Community Edition (Fallout-CE) is a modern rebuild of the Fallout 1 engine. It preserves the original RPG flow, adds bug fixes, and exposes modern configuration options on Linux. REG-Linux classifies it under the `ports` system group, with the `fallout` metadata tag shared across both Fallout 1 and Fallout 2 entries.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1997
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/fallout1-ce`
+- **Accepted format:** `.f1ce`
+- **Emulator:** `fallout1-ce`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-f1ce
+Fallout-CE does not require a BIOS; it runs directly from the assembled game data.
+
+## Installation
+
+Copy your Fallout 1 data into `/userdata/roms/fallout1-ce/`, including `CRITTER.DAT`, `MASTER.DAT`, and the entire `data/` directory. Create a blank starter file such as:
+
+```
+touch "/userdata/roms/fallout1-ce/Fallout.f1ce"
+```
+
+This file is what EmulationStation scans to list the entry.
+
+### Configuration notes
+
+Edit `fallout.cfg` to make sure `master_dat`, `critter_dat`, `master_patches`, and `critter_patches` point to the filenames on disk; case sensitivity matters on Linux. The `music_path1` setting should reflect whether your music files sit in `data/sound/music/` or `sound/music/`. Typically, the path is one of:
+
+- `data/sound/music/`
+- `sound/music/`
+
+Music archives (`*.ACM`) must remain uppercase even if the folders are lowercase.
+
+Adjust `f1_res.ini` to pick your screen resolution and window mode. A simple configuration might look like:
+
+```ini
+[MAIN]
+SCR_WIDTH=1280
+SCR_HEIGHT=720
+WINDOWED=1
+```
+
+Use full-resolution values on desktops, logical (point-based) sizes on tablets, and a 480px height for phones while scaling the width to match the aspect ratio.
+
+## ROM layout
+
+The folder should contain:
+
+- `CRITTER.DAT`, `MASTER.DAT`
+- The `data/` directory with `art`, `maps`, `scripts`, `sound/music`, and `text` subfolders.
+- `fallout.cfg`, `f1_res.ini`, `Fallout.f1ce`
+
+Ensure each subfolder includes the assets the engine expects (dialogs in `text/english`, ACME songs in `sound/music`, map files in `maps/`, etc.).
 
 ## Emulators
 
-- **fallout1-ce** (fallout1-ce) – Requires BR2_PACKAGE_FALLOUT1_CE
+### Fallout1-CE
 
-## Notes
+REG-Linux launches the `fallout1-ce` executable with the standard RetroArch-style options such as `fallout1-ce.videomode`, `fallout1-ce.shaders`, and `fallout1-ce.decoration`. Use the Quick Menu to tweak display scaling or controller mappings when needed.
 
-Fallout Community Edition is a fully working re-implementation of Fallout.
-It provides the same original gameplay, engine bugfixes, and some quality of life improvements.
+## Controls
 
-You must own the game to play. Purchase your copy on GOG or Steam.
-Copy the contents of your Fallout folder from your Windows installation to your roms folder:
-/userdata/roms/fallout1-ce
+The game leans on mouse + keyboard controls. You can still map movement or dialog selections to a controller via the global input settings, but text-heavy menus respond best to a mouse cursor.
 
-Create a blank file called `Fallout.f1ce` this allows for scrapping & helps launch the game via EmulationStation.
+## Troubleshooting
 
-Note: This game currently requires a mouse and keyboard to play.
-
-
----
+- Verify that `Fallout.f1ce` exists and that the referenced `.dat` files match the casing rules in `fallout.cfg`.
+- If the music does not play, double-check the `music_path1` entry and ensure the `.ACM` files are uppercase.
+- Delete `userdata/saves/fallout1-ce/` and `system/configs/fallout1-ce/` to reset save data or configuration when switching installations.

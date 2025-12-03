@@ -7,37 +7,39 @@
 
 ## Overview
 
-Introduced in 1999 by Ports, the Quake III was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Quake III Arena and its Team Arena expansion are supported through the ioquake3 engine. REG-Linux exposes them via the `ports` list so you can load the base game, expansion, or mods from a unified launcher.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1999
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/quake3`
+- **Accepted format:** `.quake3`
+- **Emulator:** `ioquake3`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-quake3
+ioquake3 needs no BIOS files.
+
+## ROMs
+
+Copy `baseq3` and `missionpack` folders from your Quake III (or Team Arena) install into `/userdata/roms/quake3/`. Add a `.quake3` marker per profile:
+
+- `/userdata/roms/quake3/Quake III Arena.quake3` containing `+set fs_game "baseq3"`
+- `/userdata/roms/quake3/Quake III Team Arena.quake3` containing `+set fs_game "missionpack"`
+
+You can create more `.quake3` files for mod folders by referencing their `fs_game` name and pointing to the appropriate `.pk3` directory. Keep the marker lines single-lined and case-sensitive.
 
 ## Emulators
 
-- **ioquake3** (ioquake3) – Requires BR2_PACKAGE_IOQUAKE3
+### ioquake3
 
-## Notes
+ioquake3 launches with the command-line inside the `.quake3` file and exposes the usual Quick Menu overrides (`ioquake3.videomode`, `ioquake3.ratio`, etc.). Use the Quick Menu to swap between base/missionpack or to add mod `.pk3` files via `+set fs_game`.
 
-Quake III is optimized to be played with a mouse and keyboard, but here it is also pre-configured to be played with a gamepad.
+## Controls
 
-For the basic configuration you must have the "baseq3" and "missionpack" folders in the "/userdata/roms/quake3" directory.
+The port ships with mouse-first input but accepts controllers. Use the Quick Menu to rebind actions to buttons, and rely on the keyboard for menu navigation (Team Arena menus require mouse clicks).
 
-To start a game, create a file with the extension .quake3, for example "Quake III Arena.quake3".
-Inside this file, add the following line: "+set fs_game "baseq3" for the game "Quake III Arena.
-For Quake III: Team Arena mode create another file with: "+set fs_game "missionpack".
+## Troubleshooting
 
-Repeat this step for each mod you wish to play, giving the file a logical name to help you navigate through artwork etc.
-
-Please note that menu options in Team Arena and other mods can only be selected using a mouse, once the game is started the controller will function normally.
-
-
----
+- If the port cannot find the data, ensure `baseq3/` and `missionpack/` sit directly under `/userdata/roms/quake3/`.
+- Delete `/userdata/system/configs/ioquake3/` to reset custom settings when switching between pipelines.

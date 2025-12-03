@@ -7,116 +7,48 @@
 
 ## Overview
 
-The Raze is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Raze runs classic Build engine titles through a unified launcher powered by GZDoom technology. It supports Duke Nukem 3D, Blood, Shadow Warrior, World War II GI, and other legacy shooters with modern rendering and controller helpers.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/raze`
+- **Accepted formats:** `.raze`
+- **Emulator:** `raze`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-raze
+No BIOS is required.
+
+## Game data
+
+Place each game’s data inside a dedicated subdirectory (e.g., `/userdata/roms/raze/duke/`, `/userdata/roms/raze/blood/`). Raze expects the original archives (`DUKE3D.GRP`, `BLOOD.RFF`, `SW.GRP`, `WW2GI.GRP`, etc.) along with any expansion packs you own (Cryptic Passage, Suckin’ Grits on Route 66, etc.). Some expansions are easier to keep zipped: gather the required files into the root of a `.zip` and drop it alongside the base data (e.g., `cryptic.zip`, `route66.zip`).
+
+Optional custom music tracks (e.g., `track02.ogg`) can be placed inside each game directory to override the default soundtrack.
+
+Each entry needs a `.raze` launcher file inside `/userdata/roms/raze/` containing the commands Raze uses to load the data. Examples:
+
+- Blood: `FILE = /blood/BLOOD.RFF`
+- Blood: Cryptic Passage: `FILE = /blood/BLOOD.RFF` and `FILE+ = /blood/cryptic.zip`
+- Duke Nukem 3D base: `FILE = /duke/DUKE3D.GRP`
+- Duke expansions: add `FILE+ = /duke/<expansion>.GRP`
+- Shadow Warrior Team Bonus Pack: `FILE = /shadow/SW.GRP` plus the `TD.GRP` or `WD.GRP` entries as needed
+- World War II GI: `FILE = /ww2gi/WW2GI.GRP` plus the Platoon Leader files (`FILE+ = /ww2gi/PLATOONL.DAT`, `CON = PLATOONL.DEF`)
+
+Use underscores in the launcher names (e.g., `Duke_Nukem_3D.raze`) to help the scraper.
 
 ## Emulators
 
-- **raze** (raze) – Requires BR2_PACKAGE_RAZE
+### Raze
 
-## Notes
+The `raze` binary exposes the standard `raze.*` options for display and input. It also accepts command-line switches found inside the `.raze` files, so you can pass `-file`, `-game`, or `-nomonster` there if a mod calls for it.
 
-Raze is a source port, powered by GZDoom tech, for playing classic Build Engine games like Duke Nukem 3D.
+## Controls
 
-The following games are officially supported, and should be placed in the designated directory with their required
-files (including subdirectories):
-  * blood:          Blood (movies/*.ogv, blood.ini, *.art, *.dat, *.rff)
-  * blood:          Blood: Cryptic Passage (see instructions further below)
-  * duke:           Duke Nukem 3D (DUKE3D.GRP)
-  * duke:           Duke Nukem 3D: Duke It Out in D.C. (DUKEDC.GRP)
-  * duke:           Duke Nukem 3D: Duke Caribbean: Life's a Beach (VACATION.GRP)
-  * duke:           Duke Nukem 3D: Duke: Nuclear Winter (NWINTER.GRP)
-  * exhumed:        Exhumed/PowerSlave (BOOK.MOV, DEMO.VCR, STUFF.DAT)
-  * nam:            NAM (NAM.GRP, NAM.CON)
-  * redneck:        Redneck Rampage (REDNECK.GRP)
-  * redneck:        Redneck Rampage: Suckin' Grits on Route 66 (see instructions further below)
-  * redneckrides:   Redneck Rampage Rides Again (RIDES.GRP) <-- Note: rename from REDNECK.GRP
-  * shadow:         Shadow Warrior (SW.GRP)
-  * shadow:         Shadow Warrior: Twin Dragon (TD.GRP)
-  * shadow:         Shadow Warrior: Wanton Destruction (WD.GRP)
-  * ww2gi:          World War II GI (WW2GI.GRP)
-  * ww2gi:          World War II GI: Platoon Leader (PLATOONL.DAT, PLATOONL.DEF)
+Raze defaults to keyboard + mouse, but you can map actions to a controller through the Quick Menu or the in-game controls menu. The overlay shows typical button assignments for dropping bombs, jumping, and interacting with the UI.
 
-For some of these expansion packs, the required files (including subdirectories) need to be collected into the root
-of a .zip file and placed in the designated directory:
+## Troubleshooting
 
-  Blood: Cryptic Passage
-    1. Collect required files: movies/*.ogv, *.art, *.ini, *.map
-    2. Zip required files into root of cryptic.zip
-    3. Place cryptic.zip in blood directory
-
-  Redneck Rampage: Suckin' Grits on Route 66
-    1. Collect ANM files: END66.ANM, TURD66.ANM
-    2. Collect ART files: TILESA66.ART, TILESB66.ART
-    3. Collect CON files: BUBBA66.CON, DEFS66.CON, GAME66.CON, GATOR66.CON, PIG66.CON, USER66.CON
-    4. Collect MAP files: ROUTE66/*.MAP (keep the ROUTE66 subdirectory)
-    5. Collect VOC files: ASYAMB.VOC, END66.VOC, G_BITE.VOC, G_SIT.VOC, NEON.VOC, TURD66.VOC
-    6. Rename files: TILESA66.ART -> TILES024.ART; TILESB66.ART -> TILES025.ART; GAME66.CON -> GAME.CON
-    7. Zip required files into root of route66.zip
-    8. Place route66.zip in redneck directory
-
-Optionally, add music tracks with the following names to the designated directories:
-  * blood:          track02.ogg or blood02.ogg, etc.
-  * exhumed:        track02.ogg or exhumed02.ogg, etc.
-  * redneck:        track02.ogg or redneck02.ogg, etc.
-  * redneckrides:   track02.ogg or redneckrides02.ogg, etc.
-  * shadow:         track02.ogg or shadow02.ogg, etc.
-
-Each game needs a .raze file. The purpose of this file is to tell Raze how to launch the game. This is simple
-for most cases but can be more complicated if you are installing mods. It is recommended to underscore the name so
-the scraper has an easier time getting a match e.g. Duke_Nukem_3D.raze.
-
-For Blood, create a .raze file with the following text:
-  FILE = /blood/BLOOD.RFF
-
-For Blood: Cryptic Passage, create a .raze file with the following text:
-  FILE  = /blood/BLOOD.RFF
-  FILE+ = /blood/cryptic.zip
-
-For each Duke Nukem 3D game, create a .raze file with the following text:
-  FILE  = /duke/DUKE3D.GRP
-  FILE+ = /duke/DUKEDC.GRP  <-- Note: Omit this line for the base game, update filename for each expansion
-
-For Exhumed/PowerSlave, create a .raze file with the following text:
-  FILE = /exhumed/STUFF.DAT
-
-For Nam, create an .raze file with the following text:
-  FILE = /nam/NAM.GRP
-  CON  = /nam/NAM.CON
-
-For Redneck Rampage, create a .raze file with the following text:
-  FILE = /redneck/REDNECK.GRP
-
-For Redneck Rampage: Suckin' Grits on Route 66, create a .raze file with the following text:
-  FILE  = /redneck/REDNECK.GRP
-  FILE+ = /redneck/route66.zip
-
-For Redneck Rampage Rides Again, create a .raze file with the following text:
-  FILE = /redneckrides/RIDES.GRP
-
-For each Shadow Warrior game, create a .raze file with the following text:
-  FILE  = /shadow/SW.GRP
-  FILE+ = /shadow/TD.GRP  <-- Note: Omit this line for the base game, update filename for each expansion
-
-For World War II GI, create an .raze file with the following text:
-  FILE = /ww2gi/WW2GI.GRP
-
-For the World War II GI: Platoon Leader expansion, create an .raze file with the following text:
-  FILE  = /ww2gi/WW2GI.GRP
-  FILE+ = /ww2gi/PLATOONL.DAT
-  CON   = PLATOONL.DEF
-
-For mod support and troubleshooting, please visit the wiki for more information.
-
-
----
+- Verify that the `.raze` launcher and its referenced files exist. Missing `.GRP`, `.RFF`, or `.DAT` files cause the entry to vanish.
+- When dealing with expansions packaged as `.zip`, keep the archive name consistent with the `FILE+` line in the launcher.
+- Reset `/userdata/system/configs/raze/` after swapping game versions or mods to avoid stale settings.

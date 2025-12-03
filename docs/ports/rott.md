@@ -1,36 +1,46 @@
 # Rise of the Triad
 
+<div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
+<img src="/assets/systems/icons/rott.webp" alt="Rise of the Triad icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/rott.png" alt="Rise of the Triad logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+</div>
+
 ## Overview
 
-Introduced in 1994 by Ports, the Rise of the Triad was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Rise of the Triad is launched through the `taradino` port and stays grouped with the other `ports` entries in REG-Linux. It relies on the commercial game files to reproduce the original fast-paced shooter.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1994
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/rott`
+- **Accepted format:** `.rott`
+- **Emulator:** `taradino`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-rott
+No BIOS is necessary.
+
+## ROMs
+
+Copy the licensed Rise of the Triad files (`DARKWAR.WAD`, `DARKWAR.RTL`, `DARKWAR.RTC`, `REMOTE1.RTS`, etc.) into `/userdata/roms/rott/`. Once the data is in place, create a placeholder marker:
+
+```
+touch "/userdata/roms/rott/Rise of the Triad.rott"
+```
+
+The `.rott` file signals EmulationStation to show the entry. Keep filenames in the directory either uppercase or lowercase—ROT accepts both.
 
 ## Emulators
 
-- **taradino** (taradino) – Requires BR2_PACKAGE_TARADINO
+### Taradino
 
-## Notes
+The `taradino` binary launches the port. Adjust video and input options from the Quick Menu and let the engine handle the rest.
 
-Place your commercial version of Rise of the Triad installation files in here.
+## Controls
 
-You should include DARKWAR.WAD, DARKWAR.RTL, DARKWAR.RTC & REMOTE1.RTS as a minimum.
-File names can be upper or lower case.
+Rise of the Triad requires a mouse and keyboard at launch. Controller compatibility is limited, so configure the necessary actions via the in-game options if you need a pad.
 
-Then create the file `Rise of the Triad.rott`. This will enable EmulationStation to launch the game.
+## Troubleshooting
 
-You do not need to enable the joystick or gamepad as compatiblity doesn't work well yet.
-We have mapped the controller to keyboard events as a result.
-
-
----
+- Ensure the `tar` files and `DARKWAR.*` archives exist and are not corrupted.
+- Delete `/userdata/system/configs/taradino/` if you need to reset controls or video settings after switching installs.

@@ -7,26 +7,57 @@
 
 ## Overview
 
-The Cannonball is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Cannonball is a modern OutRun engine that targets REG-Linux as a “ports” entry.
+It boots the 1986 Sega racer by reading the original ROM set with enhancements
+like higher refresh rates and widescreen scaling. The system entry lives in the
+`ports` group and expects the `cannonball` theme artwork when available.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/cannonball`
+- **Accepted format:** `.cannonball`
+- **Emulators:** `cannonball`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-cannonball
+No external BIOS files are required for Cannonball.
+
+## ROMs
+
+Copy the OutRun Revision B ROM files into `/userdata/roms/cannonball/`. Cannonball
+must access the original `epr-10187.88`, `epr-10327a.76`, and related files,
+so unzip them directly into this directory rather than leaving them inside archives.
+Once the ROMs are in place, rename the shipped `Cannonball.cannonball.disabled`
+to `Cannonball.cannonball` to make the system entry usable again.
+
+The official project Github lists every required ROM by name and MD5, but the
+three main archives below are commonly used to extract the needed files:
+
+| MD5 checksum                       | Archive name        |
+|------------------------------------|---------------------|
+| `fe803998a14837227be83d0f30f29a23` | `outrun.zip`        |
+| `dbf3c379a3664d9c920cada5dc4cdc23` | `outrun.zip`        |
+| `a7060972e1cb854c111a435cc965cf29` | `cannonball.zip`    |
+
+Refer to Cannonball’s README/`roms.txt` for the current list of ROM filenames.
 
 ## Emulators
 
-- **cannonball** (cannonball) – Requires BR2_PACKAGE_CANNONBALL
+### Cannonball
 
-## Notes
+`cannonball` is the dedicated PC port bundled with REG-Linux. Its EmulationStation
+entry exposes `cannonball.videomode`, `cannonball.ratio`, and the `cannonball.highResolution`
+option so you can crank up the internal rendering resolution when needed.
 
-Add mame 'OutRun rev. B' ROMs (epr-10187.88, epr-10327a.76.. ) in this directory and rename Cannonball.cannonball.disabled to Cannonball.cannonball.
+## Controls
 
+The provided overlay reproduces the arcade wheel and two-button layout. You can
+remap buttons through the global controller configuration if a standard gamepad
+doesn’t feel right.
 
----
+## Troubleshooting
+
+- If the entry remains disabled, make sure `Cannonball.cannonball.disabled` is renamed so EmulationStation sees the ROM.
+- Double-check that the ROM set matches one of the MD5 values above; missing files stop the port from starting.
+- For developer or input questions, visit the [generic support pages](/support).

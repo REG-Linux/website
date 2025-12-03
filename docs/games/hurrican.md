@@ -6,26 +6,29 @@
 
 ## Overview
 
-Introduced in 2007 by Ports, the Hurrican was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Hurrican is a freeware action-platformer inspired by the Turrican series. REG-Linux runs it via a native port entry so the experience appears with other PC engines.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 2007
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/hurrican`
+- **Accepted format:** `.game`
+- **Engine:** Native Hurrican port
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-game
+No BIOS is required.
 
-## Emulators
+## Game data
 
-- **hurrican** (hurrican) – Requires BR2_PACKAGE_HURRICAN
+Install the files through the Content Downloader or manually drop the `.game` folder into `/userdata/roms/hurrican/`. The entry appears once the downloader creates the launcher file.
 
-## Notes
+## Controls
 
-This system is a standalone game. No rom required, get the game assets files from the Content Downloader.
+Hurrican uses standard controller mapping for ports. Use the Quick Menu or `/remapping_controls_per_emulator` to remap buttons if needed.
 
----
+## Troubleshooting
+
+- Ensure `/userdata/roms/hurrican/` contains a `.game` folder created by the downloader.
+- Remove and reinstall the package if the entry does not appear or the port crashes.
+- Consult the [generic support pages](/support) for additional guidance.

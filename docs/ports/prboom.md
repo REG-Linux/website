@@ -7,28 +7,63 @@
 
 ## Overview
 
-The PrBoom is a port platform developed by Ports. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+PrBoom is the libretro-based source port that lets you run Doom, Doom II, and their mods with modern enhancements. REG-Linux ships the shareware IWAD (doom.wad) with the core and keeps the port inside the `ports` group so it remains separate from consoles.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/prboom`
+- **Accepted formats:** `.wad`, `.iwad`, `.pwad`
+- **Emulator/Core:** `libretro: prboom`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## BIOS
 
-wad, iwad, pwad
+No BIOS is required.
+
+## Game files
+
+PrBoom looks for IWADs in `/userdata/roms/prboom/`. The shareware `doom.wad` is included by default, but you can add your own IWADs (doom2.wad, hexen.wad, etc.) or fan-made PWADs into the same folder. Keep filenames lowercase to avoid any case-sensitive conflicts.
+
+Suggested layout:
+
+```
+roms/prboom/Doom/doom.wad
+roms/prboom/Doom 2/doom2.wad
+roms/prboom/Doom 2/CHEX/CHEX.wad
+roms/prboom/Final Doom/SIGIL_v1_21.wad
+```
+
+Use `.m3u` playlists if you need to chain episodes or custom mounts.
+
+## Wiggle fix
+
+If floors flicker on ARM boards, launch PrBoom and go to Options → General → Wiggle fix → No. Alternatively edit `/userdata/saves/prboom/<IWAD>/prboom.cfg` and set `r_wiggle_fix                  0` under the `[Video]` section.
 
 ## Emulators
 
-- **prboom** (libretro) – Requires BR2_PACKAGE_LIBRETRO_PRBOOM
+### RetroArch / libretro: PrBoom
 
-## Notes
+PrBoom exposes the usual `prboom.*` options (`videomode`, `ratio`, `smooth`, `shaders`, `pixel_perfect`, `decoration`, `game_translation`) plus:
 
-Put DOOM 1 and 2 games (and their associated mods) in this directory.
-Put your soundtrack in the directory ./game-musics
+| Setting | Description |
+| --- | --- |
+| `prboom.gfxbackend` | Choose OpenGL or Vulkan rendering. |
+| `prboom.audio_latency` | Raise this if audio crackles. |
+| `prboom.video_threaded` | Enable threaded video for heavy scenes. |
+| `global.prboom-resolution` | Force a higher internal resolution (320×200 up to 2560×1600). |
+| `global.prboom_controller1` | Pick the input type (Gamepad Classic, Modern, Keyboard+Mouse). |
 
-DON'T ERASE "prboom.wad".
+Additional tweaks can be saved in `/userdata/saves/prboom/<IWAD>/prboom.cfg`.
 
----
+## Additional WADs
+
+Popular IWADs: `doom.wad`, `doom2.wad`, `tnt.wad`, `plutonia.wad`, `doomu.wad`. PWADs such as `SIGIL`, `CHEX`, `nerve`, or Urban Brawl should live inside subdirectories next to the base IWAD they plug into.
+
+## Controls
+
+PrBoom uses the standard FPS pad layout; refer to the controller overlay (e.g., `../images/controller-overlays/psx-1.png`) if you want to remap buttons.
+
+## Troubleshooting
+
+- For general issues, consult the [generic support pages](/support).
+- Remove `/userdata/system/configs/prboom/` and `/userdata/saves/prboom/` to reset video or input tweaks when moving between mods.

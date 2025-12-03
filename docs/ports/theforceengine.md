@@ -6,57 +6,46 @@
 
 ## Overview
 
-Introduced in 1995 by Ports, the The Force Engine was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+The Force Engine (TFE) recreates classic LucasArts shooters such as Dark Forces and Outlaws. REG-Linux exposes it as a `ports` entry that loads your own game files and community mods.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 1995
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/theforceengine`
+- **Accepted format:** `.tfe`
+- **Emulator:** `theforceengine`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-tfe
+Copy the original game installation (Steam, GOG, etc.) into `/userdata/roms/theforceengine/`. For Dark Forces, include `DARKWAR.WAD`, `DARKWAR.RTL`, `DARKWAR.RTC`, `REMOTE1.RTS`, and other required assets. For Outlaws or other supported titles, place their data into uniquely named subfolders inside the ROMs folder.
+
+Create a marker file per title such as:
+
+```
+touch "/userdata/roms/theforceengine/Star Wars - Dark Forces.tfe"
+```
+
+This `.tfe` file keeps the entry visible in EmulationStation. The port reads the original files and maps them through the TFE binary.
+
+## Mods
+
+Drop mod archives (zip files only) into `/userdata/system/configs/theforceengine/Mods/`. To launch a mod directly, create a `.tfe` file whose contents are the mod zip filename (e.g., `aons_modern.zip`), then select that entry in the ports list.
+
+## HD textures
+
+If you have the remastered version of Dark Forces, copy `enhanced.gob` into the game folder before launching TFE so the engine can read the upgraded textures.
 
 ## Emulators
 
-- **theforceengine** (theforceengine) – Requires BR2_PACKAGE_THEFORCEENGINE
+### The Force Engine
 
-## Notes
+The `theforceengine` binary loads the selected `.tfe` file and reads the configuration from `userdata/system/configs/theforceengine/`. Use the Quick Menu to adjust video or controller settings after the first profile creation.
 
-The Force Engine (TFE) uses the games files from older LucasArts games like `Dark Forces` & soon `Outlaws`.
-To use TFE, you need to do the following:
+## Controls
 
-1. Install the game you wish to use with The Force Engine in Windows (Steam or GOG receommended)
-2. In this example, go to your C:\GOG folder and copy the `Star Wars - Dark Forces` folder to your roms/theforceengine folder.
-3. Create an initial file with a tfe extension, like so: `Star Wars - Dark Forces.tfe`.
-4. Update you games list in EmulationStation and the game should be available under `Ports`.
+The port prefers a mouse and keyboard for setup, though the engine can map keyboard events to gamepads after the profile is established.
 
-Mods:
+## Troubleshooting
 
-Mods have to be installed into the /userdata/system/configs/theforceengine/Mods folder.
-The mod files should be in zip format only.
-To launch directly into your mod, create a file in the roms/theforceengine folder with the .tfe extension.
-Again choose the name which makes sense, i.e. the mod game / level name.
-i.e. `Assasssination at Nar Shaddaa.tfe`
-
-Then edit the file with the name of the mod zip file only.
-i.e. aons_modern.zip
-
-Update the games list and you can now launch the mod directly.
-
-A good source of missions to try are available here: https://df-21.net/downloads/levels/
-
-Dark Forces HD Textures:
-
-To use HD textures you need to have a copy of the Remaster version of the games also.
-Copy the `enhanced.gob` file from the Remaster installation into the previous `Star Wars - Dark Forces` folder.
-
-Notes:
-
-It is important to use the exact directory name above.
-A keyboard and mouse / touchscreen is required to create the initial user profile & game start.
-
----
+- Keep the directory names exact (e.g., `/userdata/roms/theforceengine/Star Wars - Dark Forces/`) so the port can locate the assets.
+- Delete `/userdata/system/configs/theforceengine/` to reset settings or to clear mod references when launching new packages.

@@ -6,42 +6,31 @@
 
 ## Overview
 
-Introduced in 2017 by Sega, the Sonic Mania was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Sonic Mania is a modern 2D platformer that continues the 16-bit Sonic legacy. REG-Linux treats it as a `ports` system that launches the RSDKv5 executable with the installed PC data.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Sega
-- Release year: 2017
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/sonic-mania`
+- **Accepted format:** `.sman`
+- **Emulator:** `sonic-mania`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-sman
+Copy the `Data.rsdk` file from your Sonic Mania installation into `/userdata/roms/sonic-mania/`. The entry uses this file for all assets, so keep the filename exactly `Data.rsdk`.
 
-## Emulators
+Create a placeholder file in the same folder:
 
-- **sonic-mania** (sonic-mania) – Requires BR2_PACKAGE_SONIC_MANIA
-
-## Notes
-
-Add your copy of Sonic Mania, just the `Data.rsdk` file in here.
-Then create a blank file called 'Sonic Mania.sman' in this folder also.
-This file will allow EmulationStation to launch Sonic Mania and scrape artwork etc.
-
-Once completed, it is **highly recommended** that you grab the Shaders folder in RSDKv5 and turn it into a mod.
-Otherwise, movies will not display properly and the filters from video settings won't work.
-
-To do this, create the following directory structure inside your mods directory:
 ```
-GLShaders/
-| Data/
-| | ...
-| mod.ini
+touch "/userdata/roms/sonic-mania/Sonic Mania.sman"
 ```
 
-Inside `mods/GLShaders/Data/` copy the `RSDKv5/Shaders` directory, and inside the mod.ini, paste this:
+This file allows EmulationStation to identify and launch the game.
+
+## Shaders
+
+To enable GL3 shader filtering and keep movies working, create a mod under `/userdata/roms/sonic-mania/mods/GLShaders/`. Copy the `RSDKv5/Shaders` folder into `mods/GLShaders/Data/` and add a `mod.ini` containing:
+
 ```
 Name=GLShaders
 Description=GL3 shaders to enable filters and stuff
@@ -50,5 +39,19 @@ Version=1.0.0
 TargetVersion=5
 ```
 
+This ensures the port loads the proper shader packs.
 
----
+## Emulators
+
+### Sonic Mania
+
+The `sonic-mania` binary honors Quick Menu overrides and supports custom mods inside the `mods/` folder. Use the Quick Menu or EmulationStation advanced options to tweak graphics, shaders, or controller mappings.
+
+## Controls
+
+Sonic Mania supports both keyboard and controller input. Map jump and spin dash to your preferred buttons via the in-game control editor for the best precision.
+
+## Troubleshooting
+
+- If the game complains about missing assets, verify `Data.rsdk` is present and not renamed.
+- Delete `/userdata/system/configs/sonic-mania/` and `saves/sonic-mania/` to clear corrupted settings or saves.

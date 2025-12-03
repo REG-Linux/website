@@ -7,27 +7,30 @@
 
 ## Overview
 
-Introduced in 2006 by Ports, the Super Mario War was a port system. It is grouped with ports titles in EmulationStation. Its platform tag is `pc` for proper filtering.
+Super Mario War is a multiplayer battle game where up to four players stomp each other across themed arenas. REG-Linux provides it through the `ports` section and expects the game assets from the Content Downloader.
 
-## Technical specifications
+### Quick reference
 
-- Manufacturer: Ports
-- Release year: 2006
-- Hardware type: port
-- Platform tag: pc
-- EmulationStation group: ports
+- **ROM folder:** `/userdata/roms/superbroswar`
+- **Accepted format:** `.game`
+- **Emulator/Core:** `libretro: Superbroswar`
+- **System group:** `ports`
 
-## Supported ROM extensions
+## ROMs
 
-game
+Install the `.game` folder delivered by the Content Downloader into `/userdata/roms/superbroswar/`. The folder should include the zipped data, levels, and textures that the libretro core needs. Keep the folder intact so EmulationStation can recognize the entry.
 
 ## Emulators
 
-- **superbroswar** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SUPERBROSWAR
+### RetroArch / libretro: Superbroswar
 
-## Notes
+The core loads the assets directly and exposes the usual RetroArch video/input options. Use `/remapping_controls_per_emulator` or the Quick Menu to customize button layouts if the defaults don’t suit you.
 
-Super Mario War - smash opponents by stomping on them, in a fun multiplayer game.
-Get the game assets files from the Content Downloader.
+## Controls
 
----
+Super Mario War relies on the D-pad for movement and face buttons for stomps/jumps. Adjust the controller via the Quick Menu if you want to move actions to shoulder buttons.
+
+## Troubleshooting
+
+- If the game fails to launch, ensure the `.game` folder is not nested inside additional archives.
+- Use the [generic support pages](/support) for general input or configuration questions.
