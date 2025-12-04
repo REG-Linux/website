@@ -7,29 +7,47 @@
 
 ## Overview
 
-[Adobe Flash Player](https://www.adobe.com/products/flashplayer) once powered interactive web experiences and light games, but the official plug-in reached end-of-life in 2020. REG Linux relies on open-source reimplementations such as [Ruffle](https://ruffle.rs) and [Lightspark](https://lightspark.github.io) to continue running SWF content safely. These engines reverse-engineer the Flash virtual machine, cover most ActionScript 1/2 features, and drop in where the legacy player used to sit.
+Adobe Flash Player once powered countless browser games and interactive experiences, but it was deprecated in 2020. REG-Linux now relies on open-source reimplementations (Lightspark and Ruffle) to keep `.swf` content playable locally without the security issues of the legacy plugin.
 
-## Supported formats
+### Quick reference
 
-- `swf` – Flash movie archives containing ActionScript bytecode.
-- `abc` / `flex` – ActionScript bytecode bundles shipped in AS3 projects and AIR builds.
+- **ROM folder:** `/userdata/roms/flash`
+- **Accepted formats:** `.swf`
+- **Emulators:** Lightspark (native), `libretro: ruffle`
+- **System group:** `engines`
 
-## Example content
+## BIOS
 
-* `Alien Hominid` – Newgrounds classic packaged as a standalone SWF.
-* `Fancy Pants Adventure` – physics-based platformer built in Flash.
-* `Club Penguin` minigames – small interactive adventures and puzzles.
-* `Homestar Runner` cartoons and mini-games.
-* `Pico's School` – early indie adventure example of Flash interactive storytelling.
+No BIOS is required.
 
-## Engines
+## Game files
 
-- **lightspark** – Requires `BR2_PACKAGE_LIGHTSPARK`. Focuses on OpenGL rendering plus AS3 compatibility.
-- **ruffle** – Requires `BR2_PACKAGE_RUFFLE`. Rust-based emulator that prioritizes ActionScript 1/2 and safety for browsers/native builds.
+Copy your Flash movies/games (`.swf`) into `/userdata/roms/flash/`. There are no additional assets to drop unless the game points at relative folders—keep any `assets/`, `images/`, or sound folders next to the SWF so Lightspark/Ruffle can load them naturally.
 
-## Notes
+## Emulators
 
-- Ship SWF files inside REG Linux’s ROM tree; Ruffle and Lightspark can point at archives or unpacked directories.
-- Some games request external assets, so keep their asset folders relative to the SWF file for correct loading.
+### Lightspark
 
----
+Lightspark is a C/C++ reimplementation of Flash Player that targets modern PCs and offers AS3 coverage plus OpenGL rendering.
+
+#### Options
+
+Standardized options: `flash.videomode`, `flash.padtokeyboard`, `flash.decoration`.
+
+### Ruffle (libretro)
+
+Ruffle is the Rust-based port that focuses on AS1/2 compatibility and sandboxed playback.
+
+#### Options
+
+Standardized options: `flash.videomode`, `flash.padtokeyboard`, `flash.decoration`.
+
+## Controls
+
+Flash games usually expect keyboard + mouse input. A default RETROpad mapping is provided, but you can remap to shoulder buttons or extra controllers if a title uses arrow keys, space, or mouse clicks.
+
+## Troubleshooting
+
+- If a SWF refuses to start, ensure the file is not corrupted and that any required asset folders remain next to it.
+- Some Flash releases depend on unsupported features (like video playback). Try the other engine if one falls back to an error.
+- Refer to the [generic support pages](/support) for additional help.

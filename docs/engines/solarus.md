@@ -7,28 +7,35 @@
 
 ## Overview
 
-[Solarus](https://www.solarus-games.org) is an open-source engine for action-RPG games inspired by The Legend of Zelda. It uses Lua scripts to orchestrate puzzles, dialogs, and behaviors while rendering hero sprites, top-down rooms, and particle effects. The project ships both a game editor and runtime so REG Linux can load Solarus adventures with the same user interface and controller support available on desktop builds.
+Solarus is an open-source Zelda-style engine focused on 16-bit action-RPGs. REG-Linux exposes the `solarus` metadata group so community-made adventures appear as a single engine entry that handles the Lua scripts, sprites, and particle effects.
 
-## Supported formats
+### Quick reference
 
-- `solarus` – archive format containing game scripts, sprites, audio, and map definitions.
-- `zip` / `tar` – compressed packages exported from the Solarus Builder.
+- **ROM folder:** `/userdata/roms/solarus`
+- **Accepted formats:** `.solarus`, `.zip`
+- **Engine:** Solarus native runtime
+- **System group:** `engines`
 
-## Example games
+## ROMs
 
-* `Solarus Quest` – flagship demo featuring dungeons, bosses, and lore.
-* `The Legend of Zelda: Mystery of Solarus DX` – fan remake built with Solarus (requires own assets).
-* `Super Mario RPG Quest` – cross-genre Solarus fan game that mimics RPG battles.
-* `Holy Wars` – top-down adventure with custom characters and music.
-* Many other indie Zeldalike projects listed on the official wiki.
+Drop each `.solarus` archive or zipped directory from the Solarus catalog into `/userdata/roms/solarus/`. Community packs (Solarus Quest, Mystery of Solarus DX, etc.) are listed on <https://solarus-games.org/en/games>. Each pack should include a `game.solarus` manifest and a `data/` folder with sprites, audio, and Lua scripts.
 
-## Engines
+## Emulator settings
 
-- **solarus** – Requires `BR2_PACKAGE_SOLARUS_ENGINE`. Loads `game.solarus` archives and handles Lua extensions, sound, collisions, and item pickups.
+Solarus exposes standard display overrides (`solarus.videomode`, `solarus.decoration`) and a control choice option:
 
-## Notes
+| Setting | Description |
+| --- | --- |
+| `solarus.joystick` | Select which controller input drives the hero (Joypad, Left stick, Right stick). |
 
-- Keep the archive’s `game.solarus` and `data/` folder intact; the engine expects a `game.yaml` manifest.
-- Use RegLinux’s ROM tree to include the same directory structure the Solarus Builder generates so controllers and audio load without extra configuration.
+Adjust options via the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) or the advanced game settings in EmulationStation.
 
----
+## Controls
+
+The default overlay maps movement to the D-pad/analog stick and face buttons to attack/jump actions. Use `/remapping_controls_per_emulator` if you want to assign the Storm Sword or Shield to shoulder buttons.
+
+## Troubleshooting
+
+- Ensure each archive contains `game.solarus` and that the `data/` folder (sprites, music, maps) sits inside the root of your `.solarus` folder.
+- Repack zipped directories if Solarus fails to detect assets; the core expects the manifest at the top level.
+- For general questions refer to the [generic support pages](/support).
