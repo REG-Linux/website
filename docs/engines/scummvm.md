@@ -7,55 +7,49 @@
 
 ## Overview
 
-ScummVM is an open-source interpreter that lets you run classic adventure and similar narrative games using their original data files. It replaces the proprietary engines (SCUMM, Sierra SCI, etc.) with modern reimplementations, so REG Linux can boot those titles on contemporary hardware without the original runtime while preserving save/load, scripting, audio, and translation compatibility. The project also bundles a launcher, controller support, and options to mix subtitles, custom graphics, and output scaling.
+ScummVM reimplements the classic adventure and RPG engines from LucasArts, Sierra, Cyan, Westwood, and more. REG-Linux exposes the `scummvm` group so each supported title gets its own entry once you add the launcher file.
 
-## Supported ROM extensions
+### Quick reference
 
-scummvm, zar
+- **ROM folder:** `/userdata/roms/scummvm`
+- **Save folder:** `/userdata/saves/scummvm`
+- **Accepted formats:** Game folders or `.squashfs` archives that include a `.scummvm` launcher file.
+- **Engines:** ScummVM standalone, `libretro: ScummVM`
+- **System group:** `engines`
 
-## Supported games
+## BIOS
 
-These engines cover the bulk of the famous adventure catalogues:
+No BIOS required. For Roland MT-32 MIDI support, drop the MT32 ROM files (GM.DAT, MT32_CONTROL.ROM, etc.) into `/userdata/bios/` and point ScummVM at them in the MIDI options.
 
-* `The Secret of Monkey Island`
-* `Monkey Island 2: LeChuck's Revenge`
-* `Day of the Tentacle`
-* `Grim Fandango`
-* `Broken Sword: The Shadow of the Templars`
-* `Beneath a Steel Sky`
-* `King's Quest` (SCI1-3)
-* `Space Quest` (SCI1-3)
-* `Quest for Glory` (SCI1-4)
-* `Sam & Max Hit the Road`
+## ROMs
 
-The official compatibility list at [scummvm.org/compatibility](https://www.scummvm.org/compatibility/) includes hundreds of titles beyond those highlighted here.
+Create one directory per game under `/userdata/roms/scummvm/`. Copy the original data files (DOS/Windows or Mac release) into that folder and create a blank launcher file named `<GameID>.scummvm` (e.g., `tentacle.scummvm` for Day of the Tentacle). The launcher tells REG-Linux which GameID to use, which is critical when multiple language variants exist.
 
-## Supported engines
+ScummVM can also read `.squashfs` archives; the archive must contain the same `.scummvm` file inside so the emulator can register it automatically.
 
-- SCUMM (LucasArts, Humongous Entertainment)
-- SCI (Sierra Creative Interpreter)
-- AGI (Sierra AGI engine)
-- Wintermute
-- GrimE
-- Viscape (KiriKiri)
-- Broken Sword's own interpreter (Virtual Theatre)
-- Many others such as Gemini, Legend, and QSP engines are supported through plugins and community modules.
+Autodetection (default in REG-Linux v42+) will scan the folder when no launcher is present, but it may pick the first entry it finds, so keep only the desired release in each directory until you confirm the ID.
 
-## Emulators
+## Setup helpers
 
-- **scummvm** (libretro) – Requires BR2_PACKAGE_LIBRETRO_SCUMM, BR2_PACKAGE_HAS_LIBRETRO_SCUMMVM
-- **scummvm** (scummvm) – Requires BR2_PACKAGE_SCUMMVM, BR2_PACKAGE_HAS_SCUMMVM
+Use the `scummvm-addgames-v2.sh` script (place it in `/userdata/roms/scummvm/`, `chmod +x`, then run `./scummvm-addgames-v2.sh <gamefolder> auto`) to batch-add games. Choose `standalone`, `libretro`, or `random` mode depending on whether you want the standalone client or the RetroArch core to manage the generated `scummvm.ini`.
 
-## Notes
+## Engines
 
-Put scummvm games in this folder.
+### ScummVM (standalone)
 
-For each game, you must create a file named from the short name of the game and with the extension ".scummvm"
+Launch it from EmulationStation and open `[F1] > Applications > scummvm` to add folders, inspect GameIDs, and adjust global settings.
 
-Short game names can be found at [scummvm.org/compatibility](https://www.scummvm.org/compatibility/).
-For example, for "Broken Sword" create the file "Broken Sword/sword1.scummvm"
+### RetroArch / libretro: ScummVM
 
-If you wish to use Midi ROM's i.e. the MT-32 synth, put you files in /userdata/bios/scummvm/extra
+The libretro core uses the same GameIDs and saves as the standalone build. Press `[HOTKEY]` + ![south](/wiki/south.png) to open the Quick Menu for shaders, bezels, or controller remaps.
 
+## Controls
 
----
+Point-and-click adventure controls rely on cursor movement. The default overlay mirrors the mouse + menu layout, but you can remap keys or button combinations with `/remapping_controls_per_emulator`. Use the emulator’s in-game options to adjust mouse speed or key bindings if a title feels sluggish.
+
+## Troubleshooting
+
+- Delete `scummvm.ini` inside a game folder and rerun the setup script when the launcher file is ignored.
+- Run `scummvm --add --recursive --path=/userdata/roms/scummvm` after moving directories to refresh the game list.
+- Ensure Roland MT-32 files exist inside `/userdata/bios/` when launching MIDI-based titles.
+- Refer to the [generic support pages](/support) for other issues.
