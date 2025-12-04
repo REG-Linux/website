@@ -331,7 +331,6 @@ nav:
     - WonderSwan Color: systems/wswanc.md
     - Sharp X1: systems/x1.md
     - Sharp X68000: systems/x68000.md
-    - Zelda Classic: systems/zc210.md
     - ZX81: systems/zx81.md
     - ZX Spectrum: systems/zxspectrum.md
 - Ports:
@@ -381,6 +380,7 @@ nav:
     - Solarus: engines/solarus.md
     - Singe: engines/singe.md
     - ScummVM: engines/scummvm.md
+    - Zelda Classic: engines/zc210.md
     - TheXTech: engines/thextech.md
   - Games:
     - Abuse: games/abuse.md
