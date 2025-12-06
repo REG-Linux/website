@@ -33,7 +33,7 @@ Requires Ayn Odin 2 Firmware v1.0.0.355 or newer which adds support for Linux bo
 - While holding down the VOL- button, press the power button and hold both buttons until you see the Ayn Log
 - The device should show the FastBoot Menu
 - Use the volume button to navigate the menu and change the BOOT MODE to Loader
-- Press power key to select START
+- Press power key to choose START
 - Device will then boot into REG Linux off the SD Card
 
 ## Additional References
