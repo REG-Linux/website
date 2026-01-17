@@ -24,6 +24,7 @@
       <span></span>
     </button>
   {% assign dropdown_active = nav_current == "emulators" or nav_current == "engines" or nav_current == "ports" %}
+  {% assign hardware_dropdown_active = nav_current == "hardware" or nav_current == "manufacturers" %}
   {% assign home_active = nav_current == "home" %}
   <nav class="site-nav" id="primary-navigation" aria-label="Primary">
     <div class="nav-dropdown home-dropdown {% if home_active %}is-active{% endif %}" aria-haspopup="true">
@@ -43,7 +44,13 @@
         <a href="{{ '/ports/' | relative_url }}" {% if nav_current == "ports" %}aria-current="page"{% endif %}>Ports</a>
       </div>
     </div>
-    <a href="{{ '/hardware/' | relative_url }}" {% if nav_current == "hardware" %}aria-current="page"{% endif %}>Hardware</a>
+    <div class="nav-dropdown {% if hardware_dropdown_active %}is-active{% endif %}" aria-haspopup="true">
+      <span class="dropdown-label">Hardware</span>
+      <div class="dropdown-menu">
+        <a href="{{ '/hardware/' | relative_url }}" {% if nav_current == "hardware" %}aria-current="page"{% endif %}>Devices</a>
+        <a href="{{ '/manufacturers/' | relative_url }}" {% if nav_current == "manufacturers" %}aria-current="page"{% endif %}>Manufacturers</a>
+      </div>
+    </div>
     <a href="{{ '/community/' | relative_url }}" {% if nav_current == "community" %}aria-current="page"{% endif %}>Community</a>
     <a href="{{ '/bundled-games/' | relative_url }}" {% if nav_current == "bundled-games" %}aria-current="page"{% endif %}>Bundled games</a>
   </nav>

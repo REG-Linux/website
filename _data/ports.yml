@@ -5,7 +5,7 @@
     EmulationStation. Its platform tag is `pc` for proper filtering.
   release_year: "1996"
   extensions: "game"
-  url: "https://wiki.reglinux.org/ports/abuse/"
+  url: "https://wiki.reglinux.org/games/abuse/"
 - name: "Cannonball"
   overview: |
     The Cannonball is a port platform developed by Ports. It is grouped with ports titles in
@@ -26,7 +26,7 @@
     EmulationStation. Its platform tag is `pc` for proper filtering.
   release_year: "1997"
   extensions: "game"
-  url: "https://wiki.reglinux.org/ports/cdogs/"
+  url: "https://wiki.reglinux.org/games/cdogs/"
 - name: "Commander Genius"
   overview: |
     Introduced in 1990 by The Commander Genius Team, the Commander Genius was a port system. Its
@@ -117,14 +117,14 @@
     titles in EmulationStation. Its platform tag is `pc` for proper filtering.
   release_year: "2011"
   extensions: "game"
-  url: "https://wiki.reglinux.org/ports/hcl/"
+  url: "https://wiki.reglinux.org/games/hcl/"
 - name: "Hurrican"
   overview: |
     Introduced in 2007 by Ports, the Hurrican was a port system. It is grouped with ports titles in
     EmulationStation. Its platform tag is `pc` for proper filtering.
   release_year: "2007"
   extensions: "game"
-  url: "https://wiki.reglinux.org/ports/hurrican/"
+  url: "https://wiki.reglinux.org/games/hurrican/"
 - name: "Return To Castle Wolfenstein"
   overview: |
     Introduced in 2001 by Ports, the Return To Castle Wolfenstein was a port system. It is grouped with
@@ -229,7 +229,7 @@
     in EmulationStation. Its platform tag is `pc` for proper filtering.
   release_year: "2006"
   extensions: "game"
-  url: "https://wiki.reglinux.org/ports/superbroswar/"
+  url: "https://wiki.reglinux.org/games/superbroswar/"
 - name: "The Force Engine"
   overview: |
     Introduced in 1995 by Ports, the The Force Engine was a port system. It is grouped with ports titles
@@ -243,7 +243,7 @@
     EmulationStation. Its platform tag is `pc` for proper filtering.
   release_year: "1995"
   extensions: "game"
-  url: "https://wiki.reglinux.org/ports/tyrian/"
+  url: "https://wiki.reglinux.org/games/tyrian/"
 - name: "TyrQuake"
   overview: |
     The TyrQuake is a port platform developed by Ports. It is grouped with ports titles in

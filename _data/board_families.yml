@@ -1,6 +1,6 @@
 allwinner:
   title: "Allwinner SoCs"
-  wiki_url: "https://wiki.reglinux.org/board/allwinner/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/allwinner/"
   summary: "REG Linux ships board support for Allwinner H2+/H3, H5, H6, H616/H618, and the H700 handheld tree; keep this reference page synced so contributors can find every directory."
   soCs:
     - "H2+"
@@ -17,7 +17,7 @@ allwinner:
 
 amlogic:
   title: "Amlogic SoCs"
-  wiki_url: "https://wiki.reglinux.org/board/amlogic/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/amlogic/"
   summary: "The wiki tracks Amlogic S812 through the latest S9 Gen4 / S905X3 families, covering TV boxes, NanoPi, Khadas, Radxa, Beelink, and HardKernel boards."
   soCs:
     - "S812"
@@ -43,7 +43,7 @@ amlogic:
 
 broadcom:
   title: "Broadcom (Raspberry Pi) SoCs"
-  wiki_url: "https://wiki.reglinux.org/board/broadcom/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/broadcom/"
   summary: "Each Broadcom board directory (BCM2711/BCM2712/BCM2837/BCM2836/BCM2835) stages kernels, DTBs, firmware, overlays, and patches before genimage builds the FAT/Share layout for Pi and Compute Module hardware."
   soCs:
     - "BCM2711"
@@ -58,7 +58,7 @@ broadcom:
 
 mediatek:
   title: "Mediatek MT8395"
-  wiki_url: "https://wiki.reglinux.org/board/mediatek/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/mediatek/"
   summary: "Radxa NIO 12L (Genio 1200/MT8395) board trees supply overlays, kernel configs, patches, and firmware helpers tailored to the Mediatek chipset."
   soCs:
     - "MT8395"
@@ -70,7 +70,7 @@ mediatek:
 
 qualcomm:
   title: "Qualcomm Snapdragon SoCs"
-  wiki_url: "https://wiki.reglinux.org/board/qualcomm/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/qualcomm/"
   summary: "Snapdragon board trees (SM8250, SM8550, and others) bundle dracut configs, firmware, overlays, and LinuxLoader/EFI artifacts for handhelds like the Retroid Pocket and AYN Odin families."
   soCs:
     - "SM8250"
@@ -85,7 +85,7 @@ qualcomm:
 
 rockchip:
   title: "Rockchip SoCs"
-  wiki_url: "https://wiki.reglinux.org/board/rockchip/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/rockchip/"
   summary: "Rockchip support spans RK3128 through RK3588 boards, where each SoC directory brings `create-boot-script`, `genimage`, overlays, DTBs, and patch fragments plus shared wiring."
   soCs:
     - "RK3128"
@@ -103,7 +103,7 @@ rockchip:
 
 samsung:
   title: "Samsung Exynos 5422"
-  wiki_url: "https://wiki.reglinux.org/board/samsung/"
+  wiki_url: "https://wiki.reglinux.org/sbcs/samsung/"
   summary: "The Samsung board tree powers the ODROID XU3/XU4 (Exynos 5422) with kernel configs, patches, overlays, and bootloader wiring."
   soCs:
     - "Exynos 5422"

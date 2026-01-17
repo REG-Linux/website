@@ -1,0 +1,85 @@
+- id: Anbernic
+  name: Anbernic
+  url: https://anbernic.com/
+  logo: Anbernic
+  logo_image: /assets/images/manufacturers/anbernic.png
+- id: ASUS
+  name: ASUS
+  url: https://www.asus.com/
+  logo: ASUS
+  logo_image: /assets/images/manufacturers/asus.svg
+- id: Banana Pi
+  name: Banana Pi
+  url: https://www.banana-pi.org/
+  logo: Banana Pi
+  logo_image: /assets/images/manufacturers/banana-pi.jpg
+- id: Beelink
+  name: Beelink
+  url: https://www.bee-link.com/
+  logo: Beelink
+  logo_image: /assets/images/manufacturers/beelink.png
+- id: Koch Media
+  name: Koch Media
+  url: https://www.kochmedia.com/
+  logo: Koch Media
+  logo_image: /assets/images/manufacturers/koch-media.png
+- id: Firefly
+  name: Firefly
+  url: https://en.t-firefly.com/
+  logo: Firefly
+  logo_image: /assets/images/manufacturers/firefly.png
+- id: Gameforce
+  name: GameForce
+  url: https://gameforce.store/
+  logo: GameForce
+  logo_image: /assets/images/manufacturers/gameforce.png
+- id: HardKernel
+  name: HardKernel
+  url: https://www.hardkernel.com/
+  logo: HardKernel
+  logo_image: /assets/images/manufacturers/hardkernel.jpg
+- id: Khadas
+  name: Khadas
+  url: https://www.khadas.com/
+  logo: Khadas
+  logo_image: /assets/images/manufacturers/khadas.svg
+- id: Milk-V
+  name: Milk-V
+  url: https://milkv.io/
+  logo: Milk-V
+  logo_image: /assets/images/manufacturers/milk-v.svg
+- id: MQMaker
+  name: MQMaker
+  url: https://mqmaker.com/
+  logo: MQMaker
+  logo_image: /assets/images/manufacturers/mqmaker.jpg
+- id: FriendlyElec
+  name: FriendlyElec
+  url: https://www.friendlyelec.com/
+  logo: FriendlyElec
+  logo_image: /assets/images/manufacturers/friendlyelec.png
+- id: Orange Pi
+  name: Orange Pi
+  url: https://orangepi.com/
+  logo: Orange Pi
+  logo_image: /assets/images/manufacturers/orange-pi.png
+- id: Radxa
+  name: Radxa
+  url: https://radxa.com/
+  logo: Radxa
+  logo_image: /assets/images/manufacturers/radxa.svg
+- id: Raspberry
+  name: Raspberry Pi
+  url: https://www.raspberrypi.org/
+  logo: Raspberry Pi
+  logo_image: /assets/images/manufacturers/raspberry-pi.png
+- id: Starfive
+  name: StarFive
+  url: https://www.starfivetech.com/
+  logo: StarFive
+  logo_image: /assets/images/manufacturers/starfive.svg
+- id: Valve
+  name: Valve
+  url: https://www.valvesoftware.com/
+  logo: Valve
+  logo_image: /assets/images/manufacturers/valve.svg
