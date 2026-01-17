@@ -22,6 +22,22 @@ Radxa Zero pairs the Amlogic S905Y2 SoC with the REG Linux stack for a polished 
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Radxa section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Amlogic S905Y2 | ARM Cortex-A53 (Quad-core) | Mali-G31 MP2 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Radxa Zero build from the downloads page or the official board entry .

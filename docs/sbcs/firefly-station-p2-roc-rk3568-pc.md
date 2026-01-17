@@ -22,6 +22,22 @@ Firefly Station P2 / ROC-RK3568-PC pairs the Rockchip RK3568 SoC with the REG Li
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Firefly section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Rockchip RK3568 | ARM Cortex-A55 (Quad-core) | Mali-G52 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Firefly Station P2 / ROC-RK3568-PC build from the downloads page or the official board entry .

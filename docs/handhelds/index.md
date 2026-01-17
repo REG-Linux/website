@@ -19,6 +19,7 @@ This section ties the board-specific work you see under `Board/` with the automa
 - [Anbernic RG503](anbernic/rg503.md)
 - [Anbernic RG552](anbernic/rg552.md)
 - [Anbernic RG ARC](anbernic/rgarc.md)
+- [Anbernic RG DS](anbernic/rg-ds.md)
 - [Anbernic RG35XX Plus](anbernic/rg35xx-plus.md)
 - [Anbernic RG35XX Pro](anbernic/rg35xx-pro.md)
 - [Anbernic RG35XX 2024](anbernic/rg35xx-2024.md)

@@ -22,6 +22,22 @@ Orange Pi Zero 2W pairs the Allwinner H618 SoC with the REG Linux stack for a po
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Orange Pi section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Allwinner H618 | ARM Cortex-A53 (Quad-core) | Mali-G31 MP2 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Orange Pi Zero 2W build from the downloads page or the official board entry .

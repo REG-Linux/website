@@ -22,6 +22,22 @@ Banana Pi M7 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polish
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Banana Pi section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Rockchip RK3588 | ARM Cortex-A76/A55 (Octa-core) | Mali-G610 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Banana Pi M7 build from the downloads page or the official board entry .

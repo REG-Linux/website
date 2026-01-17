@@ -5,7 +5,13 @@ The Qualcomm tree collects the kernel, dracut, firmware, and image recipes that 
 ## Supported devices
 - `sm8250`: Retroid RP5, RP Flip 2, RP Mini
 - `sm8550`: AYN Odin2, Odin2 Portal, AYANEO Pocket S
+- `qcs6490`: Radxa Dragon Q6A
 - (directories such as `sd845/` and `sm6115/` exist but currently lack dedicated README guides; inspect them directly when needed)
+
+## QCS6490 – Radxa Dragon Q6A
+
+* Board support follows the Qualcomm build pattern with device-specific DTBs and bootloader configs staged by per-board helpers.
+* Use the QCS6490-targeted image for Dragon Q6A to ensure the right firmware and DTB are deployed.
 
 ## SM8250 – Retroid Pocket family
 

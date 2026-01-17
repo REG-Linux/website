@@ -22,6 +22,22 @@ Beelink GT King Pro pairs the Amlogic S922X-H SoC with the REG Linux stack for a
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Beelink section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Amlogic S922X-H | ARM Cortex-A73/A53 (Hexa-core) | Mali-G52 MP4 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Beelink GT King Pro build from the downloads page or the official board entry .

@@ -22,6 +22,22 @@ Radxa NIO 12L pairs the Genio 1200 (MT8395) SoC with the REG Linux stack for a p
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Radxa section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Genio 1200 (MT8395) | ARM Cortex-A78/A55 (Octa-core) | Mali-G610 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Radxa NIO 12L build from the downloads page or the official board entry .

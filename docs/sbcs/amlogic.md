@@ -64,6 +64,14 @@ Supported devices:
 * `odroid-c4`
 * `s905x3-tvbox` (you will need to find the correct DTB and adjust boot scripts)
 
+## Amlogic S905X5M
+
+Currently supports the HardKernel ODROID C5.
+
+Supported devices:
+
+* `odroid-c5`
+
 ## Amlogic S922X / A311D
 
 This covers boards such as :

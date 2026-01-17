@@ -22,6 +22,22 @@ HardKernel ODROID XU3/XU4 pairs the Samsung Exynos 5422 SoC with the REG Linux s
 
 | Image availability | Download the latest build from the REG Linux downloads hub (HardKernel section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Samsung Exynos 5422 | ARM Cortex-A15/A7 (Octa-core) | Mali-T628 MP6 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest HardKernel ODROID XU3/XU4 build from the downloads page or the official board entry .

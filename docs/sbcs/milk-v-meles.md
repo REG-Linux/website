@@ -22,6 +22,22 @@ Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro 
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Milk-V section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| TH1520 | T-Head C910 (Quad-core) | Imagination GPU |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | PowerVR (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Milk-V Meles build from the downloads page or the official board entry .

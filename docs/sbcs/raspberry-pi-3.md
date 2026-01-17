@@ -22,6 +22,22 @@ Raspberry Pi 3 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a pol
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Raspberry section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Broadcom BCM2837 | ARM Cortex-A53 (Quad-core) | VideoCore IV |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | V3D/VC4 (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Raspberry Pi 3 build from the downloads page or the official board entry .

@@ -22,6 +22,22 @@ Orange Pi PC 2 pairs the Allwinner H5 SoC with the REG Linux stack for a polishe
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Orange Pi section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Allwinner H5 | ARM Cortex-A53 (Quad-core) | Mali-450 MP4 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Orange Pi PC 2 build from the downloads page or the official board entry .
