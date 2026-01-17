@@ -18,7 +18,7 @@ channels:
     url: https://github.com/REG-Linux
   - id: wiki
     title: Wiki & docs
-    home_label: Browse the official wiki
+    home_label: Browse the official Wiki
     description: Installation guides, device-specific notes, emulated systems, engines, and ports live on the MkDocs wiki. Bookmark it for flashing, debugging, or developer references.
     icon: /assets/images/docs-icon.svg
     icon_alt: Documentation
