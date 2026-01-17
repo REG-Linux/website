@@ -18,4 +18,5 @@ Each anbernic entry below points to the generated device page that mirrors the Y
 - [Rg40Xx V](anbernic/rg40xx-v.md)
 - [Rg503](anbernic/rg503.md)
 - [Rg552](anbernic/rg552.md)
+- [Rg Ds](anbernic/rg-ds.md)
 - [Rgarc](anbernic/rgarc.md)

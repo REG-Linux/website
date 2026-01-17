@@ -22,6 +22,22 @@ Firefly Station M2 / ROC-RK3566-PC pairs the Rockchip RK3566 SoC with the REG Li
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Firefly section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Rockchip RK3566 | ARM Cortex-A55 (Quad-core) | Mali-G52 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Firefly Station M2 / ROC-RK3566-PC build from the downloads page or the official board entry .

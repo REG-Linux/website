@@ -31,144 +31,156 @@ theme:
   - content.action.edit
 nav:
 - Home: index.md
-- Getting Started: getting-started.md
-- Architecture: architecture.md
-- Consoles:
-  - Capcom Home Arcade: sbcs/capcom-home-arcade.md
-- Single-Board Computers:
-  - Overview:
-    - Catalog: sbcs/catalog.md
-    - Allwinner Boards: sbcs/allwinner.md
-    - Amlogic Boards: sbcs/amlogic.md
-    - Broadcom Boards: sbcs/broadcom.md
-    - Qualcomm Boards: sbcs/qualcomm.md
-    - Mediatek Boards: sbcs/mediatek.md
-    - Samsung Boards: sbcs/samsung.md
-    - Rockchip Boards: sbcs/rockchip.md
-  - Asus:
-    - Asus Tinker Board S: sbcs/asus-tinker-board-s.md
-  - Banana Pi:
-    - Banana Pi M2S: sbcs/banana-pi-m2s.md
-    - Banana Pi M2 Zero: sbcs/banana-pi-m2-zero.md
-    - Banana Pi M4 Berry: sbcs/banana-pi-m4-berry.md
-    - Banana Pi M5: sbcs/banana-pi-m5.md
-    - Banana Pi M7: sbcs/banana-pi-m7.md
-  - Beelink:
-    - Beelink GT King: sbcs/beelink-gt-king.md
-    - Beelink GT King Pro: sbcs/beelink-gt-king-pro.md
-  - Firefly:
-    - Firefly Station M2 ROC-RK3566 PC: sbcs/firefly-station-m2-roc-rk3566-pc.md
-    - Firefly Station M3 ROC-RK3588S PC: sbcs/firefly-station-m3-roc-rk3588s-pc.md
-    - Firefly Station P2 ROC-RK3568 PC: sbcs/firefly-station-p2-roc-rk3568-pc.md
+- Start Here:
+  - Overview: start-here/index.md
+  - Getting Started: getting-started.md
+  - Installation: installation.md
+  - First Boot Checklist: start-here/first-boot.md
+  - Updates & Rollback: start-here/updates-rollback.md
+- Players:
+  - Overview: players/index.md
+  - Controller Setup: players/controller-setup.md
+- Devices:
+  - Overview: devices/index.md
+  - Consoles:
+    - Capcom Home Arcade: sbcs/capcom-home-arcade.md
+  - Single-Board Computers:
+    - Overview:
+      - Catalog: sbcs/catalog.md
+      - Allwinner Boards: sbcs/allwinner.md
+      - Amlogic Boards: sbcs/amlogic.md
+      - Broadcom Boards: sbcs/broadcom.md
+      - Qualcomm Boards: sbcs/qualcomm.md
+      - Mediatek Boards: sbcs/mediatek.md
+      - Samsung Boards: sbcs/samsung.md
+      - Rockchip Boards: sbcs/rockchip.md
+    - Asus:
+      - Asus Tinker Board S: sbcs/asus-tinker-board-s.md
+    - Banana Pi:
+      - Banana Pi M2S: sbcs/banana-pi-m2s.md
+      - Banana Pi M2 Zero: sbcs/banana-pi-m2-zero.md
+      - Banana Pi M4 Berry: sbcs/banana-pi-m4-berry.md
+      - Banana Pi M5: sbcs/banana-pi-m5.md
+      - Banana Pi M7: sbcs/banana-pi-m7.md
+    - Beelink:
+      - Beelink GT King: sbcs/beelink-gt-king.md
+      - Beelink GT King Pro: sbcs/beelink-gt-king-pro.md
+    - Firefly:
+      - Firefly Station M2 ROC-RK3566 PC: sbcs/firefly-station-m2-roc-rk3566-pc.md
+      - Firefly Station M3 ROC-RK3588S PC: sbcs/firefly-station-m3-roc-rk3588s-pc.md
+      - Firefly Station P2 ROC-RK3568 PC: sbcs/firefly-station-p2-roc-rk3568-pc.md
   - Hardkernel:
     - Hardkernel Odroid C2: sbcs/hardkernel-odroid-c2.md
     - Hardkernel Odroid C4: sbcs/hardkernel-odroid-c4.md
+    - Hardkernel Odroid C5: sbcs/hardkernel-odroid-c5.md
     - Hardkernel Odroid M1: sbcs/hardkernel-odroid-m1.md
     - Hardkernel Odroid XU3/XU4: sbcs/hardkernel-odroid-xu3-xu4.md
-  - Khadas:
-    - Khadas Edge 2: sbcs/khadas-edge-2.md
-    - Khadas VIM 1: sbcs/khadas-vim-1.md
-    - Khadas VIM 1S: sbcs/khadas-vim-1s.md
-    - Khadas VIM 2: sbcs/khadas-vim-2.md
-    - Khadas VIM 3L: sbcs/khadas-vim-3l.md
-    - Khadas VIM 3: sbcs/khadas-vim-3.md
-    - Khadas VIM 4: sbcs/khadas-vim-4.md
-  - Milk-V:
-    - Milk-V Mars: sbcs/milk-v-mars.md
-    - Milk-V Meles: sbcs/milk-v-meles.md
-  - MQMaker MiQi: sbcs/mqmaker-miqi.md
-  - FriendlyElec:
-    - NanoPi K2: sbcs/nano-pi-k2.md
-    - NanoPi M4V2: sbcs/nano-pi-m4v2.md
-  - Orange Pi:
-    - Orange Pi 800: sbcs/orange-pi-800.md
-    - Orange Pi One: sbcs/orange-pi-one.md
-    - Orange Pi One Plus: sbcs/orange-pi-one-plus.md
-    - Orange Pi PC 2: sbcs/orange-pi-pc-2.md
-    - Orange Pi PC: sbcs/orange-pi-pc.md
-    - Orange Pi Plus 2E: sbcs/orange-pi-plus-2e.md
-    - Orange Pi Zero 2: sbcs/orange-pi-zero-2.md
-    - Orange Pi Zero 2W: sbcs/orange-pi-zero-2w.md
-    - Orange Pi Zero 3: sbcs/orange-pi-zero-3.md
+    - Khadas:
+      - Khadas Edge 2: sbcs/khadas-edge-2.md
+      - Khadas VIM 1: sbcs/khadas-vim-1.md
+      - Khadas VIM 1S: sbcs/khadas-vim-1s.md
+      - Khadas VIM 2: sbcs/khadas-vim-2.md
+      - Khadas VIM 3L: sbcs/khadas-vim-3l.md
+      - Khadas VIM 3: sbcs/khadas-vim-3.md
+      - Khadas VIM 4: sbcs/khadas-vim-4.md
+    - Milk-V:
+      - Milk-V Mars: sbcs/milk-v-mars.md
+      - Milk-V Meles: sbcs/milk-v-meles.md
+    - MQMaker MiQi: sbcs/mqmaker-miqi.md
+    - FriendlyElec:
+      - NanoPi K2: sbcs/nano-pi-k2.md
+      - NanoPi M4V2: sbcs/nano-pi-m4v2.md
+    - Orange Pi:
+      - Orange Pi 800: sbcs/orange-pi-800.md
+      - Orange Pi One: sbcs/orange-pi-one.md
+      - Orange Pi One Plus: sbcs/orange-pi-one-plus.md
+      - Orange Pi PC 2: sbcs/orange-pi-pc-2.md
+      - Orange Pi PC: sbcs/orange-pi-pc.md
+      - Orange Pi Plus 2E: sbcs/orange-pi-plus-2e.md
+      - Orange Pi Zero 2: sbcs/orange-pi-zero-2.md
+      - Orange Pi Zero 2W: sbcs/orange-pi-zero-2w.md
+      - Orange Pi Zero 3: sbcs/orange-pi-zero-3.md
   - Radxa:
+    - Radxa Dragon Q6A: sbcs/radxa-dragon-q6a.md
     - Radxa Nio 12L: sbcs/radxa-nio-12l.md
     - Radxa Rock 5A: sbcs/radxa-rock-5a.md
     - Radxa Rock 5B: sbcs/radxa-rock-5b.md
     - Radxa Zero 2: sbcs/radxa-zero-2.md
     - Radxa Zero: sbcs/radxa-zero.md
-  - Raspberry Pi:
-    - Raspberry Pi 2: sbcs/raspberry-pi-2.md
-    - Raspberry Pi 3: sbcs/raspberry-pi-3.md
-    - Raspberry Pi 400: sbcs/raspberry-pi-400.md
-    - Raspberry Pi 4: sbcs/raspberry-pi-4.md
-    - Raspberry Pi 5: sbcs/raspberry-pi-5.md
-    - Raspberry Pi A/A+/B/B+: sbcs/raspberry-pi-a-a-b-b.md
-    - Raspberry Pi Zero 2: sbcs/raspberry-pi-zero-2.md
-    - Raspberry Pi Zero: sbcs/raspberry-pi-zero.md
-  - StarFive VisionFive 2: sbcs/starfive-visionfive-2.md
-- Handhelds:
-  - Overview: handhelds/index.md
-  - Catalog:
-    - Anbernic:
-      - Overview: handhelds/anbernic.md
-      - Anbernic RG351: handhelds/anbernic/rg351pmv.md
-      - Anbernic RG353: handhelds/anbernic/rg353pmvvs.md
-      - Anbernic RG503: handhelds/anbernic/rg503.md
-      - Anbernic RG552: handhelds/anbernic/rg552.md
-      - Anbernic RG ARC: handhelds/anbernic/rgarc.md
-      - Anbernic RG35XX Plus: handhelds/anbernic/rg35xx-plus.md
-      - Anbernic RG35XX Pro: handhelds/anbernic/rg35xx-pro.md
-      - Anbernic RG35XX 2024: handhelds/anbernic/rg35xx-2024.md
-      - Anbernic RG35XX H: handhelds/anbernic/rg35xx-h.md
-      - Anbernic RG35XX SP: handhelds/anbernic/rg35xx-sp.md
-      - Anbernic RG28XX: handhelds/anbernic/rg28xx.md
-      - Anbernic RG40XX V: handhelds/anbernic/rg40xx-v.md
-      - Anbernic RG40XX H: handhelds/anbernic/rg40xx-h.md
-      - Anbernic RG CubeXX: handhelds/anbernic/rg-cubexx.md
-      - Anbernic RG34XX: handhelds/anbernic/rg34xx.md
-    - Ayn:
-      - Overview: handhelds/ayn.md
-      - Ayn Odin 2: handhelds/ayn/odin2.md
-    - AYANEO:
-      - Overview: handhelds/ayaneo.md
-      - Pocket S: handhelds/ayaneo/pockets.md
-    - GameForce:
-      - GameForce Chi: sbcs/gameforce-chi.md
-      - GameForce Ace: handhelds/gameforce/gameforce-ace.md
-    - Hardkernel:
-      - Overview: handhelds/hardkernel.md
-      - Odroid Go Advance: handhelds/hardkernel/odroid-go-advance.md
-      - Odroid Go Super: handhelds/hardkernel/odroid-go-super.md
-      - Odroid Go Ultra: handhelds/hardkernel/odroid-go-ultra.md
-    - MagicX:
-      - XU Mini M: handhelds/magicx/xu-mini-m.md
-    - Powkiddy:
-      - Overview: handhelds/powkiddy.md
-      - RGB10: handhelds/powkiddy/rgb10.md
-      - RGB10 Max 3 Pro: handhelds/powkiddy/rgb10-max-3-pro.md
-      - RGB10 Max 3: handhelds/powkiddy/rgb10-max-3.md
-      - RGB10X: handhelds/powkiddy/rgb10x.md
-      - RK2023: handhelds/powkiddy/rk2023.md
-      - RGB20SX: handhelds/powkiddy/rgb20sx.md
-      - RGB20 Pro: handhelds/powkiddy/rgb20-pro.md
-      - RGB30: handhelds/powkiddy/rgb30.md
-      - X35S: handhelds/powkiddy/x35s.md
-      - X35H: handhelds/powkiddy/x35h.md
-      - X55: handhelds/powkiddy/x55.md
-      - XU10: handhelds/powkiddy/xu10.md
-    - Retroid:
-      - Overview: handhelds/retroid.md
-      - Retroid Pocket 5: handhelds/retroid/retroid-pocket-5.md
-      - Retroid Pocket Mini: handhelds/retroid/retroid-pocket-mini.md
-      - Retroid Pocket Flip2: handhelds/retroid/retroid-pocket-flip2.md
-    - x86_64:
-      - Asus ROG Ally: handhelds/x86_64/asus-rog-ally.md
-      - Valve Steam Deck: handhelds/x86_64/steam-deck.md
-    - Unbranded:
-      - Game Console R33S: handhelds/unbranded/game-console-r33s.md
-      - Game Console R35S R36S: handhelds/unbranded/game-console-r35s-r36s.md
-      - RK3326 clones: handhelds/unbranded/rk3326-clones.md
-- Emulators:
+    - Raspberry Pi:
+      - Raspberry Pi 2: sbcs/raspberry-pi-2.md
+      - Raspberry Pi 3: sbcs/raspberry-pi-3.md
+      - Raspberry Pi 400: sbcs/raspberry-pi-400.md
+      - Raspberry Pi 4: sbcs/raspberry-pi-4.md
+      - Raspberry Pi 5: sbcs/raspberry-pi-5.md
+      - Raspberry Pi A/A+/B/B+: sbcs/raspberry-pi-a-a-b-b.md
+      - Raspberry Pi Zero 2: sbcs/raspberry-pi-zero-2.md
+      - Raspberry Pi Zero: sbcs/raspberry-pi-zero.md
+    - StarFive VisionFive 2: sbcs/starfive-visionfive-2.md
+  - Handhelds:
+    - Overview: handhelds/index.md
+    - Catalog:
+      - Anbernic:
+        - Overview: handhelds/anbernic.md
+        - Anbernic RG351: handhelds/anbernic/rg351pmv.md
+        - Anbernic RG353: handhelds/anbernic/rg353pmvvs.md
+        - Anbernic RG503: handhelds/anbernic/rg503.md
+        - Anbernic RG552: handhelds/anbernic/rg552.md
+        - Anbernic RG ARC: handhelds/anbernic/rgarc.md
+        - Anbernic RG DS: handhelds/anbernic/rg-ds.md
+        - Anbernic RG35XX Plus: handhelds/anbernic/rg35xx-plus.md
+        - Anbernic RG35XX Pro: handhelds/anbernic/rg35xx-pro.md
+        - Anbernic RG35XX 2024: handhelds/anbernic/rg35xx-2024.md
+        - Anbernic RG35XX H: handhelds/anbernic/rg35xx-h.md
+        - Anbernic RG35XX SP: handhelds/anbernic/rg35xx-sp.md
+        - Anbernic RG28XX: handhelds/anbernic/rg28xx.md
+        - Anbernic RG40XX V: handhelds/anbernic/rg40xx-v.md
+        - Anbernic RG40XX H: handhelds/anbernic/rg40xx-h.md
+        - Anbernic RG CubeXX: handhelds/anbernic/rg-cubexx.md
+        - Anbernic RG34XX: handhelds/anbernic/rg34xx.md
+      - Ayn:
+        - Overview: handhelds/ayn.md
+        - Ayn Odin 2: handhelds/ayn/odin2.md
+      - AYANEO:
+        - Overview: handhelds/ayaneo.md
+        - Pocket S: handhelds/ayaneo/pockets.md
+      - GameForce:
+        - GameForce Chi: sbcs/gameforce-chi.md
+        - GameForce Ace: handhelds/gameforce/gameforce-ace.md
+      - Hardkernel:
+        - Overview: handhelds/hardkernel.md
+        - Odroid Go Advance: handhelds/hardkernel/odroid-go-advance.md
+        - Odroid Go Super: handhelds/hardkernel/odroid-go-super.md
+        - Odroid Go Ultra: handhelds/hardkernel/odroid-go-ultra.md
+      - MagicX:
+        - XU Mini M: handhelds/magicx/xu-mini-m.md
+      - Powkiddy:
+        - Overview: handhelds/powkiddy.md
+        - RGB10: handhelds/powkiddy/rgb10.md
+        - RGB10 Max 3 Pro: handhelds/powkiddy/rgb10-max-3-pro.md
+        - RGB10 Max 3: handhelds/powkiddy/rgb10-max-3.md
+        - RGB10X: handhelds/powkiddy/rgb10x.md
+        - RK2023: handhelds/powkiddy/rk2023.md
+        - RGB20SX: handhelds/powkiddy/rgb20sx.md
+        - RGB20 Pro: handhelds/powkiddy/rgb20-pro.md
+        - RGB30: handhelds/powkiddy/rgb30.md
+        - X35S: handhelds/powkiddy/x35s.md
+        - X35H: handhelds/powkiddy/x35h.md
+        - X55: handhelds/powkiddy/x55.md
+        - XU10: handhelds/powkiddy/xu10.md
+      - Retroid:
+        - Overview: handhelds/retroid.md
+        - Retroid Pocket 5: handhelds/retroid/retroid-pocket-5.md
+        - Retroid Pocket Mini: handhelds/retroid/retroid-pocket-mini.md
+        - Retroid Pocket Flip2: handhelds/retroid/retroid-pocket-flip2.md
+      - x86_64:
+        - Asus ROG Ally: handhelds/x86_64/asus-rog-ally.md
+        - Valve Steam Deck: handhelds/x86_64/steam-deck.md
+      - Unbranded:
+        - Game Console R33S: handhelds/unbranded/game-console-r33s.md
+        - Game Console R35S R36S: handhelds/unbranded/game-console-r35s-r36s.md
+        - RK3326 clones: handhelds/unbranded/rk3326-clones.md
+- Systems & Emulators:
   - Overview: systems/index.md
   - Emulated Systems:
     - Apple:
@@ -389,8 +401,11 @@ nav:
     - Hurrican: games/hurrican.md
     - Super Mario War: games/superbroswar.md
     - Tyrian: games/tyrian.md
-- Installation: installation.md
-- Developer Guide: dev-guide.md
+- Maintainers: maintainers/index.md
+- Developers:
+  - Overview: developers/index.md
+  - Architecture: architecture.md
+  - Developer Guide: dev-guide.md
 - Community: community.md
 plugins:
 - search
@@ -408,4 +423,4 @@ extra:
   - icon: fontawesome/brands/github
     link: https://github.com/REG-Linux
   - icon: fontawesome/brands/discord
-    link: https://discord.gg/reglinux
+    link: https://discord.gg/M38rd2kRNw

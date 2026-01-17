@@ -22,6 +22,22 @@ HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a
 
 | Image availability | Download the latest build from the REG Linux downloads hub (HardKernel section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Amlogic S905X3 | ARM Cortex-A55 (Quad-core) | Mali-G31 MP2 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest HardKernel ODROID C4 build from the downloads page or the official board entry .

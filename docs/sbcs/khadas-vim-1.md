@@ -22,6 +22,22 @@ Khadas VIM 1 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polish
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Khadas section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Amlogic S905(X) | ARM Cortex-A53 (Quad-core) | Mali-450 MP3 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Khadas VIM 1 build from the downloads page or the official board entry .

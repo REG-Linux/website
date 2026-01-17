@@ -22,6 +22,22 @@ Gameforce CHI pairs the Rockchip RK3326 SoC with the REG Linux stack for a polis
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Gameforce section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Rockchip RK3326 | ARM Cortex-A35 (Quad-core) | Mali-G31 MP2 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Gameforce CHI build from the downloads page or the official board entry .

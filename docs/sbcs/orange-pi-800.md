@@ -22,6 +22,22 @@ Orange Pi 800 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polis
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Orange Pi section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Rockchip RK3399 | ARM Cortex-A72/A53 (Hexa-core) | Mali-T860 MP4 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Orange Pi 800 build from the downloads page or the official board entry .

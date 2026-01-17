@@ -22,6 +22,22 @@ Asus Tinker Board (S) pairs the Rockchip RK3288 SoC with the REG Linux stack for
 
 | Image availability | Download the latest build from the REG Linux downloads hub (ASUS section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Rockchip RK3288 | ARM Cortex-A17 (Quad-core) | Mali-T764 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Asus Tinker Board (S) build from the downloads page or the official board entry .

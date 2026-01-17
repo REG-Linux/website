@@ -28,6 +28,7 @@ The download catalog now exposes one REG Linux page per supported single-board p
 ### HardKernel
 - [HardKernel ODROID C2](hardkernel-odroid-c2.md) — **SoC:** Amlogic S905(X) — HardKernel ODROID C2 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
 - [HardKernel ODROID C4](hardkernel-odroid-c4.md) — **SoC:** Amlogic S905X3 — HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+- [HardKernel ODROID C5](hardkernel-odroid-c5.md) — **SoC:** Amlogic S905X5M — HardKernel ODROID C5 pairs the Amlogic S905X5M SoC with the REG Linux stack for a polished retro console.
 - [HardKernel ODROID M1](hardkernel-odroid-m1.md) — **SoC:** Rockchip RK3568 — HardKernel ODROID M1 pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console.
 - [HardKernel ODROID XU3/XU4](hardkernel-odroid-xu3-xu4.md) — **SoC:** Samsung Exynos 5422 — HardKernel ODROID XU3/XU4 pairs the Samsung Exynos 5422 SoC with the REG Linux stack for a polished retro console.
 
@@ -62,6 +63,7 @@ The download catalog now exposes one REG Linux page per supported single-board p
 - [Orange Pi Zero 3](orange-pi-zero-3.md) — **SoC:** Allwinner H618 — Orange Pi Zero 3 pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.
 
 ### Radxa
+- [Radxa Dragon Q6A](radxa-dragon-q6a.md) — **SoC:** Qualcomm QCS6490 — Radxa Dragon Q6A pairs the Qualcomm QCS6490 SoC with the REG Linux stack for a polished retro console.
 - [Radxa NIO 12L](radxa-nio-12l.md) — **SoC:** Genio 1200 (MT8395) — Radxa NIO 12L pairs the Genio 1200 (MT8395) SoC with the REG Linux stack for a polished retro console.
 - [Radxa Rock 5A](radxa-rock-5a.md) — **SoC:** Rockchip RK3588 — Radxa Rock 5A pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
 - [Radxa Rock 5B](radxa-rock-5b.md) — **SoC:** Rockchip RK3588 — Radxa Rock 5B pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.

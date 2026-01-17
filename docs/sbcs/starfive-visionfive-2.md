@@ -22,6 +22,22 @@ StarFive VisionFive 2 pairs the StarFive JH7110 SoC with the REG Linux stack for
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Starfive section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| StarFive JH7110 | SiFive U74 (Quad-core) | Imagination BXE-4-32 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | PowerVR (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest StarFive VisionFive 2 build from the downloads page or the official board entry .

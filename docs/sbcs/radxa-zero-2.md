@@ -22,6 +22,22 @@ Radxa Zero 2 pairs the Amlogic A311D SoC with the REG Linux stack for a polished
 
 | Image availability | Download the latest build from the REG Linux downloads hub (Radxa section). |
 
+## Hardware
+
+| SoC | CPU | GPU |
+| --- | --- | --- |
+| Amlogic A311D | ARM Cortex-A73/A53 (Hexa-core) | Mali-G52 MP4 |
+
+| RAM | Storage | Connectivity |
+| --- | --- | --- |
+| Varies by board | Varies by board | Varies by board |
+
+## Software
+
+| Kernel | GPU drivers | Compositor | Interface |
+| --- | --- | --- | --- |
+| Linux | Panfrost (Mesa) | Device-specific | REG-ES |
+
 ## Installation notes
 
 1. Grab the image. Download the latest Radxa Zero 2 build from the downloads page or the official board entry .
