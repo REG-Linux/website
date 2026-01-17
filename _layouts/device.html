@@ -59,16 +59,25 @@ layout: default
       <ul class="hero-highlights">
         <li>Manufacturer: {{ manufacturers_list | join: ', ' }}</li>
         <li>SoC: {{ soc_list | join: ', ' }}</li>
-        <li>Maintained on the REG Linux download channel</li>
+        <li><a href="{{ device_download }}" target="_blank" rel="noreferrer">Download image</a></li>
       </ul>
     </div>
     <div class="hero-media">
-      <figure>
-        {% if device_image %}
-          <img src="{{ device_image | relative_url }}" alt="{{ device_title }}" loading="lazy"{% if device_image_width %} width="{{ device_image_width }}"{% endif %}{% if device_image_height %} height="{{ device_image_height }}"{% endif %} />
-        {% endif %}
-        <figcaption>{{ device_title }} running REG Linux.</figcaption>
-      </figure>
+      <div class="device-quick-card">
+        <div class="device-quick-media">
+          {% if device_image %}
+            <img src="{{ device_image | relative_url }}" alt="{{ device_title }}" loading="lazy"{% if device_image_width %} width="{{ device_image_width }}"{% endif %}{% if device_image_height %} height="{{ device_image_height }}"{% endif %} />
+          {% endif %}
+        </div>
+        <div class="device-quick-info">
+          <h3>Quick specs</h3>
+          <ul class="device-quick-list">
+            <li><strong>Manufacturer:</strong> {{ manufacturers_list | join: ', ' }}</li>
+            <li><strong>SoC:</strong> {{ soc_list | join: ', ' }}</li>
+            <li><strong>Download:</strong> Coming soon</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
