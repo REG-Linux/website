@@ -121,6 +121,7 @@ description: Choose your REG Linux image by vendor or architecture across the su
 </main>
 
 <footer class="site-footer">
+  {% include vendor-strip.html %}
   <p>{{ download_content.footer.text }}</p>
   <p class="small">{{ download_content.footer.note }}</p>
 </footer>

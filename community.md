@@ -17,7 +17,7 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
         Discuss hardware, discover build tips, share improvements, and help keep the wiki and builds polished. Our Discord, GitHub, and documentation hubs stay in sync with every release.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://discord.gg/reglinux" target="_blank" rel="noreferrer">Join Discord</a>
+        <a class="btn primary" href="https://discord.gg/M38rd2kRNw" target="_blank" rel="noreferrer">Join Discord</a>
         <a class="btn secondary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Contribute on GitHub</a>
       </div>
     </div>

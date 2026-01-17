@@ -6,7 +6,7 @@ hero:
     The wiki’s board directory documents how we handle Broadcom, Allwinner, Amlogic, Rockchip, Qualcomm, Mediatek, and Samsung devices.
   ctas:
     - label: Browse the board directory
-      href: https://wiki.reglinux.org/board/
+      href: https://wiki.reglinux.org/sbcs/catalog/
       style: primary
     - label: Download builds
       href: /download/
@@ -28,4 +28,4 @@ closing:
     The board README files walk through kernel config, overlays, firmware, DTB layout, and `genimage.cfg` partitions per device.
     Follow the wiki links above to see which DTBs, firmware blobs, or u-boot binaries belong to an SoC before flashing.
 cta_label: Open board docs
-cta_href: https://wiki.reglinux.org/board/
+cta_href: https://wiki.reglinux.org/sbcs/catalog/

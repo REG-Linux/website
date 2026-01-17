@@ -186,6 +186,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
 </main>
 
 <footer class="site-footer">
+  {% include vendor-strip.html %}
   <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.<br/>All rights reserved.</p>
   <p class="small">
     All product names, logos, and brands are property of their respective owners.<br/>

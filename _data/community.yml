@@ -7,7 +7,7 @@ channels:
     icon: /assets/images/discord-logo.svg
     icon_alt: Discord logo
     cta_label: Open Discord
-    url: https://discord.gg/reglinux
+    url: https://discord.gg/M38rd2kRNw
   - id: github
     title: GitHub
     home_label: Contribute on GitHub

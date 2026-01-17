@@ -1,0 +1,23 @@
+{% assign manufacturers = site.data.manufacturers %}
+<div class="footer-vendors">
+  <p class="footer-kicker">Manufacturers</p>
+  <div class="vendor-marquee" role="region" aria-label="Manufacturer logos">
+    <div class="vendor-track">
+      {% for repeat in (1..2) %}
+        <ul class="vendor-row" {% if repeat == 2 %}aria-hidden="true"{% endif %}>
+          {% for vendor in manufacturers %}
+            <li>
+              <a class="vendor-logo" href="{{ vendor.url }}" target="_blank" rel="noreferrer">
+                {% if vendor.logo_image %}
+                  <img src="{{ vendor.logo_image | relative_url }}" alt="{{ vendor.name }} logo" loading="lazy" />
+                {% else %}
+                  <span class="vendor-logo-text">{{ vendor.logo | default: vendor.name }}</span>
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>
