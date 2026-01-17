@@ -29,6 +29,7 @@ layout: default
 {% assign device_lede = page.lede | default: device_lookup.lede | default: device_title | append: " pairs the " | append: soc_text | append: " SoC with the REG Linux stack for a polished retro console." %}
 {% assign board_link = device_board_url | default: "https://reglinux.org" %}
 {% assign device_url = '/download/' | append: device_slug | append: '/' | relative_url %}
+{% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
 {% assign soc_identifier = soc_list | first | default: '' %}
 {% assign normalized_soc = soc_identifier | downcase %}
 {% assign board_info = nil %}
@@ -87,8 +88,8 @@ layout: default
         <p>{{ soc_list | join: ', ' }}</p>
       </div>
       <div class="spec-card">
-        <h3>Image availability</h3>
-        <p>Download the latest build from the REG Linux <a href="{{ '/download/' | relative_url }}">downloads hub</a> ({{ device_brand }} section).</p>
+        <h3>Download link</h3>
+        <a class="btn primary large" href="{{ device_download }}" target="_blank" rel="noreferrer">Coming soon</a>
       </div>
     </div>
   </section>
@@ -104,7 +105,7 @@ layout: default
         <strong>Grab the image.</strong> Download the latest {{ device_title }} build from the downloads page or the <a href="{{ board_link }}" target="_blank" rel="noreferrer">official board entry</a>.
       </li>
       <li>
-        <strong>Flash to storage.</strong> Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
+        <strong>Flash to storage.</strong> Use <a href="https://etcher.balena.io/" target="_blank" rel="noreferrer">balenaEtcher</a>, <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noreferrer">Raspberry Pi Imager</a>, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
       </li>
       <li>
         <strong>First boot setup.</strong> Insert the media into your {{ device_title }}, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.

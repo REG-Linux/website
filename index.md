@@ -137,7 +137,10 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       {% endfor %}
     </div>
     <div class="doc-actions">
-      <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">Browse the wiki</a>
+      <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">
+        <img class="btn-icon" src="{{ '/assets/images/docs-icon.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" />
+        Browse the official Wiki
+      </a>
     </div>
   </section>
 
@@ -175,8 +178,11 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
       {% for channel_id in home_channel_order %}
         {% assign channel = community_channels | where: "id", channel_id | first %}
         {% if channel %}
-          <a href="{{ channel.url }}" target="_blank" rel="noreferrer" class="community-card">
-            <span>{{ channel.home_label }}</span>
+          <a href="{{ channel.url }}" target="_blank" rel="noreferrer" class="community-card community-link-card">
+            <span class="community-link-label">
+              <img src="{{ channel.icon | relative_url }}" alt="{{ channel.icon_alt }}" loading="lazy" />
+              <span>{{ channel.home_label }}</span>
+            </span>
             <span class="arrow">→</span>
           </a>
         {% endif %}
