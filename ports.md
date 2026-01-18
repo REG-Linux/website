@@ -14,7 +14,7 @@ description: Discover engine ports and community remakes that REG Linux handles 
       <p class="eyebrow">Hardware: port</p>
       <h1>Community ports & remakes</h1>
       <p class="lede">
-        The REG Linux wiki backs every `hardware: port` EmulationStation entry with a deep dive into engine details, ROM extensions, emulator hints,
+        The REG Linux wiki backs every `hardware: port` REG-Station entry with a deep dive into engine details, ROM extensions, emulator hints,
         and upstream notes so you can supply the missing WADs, PK3s, or mod archives these versions expect.
       </p>
       <div class="hero-cta">
