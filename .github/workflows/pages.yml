@@ -54,7 +54,7 @@ jobs:
       - name: Export wiki device data
         run: python scripts/export_wiki_devices.py --devices _data/devices.yml --socs _data/socs.yml --wiki-root wiki/docs
       - name: Build MkDocs into /wiki
-        run: mkdocs build --config-file wiki/mkdocs.yml --site-dir _site/wiki
+        run: mkdocs build --config-file wiki/mkdocs.yml --site-dir "${{ github.workspace }}/_site/wiki"
       - name: Generate wiki sitemap
         run: python scripts/generate_wiki_sitemap.py _site/wiki https://reglinux.org/wiki/
       - name: Upload Pages artifact
