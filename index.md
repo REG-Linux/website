@@ -40,7 +40,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
           </figure>
         {% endfor %}
       </div>
-      <p class="hero-media-note">REG Linux blends a customized EmulationStation frontend with curated RetroArch cores on top of a rock-solid Linux foundation.</p>
+      <p class="hero-media-note">REG Linux blends a customized REG-Station frontend with curated RetroArch cores on top of a rock-solid Linux foundation.</p>
     </div>
   </section>
 

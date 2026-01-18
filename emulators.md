@@ -3,7 +3,7 @@ layout: default
 title: Emulators
 body_class: emulators
 permalink: /emulators/
-description: REG Linux supported emulators through EmulationStation frontend.
+description: REG Linux supported emulators through REG-Station frontend.
 ---
 {% assign emulator_categories = site.data.emulators %}
 {% include site-header.html nav_current="emulators" %}
@@ -14,7 +14,7 @@ description: REG Linux supported emulators through EmulationStation frontend.
       <p class="eyebrow">Emulators are amazing</p>
       <h1>Enjoy faithful retro games with REG Linux</h1>
       <p class="lede">
-        REG Linux blends EmulationStation frontend with curated emulators for an outstanding out of the box experience.
+        REG Linux blends REG-Station frontend with curated emulators for an outstanding out of the box experience.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Browse emulator wiki index</a>
@@ -27,8 +27,8 @@ description: REG Linux supported emulators through EmulationStation frontend.
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-es.png' | relative_url }}" alt="EmulationStation systems" loading="lazy" />
-        <figcaption>EmulationStation organizes these systems inside REG Linux.</figcaption>
+        <img src="{{ '/assets/images/logo-regstation.png' | relative_url }}" alt="REG-Station systems" loading="lazy" />
+        <figcaption>REG-Station organizes these systems inside REG Linux.</figcaption>
       </figure>
     </div>
   </section>

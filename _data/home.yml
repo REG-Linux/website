@@ -2,11 +2,11 @@
 hero:
   highlights:
     - Immutable Buildroot-based root filesystem, optimized builds, and rescue workflows
-    - EmulationStation frontend tailored by the REG team with curated RetroArch cores
+    - REG-Station frontend tailored by the REG team with curated RetroArch cores
     - Wiki documentation covering flashing, architecture, builds, and community resources
   logos:
-    - image: /assets/images/logo-es.png
-      label: EmulationStation
+    - image: /assets/images/logo-regstation.png
+      label: REG-Station
     - image: /assets/images/logo-retroarch.png
       label: RetroArch
     - image: /assets/images/logo-linux.png
@@ -15,8 +15,8 @@ hero:
       label: REG Linux
 
 features:
-  - title: EmulationStation Frontend
-    description: REG ES, a bespoke EmulationStation build, delivers a slick nostalgic UI that is simple to tweak.
+  - title: REG-Station Frontend
+    description: REG-Station, a bespoke REG frontend, delivers a slick nostalgic UI that is simple to tweak.
   - title: Feature rich curation
     description: An ever-growing catalog of native ports, engines, and tools sits alongside the default emulator stack.
   - title: Rock solid OS
@@ -71,7 +71,7 @@ hardware_cards:
 
 doc_cards:
   - title: Getting Started
-    body: Choose an image, flash it safely, and get controller-friendly onboarding tips for EmulationStation.
+    body: Choose an image, flash it safely, and get controller-friendly onboarding tips for REG-Station.
     url: https://wiki.reglinux.org/getting-started/
     link_label: Open guide
   - title: Installation
@@ -93,6 +93,6 @@ getting_started_steps:
   - title: Flash to storage.
     body: Follow the wiki's recommended tools—balenaEtcher, Raspberry Pi Imager, or plain `dd`—and verify the image on your SD card or SSD.
   - title: First boot & setup.
-    body: Power on, run through the EmulationStation onboarding, pair controllers, and reference the wiki for troubleshooting or controller mapping tips.
+    body: Power on, run through the REG-Station onboarding, pair controllers, and reference the wiki for troubleshooting or controller mapping tips.
   - title: Load your library.
     body: Add ROMs via network share, USB drive, or the built-in file manager, then refresh the gamelist per the wiki's guidance.
