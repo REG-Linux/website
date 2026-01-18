@@ -1,0 +1,73 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+      - name: Checkout wiki
+        uses: actions/checkout@v4
+        with:
+          repository: REG-Linux/wiki
+          path: wiki
+          fetch-depth: 0
+      - name: Checkout REG-Linux configs
+        uses: actions/checkout@v4
+        with:
+          repository: REG-Linux/REG-Linux
+          path: reglinux
+          fetch-depth: 1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Install Jekyll
+        run: gem install jekyll jekyll-feed jekyll-sitemap
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install MkDocs
+        run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin pyyaml
+      - name: Seed SoC data (strict)
+        run: python scripts/seed_socs_from_configs.py --socs _data/socs.yml --configs reglinux/configs --strict
+      - name: Build Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: jekyll build --destination _site
+      - name: Export wiki device data
+        run: python scripts/export_wiki_devices.py --devices _data/devices.yml --socs _data/socs.yml --wiki-root wiki/docs
+      - name: Build MkDocs into /wiki
+        run: mkdocs build --config-file wiki/mkdocs.yml --site-dir _site/wiki
+      - name: Generate wiki sitemap
+        run: python scripts/generate_wiki_sitemap.py _site/wiki https://reglinux.org/wiki/
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -19,7 +19,7 @@ description: Explore every hardware manufacturer behind the REG Linux device cat
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="{{ '/download/' | relative_url }}">Browse downloads</a>
-        <a class="btn secondary" href="https://wiki.reglinux.org/sbcs/catalog/" target="_blank" rel="noreferrer">Open hardware wiki</a>
+        <a class="btn secondary" href="https://reglinux.org/wiki/sbcs/catalog/" target="_blank" rel="noreferrer">Open hardware wiki</a>
       </div>
       <ul class="hero-highlights">
         <li>Covers SBCs, handhelds, and mini PC makers</li>

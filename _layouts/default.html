@@ -85,7 +85,7 @@
         "sameAs": [
           "https://github.com/REG-Linux",
           "https://discord.gg/M38rd2kRNw",
-          "https://wiki.reglinux.org/"
+          "https://reglinux.org/wiki/"
         ]
       }
     </script>
@@ -108,7 +108,7 @@
           "applicationCategory": "GameApplication",
           "description": {{ meta_description | jsonify }},
           "downloadUrl": {{ device_download | jsonify }},
-          "softwareHelp": {{ device_lookup.board_url | default: "https://wiki.reglinux.org/" | jsonify }},
+          "softwareHelp": {{ device_lookup.board_url | default: "https://reglinux.org/wiki/" | jsonify }},
           "author": {
             "@type": "Organization",
             "name": {{ site.title | jsonify }}

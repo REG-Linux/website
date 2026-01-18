@@ -85,22 +85,22 @@ doc_cards:
 - title: Getting Started
   body: Choose an image, flash it safely, and get controller-friendly onboarding tips
     for REG-Station.
-  url: https://wiki.reglinux.org/getting-started/
+  url: https://reglinux.org/wiki/getting-started/
   link_label: Open guide
 - title: Installation
   body: Supported platforms span ARM (Allwinner, Rockchip, Amlogic), AArch64 (RK3588,
     Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs.
-  url: https://wiki.reglinux.org/installation/
+  url: https://reglinux.org/wiki/installation/
   link_label: View devices
 - title: Architecture
   body: Immutable Buildroot layout with sysvinit, a squashfs root, and configurable
     /userdata partitions for game storage.
-  url: https://wiki.reglinux.org/architecture/
+  url: https://reglinux.org/wiki/architecture/
   link_label: Explore architecture
 - title: Developer Guide
   body: Build from source with commands like `make h700-build` and tweak configurations
     inside the configs directory.
-  url: https://wiki.reglinux.org/dev-guide/
+  url: https://reglinux.org/wiki/dev-guide/
   link_label: See build notes
 getting_started_steps:
 - title: Choose the right image.

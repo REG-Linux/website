@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://reglinux.org/sitemap.xml
+Sitemap: https://reglinux.org/wiki/sitemap.xml

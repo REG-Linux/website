@@ -9,7 +9,7 @@ REG Linux is an **immutable Linux system** designed for **retro gaming devices**
 ## 🧩 Project Overview
 
 - **Website:** [https://reglinux.org](https://reglinux.org)
-- **Wiki:** [https://wiki.reglinux.org](https://wiki.reglinux.org)
+- **Wiki:** [https://reglinux.org/wiki](https://reglinux.org/wiki)
 - **Main Repo:** [REG-Linux/REG-Linux](https://github.com/REG-Linux/REG-Linux)
 - **Organization:** [REG-Linux](https://github.com/REG-Linux)
 

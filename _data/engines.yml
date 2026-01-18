@@ -3,7 +3,7 @@
   description: >
     Reimplements SCUMM, SCI, AGI, and other adventure engines so classics like Monkey Island, Day of the Tentacle,
     Grim Fandango, and Broken Sword run with controller-friendly menus.
-  url: https://wiki.reglinux.org/engines/scummvm/
+  url: https://reglinux.org/wiki/engines/scummvm/
   cta_label: Read ScummVM guide
   logos:
     - src: /assets/images/engines/scummvm.svg
@@ -12,7 +12,7 @@
   description: >
     The Zelda-inspired Solarus engine loads `game.solarus` archives and honors Lua scripts, sounds, and top-down maps
     while preserving save states and controller layouts.
-  url: https://wiki.reglinux.org/engines/solarus/
+  url: https://reglinux.org/wiki/engines/solarus/
   cta_label: Read Solarus guide
   logos:
     - src: /assets/images/engines/solarus.svg
@@ -21,7 +21,7 @@
   description: >
     Recreates the RPG Maker 2000/2003 runtime so you can drop `.easyrpg` project folders, `.zip` archives, or `.zar`
     bundles that contain `RPG_RT.exe` data.
-  url: https://wiki.reglinux.org/engines/easyrpg/
+  url: https://reglinux.org/wiki/engines/easyrpg/
   cta_label: Read EasyRPG guide
   logos:
     - src: /assets/images/engines/easyrpg.svg
@@ -30,7 +30,7 @@
   description: >
     A modern revival of the M.U.G.E.N engine with rollback, Lua hooks, and high framerates, powering community-made
     fighters from Street Fighter to King of Fighters.
-  url: https://wiki.reglinux.org/engines/ikemen/
+  url: https://reglinux.org/wiki/engines/ikemen/
   cta_label: Read IKEMEN guide
   logos:
     - src: /assets/images/engines/ikemen.svg
@@ -39,7 +39,7 @@
   description: >
     Community-driven beat ’em up engine that loads `.pak` archives or `.pak.txt` manifests containing sprites, Lua
     logic, music, and AI adjustments.
-  url: https://wiki.reglinux.org/engines/openbor/
+  url: https://reglinux.org/wiki/engines/openbor/
   cta_label: Read OpenBOR guide
   logos:
     - src: /assets/images/engines/openbor.svg
@@ -48,7 +48,7 @@
   description: >
     Replaces the retired Adobe player with Ruffle and Lightspark so SWF/ABC adventure and ActionScript titles keep
     running safely in REG Linux.
-  url: https://wiki.reglinux.org/engines/flash/
+  url: https://reglinux.org/wiki/engines/flash/
   cta_label: Read Flash guide
   logos:
     - src: /assets/images/engines/ruffle.svg
@@ -59,7 +59,7 @@
   description: >
     Runs Super Mario Bros. X worlds, reading `System` folders, Lua scripts, and SMBX archives while adding widescreen,
     touch, and editor features.
-  url: https://wiki.reglinux.org/engines/thextech/
+  url: https://reglinux.org/wiki/engines/thextech/
   cta_label: Read TheXTech guide
   logos:
     - src: /assets/images/engines/thextech.png
@@ -68,7 +68,7 @@
   description: >
     Hypseus’s FMV interpreter for LaserDisc-era arcade shooters—Mad Dog McCree, Crime Patrol, Space Pirates, and
     Dragon’s Lair—using `.singe` framefiles.
-  url: https://wiki.reglinux.org/engines/singe/
+  url: https://reglinux.org/wiki/engines/singe/
   cta_label: Read Singe guide
   logos:
     - src: /assets/images/engines/singe.svg

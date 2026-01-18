@@ -17,7 +17,7 @@ description: Explore REG Linux emulators powered by REG-Station, with system lis
         REG Linux blends REG-Station frontend with curated emulators for an outstanding out of the box experience.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Browse emulator wiki index</a>
+        <a class="btn primary" href="https://reglinux.org/wiki/systems/" target="_blank" rel="noreferrer">Browse emulator wiki index</a>
         <a class="btn secondary" href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">View the GitHub repo</a>
       </div>
       <ul class="hero-highlights">
@@ -60,6 +60,6 @@ description: Explore REG Linux emulators powered by REG-Station, with system lis
   </section>
 
   <section class="doc-actions">
-    <a class="btn primary" href="https://wiki.reglinux.org/systems/" target="_blank" rel="noreferrer">Open the wiki for an extensive catalog of emulated systems</a>
+    <a class="btn primary" href="https://reglinux.org/wiki/systems/" target="_blank" rel="noreferrer">Open the wiki for an extensive catalog of emulated systems</a>
   </section>
 </main>

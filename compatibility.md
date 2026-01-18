@@ -19,7 +19,7 @@ description: Quick view of REG Linux hardware compatibility across Wi-Fi, Blueto
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="{{ '/download/' | relative_url }}">Browse downloads</a>
-        <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">Open the wiki</a>
+        <a class="btn secondary" href="https://reglinux.org/wiki/" target="_blank" rel="noreferrer">Open the wiki</a>
       </div>
       <ul class="hero-highlights">
         <li>Designed for quick decision making before you flash</li>

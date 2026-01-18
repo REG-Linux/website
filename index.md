@@ -147,7 +147,7 @@ preload_image: /assets/images/logo-regstation.webp
       {% endfor %}
     </div>
     <div class="doc-actions">
-      <a class="btn secondary" href="https://wiki.reglinux.org/" target="_blank" rel="noreferrer">
+      <a class="btn secondary" href="https://reglinux.org/wiki/" target="_blank" rel="noreferrer">
         <img class="btn-icon" src="{{ '/assets/images/docs-icon.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" />
         Browse the official Wiki
       </a>
