@@ -3,7 +3,7 @@ layout: default
 title: Emulators
 body_class: emulators
 permalink: /emulators/
-description: REG Linux supported emulators through REG-Station frontend.
+description: Explore REG Linux emulators powered by REG-Station, with system lists and curated setups for classic consoles, arcade, and computers.
 ---
 {% assign emulator_categories = site.data.emulators %}
 {% include site-header.html nav_current="emulators" %}
@@ -27,7 +27,7 @@ description: REG Linux supported emulators through REG-Station frontend.
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-regstation.png' | relative_url }}" alt="REG-Station systems" loading="lazy" />
+        <img src="{{ '/assets/images/logo-regstation.webp' | relative_url }}" alt="REG-Station systems" loading="lazy" />
         <figcaption>REG-Station organizes these systems inside REG Linux.</figcaption>
       </figure>
     </div>

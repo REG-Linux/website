@@ -1,0 +1,801 @@
+---
+anbernic-rg351-p-m-mp:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg351v:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg353m:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg353p-s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg353v-s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg503:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg552:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+asus-rog-ally:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+asus-tinker-board-s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+banana-pi-m2-zero:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+banana-pi-m2s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+banana-pi-m4-berry:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+banana-pi-m5:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+banana-pi-m7:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+beelink-gt-king:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+beelink-gt-king-pro:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+capcom-home-arcade:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+firefly-station-m2-roc-rk3566-pc:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+firefly-station-m3-roc-rk3588s-pc:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+firefly-station-p2-roc-rk3568-pc:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+gameforce-ace:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+gameforce-chi:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-c2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-c4:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-go-super:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-go-ultra:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-m1:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-xu3-xu4:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-edge-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-vim-1:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-vim-1s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-vim-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-vim-3:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-vim-3l:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+khadas-vim-4:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+milk-v-mars:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+milk-v-meles:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+mqmaker-miqi:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+nano-pi-k2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+nano-pi-m4v2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-800:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-one:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-one-plus:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-pc:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-pc-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-plus-2e:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-zero-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-zero-2w:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+orange-pi-zero-3:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+radxa-nio-12l:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+radxa-rock-5a:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+radxa-rock-5b:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+radxa-zero:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+radxa-zero-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-3:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-4:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-400:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-5:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-a-a-b-b:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-zero:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+raspberry-pi-zero-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+starfive-visionfive-2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+steam-deck:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg-cubexx:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg-ds:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg28xx:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg34xx:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg35xx-2024:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg35xx-h:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg35xx-plus:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg35xx-pro:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg35xx-sp:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg40xx-h:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rg40xx-v:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+anbernic-rgarc:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+ayaneo-pockets:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+ayn-odin2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-c5:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+hardkernel-odroid-go-advance:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+magicx-xu-mini-m:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb10:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb10-max-3:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb10-max-3-pro:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb10x:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb20-pro:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb20sx:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rgb30:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-rk2023:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-x35h:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-x35s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-x55:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+powkiddy-xu10:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+radxa-dragon-q6a:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+retroid-pocket-5:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+retroid-pocket-flip2:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+retroid-pocket-mini:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+unbranded-game-console-r33s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+unbranded-game-console-r35s-r36s:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''
+unbranded-rk3326-clones:
+  wifi: untested
+  bluetooth: untested
+  hdmi_audio: untested
+  sleep_resume: untested
+  usb_storage: untested
+  controller_hotplug: untested
+  notes: ''

@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign device_slug = page.slug | default: page.name | split: "." | first %}
 {% assign device_lookup = site.data.devices[device_slug] %}
+{% assign device_notes = site.data.device_notes[device_slug] %}
 {% assign device_title = page.title %}
 {% if device_title == nil or device_title == "" %}
   {% assign device_title = device_lookup.title | default: "Device" %}
@@ -11,6 +12,8 @@ layout: default
 {% assign device_image = page.image | default: device_lookup.image %}
 {% assign device_image_width = page.image_width | default: device_lookup.image_width %}
 {% assign device_image_height = page.image_height | default: device_lookup.image_height %}
+{% assign device_image_small = device_image | replace: '.webp', '-sm.webp' %}
+{% assign device_image_small_width = device_image_width | divided_by: 2 %}
 {% assign device_board_url = page.board_url | default: device_lookup.board_url %}
 {% assign device_description = page.description | default: device_lookup.description | default: "REG Linux image for " | append: device_title | append: "." %}
 {% assign raw_manufacturer = page.manufacturer | default: device_lookup.manufacturer %}
@@ -26,7 +29,8 @@ layout: default
   {% assign soc_list = 'Unknown' | split: "|" %}
 {% endif %}
 {% assign soc_text = soc_list | join: ', ' %}
-{% assign device_lede = page.lede | default: device_lookup.lede | default: device_title | append: " pairs the " | append: soc_text | append: " SoC with the REG Linux stack for a polished retro console." %}
+{% assign notes_summary = device_notes.summary %}
+{% assign device_lede = page.lede | default: notes_summary | default: device_lookup.lede | default: device_title | append: " pairs the " | append: soc_text | append: " SoC with the REG Linux stack for a polished retro console." %}
 {% assign board_link = device_board_url | default: "https://reglinux.org" %}
 {% assign device_url = '/download/' | append: device_slug | append: '/' | relative_url %}
 {% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
@@ -47,6 +51,43 @@ layout: default
 {% include site-header.html nav_current="download" ghost_label="Back to downloads" %}
 
 <main>
+  {% assign brand_anchor = device_brand | slugify %}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <span class="crumb-sep">/</span>
+    <a href="{{ '/download/' | relative_url }}">Download</a>
+    <span class="crumb-sep">/</span>
+    <a href="{{ '/download/' | relative_url }}#brand-{{ brand_anchor }}">{{ device_brand }}</a>
+    <span class="crumb-sep">/</span>
+    <span aria-current="page">{{ device_title }}</span>
+  </nav>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ '/' | absolute_url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Download",
+          "item": "{{ '/download/' | absolute_url }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ device_title }}",
+          "item": "{{ device_url | absolute_url }}"
+        }
+      ]
+    }
+  </script>
+
   <section class="hero download-hero device-hero">
     <div class="hero-text">
       <p class="eyebrow">REG Linux device image</p>
@@ -66,7 +107,17 @@ layout: default
       <div class="device-quick-card">
         <div class="device-quick-media">
           {% if device_image %}
-            <img src="{{ device_image | relative_url }}" alt="{{ device_title }}" loading="lazy"{% if device_image_width %} width="{{ device_image_width }}"{% endif %}{% if device_image_height %} height="{{ device_image_height }}"{% endif %} />
+            <img src="{{ device_image | relative_url }}"
+                 alt="{{ device_title }}"
+                 loading="lazy"
+                 decoding="async"
+                 {% if device_image_width %}width="{{ device_image_width }}"{% endif %}
+                 {% if device_image_height %}height="{{ device_image_height }}"{% endif %}
+                 {% if device_image_width and device_image_height %}
+                 srcset="{{ device_image_small | relative_url }} {{ device_image_small_width }}w, {{ device_image | relative_url }} {{ device_image_width }}w"
+                 sizes="(max-width: 600px) {{ device_image_small_width }}px, {{ device_image_width }}px"
+                 {% endif %}
+            />
           {% endif %}
         </div>
         <div class="device-quick-info">
@@ -81,7 +132,57 @@ layout: default
     </div>
   </section>
 
-  <section class="device-specs">
+  {% if device_notes %}
+    <section class="device-notes cv-auto">
+      <div class="section-heading">
+        <p class="eyebrow">Device notes</p>
+        <h2>What to expect on {{ device_title }}</h2>
+        {% if device_notes.summary and device_lede != device_notes.summary %}
+          <p>{{ device_notes.summary }}</p>
+        {% endif %}
+      </div>
+      <div class="notes-grid">
+        {% if device_notes.best_for %}
+          <article class="note-card">
+            <h3>Best for</h3>
+            <p>{{ device_notes.best_for }}</p>
+          </article>
+        {% endif %}
+        {% if device_notes.field_notes %}
+          <article class="note-card">
+            <h3>Field notes</h3>
+            <ul>
+              {% for note in device_notes.field_notes %}
+                <li>{{ note }}</li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endif %}
+        {% if device_notes.known_limits %}
+          <article class="note-card">
+            <h3>Known limits</h3>
+            <ul>
+              {% for limit in device_notes.known_limits %}
+                <li>{{ limit }}</li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endif %}
+        {% if device_notes.compatibility_checks %}
+          <article class="note-card">
+            <h3>Compatibility checks</h3>
+            <div class="compatibility-chips">
+              {% for check in device_notes.compatibility_checks %}
+                <span class="chip">{{ check }}</span>
+              {% endfor %}
+            </div>
+          </article>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+
+  <section class="device-specs cv-auto">
     <div class="section-heading">
       <p class="eyebrow">Hardware specifications</p>
       <h2>Built for {{ device_brand }}</h2>
@@ -103,7 +204,7 @@ layout: default
     </div>
   </section>
 
-  <section class="install-notes">
+  <section class="install-notes cv-auto">
     <div class="section-heading">
       <p class="eyebrow">Install notes</p>
       <h2>Flash {{ device_title }} and boot</h2>
@@ -126,7 +227,7 @@ layout: default
   </section>
 
   {% if board_info %}
-    <section class="board-details">
+    <section class="board-details cv-auto">
       <div class="section-heading">
         <p class="eyebrow">Board family guidance</p>
         <h2>{{ board_info.title }}</h2>
@@ -153,7 +254,61 @@ layout: default
     </section>
   {% endif %}
 
-  <div class="cta-panel">
+  {% assign related_devices = "" | split: "" %}
+  {% for entry in site.data.devices %}
+    {% assign slug = entry[0] %}
+    {% assign device = entry[1] %}
+    {% if slug != device_slug and device.brand == device_brand %}
+      {% assign related_devices = related_devices | push: slug %}
+    {% endif %}
+  {% endfor %}
+  {% if related_devices.size < 3 and soc_identifier != "" %}
+    {% for entry in site.data.devices %}
+      {% assign slug = entry[0] %}
+      {% assign device = entry[1] %}
+      {% if slug != device_slug and device.soc contains soc_identifier %}
+        {% unless related_devices contains slug %}
+          {% assign related_devices = related_devices | push: slug %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if related_devices.size > 0 %}
+    <section class="related-devices cv-auto">
+      <div class="section-heading">
+        <p class="eyebrow">Related devices</p>
+        <h2>More hardware to explore</h2>
+        <p>Devices in the same family or sharing the same core SoC.</p>
+      </div>
+      <div class="related-grid">
+        {% for related_slug in related_devices limit: 3 %}
+          {% assign related_device = site.data.devices[related_slug] %}
+          {% assign related_image_small = related_device.image | replace: '.webp', '-sm.webp' %}
+          {% assign related_small_width = related_device.image_width | divided_by: 2 %}
+          <a class="device-card" href="{{ '/download/' | append: related_slug | append: '/' | relative_url }}">
+            <div class="device-media">
+              <img src="{{ related_device.image | relative_url }}"
+                   alt="{{ related_device.title }}"
+                   loading="lazy"
+                   decoding="async"
+                   {% if related_device.image_width %}width="{{ related_device.image_width }}"{% endif %}
+                   {% if related_device.image_height %}height="{{ related_device.image_height }}"{% endif %}
+                   {% if related_device.image_width and related_device.image_height %}
+                   srcset="{{ related_image_small | relative_url }} {{ related_small_width }}w, {{ related_device.image | relative_url }} {{ related_device.image_width }}w"
+                   sizes="(max-width: 600px) {{ related_small_width }}px, {{ related_device.image_width }}px"
+                   {% endif %}
+              />
+            </div>
+            <h3>{{ related_device.title }}</h3>
+            <p>{{ related_device.soc | join: ', ' }}</p>
+            <span class="chip">View device page</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <div class="cta-panel cv-auto">
     <div>
       <h3>Need a refresher?</h3>
       <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ board_link }}" target="_blank" rel="noreferrer">{{ device_title }} board page</a>.</p>

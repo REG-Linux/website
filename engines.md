@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Engines
+title: Game Engines
 body_class: engines
 permalink: /engines/
 description: Learn about the curated open souce engines REG Linux comes with and what you can do with.

@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% assign computed_title = page.title %}
     {% assign computed_description = page.description %}
+    {% assign device_lookup = nil %}
+    {% assign device_notes = nil %}
     {% if page.layout == "device" %}
       {% assign device_slug = page.slug | default: page.name | split: "." | first %}
       {% assign device_lookup = site.data.devices[device_slug] %}
+      {% assign device_notes = site.data.device_notes[device_slug] %}
       {% if device_lookup %}
         {% if computed_title == nil or computed_title == "" %}
           {% assign computed_title = device_lookup.title %}
@@ -16,17 +19,110 @@
           {% assign computed_description = device_lookup.description %}
         {% endif %}
       {% endif %}
+      {% if device_notes and device_notes.meta_description %}
+        {% assign computed_description = device_notes.meta_description %}
+      {% endif %}
     {% endif %}
-    <title>{% if computed_title %}{{ computed_title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    {% if computed_description %}
-    <meta name="description" content="{{ computed_description }}" />
-    {% elsif site.description %}
-    <meta name="description" content="{{ site.description }}" />
+    {% assign meta_title = computed_title | default: site.title %}
+    {% assign full_title = meta_title %}
+    {% if meta_title and site.title and meta_title != site.title %}
+      {% assign full_title = meta_title | append: " | " | append: site.title %}
+    {% endif %}
+    {% assign meta_description = computed_description | default: site.description %}
+    {% assign meta_image = page.image | default: device_lookup.image | default: site.og_image | default: "/assets/images/reg_linux_logo.png" %}
+    {% assign meta_image_url = meta_image | absolute_url %}
+    {% assign canonical_url = page.url | absolute_url %}
+    {% assign og_type = "website" %}
+    {% if page.layout == "device" %}
+      {% assign og_type = "article" %}
+    {% endif %}
+    <title>{{ full_title }}</title>
+    {% if meta_description %}
+    <meta name="description" content="{{ meta_description | strip_newlines | strip | escape }}" />
+    {% endif %}
+    <link rel="canonical" href="{{ canonical_url }}" />
+    <meta property="og:title" content="{{ full_title }}" />
+    <meta property="og:description" content="{{ meta_description | strip_newlines | strip | escape }}" />
+    <meta property="og:type" content="{{ og_type }}" />
+    <meta property="og:url" content="{{ canonical_url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    {% if meta_image %}
+    <meta property="og:image" content="{{ meta_image_url }}" />
+    <meta property="og:image:alt" content="{{ meta_title }}" />
+    {% endif %}
+    <meta name="twitter:card" content="{% if meta_image %}summary_large_image{% else %}summary{% endif %}" />
+    <meta name="twitter:title" content="{{ full_title }}" />
+    <meta name="twitter:description" content="{{ meta_description | strip_newlines | strip | escape }}" />
+    {% if meta_image %}
+    <meta name="twitter:image" content="{{ meta_image_url }}" />
+    {% endif %}
+    {% if page.preload_image %}
+    <link rel="preload" as="image" href="{{ page.preload_image | relative_url }}" />
+    {% endif %}
+    <style>
+      :root{--bg:#05060a;--text:#f4f6fb;--text-muted:#b2bed1;--accent:#2bb0e9;--border:rgba(255,255,255,.08);--radius:18px;--shadow:0 25px 60px rgba(3,9,27,.55)}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+      main{display:flex;flex-direction:column;gap:5rem;padding:2rem clamp(1.5rem,5vw,4.5rem) 5rem}
+      .site-header{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;padding:1rem clamp(1.5rem,5vw,4.5rem);background:rgba(5,7,15,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:10}
+      .site-nav{display:flex;gap:1rem;font-weight:500;font-size:.95rem}
+      .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;padding-top:2rem;position:relative}
+      .hero-text{display:flex;flex-direction:column;gap:1.5rem}
+      h1{font-family:'Space Grotesk','Inter',sans-serif;font-weight:600;font-size:clamp(2rem,5vw,3.5rem);margin:0}
+      .lede{font-size:1.2rem;color:var(--text-muted);max-width:52ch}
+      .hero-cta{display:flex;flex-wrap:wrap;gap:1rem}
+      .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.6rem;border-radius:999px;text-decoration:none;border:1px solid transparent;font-weight:600}
+      .btn.primary{background:var(--accent);color:#03121f}
+      .btn.secondary{background:rgba(255,255,255,.08);border-color:var(--border);color:var(--text)}
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "url": {{ site.url | default: "" | jsonify }},
+        "logo": {{ "/assets/images/reg_linux_logo.png" | absolute_url | jsonify }},
+        "sameAs": [
+          "https://github.com/REG-Linux",
+          "https://discord.gg/M38rd2kRNw",
+          "https://wiki.reglinux.org/"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ site.title | jsonify }},
+        "url": {{ site.url | default: "" | jsonify }}
+      }
+    </script>
+    {% if page.layout == "device" and device_lookup %}
+      {% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": {{ "REG Linux for " | append: meta_title | jsonify }},
+          "operatingSystem": "Linux",
+          "applicationCategory": "GameApplication",
+          "description": {{ meta_description | jsonify }},
+          "downloadUrl": {{ device_download | jsonify }},
+          "softwareHelp": {{ device_lookup.board_url | default: "https://wiki.reglinux.org/" | jsonify }},
+          "author": {
+            "@type": "Organization",
+            "name": {{ site.title | jsonify }}
+          }
+        }
+      </script>
     {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2" as="font" type="font/woff2" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+    <link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" /></noscript>
     <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
   </head>
   <body class="{{ page.body_class | default: '' }}">

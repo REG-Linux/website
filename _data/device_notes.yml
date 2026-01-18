@@ -1,0 +1,355 @@
+---
+steam-deck:
+  meta_description: Download REG Linux for Steam Deck, tuned for the Deck's AMD APU
+    and handheld controls with a clean REG-Station experience.
+  summary: Steam Deck is a handheld PC with built-in controls and a 1280x800 screen.
+    REG Linux leans into the portable form factor with a focused REG-Station setup.
+  best_for: Handheld sessions at home or on the go, plus docked play when you want
+    a living-room console feel.
+  field_notes:
+  - Start with the built-in controls profile, then add external pads for docked sessions.
+  - Use integer scaling where possible to keep classic titles crisp on the 1280x800
+    panel.
+  known_limits:
+  - Higher performance presets can drain the battery quickly.
+  - Fan noise depends on workload and system profiles.
+  compatibility_checks:
+  - Docked display output over USB-C
+  - Speaker vs HDMI audio routing
+  - Bluetooth controller pairing
+asus-rog-ally:
+  meta_description: REG Linux for Asus ROG Ally targets the Ryzen Z1 handheld and
+    keeps the REG-Station UI tuned for portable controls.
+  summary: The ROG Ally brings a Ryzen Z1 APU into a handheld shell. REG Linux focuses
+    on the built-in controls and portable screen for fast setup.
+  best_for: Portable high-end emulation with straightforward controller mapping and
+    a single-boot gaming flow.
+  field_notes:
+  - Pick a balanced performance profile for cooler temps and longer sessions.
+  - External docks work best when USB-C power delivery is stable.
+  known_limits:
+  - Battery life varies widely under heavier workloads.
+  - USB-C hubs can be finicky, so test your dock early.
+  compatibility_checks:
+  - Wi-Fi stability
+  - Bluetooth audio
+  - USB-C video output
+raspberry-pi-4:
+  meta_description: REG Linux for Raspberry Pi 4 delivers a stable HDMI-first living-room
+    setup with broad USB gamepad support.
+  summary: Raspberry Pi 4 remains a classic SBC for sofa setups. REG Linux targets
+    consistent HDMI output and plug-and-play USB controller support.
+  best_for: Small living-room consoles and lightweight arcade builds.
+  field_notes:
+  - Use a quality 3A power supply to avoid throttling.
+  - Active cooling helps in compact cases.
+  known_limits:
+  - MicroSD quality impacts boot and load times.
+  - USB storage speed varies by enclosure.
+  compatibility_checks:
+  - HDMI audio
+  - Wi-Fi and Bluetooth
+  - USB gamepad hotplug
+raspberry-pi-5:
+  meta_description: REG Linux for Raspberry Pi 5 focuses on faster I/O and higher
+    clocks for smoother retro gaming on the latest Pi.
+  summary: Raspberry Pi 5 steps up CPU and I/O for more headroom. REG Linux keeps
+    the setup lean while taking advantage of the newer hardware.
+  best_for: Higher-demand emulation and fast storage experiments on a compact SBC.
+  field_notes:
+  - Good cooling unlocks sustained performance.
+  - NVMe adapters can help if you want faster storage.
+  known_limits:
+  - Thermals can rise quickly in sealed cases.
+  - USB power draw can increase with multiple devices attached.
+  compatibility_checks:
+  - HDMI output and audio
+  - Wi-Fi stability
+  - USB storage detection
+raspberry-pi-zero-2:
+  meta_description: REG Linux for Raspberry Pi Zero 2 targets tiny builds that need
+    low power and a minimal hardware footprint.
+  summary: Pi Zero 2 is small, efficient, and easy to embed. REG Linux supports minimalist
+    builds where size and power draw matter most.
+  best_for: Compact retro projects, tiny cabinets, and low-power travel kits.
+  field_notes:
+  - Use a powered USB hub for multiple controllers.
+  - Wi-Fi setup is easiest with a preconfigured config file.
+  known_limits:
+  - Limited USB ports without an adapter.
+  - Performance is best suited for classic systems.
+  compatibility_checks:
+  - Wi-Fi connection
+  - USB OTG gamepads
+  - HDMI output via adapter
+raspberry-pi-3:
+  meta_description: REG Linux for Raspberry Pi 3 is a lightweight SBC build aimed
+    at straightforward HDMI setups and classic systems.
+  summary: Raspberry Pi 3 remains a reliable entry SBC. REG Linux focuses on a simple
+    HDMI-first setup with easy controller pairing.
+  best_for: Starter builds and small arcade boxes that value simplicity.
+  field_notes:
+  - Use a good power supply to avoid brownouts.
+  - Wi-Fi reliability improves with a strong signal.
+  known_limits:
+  - Lower headroom for newer systems.
+  - USB 2.0 limits fast storage.
+  compatibility_checks:
+  - Wi-Fi connection
+  - Bluetooth pairing
+  - USB gamepad hotplug
+anbernic-rg351-p-m-mp:
+  meta_description: REG Linux for Anbernic RG351 P/M/MP brings the RK3326 handheld
+    family into a clean REG-Station experience.
+  summary: The RG351 P/M/MP family uses the RK3326 and shares a familiar handheld
+    layout. REG Linux keeps controls and scaling aligned across the three shells.
+  best_for: Portable 2D and 3D classics with a pocket-friendly handheld.
+  field_notes:
+  - Screen scaling profiles differ slightly between P, M, and MP.
+  - Map hotkeys early to avoid accidental exits.
+  known_limits:
+  - Storage speed impacts library scans.
+  - Older SD cards can slow boot time.
+  compatibility_checks:
+  - Wi-Fi, if supported on your model
+  - Sleep and quick-resume behavior
+  - Controller hotkey combos
+anbernic-rg353m:
+  meta_description: REG Linux for Anbernic RG353M focuses on the RK3566 handheld with
+    a compact, metal-bodied shell.
+  summary: RG353M pairs the RK3566 with a compact metal shell. REG Linux keeps the
+    setup tight for handheld sessions and clean menu navigation.
+  best_for: Compact handheld play with a sturdier build and a sharp feel.
+  field_notes:
+  - Metal shells can feel warmer after long sessions.
+  - Use balanced profiles to keep heat in check.
+  known_limits:
+  - Small screen sizes can make tiny UI elements harder to read.
+  - Battery life depends on brightness and workload.
+  compatibility_checks:
+  - Wi-Fi and Bluetooth pairing
+  - Audio output
+  - Charging behavior
+anbernic-rg552:
+  meta_description: REG Linux for Anbernic RG552 highlights the RK3399 handheld with
+    a wider display and comfortable controls.
+  summary: RG552 is a wider handheld with the RK3399 and a large screen. REG Linux
+    tunes the experience for the bigger display and larger grip.
+  best_for: Longer handheld sessions and systems that benefit from a wider screen.
+  field_notes:
+  - Adjust UI scaling to match the higher resolution panel.
+  - Keep airflow clear around the rear vents.
+  known_limits:
+  - The larger body is less pocketable.
+  - High load sessions can warm the shell.
+  compatibility_checks:
+  - Wi-Fi stability
+  - Screen scaling preferences
+  - Charging behavior
+orange-pi-800:
+  meta_description: REG Linux for Orange Pi 800 supports the keyboard-style SBC for
+    desk-friendly retro setups.
+  summary: Orange Pi 800 combines a SBC with an integrated keyboard. REG Linux suits
+    desk or classroom setups where a compact all-in-one build helps.
+  best_for: Desktop retro rigs and shared setups that benefit from a built-in keyboard.
+  field_notes:
+  - Use the integrated keyboard for quick maintenance tasks.
+  - HDMI output makes it easy to plug into a monitor or TV.
+  known_limits:
+  - Storage speed depends on the microSD card.
+  - USB peripherals can draw more power than expected.
+  compatibility_checks:
+  - HDMI audio
+  - USB gamepads
+  - Wi-Fi connection
+radxa-rock-5b:
+  meta_description: REG Linux for Radxa Rock 5B taps into the RK3588 SBC for higher
+    headroom and modern I/O.
+  summary: Rock 5B is a high-powered RK3588 SBC with modern I/O. REG Linux aims to
+    keep the stack lean while giving you headroom for heavier systems.
+  best_for: Demanding emulation stacks and multi-system setups on a single board.
+  field_notes:
+  - Good cooling helps the RK3588 sustain clocks.
+  - Use fast storage for large collections.
+  known_limits:
+  - Thermals rise quickly without airflow.
+  - PCIe and USB accessories can require extra power.
+  compatibility_checks:
+  - HDMI output
+  - USB storage detection
+  - Ethernet stability
+khadas-vim-4:
+  meta_description: REG Linux for Khadas VIM 4 brings a compact RK3588S SBC into the
+    REG-Station lineup.
+  summary: Khadas VIM 4 is a compact RK3588S board with strong connectivity. REG Linux
+    keeps it simple while taking advantage of the modern chipset.
+  best_for: Small, powerful builds where space is tight but performance matters.
+  field_notes:
+  - Active cooling keeps performance consistent.
+  - Use a stable USB-C power supply.
+  known_limits:
+  - Dense layouts can trap heat in small cases.
+  - Storage speed depends on your chosen media.
+  compatibility_checks:
+  - HDMI audio
+  - USB-C power stability
+  - Wi-Fi or Ethernet, depending on your setup
+anbernic-rg351v:
+  meta_description: REG Linux on Anbernic RG351V delivers a handheld build with Rockchip
+    RK3326, REG-Station menus, and a clean portable gaming flow.
+anbernic-rg353p-s:
+  meta_description: REG Linux on Anbernic RG353P(S) delivers a handheld build with
+    Rockchip RK3566, REG-Station menus, and a clean portable gaming flow.
+anbernic-rg353v-s:
+  meta_description: REG Linux on Anbernic RG353V(S) delivers a handheld build with
+    Rockchip RK3566, REG-Station menus, and a clean portable gaming flow.
+anbernic-rg503:
+  meta_description: REG Linux for Anbernic RG503 is tuned for handheld play with Rockchip
+    RK3566 and REG-Station controls plus a fast boot-to-play flow.
+asus-tinker-board-s:
+  meta_description: Use REG Linux on Asus Tinker Board (S) for an SBC build with Rockchip
+    RK3288, REG-Station menus, stable display output, and simple flashing.
+banana-pi-m2-zero:
+  meta_description: REG Linux on Banana Pi M2 Zero delivers a board image with Allwinner
+    H2+, REG-Station UI, and a focused retro living-room setup.
+banana-pi-m2s:
+  meta_description: REG Linux on Banana Pi M2S delivers a board image with Amlogic
+    A311D, REG-Station UI, and a focused retro living-room setup.
+banana-pi-m4-berry:
+  meta_description: REG Linux on Banana Pi M4 Berry delivers a board image with Allwinner
+    H618, REG-Station UI, and a focused retro living-room setup.
+banana-pi-m5:
+  meta_description: Use REG Linux on Banana Pi M5 for an SBC build with Amlogic S905X3,
+    REG-Station menus, stable display output, and simple flashing.
+banana-pi-m7:
+  meta_description: REG Linux for Banana Pi M7 brings an SBC image with Rockchip RK3588,
+    REG-Station UI, HDMI-first setup, and easy controller pairing.
+beelink-gt-king-pro:
+  meta_description: Use REG Linux on Beelink GT King Pro for an SBC build with Amlogic
+    S922X-H, REG-Station menus, stable display output, and simple flashing.
+beelink-gt-king:
+  meta_description: REG Linux for Beelink GT King brings an SBC image with Amlogic
+    S922X, REG-Station UI, HDMI-first setup, and easy controller pairing.
+capcom-home-arcade:
+  meta_description: Use REG Linux on Capcom Home Arcade for an SBC build with Allwinner
+    H3, REG-Station menus, stable display output, and simple flashing.
+firefly-station-m2-roc-rk3566-pc:
+  meta_description: Use REG Linux on Firefly Station M2 / ROC-RK3566-PC for an SBC
+    build with Rockchip RK3566, REG-Station menus, stable display output, and simple
+    flashing.
+firefly-station-m3-roc-rk3588s-pc:
+  meta_description: Use REG Linux on Firefly Station M3 / ROC-RK3588S-PC for an SBC
+    build with Rockchip RK3588, REG-Station menus, stable display output, and simple
+    flashing.
+firefly-station-p2-roc-rk3568-pc:
+  meta_description: REG Linux for Firefly Station P2 / ROC-RK3568-PC brings an SBC
+    image with Rockchip RK3568, REG-Station UI, HDMI-first setup, and easy controller
+    pairing.
+gameforce-ace:
+  meta_description: Download REG Linux for Gameforce ACE to get a handheld image with
+    Rockchip RK3588, REG-Station UI, and quick setup.
+gameforce-chi:
+  meta_description: REG Linux for Gameforce CHI brings an SBC image with Rockchip
+    RK3326, REG-Station UI, HDMI-first setup, and easy controller pairing.
+hardkernel-odroid-c2:
+  meta_description: Use REG Linux on HardKernel ODROID C2 for an SBC build with Amlogic
+    S905(X), REG-Station menus, stable display output, and simple flashing.
+hardkernel-odroid-c4:
+  meta_description: REG Linux for HardKernel ODROID C4 brings an SBC image with Amlogic
+    S905X3, REG-Station UI, HDMI-first setup, and easy controller pairing.
+hardkernel-odroid-go-super:
+  meta_description: Download REG Linux for HardKernel ODROID Go Super to get a handheld
+    image with Rockchip RK3326, REG-Station UI, and quick setup.
+hardkernel-odroid-go-ultra:
+  meta_description: REG Linux for HardKernel ODROID GO Ultra is tuned for handheld
+    play with Amlogic S922X and REG-Station controls plus a fast boot-to-play flow.
+hardkernel-odroid-m1:
+  meta_description: Use REG Linux on HardKernel ODROID M1 for an SBC build with Rockchip
+    RK3568, REG-Station menus, stable display output, and simple flashing.
+hardkernel-odroid-xu3-xu4:
+  meta_description: REG Linux for HardKernel ODROID XU3/XU4 brings an SBC image with
+    Samsung Exynos 5422, REG-Station UI, HDMI-first setup, and easy controller pairing.
+khadas-edge-2:
+  meta_description: Use REG Linux on Khadas Edge 2 for an SBC build with Rockchip
+    RK3588, REG-Station menus, stable display output, and simple flashing.
+khadas-vim-1:
+  meta_description: REG Linux on Khadas VIM 1 delivers a board image with Amlogic
+    S905(X), REG-Station UI, and a focused retro living-room setup.
+khadas-vim-1s:
+  meta_description: REG Linux for Khadas VIM 1S brings an SBC image with Amlogic S905Y4,
+    REG-Station UI, HDMI-first setup, and easy controller pairing.
+khadas-vim-2:
+  meta_description: REG Linux for Khadas VIM 2 brings an SBC image with Amlogic S912,
+    REG-Station UI, HDMI-first setup, and easy controller pairing.
+khadas-vim-3:
+  meta_description: Use REG Linux on Khadas VIM 3 for an SBC build with Amlogic A311D,
+    REG-Station menus, stable display output, and simple flashing.
+khadas-vim-3l:
+  meta_description: Use REG Linux on Khadas VIM 3L for an SBC build with Amlogic S905D3,
+    REG-Station menus, stable display output, and simple flashing.
+milk-v-mars:
+  meta_description: Use REG Linux on Milk-V Mars for an SBC build with StarFive JH7110,
+    REG-Station menus, stable display output, and simple flashing.
+milk-v-meles:
+  meta_description: Use REG Linux on Milk-V Meles for an SBC build with TH1520, REG-Station
+    menus, stable display output, and simple flashing.
+mqmaker-miqi:
+  meta_description: REG Linux for MQMaker MiQi brings an SBC image with Rockchip RK3288,
+    REG-Station UI, HDMI-first setup, and easy controller pairing.
+nano-pi-k2:
+  meta_description: Use REG Linux on Nano Pi K2 for an SBC build with Amlogic S905(X),
+    REG-Station menus, stable display output, and simple flashing.
+nano-pi-m4v2:
+  meta_description: REG Linux on Nano Pi M4v2 delivers a board image with Rockchip
+    RK3399, REG-Station UI, and a focused retro living-room setup.
+orange-pi-one-plus:
+  meta_description: Use REG Linux on Orange Pi One Plus for an SBC build with Allwinner
+    H6, REG-Station menus, stable display output, and simple flashing.
+orange-pi-one:
+  meta_description: REG Linux on Orange Pi One delivers a board image with Allwinner
+    H3, REG-Station UI, and a focused retro living-room setup.
+orange-pi-pc-2:
+  meta_description: Use REG Linux on Orange Pi PC 2 for an SBC build with Allwinner
+    H5, REG-Station menus, stable display output, and simple flashing.
+orange-pi-pc:
+  meta_description: REG Linux on Orange Pi PC delivers a board image with Allwinner
+    H3, REG-Station UI, and a focused retro living-room setup.
+orange-pi-plus-2e:
+  meta_description: Use REG Linux on Orange Pi Plus 2E for an SBC build with Allwinner
+    H3, REG-Station menus, stable display output, and simple flashing.
+orange-pi-zero-2:
+  meta_description: Use REG Linux on Orange Pi Zero 2 for an SBC build with Allwinner
+    H616, REG-Station menus, stable display output, and simple flashing.
+orange-pi-zero-2w:
+  meta_description: REG Linux for Orange Pi Zero 2W brings an SBC image with Allwinner
+    H618, REG-Station UI, HDMI-first setup, and easy controller pairing.
+orange-pi-zero-3:
+  meta_description: REG Linux on Orange Pi Zero 3 delivers a board image with Allwinner
+    H618, REG-Station UI, and a focused retro living-room setup.
+radxa-nio-12l:
+  meta_description: REG Linux on Radxa NIO 12L delivers a board image with Genio 1200
+    (MT8395), REG-Station UI, and a focused retro living-room setup.
+radxa-rock-5a:
+  meta_description: REG Linux on Radxa Rock 5A delivers a board image with Rockchip
+    RK3588, REG-Station UI, and a focused retro living-room setup.
+radxa-zero-2:
+  meta_description: REG Linux for Radxa Zero 2 brings an SBC image with Amlogic A311D,
+    REG-Station UI, HDMI-first setup, and easy controller pairing.
+radxa-zero:
+  meta_description: Use REG Linux on Radxa Zero for an SBC build with Amlogic S905Y2,
+    REG-Station menus, stable display output, and simple flashing.
+raspberry-pi-2:
+  meta_description: REG Linux on Raspberry Pi 2 delivers a board image with Broadcom
+    BCM2836, REG-Station UI, and a focused retro living-room setup.
+raspberry-pi-400:
+  meta_description: Use REG Linux on Raspberry Pi 400 for an SBC build with Broadcom
+    BCM2711, REG-Station menus, stable display output, and simple flashing.
+raspberry-pi-a-a-b-b:
+  meta_description: REG Linux for Raspberry Pi A/A+/B/B+ brings an SBC image with
+    Broadcom BCM2835, REG-Station UI, HDMI-first setup, and easy controller pairing.
+raspberry-pi-zero:
+  meta_description: Use REG Linux on Raspberry Pi Zero for an SBC build with Broadcom
+    BCM2835, REG-Station menus, stable display output, and simple flashing.
+starfive-visionfive-2:
+  meta_description: Use REG Linux on StarFive VisionFive 2 for an SBC build with StarFive
+    JH7110, REG-Station menus, stable display output, and simple flashing.

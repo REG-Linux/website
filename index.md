@@ -1,8 +1,9 @@
 ---
 layout: default
-title: REG Linux
+title: Retro Emulation OS
 body_class: home
-description: REG Linux turns SBCs, laptops, and handhelds into polished retro emulation consoles with a curated frontend, pre-configured emulators, and an immutable Buildroot base.
+description: REG Linux turns SBCs, handhelds, laptops, and mini PCs into a focused retro gaming OS with REG-Station UI, curated emulators, and a stable Buildroot base.
+preload_image: /assets/images/logo-regstation.webp
 ---
 {% assign home = site.data.home %}
 {% assign community_channels = site.data.community.channels %}
@@ -34,8 +35,17 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     <div class="hero-media">
       <div class="hero-slideshow" aria-live="polite">
         {% for logo in home.hero.logos %}
+          {% assign logo_small = logo.image | replace: '.webp', '-sm.webp' %}
           <figure class="hero-slide" style="animation-delay: {{ forloop.index0 | times: 5 }}s">
-            <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }} logo" loading="lazy" />
+            <img src="{{ logo.image | relative_url }}"
+                 alt="{{ logo.label }} logo"
+                 {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+                 decoding="async"
+                 {% if logo.width %}width="{{ logo.width }}"{% endif %}
+                 {% if logo.height %}height="{{ logo.height }}"{% endif %}
+                 srcset="{{ logo_small | relative_url }} 210w, {{ logo.image | relative_url }} 420w"
+                 sizes="(max-width: 600px) 70vw, 420px"
+            />
             <figcaption>{{ logo.label }}</figcaption>
           </figure>
         {% endfor %}
@@ -44,7 +54,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
-  <section class="feature-grid" id="features">
+  <section class="feature-grid cv-auto" id="features">
     <div class="section-heading">
       <p class="eyebrow">What makes REG special</p>
       <h2>Feature-rich out of the box</h2>
@@ -63,7 +73,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
-  <section class="stack" id="stack">
+  <section class="stack cv-auto" id="stack">
     <div class="stack-card">
       <div>
         <h2>Pre-configured emulator stack</h2>
@@ -97,7 +107,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
-  <section class="hardware" id="hardware">
+  <section class="hardware cv-auto" id="hardware">
     <div class="section-heading">
       <p class="eyebrow">Hardware coverage</p>
       <h2>Works where you play</h2>
@@ -118,7 +128,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
-  <section class="docs" id="docs">
+  <section class="docs cv-auto" id="docs">
     <div class="section-heading">
       <p class="eyebrow">Official wiki</p>
       <h2>Documentation built on GitHub Pages</h2>
@@ -144,7 +154,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
-  <section class="get-started" id="get-started">
+  <section class="get-started cv-auto" id="get-started">
     <div class="section-heading">
       <p class="eyebrow">Boot and play</p>
       <h2>Getting started with REG Linux</h2>
@@ -165,7 +175,7 @@ description: REG Linux turns SBCs, laptops, and handhelds into polished retro em
     </div>
   </section>
 
-  <section class="community" id="community">
+  <section class="community cv-auto" id="community">
     <div class="section-heading">
       <p class="eyebrow">Open source & community</p>
       <h2>Build with the REG team</h2>
