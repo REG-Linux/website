@@ -1,8 +1,8 @@
 # PlayStation 4
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/ps4.webp" alt="PlayStation 4 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/ps4.png" alt="PlayStation 4 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/ps4.webp" alt="PlayStation 4 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/ps4.png" alt="PlayStation 4 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -50,4 +50,4 @@ The emulator mimics the DualShock 4 layout, so the REG-Linux PSX/PS2 overlay (`.
 
 - Expect early-stage behaviour: missing audio, crashes, or incomplete features are common.
 - Make sure the `.ps4` launcher points to an installed game and that the system modules folder contains the decrypted binaries.
-- Visit the [generic support pages](/support) for help if the emulator keeps crashing.
+- Visit the generic support pages for help if the emulator keeps crashing.

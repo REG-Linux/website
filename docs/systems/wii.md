@@ -1,8 +1,8 @@
 # Nintendo Wii
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/wii.webp" alt="Wii icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/wii.png" alt="Wii logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/wii.webp" alt="Wii icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/wii.png" alt="Wii logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -46,4 +46,4 @@ Dolphin maps Wii Remotes, Nunchuks, Classic Controllers, and GameCube pads. Pair
 - Rename `.rvz` files to `.nkit.iso` when Dolphin refuses to read them.
 - Run the ROM from the Dolphin system entry after the initial setup to ensure the NAND exists.
 - For controller issues, remap inputs via the global controller configuration and ensure the remotes show as connected inside Dolphin/Steam Input.
-- Look at the [generic support pages](/support) for more emulator guidance.
+- Look at the generic support pages for more emulator guidance.

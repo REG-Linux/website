@@ -1,8 +1,8 @@
 # DXX Rebirth
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/dxx-rebirth.webp" alt="DXX Rebirth icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/dxx-rebirth.png" alt="DXX Rebirth logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/dxx-rebirth.webp" alt="DXX Rebirth icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/dxx-rebirth.png" alt="DXX Rebirth logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -39,7 +39,7 @@ These launcher files appear in EmulationStation and start the corresponding game
 
 ### dxx-rebirth
 
-DXX Rebirth runs natively via the `dxx-rebirth` binary included in REG-Linux. It exposes RetroArch-style options such as `dxx-rebirth.videomode`, `dxx-rebirth.pad_to_keyboard`, `dxx-rebirth.powermode`, and bezel/hud overrides (`dxx-rebirth.bezel`, `dxx-rebirth.hud`, etc.). Use the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) for any runtime adjustments or controller remapping.
+DXX Rebirth runs natively via the `dxx-rebirth` binary included in REG-Linux. It exposes RetroArch-style options such as `dxx-rebirth.videomode`, `dxx-rebirth.pad_to_keyboard`, `dxx-rebirth.powermode`, and bezel/hud overrides (`dxx-rebirth.bezel`, `dxx-rebirth.hud`, etc.). Use the Quick Menu (`[HOTKEY]` + south button) for any runtime adjustments or controller remapping.
 
 | ES setting name | Description |
 | --- | --- |
@@ -58,4 +58,4 @@ The default overlay reflects the keyboard/mouse layout, but you can bind actions
 
 - Confirm the appropriate `.d1x` or `.d2x` launcher lives beside its data directory; missing files mean the title never appears in EmulationStation.
 - If the port refuses to start, double-check that every PK5/PK4 file from the retail install is present within the matching folder.
-- For detailed assistance, visit the REG-Linux [DXX-Rebirth wiki](https://wiki.reglinux.org/systems:dxx-rebirth) or the [generic support pages](/support).
+- For detailed assistance, visit the REG-Linux [DXX-Rebirth wiki](https://wiki.reglinux.org/systems:dxx-rebirth) or the generic support pages.

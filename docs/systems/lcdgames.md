@@ -1,8 +1,8 @@
 # LCD Games
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/lcdgames.webp" alt="LCD Games icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/lcdgames.png" alt="LCD Games logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/lcdgames.webp" alt="LCD Games icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/lcdgames.png" alt="LCD Games logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -36,7 +36,7 @@ Put LCD handheld images in `/userdata/roms/lcdgames`. MAME/MESS can load `.mgw` 
 
 #### RetroArch configuration
 
-While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) to edit options, controller mappings and shaders. REG-Linux mirrors many of those toggles through EmulationStation menus.
+While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to edit options, controller mappings and shaders. REG-Linux mirrors many of those toggles through EmulationStation menus.
 
 Standardized settings include `lcdgames.videomode`, `lcdgames.ratio`, `lcdgames.smooth`, `lcdgames.shaders`, `lcdgames.pixel_perfect`, `lcdgames.decoration`, `lcdgames.game_translation`, `lcdgames.audio_latency`, `lcdgames.video_threaded`.
 
@@ -65,6 +65,6 @@ Standardized options include `lcdgames.videomode`, `lcdgames.decoration`, `lcdga
 
 ## Controls
 
-Each LCD handheld had its own input set; MAME maps those buttons to the [REG-Linux Retropad](/configure_a_controller) with reasonable defaults. The layout can be adjusted through the emulator menus or per-game overrides.
+Each LCD handheld had its own input set; MAME maps those buttons to the REG-Linux Retropad with reasonable defaults. The layout can be adjusted through the emulator menus or per-game overrides.
 
 ![MAME controller overlay](../images/controller-overlays/mame-1.png)

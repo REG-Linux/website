@@ -1,8 +1,8 @@
 # MSU-MD
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/msu-md.webp" alt="MSU-MD icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/msu-md.png" alt="MSU-MD logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/msu-md.webp" alt="MSU-MD icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/msu-md.png" alt="MSU-MD logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -39,7 +39,7 @@ GenesisPlusGX handles the Mega Drive, Master System, Game Gear and Mega CD libra
 
 ## Controls
 
-MSU-MD uses the standard Mega Drive controller mapping on the [REG-Linux Retropad](/configure_a_controller). Use RetroArch or EmulationStation’s input remapping for light guns, paddle controllers, or extra keys when needed.
+MSU-MD uses the standard Mega Drive controller mapping on the REG-Linux Retropad. Use RetroArch or EmulationStation’s input remapping for light guns, paddle controllers, or extra keys when needed.
 
 ![megadrive controller overlay](../images/controller-overlays/megadrive-1.png)
 

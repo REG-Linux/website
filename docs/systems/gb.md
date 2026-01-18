@@ -1,8 +1,8 @@
 # Game Boy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gb.webp" alt="Game Boy icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gb.png" alt="Game Boy logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gb.webp" alt="Game Boy icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gb.png" alt="Game Boy logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -26,7 +26,7 @@ Launched in July 1989 at a price of $89.95, the Game Boy introduced Nintendo's L
 ## Quick reference
 
 - **Emulator:** [RetroArch](#retroarch)
-- **Cores available:** [libretro: Gambatte](/#libretro/_gambatte), [libretro: mGBA](/#libretro/_mgba), [libretro: VBA-M](/#libretro/_vba-m), [libretro: MesenS](/#libretro/_mesens)
+- **Cores available:** libretro: Gambatte, libretro: mGBA, libretro: VBA-M, libretro: MesenS
 - **ROM folder:** `/userdata/roms/gb`
 - **Accepted ROM formats:** `.gb`, `.zip`, `.7z`
 - **System group:** `gb`
@@ -41,7 +41,7 @@ Dozens of Game Boy emulators run without BIOS files, and REG-Linux follows that 
 
 ## ROMs
 
-Put Game Boy ROMs in `/userdata/roms/gb`. Want to boot games in Super Game Boy mode? Use the `roms/sgb` folder and the SNES/RetroArch integration. For linked multiplayer sessions, consult [GB2Players](/systems/gb2players).
+Put Game Boy ROMs in `/userdata/roms/gb`. Want to boot games in Super Game Boy mode? Use the `roms/sgb` folder and the SNES/RetroArch integration. For linked multiplayer sessions, consult GB2Players.
 
 ## Emulators
 
@@ -51,7 +51,7 @@ Put Game Boy ROMs in `/userdata/roms/gb`. Want to boot games in Super Game Boy m
 
 #### RetroArch configuration
 
-Open the **Quick Menu** with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) while a core is running to tweak per-game overrides, controller mappings or shaders.
+Open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) while a core is running to tweak per-game overrides, controller mappings or shaders.
 
 Standardized settings available to every Game Boy core include `gb.videomode`, `gb.ratio`, `gb.smooth`, `gb.shaders`, `gb.pixel_perfect`, `gb.decoration` and `gb.game_translation`.
 
@@ -113,5 +113,5 @@ MesenS is a SNES emulator that can boot Game Boy games through a Super Game Boy 
 
 ## Controls
 
-Game Boy games adopt the default [REG-Linux Retropad](/configure_a_controller) layout. Use the controller configuration menus to remap buttons per core or per game when needed.
+Game Boy games adopt the default REG-Linux Retropad layout. Use the controller configuration menus to remap buttons per core or per game when needed.
 

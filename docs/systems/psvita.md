@@ -1,8 +1,8 @@
 # PlayStation Vita
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/psvita.webp" alt="PlayStation Vita icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/psvita.png" alt="PlayStation Vita logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/psvita.webp" alt="PlayStation Vita icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/psvita.png" alt="PlayStation Vita logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -53,4 +53,4 @@ Vita3K maps the PS Vita/ DualShock layout onto your controller. Use the PSP over
 
 - Vita3K is experimental—expect instability, crashes, and missing audio. Check the [Vita3K quick start guide](https://vita3k.org/quickstart.html) and compatibility list before playing.
 - Ensure system modules live under `/userdata/system/configs/shadps4/user/sys_modules` if required (decrypted modules from a jailbroken Vita).
-- The [generic support pages](/support) cover general emulator issues.
+- The generic support pages cover general emulator issues.

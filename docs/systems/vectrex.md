@@ -1,8 +1,8 @@
 # Vectrex
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/vectrex.webp" alt="Vectrex icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/vectrex.png" alt="Vectrex logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/vectrex.webp" alt="Vectrex icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/vectrex.png" alt="Vectrex logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -46,6 +46,6 @@ Standalone MAME uses the `vectrex` driver with BGFX settings (`vectrex.video`, `
 
 ## Controls & troubleshooting
 
-The overlay at `../images/controller-overlays/vectrex.png` documents the 4-way stick plus buttons. Increase `global.res_multi` (e.g., 4x) and apply vector shaders (Flatten-Glow) when the picture looks jagged. Consult the [generic support pages](/support) if the ROM fails to boot or the core lacks the BIOS.
+The overlay at `../images/controller-overlays/vectrex.png` documents the 4-way stick plus buttons. Increase `global.res_multi` (e.g., 4x) and apply vector shaders (Flatten-Glow) when the picture looks jagged. Consult the generic support pages if the ROM fails to boot or the core lacks the BIOS.
 
 ---

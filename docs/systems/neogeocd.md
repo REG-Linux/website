@@ -1,8 +1,8 @@
 # Neo-Geo CD
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/neogeocd.webp" alt="Neo-Geo CD icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/neogeocd.png" alt="Neo-Geo CD logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/neogeocd.webp" alt="Neo-Geo CD icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/neogeocd.png" alt="Neo-Geo CD logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -68,12 +68,12 @@ Neo-Geo CD input uses the same overlay as other AES/MVS platforms; view `../imag
 
 - When a title refuses to boot, confirm the ZIP/CHD name matches the expected MAME ID and that the chosen BIOS matches the disk version.
 - Switch between OpenGL and Vulkan (if supported) via RetroArch’s Quick Menu for compatibility.
-- Consult the [generic support pages](/support) for additional help.
+- Consult the generic support pages for additional help.
 ## Troubleshooting
 
 - If a game fails to start, ensure the ZIP/CHD name matches the expected MAME ID and that the BIOS selection matches that release.
 - Toggle between OpenGL and Vulkan through RetroArch’s Quick Menu when a renderer refuses to cooperate.
-- See the [generic support pages](/support) if further assistance is needed.
+- See the generic support pages if further assistance is needed.
 - When a title refuses to boot, confirm the ZIP/CHD name matches the expected MAME ID and that the chosen BIOS matches the disk version.
 - Switch between OpenGL and Vulkan (if supported) via RetroArch’s Quick Menu for compatibility.
-- Consult the [generic support pages](/support) for additional help.
+- Consult the generic support pages for additional help.

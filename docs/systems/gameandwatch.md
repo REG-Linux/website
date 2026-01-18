@@ -1,8 +1,8 @@
 # Nintendo Game & Watch
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gameandwatch.webp" alt="Game and Watch icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gameandwatch.png" alt="Game and Watch logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gameandwatch.webp" alt="Game and Watch icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gameandwatch.png" alt="Game and Watch logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -48,7 +48,7 @@ MAME’s LCD driver also emulates the Game & Watch lineup. Open the in-game menu
 
 ## Controls
 
-Game & Watch inputs map to the [REG-Linux Retropad](/configure_a_controller) overlay. Use the overlay and the emulator’s menu to simulate console buttons or toggle the virtual keypad.
+Game & Watch inputs map to the REG-Linux Retropad overlay. Use the overlay and the emulator’s menu to simulate console buttons or toggle the virtual keypad.
 
 ![Game & Watch controller overlay](../images/controller-overlays/nes-1.png)
 

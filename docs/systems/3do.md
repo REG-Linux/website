@@ -1,8 +1,8 @@
 # 3DO Interactive Multiplayer
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/3do.webp" alt="3DO Interactive Multiplayer icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/3do.png" alt="3DO Interactive Multiplayer logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/3do.webp" alt="3DO Interactive Multiplayer icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/3do.png" alt="3DO Interactive Multiplayer logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -34,7 +34,7 @@ In REG-Linux, the 3DO is handled as part of the `3do` system group. The frontend
 
 ## REG-Linux integration
 
-ROM images go into `/userdata/roms/3do/`. To save space while keeping compatibility, REG-Linux encourages converting disc images to [CHD](/disk_image_compression#chd), though `.iso`, `.chd` and `.cue` files are all supported in the same folder. The system group allows metadata scraping and visual themes to treat 3DO uniquely within the frontend.
+ROM images go into `/userdata/roms/3do/`. To save space while keeping compatibility, REG-Linux encourages converting disc images to CHD, though `.iso`, `.chd` and `.cue` files are all supported in the same folder. The system group allows metadata scraping and visual themes to treat 3DO uniquely within the frontend.
 
 ### Multi-disc games
 
@@ -56,7 +56,7 @@ If any checksum mismatches or a file is missing, the core may refuse to boot or 
 
 ### RetroArch
 
-RetroArch is the primary frontend used for 3DO emulation in REG-Linux. General interface, hotkeys and configuration help are documented on the [RetroArch page](/emulators/retroarch).
+RetroArch is the primary frontend used for 3DO emulation in REG-Linux. General interface, hotkeys and configuration help are documented on the RetroArch page.
 
 #### Opera (libretro)
 
@@ -79,11 +79,11 @@ Core-specific documentation and compatibility lists can be found via:
 
 ## Controls
 
-The default 3DO controller maps to the [REG-Linux Retropad](/configure_a_controller). Overlays and per-game mappings can be adjusted through the platform's standard controller configuration tools.
+The default 3DO controller maps to the REG-Linux Retropad. Overlays and per-game mappings can be adjusted through the platform's standard controller configuration tools.
 
 ## Troubleshooting
 
 - Check that BIOS filenames and MD5 hashes match the required values.
 - Confirm ROM images use supported formats (`.iso`, `.chd`, `.cue`).
 - Verify games live under `/userdata/roms/3do/`.
-- Consult the [RetroArch page](/emulators/retroarch) for general issues such as audio glitches, stuttering or netplay questions.
+- Consult the RetroArch page for general issues such as audio glitches, stuttering or netplay questions.

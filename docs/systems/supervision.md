@@ -1,8 +1,8 @@
 # Supervision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/supervision.webp" alt="Supervision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/supervision.png" alt="Supervision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/supervision.webp" alt="Supervision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/supervision.png" alt="Supervision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -41,4 +41,4 @@ The Supervision uses a D-pad plus two buttons and a Start key. Map those inputs 
 
 - Make sure every ROM uses the `.sv` extension; zipped ROMs should only contain the needed file.
 - Switch between OpenGL and Vulkan (via `supervision.gfxbackend`) if you see rendering issues.
-- Consult the [generic support pages](/support) for additional help.
+- Consult the generic support pages for additional help.

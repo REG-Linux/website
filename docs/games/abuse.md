@@ -1,7 +1,7 @@
 # Abuse
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/abuse.webp" alt="Abuse icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<img src="/wiki/assets/systems/icons/abuse.webp" alt="Abuse icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
 </div>
 
 ## Overview
@@ -35,4 +35,4 @@ Abuse defaults to keyboard + mouse, but REG-Linux ships with a pad2key profile t
 
 - Ensure `abuse.game` exists and that `abuse_data/` contains the unpacked content.
 - If files go missing or the engine crashes, reinstall via the Content Downloader or re-extract the archive.
-- For broader bugs consult the [generic support pages](/support).
+- For broader bugs consult the generic support pages.

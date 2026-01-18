@@ -1,8 +1,8 @@
 # Gamate
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gamate.webp" alt="Gamate icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gamate.png" alt="Gamate logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gamate.webp" alt="Gamate icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gamate.png" alt="Gamate logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -54,7 +54,7 @@ Standardized options for this system include `gamate.videomode`, `gamate.decorat
 
 ## Controls
 
-The default mapping follows the [REG-Linux Retropad](/configure_a_controller) overlay. You can customize input per game through MAME’s configuration menu.
+The default mapping follows the REG-Linux Retropad overlay. You can customize input per game through MAME’s configuration menu.
 
 ![Gamate controller overlay](../images/controller-overlays/gamate.png)
 
@@ -62,4 +62,4 @@ The default mapping follows the [REG-Linux Retropad](/configure_a_controller) ov
 
 - Confirm `gamate.zip` is installed under `bios/` or `roms/gamate`.
 - Try a different ROM dump if one fails to boot (some sets are incomplete).
-- Consult the [MAME troubleshooting section](/systems/mame#troubleshooting) for driver-specific guidance.
+- Consult the [MAME troubleshooting section](mame.md#troubleshooting) for driver-specific guidance.

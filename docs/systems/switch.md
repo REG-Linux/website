@@ -1,8 +1,8 @@
 # Switch
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/switch.webp" alt="Switch icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/switch.png" alt="Switch logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/switch.webp" alt="Switch icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/switch.png" alt="Switch logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -65,4 +65,4 @@ Switch controllers map to the DualShock-style overlay shown inside the repositor
 - Use Vulkan for better performance; fallback to OpenGL only if Vulkan drivers are unavailable.
 - Keep shader caches/wine states inside `/userdata/system/configs/<emu>/` to avoid recompile delays.
 - Check the emulator’s compatibility lists (yuzu/ryujinx/eden) before running heavy titles.
-- Consult the [generic support pages](/support) for broader GPU or Linux issues.
+- Consult the generic support pages for broader GPU or Linux issues.

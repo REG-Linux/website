@@ -1,8 +1,8 @@
 # Commodore PET
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/pet.webp" alt="Commodore PET icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/pet.png" alt="Commodore PET logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/pet.webp" alt="Commodore PET icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/pet.png" alt="Commodore PET logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -57,4 +57,4 @@ PET titles rely on the integrated keyboard and optionally the analog joystick in
 
 - If a program won't load, extract archives before launching and try the plain `.prg`/`.d64`.
 - Use `global.vice_zoom_mode` when the picture shows black borders.
-- See the [generic support pages](/support) for additional help.
+- See the generic support pages for additional help.

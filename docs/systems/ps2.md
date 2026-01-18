@@ -1,8 +1,8 @@
 # PlayStation 2
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/ps2.webp" alt="PlayStation 2 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/ps2.png" alt="PlayStation 2 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/ps2.webp" alt="PlayStation 2 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/ps2.png" alt="PlayStation 2 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -67,7 +67,7 @@ The REG-Linux DualShock overlay at `../images/controller-overlays/psx-1.png` ref
 
 ## Troubleshooting
 
-- **Performance:** PS2 emulation needs x86_64 hardware and Vulkan. Lower the internal resolution, disable drawing hacks, or fall back to the libretro cores on weaker machines. See the [PC performance guide](/choose_a_desktop_computer) for recommended specs.
+- **Performance:** PS2 emulation needs x86_64 hardware and Vulkan. Lower the internal resolution, disable drawing hacks, or fall back to the libretro cores on weaker machines. See the PC performance guide for recommended specs.
 - **Audio glitches:** Switch the audio sync method inside `pcsx2-config` to **Async Mix** rather than **None** to avoid crackling.
 - **Boot problems:** Enable `ps2.fullboot` and `ps2.EmuCore_EnablePatches` so the BIOS animation and automatic fixes run before the game loads.
-- If you need more help, consult the [PCSX2 wiki](https://wiki.pcsx2.net) and the [generic support pages](/support).
+- If you need more help, consult the [PCSX2 wiki](https://wiki.pcsx2.net) and the generic support pages.

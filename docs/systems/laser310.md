@@ -1,8 +1,8 @@
 # Laser 310
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/laser310.webp" alt="Laser 310 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/laser310.png" alt="Laser 310 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/laser310.webp" alt="Laser 310 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/laser310.png" alt="Laser 310 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -73,10 +73,10 @@ The standalone MAME builds can also launch Laser 310 titles. Hit `[HOTKEY]` + th
 
 ## Controls
 
-Laser 310 games map to the [REG-Linux Retropad](/configure_a_controller). Use the on-screen overlay or MAME’s input config to align the buttons with the device’s keypad and joystick.
+Laser 310 games map to the REG-Linux Retropad. Use the on-screen overlay or MAME’s input config to align the buttons with the device’s keypad and joystick.
 
 ![Laser 310 controller overlay](../images/controller-overlays/laser310.png)
 
 ## Troubleshooting
 
-Consult the [MAME troubleshooting section](/systems/mame#troubleshooting) for system-specific issues.
+Consult the [MAME troubleshooting section](mame.md#troubleshooting) for system-specific issues.

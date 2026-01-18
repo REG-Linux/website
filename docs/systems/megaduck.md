@@ -1,8 +1,8 @@
 # Mega Duck / Cougar Boy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/megaduck.webp" alt="Mega Duck / Cougar Boy icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/megaduck.png" alt="Mega Duck / Cougar Boy logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/megaduck.webp" alt="Mega Duck / Cougar Boy icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/megaduck.png" alt="Mega Duck / Cougar Boy logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -54,10 +54,10 @@ Press `[HOTKEY]` + the south face button or `[Tab]` to access the MAME menu, adj
 
 ## Controls
 
-Here are the default Mega Duck controls on the [REG-Linux Retropad](/configure_a_controller):
+Here are the default Mega Duck controls on the REG-Linux Retropad:
 
 ![Mega Duck controller overlay](../images/controller-overlays/nes-1.png)
 
 ## Troubleshooting
 
-For MAME-specific help see [/systems/mame#troubleshooting](/systems/mame#troubleshooting); for general issues consult the [generic support pages](/support).
+For MAME-specific help see [/systems/mame#troubleshooting](mame.md#troubleshooting); for general issues consult the generic support pages.

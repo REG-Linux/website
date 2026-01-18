@@ -1,8 +1,8 @@
 # PlayStation
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/psx.webp" alt="PlayStation icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/psx.png" alt="PlayStation logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/psx.webp" alt="PlayStation icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/psx.png" alt="PlayStation logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -53,4 +53,4 @@ The overlay at `../images/controller-overlays/psx-1.png` maps the DualShock layo
 - **Crashes or audio issues in DuckStation:** Enable VSync or reduce the render scale. Toggle `SHOW BIOS BOOTLOGO` when dealing with protected PAL discs.
 - **PCSX ReARMed resets:** Launch `[F1]` → **Applications** → `pcsx_rearmed_config`, slide the preset to “Balanced (3)” and apply.
 - **PAL copy protection:** Provide an `.sbi` file and show the BIOS animation.
-- For general help consult the [generic support pages](/support).
+- For general help consult the generic support pages.

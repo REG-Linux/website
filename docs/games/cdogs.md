@@ -1,7 +1,7 @@
 # C-Dogs SDL
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/cdogs.webp" alt="C-Dogs SDL icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<img src="/wiki/assets/systems/icons/cdogs.webp" alt="C-Dogs SDL icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
 </div>
 
 ## Overview
@@ -31,4 +31,4 @@ C-Dogs uses the standard RETROpad mappings. Configure action buttons or keyboard
 
 - Confirm the Content Downloader placed a `.game` folder inside `/userdata/roms/cdogs/`.
 - If the title does not launch, reinstall the content package or delete the folder and reinstall it via the downloader.
-- Refer to the [generic support pages](/support) for any engine-specific issues.
+- Refer to the generic support pages for any engine-specific issues.

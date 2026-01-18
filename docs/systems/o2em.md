@@ -69,10 +69,10 @@ REG-Linux added support for the voice samples that O2EM can play. Download the p
 
 ## Controls
 
-The system emulates the single-button joystick plus built-in keyboard. The RetroPad maps the joystick axes, primary button, and keyboard letters; see the [REG-Linux controller overlay](/configure_a_controller) for details. If a game swaps player inputs, flip the player sides in the core options or save a custom remap (`/remapping_controls_per_emulator`).
+The system emulates the single-button joystick plus built-in keyboard. The RetroPad maps the joystick axes, primary button, and keyboard letters; see the REG-Linux controller overlay for details. If a game swaps player inputs, flip the player sides in the core options or save a custom remap (`/remapping_controls_per_emulator`).
 
 ## Troubleshooting
 
 - If the wrong region boots, double-check the BIOS file used under `global.o2em_bios`.
 - When samples do not play, ensure the `voice` folder mirrors the O2EM download structure.
-- For overall issues, consult the [generic support pages](/support).
+- For overall issues, consult the generic support pages.

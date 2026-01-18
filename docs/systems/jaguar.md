@@ -63,6 +63,6 @@ Copy `/userdata/saves/bigpemu-bottle/drive_c/users/root/AppData/Roaming/BigPEmu/
 
 ## Controls
 
-Jaguar’s oddball controller (numeric keypad + d-pad) maps to the [REG-Linux Retropad](/configure_a_controller) overlay. Use overlays or controller tattoos to keep the keypad legend visible for keypad-heavy games.
+Jaguar’s oddball controller (numeric keypad + d-pad) maps to the REG-Linux Retropad overlay. Use overlays or controller tattoos to keep the keypad legend visible for keypad-heavy games.
 
 ![Jaguar controller overlay](../images/controller-overlays/jaguar.png)

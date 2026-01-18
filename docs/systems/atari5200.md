@@ -1,8 +1,8 @@
 # Atari 5200
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/atari5200.webp" alt="Atari 5200 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/atari5200.png" alt="Atari 5200 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/atari5200.webp" alt="Atari 5200 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/atari5200.png" alt="Atari 5200 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -64,7 +64,7 @@ Many emulator parameters (cartridge type selection, advanced input mapping, vide
 
 ## Controls
 
-Here are the default Atari 5200 controls mapped to a [REG-Linux Retropad](/configure_a_controller):
+Here are the default Atari 5200 controls mapped to a REG-Linux Retropad:
 
 ![](../images/controller-overlays/atari5200-1.png)
 
@@ -74,4 +74,4 @@ Use the Quick Menu to tweak mappings if you need to adjust keypad buttons or ana
 
 - Ensure `/userdata/roms/atari5200` holds your games and that the BIOS (`bios/5200.rom`) exists with the correct checksum.
 - Convert `.a52` files to `.car` if the core cannot prompt you to select a cartridge type, or respond to the prompt “blindly.”
-- Consult the [RetroArch documentation](/emulators/retroarch) for core-specific debugging.
+- Consult the RetroArch documentation for core-specific debugging.

@@ -1,8 +1,8 @@
 # Atari XE Game System (XEGS)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/xegs.webp" alt="Atari XEGS icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/xegs.png" alt="Atari XEGS logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/xegs.webp" alt="Atari XEGS icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/xegs.png" alt="Atari XEGS logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -39,7 +39,7 @@ Store cartridges or disk dumps in `/userdata/roms/xegs`. The XEGS uses the same 
 
 ### libretro: mess
 
-Use the RetroArch Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) to tweak `mess.*` video and input options. Enable `global.mame_cpu_overclock` only when a game refuses to run at full speed, and rely on `global.altdpad` when you want additional directions for multidirectional joysticks.
+Use the RetroArch Quick Menu (`[HOTKEY]` + south button) to tweak `mess.*` video and input options. Enable `global.mame_cpu_overclock` only when a game refuses to run at full speed, and rely on `global.altdpad` when you want additional directions for multidirectional joysticks.
 
 ### MAME driver
 
@@ -53,4 +53,4 @@ The default overlay shows the Atari two-button layout. Rebind buttons through th
 
 - Make sure `/userdata/bios/xegs.zip` exists and contains `c101687.rom`; the emulator will not start otherwise.
 - If a disk image refuses to launch, try renaming or extracting it to force RetroArch to see the proper header.
-- Consult the [generic support pages](/support) for general RetroArch or MAME suggestions.
+- Consult the generic support pages for general RetroArch or MAME suggestions.

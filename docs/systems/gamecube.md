@@ -36,7 +36,7 @@ Dolphin uses the GameCube IPL to deliver the original boot animation and allow a
 
 ## ROM storage and formats
 
-Store every GameCube ROM in `/userdata/roms/gamecube`. If you use a Riivolution patch, follow the JSON structure described on the [Dolphin emulator page](/emulators/dolphin#riivolution_patches) before launching the game from EmulationStation.
+Store every GameCube ROM in `/userdata/roms/gamecube`. If you use a Riivolution patch, follow the JSON structure described on the Dolphin emulator page before launching the game from EmulationStation.
 
 ### Multi-disc games
 
@@ -117,11 +117,11 @@ Standardized features available to Dolphin include `gamecube.videomode` and `gam
 
 #### libretro: dolphin
 
-Open RetroArch's Quick Menu during gameplay with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) and adjust per-core settings there. Otherwise, RetroArch shares the same standardized `gamecube.*` options as the standalone emulator.
+Open RetroArch's Quick Menu during gameplay with `[HOTKEY]` + the south face button (see controller configuration) and adjust per-core settings there. Otherwise, RetroArch shares the same standardized `gamecube.*` options as the standalone emulator.
 
 ## Controls
 
-The default GameCube layout is represented on the [REG-Linux Retropad](/configure_a_controller) overlay below:
+The default GameCube layout is represented on the REG-Linux Retropad overlay below:
 
 ![gamecube controller overlay](../images/controller-overlays/gamecube-1.png)
 
@@ -141,7 +141,7 @@ Since REG-Linux v31 you can create and save custom GameCube controller profiles 
 
 Once saved, set **USE PAD PROFILES** (`gamecube.use_pad_profiles`) to **TRUE** and Dolphin will load your layout. Profiles live under `/userdata/system/configs/dolphin-emu/Profiles`.
 
-For more remapping guidance see [/remapping_controls_per_emulator#gamecube](/remapping_controls_per_emulator#gamecube).
+For more remapping guidance see /remapping_controls_per_emulator#gamecube.
 
 ## Troubleshooting
 

@@ -1,8 +1,8 @@
 # TyrQuake
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/tyrquake.webp" alt="TyrQuake icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/tyrquake.png" alt="TyrQuake logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/tyrquake.webp" alt="TyrQuake icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/tyrquake.png" alt="TyrQuake logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -34,7 +34,7 @@ RetroArch exposes the usual `tyrquake.*` settings plus additional toggles for vi
 | `global.tyrquake_rumble` | Toggle controller vibration. |
 | `global.tyrquake_controller1` | Pick a controller profile (Gamepad, Modern, Keyboard+Mouse). |
 
-Adjust these options from the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) or by editing the config file inside each episode’s save folder.
+Adjust these options from the Quick Menu (`[HOTKEY]` + south button) or by editing the config file inside each episode’s save folder.
 
 ## Controls
 
@@ -44,4 +44,4 @@ The overlay mirrors the PC-style FPS layout. Save a custom remap via `/remapping
 
 - Verify every episode folder contains the correct `.pak` files and optional `music/` tracks. Missing files stop TyrQuake from launching.
 - Launch the shareware `pak0.pak` first to ensure the core runs before adding paid episodes or mission packs.
-- When in doubt, consult the [generic support pages](/support) for additional help.
+- When in doubt, consult the generic support pages for additional help.

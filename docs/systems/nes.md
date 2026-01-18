@@ -1,8 +1,8 @@
 # Nintendo Entertainment System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/nes.webp" alt="Nintendo Entertainment System icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/nes.png" alt="Nintendo Entertainment System logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/nes.webp" alt="Nintendo Entertainment System icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/nes.png" alt="Nintendo Entertainment System logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -57,4 +57,4 @@ See `../images/controller-overlays/nes.png` for the default overlay, including t
 
 - When a title refuses to boot, switch cores (for example, FBAlpha versus Mesen) or unzip the ROM and try again.
 - Famicom Disk System releases expect a disk flip (screens beginning with `B`); use `[L1]` to simulate the side change.
-- The [generic support pages](/support) cover most problems that persist after these steps.
+- The generic support pages cover most problems that persist after these steps.
