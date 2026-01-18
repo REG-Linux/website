@@ -27,14 +27,12 @@ jobs:
           repository: REG-Linux/wiki
           path: wiki
           fetch-depth: 0
-          token: ${{ secrets.REG_LINUX_PAT }}
       - name: Checkout REG-Linux configs
         uses: actions/checkout@v4
         with:
           repository: REG-Linux/REG-Linux
           path: reglinux
           fetch-depth: 1
-          token: ${{ secrets.REG_LINUX_PAT }}
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
