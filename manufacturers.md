@@ -29,7 +29,7 @@ description: Explore every hardware manufacturer behind the REG Linux device cat
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-linux.png' | relative_url }}" alt="REG Linux hardware ecosystem" loading="lazy" />
+        <img src="{{ '/assets/images/logo-linux.webp' | relative_url }}" alt="REG Linux hardware ecosystem" loading="lazy" />
         <figcaption>REG Linux reaches across multiple hardware ecosystems.</figcaption>
       </figure>
     </div>

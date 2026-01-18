@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ports
+title: Community Ports
 body_class: ports
 permalink: /ports/
 description: Discover engine ports and community remakes that REG Linux handles via the wiki’s port-specific pages.

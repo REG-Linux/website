@@ -29,7 +29,7 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
     </div>
     <div class="hero-media">
       <figure>
-        <img src="{{ '/assets/images/logo-regstation.png' | relative_url }}" alt="REG-Station logo" loading="lazy" />
+        <img src="{{ '/assets/images/logo-regstation.webp' | relative_url }}" alt="REG-Station logo" loading="lazy" />
         <figcaption>Community-sourced builds and docs.</figcaption>
       </figure>
     </div>

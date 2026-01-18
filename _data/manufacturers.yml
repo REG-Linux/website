@@ -3,6 +3,16 @@
   url: https://anbernic.com/
   logo: Anbernic
   logo_image: /assets/images/manufacturers/anbernic.png
+- id: AYANEO
+  name: AYANEO
+  url: https://www.ayaneo.com/
+  logo: AYANEO
+  logo_image: /assets/images/manufacturers/ayaneo.png
+- id: Ayn
+  name: AYN
+  url: https://www.ayntec.com/
+  logo: AYN
+  logo_image: /assets/images/manufacturers/ayn.png
 - id: ASUS
   name: ASUS
   url: https://www.asus.com/
@@ -43,6 +53,11 @@
   url: https://www.khadas.com/
   logo: Khadas
   logo_image: /assets/images/manufacturers/khadas.svg
+- id: MagicX
+  name: MagicX
+  url: https://wiki.reglinux.org/handhelds/magicx/xu-mini-m/
+  logo: MagicX
+  logo_image: /assets/images/manufacturers/magicx.svg
 - id: Milk-V
   name: Milk-V
   url: https://milkv.io/
@@ -63,6 +78,11 @@
   url: https://orangepi.com/
   logo: Orange Pi
   logo_image: /assets/images/manufacturers/orange-pi.png
+- id: Powkiddy
+  name: Powkiddy
+  url: https://powkiddy.com/
+  logo: Powkiddy
+  logo_image: /assets/images/manufacturers/powkiddy.png
 - id: Radxa
   name: Radxa
   url: https://radxa.com/
@@ -73,11 +93,21 @@
   url: https://www.raspberrypi.org/
   logo: Raspberry Pi
   logo_image: /assets/images/manufacturers/raspberry-pi.png
+- id: Retroid
+  name: Retroid
+  url: https://www.goretroid.com/
+  logo: Retroid
+  logo_image: /assets/images/manufacturers/retroid.png
 - id: Starfive
   name: StarFive
   url: https://www.starfivetech.com/
   logo: StarFive
   logo_image: /assets/images/manufacturers/starfive.svg
+- id: Unbranded
+  name: Unbranded
+  url: https://wiki.reglinux.org/handhelds/unbranded/rk3326-clones/
+  logo: Unbranded
+  logo_image: /assets/images/manufacturers/unbranded.svg
 - id: Valve
   name: Valve
   url: https://www.valvesoftware.com/

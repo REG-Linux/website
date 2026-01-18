@@ -12,7 +12,7 @@ hero:
       href: /download/
       style: secondary
   media:
-    image: /assets/images/logo-linux.png
+    image: /assets/images/logo-linux.webp
     alt: Hardware logos
     caption: Mainline kernels, blend of ARM/RISC-V/x86 hardware.
 doc_section:

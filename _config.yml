@@ -1,7 +1,8 @@
 title: REG Linux
 description: Retro Emulation Gaming Linux community builds for SBCs, handhelds, and mini PCs.
 baseurl: ""
-url: ""
+url: "https://reglinux.org"
+og_image: "/assets/images/reg_linux_logo.png"
 markdown: kramdown
 exclude:
   - download-source.html
@@ -9,3 +10,6 @@ collections:
   devices:
     output: true
     permalink: /download/:name/
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
