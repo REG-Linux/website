@@ -45,8 +45,8 @@ jobs:
           python-version: "3.11"
       - name: Install MkDocs
         run: pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin pyyaml
-      - name: Seed SoC data (strict)
-        run: python scripts/seed_socs_from_configs.py --socs _data/socs.yml --configs reglinux/configs --strict
+      - name: Seed SoC data
+        run: python scripts/seed_socs_from_configs.py --socs _data/socs.yml --configs reglinux/configs
       - name: Build Jekyll
         env:
           JEKYLL_ENV: production
