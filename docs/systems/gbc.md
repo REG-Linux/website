@@ -1,8 +1,8 @@
 # Game Boy Color
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gbc.webp" alt="Game Boy Color icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gbc.png" alt="Game Boy Color logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gbc.webp" alt="Game Boy Color icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gbc.png" alt="Game Boy Color logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -26,7 +26,7 @@ Nintendo released the Game Boy Color in November 1998. The handheld runs on a du
 ## Quick reference
 
 - **Emulator:** [RetroArch](#retroarch)
-- **Cores available:** [libretro: Gambatte](/#libretro/_gambatte), [libretro: mGBA](/#libretro/_mgba), [libretro: VBA-M](/#libretro/_vba-m), [libretro: MesenS](/#libretro/_mesens)
+- **Cores available:** libretro: Gambatte, libretro: mGBA, libretro: VBA-M, libretro: MesenS
 - **ROM folder:** `/userdata/roms/gbc`
 - **Accepted ROM formats:** `.gbc`, `.zip`, `.7z`
 - **System group:** `gbc`
@@ -37,7 +37,7 @@ No BIOS file is required for Game Boy Color emulation in REG-Linux.
 
 ## ROMs
 
-Store all Game Boy Color ROMs inside `/userdata/roms/gbc`. Want to emulate two players? Read [GBC2Players](/systems/gbc2players) for build-in linking tips.
+Store all Game Boy Color ROMs inside `/userdata/roms/gbc`. Want to emulate two players? Read GBC2Players for build-in linking tips.
 
 ## Emulators
 
@@ -47,7 +47,7 @@ Store all Game Boy Color ROMs inside `/userdata/roms/gbc`. Want to emulate two p
 
 #### RetroArch configuration
 
-Open the **Quick Menu** with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) while a core is running to adjust advanced options or per-game overrides.
+Open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) while a core is running to adjust advanced options or per-game overrides.
 
 Standardized settings exposed to every Game Boy Color core include `gbc.videomode`, `gbc.ratio`, `gbc.smooth`, `gbc.shaders`, `gbc.pixel_perfect`, `gbc.decoration` and `gbc.game_translation`.
 
@@ -109,5 +109,5 @@ Although MesenS is technically a SNES emulator, it can launch Game Boy Color gam
 
 ## Controls
 
-Game Boy Color titles adopt the default [REG-Linux Retropad](/configure_a_controller) layout. Use the controller configuration menus to adjust mappings per core or per game if needed.
+Game Boy Color titles adopt the default REG-Linux Retropad layout. Use the controller configuration menus to adjust mappings per core or per game if needed.
 

@@ -1,0 +1,495 @@
+# Auto-synced SoC catalog.
+allwinner-h2:
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A7
+  gpu:
+    api: ''
+    model: Mali (Lima)
+  kernel_version: ''
+  manufacturer: Allwinner
+  model: H2+
+  slug: allwinner-h2
+allwinner-h3:
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A7
+  gpu:
+    api: ''
+    model: Mali (Lima)
+  kernel_version: ''
+  manufacturer: Allwinner
+  model: H3
+  slug: allwinner-h3
+allwinner-h5:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Lima)
+  kernel_version: ''
+  manufacturer: Allwinner
+  model: H5
+  slug: allwinner-h5
+allwinner-h6:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Allwinner
+  model: H6
+  slug: allwinner-h6
+allwinner-h616:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Allwinner
+  model: H616
+  slug: allwinner-h616
+allwinner-h618:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Allwinner
+  model: H618
+  slug: allwinner-h618
+allwinner-h700:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Allwinner
+  model: H700
+  slug: allwinner-h700
+amd-ryzen-z1:
+  cpu:
+    arch: x86_64
+    cores: ''
+    max_clock: ''
+    model: x86_64
+  gpu:
+    api: ''
+    model: x86 GPU
+  kernel_version: 6.18.4
+  manufacturer: AMD
+  model: Ryzen Z1
+  slug: amd-ryzen-z1
+amd-zen-2-apu:
+  cpu:
+    arch: x86_64
+    cores: ''
+    max_clock: ''
+    model: x86_64
+  gpu:
+    api: ''
+    model: x86 GPU
+  kernel_version: 6.18.4
+  manufacturer: AMD
+  model: Zen 2 APU
+  slug: amd-zen-2-apu
+amlogic-a311d:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A73/A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Amlogic
+  model: A311D
+  slug: amlogic-a311d
+amlogic-a311d2:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A73/A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: '5.15'
+  manufacturer: Amlogic
+  model: A311D2
+  slug: amlogic-a311d2
+amlogic-s905-x:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Lima)
+  kernel_version: 6.18.4
+  manufacturer: Amlogic
+  model: S905(X)
+  slug: amlogic-s905-x
+amlogic-s905d3:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A55
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Amlogic
+  model: S905D3
+  slug: amlogic-s905d3
+amlogic-s905x3:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A55
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Amlogic
+  model: S905X3
+  slug: amlogic-s905x3
+amlogic-s905x5m:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A35
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: '5.15'
+  manufacturer: Amlogic
+  model: S905X5M
+  slug: amlogic-s905x5m
+amlogic-s905y2:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Amlogic
+  model: S905Y2
+  slug: amlogic-s905y2
+amlogic-s905y4:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A35
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: '5.15'
+  manufacturer: Amlogic
+  model: S905Y4
+  slug: amlogic-s905y4
+amlogic-s912:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Amlogic
+  model: S912
+  slug: amlogic-s912
+amlogic-s922x:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A73/A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Amlogic
+  model: S922X
+  slug: amlogic-s922x
+amlogic-s922x-h:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A73/A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Amlogic
+  model: S922X-H
+  slug: amlogic-s922x-h
+broadcom-bcm2711:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A72
+  gpu:
+    api: ''
+    model: Broadcom V3D
+  kernel_version: '6.12'
+  manufacturer: Broadcom
+  model: BCM2711
+  slug: broadcom-bcm2711
+broadcom-bcm2712:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A76
+  gpu:
+    api: ''
+    model: Broadcom V3D
+  kernel_version: '6.12'
+  manufacturer: Broadcom
+  model: BCM2712
+  slug: broadcom-bcm2712
+broadcom-bcm2835:
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: ''
+  gpu:
+    api: ''
+    model: Broadcom V3D
+  kernel_version: '6.12'
+  manufacturer: Broadcom
+  model: BCM2835
+  slug: broadcom-bcm2835
+broadcom-bcm2836:
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A7
+  gpu:
+    api: ''
+    model: Broadcom V3D
+  kernel_version: '6.12'
+  manufacturer: Broadcom
+  model: BCM2836
+  slug: broadcom-bcm2836
+broadcom-bcm2837:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: Broadcom V3D
+  kernel_version: '6.12'
+  manufacturer: Broadcom
+  model: BCM2837
+  slug: broadcom-bcm2837
+genio-1200-mt8395:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A76/A55
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: MediaTek
+  model: 1200 (MT8395)
+  slug: genio-1200-mt8395
+qualcomm-8gen2-sm8550:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-X3
+  gpu:
+    api: ''
+    model: Adreno (Freedreno)
+  kernel_version: 6.18.4
+  manufacturer: Qualcomm
+  model: 8gen2 (SM8550)
+  slug: qualcomm-8gen2-sm8550
+qualcomm-qcs6490:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A76/A55
+  gpu:
+    api: ''
+    model: Adreno (Freedreno)
+  kernel_version: 6.18.4
+  manufacturer: Qualcomm
+  model: QCS6490
+  slug: qualcomm-qcs6490
+qualcomm-sd865-sm8250:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A76/A55
+  gpu:
+    api: ''
+    model: Adreno (Freedreno)
+  kernel_version: 6.18.4
+  manufacturer: Qualcomm
+  model: SD865 (SM8250)
+  slug: qualcomm-sd865-sm8250
+rockchip-rk3288:
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A17
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Rockchip
+  model: RK3288
+  slug: rockchip-rk3288
+rockchip-rk3326:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A35
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Rockchip
+  model: RK3326
+  slug: rockchip-rk3326
+rockchip-rk3399:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A72/A53
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Rockchip
+  model: RK3399
+  slug: rockchip-rk3399
+rockchip-rk3566:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A55
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Rockchip
+  model: RK3566
+  slug: rockchip-rk3566
+rockchip-rk3568:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A55
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Rockchip
+  model: RK3568
+  slug: rockchip-rk3568
+rockchip-rk3588:
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A76/A55
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
+  manufacturer: Rockchip
+  model: RK3588
+  slug: rockchip-rk3588
+samsung-exynos-5422:
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A15/A7
+  gpu:
+    api: ''
+    model: Mali (Panfrost)
+  kernel_version: ''
+  manufacturer: Samsung
+  model: Exynos 5422
+  slug: samsung-exynos-5422
+starfive-jh7110:
+  cpu:
+    arch: ''
+    cores: ''
+    max_clock: ''
+    model: ''
+  gpu:
+    api: ''
+    model: PowerVR
+  kernel_version: '6.6'
+  manufacturer: StarFive
+  model: JH7110
+  slug: starfive-jh7110
+th1520:
+  cpu:
+    arch: ''
+    cores: ''
+    max_clock: ''
+    model: ''
+  gpu:
+    api: ''
+    model: PowerVR
+  kernel_version: 6.6.110
+  manufacturer: T-Head
+  model: TH1520
+  slug: th1520

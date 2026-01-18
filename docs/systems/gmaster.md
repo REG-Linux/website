@@ -1,8 +1,8 @@
 # Game Master
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gmaster.webp" alt="Game Master icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gmaster.png" alt="Game Master logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gmaster.webp" alt="Game Master icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gmaster.png" alt="Game Master logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -57,8 +57,8 @@ Standardized MAME options exposed on REG-Linux include `gmaster.videomode`, `gma
 
 ## Controls
 
-The default Game Master mapping follows the [REG-Linux Retropad](/configure_a_controller) overlay. Adjust the layout per system through REG-Linux or MAME input menus.
+The default Game Master mapping follows the REG-Linux Retropad overlay. Adjust the layout per system through REG-Linux or MAME input menus.
 
 ## Troubleshooting
 
-If a Game Master title behaves oddly, consult the [MAME troubleshooting section](/systems/mame#troubleshooting).
+If a Game Master title behaves oddly, consult the [MAME troubleshooting section](mame.md#troubleshooting).

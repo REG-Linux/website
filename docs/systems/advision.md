@@ -1,8 +1,8 @@
 # Adventure Vision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/advision.webp" alt="Adventure Vision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/advision.png" alt="Adventure Vision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/advision.webp" alt="Adventure Vision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/advision.png" alt="Adventure Vision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -41,7 +41,7 @@ Store Adventure Vision titles in `/userdata/roms/advision`. Each of the official
 
 ### MAME
 
-[MAME](https://www.mamedev.org/) maintains an Adventure Vision driver as part of its mission to preserve classic arcade and home systems. ROM metadata dictates which internal driver loads, so keep ROM sets synchronized with the MAME version you run. The [arcade guide](/arcade) explains general MAME usage within REG-Linux.
+[MAME](https://www.mamedev.org/) maintains an Adventure Vision driver as part of its mission to preserve classic arcade and home systems. ROM metadata dictates which internal driver loads, so keep ROM sets synchronized with the MAME version you run. The arcade guide explains general MAME usage within REG-Linux.
 
 #### MAME configuration
 
@@ -61,7 +61,7 @@ Standardized REG-Linux features for Adventure Vision setups are `advision.videom
 
 ## Controls
 
-The Adventure Vision was designed to sit on a table and be gripped from both sides of the controller array. The default layout maps to a [REG-Linux Retropad](/configure_a_controller):
+The Adventure Vision was designed to sit on a table and be gripped from both sides of the controller array. The default layout maps to a REG-Linux Retropad:
 
 ![advision controller overlay](../images/controller-overlays/advision-1.png)
 
@@ -69,5 +69,5 @@ Use MAME’s built-in menu if you need to adjust controller mappings beyond what
 
 ## Troubleshooting
 
-- Consult the [MAME troubleshooting notes](/systems/mame#troubleshooting) for driver-specific issues like black screens or frozen inputs.
+- Consult the [MAME troubleshooting notes](mame.md#troubleshooting) for driver-specific issues like black screens or frozen inputs.
 - The upstream [MAMEdev documentation and FAQ](https://wiki.mamedev.org/) are invaluable for general configuration problems.

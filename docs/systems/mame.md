@@ -1,8 +1,8 @@
 # MAME
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/mame.webp" alt="Mame icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/mame.png" alt="Mame logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/mame.webp" alt="Mame icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/mame.png" alt="Mame logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -37,7 +37,7 @@ Store your ROMs in `/userdata/roms/mame`. You can create subfolders for each ROM
 - `libretro: mame0139`: MAME 0.139 ROMset (removed in v41+)
 - `libretro: mame` and standalone MAME: the current MAME version shipped with REG-Linux
 
-Refer to the [arcade guide](/arcade#romsets) to identify the ROMset required for each emulator release.
+Refer to the arcade guide to identify the ROMset required for each emulator release.
 
 ## Emulators
 
@@ -62,10 +62,10 @@ Some REG-Linux releases bundle complementary tools (e.g., Clock Signal for home 
 
 ## Controls
 
-Arcade inputs map to the [REG-Linux Retropad](/configure_a_controller) by default. Each core and the standalone MAME menu allow you to remap buttons, analog sticks, light guns, and toggle dip switches for individual games.
+Arcade inputs map to the REG-Linux Retropad by default. Each core and the standalone MAME menu allow you to remap buttons, analog sticks, light guns, and toggle dip switches for individual games.
 
 ## Troubleshooting
 
-- Consult the [generic arcade guide](/arcade) before editing ROMs or BIOS files.
+- Consult the generic arcade guide before editing ROMs or BIOS files.
 - Match ROMset versions carefully; mixing 0.78 ROMs with a 0.139 core will fail to boot.
 - If samples or artwork fail to load, verify they’re stored under the exact path expected by the core.

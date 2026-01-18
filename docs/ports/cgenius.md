@@ -1,8 +1,8 @@
 # Commander Genius
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/cgenius.webp" alt="Commander Genius icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/cgenius.png" alt="Commander Genius logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/cgenius.webp" alt="Commander Genius icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/cgenius.png" alt="Commander Genius logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -51,4 +51,4 @@ mirror the original keyboard-based setup.
 
 - Ensure each `.cgenius` file points to the correct subfolder; misnamed launchers will prevent the game from appearing in EmulationStation.
 - Verify that the DOS data (IWAD/TWAD equivalents) reside beneath `/userdata/roms/cgenius/games/<title>/`.
-- Consult the [generic support pages](/support) if you run into input issues or if REG-Linux refuses to start the launcher.
+- Consult the generic support pages if you run into input issues or if REG-Linux refuses to start the launcher.

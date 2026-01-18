@@ -1,8 +1,8 @@
 # ZX Spectrum
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/zxspectrum.webp" alt="ZX Spectrum icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/zxspectrum.png" alt="ZX Spectrum logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/zxspectrum.webp" alt="ZX Spectrum icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/zxspectrum.png" alt="ZX Spectrum logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -44,7 +44,7 @@ Place Spectrum tapes, snapshots, or zipped collections inside `/userdata/roms/zx
 
 ### libretro: fuse
 
-Fuse exposes the standard `zxspectrum.` RetroArch options (`videomode`, `shaders`, `pixel_perfect`, etc.). Use the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) to toggle joysticks, swap palettes, or force 48K/128K behavior through the shader/input overrides.
+Fuse exposes the standard `zxspectrum.` RetroArch options (`videomode`, `shaders`, `pixel_perfect`, etc.). Use the Quick Menu (`[HOTKEY]` + south button) to toggle joysticks, swap palettes, or force 48K/128K behavior through the shader/input overrides.
 
 ### Clock Signal
 
@@ -52,7 +52,7 @@ Clock Signal provides a very low-latency alternative. It uses every ROM listed a
 
 ## Controls & options
 
-- Use `[HOTKEY]` + ![south](/wiki/south.png) to remap the cursor keys to joysticks or to open the on-screen keyboard for text-heavy adventures.
+- Use `[HOTKEY]` + south button to remap the cursor keys to joysticks or to open the on-screen keyboard for text-heavy adventures.
 - When playing keyboard-driven titles, assign `User 3` to `Sinclair Keyboard` and leave users 1–2 on joysticks to keep both keyboard and controller inputs responsive.
 - Fuse offers several joystick presets (Cursor, Kempston, Sinclair 1/2, Timex, Fuller). Pick the one that matches the game you’re launching.
 
@@ -60,4 +60,4 @@ Clock Signal provides a very low-latency alternative. It uses every ROM listed a
 
 - If input conflicts occur, set `User 1` to the desired joystick type and switch other users to `None`.
 - Some games require the full 128K ROM set; keep all four BIOS files even if you mostly play 48K releases.
-- Consult the [generic support pages](/support) whenever RetroArch refuses to detect the ROM folder or if Clock Signal crashes on startup.
+- Consult the generic support pages whenever RetroArch refuses to detect the ROM folder or if Clock Signal crashes on startup.

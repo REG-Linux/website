@@ -1,8 +1,8 @@
 # Naomi
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/naomi.webp" alt="Naomi icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/naomi.png" alt="Naomi logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/naomi.webp" alt="Naomi icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/naomi.png" alt="Naomi logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -48,12 +48,12 @@ and `naomi.flycast_anisotropic` as needed.
 
 - For Wiimote/touch-themed boards (House of the Dead), ensure `global.controller1_dc`/`global.controller2_dc` is set to the proper peripheral.
 - If `Free Play` misbehaves, open the in-game System Menu (`L3` + `R3`) and set the coin counter to 1 after enabling the service buttons.
-- Consult the Flycast compatibility list and [generic support pages](/support) when issues persist.
+- Consult the Flycast compatibility list and generic support pages when issues persist.
 ## Troubleshooting
 
 - When a title expects Wiimote/touch input (House of the Dead, etc.), pick the correct `global.controller1_dc` or `global.controller2_dc` peripheral before launching.
 - If Free Play or coin settings behave oddly, use the in-game System Menu (`L3` + `R3`) to adjust the counters after enabling service buttons in RetroArch.
-- For broader issues consult the Flycast compatibility tracker and the [generic support pages](/support).
+- For broader issues consult the Flycast compatibility tracker and the generic support pages.
 - For Wiimote/touch-themed boards (House of the Dead), ensure `global.controller1_dc`/`global.controller2_dc` is set to the proper peripheral.
 - If `Free Play` misbehaves, open the in-game System Menu (`L3` + `R3`) and set the coin counter to 1 after enabling the service buttons.
-- Consult the Flycast compatibility list and [generic support pages](/support) when issues persist.
+- Consult the Flycast compatibility list and generic support pages when issues persist.

@@ -1,8 +1,8 @@
 # Amiga AGA
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/amiga1200.webp" alt="Amiga AGA icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/amiga1200.png" alt="Amiga AGA logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/amiga1200.webp" alt="Amiga AGA icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/amiga1200.png" alt="Amiga AGA logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -73,7 +73,7 @@ Store Amiga 1200 titles in `/userdata/roms/amiga1200`. The accepted filetypes co
 
 ### RetroArch
 
-[RetroArch](/emulators/retroarch) hosts the libretro cores for Amiga emulation. While RetroArch supplies global features (shaders, overlays, rewind, etc.), each core exposes its own configuration. Open the Quick Menu (`[HOTKEY]` + south face button) to tweak options or remap inputs.
+RetroArch hosts the libretro cores for Amiga emulation. While RetroArch supplies global features (shaders, overlays, rewind, etc.), each core exposes its own configuration. Open the Quick Menu (`[HOTKEY]` + south face button) to tweak options or remap inputs.
 
 #### libretro: puae
 
@@ -102,11 +102,11 @@ Uae4arm is another libretro Amiga core that follows the same general conventions
 
 ## Controls
 
-Here are the default Amiga 1200 controls mapped onto a [REG-Linux Retropad](/configure_a_controller):
+Here are the default Amiga 1200 controls mapped onto a REG-Linux Retropad:
 
 ![](../images/controller-overlays/amiga1200-1.png)
 
-When using `libretro: puae`/`puae2021` you can remap per-game inputs through the RetroArch Quick Menu or the [input remapping guide](/remapping_controls_per_emulator#libretropuae).
+When using `libretro: puae`/`puae2021` you can remap per-game inputs through the RetroArch Quick Menu or the input remapping guide.
 
 ## Troubleshooting
 

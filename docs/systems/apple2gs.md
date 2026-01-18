@@ -1,8 +1,8 @@
 # Apple IIGS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/apple2gs.webp" alt="Apple IIGS icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/apple2gs.png" alt="Apple IIGS logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/apple2gs.webp" alt="Apple IIGS icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/apple2gs.png" alt="Apple IIGS logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -79,11 +79,11 @@ The MAME configuration table mirrors the libretro options above plus controls fo
 
 ### GSplus
 
-[GSplus](https://apple2.gs/plus/) is an open-source emulator targeting Apple ][ and IIGS systems. REG-Linux exposes keys like `apple2.videomode`, `apple2.padtokeyboard` and `apple2.decoration` for GSplus.
+[GSplus](https://apple2.gs/plus/) is an open-source emulator targeting Apple ] and IIGS systems. REG-Linux exposes keys like `apple2.videomode`, `apple2.padtokeyboard` and `apple2.decoration` for GSplus.
 
 ## Controls
 
-Here are the default Apple IIGS controls displayed on a [REG-Linux RetroPad](/configure_a_controller). Use RetroArch’s Quick Menu or the emulator’s native input settings to remap buttons when needed.
+Here are the default Apple IIGS controls displayed on a [REG-Linux RetroPad. Use RetroArch’s Quick Menu or the emulator’s native input settings to remap buttons when needed.
 
 ## Troubleshooting
 

@@ -1,8 +1,8 @@
 # Game Gear
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gamegear.webp" alt="Game Gear icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gamegear.png" alt="Game Gear logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gamegear.webp" alt="Game Gear icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gamegear.png" alt="Game Gear logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -28,7 +28,7 @@ bin, gg, zip, 7z
 ## Quick reference
 
 - **Emulator:** [RetroArch](#retroarch)
-- **Cores available:** [libretro: GenesisPlusGX](/#libretro/_genesisplusgx), [libretro: Picodrive](/#libretro/_picodrive)
+- **Cores available:** libretro: GenesisPlusGX, libretro: Picodrive
 - **ROM folder:** `/userdata/roms/gamegear`
 - **Accepted ROM formats:** `.bin`, `.gg`, `.zip`, `.7z`
 - **System group:** `gamegear`
@@ -49,7 +49,7 @@ Place your Sega Game Gear ROMs in `/userdata/roms/gamegear`.
 
 #### RetroArch configuration
 
-While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)). From here you can tweak core options, controller mappings and load/save states. REG-Linux also mirrors many of those options inside EmulationStation menus.
+While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration). From here you can tweak core options, controller mappings and load/save states. REG-Linux also mirrors many of those options inside EmulationStation menus.
 
 Standardized features available to all Game Gear cores include `gamegear.videomode`, `gamegear.ratio`, `gamegear.smooth`, `gamegear.shaders`, `gamegear.pixel_perfect`, `gamegear.decoration` and `gamegear.game_translation`.
 
@@ -95,11 +95,11 @@ Picodrive is a libretro core that targets Sega 8/16-bit accuracy on a broad rang
 
 ## Controls
 
-Here is how the default Sega Game Gear layout maps onto a [REG-Linux Retropad](/configure_a_controller):
+Here is how the default Sega Game Gear layout maps onto a REG-Linux Retropad:
 
 ![gamegear controller overlay](../images/controller-overlays/gamegear-1.png)
 
 The default button mapping is also illustrated here:
 
-![gamegear controller mapping](/systems/gamegear_controller_mapping.png)
+![gamegear controller mapping](gamegear_controller_mapping.png)
 

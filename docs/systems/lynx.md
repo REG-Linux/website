@@ -1,8 +1,8 @@
 # Atari Lynx
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/lynx.webp" alt="Atari Lynx icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/lynx.png" alt="Atari Lynx logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/lynx.webp" alt="Atari Lynx icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/lynx.png" alt="Atari Lynx logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -26,7 +26,7 @@ The Atari Lynx launched in 1989 at $179.99 USD and was the first handheld with a
 ## Quick reference
 
 - **Emulator:** [RetroArch](#retroarch)
-- **Cores:** [libretro: Mednafen_Lynx](/#libretro/_mednafen_lynx), [libretro: handy](/#libretro/_handy)
+- **Cores:** libretro: Mednafen_Lynx, libretro: handy
 - **ROM folder:** `/userdata/roms/lynx`
 - **Accepted ROM formats:** `.bll`, `.lnx`, `.lyx`, `.o`, `.zip`, `.7z`
 - **System group:** `atarilynx`
@@ -51,7 +51,7 @@ Store your Atari Lynx ROMs inside `/userdata/roms/lynx` using any of the accepte
 
 #### RetroArch configuration
 
-Open the **Quick Menu** with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) to adjust core-specific values and mappings. REG-Linux also exposes many of those settings directly in EmulationStation.
+Open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to adjust core-specific values and mappings. REG-Linux also exposes many of those settings directly in EmulationStation.
 
 Standardized options available to every Lynx session include `lynx.videomode`, `lynx.ratio`, `lynx.smooth`, `lynx.shaders`, `lynx.pixel_perfect`, `lynx.decoration`, `lynx.game_translation`, `lynx.audio_latency`, `lynx.video_threaded`.
 
@@ -71,7 +71,7 @@ Handy is the original open-source Lynx emulator. Its libretro version shares the
 
 ## Controls
 
-Here’s the default Atari Lynx controller mapped to the [REG-Linux Retropad](/configure_a_controller):
+Here’s the default Atari Lynx controller mapped to the REG-Linux Retropad:
 
 ![Lynx controller overlay](../images/controller-overlays/lynx.png)
 

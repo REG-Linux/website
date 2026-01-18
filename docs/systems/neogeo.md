@@ -1,8 +1,8 @@
 # Neo-Geo
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/neogeo.webp" alt="Neo-Geo icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/neogeo.png" alt="Neo-Geo logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/neogeo.webp" alt="Neo-Geo icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/neogeo.png" alt="Neo-Geo logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -29,7 +29,7 @@ Place `bios/neogeo.zip` into `/userdata/bios/`; it contains the Neo-Geo BIOS art
 
 ## ROMs
 
-Drop Neo-Geo ROMs into `/userdata/roms/neogeo` so they get a dedicated system list. The files will also work from `/userdata/roms/mame`, but separating them keeps the layouts tidy. Stick to the same ROM/Bios couple (AES vs MVS) and consult the [arcade guide](/arcade) for help aligning sets.
+Drop Neo-Geo ROMs into `/userdata/roms/neogeo` so they get a dedicated system list. The files will also work from `/userdata/roms/mame`, but separating them keeps the layouts tidy. Stick to the same ROM/Bios couple (AES vs MVS) and consult the arcade guide for help aligning sets.
 
 ## Emulators
 
@@ -47,4 +47,4 @@ Default Neo-Geo button mappings are illustrated in `../images/controller-overlay
 
 ## Troubleshooting
 
-Most Neo-Geo issues are covered in the [generic arcade guide](/arcade). When a ROM does not boot, ensure the BIOS archive matches that ROMset and experiment with FBNeo versus the libretro cores until one accepts the file.
+Most Neo-Geo issues are covered in the generic arcade guide. When a ROM does not boot, ensure the BIOS archive matches that ROMset and experiment with FBNeo versus the libretro cores until one accepts the file.

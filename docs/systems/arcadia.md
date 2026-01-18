@@ -1,8 +1,8 @@
 # Arcadia 2001
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/arcadia.webp" alt="Arcadia 2001 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/arcadia.png" alt="Arcadia 2001 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/arcadia.webp" alt="Arcadia 2001 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/arcadia.png" alt="Arcadia 2001 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -43,7 +43,7 @@ Place every Arcadia 2001 image into `/userdata/roms/arcadia`. MAME will auto-det
 
 ### MAME
 
-[MAME](https://www.mamedev.org/) (which absorbed the former MESS project) includes the Arcadia 2001 driver. Each ROM carries the metadata needed to select the correct emulator branch, so keep ROM sets matched to your MAME build if you encounter problems. For general guidance on using MAME within REG-Linux, see the [arcade guide](/arcade).
+[MAME](https://www.mamedev.org/) (which absorbed the former MESS project) includes the Arcadia 2001 driver. Each ROM carries the metadata needed to select the correct emulator branch, so keep ROM sets matched to your MAME build if you encounter problems. For general guidance on using MAME within REG-Linux, see the arcade guide.
 
 #### MAME configuration
 
@@ -65,7 +65,7 @@ Standardized REG-Linux features available for this system are `arcadia.videomode
 
 ## Controls
 
-The default Arcadia 2001 controls map to a [REG-Linux Retropad](/configure_a_controller):
+The default Arcadia 2001 controls map to a REG-Linux Retropad:
 
 ![arcadia-1](../images/controller-overlays/arcadia-1.png)
 
@@ -73,5 +73,5 @@ Use MAME’s in-game menu if you need to tweak controller mappings beyond the de
 
 ## Troubleshooting
 
-- Check the [MAME troubleshooting section](/systems/mame#troubleshooting) for driver-specific tips if a ROM refuses to boot.
+- Check the [MAME troubleshooting section](mame.md#troubleshooting) for driver-specific tips if a ROM refuses to boot.
 - Confirm the files live under `/userdata/roms/arcadia` and use one of the supported extensions.

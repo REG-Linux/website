@@ -1,8 +1,8 @@
 # Mega Drive
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/megadrive.webp" alt="Mega Drive icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/megadrive.png" alt="Mega Drive logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/megadrive.webp" alt="Mega Drive icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/megadrive.png" alt="Mega Drive logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -29,7 +29,7 @@ Most Mega Drive/Genesis emulators do not require BIOS files. The only exceptions
 
 ## ROMs
 
-Keep cartridge images such as `.bin`, `.gen`, `.md`, `.sg`, `.smd` plus zipped collections inside `/userdata/roms/megadrive`. Some cores also accept `.gg`/`.sms` for Game Gear/Master System when appropriate. Disc-based formats (`.iso`, `.cue` + `.bin`, `.chd`) belong to the [Sega CD](/systems/segacd) documentation instead.
+Keep cartridge images such as `.bin`, `.gen`, `.md`, `.sg`, `.smd` plus zipped collections inside `/userdata/roms/megadrive`. Some cores also accept `.gg`/`.sms` for Game Gear/Master System when appropriate. Disc-based formats (`.iso`, `.cue` + `.bin`, `.chd`) belong to the [Sega CD](segacd.md) documentation instead.
 
 ## Region
 
@@ -77,7 +77,7 @@ Cycle-accurate Genesis core with few extra configuration options. It is recommen
 
 ## Controls
 
-Here are the default Mega Drive/Genesis controls shown on a [REG-Linux Retropad](/configure_a_controller):
+Here are the default Mega Drive/Genesis controls shown on a REG-Linux Retropad:
 
 ![megadrive controller overlay](../images/controller-overlays/megadrive-1.png)
 
@@ -85,4 +85,4 @@ Additional mapping references for 3-button/6-button pads and Master System contr
 
 ## Troubleshooting
 
-For more help, consult the [generic support pages](/support). If a ROM refuses to start, double-check that you matched the correct ROMset/version to the core you are launching (e.g., 0.78+ for GenesisPlusGX, latest for libretro: mame).
+For more help, consult the generic support pages. If a ROM refuses to start, double-check that you matched the correct ROMset/version to the core you are launching (e.g., 0.78+ for GenesisPlusGX, latest for libretro: mame).

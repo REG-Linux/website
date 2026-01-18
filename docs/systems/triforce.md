@@ -1,8 +1,8 @@
 # Triforce
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/triforce.webp" alt="Triforce icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/triforce.png" alt="Triforce logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/triforce.webp" alt="Triforce icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/triforce.png" alt="Triforce logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -54,4 +54,4 @@ Map credit/start buttons and the arcade stick using the controller overlay or vi
 
 - Ensure the `.iso`/`.gcz` file matches the MD5 above; Dolphin refuses mismatched dumps.
 - Copy the proper `GGPE01.s01` (or similar save files) into the StateSaves folder before launching to simulate card insertions.
-- Expect reduced functionality; this branch is experimental, and only a few games behave properly. Consult the [generic support pages](/support) for emulator-level help.
+- Expect reduced functionality; this branch is experimental, and only a few games behave properly. Consult the generic support pages for emulator-level help.

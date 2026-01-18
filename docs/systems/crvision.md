@@ -1,8 +1,8 @@
 # CreatiVision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/crvision.webp" alt="CreatiVision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/crvision.png" alt="CreatiVision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/crvision.webp" alt="CreatiVision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/crvision.png" alt="CreatiVision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -53,7 +53,7 @@ MAME handles CreatiVision emulation. Use the in-game menu (`[HOTKEY]` + south bu
 
 ## Controls
 
-The CreatiVision controller overlay features a numeric keypad and joystick. The default mapping is shown on a [REG-Linux Retropad](/configure_a_controller):
+The CreatiVision controller overlay features a numeric keypad and joystick. The default mapping is shown on a REG-Linux Retropad:
 
 ![CreatiVision controller overlay](../images/controller-overlays/crvision-1.png)
 
@@ -63,4 +63,4 @@ Remap inputs per game through MAME’s UI when certain keypad buttons are requir
 
 - Confirm `crvision.zip` (or `.7z`) exists in the `bios` folder and matches the expected name.
 - Remap controls if the keypad overlay requires special keys not present on standard gamepads.
-- For driver-specific problems, consult the [MAME troubleshooting section](/systems/mame#troubleshooting).
+- For driver-specific problems, consult the [MAME troubleshooting section](mame.md#troubleshooting).

@@ -1,8 +1,8 @@
 # Sega System SP
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/systemsp.webp" alt="Sega System SP icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/systemsp.png" alt="Sega System SP logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/systemsp.webp" alt="Sega System SP icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/systemsp.png" alt="Sega System SP logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -52,4 +52,4 @@ System SP titles use gun/mouse inputs for select cabinets. Follow the general ar
 
 - If the archive fails to load, verify the `.lst` script lists the correct `.bin` file names.
 - When Flycast reports missing files, unzip the `.zip` manually to confirm all data is present.
-- Consult the [generic support pages](/support) for additional emulator/driver issues.
+- Consult the generic support pages for additional emulator/driver issues.

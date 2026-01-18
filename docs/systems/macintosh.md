@@ -1,8 +1,8 @@
 # Macintosh
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/macintosh.webp" alt="Macintosh icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/macintosh.png" alt="Macintosh logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/macintosh.webp" alt="Macintosh icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/macintosh.png" alt="Macintosh logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -72,10 +72,10 @@ Standalone MAME provides complete Macintosh hardware emulation. Press `[HOTKEY]`
 
 ## Controls
 
-Macintosh titles rely heavily on keyboard/mouse input. Use the [REG-Linux Retropad](/configure_a_controller) overlay for default mappings or create custom pad-to-key bindings via the controller configuration menu. Consider enabling controller tattoos or bezels when playing with the numeric keypad-focused ROMs.
+Macintosh titles rely heavily on keyboard/mouse input. Use the REG-Linux Retropad overlay for default mappings or create custom pad-to-key bindings via the controller configuration menu. Consider enabling controller tattoos or bezels when playing with the numeric keypad-focused ROMs.
 
 ## Troubleshooting
 
 - Ensure every listed BIOS archive is present under `/userdata/bios/`.
 - If floppies fail to boot, load the disk manually via the MAME menu and copy/install it into a hard disk image for faster access.
-- Consult the [generic support pages](/support) or refer to each emulator’s documentation (MAME, RetroArch cores, CLK) when issues persist.
+- Consult the generic support pages or refer to each emulator’s documentation (MAME, RetroArch cores, CLK) when issues persist.

@@ -1,8 +1,8 @@
 # Model 3
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/model3.webp" alt="Model 3 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/model3.png" alt="Model 3 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/model3.webp" alt="Model 3 icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/model3.png" alt="Model 3 logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -47,7 +47,7 @@ Supermodel also supports save states (F5 save, F7 load, select slot with F6) sto
 
 ## Controls
 
-The default arcade layout maps to the [REG-Linux Retropad](/configure_a_controller); heavy use of keyboard (F5–F12) handles save states and volume controls. Use the overlays in `docs/images/controller-overlays/model3.png` for a visual guide.
+The default arcade layout maps to the REG-Linux Retropad; heavy use of keyboard (F5–F12) handles save states and volume controls. Use the overlays in `docs/images/controller-overlays/model3.png` for a visual guide.
 
 ![Model3 controller overlay](../images/controller-overlays/model3.png)
 
@@ -56,4 +56,4 @@ The default arcade layout maps to the [REG-Linux Retropad](/configure_a_controll
 - Refer to the [Supermodel FAQ](https://www.supermodel3.com/FAQ.html) for game-specific fixes.
 - Use the service menu (`6`) when prompted, navigate with `5`/`6`, and exit via the **Exit** option.
 - If “Network Board Not Present” appears, set **Game Assignments → Link ID** to “Single” to bypass multiplayer checks.
-- For light-gun reloads, press the right mouse button when using pointer input. For further help, see the [generic support pages](/support).
+- For light-gun reloads, press the right mouse button when using pointer input. For further help, see the generic support pages.

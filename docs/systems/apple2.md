@@ -1,8 +1,8 @@
 # Apple II
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/apple2.webp" alt="Apple II icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/apple2.png" alt="Apple II logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/apple2.webp" alt="Apple II icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/apple2.png" alt="Apple II logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -75,7 +75,7 @@ RetroArch runs the `libretro: mame` core for Apple II emulation. Use the Quick M
 
 ### GSplus
 
-[GSplus](https://apple2.gs/plus/) is an open-source Apple ][/IIGS emulator derived from KEGS/GSPort. It exposes features such as `apple2.videomode`, `apple2.padtokeyboard` and `apple2.decoration` for consistent REG-Linux configuration.
+[GSplus](https://apple2.gs/plus/) is an open-source Apple ]/IIGS emulator derived from KEGS/GSPort. It exposes features such as `apple2.videomode`, `apple2.padtokeyboard` and `apple2.decoration` for consistent REG-Linux configuration.
 
 ### Other emulators
 
@@ -83,7 +83,7 @@ Dedicated Apple II emulators like AppleWin, GSplus (standalone) or iZaApple2 can
 
 ## Controls
 
-Default Apple II mappings appear on the [REG-Linux RetroPad](/configure_a_controller). Use the emulator Quick Menu or the `mame.ini`/RetroArch overrides to remap keys and buttons when needed.
+Default Apple II mappings appear on the [REG-Linux RetroPad. Use the emulator Quick Menu or the `mame.ini`/RetroArch overrides to remap keys and buttons when needed.
 
 ## Troubleshooting
 

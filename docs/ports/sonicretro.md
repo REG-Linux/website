@@ -1,8 +1,8 @@
 # Sonic Retro Engine
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/sonicretro.webp" alt="Sonic Retro Engine icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/sonicretro.png" alt="Sonic Retro Engine logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/sonicretro.webp" alt="Sonic Retro Engine icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/sonicretro.png" alt="Sonic Retro Engine logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -50,7 +50,7 @@ REG-Linux auto-selects the correct core based on the folder extension (`.son` â†
 
 ## Controls
 
-The overlay mirrors the classic Sonic controller. Use `[HOTKEY]` + ![south](/wiki/south.png) to access the Quick Menu if you need to remap jump, spin dash, or action buttons before loading mods.
+The overlay mirrors the classic Sonic controller. Use `[HOTKEY]` + south button to access the Quick Menu if you need to remap jump, spin dash, or action buttons before loading mods.
 
 ## Troubleshooting
 

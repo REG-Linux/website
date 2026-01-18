@@ -1,8 +1,8 @@
 # Uzebox
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/uzebox.webp" alt="Uzebox icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/assets/systems/logos/uzebox.png" alt="Uzebox logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/uzebox.webp" alt="Uzebox icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:.75rem;"><img src="/wiki/assets/systems/logos/uzebox.png" alt="Uzebox logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -43,4 +43,4 @@ for the default mapping and customize inputs via `/remapping_controls_per_emulat
 
 - Confirm each ROM has the `.uze` suffix and avoids nested folders inside zipped archives.
 - If performance is choppy, verify that no extra shaders or filters are forced in the Quick Menu.
-- For general inquiries, the [generic support pages](/support) provide additional guidance.
+- For general inquiries, the generic support pages provide additional guidance.

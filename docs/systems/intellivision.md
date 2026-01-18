@@ -1,8 +1,8 @@
 # Mattel Intellivision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/intellivision.webp" alt="Mattel Intellivision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/intellivision.png" alt="Mattel Intellivision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/intellivision.webp" alt="Mattel Intellivision icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/intellivision.png" alt="Mattel Intellivision logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -25,8 +25,8 @@ The Mattel Intellivision debuted in 1979 as a second-generation console with a d
 
 ## Quick reference
 
-- **Emulator:** [RetroArch](#retroarch)
-- **Core:** [libretro: freeintv](/#libretro/_freeintv)
+- **Emulator:** RetroArch
+- **Core:** libretro: freeintv
 - **ROM folder:** `/userdata/roms/intellivision`
 - **Accepted ROM formats:** `.int`, `.bin`, `.rom`, `.zip`, `.7z`
 - **System group:** `intellivision`
@@ -50,7 +50,7 @@ Store Intellivision ROMs in `/userdata/roms/intellivision` using one of the acce
 
 ### RetroArch (libretro: freeintv)
 
-[RetroArch](https://docs.libretro.com/) runs the `freeintv` core to recreate the Intellivision hardware. Use the Quick Menu (`[HOTKEY]` + the south face button, see [controller configuration](/configure_a_controller)) to adjust hotkeys, controller mappings and shaders. REG-Linux also surfaces many of the same settings through EmulationStation menus.
+[RetroArch](https://docs.libretro.com/) runs the `freeintv` core to recreate the Intellivision hardware. Use the Quick Menu (`[HOTKEY]` + the south face button, see controller configuration) to adjust hotkeys, controller mappings and shaders. REG-Linux also surfaces many of the same settings through EmulationStation menus.
 
 Standardized options available to every Intellivision session include `intellivision.videomode`, `intellivision.ratio`, `intellivision.smooth`, `intellivision.shaders`, `intellivision.pixel_perfect`, `intellivision.decoration`, `intellivision.game_translation`, `intellivision.audio_latency` and `intellivision.video_threaded`.
 
@@ -68,7 +68,7 @@ Standardized options available to every Intellivision session include `intellivi
 
 The Intellivision controller combined side-mounted face buttons with a 12-button numeric keypad. REG-Linux recommends enabling controller tattoos (REG-Linux v39+) and using bezel overlays (e.g., from the [BezelProject](https://github.com/thebezelproject/BezelProject)) so keypad layouts remain visible.
 
-Here are the default Intellivision controls shown on the [REG-Linux Retropad](/configure_a_controller):
+Here are the default Intellivision controls shown on the REG-Linux Retropad:
 
 ![intellivision controller overlay](../images/controller-overlays/intellivision-1.png)
 

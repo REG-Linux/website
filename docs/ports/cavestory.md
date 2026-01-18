@@ -1,8 +1,8 @@
 # Cave Story
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/cavestory.webp" alt="Cave Story icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/cavestory.png" alt="Cave Story logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/cavestory.webp" alt="Cave Story icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/cavestory.png" alt="Cave Story logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -36,7 +36,7 @@ most stable build REG-Linux targets.
 
 RetroArch hosts the `nxengine` core, preserving the original game logic while
 exposing familiar options such as `cavestory.videomode`, `cavestory.ratio`, and
-`cavestory.shaders`. Open the Quick Menu (`[HOTKEY]` + ![south](/wiki/south.png)) to
+`cavestory.shaders`. Open the Quick Menu (`[HOTKEY]` + south button) to
 alter display, audio latency, or button bindings, and use the controller remap screen
 if your pad differs from the Retropad layout.
 
@@ -49,4 +49,4 @@ profiles in EmulationStation’s controller settings or within RetroArch’s inp
 
 - If the game crashes on boot, ensure the `Doukutsu.exe` executable sits directly in `/userdata/roms/cavestory` rather than a nested folder.
 - Use the official English download (http://www.cavestory.org/downloads/cavestoryen.zip) when possible; community translations may freeze or desync.
-- Visit the [generic support pages](/support) for RetroArch-specific questions.
+- Visit the generic support pages for RetroArch-specific questions.

@@ -1,8 +1,8 @@
 # Archimedes
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/archimedes.webp" alt="Archimedes icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/archimedes.png" alt="Archimedes logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/archimedes.webp" alt="Archimedes icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/archimedes.png" alt="Archimedes logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -93,7 +93,7 @@ Standardized features for MAME include `archimedes.videomode`, `archimedes.padto
 
 ## Controls
 
-Default Archimedes controls map to a [REG-Linux Retropad](/configure_a_controller):
+Default Archimedes controls map to a REG-Linux Retropad:
 
 ![](../images/controller-overlays/archimedes.png)
 
@@ -104,4 +104,4 @@ RetroArch, MAME and CLK all allow per-game or per-core remapping through their r
 - Ensure `aa310.zip`, `archimedes_keyboard.zip` and (for CLK) `ROM311` are present in your BIOS paths with verified MD5 checksums.
 - Confirm your game images reside in `/userdata/roms/archimedes` and use a supported extension.
 - Use software lists (`archimedes`, `archimedes_hdd`, `archimedes_rom`) when launching floppy, hard disk or ROM-based titles for best compatibility.
-- Consult the [MAME troubleshooting page](/systems/mame#troubleshooting) for system-specific issues
+- Consult the [MAME troubleshooting page](mame.md#troubleshooting) for system-specific issues

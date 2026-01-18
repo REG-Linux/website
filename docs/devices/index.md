@@ -2,6 +2,10 @@
 
 REG Linux targets handhelds, single-board computers, and small consoles across multiple architectures.
 
+## Compatibility matrix
+
+- [Device compatibility matrix](compatibility.md)
+
 ## Device families
 
 - [Handhelds](../handhelds/index.md)

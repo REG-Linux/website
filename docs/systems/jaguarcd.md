@@ -45,6 +45,6 @@ and rename it to match your CD image (e.g., `RiseOfTheRobot.bigpcfg`), then plac
 
 ## Controls
 
-Jaguar CD titles rely on the same Jaguar controller overlay as cartridge games. Use the [REG-Linux Retropad](/configure_a_controller) layout or adjust mappings through the emulator menus.
+Jaguar CD titles rely on the same Jaguar controller overlay as cartridge games. Use the REG-Linux Retropad layout or adjust mappings through the emulator menus.
 
 ![Jaguar controller overlay](../images/controller-overlays/jaguar.png)

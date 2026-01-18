@@ -1,8 +1,8 @@
 # EasyRPG
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/easyrpg.webp" alt="EasyRPG icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/easyrpg.png" alt="EasyRPG logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/easyrpg.webp" alt="EasyRPG icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/easyrpg.png" alt="EasyRPG logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -54,4 +54,4 @@ The default overlay maps `A`/`B` to confirm/cancel, the D-pad to movement, and `
 - If characters display incorrectly, set `easyrpg.encoding` in the Quick Menu or `RPG_RT.ini`.
 - Keep `RPG_RT.ldb`, `RPG_RT.lmt`, and the asset directories intact inside each `.easyrpg` folder; missing data keeps the game from launching.
 - When the core crashes, try enabling Test-play to skip problematic events or reinstall the project folder from a known working build.
-- See the [generic support pages](/support) for other issues.
+- See the generic support pages for other issues.

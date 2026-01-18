@@ -1,8 +1,8 @@
 # Flash Player
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/flash.webp" alt="Flash Player icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/flash.png" alt="Flash Player logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/flash.webp" alt="Flash Player icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/flash.png" alt="Flash Player logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -50,4 +50,4 @@ Flash games usually expect keyboard + mouse input. A default RETROpad mapping is
 
 - If a SWF refuses to start, ensure the file is not corrupted and that any required asset folders remain next to it.
 - Some Flash releases depend on unsupported features (like video playback). Try the other engine if one falls back to an error.
-- Refer to the [generic support pages](/support) for additional help.
+- Refer to the generic support pages for additional help.

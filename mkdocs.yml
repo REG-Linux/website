@@ -1,6 +1,6 @@
 site_name: REG Linux Wiki
 site_description: Immutable Linux for retro gaming devices
-site_url: https://wiki.reglinux.org
+site_url: https://reglinux.org/wiki/
 repo_url: https://github.com/REG-Linux/wiki
 repo_name: REG-Linux/wiki
 edit_uri: edit/main/docs/
@@ -31,6 +31,11 @@ theme:
   - content.action.edit
 nav:
 - Home: index.md
+- Website:
+  - Main site: https://reglinux.org/
+  - Downloads: https://reglinux.org/download/
+  - Devices: https://reglinux.org/hardware/
+  - Community: https://reglinux.org/community/
 - Start Here:
   - Overview: start-here/index.md
   - Getting Started: getting-started.md
@@ -42,6 +47,7 @@ nav:
   - Controller Setup: players/controller-setup.md
 - Devices:
   - Overview: devices/index.md
+  - Compatibility: devices/compatibility.md
   - Consoles:
     - Capcom Home Arcade: sbcs/capcom-home-arcade.md
   - Single-Board Computers:
@@ -409,7 +415,10 @@ nav:
 - Community: community.md
 plugins:
 - search
-- git-revision-date-localized
+- git-revision-date-localized:
+    fallback_to_build_date: true
+    exclude:
+      - devices/compatibility.md
 markdown_extensions:
 - admonition
 - codehilite

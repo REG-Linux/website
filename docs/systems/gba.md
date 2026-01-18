@@ -1,8 +1,8 @@
 # Game Boy Advance
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/gba.webp" alt="Game Boy Advance icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/gba.png" alt="Game Boy Advance logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/gba.webp" alt="Game Boy Advance icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/gba.png" alt="Game Boy Advance logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -26,7 +26,7 @@ The Game Boy Advance (GBA) is Nintendo's 32-bit successor to the Game Boy Color.
 ## Quick reference
 
 - **Emulator:** [RetroArch](#retroarch)
-- **Cores available:** [libretro: mGBA](/#libretro/_mgba), [libretro: VBA-M](/#libretro/_VBA-M), [libretro: gpsp](/#libretro/_gpsp)
+- **Cores available:** libretro: mGBA, libretro: VBA-M, libretro: gpsp
 - **ROM folder:** `/userdata/roms/gba`
 - **Accepted ROM formats:** `.gba`, `.zip`, `.7z`
 - **System group:** `gba`
@@ -51,7 +51,7 @@ Store all Game Boy Advance images in `/userdata/roms/gba`.
 
 #### RetroArch configuration
 
-While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) to change controller mappings, core overrides, shaders and miscellaneous RetroArch settings.
+While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to change controller mappings, core overrides, shaders and miscellaneous RetroArch settings.
 
 Standardized features available to every Game Boy Advance core include `gba.videomode`, `gba.ratio`, `gba.smooth`, `gba.shaders`, `gba.pixel_perfect`, `gba.decoration` and `gba.game_translation`.
 
@@ -100,7 +100,7 @@ gpsp is another open-source Game Boy Advance core focused on performance. Use Re
 
 ## Controls
 
-Here are the default Game Boy Advance controls as mapped to the [REG-Linux Retropad](/configure_a_controller):
+Here are the default Game Boy Advance controls as mapped to the REG-Linux Retropad:
 
 ![gba controller overlay](../images/controller-overlays/gba-1.png)
 

@@ -1,8 +1,8 @@
 # Master System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
-<img src="/assets/systems/icons/mastersystem.webp" alt="Master System icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
-<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/assets/systems/logos/mastersystem.png" alt="Master System logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
+<img src="/wiki/assets/systems/icons/mastersystem.webp" alt="Master System icon" width="96" height="96" loading="lazy" style="border-radius:12px; object-fit:contain; background:#0f172a; padding:.25rem;">
+<span style="display:flex; align-items:center; justify-content:center; background:#050505; padding:.35rem 0.75rem; border-radius:0.75rem;"><img src="/wiki/assets/systems/logos/mastersystem.png" alt="Master System logo" loading="lazy" style="max-height:96px; object-fit:contain;"></span>
 </div>
 
 ## Overview
@@ -24,7 +24,7 @@ The Sega Master System launched in 1985/1986 as an 8-bit challenger to the NES. 
 
 - **ROM folder:** `/userdata/roms/mastersystem`
 - **Accepted ROM formats:** `.bin`, `.sms`, `.zip`, `.7z`
-- **Emulators:** RetroArch (`libretro: GenesisPlusGX`, `libretro: Picodrive`), [CLK](#clk)
+- **Emulators:** RetroArch (`libretro: GenesisPlusGX`, `libretro: Picodrive`), CLK
 - **System group:** `mastersystem`
 
 ## BIOS
@@ -39,7 +39,7 @@ Place every Master System ROM in `/userdata/roms/mastersystem`. The same cores a
 
 ### RetroArch
 
-[RetroArch](https://docs.libretro.com/) serves the Sega 8-bit cores. Open the Quick Menu with `[HOTKEY]` + the south face button (see [controller configuration](/configure_a_controller)) to adjust shaders, controllers and overrides.
+[RetroArch](https://docs.libretro.com/) serves the Sega 8-bit cores. Open the Quick Menu with `[HOTKEY]` + the south face button (see controller configuration) to adjust shaders, controllers and overrides.
 
 Standardized options: `mastersystem.videomode`, `mastersystem.ratio`, `mastersystem.smooth`, `mastersystem.shaders`, `mastersystem.pixel_perfect`, `mastersystem.decoration`, `mastersystem.game_translation`, `mastersystem.audio_latency`, `mastersystem.video_threaded`.
 
@@ -63,10 +63,10 @@ Picodrive is a lightweight alternative with similar Sega 8-bit settings referenc
 
 ## Controls
 
-Master System controllers included the two-button gamepad, Light Phaser, paddle and sports pad. The [REG-Linux Retropad](/configure_a_controller) overlay matches the standard pad layout; use RetroArch's Input menu or the controller configuration tool for special peripherals.
+Master System controllers included the two-button gamepad, Light Phaser, paddle and sports pad. The REG-Linux Retropad overlay matches the standard pad layout; use RetroArch's Input menu or the controller configuration tool for special peripherals.
 
 ![mastersystem controller overlay](../images/controller-overlays/mastersystem-1.png)
 
 ## Troubleshooting
 
-When a title misbehaves, consult the [generic support pages](/support) and consider switching between GenesisPlusGX and Picodrive to see which core handles the ROM best.
+When a title misbehaves, consult the generic support pages and consider switching between GenesisPlusGX and Picodrive to see which core handles the ROM best.
