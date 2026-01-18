@@ -127,6 +127,12 @@ def main() -> int:
     if not socs:
         print("SoC catalog is empty; aborting.")
         return 1
+    if not args.configs.exists():
+        print(f"Configs directory not found: {args.configs}")
+        return 1
+    if not args.configs.is_dir():
+        print(f"Configs path is not a directory: {args.configs}")
+        return 1
 
     board_map = load_board_map(args.board_map)
     if not board_map:
