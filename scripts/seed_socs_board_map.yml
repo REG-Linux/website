@@ -24,7 +24,7 @@ Broadcom BCM2712: reglinux-bcm2712.board
 Broadcom BCM2835: reglinux-bcm2835.board
 Broadcom BCM2836: reglinux-bcm2836.board
 Broadcom BCM2837: reglinux-bcm2837.board
-Genio 1200 (MT8395): reglinux-mt8395.board
+MediaTek 1200 (MT8395): reglinux-mt8395.board
 Qualcomm 8gen2 (SM8550): reglinux-sm8550.board
 Qualcomm QCS6490: reglinux-qcs6490.board
 Qualcomm SD865 (SM8250): reglinux-sm8250.board
@@ -36,4 +36,4 @@ Rockchip RK3568: reglinux-rk3568.board
 Rockchip RK3588: reglinux-rk3588.board
 Samsung Exynos 5422: reglinux-odroidxu4.board
 StarFive JH7110: reglinux-jh7110.board
-TH1520: reglinux-th1520.board
+T-Head TH1520: reglinux-th1520.board

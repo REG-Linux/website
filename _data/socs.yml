@@ -326,14 +326,14 @@ broadcom-bcm2837:
   slug: broadcom-bcm2837
 genio-1200-mt8395:
   cpu:
-    arch: ''
+    arch: ARMv8-A
     cores: ''
     max_clock: ''
-    model: ''
+    model: Cortex-A76/A55
   gpu:
     api: ''
-    model: ''
-  kernel_version: ''
+    model: Mali (Panfrost)
+  kernel_version: 6.18.4
   manufacturer: MediaTek
   model: 1200 (MT8395)
   slug: genio-1200-mt8395
@@ -488,8 +488,8 @@ th1520:
     model: ''
   gpu:
     api: ''
-    model: ''
-  kernel_version: ''
+    model: PowerVR
+  kernel_version: 6.6.110
   manufacturer: T-Head
   model: TH1520
   slug: th1520
