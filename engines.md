@@ -18,7 +18,7 @@ description: Learn about the curated open souce engines REG Linux comes with and
         beat ’em ups, RPG Maker titles, Flash SWFs, fan-made games, or even LaserDisc FMV discs.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://wiki.reglinux.org/engines/" target="_blank" rel="noreferrer">Browse the engine guides</a>
+        <a class="btn primary" href="https://reglinux.org/wiki/engines/" target="_blank" rel="noreferrer">Browse the engine guides</a>
       </div>
     </div>
     <div class="hero-media">
@@ -51,6 +51,6 @@ description: Learn about the curated open souce engines REG Linux comes with and
   </div>
 
   <section class="doc-actions">
-    <a class="btn primary" href="https://wiki.reglinux.org/engines/" target="_blank" rel="noreferrer">Open the engines directory</a>
+    <a class="btn primary" href="https://reglinux.org/wiki/engines/" target="_blank" rel="noreferrer">Open the engines directory</a>
   </section>
 </main>

@@ -1,0 +1,6 @@
+_site/
+.jekyll-cache/
+.venv/
+.static-server.log
+.tmp_*
+codex

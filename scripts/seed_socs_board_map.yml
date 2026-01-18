@@ -1,0 +1,39 @@
+# Map SoC display name to REG-Linux board config filename.
+AMD Ryzen Z1: reglinux-x86_64.board
+AMD Zen 2 APU: reglinux-x86_64.board
+Allwinner H2+: reglinux-h3.board
+Allwinner H3: reglinux-h3.board
+Allwinner H5: reglinux-h5.board
+Allwinner H6: reglinux-h6.board
+Allwinner H616: reglinux-h616.board
+Allwinner H618: reglinux-h616.board
+Allwinner H700: reglinux-h700.board
+Amlogic A311D: reglinux-s922x.board
+Amlogic A311D2: reglinux-a3gen2.board
+Amlogic S905(X): reglinux-s905.board
+Amlogic S905D3: reglinux-s905gen3.board
+Amlogic S905X3: reglinux-s905gen3.board
+Amlogic S905X5M: reglinux-s9gen4.board
+Amlogic S905Y2: reglinux-s905gen2.board
+Amlogic S905Y4: reglinux-s9gen4.board
+Amlogic S912: reglinux-s905gen2.board
+Amlogic S922X: reglinux-s922x.board
+Amlogic S922X-H: reglinux-s922x.board
+Broadcom BCM2711: reglinux-bcm2711.board
+Broadcom BCM2712: reglinux-bcm2712.board
+Broadcom BCM2835: reglinux-bcm2835.board
+Broadcom BCM2836: reglinux-bcm2836.board
+Broadcom BCM2837: reglinux-bcm2837.board
+Genio 1200 (MT8395): reglinux-mt8395.board
+Qualcomm 8gen2 (SM8550): reglinux-sm8550.board
+Qualcomm QCS6490: reglinux-qcs6490.board
+Qualcomm SD865 (SM8250): reglinux-sm8250.board
+Rockchip RK3288: reglinux-rk3288.board
+Rockchip RK3326: reglinux-rk3326.board
+Rockchip RK3399: reglinux-rk3399.board
+Rockchip RK3566: reglinux-rk3568.board
+Rockchip RK3568: reglinux-rk3568.board
+Rockchip RK3588: reglinux-rk3588.board
+Samsung Exynos 5422: reglinux-odroidxu4.board
+StarFive JH7110: reglinux-jh7110.board
+TH1520: reglinux-th1520.board

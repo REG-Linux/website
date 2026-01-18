@@ -18,7 +18,7 @@ description: Discover engine ports and community remakes that REG Linux handles 
         and upstream notes so you can supply the missing WADs, PK3s, or mod archives these versions expect.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://wiki.reglinux.org/ports/" target="_blank" rel="noreferrer">Browse the ports catalog</a>
+        <a class="btn primary" href="https://reglinux.org/wiki/ports/" target="_blank" rel="noreferrer">Browse the ports catalog</a>
       </div>
       <ul class="hero-highlights">
         <li>Covers Doom/Quake, Fallout, Sonic, and homebrew fighters</li>
@@ -58,6 +58,6 @@ description: Discover engine ports and community remakes that REG Linux handles 
   </section>
 
   <section class="doc-actions">
-    <a class="btn primary" href="https://wiki.reglinux.org/ports/" target="_blank" rel="noreferrer">Open the ports directory</a>
+    <a class="btn primary" href="https://reglinux.org/wiki/ports/" target="_blank" rel="noreferrer">Open the ports directory</a>
   </section>
 </main>

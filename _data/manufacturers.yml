@@ -55,7 +55,7 @@
   logo_image: /assets/images/manufacturers/khadas.svg
 - id: MagicX
   name: MagicX
-  url: https://wiki.reglinux.org/handhelds/magicx/xu-mini-m/
+  url: https://reglinux.org/wiki/handhelds/magicx/xu-mini-m/
   logo: MagicX
   logo_image: /assets/images/manufacturers/magicx.svg
 - id: Milk-V
@@ -105,7 +105,7 @@
   logo_image: /assets/images/manufacturers/starfive.svg
 - id: Unbranded
   name: Unbranded
-  url: https://wiki.reglinux.org/handhelds/unbranded/rk3326-clones/
+  url: https://reglinux.org/wiki/handhelds/unbranded/rk3326-clones/
   logo: Unbranded
   logo_image: /assets/images/manufacturers/unbranded.svg
 - id: Valve
