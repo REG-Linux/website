@@ -1,91 +1,99 @@
-# System-on-Chip catalog. Fill CPU/GPU/kernel details as you verify them.
+# System-on-Chip catalog.
+# Fill CPU/GPU/kernel details as you verify them.
 allwinner-h2:
   cpu:
     arch: ARMv7-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.2 GHz'
     model: Cortex-A7
   gpu:
-    api: ''
-    model: Mali (Lima)
-  kernel_version: ''
+    api: 'OpenGL ES 2.0'
+    model: Mali-400 MP2
+    driver: Mesa3D (Lima)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Allwinner
   model: H2+
   slug: allwinner-h2
 allwinner-h3:
   cpu:
     arch: ARMv7-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.2 GHz'
     model: Cortex-A7
   gpu:
-    api: ''
-    model: Mali (Lima)
-  kernel_version: ''
+    api: 'OpenGL ES 2.0'
+    model: Mali-400 MP2
+    driver: Mesa3D (Lima)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Allwinner
   model: H3
   slug: allwinner-h3
 allwinner-h5:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.4 GHz'
     model: Cortex-A53
   gpu:
-    api: ''
-    model: Mali (Lima)
-  kernel_version: ''
+    api: 'OpenGL ES 2.0'
+    model: Mali-450 MP4
+    driver: Mesa3D (Lima)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Allwinner
   model: H5
   slug: allwinner-h5
 allwinner-h6:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.8 GHz'
     model: Cortex-A53
   gpu:
-    api: ''
-    model: Mali (Panfrost)
-  kernel_version: ''
+    api: 'OpenGL ES 2.0'
+    model: Mali-T720 MP2
+    driver: Mesa3D (Panfrost)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Allwinner
   model: H6
   slug: allwinner-h6
 allwinner-h616:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.5 GHz'
     model: Cortex-A53
   gpu:
-    api: ''
-    model: Mali (Panfrost)
-  kernel_version: ''
+    api: 'OpenGL ES 3.1'
+    model: Mali-G31 MP2
+    driver: Mesa3D (Panfrost)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Allwinner
   model: H616
   slug: allwinner-h616
 allwinner-h618:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.5 GHz'
     model: Cortex-A53
   gpu:
-    api: ''
-    model: Mali (Panfrost)
-  kernel_version: ''
+    api: 'OpenGL ES 3.1'
+    model: Mali-G31 MP2
+    driver: Mesa3D (Panfrost)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Allwinner
   model: H618
   slug: allwinner-h618
 allwinner-h700:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '1.5 GHz'
     model: Cortex-A53
   gpu:
-    api: ''
-    model: Mali (Panfrost)
+    api: 'OpenGL ES 3.1'
+    model: Mali-G31 MP2
+    driver: Mesa3D (Panfrost)
   kernel_version: 6.18.4
   manufacturer: Allwinner
   model: H700
@@ -93,12 +101,13 @@ allwinner-h700:
 amd-ryzen-z1:
   cpu:
     arch: x86_64
-    cores: ''
-    max_clock: ''
+    cores: '6'
+    max_clock: '3.5 GHz'
     model: x86_64
   gpu:
-    api: ''
-    model: x86 GPU
+    api: 'Vulkan'
+    model: AMD RDNA 3
+    driver: Mesa3D
   kernel_version: 6.18.4
   manufacturer: AMD
   model: Ryzen Z1
@@ -106,12 +115,13 @@ amd-ryzen-z1:
 amd-zen-2-apu:
   cpu:
     arch: x86_64
-    cores: ''
-    max_clock: ''
+    cores: '4'
+    max_clock: '3.5 GHz'
     model: x86_64
   gpu:
-    api: ''
-    model: x86 GPU
+    api: 'Vulkan'
+    model: AMD RDNA 2
+    driver: Mesa3D
   kernel_version: 6.18.4
   manufacturer: AMD
   model: Zen 2 APU
@@ -119,13 +129,14 @@ amd-zen-2-apu:
 amlogic-a311d:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
+    cores: '6'
+    max_clock: '2.2 GHz'
     model: Cortex-A73/A53
   gpu:
-    api: ''
-    model: Mali (Panfrost)
-  kernel_version: ''
+    api: 'OpenGL ES 3.1'
+    model: Mali-G52 MP4
+    driver: Mesa3D (Panfrost)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Amlogic
   model: A311D
   slug: amlogic-a311d
@@ -137,15 +148,16 @@ amlogic-a311d2:
     model: Cortex-A73/A53
   gpu:
     api: ''
-    model: Mali (Panfrost)
-  kernel_version: '5.15'
+    model: Mali
+    driver: Mesa3D (Panfrost)
+  kernel_version: '5.15 (Amlogic)'
   manufacturer: Amlogic
   model: A311D2
   slug: amlogic-a311d2
 amlogic-s905-x:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A53
   gpu:
@@ -158,7 +170,7 @@ amlogic-s905-x:
 amlogic-s905d3:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A55
   gpu:
@@ -171,7 +183,7 @@ amlogic-s905d3:
 amlogic-s905x3:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A55
   gpu:
@@ -184,20 +196,21 @@ amlogic-s905x3:
 amlogic-s905x5m:
   cpu:
     arch: ARMv8-A
-    cores: ''
-    max_clock: ''
-    model: Cortex-A35
+    cores: '4'
+    max_clock: '2.5 GHz'
+    model: Cortex-A55
   gpu:
-    api: ''
-    model: Mali (Panfrost)
-  kernel_version: '5.15'
+    api: 'Vulkan'
+    model: Mali-G310
+    driver: libmali
+  kernel_version: '5.15 (Amlogic)'
   manufacturer: Amlogic
   model: S905X5M
   slug: amlogic-s905x5m
 amlogic-s905y2:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A53
   gpu:
@@ -262,65 +275,68 @@ amlogic-s922x-h:
 broadcom-bcm2711:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A72
   gpu:
-    api: ''
+    api: 'Vulkan'
     model: Broadcom V3D
-  kernel_version: '6.12'
+  kernel_version: '6.12 (LTS)'
   manufacturer: Broadcom
   model: BCM2711
   slug: broadcom-bcm2711
 broadcom-bcm2712:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A76
   gpu:
-    api: ''
+    api: 'Vulkan'
     model: Broadcom V3D
-  kernel_version: '6.12'
+  kernel_version: '6.12 (LTS)'
   manufacturer: Broadcom
   model: BCM2712
   slug: broadcom-bcm2712
 broadcom-bcm2835:
   cpu:
-    arch: ARMv7-A
-    cores: ''
+    arch: ARMv6
+    cores: '1'
     max_clock: ''
     model: ''
   gpu:
-    api: ''
-    model: Broadcom V3D
-  kernel_version: '6.12'
+    api: 'OpenGL ES 2.0'
+    model: Broadcom VC4
+    driver: Mesa3D (vc4)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Broadcom
   model: BCM2835
   slug: broadcom-bcm2835
 broadcom-bcm2836:
   cpu:
     arch: ARMv7-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A7
   gpu:
-    api: ''
-    model: Broadcom V3D
-  kernel_version: '6.12'
+    api: 'OpenGL ES 2.0'
+    model: Broadcom VC4
+    driver: Mesa3D (vc4)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Broadcom
   model: BCM2836
   slug: broadcom-bcm2836
 broadcom-bcm2837:
   cpu:
     arch: ARMv8-A
-    cores: ''
+    cores: '4'
     max_clock: ''
     model: Cortex-A53
   gpu:
-    api: ''
-    model: Broadcom V3D
-  kernel_version: '6.12'
+    api: 'OpenGL ES 2.0'
+    model: Broadcom VC4
+    driver: Mesa3D (vc4)
+  kernel_version: '6.12 (LTS)'
   manufacturer: Broadcom
   model: BCM2837
   slug: broadcom-bcm2837
@@ -335,7 +351,7 @@ genio-1200-mt8395:
     model: Mali (Panfrost)
   kernel_version: 6.18.4
   manufacturer: MediaTek
-  model: 1200 (MT8395)
+  model: Genio 1200 (MT8395)
   slug: genio-1200-mt8395
 qualcomm-8gen2-sm8550:
   cpu:
