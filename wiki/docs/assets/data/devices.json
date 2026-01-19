@@ -1,0 +1,702 @@
+[
+  {
+    "slug": "anbernic-rgarc",
+    "title": "Anbernic RG ARC",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rgarc/"
+  },
+  {
+    "slug": "anbernic-rg-cubexx",
+    "title": "Anbernic RG CubeXX",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg-cubexx/"
+  },
+  {
+    "slug": "anbernic-rg-ds",
+    "title": "Anbernic RG DS",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3568",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg-ds/"
+  },
+  {
+    "slug": "anbernic-rg28xx",
+    "title": "Anbernic RG28XX",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg28xx/"
+  },
+  {
+    "slug": "anbernic-rg34xx",
+    "title": "Anbernic RG34XX",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg34xx/"
+  },
+  {
+    "slug": "anbernic-rg351-p-m-mp",
+    "title": "Anbernic RG351 P/M/MP",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg351pmv/"
+  },
+  {
+    "slug": "anbernic-rg351v",
+    "title": "Anbernic RG351V",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg351pmv/"
+  },
+  {
+    "slug": "anbernic-rg353m",
+    "title": "Anbernic RG353M",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/"
+  },
+  {
+    "slug": "anbernic-rg353p-s",
+    "title": "Anbernic RG353P(S)",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/"
+  },
+  {
+    "slug": "anbernic-rg353v-s",
+    "title": "Anbernic RG353V(S)",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/"
+  },
+  {
+    "slug": "anbernic-rg35xx-2024",
+    "title": "Anbernic RG35XX 2024",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg35xx-2024/"
+  },
+  {
+    "slug": "anbernic-rg35xx-h",
+    "title": "Anbernic RG35XX H",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg35xx-h/"
+  },
+  {
+    "slug": "anbernic-rg35xx-plus",
+    "title": "Anbernic RG35XX Plus",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg35xx-plus/"
+  },
+  {
+    "slug": "anbernic-rg35xx-pro",
+    "title": "Anbernic RG35XX Pro",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg35xx-pro/"
+  },
+  {
+    "slug": "anbernic-rg35xx-sp",
+    "title": "Anbernic RG35XX SP",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg35xx-sp/"
+  },
+  {
+    "slug": "anbernic-rg40xx-h",
+    "title": "Anbernic RG40XX H",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg40xx-h/"
+  },
+  {
+    "slug": "anbernic-rg40xx-v",
+    "title": "Anbernic RG40XX V",
+    "brand": "Anbernic",
+    "soc": "Allwinner H700",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg40xx-v/"
+  },
+  {
+    "slug": "anbernic-rg503",
+    "title": "Anbernic RG503",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg503/"
+  },
+  {
+    "slug": "anbernic-rg552",
+    "title": "Anbernic RG552",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3399",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg552/"
+  },
+  {
+    "slug": "asus-rog-ally",
+    "title": "Asus ROG Ally",
+    "brand": "ASUS",
+    "soc": "AMD Ryzen Z1",
+    "board_url": "https://reglinux.org/wiki/handhelds/x86_64/asus-rog-ally/"
+  },
+  {
+    "slug": "asus-tinker-board-s",
+    "title": "Asus Tinker Board (S)",
+    "brand": "ASUS",
+    "soc": "Rockchip RK3288",
+    "board_url": "https://reglinux.org/wiki/sbcs/asus-tinker-board-s/"
+  },
+  {
+    "slug": "ayaneo-pockets",
+    "title": "AYANEO Pocket S",
+    "brand": "AYANEO",
+    "soc": "Qualcomm 8gen2 (SM8550)",
+    "board_url": "https://reglinux.org/wiki/handhelds/ayaneo/pockets/"
+  },
+  {
+    "slug": "ayn-odin2",
+    "title": "Ayn Odin 2",
+    "brand": "Ayn",
+    "soc": "Qualcomm 8gen2 (SM8550)",
+    "board_url": "https://reglinux.org/wiki/handhelds/ayn/odin2/"
+  },
+  {
+    "slug": "banana-pi-m2-zero",
+    "title": "Banana Pi M2 Zero",
+    "brand": "Banana Pi",
+    "soc": "Allwinner H2+",
+    "board_url": "https://reglinux.org/wiki/sbcs/banana-pi-m2-zero/"
+  },
+  {
+    "slug": "banana-pi-m2s",
+    "title": "Banana Pi M2S",
+    "brand": "Banana Pi",
+    "soc": "Amlogic A311D",
+    "board_url": "https://reglinux.org/wiki/sbcs/banana-pi-m2s/"
+  },
+  {
+    "slug": "banana-pi-m4-berry",
+    "title": "Banana Pi M4 Berry",
+    "brand": "Banana Pi",
+    "soc": "Allwinner H618",
+    "board_url": "https://reglinux.org/wiki/sbcs/banana-pi-m4-berry/"
+  },
+  {
+    "slug": "banana-pi-m5",
+    "title": "Banana Pi M5",
+    "brand": "Banana Pi",
+    "soc": "Amlogic S905X3",
+    "board_url": "https://reglinux.org/wiki/sbcs/banana-pi-m5/"
+  },
+  {
+    "slug": "banana-pi-m7",
+    "title": "Banana Pi M7",
+    "brand": "Banana Pi",
+    "soc": "Rockchip RK3588",
+    "board_url": "https://reglinux.org/wiki/sbcs/banana-pi-m7/"
+  },
+  {
+    "slug": "beelink-gt-king",
+    "title": "Beelink GT King",
+    "brand": "Beelink",
+    "soc": "Amlogic S922X",
+    "board_url": "https://reglinux.org/wiki/sbcs/beelink-gt-king/"
+  },
+  {
+    "slug": "beelink-gt-king-pro",
+    "title": "Beelink GT King Pro",
+    "brand": "Beelink",
+    "soc": "Amlogic S922X-H",
+    "board_url": "https://reglinux.org/wiki/sbcs/beelink-gt-king-pro/"
+  },
+  {
+    "slug": "capcom-home-arcade",
+    "title": "Capcom Home Arcade",
+    "brand": "Koch Media",
+    "soc": "Allwinner H3",
+    "board_url": "https://reglinux.org/wiki/sbcs/capcom-home-arcade/"
+  },
+  {
+    "slug": "firefly-station-m2-roc-rk3566-pc",
+    "title": "Firefly Station M2 / ROC-RK3566-PC",
+    "brand": "Firefly",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/sbcs/firefly-station-m2-roc-rk3566-pc/"
+  },
+  {
+    "slug": "firefly-station-m3-roc-rk3588s-pc",
+    "title": "Firefly Station M3 / ROC-RK3588S-PC",
+    "brand": "Firefly",
+    "soc": "Rockchip RK3588",
+    "board_url": "https://reglinux.org/wiki/sbcs/firefly-station-m3-roc-rk3588s-pc/"
+  },
+  {
+    "slug": "firefly-station-p2-roc-rk3568-pc",
+    "title": "Firefly Station P2 / ROC-RK3568-PC",
+    "brand": "Firefly",
+    "soc": "Rockchip RK3568",
+    "board_url": "https://reglinux.org/wiki/sbcs/firefly-station-p2-roc-rk3568-pc/"
+  },
+  {
+    "slug": "unbranded-game-console-r33s",
+    "title": "Game Console R33S",
+    "brand": "Unbranded",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/unbranded/game-console-r33s/"
+  },
+  {
+    "slug": "unbranded-game-console-r35s-r36s",
+    "title": "Game Console R35S R36S",
+    "brand": "Unbranded",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/unbranded/game-console-r35s-r36s/"
+  },
+  {
+    "slug": "gameforce-ace",
+    "title": "Gameforce ACE",
+    "brand": "Gameforce",
+    "soc": "Rockchip RK3588",
+    "board_url": "https://reglinux.org/wiki/handhelds/gameforce/gameforce-ace/"
+  },
+  {
+    "slug": "gameforce-chi",
+    "title": "Gameforce CHI",
+    "brand": "Gameforce",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/sbcs/gameforce-chi/"
+  },
+  {
+    "slug": "hardkernel-odroid-c2",
+    "title": "HardKernel ODROID C2",
+    "brand": "HardKernel",
+    "soc": "Amlogic S905(X)",
+    "board_url": "https://reglinux.org/wiki/sbcs/hardkernel-odroid-c2/"
+  },
+  {
+    "slug": "hardkernel-odroid-c4",
+    "title": "HardKernel ODROID C4",
+    "brand": "HardKernel",
+    "soc": "Amlogic S905X3",
+    "board_url": "https://reglinux.org/wiki/sbcs/hardkernel-odroid-c4/"
+  },
+  {
+    "slug": "hardkernel-odroid-c5",
+    "title": "HardKernel ODROID C5",
+    "brand": "HardKernel",
+    "soc": "Amlogic S905X5M",
+    "board_url": "https://reglinux.org/wiki/sbcs/hardkernel-odroid-c5/"
+  },
+  {
+    "slug": "hardkernel-odroid-go-super",
+    "title": "HardKernel ODROID Go Super",
+    "brand": "HardKernel",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-super/"
+  },
+  {
+    "slug": "hardkernel-odroid-go-ultra",
+    "title": "HardKernel ODROID GO Ultra",
+    "brand": "HardKernel",
+    "soc": "Amlogic S922X",
+    "board_url": "https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-ultra/"
+  },
+  {
+    "slug": "hardkernel-odroid-m1",
+    "title": "HardKernel ODROID M1",
+    "brand": "HardKernel",
+    "soc": "Rockchip RK3568",
+    "board_url": "https://reglinux.org/wiki/sbcs/hardkernel-odroid-m1/"
+  },
+  {
+    "slug": "hardkernel-odroid-xu3-xu4",
+    "title": "HardKernel ODROID XU3/XU4",
+    "brand": "HardKernel",
+    "soc": "Samsung Exynos 5422",
+    "board_url": "https://reglinux.org/wiki/sbcs/hardkernel-odroid-xu3-xu4/"
+  },
+  {
+    "slug": "khadas-edge-2",
+    "title": "Khadas Edge 2",
+    "brand": "Khadas",
+    "soc": "Rockchip RK3588",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-edge-2/"
+  },
+  {
+    "slug": "khadas-vim-1",
+    "title": "Khadas VIM 1",
+    "brand": "Khadas",
+    "soc": "Amlogic S905(X)",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-vim-1/"
+  },
+  {
+    "slug": "khadas-vim-1s",
+    "title": "Khadas VIM 1S",
+    "brand": "Khadas",
+    "soc": "Amlogic S905Y4",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-vim-1s/"
+  },
+  {
+    "slug": "khadas-vim-2",
+    "title": "Khadas VIM 2",
+    "brand": "Khadas",
+    "soc": "Amlogic S912",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-vim-2/"
+  },
+  {
+    "slug": "khadas-vim-3",
+    "title": "Khadas VIM 3",
+    "brand": "Khadas",
+    "soc": "Amlogic A311D",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-vim-3/"
+  },
+  {
+    "slug": "khadas-vim-3l",
+    "title": "Khadas VIM 3L",
+    "brand": "Khadas",
+    "soc": "Amlogic S905D3",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-vim-3l/"
+  },
+  {
+    "slug": "khadas-vim-4",
+    "title": "Khadas VIM 4",
+    "brand": "Khadas",
+    "soc": "Amlogic A311D2",
+    "board_url": "https://reglinux.org/wiki/sbcs/khadas-vim-4/"
+  },
+  {
+    "slug": "milk-v-mars",
+    "title": "Milk-V Mars",
+    "brand": "Milk-V",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbcs/milk-v-mars/"
+  },
+  {
+    "slug": "milk-v-meles",
+    "title": "Milk-V Meles",
+    "brand": "Milk-V",
+    "soc": "TH1520",
+    "board_url": "https://reglinux.org/wiki/sbcs/milk-v-meles/"
+  },
+  {
+    "slug": "mqmaker-miqi",
+    "title": "MQMaker MiQi",
+    "brand": "MQMaker",
+    "soc": "Rockchip RK3288",
+    "board_url": "https://reglinux.org/wiki/sbcs/mqmaker-miqi/"
+  },
+  {
+    "slug": "nano-pi-k2",
+    "title": "Nano Pi K2",
+    "brand": "FriendlyElec",
+    "soc": "Amlogic S905(X)",
+    "board_url": "https://reglinux.org/wiki/sbcs/nano-pi-k2/"
+  },
+  {
+    "slug": "nano-pi-m4v2",
+    "title": "Nano Pi M4v2",
+    "brand": "FriendlyElec",
+    "soc": "Rockchip RK3399",
+    "board_url": "https://reglinux.org/wiki/sbcs/nano-pi-m4v2/"
+  },
+  {
+    "slug": "hardkernel-odroid-go-advance",
+    "title": "Odroid Go Advance",
+    "brand": "HardKernel",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-advance/"
+  },
+  {
+    "slug": "orange-pi-800",
+    "title": "Orange Pi 800",
+    "brand": "Orange Pi",
+    "soc": "Rockchip RK3399",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-800/"
+  },
+  {
+    "slug": "orange-pi-one",
+    "title": "Orange Pi One",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H3",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-one/"
+  },
+  {
+    "slug": "orange-pi-one-plus",
+    "title": "Orange Pi One Plus",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H6",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-one-plus/"
+  },
+  {
+    "slug": "orange-pi-pc",
+    "title": "Orange Pi PC",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H3",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-pc/"
+  },
+  {
+    "slug": "orange-pi-pc-2",
+    "title": "Orange Pi PC 2",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H5",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-pc-2/"
+  },
+  {
+    "slug": "orange-pi-plus-2e",
+    "title": "Orange Pi Plus 2E",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H3",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-plus-2e/"
+  },
+  {
+    "slug": "orange-pi-zero-2",
+    "title": "Orange Pi Zero 2",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H616",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-zero-2/"
+  },
+  {
+    "slug": "orange-pi-zero-2w",
+    "title": "Orange Pi Zero 2W",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H618",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-zero-2w/"
+  },
+  {
+    "slug": "orange-pi-zero-3",
+    "title": "Orange Pi Zero 3",
+    "brand": "Orange Pi",
+    "soc": "Allwinner H618",
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-zero-3/"
+  },
+  {
+    "slug": "radxa-dragon-q6a",
+    "title": "Radxa Dragon Q6A",
+    "brand": "Radxa",
+    "soc": "Qualcomm QCS6490",
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-dragon-q6a/"
+  },
+  {
+    "slug": "radxa-nio-12l",
+    "title": "Radxa NIO 12L",
+    "brand": "Radxa",
+    "soc": "Genio 1200 (MT8395)",
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-nio-12l/"
+  },
+  {
+    "slug": "radxa-rock-5a",
+    "title": "Radxa Rock 5A",
+    "brand": "Radxa",
+    "soc": "Rockchip RK3588",
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-rock-5a/"
+  },
+  {
+    "slug": "radxa-rock-5b",
+    "title": "Radxa Rock 5B",
+    "brand": "Radxa",
+    "soc": "Rockchip RK3588",
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-rock-5b/"
+  },
+  {
+    "slug": "radxa-zero",
+    "title": "Radxa Zero",
+    "brand": "Radxa",
+    "soc": "Amlogic S905Y2",
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-zero/"
+  },
+  {
+    "slug": "radxa-zero-2",
+    "title": "Radxa Zero 2",
+    "brand": "Radxa",
+    "soc": "Amlogic A311D",
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-zero-2/"
+  },
+  {
+    "slug": "raspberry-pi-2",
+    "title": "Raspberry Pi 2",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2836",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-2/"
+  },
+  {
+    "slug": "raspberry-pi-3",
+    "title": "Raspberry Pi 3",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2837",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-3/"
+  },
+  {
+    "slug": "raspberry-pi-4",
+    "title": "Raspberry Pi 4",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2711",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-4/"
+  },
+  {
+    "slug": "raspberry-pi-400",
+    "title": "Raspberry Pi 400",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2711",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-400/"
+  },
+  {
+    "slug": "raspberry-pi-5",
+    "title": "Raspberry Pi 5",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2712",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-5/"
+  },
+  {
+    "slug": "raspberry-pi-a-a-b-b",
+    "title": "Raspberry Pi A/A+/B/B+",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2835",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-a-a-b-b/"
+  },
+  {
+    "slug": "raspberry-pi-zero",
+    "title": "Raspberry Pi Zero",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2835",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-zero/"
+  },
+  {
+    "slug": "raspberry-pi-zero-2",
+    "title": "Raspberry Pi Zero 2",
+    "brand": "Raspberry",
+    "soc": "Broadcom BCM2837",
+    "board_url": "https://reglinux.org/wiki/sbcs/raspberry-pi-zero-2/"
+  },
+  {
+    "slug": "retroid-pocket-5",
+    "title": "Retroid Pocket 5",
+    "brand": "Retroid",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-5/"
+  },
+  {
+    "slug": "retroid-pocket-flip2",
+    "title": "Retroid Pocket Flip2",
+    "brand": "Retroid",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-flip2/"
+  },
+  {
+    "slug": "retroid-pocket-mini",
+    "title": "Retroid Pocket Mini",
+    "brand": "Retroid",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-mini/"
+  },
+  {
+    "slug": "powkiddy-rgb10",
+    "title": "RGB10",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb10/"
+  },
+  {
+    "slug": "powkiddy-rgb10-max-3",
+    "title": "RGB10 Max 3",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3/"
+  },
+  {
+    "slug": "powkiddy-rgb10-max-3-pro",
+    "title": "RGB10 Max 3 Pro",
+    "brand": "Powkiddy",
+    "soc": "Amlogic A311D",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3-pro/"
+  },
+  {
+    "slug": "powkiddy-rgb10x",
+    "title": "RGB10X",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb10x/"
+  },
+  {
+    "slug": "powkiddy-rgb20-pro",
+    "title": "RGB20 Pro",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb20-pro/"
+  },
+  {
+    "slug": "powkiddy-rgb20sx",
+    "title": "RGB20SX",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb20sx/"
+  },
+  {
+    "slug": "powkiddy-rgb30",
+    "title": "RGB30",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb30/"
+  },
+  {
+    "slug": "powkiddy-rk2023",
+    "title": "RK2023",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rk2023/"
+  },
+  {
+    "slug": "unbranded-rk3326-clones",
+    "title": "RK3326 clones (including K36 and BatleXP G350)",
+    "brand": "Unbranded",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/unbranded/rk3326-clones/"
+  },
+  {
+    "slug": "starfive-visionfive-2",
+    "title": "StarFive VisionFive 2",
+    "brand": "Starfive",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbcs/starfive-visionfive-2/"
+  },
+  {
+    "slug": "steam-deck",
+    "title": "Steam Deck",
+    "brand": "Valve",
+    "soc": "AMD Zen 2 APU",
+    "board_url": "https://reglinux.org/wiki/handhelds/x86_64/steam-deck/"
+  },
+  {
+    "slug": "powkiddy-x35h",
+    "title": "X35H",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x35h/"
+  },
+  {
+    "slug": "powkiddy-x35s",
+    "title": "X35S",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x35s/"
+  },
+  {
+    "slug": "powkiddy-x55",
+    "title": "X55",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3566",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x55/"
+  },
+  {
+    "slug": "magicx-xu-mini-m",
+    "title": "XU Mini M",
+    "brand": "MagicX",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/magicx/xu-mini-m/"
+  },
+  {
+    "slug": "powkiddy-xu10",
+    "title": "XU10",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3326",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/xu10/"
+  }
+]

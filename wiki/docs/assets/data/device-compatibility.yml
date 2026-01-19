@@ -1,0 +1,301 @@
+# Auto-synced device compatibility data.
+anbernic-rg-cubexx:
+  status: unknown
+  notes: ""
+anbernic-rg-ds:
+  status: unknown
+  notes: ""
+anbernic-rg28xx:
+  status: unknown
+  notes: ""
+anbernic-rg34xx:
+  status: unknown
+  notes: ""
+anbernic-rg351-p-m-mp:
+  status: unknown
+  notes: ""
+anbernic-rg351v:
+  status: unknown
+  notes: ""
+anbernic-rg353m:
+  status: unknown
+  notes: ""
+anbernic-rg353p-s:
+  status: unknown
+  notes: ""
+anbernic-rg353v-s:
+  status: unknown
+  notes: ""
+anbernic-rg35xx-2024:
+  status: unknown
+  notes: ""
+anbernic-rg35xx-h:
+  status: unknown
+  notes: ""
+anbernic-rg35xx-plus:
+  status: unknown
+  notes: ""
+anbernic-rg35xx-pro:
+  status: unknown
+  notes: ""
+anbernic-rg35xx-sp:
+  status: unknown
+  notes: ""
+anbernic-rg40xx-h:
+  status: unknown
+  notes: ""
+anbernic-rg40xx-v:
+  status: unknown
+  notes: ""
+anbernic-rg503:
+  status: unknown
+  notes: ""
+anbernic-rg552:
+  status: unknown
+  notes: ""
+anbernic-rgarc:
+  status: unknown
+  notes: ""
+asus-rog-ally:
+  status: unknown
+  notes: ""
+asus-tinker-board-s:
+  status: unknown
+  notes: ""
+ayaneo-pockets:
+  status: unknown
+  notes: ""
+ayn-odin2:
+  status: unknown
+  notes: ""
+banana-pi-m2-zero:
+  status: unknown
+  notes: ""
+banana-pi-m2s:
+  status: unknown
+  notes: ""
+banana-pi-m4-berry:
+  status: unknown
+  notes: ""
+banana-pi-m5:
+  status: unknown
+  notes: ""
+banana-pi-m7:
+  status: unknown
+  notes: ""
+beelink-gt-king:
+  status: unknown
+  notes: ""
+beelink-gt-king-pro:
+  status: unknown
+  notes: ""
+capcom-home-arcade:
+  status: unknown
+  notes: ""
+firefly-station-m2-roc-rk3566-pc:
+  status: unknown
+  notes: ""
+firefly-station-m3-roc-rk3588s-pc:
+  status: unknown
+  notes: ""
+firefly-station-p2-roc-rk3568-pc:
+  status: unknown
+  notes: ""
+gameforce-ace:
+  status: unknown
+  notes: ""
+gameforce-chi:
+  status: unknown
+  notes: ""
+hardkernel-odroid-c2:
+  status: unknown
+  notes: ""
+hardkernel-odroid-c4:
+  status: unknown
+  notes: ""
+hardkernel-odroid-c5:
+  status: unknown
+  notes: ""
+hardkernel-odroid-go-advance:
+  status: unknown
+  notes: ""
+hardkernel-odroid-go-super:
+  status: unknown
+  notes: ""
+hardkernel-odroid-go-ultra:
+  status: unknown
+  notes: ""
+hardkernel-odroid-m1:
+  status: unknown
+  notes: ""
+hardkernel-odroid-xu3-xu4:
+  status: unknown
+  notes: ""
+khadas-edge-2:
+  status: unknown
+  notes: ""
+khadas-vim-1:
+  status: unknown
+  notes: ""
+khadas-vim-1s:
+  status: unknown
+  notes: ""
+khadas-vim-2:
+  status: unknown
+  notes: ""
+khadas-vim-3:
+  status: unknown
+  notes: ""
+khadas-vim-3l:
+  status: unknown
+  notes: ""
+khadas-vim-4:
+  status: unknown
+  notes: ""
+magicx-xu-mini-m:
+  status: unknown
+  notes: ""
+milk-v-mars:
+  status: unknown
+  notes: ""
+milk-v-meles:
+  status: unknown
+  notes: ""
+mqmaker-miqi:
+  status: unknown
+  notes: ""
+nano-pi-k2:
+  status: unknown
+  notes: ""
+nano-pi-m4v2:
+  status: unknown
+  notes: ""
+orange-pi-800:
+  status: unknown
+  notes: ""
+orange-pi-one:
+  status: unknown
+  notes: ""
+orange-pi-one-plus:
+  status: unknown
+  notes: ""
+orange-pi-pc:
+  status: unknown
+  notes: ""
+orange-pi-pc-2:
+  status: unknown
+  notes: ""
+orange-pi-plus-2e:
+  status: unknown
+  notes: ""
+orange-pi-zero-2:
+  status: unknown
+  notes: ""
+orange-pi-zero-2w:
+  status: unknown
+  notes: ""
+orange-pi-zero-3:
+  status: unknown
+  notes: ""
+powkiddy-rgb10:
+  status: unknown
+  notes: ""
+powkiddy-rgb10-max-3:
+  status: unknown
+  notes: ""
+powkiddy-rgb10-max-3-pro:
+  status: unknown
+  notes: ""
+powkiddy-rgb10x:
+  status: unknown
+  notes: ""
+powkiddy-rgb20-pro:
+  status: unknown
+  notes: ""
+powkiddy-rgb20sx:
+  status: unknown
+  notes: ""
+powkiddy-rgb30:
+  status: unknown
+  notes: ""
+powkiddy-rk2023:
+  status: unknown
+  notes: ""
+powkiddy-x35h:
+  status: unknown
+  notes: ""
+powkiddy-x35s:
+  status: unknown
+  notes: ""
+powkiddy-x55:
+  status: unknown
+  notes: ""
+powkiddy-xu10:
+  status: unknown
+  notes: ""
+radxa-dragon-q6a:
+  status: unknown
+  notes: ""
+radxa-nio-12l:
+  status: unknown
+  notes: ""
+radxa-rock-5a:
+  status: unknown
+  notes: ""
+radxa-rock-5b:
+  status: unknown
+  notes: ""
+radxa-zero:
+  status: unknown
+  notes: ""
+radxa-zero-2:
+  status: unknown
+  notes: ""
+raspberry-pi-2:
+  status: unknown
+  notes: ""
+raspberry-pi-3:
+  status: unknown
+  notes: ""
+raspberry-pi-4:
+  status: unknown
+  notes: ""
+raspberry-pi-400:
+  status: unknown
+  notes: ""
+raspberry-pi-5:
+  status: unknown
+  notes: ""
+raspberry-pi-a-a-b-b:
+  status: unknown
+  notes: ""
+raspberry-pi-zero:
+  status: unknown
+  notes: ""
+raspberry-pi-zero-2:
+  status: unknown
+  notes: ""
+retroid-pocket-5:
+  status: unknown
+  notes: ""
+retroid-pocket-flip2:
+  status: unknown
+  notes: ""
+retroid-pocket-mini:
+  status: unknown
+  notes: ""
+starfive-visionfive-2:
+  status: unknown
+  notes: ""
+steam-deck:
+  status: unknown
+  notes: ""
+unbranded-game-console-r33s:
+  status: unknown
+  notes: ""
+unbranded-game-console-r35s-r36s:
+  status: unknown
+  notes: ""
+unbranded-rk3326-clones:
+  status: unknown
+  notes: ""
