@@ -74,12 +74,12 @@ nav:
       - Firefly Station M2 ROC-RK3566 PC: sbcs/firefly-station-m2-roc-rk3566-pc.md
       - Firefly Station M3 ROC-RK3588S PC: sbcs/firefly-station-m3-roc-rk3588s-pc.md
       - Firefly Station P2 ROC-RK3568 PC: sbcs/firefly-station-p2-roc-rk3568-pc.md
-  - Hardkernel:
-    - Hardkernel Odroid C2: sbcs/hardkernel-odroid-c2.md
-    - Hardkernel Odroid C4: sbcs/hardkernel-odroid-c4.md
-    - Hardkernel Odroid C5: sbcs/hardkernel-odroid-c5.md
-    - Hardkernel Odroid M1: sbcs/hardkernel-odroid-m1.md
-    - Hardkernel Odroid XU3/XU4: sbcs/hardkernel-odroid-xu3-xu4.md
+    - Hardkernel:
+      - Hardkernel Odroid C2: sbcs/hardkernel-odroid-c2.md
+      - Hardkernel Odroid C4: sbcs/hardkernel-odroid-c4.md
+      - Hardkernel Odroid C5: sbcs/hardkernel-odroid-c5.md
+      - Hardkernel Odroid M1: sbcs/hardkernel-odroid-m1.md
+      - Hardkernel Odroid XU3/XU4: sbcs/hardkernel-odroid-xu3-xu4.md
     - Khadas:
       - Khadas Edge 2: sbcs/khadas-edge-2.md
       - Khadas VIM 1: sbcs/khadas-vim-1.md
@@ -105,13 +105,13 @@ nav:
       - Orange Pi Zero 2: sbcs/orange-pi-zero-2.md
       - Orange Pi Zero 2W: sbcs/orange-pi-zero-2w.md
       - Orange Pi Zero 3: sbcs/orange-pi-zero-3.md
-  - Radxa:
-    - Radxa Dragon Q6A: sbcs/radxa-dragon-q6a.md
-    - Radxa Nio 12L: sbcs/radxa-nio-12l.md
-    - Radxa Rock 5A: sbcs/radxa-rock-5a.md
-    - Radxa Rock 5B: sbcs/radxa-rock-5b.md
-    - Radxa Zero 2: sbcs/radxa-zero-2.md
-    - Radxa Zero: sbcs/radxa-zero.md
+    - Radxa:
+      - Radxa Dragon Q6A: sbcs/radxa-dragon-q6a.md
+      - Radxa Nio 12L: sbcs/radxa-nio-12l.md
+      - Radxa Rock 5A: sbcs/radxa-rock-5a.md
+      - Radxa Rock 5B: sbcs/radxa-rock-5b.md
+      - Radxa Zero: sbcs/radxa-zero.md
+      - Radxa Zero 2: sbcs/radxa-zero-2.md
     - Raspberry Pi:
       - Raspberry Pi 2: sbcs/raspberry-pi-2.md
       - Raspberry Pi 3: sbcs/raspberry-pi-3.md
