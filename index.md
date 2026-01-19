@@ -128,32 +128,6 @@ preload_image: /assets/images/logo-regstation.webp
     </div>
   </section>
 
-  <section class="docs cv-auto" id="docs">
-    <div class="section-heading">
-      <p class="eyebrow">Official wiki</p>
-      <h2>Documentation built on GitHub Pages</h2>
-      <p>
-        The REG Linux wiki runs on MkDocs Material and mirrors every release, covering installation,
-        architecture, developer builds, and community resources for hardware enthusiasts.
-      </p>
-    </div>
-    <div class="doc-grid">
-      {% for card in home.doc_cards %}
-        <article class="card doc-card">
-          <h3>{{ card.title }}</h3>
-          {{ card.body | markdownify }}
-          <a href="{{ card.url }}" target="_blank" rel="noreferrer">{{ card.link_label }}</a>
-        </article>
-      {% endfor %}
-    </div>
-    <div class="doc-actions">
-      <a class="btn secondary" href="https://reglinux.org/wiki/" target="_blank" rel="noreferrer">
-        <img class="btn-icon" src="{{ '/assets/images/docs-icon.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" />
-        Browse the official Wiki
-      </a>
-    </div>
-  </section>
-
   <section class="get-started cv-auto" id="get-started">
     <div class="section-heading">
       <p class="eyebrow">Boot and play</p>
