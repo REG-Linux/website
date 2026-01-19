@@ -1,0 +1,79 @@
+:root {
+  --reg-bg: #05060a;
+  --reg-bg-soft: #0c101c;
+  --reg-bg-glow: radial-gradient(circle at top, rgba(21, 118, 206, 0.45), transparent 55%);
+  --reg-text: #f4f6fb;
+  --reg-text-muted: #b2bed1;
+  --reg-accent: #2bb0e9;
+  --reg-accent-strong: #ffdb59;
+  --reg-card: rgba(12, 16, 28, 0.75);
+  --reg-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  /* Base background + text */
+  --md-default-bg-color: var(--reg-bg);
+  --md-default-fg-color: var(--reg-text);
+  --md-default-fg-color--light: var(--reg-text-muted);
+  --md-default-fg-color--lighter: var(--reg-text-muted);
+  --md-typeset-color: var(--reg-text);
+
+  /* Primary / accent */
+  --md-primary-fg-color: var(--reg-accent);
+  --md-primary-bg-color: var(--reg-bg-soft);
+  --md-accent-fg-color: var(--reg-accent-strong);
+
+  /* Surfaces */
+  --md-code-bg-color: #050915;
+  --md-shadow-z2: 0 25px 60px rgba(3, 9, 27, 0.55);
+  --md-border-color: var(--reg-border);
+}
+
+/* Header – sticky glassy bar similar to reglinux.org */
+.md-header {
+  background-color: rgba(5, 7, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--reg-border);
+  color: var(--reg-text);
+}
+
+.md-header__inner,
+.md-header__title,
+.md-header__topic,
+.md-header .md-nav__link,
+.md-header .md-icon {
+  color: var(--reg-text);
+}
+
+/* Footer on a soft panel */
+.md-footer {
+  background-color: var(--reg-bg-soft);
+  border-top: 1px solid var(--reg-border);
+  color: var(--reg-text-muted);
+}
+
+.md-footer a {
+  color: var(--reg-accent);
+}
+
+/* Side navigation background */
+.md-nav,
+.md-sidebar {
+  background-color: var(--reg-bg-soft);
+}
+
+/* Main content with gentle glow at the top */
+.md-main {
+  background-image: var(--reg-bg-glow);
+  background-color: var(--reg-bg);
+}
+
+/* Link colors */
+.md-typeset a {
+  color: var(--reg-accent);
+}
+
+.md-typeset a:hover {
+  color: var(--reg-accent-strong);
+}
