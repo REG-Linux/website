@@ -1,3 +1,10 @@
+---
+title: Firefly Station P2 / ROC-RK3568-PC
+description: Firefly Station P2 / ROC-RK3568-PC pairs the Rockchip RK3568 SoC with
+  the REG Linux stack for a polished retro console. pairs the Rockchip RK3568 SoC
+  with th...
+---
+
 # Firefly Station P2 / ROC-RK3568-PC
 
 Firefly Station P2 / ROC-RK3568-PC pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console.

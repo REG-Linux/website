@@ -1,3 +1,8 @@
+---
+title: Doom 3
+description: Doom 3 documentation for REG Linux.
+---
+
 # Doom 3
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

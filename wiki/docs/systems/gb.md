@@ -1,3 +1,8 @@
+---
+title: Game Boy
+description: Game Boy documentation for REG Linux.
+---
+
 # Game Boy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Microsoft Xbox
+description: Microsoft Xbox documentation for REG Linux.
+---
+
 # Microsoft Xbox
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

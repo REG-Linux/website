@@ -1,3 +1,8 @@
+---
+title: PlayStation Vita
+description: PlayStation Vita documentation for REG Linux.
+---
+
 # PlayStation Vita
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

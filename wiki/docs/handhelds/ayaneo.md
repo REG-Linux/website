@@ -1,3 +1,8 @@
+---
+title: AYANEO Handhelds
+description: Supported AYANEO handhelds and device-specific notes.
+---
+
 # AYANEO handhelds
 
 The AYANEO Pocket S is tracked inside the `sm8550` tree of [`SBCs/Qualcomm`](../sbcs/qualcomm.md). REG Linux copies the `sm8550-ayaneo-ps.dtb`, kernel patches, and `LinuxLoader` helpers so the Pocket S hardware behaves like the other SM8550 builds, but the current Android bootloader/ABL is still required before the device can boot natively.

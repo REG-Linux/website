@@ -1,3 +1,8 @@
+---
+title: Amstrad CPC
+description: Amstrad CPC documentation for REG Linux.
+---
+
 # Amstrad CPC
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

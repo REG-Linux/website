@@ -1,9 +1,11 @@
 ---
 title: Anbernic RG28XX
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Allwinner H700 | ARM Cortex-A53
+  (Quad-core) @ 1.4 GHz | Mali G31 | Section: Handhelds / Anbernic / rg28xx.'
 manufacturer: Anbernic
 slug: anbernic/rg28xx
 url: https://REG Linux.org/handhelds/anbernic/rg28xx
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Anbernic RG28XX

@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi Zero 2
+description: Raspberry Pi Zero 2 pairs the Broadcom BCM2837 SoC with the REG Linux
+  stack for a polished retro console. pairs the Broadcom BCM2837 SoC with the REG
+  Linux s...
+---
+
 # Raspberry Pi Zero 2
 
 Raspberry Pi Zero 2 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.

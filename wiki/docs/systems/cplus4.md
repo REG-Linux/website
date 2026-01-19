@@ -1,3 +1,8 @@
+---
+title: Commodore Plus/4
+description: Commodore Plus/4 documentation for REG Linux.
+---
+
 # Commodore Plus/4
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

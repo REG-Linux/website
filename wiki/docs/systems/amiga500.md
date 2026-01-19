@@ -1,3 +1,8 @@
+---
+title: Amiga OCS/ECS
+description: Amiga OCS/ECS documentation for REG Linux.
+---
+
 # Amiga OCS/ECS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

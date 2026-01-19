@@ -1,3 +1,10 @@
+---
+title: Banana Pi M2S
+description: Banana Pi M2S pairs the Amlogic A311D SoC with the REG Linux stack for
+  a polished retro console. pairs the Amlogic A311D SoC with the REG Linux stack for
+  a p...
+---
+
 # Banana Pi M2S
 
 Banana Pi M2S pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console. pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.

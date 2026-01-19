@@ -1,3 +1,8 @@
+---
+title: MS-DOS (x86)
+description: MS-DOS (x86) documentation for REG Linux.
+---
+
 # MS-DOS (x86)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

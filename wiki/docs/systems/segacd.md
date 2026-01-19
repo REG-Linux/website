@@ -1,3 +1,8 @@
+---
+title: Sega CD
+description: Sega CD documentation for REG Linux.
+---
+
 # Sega CD
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

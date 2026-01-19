@@ -1,3 +1,8 @@
+---
+title: Game Boy Advance
+description: Game Boy Advance documentation for REG Linux.
+---
+
 # Game Boy Advance
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

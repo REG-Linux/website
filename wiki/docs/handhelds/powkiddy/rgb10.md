@@ -1,9 +1,11 @@
 ---
 title: RGB10
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
+  (Quad-core) @ 1.3 GHz | Mali G31 | Section: Handhelds / Powkiddy / rgb10.'
 manufacturer: Powkiddy
 slug: powkiddy/rgb10
 url: https://REG Linux.org/handhelds/powkiddy/rgb10
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # RGB10

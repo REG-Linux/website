@@ -1,3 +1,8 @@
+---
+title: Mr. Boom
+description: Mr. Boom documentation for REG Linux.
+---
+
 # Mr. Boom
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Xash3D-FWGS
+description: Xash3D-FWGS documentation for REG Linux.
+---
+
 # Xash3D-FWGS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

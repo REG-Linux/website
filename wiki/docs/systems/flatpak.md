@@ -1,3 +1,8 @@
+---
+title: Flatpak
+description: Flatpak documentation for REG Linux.
+---
+
 # Flatpak
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

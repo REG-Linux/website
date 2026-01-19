@@ -1,3 +1,10 @@
+---
+title: Jaguar CD
+description: The Atari Jaguar CD is a CD-ROM add-on for the Atari Jaguar and shares
+  the \1 system group so metadata scraping and themes remain consistent with cartridge
+  t...
+---
+
 # Jaguar CD
 
 ## Overview

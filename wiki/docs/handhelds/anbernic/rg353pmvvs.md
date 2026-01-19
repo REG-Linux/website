@@ -1,9 +1,12 @@
 ---
 title: Anbernic RG353
+description: Some RG353 devices ship with a legacy bootloader we cannot support. You
+  WILL need to wipe Android from your device to install REG Linux (see below) Some
+  hard...
 manufacturer: Anbernic
 slug: anbernic/rg353pmvvs
 url: https://REG Linux.org/handhelds/anbernic/rg353pmvvs
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Anbernic RG353

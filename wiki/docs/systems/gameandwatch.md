@@ -1,3 +1,8 @@
+---
+title: Nintendo Game & Watch
+description: Nintendo Game & Watch documentation for REG Linux.
+---
+
 # Nintendo Game & Watch
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

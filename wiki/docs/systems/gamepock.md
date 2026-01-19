@@ -1,3 +1,8 @@
+---
+title: Game Pocket Computer
+description: Game Pocket Computer documentation for REG Linux.
+---
+
 # Game Pocket Computer
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

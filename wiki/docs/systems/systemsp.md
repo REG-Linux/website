@@ -1,3 +1,8 @@
+---
+title: Sega System SP
+description: Sega System SP documentation for REG Linux.
+---
+
 # Sega System SP
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

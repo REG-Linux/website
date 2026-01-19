@@ -1,3 +1,8 @@
+---
+title: FinalBurn Neo
+description: FinalBurn Neo documentation for REG Linux.
+---
+
 # FinalBurn Neo
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

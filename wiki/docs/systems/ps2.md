@@ -1,3 +1,8 @@
+---
+title: PlayStation 2
+description: PlayStation 2 documentation for REG Linux.
+---
+
 # PlayStation 2
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

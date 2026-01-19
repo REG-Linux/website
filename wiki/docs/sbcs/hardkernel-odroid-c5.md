@@ -1,3 +1,9 @@
+---
+title: HardKernel ODROID C5
+description: HardKernel ODROID C5 pairs the Amlogic S905X5M SoC with the REG Linux
+  stack for a polished retro console.
+---
+
 # HardKernel ODROID C5
 
 HardKernel ODROID C5 pairs the Amlogic S905X5M SoC with the REG Linux stack for a polished retro console.

@@ -1,3 +1,8 @@
+---
+title: Apple IIGS
+description: Apple IIGS documentation for REG Linux.
+---
+
 # Apple IIGS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

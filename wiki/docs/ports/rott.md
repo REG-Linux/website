@@ -1,3 +1,8 @@
+---
+title: Rise of the Triad
+description: Rise of the Triad documentation for REG Linux.
+---
+
 # Rise of the Triad
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,10 @@
+---
+title: Orange Pi One
+description: Orange Pi One pairs the Allwinner H3 SoC with the REG Linux stack for
+  a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack for
+  a pol...
+---
+
 # Orange Pi One
 
 Orange Pi One pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.

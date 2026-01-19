@@ -1,3 +1,8 @@
+---
+title: DXX Rebirth
+description: DXX Rebirth documentation for REG Linux.
+---
+
 # DXX Rebirth
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

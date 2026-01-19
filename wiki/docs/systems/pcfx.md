@@ -1,3 +1,8 @@
+---
+title: PC-FX
+description: PC-FX documentation for REG Linux.
+---
+
 # PC-FX
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Commander X16
+description: Commander X16 documentation for REG Linux.
+---
+
 # Commander X16
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

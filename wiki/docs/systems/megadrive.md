@@ -1,3 +1,8 @@
+---
+title: Mega Drive
+description: Mega Drive documentation for REG Linux.
+---
+
 # Mega Drive
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

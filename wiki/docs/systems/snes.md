@@ -1,3 +1,8 @@
+---
+title: Super Nintendo Entertainment System
+description: Super Nintendo Entertainment System documentation for REG Linux.
+---
+
 # Super Nintendo Entertainment System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

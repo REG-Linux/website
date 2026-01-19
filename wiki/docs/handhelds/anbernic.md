@@ -1,3 +1,8 @@
+---
+title: Anbernic Handhelds
+description: Supported Anbernic handhelds and device-specific notes.
+---
+
 # Anbernic handhelds
 
 Each anbernic entry below points to the generated device page that mirrors the YAML manifest and documentation details for that handheld.

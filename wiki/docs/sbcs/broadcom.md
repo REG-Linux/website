@@ -1,3 +1,9 @@
+---
+title: Broadcom Boards
+description: 'REG Linux builds for the Broadcom family (Raspberry Pi 1/2/3/4/5 and
+  Compute Modules) reuse a consistent layout: each SoC directory provides kernel configs,...'
+---
+
 # Broadcom Boards
 
 REG Linux builds for the Broadcom family (Raspberry Pi 1/2/3/4/5 and Compute Modules) reuse a consistent layout: each SoC directory provides kernel configs, overlays, `create-boot-script.sh`, `genimage.cfg`, DTBs, and patch bundles that stage `Image`, firmware, and updates before `genimage` writes the bootable image.

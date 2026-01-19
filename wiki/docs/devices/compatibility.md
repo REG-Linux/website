@@ -1,3 +1,9 @@
+---
+title: Compatibility matrix
+description: REG Linux device coverage is tracked here. Status values are editable
+  in \1.
+---
+
 # Compatibility matrix
 
 REG Linux device coverage is tracked here. Status values are editable in

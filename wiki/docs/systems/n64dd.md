@@ -1,3 +1,8 @@
+---
+title: Nintendo 64 Disk Drive
+description: Nintendo 64 Disk Drive documentation for REG Linux.
+---
+
 # Nintendo 64 Disk Drive
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

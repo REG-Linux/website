@@ -1,3 +1,8 @@
+---
+title: BBC Micro
+description: BBC Micro documentation for REG Linux.
+---
+
 # BBC Micro
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Thomson (MO/TO / Theodore)
+description: Thomson (MO/TO / Theodore) documentation for REG Linux.
+---
+
 # Thomson (MO/TO / Theodore)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

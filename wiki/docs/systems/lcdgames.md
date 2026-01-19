@@ -1,3 +1,8 @@
+---
+title: LCD Games
+description: LCD Games documentation for REG Linux.
+---
+
 # LCD Games
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

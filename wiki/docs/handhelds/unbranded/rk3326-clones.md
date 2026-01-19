@@ -1,9 +1,12 @@
 ---
 title: RK3326 clones (including K36 and BatleXP G350)
+description: REG Linux partially supports various RK3326 clones and knock-offs known
+  as R36 / R36S / K36. We also partially support the BatleXP G350 which is similar
+  but...
 manufacturer: Unbranded
 slug: unbranded/rk3326-clones
 url: https://REG Linux.org/handhelds/unbranded/rk3326-clones
-generated: 2025-11-25T18:01:10.842867
+generated: 2025-11-25 18:01:10.842867
 ---
 
 # K36 / BatleXP G350 and other RK3326 clones

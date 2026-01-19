@@ -1,3 +1,8 @@
+---
+title: Satellaview
+description: Satellaview documentation for REG Linux.
+---
+
 # Satellaview
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

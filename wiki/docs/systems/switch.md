@@ -1,3 +1,8 @@
+---
+title: Switch
+description: Switch documentation for REG Linux.
+---
+
 # Switch
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: 32x
+description: 32x documentation for REG Linux.
+---
+
 # 32x
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Tyrian
+description: Tyrian documentation for REG Linux.
+---
+
 # Tyrian
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

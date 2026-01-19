@@ -1,3 +1,10 @@
+---
+title: Milk-V Meles
+description: Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished
+  retro console. pairs the TH1520 SoC with the REG Linux stack for a polished retro
+  c...
+---
+
 # Milk-V Meles
 
 Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console. pairs the TH1520 SoC with the REG Linux stack for a polished retro console.

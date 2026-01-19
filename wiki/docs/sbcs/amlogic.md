@@ -1,3 +1,8 @@
+---
+title: Amlogic Boards
+description: REG-Linux supports a lot of Amlogic based devices.
+---
+
 # Amlogic Boards
 
 REG-Linux supports a lot of Amlogic based devices.

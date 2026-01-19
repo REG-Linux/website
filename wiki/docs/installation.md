@@ -1,3 +1,8 @@
+---
+title: Installation Guide
+description: 1. Download image from \1 2. Use \1 or \1 to flash.
+---
+
 # Installation Guide
 
 ## Supported Devices

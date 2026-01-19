@@ -1,3 +1,10 @@
+---
+title: Firefly Station M2 / ROC-RK3566-PC
+description: Firefly Station M2 / ROC-RK3566-PC pairs the Rockchip RK3566 SoC with
+  the REG Linux stack for a polished retro console. pairs the Rockchip RK3566 SoC
+  with th...
+---
+
 # Firefly Station M2 / ROC-RK3566-PC
 
 Firefly Station M2 / ROC-RK3566-PC pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.

@@ -1,3 +1,10 @@
+---
+title: Orange Pi PC 2
+description: Orange Pi PC 2 pairs the Allwinner H5 SoC with the REG Linux stack for
+  a polished retro console. pairs the Allwinner H5 SoC with the REG Linux stack for
+  a po...
+---
+
 # Orange Pi PC 2
 
 Orange Pi PC 2 pairs the Allwinner H5 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H5 SoC with the REG Linux stack for a polished retro console.

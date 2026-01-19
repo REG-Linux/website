@@ -1,3 +1,8 @@
+---
+title: Xbox 360
+description: Xbox 360 documentation for REG Linux.
+---
+
 # Xbox 360
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

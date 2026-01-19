@@ -1,4 +1,8 @@
-# Samsung Boards
+---
+title: Samsung Boards
+description: "The Samsung directory captures REG Linux support for the Exynos5422\
+  \ SoC as used on the ODROID\u2011XU4."
+---
 
 # Samsung Boards
 

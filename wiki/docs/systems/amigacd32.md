@@ -1,3 +1,8 @@
+---
+title: Amiga CD32
+description: Amiga CD32 documentation for REG Linux.
+---
+
 # Amiga CD32
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

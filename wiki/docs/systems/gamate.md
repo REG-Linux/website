@@ -1,3 +1,8 @@
+---
+title: Gamate
+description: Gamate documentation for REG Linux.
+---
+
 # Gamate
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

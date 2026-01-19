@@ -1,3 +1,8 @@
+---
+title: Emulated Systems
+description: Supported emulated systems, core choices, and BIOS notes.
+---
+
 # Emulated Systems
 
 This folder exposes the EmulationStation `es_systems.yml` data that REG Linux ships with. Each file corresponds to a supported system (for example `snes.md`) and covers:

@@ -1,3 +1,8 @@
+---
+title: Developers
+description: REG Linux architecture, build workflow, and contribution guidance.
+---
+
 # Developers
 
 This section is for contributors building REG Linux, working on tooling, or extending system behavior.

@@ -1,3 +1,8 @@
+---
+title: Game Gear
+description: Game Gear documentation for REG Linux.
+---
+
 # Game Gear
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

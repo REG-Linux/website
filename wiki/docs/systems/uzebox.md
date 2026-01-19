@@ -1,3 +1,8 @@
+---
+title: Uzebox
+description: Uzebox documentation for REG Linux.
+---
+
 # Uzebox
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

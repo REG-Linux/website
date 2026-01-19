@@ -1,3 +1,8 @@
+---
+title: Mattel Intellivision
+description: Mattel Intellivision documentation for REG Linux.
+---
+
 # Mattel Intellivision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

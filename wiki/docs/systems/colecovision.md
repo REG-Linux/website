@@ -1,3 +1,8 @@
+---
+title: ColecoVision
+description: ColecoVision documentation for REG Linux.
+---
+
 # ColecoVision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

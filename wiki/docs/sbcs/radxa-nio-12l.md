@@ -1,3 +1,10 @@
+---
+title: Radxa NIO 12L
+description: Radxa NIO 12L pairs the Genio 1200 (MT8395) SoC with the REG Linux stack
+  for a polished retro console. pairs the Genio 1200 (MT8395) SoC with the REG Linux
+  s...
+---
+
 # Radxa NIO 12L
 
 Radxa NIO 12L pairs the Genio 1200 (MT8395) SoC with the REG Linux stack for a polished retro console. pairs the Genio 1200 (MT8395) SoC with the REG Linux stack for a polished retro console.

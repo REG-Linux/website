@@ -1,5 +1,7 @@
 ---
 title: Anbernic RG DS
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3568 | ARM Cortex-A55
+  (Quad-core) | Mali-G52 |'
 manufacturer: Anbernic
 slug: anbernic/rg-ds
 url: https://reglinux.org/handhelds/anbernic/rg-ds

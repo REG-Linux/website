@@ -1,3 +1,8 @@
+---
+title: Quake III
+description: Quake III documentation for REG Linux.
+---
+
 # Quake III
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

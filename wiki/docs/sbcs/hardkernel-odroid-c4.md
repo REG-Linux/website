@@ -1,3 +1,10 @@
+---
+title: HardKernel ODROID C4
+description: HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux
+  stack for a polished retro console. pairs the Amlogic S905X3 SoC with the REG Linux
+  stac...
+---
+
 # HardKernel ODROID C4
 
 HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console. pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.

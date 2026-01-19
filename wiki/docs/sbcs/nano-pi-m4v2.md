@@ -1,3 +1,10 @@
+---
+title: Nano Pi M4v2
+description: Nano Pi M4v2 pairs the Rockchip RK3399 SoC with the REG Linux stack for
+  a polished retro console. pairs the Rockchip RK3399 SoC with the REG Linux stack
+  for...
+---
+
 # Nano Pi M4v2
 
 Nano Pi M4v2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.

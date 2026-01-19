@@ -1,3 +1,8 @@
+---
+title: DevilutionX
+description: DevilutionX documentation for REG Linux.
+---
+
 # DevilutionX
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

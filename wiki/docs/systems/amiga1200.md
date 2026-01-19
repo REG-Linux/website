@@ -1,3 +1,8 @@
+---
+title: Amiga AGA
+description: Amiga AGA documentation for REG Linux.
+---
+
 # Amiga AGA
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

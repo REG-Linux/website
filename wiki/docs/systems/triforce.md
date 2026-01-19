@@ -1,3 +1,8 @@
+---
+title: Triforce
+description: Triforce documentation for REG Linux.
+---
+
 # Triforce
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

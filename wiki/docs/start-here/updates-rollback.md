@@ -1,3 +1,9 @@
+---
+title: Updates and Rollback
+description: This guide covers safe update habits and what to do if a new build causes
+  issues.
+---
+
 # Updates and Rollback
 
 This guide covers safe update habits and what to do if a new build causes issues.

@@ -1,3 +1,8 @@
+---
+title: GZDoom
+description: GZDoom documentation for REG Linux.
+---
+
 # GZDoom
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

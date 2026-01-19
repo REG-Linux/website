@@ -1,9 +1,12 @@
 ---
 title: Retroid Pocket Flip2
+description: '| Device | CPU / Architecture | Kernel | GL driver | Vulkan driver |
+  Interface | | --- | --- | --- | --- | --- | --- | | Retroid Pocket Flip2 | Qualcomm
+  SD86...'
 manufacturer: Retroid
 slug: retroid/retroid-pocket-flip2
 url: https://REG Linux.org/handhelds/retroid/retroid-pocket-flip2
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Retroid Pocket Flip2

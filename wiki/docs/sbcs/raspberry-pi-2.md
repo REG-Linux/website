@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi 2
+description: Raspberry Pi 2 pairs the Broadcom BCM2836 SoC with the REG Linux stack
+  for a polished retro console. pairs the Broadcom BCM2836 SoC with the REG Linux
+  stack...
+---
+
 # Raspberry Pi 2
 
 Raspberry Pi 2 pairs the Broadcom BCM2836 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2836 SoC with the REG Linux stack for a polished retro console.

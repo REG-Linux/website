@@ -1,3 +1,8 @@
+---
+title: Laser 310
+description: Laser 310 documentation for REG Linux.
+---
+
 # Laser 310
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

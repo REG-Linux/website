@@ -1,3 +1,10 @@
+---
+title: Capcom Home Arcade
+description: Capcom Home Arcade pairs the Allwinner H3 SoC with the REG Linux stack
+  for a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack
+  for...
+---
+
 # Capcom Home Arcade
 
 Capcom Home Arcade pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.

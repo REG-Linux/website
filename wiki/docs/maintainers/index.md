@@ -1,3 +1,9 @@
+---
+title: Maintainers
+description: This section is for people maintaining device support, tracking board
+  quirks, and validating releases.
+---
+
 # Maintainers
 
 This section is for people maintaining device support, tracking board quirks, and validating releases.

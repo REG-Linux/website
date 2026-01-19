@@ -1,3 +1,8 @@
+---
+title: Jazz Jackrabbit
+description: Jazz Jackrabbit documentation for REG Linux.
+---
+
 # Jazz Jackrabbit
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

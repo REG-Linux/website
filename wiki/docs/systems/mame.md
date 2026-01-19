@@ -1,3 +1,8 @@
+---
+title: MAME
+description: MAME documentation for REG Linux.
+---
+
 # MAME
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

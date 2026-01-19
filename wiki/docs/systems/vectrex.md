@@ -1,3 +1,8 @@
+---
+title: Vectrex
+description: Vectrex documentation for REG Linux.
+---
+
 # Vectrex
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

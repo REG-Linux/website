@@ -1,3 +1,8 @@
+---
+title: Master System
+description: Master System documentation for REG Linux.
+---
+
 # Master System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

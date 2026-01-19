@@ -1,9 +1,12 @@
 ---
 title: GameForce Ace
+description: '| Device | CPU / Architecture | Kernel | GL driver | Interface | | ---
+  | --- | --- | --- | --- | | Gameforce Ace | Rockchip RK3588 | Rockchip 5.10 BSP
+  Linux...'
 manufacturer: GameForce
 slug: gameforce/gameforce-ace
 url: https://REG Linux.org/handhelds/gameforce/gameforce-ace
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # GameForce Ace

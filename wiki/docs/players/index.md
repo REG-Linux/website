@@ -1,3 +1,8 @@
+---
+title: Players
+description: Controller setup, player profiles, and input troubleshooting.
+---
+
 # Players
 
 This section is for people who want a great play experience with minimal setup.

@@ -1,3 +1,8 @@
+---
+title: PC Engine CD
+description: PC Engine CD documentation for REG Linux.
+---
+
 # PC Engine CD
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

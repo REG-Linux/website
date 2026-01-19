@@ -1,3 +1,8 @@
+---
+title: REminiscence
+description: REminiscence documentation for REG Linux.
+---
+
 # REminiscence
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

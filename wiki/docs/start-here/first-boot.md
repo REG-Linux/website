@@ -1,3 +1,9 @@
+---
+title: First Boot Checklist
+description: Use this checklist the first time REG Linux boots on a new device. It
+  is intentionally short, so you can finish setup fast and get to playing.
+---
+
 # First Boot Checklist
 
 Use this checklist the first time REG Linux boots on a new device. It is intentionally short, so you can finish setup fast and get to playing.

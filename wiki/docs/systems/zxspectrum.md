@@ -1,3 +1,8 @@
+---
+title: ZX Spectrum
+description: ZX Spectrum documentation for REG Linux.
+---
+
 # ZX Spectrum
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

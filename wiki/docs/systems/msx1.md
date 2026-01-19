@@ -1,3 +1,8 @@
+---
+title: MSX1
+description: MSX1 documentation for REG Linux.
+---
+
 # MSX1
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

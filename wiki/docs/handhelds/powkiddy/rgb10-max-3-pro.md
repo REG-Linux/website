@@ -1,9 +1,12 @@
 ---
 title: RGB10 Max 3 Pro
+description: '| Device | CPU / Architecture | Kernel | GL driver | Interface | | ---
+  | --- | --- | --- | --- | | RGB10 Max 3 Pro | Amlogic A311D / Mali G52 M4 (ARMv8-A)
+  |...'
 manufacturer: Powkiddy
 slug: powkiddy/rgb10-max-3-pro
 url: https://REG Linux.org/handhelds/powkiddy/rgb10-max-3-pro
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # RGB10 Max 3 Pro

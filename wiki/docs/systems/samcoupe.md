@@ -1,3 +1,8 @@
+---
+title: "SAM Coup\xE9"
+description: "SAM Coup\xE9 documentation for REG Linux."
+---
+
 # SAM Coupé
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

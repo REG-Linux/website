@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi 3
+description: Raspberry Pi 3 pairs the Broadcom BCM2837 SoC with the REG Linux stack
+  for a polished retro console. pairs the Broadcom BCM2837 SoC with the REG Linux
+  stack...
+---
+
 # Raspberry Pi 3
 
 Raspberry Pi 3 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.

@@ -1,3 +1,8 @@
+---
+title: Atari 2600
+description: Atari 2600 documentation for REG Linux.
+---
+
 # Atari 2600
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

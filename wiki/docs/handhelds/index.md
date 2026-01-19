@@ -1,4 +1,9 @@
-# Devices
+---
+title: Handhelds
+description: Handheld device families and supported models in REG Linux.
+---
+
+# Handhelds
 
 This section ties the board-specific work you see under `Board/` with the automatically generated device catalogs. Each page links from REG Linux’s board trees to the manifest details in markdown so you can double-check hardware profiles, storage notes, and runtime tweaks.
 

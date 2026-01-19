@@ -1,3 +1,10 @@
+---
+title: Orange Pi Zero 2
+description: Orange Pi Zero 2 pairs the Allwinner H616 SoC with the REG Linux stack
+  for a polished retro console. pairs the Allwinner H616 SoC with the REG Linux stack
+  fo...
+---
+
 # Orange Pi Zero 2
 
 Orange Pi Zero 2 pairs the Allwinner H616 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H616 SoC with the REG Linux stack for a polished retro console.

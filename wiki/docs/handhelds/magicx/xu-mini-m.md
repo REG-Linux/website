@@ -1,9 +1,10 @@
 ---
 title: XU Mini M
+description: This handheld is not supported / tested yet.
 manufacturer: MagicX
 slug: magicx/xu-mini-m
 url: https://REG Linux.org/handhelds/magicx/xu-mini-m
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # XU Mini M

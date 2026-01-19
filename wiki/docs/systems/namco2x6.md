@@ -1,3 +1,8 @@
+---
+title: Namco System 246/256
+description: Namco System 246/256 documentation for REG Linux.
+---
+
 # Namco System 246/256
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

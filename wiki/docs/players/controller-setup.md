@@ -1,3 +1,9 @@
+---
+title: Controller Setup
+description: REG Linux supports common USB and Bluetooth controllers. Use this guide
+  to get a working Player 1 profile quickly.
+---
+
 # Controller Setup
 
 REG Linux supports common USB and Bluetooth controllers. Use this guide to get a working Player 1 profile quickly.

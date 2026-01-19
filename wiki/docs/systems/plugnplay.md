@@ -1,3 +1,8 @@
+---
+title: Plug and Play TV Games
+description: Plug and Play TV Games documentation for REG Linux.
+---
+
 # Plug and Play TV Games
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

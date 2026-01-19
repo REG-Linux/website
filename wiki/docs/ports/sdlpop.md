@@ -1,3 +1,8 @@
+---
+title: SdlPop
+description: SdlPop documentation for REG Linux.
+---
+
 # SdlPop
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

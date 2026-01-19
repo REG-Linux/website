@@ -1,3 +1,10 @@
+---
+title: Khadas VIM 2
+description: Khadas VIM 2 pairs the Amlogic S912 SoC with the REG Linux stack for
+  a polished retro console. pairs the Amlogic S912 SoC with the REG Linux stack for
+  a poli...
+---
+
 # Khadas VIM 2
 
 Khadas VIM 2 pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console. pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.

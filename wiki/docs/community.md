@@ -1,3 +1,8 @@
+---
+title: Community
+description: Join the REG Linux community on Discord or GitHub!
+---
+
 # Community
 
 Join the REG Linux community on Discord or GitHub!

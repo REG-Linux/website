@@ -1,3 +1,8 @@
+---
+title: Amiga CDTV
+description: Amiga CDTV documentation for REG Linux.
+---
+
 # Amiga CDTV
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

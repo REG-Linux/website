@@ -1,3 +1,8 @@
+---
+title: Neo-Geo
+description: Neo-Geo documentation for REG Linux.
+---
+
 # Neo-Geo
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

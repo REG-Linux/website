@@ -1,3 +1,8 @@
+---
+title: Fallout 2 Community Edition
+description: Fallout 2 Community Edition documentation for REG Linux.
+---
+
 # Fallout 2 Community Edition
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

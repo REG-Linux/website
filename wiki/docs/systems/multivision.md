@@ -1,3 +1,8 @@
+---
+title: Othello Multivision
+description: Othello Multivision documentation for REG Linux.
+---
+
 # Othello Multivision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

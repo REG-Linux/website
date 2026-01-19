@@ -1,3 +1,10 @@
+---
+title: HardKernel ODROID XU3/XU4
+description: HardKernel ODROID XU3/XU4 pairs the Samsung Exynos 5422 SoC with the
+  REG Linux stack for a polished retro console. pairs the Samsung Exynos 5422 SoC
+  with the...
+---
+
 # HardKernel ODROID XU3/XU4
 
 HardKernel ODROID XU3/XU4 pairs the Samsung Exynos 5422 SoC with the REG Linux stack for a polished retro console. pairs the Samsung Exynos 5422 SoC with the REG Linux stack for a polished retro console.

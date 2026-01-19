@@ -1,3 +1,8 @@
+---
+title: Singe (Hypseus)
+description: Singe (Hypseus) documentation for REG Linux.
+---
+
 # Singe (Hypseus)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

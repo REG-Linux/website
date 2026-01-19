@@ -1,3 +1,8 @@
+---
+title: Neo-Geo Pocket
+description: Neo-Geo Pocket documentation for REG Linux.
+---
+
 # Neo-Geo Pocket
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

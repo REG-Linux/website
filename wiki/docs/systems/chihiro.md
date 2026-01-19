@@ -1,3 +1,8 @@
+---
+title: Sega Chihiro
+description: Sega Chihiro documentation for REG Linux.
+---
+
 # Sega Chihiro
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,9 +1,12 @@
 ---
 title: Ayn Odin 2
+description: '| Device | CPU / Architecture | Kernel | GL driver | Vulkan driver |
+  Interface | | --- | --- | --- | --- | --- | --- | | Ayn Odin 2 (Base / Pro / Max)
+  | Qual...'
 manufacturer: Ayn
 slug: ayn/odin2
 url: https://REG Linux.org/handhelds/ayn/odin2
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Ayn Odin 2

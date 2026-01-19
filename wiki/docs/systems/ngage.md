@@ -1,3 +1,8 @@
+---
+title: N-Gage
+description: N-Gage documentation for REG Linux.
+---
+
 # N-Gage
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

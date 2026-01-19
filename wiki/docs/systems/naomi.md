@@ -1,3 +1,8 @@
+---
+title: Naomi
+description: Naomi documentation for REG Linux.
+---
+
 # Naomi
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">
