@@ -23,7 +23,6 @@ theme:
       icon: material/brightness-4
       name: Switch to light mode
   features:
-  - navigation.expand
   - navigation.sections
   - search.suggest
   - search.highlight
