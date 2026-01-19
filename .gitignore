@@ -4,3 +4,5 @@ _site/
 .static-server.log
 .tmp_*
 codex
+wiki/docs/assets/data/socs.yml
+wiki/docs/assets/data/socs.json
