@@ -417,6 +417,7 @@ plugins:
 - search
 - git-revision-date-localized:
     fallback_to_build_date: true
+    strict: false
     exclude:
       - devices/compatibility.md
 markdown_extensions:
