@@ -1,3 +1,8 @@
+---
+title: C-Dogs SDL
+description: C-Dogs SDL documentation for REG Linux.
+---
+
 # C-Dogs SDL
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

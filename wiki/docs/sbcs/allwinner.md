@@ -1,3 +1,8 @@
+---
+title: Allwinner Boards
+description: REG Linux supports a wide range of Allwinner-based devices.
+---
+
 # Allwinner Boards
 
 REG Linux supports a wide range of Allwinner-based devices.

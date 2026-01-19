@@ -1,3 +1,8 @@
+---
+title: Super Mario War
+description: Super Mario War documentation for REG Linux.
+---
+
 # Super Mario War
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

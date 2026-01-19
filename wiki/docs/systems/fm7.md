@@ -1,3 +1,8 @@
+---
+title: FM-7
+description: FM-7 documentation for REG Linux.
+---
+
 # FM-7
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

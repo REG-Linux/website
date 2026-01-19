@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi A/A+/B/B+
+description: Raspberry Pi A/A+/B/B+ pairs the Broadcom BCM2835 SoC with the REG Linux
+  stack for a polished retro console. pairs the Broadcom BCM2835 SoC with the REG
+  Linu...
+---
+
 # Raspberry Pi A/A+/B/B+
 
 Raspberry Pi A/A+/B/B+ pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.

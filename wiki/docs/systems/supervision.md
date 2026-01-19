@@ -1,3 +1,8 @@
+---
+title: Supervision
+description: Supervision documentation for REG Linux.
+---
+
 # Supervision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

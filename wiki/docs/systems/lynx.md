@@ -1,3 +1,8 @@
+---
+title: Atari Lynx
+description: Atari Lynx documentation for REG Linux.
+---
+
 # Atari Lynx
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

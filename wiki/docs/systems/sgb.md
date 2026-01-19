@@ -1,3 +1,8 @@
+---
+title: Super Game Boy
+description: Super Game Boy documentation for REG Linux.
+---
+
 # Super Game Boy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

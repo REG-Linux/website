@@ -1,3 +1,8 @@
+---
+title: Neo-Geo Pocket Color
+description: Neo-Geo Pocket Color documentation for REG Linux.
+---
+
 # Neo-Geo Pocket Color
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

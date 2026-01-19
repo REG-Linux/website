@@ -1,3 +1,8 @@
+---
+title: Start Here
+description: First-boot checklist, updates, and rollback guidance for REG Linux.
+---
+
 # Start Here
 
 Use this hub to get REG Linux onto your hardware and reach a working first boot.

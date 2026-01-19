@@ -1,3 +1,9 @@
+---
+title: Pong
+description: Introduced in 1972 by Ports, the Pong was a console system. It is grouped
+  with ports titles in EmulationStation.
+---
+
 # Pong
 
 ## Overview

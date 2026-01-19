@@ -1,3 +1,8 @@
+---
+title: Neo-Geo CD
+description: Neo-Geo CD documentation for REG Linux.
+---
+
 # Neo-Geo CD
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

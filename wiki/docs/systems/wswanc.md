@@ -1,3 +1,8 @@
+---
+title: WonderSwan Color
+description: WonderSwan Color documentation for REG Linux.
+---
+
 # WonderSwan Color
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,10 @@
+---
+title: Gameforce CHI
+description: Gameforce CHI pairs the Rockchip RK3326 SoC with the REG Linux stack
+  for a polished retro console. pairs the Rockchip RK3326 SoC with the REG Linux stack
+  for...
+---
+
 # Gameforce CHI
 
 Gameforce CHI pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.

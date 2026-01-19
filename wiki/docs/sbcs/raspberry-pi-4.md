@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi 4
+description: Raspberry Pi 4 pairs the Broadcom BCM2711 SoC with the REG Linux stack
+  for a polished retro console. pairs the Broadcom BCM2711 SoC with the REG Linux
+  stack...
+---
+
 # Raspberry Pi 4
 
 Raspberry Pi 4 pairs the Broadcom BCM2711 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2711 SoC with the REG Linux stack for a polished retro console.

@@ -1,3 +1,10 @@
+---
+title: Khadas VIM 1S
+description: Khadas VIM 1S pairs the Amlogic S905Y4 SoC with the REG Linux stack for
+  a polished retro console. pairs the Amlogic S905Y4 SoC with the REG Linux stack
+  for a...
+---
+
 # Khadas VIM 1S
 
 Khadas VIM 1S pairs the Amlogic S905Y4 SoC with the REG Linux stack for a polished retro console. pairs the Amlogic S905Y4 SoC with the REG Linux stack for a polished retro console.

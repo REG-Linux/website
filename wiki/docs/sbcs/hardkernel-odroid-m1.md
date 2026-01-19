@@ -1,3 +1,10 @@
+---
+title: HardKernel ODROID M1
+description: HardKernel ODROID M1 pairs the Rockchip RK3568 SoC with the REG Linux
+  stack for a polished retro console. pairs the Rockchip RK3568 SoC with the REG Linux
+  st...
+---
+
 # HardKernel ODROID M1
 
 HardKernel ODROID M1 pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console.

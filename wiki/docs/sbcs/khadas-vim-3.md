@@ -1,3 +1,10 @@
+---
+title: Khadas VIM 3
+description: Khadas VIM 3 pairs the Amlogic A311D SoC with the REG Linux stack for
+  a polished retro console. pairs the Amlogic A311D SoC with the REG Linux stack for
+  a po...
+---
+
 # Khadas VIM 3
 
 Khadas VIM 3 pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console. pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.

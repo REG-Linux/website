@@ -1,3 +1,8 @@
+---
+title: Quake II (VitaQuake2)
+description: Quake II (VitaQuake2) documentation for REG Linux.
+---
+
 # Quake II (VitaQuake2)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

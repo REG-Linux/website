@@ -1,3 +1,8 @@
+---
+title: PlayStation
+description: PlayStation documentation for REG Linux.
+---
+
 # PlayStation
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

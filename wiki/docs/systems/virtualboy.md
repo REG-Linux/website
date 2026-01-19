@@ -1,3 +1,8 @@
+---
+title: Virtual Boy
+description: Virtual Boy documentation for REG Linux.
+---
+
 # Virtual Boy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

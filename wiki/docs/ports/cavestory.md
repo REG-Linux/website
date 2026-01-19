@@ -1,3 +1,8 @@
+---
+title: Cave Story
+description: Cave Story documentation for REG Linux.
+---
+
 # Cave Story
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

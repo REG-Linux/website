@@ -1,3 +1,8 @@
+---
+title: Videopac+ G7400
+description: Videopac+ G7400 documentation for REG Linux.
+---
+
 # Videopac+ G7400
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,9 @@
+---
+title: Board catalog
+description: The download catalog now exposes one REG Linux page per supported single-board
+  product. Use this index to jump directly to the device guide, then follow the...
+---
+
 # Board catalog
 The download catalog now exposes one REG Linux page per supported single-board product. Use this index to jump directly to the device guide, then follow the quick facts for flashing notes and background context.
 

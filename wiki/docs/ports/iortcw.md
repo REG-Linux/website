@@ -1,3 +1,8 @@
+---
+title: Return to Castle Wolfenstein
+description: Return to Castle Wolfenstein documentation for REG Linux.
+---
+
 # Return to Castle Wolfenstein
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

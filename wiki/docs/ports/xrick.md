@@ -1,3 +1,8 @@
+---
+title: XRick
+description: XRick documentation for REG Linux.
+---
+
 # XRick
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Moonlight Embedded
+description: Moonlight Embedded documentation for REG Linux.
+---
+
 # Moonlight Embedded
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

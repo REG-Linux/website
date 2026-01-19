@@ -1,3 +1,8 @@
+---
+title: Dreamcast VMU
+description: Dreamcast VMU documentation for REG Linux.
+---
+
 # Dreamcast VMU
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

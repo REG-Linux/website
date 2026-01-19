@@ -1,9 +1,11 @@
 ---
 title: Anbernic RG351
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
+  (Quad-core) @ 1.3 GHz | Mali G31 | Section: Handhelds / Anbernic / rg351pmv.'
 manufacturer: Anbernic
 slug: anbernic/rg351pmv
 url: https://REG Linux.org/handhelds/anbernic/rg351pmv
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Anbernic RG351

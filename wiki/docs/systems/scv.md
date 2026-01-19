@@ -1,3 +1,8 @@
+---
+title: Super Cassette Vision
+description: Super Cassette Vision documentation for REG Linux.
+---
+
 # Super Cassette Vision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

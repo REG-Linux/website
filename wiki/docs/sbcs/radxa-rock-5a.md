@@ -1,3 +1,10 @@
+---
+title: Radxa Rock 5A
+description: Radxa Rock 5A pairs the Rockchip RK3588 SoC with the REG Linux stack
+  for a polished retro console. pairs the Rockchip RK3588 SoC with the REG Linux stack
+  for...
+---
+
 # Radxa Rock 5A
 
 Radxa Rock 5A pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.

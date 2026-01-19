@@ -1,3 +1,8 @@
+---
+title: "Tomy Tutor (Py\u016Bta)"
+description: "Tomy Tutor (Py\u016Bta) documentation for REG Linux."
+---
+
 # Tomy Tutor (Pyūta)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

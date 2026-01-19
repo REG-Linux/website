@@ -1,3 +1,8 @@
+---
+title: Apple II
+description: Apple II documentation for REG Linux.
+---
+
 # Apple II
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,9 +1,11 @@
 ---
 title: Game Console R35S R36S
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
+  (Quad-core) @ 1.3 GHz | Mali G31 |'
 manufacturer: Unbranded
 slug: unbranded/game-console-r35s-r36s
 url: https://REG Linux.org/handhelds/unbranded/game-console-r35s-r36s
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Game Console R35S R36S

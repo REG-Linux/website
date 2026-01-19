@@ -1,3 +1,10 @@
+---
+title: StarFive VisionFive 2
+description: StarFive VisionFive 2 pairs the StarFive JH7110 SoC with the REG Linux
+  stack for a polished retro console. pairs the StarFive JH7110 SoC with the REG Linux
+  s...
+---
+
 # StarFive VisionFive 2
 
 StarFive VisionFive 2 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console. pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.

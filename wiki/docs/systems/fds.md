@@ -1,3 +1,8 @@
+---
+title: Family Computer Disk System
+description: Family Computer Disk System documentation for REG Linux.
+---
+
 # Family Computer Disk System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

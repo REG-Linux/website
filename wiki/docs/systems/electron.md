@@ -1,3 +1,8 @@
+---
+title: Electron
+description: Electron documentation for REG Linux.
+---
+
 # Electron
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

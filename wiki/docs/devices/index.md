@@ -1,3 +1,8 @@
+---
+title: Devices
+description: Hardware supported by REG Linux across handhelds, SBCs, and consoles.
+---
+
 # Devices
 
 REG Linux targets handhelds, single-board computers, and small consoles across multiple architectures.

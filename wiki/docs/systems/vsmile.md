@@ -1,3 +1,8 @@
+---
+title: V.Smile
+description: V.Smile documentation for REG Linux.
+---
+
 # V.Smile
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,9 +1,10 @@
 ---
 title: Anbernic RG ARC
+description: eMMC model with legacy bootloader is not supported.
 manufacturer: Anbernic
 slug: anbernic/rgarc
 url: https://REG Linux.org/handhelds/anbernic/rgarc
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Anbernic RG ARC

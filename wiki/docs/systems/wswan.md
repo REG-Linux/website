@@ -1,3 +1,9 @@
+---
+title: WonderSwan
+description: Introduced in 1999 by Bandai, the WonderSwan was a portable system. Its
+  platform tag is \1 for proper filtering.
+---
+
 # WonderSwan
 
 ## Overview

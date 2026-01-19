@@ -1,3 +1,8 @@
+---
+title: Macintosh
+description: Macintosh documentation for REG Linux.
+---
+
 # Macintosh
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

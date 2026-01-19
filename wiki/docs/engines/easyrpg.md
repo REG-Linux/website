@@ -1,3 +1,8 @@
+---
+title: EasyRPG
+description: EasyRPG documentation for REG Linux.
+---
+
 # EasyRPG
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

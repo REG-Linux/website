@@ -1,3 +1,8 @@
+---
+title: Atari 7800
+description: Atari 7800 documentation for REG Linux.
+---
+
 # Atari 7800
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

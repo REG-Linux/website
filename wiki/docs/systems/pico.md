@@ -1,3 +1,8 @@
+---
+title: Sega Pico
+description: Sega Pico documentation for REG Linux.
+---
+
 # Sega Pico
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

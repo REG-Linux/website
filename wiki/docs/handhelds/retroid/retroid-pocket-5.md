@@ -1,9 +1,12 @@
 ---
 title: Retroid Pocket 5
+description: '| Device | CPU / Architecture | Kernel | GL driver | Vulkan driver |
+  Interface | | --- | --- | --- | --- | --- | --- | | Retroid Pocket 5 | Qualcomm
+  SD865 (S...'
 manufacturer: Retroid
 slug: retroid/retroid-pocket-5
 url: https://REG Linux.org/handhelds/retroid/retroid-pocket-5
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Retroid Pocket 5

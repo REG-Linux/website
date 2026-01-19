@@ -1,3 +1,8 @@
+---
+title: Solarus
+description: Solarus documentation for REG Linux.
+---
+
 # Solarus
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

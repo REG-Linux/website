@@ -1,3 +1,10 @@
+---
+title: Odyssey2
+description: "The Magnavox Odyssey\xB2 hit shelves in 1978 as Philips/Magnavox\u2019\
+  s programmable follow-up to the original Odyssey. That second-generation console\
+  \ introduced car..."
+---
+
 # Odyssey2
 
 ## Overview

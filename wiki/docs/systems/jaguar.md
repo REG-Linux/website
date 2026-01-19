@@ -1,3 +1,10 @@
+---
+title: Jaguar
+description: "Atari positioned the Jaguar as a \u201C64-bit\u201D home console when\
+  \ it launched in 1993, pairing custom RISC chips (Tom for graphics, Jerry for audio)\
+  \ with a 68000-d..."
+---
+
 # Jaguar
 
 ## Overview

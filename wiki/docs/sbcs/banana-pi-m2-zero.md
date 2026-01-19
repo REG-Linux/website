@@ -1,3 +1,10 @@
+---
+title: Banana Pi M2 Zero
+description: Banana Pi M2 Zero pairs the Allwinner H2+ SoC with the REG Linux stack
+  for a polished retro console. pairs the Allwinner H2+ SoC with the REG Linux stack
+  for...
+---
+
 # Banana Pi M2 Zero
 
 Banana Pi M2 Zero pairs the Allwinner H2+ SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H2+ SoC with the REG Linux stack for a polished retro console.

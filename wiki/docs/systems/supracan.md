@@ -1,3 +1,8 @@
+---
+title: Super A'Can
+description: Super A'Can documentation for REG Linux.
+---
+
 # Super A'Can
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

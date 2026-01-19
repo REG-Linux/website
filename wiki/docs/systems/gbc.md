@@ -1,3 +1,8 @@
+---
+title: Game Boy Color
+description: Game Boy Color documentation for REG Linux.
+---
+
 # Game Boy Color
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

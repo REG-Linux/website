@@ -1,3 +1,8 @@
+---
+title: IKEMEN
+description: IKEMEN documentation for REG Linux.
+---
+
 # IKEMEN
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

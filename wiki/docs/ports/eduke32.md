@@ -1,3 +1,8 @@
+---
+title: EDuke32
+description: EDuke32 documentation for REG Linux.
+---
+
 # EDuke32
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

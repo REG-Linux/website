@@ -1,3 +1,8 @@
+---
+title: Atari 5200
+description: Atari 5200 documentation for REG Linux.
+---
+
 # Atari 5200
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

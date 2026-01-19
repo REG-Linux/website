@@ -1,3 +1,8 @@
+---
+title: Java 2 MicroEdition
+description: Java 2 MicroEdition documentation for REG Linux.
+---
+
 # Java 2 MicroEdition
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

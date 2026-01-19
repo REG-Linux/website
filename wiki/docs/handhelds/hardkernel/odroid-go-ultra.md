@@ -1,9 +1,12 @@
 ---
 title: Odroid Go Ultra
+description: '| Device | CPU / Architecture | Kernel | GL driver | Interface | | ---
+  | --- | --- | --- | --- | | Odroid Go Ultra | Amlogic S922X / Mali G52 M6 (ARMv8-A)
+  |...'
 manufacturer: Hardkernel
 slug: hardkernel/odroid-go-ultra
 url: https://REG Linux.org/handhelds/hardkernel/odroid-go-ultra
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Odroid Go Ultra

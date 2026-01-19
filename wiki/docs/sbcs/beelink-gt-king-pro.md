@@ -1,3 +1,10 @@
+---
+title: Beelink GT King Pro
+description: Beelink GT King Pro pairs the Amlogic S922X-H SoC with the REG Linux
+  stack for a polished retro console. pairs the Amlogic S922X-H SoC with the REG Linux
+  sta...
+---
+
 # Beelink GT King Pro
 
 Beelink GT King Pro pairs the Amlogic S922X-H SoC with the REG Linux stack for a polished retro console. pairs the Amlogic S922X-H SoC with the REG Linux stack for a polished retro console.

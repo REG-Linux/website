@@ -1,3 +1,9 @@
+---
+title: Radxa Dragon Q6A
+description: Radxa Dragon Q6A pairs the Qualcomm QCS6490 SoC with the REG Linux stack
+  for a polished retro console.
+---
+
 # Radxa Dragon Q6A
 
 Radxa Dragon Q6A pairs the Qualcomm QCS6490 SoC with the REG Linux stack for a polished retro console.

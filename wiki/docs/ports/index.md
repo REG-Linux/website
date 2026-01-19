@@ -1,3 +1,8 @@
+---
+title: Ports
+description: Native ports supported by REG Linux, plus setup notes and hardware tips.
+---
+
 # Ports
 
 This folder collects all systems whose EmulationStation entry is marked as `hardware: port`. Each page mirrors the structure of the emulated-system files (overview, technical specification, ROM extensions, emulator hints, and upstream notes) but focuses on ports/engine ports such as `DXX-Rebirth`, `OpenBOR`, or community remakes.

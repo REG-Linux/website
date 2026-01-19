@@ -1,3 +1,8 @@
+---
+title: Fallout Community Edition
+description: Fallout Community Edition documentation for REG Linux.
+---
+
 # Fallout Community Edition
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

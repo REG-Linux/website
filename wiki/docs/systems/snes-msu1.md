@@ -1,3 +1,8 @@
+---
+title: Super Nintendo MSU-1
+description: Super Nintendo MSU-1 documentation for REG Linux.
+---
+
 # Super Nintendo MSU-1
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

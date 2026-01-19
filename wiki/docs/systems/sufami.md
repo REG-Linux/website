@@ -1,3 +1,8 @@
+---
+title: SuFami Turbo
+description: SuFami Turbo documentation for REG Linux.
+---
+
 # SuFami Turbo
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

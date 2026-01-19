@@ -1,9 +1,11 @@
 ---
 title: Anbernic RG35XX Plus
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Allwinner H700 | ARM Cortex-A53
+  (Quad-core) @ 1.4 GHz | Mali G31 | Section: Handhelds / Anbernic / rg35xx Plus.'
 manufacturer: Anbernic
 slug: anbernic/rg35xx-plus
 url: https://REG Linux.org/handhelds/anbernic/rg35xx-plus
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Anbernic RG35XX Plus

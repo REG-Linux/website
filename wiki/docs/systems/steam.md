@@ -1,3 +1,8 @@
+---
+title: Steam
+description: Steam documentation for REG Linux.
+---
+
 # Steam
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

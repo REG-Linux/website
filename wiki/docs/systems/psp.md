@@ -1,3 +1,8 @@
+---
+title: PlayStation Portable
+description: PlayStation Portable documentation for REG Linux.
+---
+
 # PlayStation Portable
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

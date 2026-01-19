@@ -1,3 +1,8 @@
+---
+title: Commander Genius
+description: Commander Genius documentation for REG Linux.
+---
+
 # Commander Genius
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

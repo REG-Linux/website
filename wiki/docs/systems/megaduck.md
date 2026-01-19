@@ -1,3 +1,8 @@
+---
+title: Mega Duck / Cougar Boy
+description: Mega Duck / Cougar Boy documentation for REG Linux.
+---
+
 # Mega Duck / Cougar Boy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

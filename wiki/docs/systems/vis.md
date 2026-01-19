@@ -1,3 +1,8 @@
+---
+title: Tandy Video Information System
+description: Tandy Video Information System documentation for REG Linux.
+---
+
 # Tandy Video Information System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

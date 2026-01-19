@@ -1,3 +1,9 @@
+---
+title: GameCube
+description: Introduced in 2001 by Nintendo, the GameCube was a distinctive cube-shaped
+  console that bridged the company's fifth and sixth generations. REG-Linux handles...
+---
+
 # GameCube
 
 ## Overview

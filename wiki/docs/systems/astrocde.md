@@ -1,3 +1,8 @@
+---
+title: Astrocade
+description: Astrocade documentation for REG Linux.
+---
+
 # Astrocade
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

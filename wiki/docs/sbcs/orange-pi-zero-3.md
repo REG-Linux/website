@@ -1,3 +1,10 @@
+---
+title: Orange Pi Zero 3
+description: Orange Pi Zero 3 pairs the Allwinner H618 SoC with the REG Linux stack
+  for a polished retro console. pairs the Allwinner H618 SoC with the REG Linux stack
+  fo...
+---
+
 # Orange Pi Zero 3
 
 Orange Pi Zero 3 pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.

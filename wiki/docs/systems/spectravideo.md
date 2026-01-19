@@ -1,3 +1,8 @@
+---
+title: Spectravideo SV-328
+description: Spectravideo SV-328 documentation for REG Linux.
+---
+
 # Spectravideo SV-328
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: 3DS
+description: 3DS documentation for REG Linux.
+---
+
 # 3DS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

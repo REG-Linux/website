@@ -1,4 +1,9 @@
-# Rockchip Boards
+---
+title: Rockchip Boards
+description: REG Linux packages Rockchip support across multiple SoC families; each
+  board tree brings its own \1, \1, DTBs, overlays, and kernel/patch fragments, while
+  sh...
+---
 
 # Rockchip Boards
 

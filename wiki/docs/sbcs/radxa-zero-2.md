@@ -1,3 +1,10 @@
+---
+title: Radxa Zero 2
+description: Radxa Zero 2 pairs the Amlogic A311D SoC with the REG Linux stack for
+  a polished retro console. pairs the Amlogic A311D SoC with the REG Linux stack for
+  a po...
+---
+
 # Radxa Zero 2
 
 Radxa Zero 2 pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console. pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.

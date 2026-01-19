@@ -1,3 +1,10 @@
+---
+title: Steam Deck
+description: Steam Deck pairs the AMD Zen 2 APU SoC with the REG Linux stack for a
+  polished retro console. pairs the AMD Zen 2 APU SoC with the REG Linux stack for
+  a poli...
+---
+
 # Steam Deck
 
 Steam Deck pairs the AMD Zen 2 APU SoC with the REG Linux stack for a polished retro console. pairs the AMD Zen 2 APU SoC with the REG Linux stack for a polished retro console.

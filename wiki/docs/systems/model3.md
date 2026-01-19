@@ -1,3 +1,8 @@
+---
+title: Model 3
+description: Model 3 documentation for REG Linux.
+---
+
 # Model 3
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

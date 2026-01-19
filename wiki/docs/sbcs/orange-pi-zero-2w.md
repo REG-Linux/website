@@ -1,3 +1,10 @@
+---
+title: Orange Pi Zero 2W
+description: Orange Pi Zero 2W pairs the Allwinner H618 SoC with the REG Linux stack
+  for a polished retro console. pairs the Allwinner H618 SoC with the REG Linux stack
+  f...
+---
+
 # Orange Pi Zero 2W
 
 Orange Pi Zero 2W pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.

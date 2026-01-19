@@ -1,3 +1,8 @@
+---
+title: CreatiVision
+description: CreatiVision documentation for REG Linux.
+---
+
 # CreatiVision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

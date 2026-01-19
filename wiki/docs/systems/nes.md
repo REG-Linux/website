@@ -1,3 +1,8 @@
+---
+title: Nintendo Entertainment System
+description: Nintendo Entertainment System documentation for REG Linux.
+---
+
 # Nintendo Entertainment System
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

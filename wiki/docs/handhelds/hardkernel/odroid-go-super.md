@@ -1,9 +1,11 @@
 ---
 title: Odroid Go Super
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
+  (Quad-core) @ 1.3 GHz | Mali G31 | Section: Handhelds / Hardkernel / Odroid Go Super.'
 manufacturer: Hardkernel
 slug: hardkernel/odroid-go-super
 url: https://REG Linux.org/handhelds/hardkernel/odroid-go-super
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # Odroid Go Super

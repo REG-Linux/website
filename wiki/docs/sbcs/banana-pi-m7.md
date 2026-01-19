@@ -1,3 +1,10 @@
+---
+title: Banana Pi M7
+description: Banana Pi M7 pairs the Rockchip RK3588 SoC with the REG Linux stack for
+  a polished retro console. pairs the Rockchip RK3588 SoC with the REG Linux stack
+  for...
+---
+
 # Banana Pi M7
 
 Banana Pi M7 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.

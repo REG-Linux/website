@@ -1,3 +1,8 @@
+---
+title: Game.com
+description: Game.com documentation for REG Linux.
+---
+
 # Game.com
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

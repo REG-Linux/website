@@ -1,3 +1,8 @@
+---
+title: PrBoom
+description: PrBoom documentation for REG Linux.
+---
+
 # PrBoom
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,10 @@
+---
+title: Asus ROG Ally
+description: Asus ROG Ally pairs the AMD Ryzen Z1 SoC with the REG Linux stack for
+  a polished retro console. pairs the AMD Ryzen Z1 SoC with the REG Linux stack for
+  a pol...
+---
+
 # Asus ROG Ally
 
 Asus ROG Ally pairs the AMD Ryzen Z1 SoC with the REG Linux stack for a polished retro console. pairs the AMD Ryzen Z1 SoC with the REG Linux stack for a polished retro console.

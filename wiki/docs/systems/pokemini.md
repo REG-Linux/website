@@ -1,3 +1,8 @@
+---
+title: "Pok\xE9mon Mini"
+description: "Pok\xE9mon Mini documentation for REG Linux."
+---
+
 # Pokémon Mini
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

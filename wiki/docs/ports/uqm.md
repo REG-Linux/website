@@ -1,3 +1,8 @@
+---
+title: Ur-Quan Masters
+description: Ur-Quan Masters documentation for REG Linux.
+---
+
 # Ur-Quan Masters
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi 5
+description: Raspberry Pi 5 pairs the Broadcom BCM2712 SoC with the REG Linux stack
+  for a polished retro console. pairs the Broadcom BCM2712 SoC with the REG Linux
+  stack...
+---
+
 # Raspberry Pi 5
 
 Raspberry Pi 5 pairs the Broadcom BCM2712 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2712 SoC with the REG Linux stack for a polished retro console.

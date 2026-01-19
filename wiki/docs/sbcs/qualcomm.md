@@ -1,3 +1,9 @@
+---
+title: Qualcomm Boards
+description: The Qualcomm tree collects the kernel, dracut, firmware, and image recipes
+  that power Snapdragon handhelds. Each SoC directory exposes shared firmware/patch...
+---
+
 # Qualcomm Boards
 
 The Qualcomm tree collects the kernel, dracut, firmware, and image recipes that power Snapdragon handhelds. Each SoC directory exposes shared firmware/patch stacks plus per-board helpers (`create-boot-script.sh`, `genimage.cfg`, loader configs, DTBs) so the build scripts can stage the final `reglinux.img`.

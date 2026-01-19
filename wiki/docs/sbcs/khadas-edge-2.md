@@ -1,3 +1,10 @@
+---
+title: Khadas Edge 2
+description: Khadas Edge 2 pairs the Rockchip RK3588 SoC with the REG Linux stack
+  for a polished retro console. pairs the Rockchip RK3588 SoC with the REG Linux stack
+  for...
+---
+
 # Khadas Edge 2
 
 Khadas Edge 2 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.

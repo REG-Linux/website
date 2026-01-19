@@ -1,3 +1,8 @@
+---
+title: Atari XE Game System (XEGS)
+description: Atari XE Game System (XEGS) documentation for REG Linux.
+---
+
 # Atari XE Game System (XEGS)
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

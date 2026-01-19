@@ -1,3 +1,8 @@
+---
+title: TRS-80 Color Computer
+description: TRS-80 Color Computer documentation for REG Linux.
+---
+
 # TRS-80 Color Computer
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

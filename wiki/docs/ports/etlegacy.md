@@ -1,3 +1,8 @@
+---
+title: Wolfenstein - Enemy Territory
+description: Wolfenstein - Enemy Territory documentation for REG Linux.
+---
+
 # Wolfenstein - Enemy Territory
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

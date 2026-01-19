@@ -1,3 +1,8 @@
+---
+title: Nintendo DS
+description: Nintendo DS documentation for REG Linux.
+---
+
 # Nintendo DS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

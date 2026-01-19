@@ -1,3 +1,8 @@
+---
+title: REG Linux
+description: Welcome to the official REG Linux documentation site.
+---
+
 # REG Linux
 
 Welcome to the official REG Linux documentation site.

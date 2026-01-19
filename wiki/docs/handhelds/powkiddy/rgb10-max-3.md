@@ -1,9 +1,11 @@
 ---
 title: RGB10 Max 3
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3566 | ARM Cortex-A55
+  (Quad-core) @ 1.8 GHz | Mali G52 | Section: Handhelds / Powkiddy / rgb10 Max 3.'
 manufacturer: Powkiddy
 slug: powkiddy/rgb10-max-3
 url: https://REG Linux.org/handhelds/powkiddy/rgb10-max-3
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # RGB10 Max 3

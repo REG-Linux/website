@@ -1,3 +1,8 @@
+---
+title: MSU-MD
+description: MSU-MD documentation for REG Linux.
+---
+
 # MSU-MD
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

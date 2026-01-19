@@ -1,3 +1,10 @@
+---
+title: Orange Pi PC
+description: Orange Pi PC pairs the Allwinner H3 SoC with the REG Linux stack for
+  a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack for
+  a poli...
+---
+
 # Orange Pi PC
 
 Orange Pi PC pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.

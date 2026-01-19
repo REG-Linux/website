@@ -1,3 +1,8 @@
+---
+title: CorsixTH
+description: CorsixTH documentation for REG Linux.
+---
+
 # CorsixTH
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: 3DO Interactive Multiplayer
+description: 3DO Interactive Multiplayer documentation for REG Linux.
+---
+
 # 3DO Interactive Multiplayer
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

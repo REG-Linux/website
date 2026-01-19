@@ -1,3 +1,8 @@
+---
+title: Ion Fury
+description: Ion Fury documentation for REG Linux.
+---
+
 # Ion Fury
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

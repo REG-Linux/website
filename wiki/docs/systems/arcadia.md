@@ -1,3 +1,8 @@
+---
+title: Arcadia 2001
+description: Arcadia 2001 documentation for REG Linux.
+---
+
 # Arcadia 2001
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

@@ -1,3 +1,8 @@
+---
+title: Arduboy
+description: Arduboy documentation for REG Linux.
+---
+
 # Arduboy
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

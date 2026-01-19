@@ -1,3 +1,10 @@
+---
+title: MQMaker MiQi
+description: MQMaker MiQi pairs the Rockchip RK3288 SoC with the REG Linux stack for
+  a polished retro console. pairs the Rockchip RK3288 SoC with the REG Linux stack
+  for...
+---
+
 # MQMaker MiQi
 
 MQMaker MiQi pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console. pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.

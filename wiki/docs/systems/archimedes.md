@@ -1,3 +1,8 @@
+---
+title: Archimedes
+description: Archimedes documentation for REG Linux.
+---
+
 # Archimedes
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

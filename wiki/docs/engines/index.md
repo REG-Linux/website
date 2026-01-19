@@ -1,3 +1,8 @@
+---
+title: Engines
+description: Game engines supported by REG Linux and the files they need.
+---
+
 # Engines
 
 This folder collects “content engines” that REG Linux can launch directly. Instead of emulating a fixed hardware console, these runtimes load games or interactive content built for a specific engine (RPG runtimes, point‑and‑click interpreters, Flash reimplementations, and so on).
@@ -19,4 +24,3 @@ Use these pages when you are working with projects that ship their own data file
 - [Singe](singe.md) – FMV/light‑gun engine used for laserdisc‑style games (e.g. Mad Dog McCree), wired through Hypseus‑Singe on REG Linux.
 - [Solarus](solarus.md) – Lua‑driven action‑RPG engine for Zeldalike adventures, loading quests exported from the Solarus editor.
 - [TheXTech](thextech.md) – Recreation of Super Mario Bros. X capable of running SMBX worlds and fan campaigns with modern resolutions and controller support.
-

@@ -1,3 +1,8 @@
+---
+title: Hydra Castle Labyrinth
+description: Hydra Castle Labyrinth documentation for REG Linux.
+---
+
 # Hydra Castle Labyrinth
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

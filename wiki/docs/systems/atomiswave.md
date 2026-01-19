@@ -1,3 +1,8 @@
+---
+title: Atomiswave
+description: Atomiswave documentation for REG Linux.
+---
+
 # Atomiswave
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

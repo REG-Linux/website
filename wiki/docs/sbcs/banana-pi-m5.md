@@ -1,3 +1,10 @@
+---
+title: Banana Pi M5
+description: Banana Pi M5 pairs the Amlogic S905X3 SoC with the REG Linux stack for
+  a polished retro console. pairs the Amlogic S905X3 SoC with the REG Linux stack
+  for a...
+---
+
 # Banana Pi M5
 
 Banana Pi M5 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console. pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.

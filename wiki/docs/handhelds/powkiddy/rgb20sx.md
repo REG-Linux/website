@@ -1,9 +1,11 @@
 ---
 title: RGB20SX
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3566 | ARM Cortex-A55
+  (Quad-core) @ 1.8 GHz | Mali G52 | Section: Handhelds / Powkiddy / rgb20sx.'
 manufacturer: Powkiddy
 slug: powkiddy/rgb20sx
 url: https://REG Linux.org/handhelds/powkiddy/rgb20sx
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # RGB20SX

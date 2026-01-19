@@ -1,3 +1,8 @@
+---
+title: PlayStation 4
+description: PlayStation 4 documentation for REG Linux.
+---
+
 # PlayStation 4
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

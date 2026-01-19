@@ -1,3 +1,8 @@
+---
+title: Adventure Vision
+description: Adventure Vision documentation for REG Linux.
+---
+
 # Adventure Vision
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

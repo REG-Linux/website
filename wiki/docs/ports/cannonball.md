@@ -1,3 +1,8 @@
+---
+title: Cannonball
+description: Cannonball documentation for REG Linux.
+---
+
 # Cannonball
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

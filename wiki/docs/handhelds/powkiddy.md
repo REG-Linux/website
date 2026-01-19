@@ -1,3 +1,8 @@
+---
+title: Powkiddy Handhelds
+description: Supported Powkiddy handhelds and device-specific notes.
+---
+
 # Powkiddy handhelds
 
 Each powkiddy entry below points to the generated device page that mirrors the YAML manifest and documentation details for that handheld.

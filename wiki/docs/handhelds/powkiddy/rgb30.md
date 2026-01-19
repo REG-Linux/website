@@ -1,9 +1,11 @@
 ---
 title: RGB30
+description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3566 | ARM Cortex-A55
+  (Quad-core) @ 1.8 GHz | Mali G52 | Section: Handhelds / Powkiddy / rgb30.'
 manufacturer: Powkiddy
 slug: powkiddy/rgb30
 url: https://REG Linux.org/handhelds/powkiddy/rgb30
-generated: 2025-11-23T18:01:10.842867
+generated: 2025-11-23 18:01:10.842867
 ---
 
 # RGB30

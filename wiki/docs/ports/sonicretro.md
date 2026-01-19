@@ -1,3 +1,8 @@
+---
+title: Sonic Retro Engine
+description: Sonic Retro Engine documentation for REG Linux.
+---
+
 # Sonic Retro Engine
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

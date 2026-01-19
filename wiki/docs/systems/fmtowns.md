@@ -1,3 +1,8 @@
+---
+title: FM-TOWNS
+description: FM-TOWNS documentation for REG Linux.
+---
+
 # FM-TOWNS
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

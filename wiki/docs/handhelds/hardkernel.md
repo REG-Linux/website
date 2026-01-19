@@ -1,3 +1,8 @@
+---
+title: Hardkernel Handhelds
+description: Supported Hardkernel handhelds and configuration details.
+---
+
 # Hardkernel handhelds
 
 Each hardkernel entry below points to the generated device page that mirrors the YAML manifest and documentation details for that handheld.

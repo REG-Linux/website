@@ -1,3 +1,8 @@
+---
+title: Atari 800
+description: Atari 800 documentation for REG Linux.
+---
+
 # Atari 800
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

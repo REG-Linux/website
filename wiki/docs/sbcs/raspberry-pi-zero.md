@@ -1,3 +1,10 @@
+---
+title: Raspberry Pi Zero
+description: Raspberry Pi Zero pairs the Broadcom BCM2835 SoC with the REG Linux stack
+  for a polished retro console. pairs the Broadcom BCM2835 SoC with the REG Linux
+  sta...
+---
+
 # Raspberry Pi Zero
 
 Raspberry Pi Zero pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console. pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.

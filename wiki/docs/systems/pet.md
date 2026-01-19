@@ -1,3 +1,8 @@
+---
+title: Commodore PET
+description: Commodore PET documentation for REG Linux.
+---
+
 # Commodore PET
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

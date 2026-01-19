@@ -1,3 +1,8 @@
+---
+title: Retroid Handhelds
+description: Supported Retroid handhelds and device-specific notes.
+---
+
 # Retroid handhelds
 
 Each retroid entry below points to the generated device page that mirrors the YAML manifest and documentation details for that handheld.

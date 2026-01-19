@@ -1,3 +1,9 @@
+---
+title: REG Linux System Architecture
+description: REG Linux (Retro Emulation Gaming Linux) is an immutable operating system
+  built for handhelds, single-board computers, and small form-factor PCs across ARM,...
+---
+
 # REG Linux System Architecture
 
 REG Linux (Retro Emulation Gaming Linux) is an immutable operating system built for handhelds, single-board computers, and small form-factor PCs across ARM, AArch64, RISC-V, MIPS32el, and x86_64.

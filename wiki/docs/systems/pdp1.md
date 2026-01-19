@@ -1,3 +1,8 @@
+---
+title: PDP-1
+description: PDP-1 documentation for REG Linux.
+---
+
 # PDP-1
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

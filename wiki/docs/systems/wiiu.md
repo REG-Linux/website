@@ -1,3 +1,8 @@
+---
+title: Nintendo Wii U
+description: Nintendo Wii U documentation for REG Linux.
+---
+
 # Nintendo Wii U
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

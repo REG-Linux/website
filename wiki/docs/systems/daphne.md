@@ -1,3 +1,8 @@
+---
+title: DAPHNE LaserDisc
+description: DAPHNE LaserDisc documentation for REG Linux.
+---
+
 # DAPHNE LaserDisc
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

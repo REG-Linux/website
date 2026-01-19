@@ -1,3 +1,8 @@
+---
+title: Flash Player
+description: Flash Player documentation for REG Linux.
+---
+
 # Flash Player
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

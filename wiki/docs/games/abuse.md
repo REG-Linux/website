@@ -1,3 +1,8 @@
+---
+title: Abuse
+description: Abuse documentation for REG Linux.
+---
+
 # Abuse
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

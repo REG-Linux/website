@@ -1,3 +1,8 @@
+---
+title: Sonic 3 A.I.R.
+description: Sonic 3 A.I.R. documentation for REG Linux.
+---
+
 # Sonic 3 A.I.R.
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center;">

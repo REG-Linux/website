@@ -1,3 +1,10 @@
+---
+title: Orange Pi Plus 2E
+description: Orange Pi Plus 2E pairs the Allwinner H3 SoC with the REG Linux stack
+  for a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack
+  for a...
+---
+
 # Orange Pi Plus 2E
 
 Orange Pi Plus 2E pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console. pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
