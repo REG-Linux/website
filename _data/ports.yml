@@ -1,10 +1,5 @@
 - name: Abuse
-  overview: 'Introduced in 1996 by Ports, the Abuse was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Abuse, a 2D run-and-gun classic that ships as a native SDL port on REG Linux. It lives in the ports category so it stays apart from console systems while still sharing the familiar front-end controls.
   release_year: '1996'
   extensions: game
   url: https://reglinux.org/wiki/games/abuse/
@@ -12,12 +7,7 @@
     src: /wiki/assets/systems/icons/abuse.webp
     alt: Abuse logo
 - name: Cannonball
-  overview: 'The Cannonball is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: "Enjoy Cannonball, a modern OutRun engine that targets REG Linux as a \u201Cports\u201D entry. It boots the 1986 Sega racer by reading the original ROM set with enhancements like higher refresh rates and widescreen scaling."
   release_year: ''
   extensions: cannonball
   url: https://reglinux.org/wiki/ports/cannonball/
@@ -25,12 +15,7 @@
     src: /wiki/assets/systems/logos/cannonball.png
     alt: Cannonball logo
 - name: Cave Story
-  overview: 'Introduced in 2004 by Daisuke "Pixel" Amaya, the Cave Story was a port
-    system. It is grouped with
-
-    ports titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: "Cave Story (2004) is the freeware indie adventure by Daisuke \u201CPixel\u201D Amaya. REG Linux classifies the experience as a ports entry and relaunches it through RetroArch\u2019s libretro: nxengine core so you can use the same controller remapping, shaders, and Quick Menu flow as with other RetroArch games."
   release_year: '2004'
   extensions: exe
   url: https://reglinux.org/wiki/ports/cavestory/
@@ -38,12 +23,7 @@
     src: /wiki/assets/systems/logos/cavestory.png
     alt: Cave Story logo
 - name: C-Dogs SDL
-  overview: 'Introduced in 1997 by Ports, the C-Dogs SDL was a port system. It is
-    grouped with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: C-Dogs is a top-down shooter built for cooperative or deathmatch play. REG Linux bundles it as a standalone port so you only need the native data rather than any legacy ROM set.
   release_year: '1997'
   extensions: game
   url: https://reglinux.org/wiki/games/cdogs/
@@ -51,12 +31,7 @@
     src: /wiki/assets/systems/logos/cdogs.png
     alt: C-Dogs SDL logo
 - name: Commander Genius
-  overview: 'Introduced in 1990 by The Commander Genius Team, the Commander Genius
-    was a port system. Its
-
-    platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Commander Genius, a fan-built engine for the Commander Keen and Cosmos the Cosmic Adventure series. REG Linux treats it as a port-style platform, grouping its entries under ports and launching the cgenius binary so you can enjoy those DOS adventures without leaving the frontend.
   release_year: '1990'
   extensions: cgenius
   url: https://reglinux.org/wiki/ports/cgenius/
@@ -64,12 +39,7 @@
     src: /wiki/assets/systems/logos/cgenius.png
     alt: Commander Genius logo
 - name: CorsixTH
-  overview: 'The CorsixTH is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: "Enjoy CorsixTH, a Lua-based reimplementation of Theme Hospital. It boots the original data files with quality-of-life tweaks while remaining grouped under ports in REG-Station so it keeps pace with REG Linux\u2019s other non-console engines."
   release_year: ''
   extensions: game
   url: https://reglinux.org/wiki/ports/corsixth/
@@ -77,12 +47,7 @@
     src: /wiki/assets/systems/logos/corsixth.png
     alt: CorsixTH logo
 - name: DevilutionX
-  overview: 'The DevilutionX is a port platform developed by Ports. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: DevilutionX resurrects Diablo and its Hellfire expansion with an open-source engine that honors the original game data while adding modern QoL options. REG Linux places it in the ports category so the dedicated entry keeps its own art set and metadata group.
   release_year: ''
   extensions: mpq
   url: https://reglinux.org/wiki/ports/devilutionx/
@@ -90,12 +55,7 @@
     src: /wiki/assets/systems/logos/devilutionx.png
     alt: DevilutionX logo
 - name: Doom 3
-  overview: 'Introduced in 2004 by Ports, the Doom 3 was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Doom 3 (2004) is launched as a ports entry and relies on the dhewm3 open-source engine so REG Linux can run the modernized build with the same input/shader pipeline as the rest of the menu.
   release_year: '2004'
   extensions: d3
   url: https://reglinux.org/wiki/ports/doom3/
@@ -103,12 +63,7 @@
     src: /wiki/assets/systems/logos/doom3.png
     alt: Doom 3 logo
 - name: DXX Rebirth
-  overview: 'Introduced in 1998 by Ports, the DXX Rebirth was a port system. It is
-    grouped with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy DXX Rebirth, a modern source port for the Descent series that runs Descent 1 and Descent 2 with improved rendering, mod support, and touch-ups while still depending on the retail game data. REG Linux lists it as a ports title so metadata and artwork stay in their own section.
   release_year: '1998'
   extensions: d1x, d2x
   url: https://reglinux.org/wiki/ports/dxx-rebirth/
@@ -116,12 +71,7 @@
     src: /wiki/assets/systems/logos/dxx-rebirth.png
     alt: DXX Rebirth logo
 - name: ECWolf
-  overview: 'Introduced in 2013 by Ports, the ECWolf was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy ECWolf, a modernized Wolfenstein 3D engine that builds on Wolf4SDL and adds mod support, modern input controls, and configuration polish. REG Linux keeps it under the ports heading with its own ecwolf metadata group.
   release_year: '2013'
   extensions: ecwolf, pk3, zar
   url: https://reglinux.org/wiki/ports/ecwolf/
@@ -129,12 +79,7 @@
     src: /wiki/assets/systems/logos/ecwolf.png
     alt: ECWolf logo
 - name: EDuke32
-  overview: 'The EDuke32 is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy EDuke32, the Build Engine source port that runs Duke Nukem 3D, its expansions, and a wide array of official mods with improved rendering and scripting support. REG Linux treats it as a ports engine so you can keep these games separated from the regular console/a rcade listings.
   release_year: ''
   extensions: eduke32
   url: https://reglinux.org/wiki/ports/eduke32/
@@ -142,12 +87,7 @@
     src: /wiki/assets/systems/logos/eduke32.png
     alt: EDuke32 logo
 - name: Wolfenstein - Enemy Territory
-  overview: 'Introduced in 2010 by Ports, the Wolfenstein - Enemy Territory was a
-    port system. It is grouped with
-
-    ports titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: 'Wolfenstein: Enemy Territory is replayed through the ET: Legacy engine, a modernized client for the free multiplayer shooter. REG Linux keeps it in the ports group so the online component sits beside other source ports such as ECWolf.'
   release_year: '2010'
   extensions: etl
   url: https://reglinux.org/wiki/ports/etlegacy/
@@ -155,12 +95,7 @@
     src: /wiki/assets/systems/logos/etlegacy.png
     alt: Wolfenstein - Enemy Territory logo
 - name: Fallout Community Edition
-  overview: 'Introduced in 1997 by Ports, the Fallout Community Edition was a port
-    system. It is grouped with
-
-    ports titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Fallout Community Edition (Fallout-CE) is a modern rebuild of the Fallout 1 engine. It preserves the original RPG flow, adds bug fixes, and exposes modern configuration options on Linux.
   release_year: '1997'
   extensions: f1ce
   url: https://reglinux.org/wiki/ports/fallout1-ce/
@@ -168,12 +103,7 @@
     src: /wiki/assets/systems/logos/fallout1-ce.png
     alt: Fallout Community Edition logo
 - name: Fallout 2 Community Edition
-  overview: 'Introduced in 1998 by Ports, the Fallout 2 Community Edition was a port
-    system. It is grouped with
-
-    ports titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Fallout 2 Community Edition modernizes the Fallout 2 engine with bug fixes, mod hooks, and enhanced configuration. REG Linux lists it under ports and shares the same fallout metadata group used by Fallout 1.
   release_year: '1998'
   extensions: f2ce
   url: https://reglinux.org/wiki/ports/fallout2-ce/
@@ -181,12 +111,7 @@
     src: /wiki/assets/systems/logos/fallout2-ce.png
     alt: Fallout 2 Community Edition logo
 - name: Ion Fury
-  overview: 'Introduced in 2019 by Ports, the Ion Fury was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Ion Fury (originally Ion Maiden) is a modern Build Engine shooter powered by EDuke32. REG Linux promotes it as a ports entry so it stays alongside other Build/EDuke32-powered experiences while taking advantage of the latest engine fixes.
   release_year: '2019'
   extensions: grp
   url: https://reglinux.org/wiki/ports/fury/
@@ -194,12 +119,7 @@
     src: /wiki/assets/systems/logos/fury.png
     alt: Ion Fury logo
 - name: GZDoom
-  overview: 'The GZDoom is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy GZDoom, a modern source port that extends the Doom engine with slopes, true 3D floors, uncapped framerates, and broad mod compatibility. REG Linux keeps it grouped under ports so you can launch Doom, Heretic, Hexen, Strife, or custom projects with the same interface.
   release_year: ''
   extensions: wad, iwad, pwad, gzdoom
   url: https://reglinux.org/wiki/ports/gzdoom/
@@ -207,12 +127,7 @@
     src: /wiki/assets/systems/logos/gzdoom.png
     alt: GZDoom logo
 - name: Hydra Castle Labyrinth
-  overview: 'Introduced in 2011 by Ports, the Hydra Castle Labyrinth was a port system.
-    It is grouped with ports
-
-    titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Hydra Castle Labyrinth, a Metroidvania-inspired action platformer delivered as a native port on REG Linux. It joins the other indie ports in the ports category with its own launcher.
   release_year: '2011'
   extensions: game
   url: https://reglinux.org/wiki/games/hcl/
@@ -220,12 +135,7 @@
     src: /wiki/assets/systems/icons/hcl.webp
     alt: Hydra Castle Labyrinth logo
 - name: Hurrican
-  overview: 'Introduced in 2007 by Ports, the Hurrican was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Hurrican, a freeware action-platformer inspired by the Turrican series. REG Linux runs it via a native port entry so the experience appears with other PC engines.
   release_year: '2007'
   extensions: game
   url: https://reglinux.org/wiki/games/hurrican/
@@ -233,12 +143,7 @@
     src: /wiki/assets/systems/icons/hurrican.webp
     alt: Hurrican logo
 - name: Return To Castle Wolfenstein
-  overview: 'Introduced in 2001 by Ports, the Return To Castle Wolfenstein was a port
-    system. It is grouped with
-
-    ports titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: IORTCW (iouRReturn To Castle Wolfenstein) is a modernized Wolfenstein client that runs the original RTCW assets. REG Linux exposes it as a ports system so the multiplayer shooter appears with the rest of the source-port collection.
   release_year: '2001'
   extensions: rtcw
   url: https://reglinux.org/wiki/ports/iortcw/
@@ -246,12 +151,7 @@
     src: /wiki/assets/systems/logos/iortcw.png
     alt: Return To Castle Wolfenstein logo
 - name: Jazz Jackrabbit 2
-  overview: 'Introduced in 1998 by Ports, the Jazz Jackrabbit 2 was a port system.
-    It is grouped with ports
-
-    titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Jazz Jackrabbit 2, a 2D platformer that the native Jazz2 engine replays on modern machines. REG Linux groups it under ports and relies on the original DOS data so the experience matches the classic release.
   release_year: '1998'
   extensions: game
   url: https://reglinux.org/wiki/ports/jazz2/
@@ -259,12 +159,7 @@
     src: /wiki/assets/systems/logos/jazz2.png
     alt: Jazz Jackrabbit 2 logo
 - name: MrBoom
-  overview: 'The MrBoom is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Mr. Boom is a Bomberman-inspired party game packaged as a libretro core.
   release_year: ''
   extensions: libretro
   url: https://reglinux.org/wiki/ports/mrboom/
@@ -272,12 +167,7 @@
     src: /wiki/assets/systems/logos/mrboom.png
     alt: MrBoom logo
 - name: Jazz Jackrabbit
-  overview: 'Introduced in 1994 by Ports, the Jazz Jackrabbit was a port system. It
-    is grouped with ports titles
-
-    in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: OpenJazz is an open-source recreation of the original Jazz Jackrabbit that modernizes the Win32 engine while still bundling the classic assets. REG Linux treats it as a ports system so you can run the DOS-era platformer using the same interface as other PC ports.
   release_year: '1994'
   extensions: game
   url: https://reglinux.org/wiki/ports/openjazz/
@@ -285,12 +175,7 @@
     src: /wiki/assets/systems/logos/openjazz.png
     alt: Jazz Jackrabbit logo
 - name: OpenLara
-  overview: 'Introduced in 1996 by Ports, the OpenLara was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy OpenLara, the open-source reimplementation of the original Tomb Raider engine. It uses the original Tomb Raider I assets while providing modern rendering and controller support.
   release_year: '1996'
   extensions: croft
   url: https://reglinux.org/wiki/ports/openlara/
@@ -298,12 +183,7 @@
     src: /wiki/assets/systems/logos/openlara.png
     alt: OpenLara logo
 - name: PrBoom
-  overview: 'The PrBoom is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy PrBoom, the libretro-based source port that lets you run Doom, Doom II, and their mods with modern enhancements. REG Linux ships the shareware IWAD (doom.wad) with the core and keeps the port inside the ports group so it remains separate from consoles.
   release_year: ''
   extensions: wad, iwad, pwad
   url: https://reglinux.org/wiki/ports/prboom/
@@ -311,12 +191,7 @@
     src: /wiki/assets/systems/logos/prboom.png
     alt: PrBoom logo
 - name: Quake III
-  overview: 'Introduced in 1999 by Ports, the Quake III was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Quake III Arena and its Team Arena expansion are supported through the ioquake3 engine. REG Linux exposes them via the ports list so you can load the base game, expansion, or mods from a unified launcher.
   release_year: '1999'
   extensions: quake3
   url: https://reglinux.org/wiki/ports/quake3/
@@ -324,12 +199,7 @@
     src: /wiki/assets/systems/logos/quake3.png
     alt: Quake III logo
 - name: Raze
-  overview: 'The Raze is a port platform developed by Ports. It is grouped with ports
-    titles in REG-Station.
-
-    Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Raze runs classic Build engine titles through a unified launcher powered by GZDoom technology. It supports Duke Nukem 3D, Blood, Shadow Warrior, World War II GI, and other legacy shooters with modern rendering and controller helpers.
   release_year: ''
   extensions: raze
   url: https://reglinux.org/wiki/ports/raze/
@@ -337,12 +207,7 @@
     src: /wiki/assets/systems/logos/raze.png
     alt: Raze logo
 - name: REminiscence
-  overview: 'Introduced in 1992 by Ports, the REminiscence was a port system. It is
-    grouped with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: "Enjoy REminiscence, the libretro wrapper around Gregory Montoir\u2019s Flashback engine. It uses the original Flashback PC data with improved compatibility and modern controller handling."
   release_year: '1992'
   extensions: rem
   url: https://reglinux.org/wiki/ports/reminiscence/
@@ -350,12 +215,7 @@
     src: /wiki/assets/systems/logos/reminiscence.png
     alt: REminiscence logo
 - name: Rise of the Triad
-  overview: 'Introduced in 1994 by Ports, the Rise of the Triad was a port system.
-    It is grouped with ports
-
-    titles in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Rise of the Triad, launched through the taradino port and stays grouped with the other ports entries in REG Linux. It relies on the commercial game files to reproduce the original fast-paced shooter.
   release_year: '1994'
   extensions: rott
   url: https://reglinux.org/wiki/ports/rott/
@@ -363,12 +223,7 @@
     src: /wiki/assets/systems/logos/rott.png
     alt: Rise of the Triad logo
 - name: SdlPop
-  overview: 'The SdlPop is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy SdlPop, the open-source port of the original Prince of Persia. REG Linux links it to the ports group and expects the original assets inside the sdlpop directory.
   release_year: ''
   extensions: sdlpop
   url: https://reglinux.org/wiki/ports/sdlpop/
@@ -376,12 +231,7 @@
     src: /wiki/assets/systems/logos/sdlpop.png
     alt: SdlPop logo
 - name: Sonic Mania
-  overview: 'Introduced in 2017 by Sega, the Sonic Mania was a port system. It is
-    grouped with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Sonic Mania, a modern 2D platformer that continues the 16-bit Sonic legacy. REG Linux treats it as a ports system that launches the RSDKv5 executable with the installed PC data.
   release_year: '2017'
   extensions: sman
   url: https://reglinux.org/wiki/ports/sonic-mania/
@@ -389,12 +239,7 @@
     src: /wiki/assets/systems/icons/sonic-mania.webp
     alt: Sonic Mania logo
 - name: Sonic 3 A.I.R.
-  overview: 'Introduced in 2019 by Sega, the Sonic 3 A.I.R. was a port system. It
-    is grouped with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Sonic 3 A.I.R. (Angel Island Revisited) is the fan remaster of Sonic the Hedgehog 3 & Knuckles running on RSDKv5.
   release_year: '2019'
   extensions: s3air
   url: https://reglinux.org/wiki/ports/sonic3-air/
@@ -402,12 +247,7 @@
     src: /wiki/assets/systems/logos/sonic3-air.png
     alt: Sonic 3 A.I.R. logo
 - name: Sonic Retro Engine
-  overview: 'Introduced in 2021 by Sega, the Sonic Retro Engine was a port system.
-    It is grouped with ports
-
-    titles in REG-Station.
-
-    '
+  overview: The Sonic Retro Engine (formerly Star Engine) bundles modern builds of Sonic 1, Sonic 2, and Sonic CD using RSDKv5. REG Linux deploys both sonic2013 (for .son) and soniccd (for .scd) cores so the ports appear under the sonicretro metadata group alongside the other ports entries.
   release_year: '2021'
   extensions: son, scd
   url: https://reglinux.org/wiki/ports/sonicretro/
@@ -415,12 +255,7 @@
     src: /wiki/assets/systems/logos/sonicretro.png
     alt: Sonic Retro Engine logo
 - name: Super Mario War
-  overview: 'Introduced in 2006 by Ports, the Super Mario War was a port system. It
-    is grouped with ports titles
-
-    in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Super Mario War, a multiplayer battle game where up to four players stomp each other across themed arenas. REG Linux provides it through the ports section and expects the game assets from the Content Downloader.
   release_year: '2006'
   extensions: game
   url: https://reglinux.org/wiki/games/superbroswar/
@@ -428,12 +263,7 @@
     src: /wiki/assets/systems/logos/superbroswar.png
     alt: Super Mario War logo
 - name: The Force Engine
-  overview: 'Introduced in 1995 by Ports, the The Force Engine was a port system.
-    It is grouped with ports titles
-
-    in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: The Force Engine (TFE) recreates classic LucasArts shooters such as Dark Forces and Outlaws. REG Linux exposes it as a ports entry that loads your own game files and community mods.
   release_year: '1995'
   extensions: tfe
   url: https://reglinux.org/wiki/ports/theforceengine/
@@ -441,12 +271,7 @@
     src: /wiki/assets/systems/icons/theforceengine.webp
     alt: The Force Engine logo
 - name: Tyrian
-  overview: 'Introduced in 1995 by Ports, the Tyrian was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Tyrian, the shareware/registered shooter bundled as a native port. REG Linux classifies it under the ports group, so the experience uses the same navigation, overlays, and controller pipeline as the other PC engines.
   release_year: '1995'
   extensions: game
   url: https://reglinux.org/wiki/games/tyrian/
@@ -454,12 +279,7 @@
     src: /wiki/assets/systems/logos/tyrian.png
     alt: Tyrian logo
 - name: TyrQuake
-  overview: 'The TyrQuake is a port platform developed by Ports. It is grouped with
-    ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy TyrQuake, the libretro port of the original Quake shareware and retail episodes. REG Linux keeps it inside the ports group so each episode resides in its own folder and the front end shows the proper artwork.
   release_year: ''
   extensions: pak
   url: https://reglinux.org/wiki/ports/tyrquake/
@@ -467,12 +287,7 @@
     src: /wiki/assets/systems/logos/tyrquake.png
     alt: TyrQuake logo
 - name: Ur-Quan Masters
-  overview: 'Introduced in 1992 by Ports, the Ur-Quan Masters was a port system. It
-    is grouped with ports titles
-
-    in REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Ur-Quan Masters, the open-source revival of Star Control II. REG Linux places it under the ports group and loads the uqm engine with the community content package.
   release_year: '1992'
   extensions: game
   url: https://reglinux.org/wiki/ports/uqm/
@@ -480,12 +295,7 @@
     src: /wiki/assets/systems/logos/uqm.png
     alt: Ur-Quan Masters logo
 - name: Quake II
-  overview: 'Introduced in 1997 by Ports, the Quake II was a port system. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: VitaQuake2 is the libretro port that runs Quake II and its mission packs (Xatrix, Rogue, Zaero). REG Linux exposes it in the ports section and uses the base and subdirectories to identify each episode.
   release_year: '1997'
   extensions: pak, zip, 7zip
   url: https://reglinux.org/wiki/ports/vitaquake2/
@@ -493,12 +303,7 @@
     src: /wiki/assets/systems/logos/vitaquake2.png
     alt: Quake II logo
 - name: Xash3D-FWGS
-  overview: 'The Xash3D-FWGS is a port platform developed by Ports. It is grouped
-    with ports titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy Xash3D-FWGS, a fork of the Half-Life/Source engine that runs Half-Life, Blue Shift, Opposing Force, and other compatible mods. REG Linux groups it under ports and relies on your licensed data folders.
   release_year: ''
   extensions: game
   url: https://reglinux.org/wiki/ports/xash3d_fwgs/
@@ -506,12 +311,7 @@
     src: /wiki/assets/systems/logos/xash3d_fwgs.png
     alt: Xash3D-FWGS logo
 - name: xrick
-  overview: 'The xrick is a port platform developed by Ports. It is grouped with ports
-    titles in
-
-    REG-Station. Its platform tag is `pc` for proper filtering.
-
-    '
+  overview: Enjoy xrick, the open-source remake of Rick Dangerous. REG Linux treats it as a ports entry and loads your zipped data archives through the libretro core.
   release_year: ''
   extensions: zip
   url: https://reglinux.org/wiki/ports/xrick/
