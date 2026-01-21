@@ -14,11 +14,10 @@ preload_image: /assets/images/logo-regstation.webp
   <section class="hero" id="home">
     <div class="hero-text">
       <p class="eyebrow">Retro Emulation Gaming Linux</p>
-      <h1>Turn any device into a purpose-built retro console.</h1>
+      <h1>All-in-one retrogaming for any device — ready in minutes.</h1>
       <p class="lede">
-        Founded by retro gaming enthusiasts and open source developers, REG Linux turns SBCs, handhelds, laptops,
-        and desktops into polished gaming rigs with curated software grounded in Buildroot, systemd-free system,
-        and official wiki documentation that guides every release.
+        Dreamed up by retro fans and open-source tinkerers, REG Linux turns SBCs, handhelds, laptops, and desktops
+        into polished gaming rigs with a curated stack and friendly guides.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
@@ -79,7 +78,7 @@ preload_image: /assets/images/logo-regstation.webp
         <h2>Pre-configured emulator stack</h2>
         <p>
           REG ships with the most requested emulators ready to play: RetroArch, MAME, and specialist cores for
-          handhelds, arcades, and microcomputers. Inputs, shaders, and hotkeys are sensible by default, so you
+          handhelds, arcades, and microcomputers. Inputs, shaders, and hotkeys are pre configured, so you
           can jump straight into the fun.
         </p>
         <ul class="stack-list">
@@ -114,8 +113,8 @@ preload_image: /assets/images/logo-regstation.webp
         <p>
         REG relies on mainline LTS kernels whenever possible, making it easier to support SBC boards, handhelds,
         mini consoles, and desktops. The wiki installation guide lists coverage for ARM (Allwinner, Rockchip, Amlogic),
-        AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs, so you can pick the profile that matches
-        your hardware.
+        AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs, so you can pick the proper guide for your
+        hardware.
         </p>
     </div>
     <div class="hardware-grid">
@@ -143,7 +142,7 @@ preload_image: /assets/images/logo-regstation.webp
     <div class="cta-panel">
       <div>
         <h3>Need help?</h3>
-        <p>Read the wiki, join Discord, or open a GitHub issue—contributors are active and eager to assist.</p>
+        <p>Read the wiki, join Discord, or open a GitHub issue — contributors are active and eager to assist.</p>
       </div>
       <a class="btn primary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Get support</a>
     </div>
@@ -177,7 +176,7 @@ preload_image: /assets/images/logo-regstation.webp
 
 <footer class="site-footer">
   {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.<br/>All rights reserved.</p>
+  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free and community supported.<br/>All rights reserved.</p>
   <p class="small">
     All product names, logos, and brands are property of their respective owners.<br/>
     Linux® is the registered trademark of Linus Torvalds.<br/>

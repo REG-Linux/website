@@ -14,8 +14,8 @@ description: Learn about the curated open souce engines REG Linux comes with and
       <p class="eyebrow">Engine companions</p>
       <h1>Open-source runtimes</h1>
       <p class="lede">
-        REG Linux ships with the several open source engines — both native binaries and libretro builds —so you can drop the right assets and packages for adventure games,
-        beat ’em ups, RPG Maker titles, Flash SWFs, fan-made games, or even LaserDisc FMV discs.
+        Eight curated engines — from ScummVM and EasyRPG to OpenBOR and Singe — let you launch story adventures,
+        beat ’em ups, RPG Maker classics, Flash games, and LaserDisc FMV without fuss.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="https://reglinux.org/wiki/engines/" target="_blank" rel="noreferrer">Browse the engine guides</a>
