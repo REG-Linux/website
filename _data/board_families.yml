@@ -1,7 +1,7 @@
 allwinner:
   title: "Allwinner SoCs"
   wiki_url: "https://reglinux.org/wiki/sbcs/allwinner/"
-  summary: "REG Linux ships board support for Allwinner H2+/H3, H5, H6, H616/H618, and the H700 handheld tree; keep this reference page synced so contributors can find every directory."
+  summary: "Allwinner support targets popular budget SBCs and handhelds, so you can pick a board and boot without drama."
   soCs:
     - "H2+"
     - "H3"
@@ -11,14 +11,14 @@ allwinner:
     - "H618"
     - "H700"
   highlights:
-    - "Each SoC section lists the supported devices, from Banana Pi M2 Zero, Capcom Home Arcade, and Orange Pi One/PC/Plus boards to the Zero, 3, and M4 family."
-    - "H700 handhelds (Anbernic RG35xx, RG40xx, RG34xx, RG28xx, RGCube) currently require you to flash and then manually edit the DTB because device detection is not yet available."
-    - "Keep this wiki page in sync with the repo so contributors can quickly locate the proper Allwinner board tree."
+    - "Supported boards include Banana Pi M2 Zero, Capcom Home Arcade, and the Orange Pi One/PC/Plus/Zero/Zero2/Zero2W/Zero3/M4 families."
+    - "Handheld coverage centers on the H700 line (RG35XX, RG40XX, RG34XX, RG28XX, RG Cube)."
+    - "Use the wiki page as the quick map for matching your Allwinner device to its board notes."
 
 amlogic:
   title: "Amlogic SoCs"
   wiki_url: "https://reglinux.org/wiki/sbcs/amlogic/"
-  summary: "The wiki tracks Amlogic S812 through the latest S9 Gen4 / S905X3 families, covering TV boxes, NanoPi, Khadas, Radxa, Beelink, and HardKernel boards."
+  summary: "Amlogic support focuses on the most common TV boxes and maker boards, with a wide spread of handheld-friendly builds."
   soCs:
     - "S812"
     - "S905"
@@ -37,14 +37,14 @@ amlogic:
     - "S912"
     - "S905X3"
   highlights:
-    - "S812 and the S905/S905X/S905D lines list Meson/Meson8 clones plus Khadas NanoPi, Libretech, and HardKernel TV boxes that usually require you to adjust DTBs or boot scripts for generic builds."
-    - "The S905 Gen2 (GXM/G12A) and Gen3 (SM1 / S905X3) sections extend support to Khadas VIM2, Radxa Zero, Banana Pi M5, Khadas VIM3L, HardKernel ODROID C4, and other devices tied to vendor 5.15 kernels."
-    - "S922X/A311D and A311D2 families cover Khadas VIM3/VIM4, Banana Pi M2S, Beelink GT-King/GT-King Pro, Radxa Zero 2, and the ODROID N2 series, while the S9 Gen4 notes Khadas VIM1S and its bespoke boot scripts."
+    - "Supported boards span Khadas, Radxa, Banana Pi, Beelink, Libretech, and Hardkernel ODROID families."
+    - "Highlights include VIM/VIM2/VIM3/VIM4, Radxa Zero/Zero 2, Banana Pi M5/M2S, and ODROID C4/N2 lines."
+    - "TV box support focuses on the S905 and S922X/A311D generations."
 
 broadcom:
   title: "Broadcom (Raspberry Pi) SoCs"
   wiki_url: "https://reglinux.org/wiki/sbcs/broadcom/"
-  summary: "Each Broadcom board directory (BCM2711/BCM2712/BCM2837/BCM2836/BCM2835) stages kernels, DTBs, firmware, overlays, and patches before genimage builds the FAT/Share layout for Pi and Compute Module hardware."
+  summary: "Broadcom support is built around the Raspberry Pi family, from legacy models to the latest Pi 5."
   soCs:
     - "BCM2711"
     - "BCM2712"
@@ -52,26 +52,26 @@ broadcom:
     - "BCM2836"
     - "BCM2835"
   highlights:
-    - "Board scripts copy Image, initrd, DTBs, and firmware while rewiring `boot/config.txt` + `cmdline.txt` to enable DRM/KMS helpers, fastboot, `noswap`, and other runtime defaults."
-    - "`genimage.cfg` produces a 2 GiB REGLINUX FAT32 boot volume plus a 256 MiB userdata/SHARE slice for BCM2711/BCM2712 builds, while the older SoCs keep their legacy layouts."
-    - "Overlays/patches load modules such as `snd_seq`, `i2c_dev`, and other audio helpers so GroovyMAME, RetroArch, and libretro cores stay compatible with the VC4/VC6 GPUs."
+    - "Targets Raspberry Pi 1 through Pi 5, plus Zero, 400, and Compute Module variants."
+    - "Pick the Pi model you already own and follow the matching wiki guide for setup and tips."
+    - "Great for living-room builds, cabinets, and portable Pi-based handheld projects."
 
 mediatek:
   title: "Mediatek MT8395"
   wiki_url: "https://reglinux.org/wiki/sbcs/mediatek/"
-  summary: "Radxa NIO 12L (Genio 1200/MT8395) board trees supply overlays, kernel configs, patches, and firmware helpers tailored to the Mediatek chipset."
+  summary: "Mediatek support is tuned for the Radxa NIO 12L and the Genio 1200 platform."
   soCs:
     - "MT8395"
     - "Genio 1200"
   highlights:
-    - "The overlay copies MT7961/MT7668/MT8183/MT8188/MT8195 firmware under `/lib/firmware` so Wi-Fi, Bluetooth, and audio work correctly."
-    - "Kernel configs and patches capture the Linux 6.15.0-rc2 options plus HDMI/ALSA wiring required by the MT8395 Genio 1200 board."
-    - "`genimage.cfg` stages the kernel, initrd, modules, firmware, rescue blobs, and bootloader artifacts into a GPT image with a 2 GiB REGLINUX boot partition plus a 256 MiB SHARE userdata slice."
+    - "Primary board: Radxa NIO 12L (Genio 1200 / MT8395)."
+    - "If you have this board, the wiki guide is the fastest path to a clean boot."
+    - "Expect a stable, modern Mediatek experience with REG Linux defaults."
 
 qualcomm:
   title: "Qualcomm Snapdragon SoCs"
   wiki_url: "https://reglinux.org/wiki/sbcs/qualcomm/"
-  summary: "Snapdragon board trees (SM8250, SM8550, and others) bundle dracut configs, firmware, overlays, and LinuxLoader/EFI artifacts for handhelds like the Retroid Pocket and AYN Odin families."
+  summary: "Qualcomm support targets modern Snapdragon handhelds and compact gaming devices."
   soCs:
     - "SM8250"
     - "SM8550"
@@ -79,14 +79,14 @@ qualcomm:
     - "sd845"
     - "sm6115"
   highlights:
-    - "Dracut, firmware, and overlays stage Qualcomm/BRCM firmware plus fan, Bluetooth, and deterministic MAC helpers before the build copies those resources to LinuxLoader."
-    - "Each board scripts stage Image/initrd/DTBs/modules/rescue blobs into `REGLINUX_BINARIES_DIR/boot/boot` while `genimage.cfg` produces a 2 GiB FAT32 boot and 512 MiB userdata layout."
-    - "LinuxLoader configs contain flags such as `fbcon=rotate:3`, `DisableDisplayHW`, and device-specific DTBs; the AYANEO Pocket S entry warns that the stock Android bootloader is still missing."
+    - "Supported families include AYN Odin, Retroid Pocket, and other Snapdragon-based handhelds."
+    - "Focus is on premium portable performance for higher-end emulation."
+    - "Check the wiki page for device-specific boot notes before you flash."
 
 rockchip:
   title: "Rockchip SoCs"
   wiki_url: "https://reglinux.org/wiki/sbcs/rockchip/"
-  summary: "Rockchip support spans RK3128 through RK3588 boards, where each SoC directory brings `create-boot-script`, `genimage`, overlays, DTBs, and patch fragments plus shared wiring."
+  summary: "Rockchip support covers both SBCs and handhelds, from entry-level boards to top-tier RK3588 devices."
   soCs:
     - "RK3128"
     - "RK3288"
@@ -97,17 +97,17 @@ rockchip:
     - "RK3568"
     - "RK3588"
   highlights:
-    - "REG Linux keeps per-SoC trees (RK3128, RK3288, RK3326, RK3328, RK3399, RK3568, RK3588) with targeted kernel versions, overlays, and DTBs that stage scripts and update blobs before `genimage` packages the image."
-    - "Highlights cover Linux 6.10 for RK3128, 6.6 for RK3288, 6.12 for RK3326, and 6.1+ for RK3588, along with overlay helpers for temperature, ALSA cards, and Moonlight/GPU patches."
-    - "Helpful reminders remind maintainers to run each `create-boot-script.sh`, sync `linux-defconfig`/`linux_patches`, refresh overlays, and document new board layouts."
+    - "Supported boards include Rock, Orange Pi, and Radxa families plus handhelds like Anbernic RG351/RG552 and GameForce Chi."
+    - "Covers the full RK range from RK3128 to RK3588 for everything from entry-level to flagship builds."
+    - "Use the wiki to match your Rockchip device with the right build notes."
 
 samsung:
   title: "Samsung Exynos 5422"
   wiki_url: "https://reglinux.org/wiki/sbcs/samsung/"
-  summary: "The Samsung board tree powers the ODROID XU3/XU4 (Exynos 5422) with kernel configs, patches, overlays, and bootloader wiring."
+  summary: "Samsung support focuses on the ODROID XU3/XU4 family powered by Exynos 5422."
   soCs:
     - "Exynos 5422"
   highlights:
-    - "Kernel configs (linux-exynos5422-defconfig) and patches tune LZ4 compression, REG Linux branding, preemption, and DRM/HID quirks for the ODROID platform."
-    - "Board scripts stage zImage, DTBs, initrd, modules, firmware, rescue data, and U-Boot blobs before `genimage` creates FAT32 boot + userdata partitions with the proper `extlinux.conf` command line."
-    - "Overlays install `asound.conf`, fan scripts, and patch sets for Sugarbox/SwitchRes; the integration tips remind maintainers to build U-Boot, stage artifacts, and document overlay/cmdline changes."
+    - "Supported boards: ODROID XU3 and ODROID XU4."
+    - "Great choice for a sturdy, always-on retro box with strong community support."
+    - "See the wiki page for quick-start setup and device tips."
