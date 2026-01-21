@@ -43,6 +43,11 @@ description: Discover engine ports and community remakes that REG Linux handles 
     <div class="ports-grid">
       {% for port in ports %}
         <article class="card port-card">
+          {% if port.logo %}
+            <figure class="port-logo">
+              <img src="{{ port.logo.src | relative_url }}" alt="{{ port.logo.alt }}" loading="lazy" />
+            </figure>
+          {% endif %}
           <h3>{{ port.name }}</h3>
           <p class="port-overview">{{ port.overview }}</p>
           {% if port.release_year != "" %}
