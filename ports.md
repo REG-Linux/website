@@ -14,8 +14,7 @@ description: Discover engine ports and community remakes that REG Linux handles 
       <p class="eyebrow">Hardware: port</p>
       <h1>Community ports & remakes</h1>
       <p class="lede">
-        The REG Linux wiki backs every `hardware: port` REG-Station entry with a deep dive into engine details, ROM extensions, emulator hints,
-        and upstream notes so you can supply the missing WADs, PK3s, or mod archives these versions expect.
+        Forty fan-favorite ports, from Cave Story and Doom 3 to Sonic 3 A.I.R., all launchable straight from REG-Station.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="https://reglinux.org/wiki/ports/" target="_blank" rel="noreferrer">Browse the ports catalog</a>

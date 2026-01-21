@@ -29,10 +29,7 @@ features:
     the default emulator stack.
 - title: Rock solid OS
   description: Immutable Buildroot base plus an integrated rescue workflow keep experiments
-    safe.
-- title: Open source forever
-  description: REG Linux is community-driven, transparent, and licensed for tinkering
-    without restrictions.
+    safe, backed by a community that keeps the system stable and well maintained.
 - title: Endless gaming possibilities
   description: Play arcade, console, and computer classics, switching cores or ports
     with a single menu action.
@@ -73,7 +70,7 @@ stack:
     label: OpenBOR
 hardware_cards:
 - title: Single-board computers
-  body: From Raspberry Pi-style boards to RK3588 powerhouses, profiles ensure video,
+  body: From Raspberry Pi-style boards to RK3588 powerhouses, default settings ensure video,
     audio, and I/O just work.
 - title: Handhelds & mini consoles
   body: REG keeps controls responsive and includes handheld-friendly themes plus suspend-safe
@@ -107,10 +104,10 @@ getting_started_steps:
   body: Visit the download page, consult the wiki installation guide for supported
     devices, and grab the latest release that matches your hardware.
 - title: Flash to storage.
-  body: "Follow the wiki's recommended tools\u2014balenaEtcher, Raspberry Pi Imager,\
-    \ or plain `dd`\u2014and verify the image on your SD card or SSD."
+  body: "Follow the wiki's recommended tools \u2014 balenaEtcher, Raspberry Pi Imager,\
+    \ or plain `dd` \u2014 and verify the image on your SD card or SSD."
 - title: First boot & setup.
-  body: Power on, run through the REG-Station onboarding, pair controllers, and reference
+  body: Power on, let the one-time setup run through, pair controllers, and reference
     the wiki for troubleshooting or controller mapping tips.
 - title: Load your library.
   body: Add ROMs via network share, USB drive, or the built-in file manager, then
