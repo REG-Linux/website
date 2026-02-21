@@ -17,7 +17,7 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
         Discuss hardware, discover build tips, share improvements, and help keep the wiki and builds polished. Our Discord, GitHub, and documentation hubs stay in sync with every release.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="https://discord.gg/M38rd2kRNw" target="_blank" rel="noreferrer">
+        <a class="btn primary" href="https://discord.gg/a9HH4ZpVqp" target="_blank" rel="noreferrer">
           <img class="btn-icon" src="{{ '/assets/images/discord-logo.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" />
           Join Discord
         </a>
