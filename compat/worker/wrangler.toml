@@ -1,0 +1,23 @@
+name = "reg-compat"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "reg-compat"
+database_id = "eb5b4bf2-5ec0-472b-a405-b8b6aecbfb4f"
+
+[vars]
+GITHUB_CLIENT_ID = "Ov23liZEsqSwNEMVeZSV"
+GITHUB_REDIRECT_URI = "https://compat.reglinux.org/api/auth/callback"
+CORS_ORIGIN = "https://compat.reglinux.org"
+
+# Worker route for API under the Pages custom domain
+[[routes]]
+pattern = "compat.reglinux.org/api/*"
+zone_name = "reglinux.org"
+
+# Secrets (set via wrangler secret put):
+# GITHUB_CLIENT_SECRET
+# JWT_SECRET

@@ -1,28 +1,18 @@
 ---
-title: Odroid Go Ultra
-description: '| Device | CPU / Architecture | Kernel | GL driver | Interface | | ---
-  | --- | --- | --- | --- | | Odroid Go Ultra | Amlogic S922X / Mali G52 M6 (ARMv8-A)
-  |...'
-manufacturer: Hardkernel
+title: HardKernel ODROID GO Ultra
+description: REG Linux on HardKernel ODROID GO Ultra powered by Amlogic S922X.
+manufacturer: HardKernel
 slug: hardkernel/odroid-go-ultra
-url: https://REG Linux.org/handhelds/hardkernel/odroid-go-ultra
-generated: 2025-11-23 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
-# Odroid Go Ultra
+# HardKernel ODROID GO Ultra
 
 
-## Software
+## Hardware & Compatibility
 
-| Device | CPU / Architecture | Kernel | GL driver | Interface |
-| --- | --- | --- | --- | --- |
-| Odroid Go Ultra | Amlogic S922X / Mali G52 M6 (ARMv8-A) | Mainline Linux | Mali | Weston + REG-ES |
-
-## Features
-
-| Feature | Notes |
-| --- | --- |
-| Storage | REG Linux should be installed directly to the internal eMMC. A microSD Card can be used for game storage. |
+<div data-reg-compat="hardkernel-odroid-go-ultra:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 

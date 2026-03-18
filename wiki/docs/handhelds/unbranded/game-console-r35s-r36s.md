@@ -1,34 +1,18 @@
 ---
 title: Game Console R35S R36S
-description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
-  (Quad-core) @ 1.3 GHz | Mali G31 |'
+description: REG Linux on Game Console R35S R36S powered by Rockchip RK3326.
 manufacturer: Unbranded
 slug: unbranded/game-console-r35s-r36s
-url: https://REG Linux.org/handhelds/unbranded/game-console-r35s-r36s
-generated: 2025-11-23 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
 # Game Console R35S R36S
 
 
-## Hardware
+## Hardware & Compatibility
 
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Rockchip RK3326 | ARM Cortex-A35 (Quad-core) @ 1.3 GHz | Mali G31 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| 3.5-inch 640*480 | 1 GB DDR3 | None | None |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Mainline Linux | Panfrost (GL 3.1/GLES 3.1) | Sway | REG-ES |
-
-## Emulators
-
+<div data-reg-compat="unbranded-game-console-r35s-r36s:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 

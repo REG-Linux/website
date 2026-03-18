@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import { SubmitForm } from '../components/SubmitForm';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Submit Test — REG-Linux Compatibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://reglinux.org/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="https://reglinux.org" class="site-logo">
+        <img src="https://reglinux.org/assets/images/reg_linux_logo-sm.webp" alt="REG-Linux" />
+      </a>
+      <span class="separator">/</span>
+      <a href="/" style="color: var(--text-muted); text-decoration: none;">Matrix</a>
+      <span class="separator">/</span>
+      <span class="page-title">Submit Test</span>
+    </header>
+    <main>
+      <SubmitForm client:only="react" />
+    </main>
+  </body>
+</html>

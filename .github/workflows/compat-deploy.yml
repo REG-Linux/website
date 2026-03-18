@@ -1,0 +1,80 @@
+name: Deploy compat.reglinux.org
+on:
+  push:
+    branches: [main]
+    paths: ['compat/**', '_data/devices.yml', '_data/socs.yml']
+
+jobs:
+  # Regenerate all derived files from _data/*.yml
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: pip install pyyaml
+
+      - name: Extract canonical JSON
+        run: python3 compat/scripts/extract_devices.py
+
+      - name: Generate seed SQL
+        run: python3 compat/scripts/seed_d1.py
+
+      - name: Generate wiki pages (production URLs)
+        run: python3 compat/scripts/generate_wiki.py
+
+      - name: Build widget
+        working-directory: compat/widget
+        run: npm ci && npm run build
+
+      - name: Copy generated files to their destinations
+        run: |
+          cp compat/scripts/devices_canonical.json compat/dashboard/src/data/devices.json
+          cp compat/widget/dist/widget.js compat/dashboard/public/widget.js
+          cp compat/widget/dist/widget.js wiki/docs/assets/widget.js
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet && git diff --cached --quiet || echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit generated files
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add wiki/docs/ compat/scripts/devices_canonical.json compat/scripts/seed_devices.sql compat/dashboard/src/data/devices.json compat/widget/dist/widget.js
+          git commit -m "chore: regenerate wiki pages and canonical data"
+          git push
+
+  deploy-worker:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci
+        working-directory: compat/worker
+      - run: npx wrangler deploy
+        working-directory: compat/worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+
+  deploy-dashboard:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci && npm run build
+        working-directory: compat/dashboard
+      - uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: reg-compat
+          directory: compat/dashboard/dist

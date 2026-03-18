@@ -1,0 +1,16 @@
+{
+  "name": "reg-compat-widget",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "watch": "rollup -c rollup.config.mjs -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.0",
+    "rollup": "^4.28.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "tslib": "^2.8.0",
+    "typescript": "^5.7.2"
+  }
+}

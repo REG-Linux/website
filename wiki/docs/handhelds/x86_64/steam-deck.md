@@ -1,46 +1,23 @@
 ---
 title: Steam Deck
-description: Steam Deck pairs the AMD Zen 2 APU SoC with the REG Linux stack for a
-  polished retro console. pairs the AMD Zen 2 APU SoC with the REG Linux stack for
-  a poli...
+description: REG Linux on Steam Deck powered by AMD Zen 2 APU.
+manufacturer: Valve
+slug: x86_64/steam-deck
+generated: 2026-03-18 22:56:02
 ---
 
 # Steam Deck
 
-Steam Deck pairs the AMD Zen 2 APU SoC with the REG Linux stack for a polished retro console. pairs the AMD Zen 2 APU SoC with the REG Linux stack for a polished retro console.
 
-## Quick facts
+## Hardware & Compatibility
 
-- **Manufacturer**: Valve
+<div data-reg-compat="steam-deck:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
-- **SoC**: AMD Zen 2 APU
+## Install REG Linux
 
-- Maintained on the REG Linux download channel
+### Installation
 
-## Specs
+Download the latest REG Linux image for this device from the REG Linux download page. Flash it to an SD card using balenaEtcher, Raspberry Pi Imager, or dd. Insert the media, power on, and let REG Linux expand the filesystem on first boot.
 
-| Property | Value |
-
-| --- | --- |
-
-| Manufacturer | Valve |
-
-| SoC | AMD Zen 2 APU |
-
-| Image availability | Download the latest build from the REG Linux downloads hub (Valve section). |
-
-## Installation notes
-
-1. Grab the image. Download the latest Steam Deck build from the downloads page or the official board entry .
-
-2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
-
-3. First boot setup. Insert the media into your Steam Deck, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
-
-4. Troubleshoot with rescue tools. REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
-
-## Resources
-
-- REG Linux download page: https://reglinux.org/download/steam-deck/
-
-- Official REG Linux board page: https://reglinux.org/board/steam-deck
+## Additional References

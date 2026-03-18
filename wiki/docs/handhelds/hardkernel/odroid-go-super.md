@@ -1,31 +1,18 @@
 ---
-title: Odroid Go Super
-description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
-  (Quad-core) @ 1.3 GHz | Mali G31 | Section: Handhelds / Hardkernel / Odroid Go Super.'
-manufacturer: Hardkernel
+title: HardKernel ODROID Go Super
+description: REG Linux on HardKernel ODROID Go Super powered by Rockchip RK3326.
+manufacturer: HardKernel
 slug: hardkernel/odroid-go-super
-url: https://REG Linux.org/handhelds/hardkernel/odroid-go-super
-generated: 2025-11-23 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
-# Odroid Go Super
+# HardKernel ODROID Go Super
 
 
-## Hardware
+## Hardware & Compatibility
 
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Rockchip RK3326 | ARM Cortex-A35 (Quad-core) @ 1.3 GHz | Mali G31 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| 5-inch 854*480 | 1 GB DDR3L | None | None |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Mainline Linux | Panfrost (GL 3.1/GLES 3.1) | Sway | REG-ES |
+<div data-reg-compat="hardkernel-odroid-go-super:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 

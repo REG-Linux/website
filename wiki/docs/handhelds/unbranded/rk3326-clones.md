@@ -1,46 +1,18 @@
 ---
 title: RK3326 clones (including K36 and BatleXP G350)
-description: REG Linux partially supports various RK3326 clones and knock-offs known
-  as R36 / R36S / K36. We also partially support the BatleXP G350 which is similar
-  but...
+description: REG Linux on RK3326 clones (including K36 and BatleXP G350) powered by Rockchip RK3326.
 manufacturer: Unbranded
 slug: unbranded/rk3326-clones
-url: https://REG Linux.org/handhelds/unbranded/rk3326-clones
-generated: 2025-11-25 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
-# K36 / BatleXP G350 and other RK3326 clones
+# RK3326 clones (including K36 and BatleXP G350)
 
 
-REG Linux partially supports various RK3326 clones and knock-offs known as R36 / R36S / K36.
-We also partially support the BatleXP G350 which is similar but with way higher quality build.
+## Hardware & Compatibility
 
-## About the family
-
-These are mostly similar but subtely different devices.
-K36 and BatleXP G350 are the most interesting due to consistent build quality.
-
-To deal with the variety, hardware configuration is partially imported from stock dtb file.
-This doesn't yield to a perfect result and sometimes needs extra tweaks, but usually works.
-
-## Hardware
-
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Rockchip RK3326 | ARM Cortex-A35 (Quad-core) @ 1.3 GHz | Mali G31 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| 4.0-inch 720x720, 3.5-inch 640x480 and others | usually 1 GB DDR3, sometimes 512M | 8 GB (often) | rk915 2.4G WiFi (sometimes) |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Mainline Linux | Panfrost (GL 3.1/GLES 3.1) | Sway | REG-ES |
-
-## Emulators
-
+<div data-reg-compat="unbranded-rk3326-clones:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 

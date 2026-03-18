@@ -1,59 +1,26 @@
 ---
 title: Milk-V Meles
-description: Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished
-  retro console. pairs the TH1520 SoC with the REG Linux stack for a polished retro
-  c...
+description: Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console.
+generated: 2026-03-18 22:56:02
 ---
 
 # Milk-V Meles
 
-Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console. pairs the TH1520 SoC with the REG Linux stack for a polished retro console.
+Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console.
 
-## Quick facts
 
-- **Manufacturer**: Milk-V
+## Hardware & Compatibility
 
-- **SoC**: TH1520
-
-- Maintained on the REG Linux download channel
-
-## Specs
-
-| Property | Value |
-
-| --- | --- |
-
-| Manufacturer | Milk-V |
-
-| SoC | TH1520 |
-
-| Image availability | Download the latest build from the REG Linux downloads hub (Milk-V section). |
-
-## Hardware
-
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| TH1520 | T-Head C910 (Quad-core) | Imagination GPU |
-
-| RAM | Storage | Connectivity |
-| --- | --- | --- |
-| Varies by board | Varies by board | Varies by board |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Linux | PowerVR (Mesa) | Device-specific | REG-ES |
+<div data-reg-compat="milk-v-meles:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Installation notes
 
-1. Grab the image. Download the latest Milk-V Meles build from the downloads page or the official board entry .
+1. Grab the image. Download the latest Milk-V Meles build from the downloads page.
 
-2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
+2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure to verify the checksum before booting.
 
 3. First boot setup. Insert the media into your Milk-V Meles, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
-
-4. Troubleshoot with rescue tools. REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
 
 ## Resources
 
