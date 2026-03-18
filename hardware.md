@@ -83,5 +83,6 @@ description: Learn how REG Linux supports Arm, Rockchip, Qualcomm, Broadcom, and
       {% assign hardware_cta_attrs = '' %}
     {% endif %}
     <a class="btn primary" href="{{ hardware_cta_href }}"{{ hardware_cta_attrs }}>{{ hardware.cta_label }}</a>
+    <a class="btn secondary" href="https://compat.reglinux.org" target="_blank" rel="noreferrer">Check compatibility</a>
   </section>
 </main>
