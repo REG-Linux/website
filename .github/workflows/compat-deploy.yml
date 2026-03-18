@@ -2,7 +2,8 @@ name: Deploy compat.reglinux.org
 on:
   push:
     branches: [main]
-    paths: ['compat/**', '_data/devices.yml', '_data/socs.yml']
+    paths: ['compat/**', '_data/devices.yml', '_data/socs.yml', '.github/workflows/compat-deploy.yml']
+  workflow_dispatch:
 
 jobs:
   deploy-worker:
