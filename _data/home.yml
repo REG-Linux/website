@@ -1,8 +1,8 @@
 hero:
   highlights:
-  - Immutable Buildroot-based root filesystem, optimized builds, and rescue workflows
-  - REG-Station frontend tailored by the REG team with curated RetroArch cores
-  - Wiki documentation covering flashing, architecture, builds, and community resources
+  - Immutable OS — read-only root, built-in rescue, safe to experiment
+  - 186 devices — ARM, AArch64, RISC-V, and x86_64 out of the box
+  - 50+ emulated systems, 40+ native ports, 8 game engines
   logos:
   - image: /assets/images/logo-regstation.webp
     label: REG-Station
@@ -21,26 +21,21 @@ hero:
     width: 420
     height: 202
 features:
-- title: REG-Station Frontend
-  description: REG-Station, a bespoke REG frontend, delivers a slick nostalgic UI
-    that is simple to tweak.
-- title: Feature rich curation
-  description: An ever-growing catalog of native ports, engines, and tools sits alongside
-    the default emulator stack.
-- title: Rock solid OS
-  description: Immutable Buildroot base plus an integrated rescue workflow keep experiments
-    safe, backed by a community that keeps the system stable and well maintained.
-- title: Endless gaming possibilities
-  description: Play arcade, console, and computer classics, switching cores or ports
-    with a single menu action.
-- title: Wide hardware support
-  description: From aging laptops to modern SBCs and handhelds, REG targets diverse
-    devices with tuned kernels.
+- title: REG-Station frontend
+  description: A custom frontend built on top of EmulationStation. Browse your library, configure controllers, and tweak settings without touching a terminal.
+- title: Pre-configured emulators
+  description: RetroArch, MAME, Dolphin, PCSX2, and 50+ systems work out of the box with sensible defaults for controls, video, and audio.
+- title: Immutable and recoverable
+  description: The root filesystem is read-only. If something goes wrong, the built-in rescue mode gets you back in seconds. Your games are always safe.
+- title: Native ports and engines
+  description: Doom, Quake, Cave Story, ScummVM, and 40+ more games run natively — no emulation overhead.
+- title: 186 supported devices
+  description: Raspberry Pi, Anbernic handhelds, Rockchip SBCs, Steam Deck, ASUS ROG Ally, and everything in between. One image per device, flash and boot.
 stack:
   highlights:
-  - RetroArch (multi-system) with curated core presets
-  - MAME builds tuned for arcade accuracy
-  - "Additional native ports for DOS, ScummVM, Pico-8\u2013style engines, and more"
+  - RetroArch with curated core presets per system
+  - MAME for arcade accuracy
+  - Native ports for Doom, Quake, ScummVM, and more
   logos:
   - image: /assets/images/emulators/retroarch.png
     label: RetroArch
@@ -70,45 +65,17 @@ stack:
     label: OpenBOR
 hardware_cards:
 - title: Single-board computers
-  body: From Raspberry Pi-style boards to RK3588 powerhouses, default settings ensure video,
-    audio, and I/O just work.
+  body: Raspberry Pi, Orange Pi, Radxa, Khadas, and more. Plug in, boot, play.
 - title: Handhelds & mini consoles
-  body: REG keeps controls responsive and includes handheld-friendly themes plus suspend-safe
-    defaults.
+  body: Anbernic, Powkiddy, Retroid, AYN, AYANEO. Controls and suspend work out of the box.
 - title: Laptops & desktops
-  body: Install on internal storage or boot from USB for a dedicated gaming partition
-    that remains isolated.
-doc_cards:
-- title: Getting Started
-  body: Choose an image, flash it safely, and get controller-friendly onboarding tips
-    for REG-Station.
-  url: https://reglinux.org/wiki/getting-started/
-  link_label: Open guide
-- title: Installation
-  body: Supported platforms span ARM (Allwinner, Rockchip, Amlogic), AArch64 (RK3588,
-    Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs.
-  url: https://reglinux.org/wiki/installation/
-  link_label: View devices
-- title: Architecture
-  body: Immutable Buildroot layout with sysvinit, a squashfs root, and configurable
-    /userdata partitions for game storage.
-  url: https://reglinux.org/wiki/architecture/
-  link_label: Explore architecture
-- title: Developer Guide
-  body: Build from source with commands like `make h700-build` and tweak configurations
-    inside the configs directory.
-  url: https://reglinux.org/wiki/dev-guide/
-  link_label: See build notes
+  body: x86_64 builds for Steam Deck, ROG Ally, or any PC. Boot from USB or install to disk.
 getting_started_steps:
-- title: Choose the right image.
-  body: Visit the download page, consult the wiki installation guide for supported
-    devices, and grab the latest release that matches your hardware.
-- title: Flash to storage.
-  body: "Follow the wiki's recommended tools \u2014 balenaEtcher, Raspberry Pi Imager,\
-    \ or plain `dd` \u2014 and verify the image on your SD card or SSD."
-- title: First boot & setup.
-  body: Power on, let the one-time setup run through, pair controllers, and reference
-    the wiki for troubleshooting or controller mapping tips.
-- title: Load your library.
-  body: Add ROMs via network share, USB drive, or the built-in file manager, then
-    refresh the gamelist per the wiki's guidance.
+- title: Download your image.
+  body: Pick your device on the download page and grab the latest build.
+- title: Flash to SD card or SSD.
+  body: Use balenaEtcher, Raspberry Pi Imager, or dd. Takes about two minutes.
+- title: Boot and set up.
+  body: Power on, wait for first-boot setup, pair your controllers.
+- title: Add your games.
+  body: Copy ROMs via network share, USB, or the built-in file manager.
