@@ -1,40 +1,18 @@
 ---
 title: Anbernic RG34XX
-description: '| SoC | CPU | GPU | | --- | --- | --- | | Allwinner H700 | ARM Cortex-A53
-  (Quad-core) @ 1.4 GHz | Mali G31 | Section: Handhelds / Anbernic / rg34xx.'
+description: REG Linux on Anbernic RG34XX powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg34xx
-url: https://REG Linux.org/handhelds/anbernic/rg34xx
-generated: 2025-11-23 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
 # Anbernic RG34XX
 
 
-## Hardware
+## Hardware & Compatibility
 
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Allwinner H700 | ARM Cortex-A53 (Quad-core) @ 1.4 GHz | Mali G31 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| 3.4-inch 720*480 | 1 GB LPDDR4 | None | 2.4/5 GHz WiFi + BT |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Mainline Linux | Panfrost (GL 3.1/GLES 3.1) | Sway | REG-ES |
-
-## Features
-
-| Feature | Notes |
-| --- | --- |
-| Storage | REG Linux can be run from an SD Card and an second SD card can be used to store games |
-| Wifi | Can be turned on in REG-ES under Main Menu > Network Settings |
-| Bluetooth | Supports bluetooth audio and controllers |
-| LED | Supports selecting from a set of colors or turning the power LED off (choice persists through reboots) Does not support other effects. |
+<div data-reg-compat="anbernic-rg34xx:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 

@@ -1,0 +1,35 @@
+---
+import '../../styles/global.css';
+import { DeviceDetail } from '../../components/DeviceDetail';
+import devices from '../../data/devices.json';
+
+export function getStaticPaths() {
+  return devices.map((d: { id: string }) => ({ params: { id: d.id } }));
+}
+
+const { id } = Astro.params;
+const device = devices.find((d: { id: string; title: string }) => d.id === id);
+const title = device ? device.title : id;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title} — REG-Linux Compatibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://reglinux.org/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="https://reglinux.org" class="site-logo">
+        <img src="https://reglinux.org/assets/images/reg_linux_logo-sm.webp" alt="REG-Linux" />
+      </a>
+      <span class="separator">/</span>
+      <a href="/" style="color: var(--text-muted); text-decoration: none;">Matrix</a>
+      <span class="separator">/</span>
+      <span class="page-title">{title}</span>
+    </header>
+    <main>
+      <DeviceDetail deviceId={id!} client:only="react" />
+    </main>
+  </body>
+</html>

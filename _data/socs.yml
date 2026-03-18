@@ -1,16 +1,28 @@
-# System-on-Chip catalog.
-# Fill CPU/GPU/kernel details as you verify them.
+allwinner-a133:
+  manufacturer: Allwinner
+  model: A133
+  slug: allwinner-a133
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: ''
+    driver: PowerVR GE8300
+  kernel_version: 4.9.191
 allwinner-h2:
   cpu:
     arch: ARMv7-A
     cores: '4'
-    max_clock: '1.2 GHz'
+    max_clock: 1.2 GHz
     model: Cortex-A7
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Mali-400 MP2
     driver: Mesa3D (Lima)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Allwinner
   model: H2+
   slug: allwinner-h2
@@ -18,13 +30,13 @@ allwinner-h3:
   cpu:
     arch: ARMv7-A
     cores: '4'
-    max_clock: '1.2 GHz'
+    max_clock: 1.2 GHz
     model: Cortex-A7
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Mali-400 MP2
     driver: Mesa3D (Lima)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Allwinner
   model: H3
   slug: allwinner-h3
@@ -32,13 +44,13 @@ allwinner-h5:
   cpu:
     arch: ARMv8-A
     cores: '4'
-    max_clock: '1.4 GHz'
+    max_clock: 1.4 GHz
     model: Cortex-A53
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Mali-450 MP4
     driver: Mesa3D (Lima)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Allwinner
   model: H5
   slug: allwinner-h5
@@ -46,13 +58,13 @@ allwinner-h6:
   cpu:
     arch: ARMv8-A
     cores: '4'
-    max_clock: '1.8 GHz'
+    max_clock: 1.8 GHz
     model: Cortex-A53
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Mali-T720 MP2
     driver: Mesa3D (Panfrost)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Allwinner
   model: H6
   slug: allwinner-h6
@@ -60,13 +72,13 @@ allwinner-h616:
   cpu:
     arch: ARMv8-A
     cores: '4'
-    max_clock: '1.5 GHz'
+    max_clock: 1.5 GHz
     model: Cortex-A53
   gpu:
-    api: 'OpenGL ES 3.1'
+    api: OpenGL ES 3.1
     model: Mali-G31 MP2
     driver: Mesa3D (Panfrost)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Allwinner
   model: H616
   slug: allwinner-h616
@@ -74,13 +86,13 @@ allwinner-h618:
   cpu:
     arch: ARMv8-A
     cores: '4'
-    max_clock: '1.5 GHz'
+    max_clock: 1.5 GHz
     model: Cortex-A53
   gpu:
-    api: 'OpenGL ES 3.1'
+    api: OpenGL ES 3.1
     model: Mali-G31 MP2
     driver: Mesa3D (Panfrost)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Allwinner
   model: H618
   slug: allwinner-h618
@@ -88,24 +100,66 @@ allwinner-h700:
   cpu:
     arch: ARMv8-A
     cores: '4'
-    max_clock: '1.5 GHz'
+    max_clock: 1.5 GHz
     model: Cortex-A53
   gpu:
-    api: 'OpenGL ES 3.1'
+    api: OpenGL ES 3.1
     model: Mali-G31 MP2
     driver: Mesa3D (Panfrost)
   kernel_version: 6.18.4
   manufacturer: Allwinner
   model: H700
   slug: allwinner-h700
+allwinner-r16:
+  manufacturer: Allwinner
+  model: R16
+  slug: allwinner-r16
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A7
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Lima)
+  kernel_version: ''
+allwinner-sun50i:
+  manufacturer: Allwinner
+  model: H5/H6
+  slug: allwinner-sun50i
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Panfrost)
+  kernel_version: ''
+allwinner-t527:
+  manufacturer: Allwinner
+  model: T527
+  slug: allwinner-t527
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A55
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Panfrost)
+  kernel_version: ''
 amd-ryzen-z1:
   cpu:
     arch: x86_64
     cores: '6'
-    max_clock: '3.5 GHz'
+    max_clock: 3.5 GHz
     model: x86_64
   gpu:
-    api: 'Vulkan'
+    api: Vulkan
     model: AMD RDNA 3
     driver: Mesa3D
   kernel_version: 6.18.4
@@ -116,10 +170,10 @@ amd-zen-2-apu:
   cpu:
     arch: x86_64
     cores: '4'
-    max_clock: '3.5 GHz'
+    max_clock: 3.5 GHz
     model: x86_64
   gpu:
-    api: 'Vulkan'
+    api: Vulkan
     model: AMD RDNA 2
     driver: Mesa3D
   kernel_version: 6.18.4
@@ -130,13 +184,13 @@ amlogic-a311d:
   cpu:
     arch: ARMv8-A
     cores: '6'
-    max_clock: '2.2 GHz'
+    max_clock: 2.2 GHz
     model: Cortex-A73/A53
   gpu:
-    api: 'OpenGL ES 3.1'
+    api: OpenGL ES 3.1
     model: Mali-G52 MP4
     driver: Mesa3D (Panfrost)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Amlogic
   model: A311D
   slug: amlogic-a311d
@@ -150,10 +204,24 @@ amlogic-a311d2:
     api: ''
     model: Mali
     driver: Mesa3D (Panfrost)
-  kernel_version: '5.15 (Amlogic)'
+  kernel_version: 5.15 (Amlogic)
   manufacturer: Amlogic
   model: A311D2
   slug: amlogic-a311d2
+amlogic-s812:
+  manufacturer: Amlogic
+  model: S812
+  slug: amlogic-s812
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A9
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Lima)
+  kernel_version: 6.18.17
 amlogic-s905-x:
   cpu:
     arch: ARMv8-A
@@ -197,13 +265,13 @@ amlogic-s905x5m:
   cpu:
     arch: ARMv8-A
     cores: '4'
-    max_clock: '2.5 GHz'
+    max_clock: 2.5 GHz
     model: Cortex-A55
   gpu:
-    api: 'Vulkan'
+    api: Vulkan
     model: Mali-G310
     driver: libmali
-  kernel_version: '5.15 (Amlogic)'
+  kernel_version: 5.15 (Amlogic)
   manufacturer: Amlogic
   model: S905X5M
   slug: amlogic-s905x5m
@@ -272,6 +340,20 @@ amlogic-s922x-h:
   manufacturer: Amlogic
   model: S922X-H
   slug: amlogic-s922x-h
+apple-m1:
+  manufacturer: Apple
+  model: M1/M2
+  slug: apple-m1
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: ''
+  gpu:
+    api: ''
+    model: ''
+    driver: ''
+  kernel_version: ''
 broadcom-bcm2711:
   cpu:
     arch: ARMv8-A
@@ -279,9 +361,9 @@ broadcom-bcm2711:
     max_clock: ''
     model: Cortex-A72
   gpu:
-    api: 'Vulkan'
+    api: Vulkan
     model: Broadcom V3D
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Broadcom
   model: BCM2711
   slug: broadcom-bcm2711
@@ -292,9 +374,9 @@ broadcom-bcm2712:
     max_clock: ''
     model: Cortex-A76
   gpu:
-    api: 'Vulkan'
+    api: Vulkan
     model: Broadcom V3D
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Broadcom
   model: BCM2712
   slug: broadcom-bcm2712
@@ -305,10 +387,10 @@ broadcom-bcm2835:
     max_clock: ''
     model: ''
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Broadcom VC4
     driver: Mesa3D (vc4)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Broadcom
   model: BCM2835
   slug: broadcom-bcm2835
@@ -319,10 +401,10 @@ broadcom-bcm2836:
     max_clock: ''
     model: Cortex-A7
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Broadcom VC4
     driver: Mesa3D (vc4)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Broadcom
   model: BCM2836
   slug: broadcom-bcm2836
@@ -333,10 +415,10 @@ broadcom-bcm2837:
     max_clock: ''
     model: Cortex-A53
   gpu:
-    api: 'OpenGL ES 2.0'
+    api: OpenGL ES 2.0
     model: Broadcom VC4
     driver: Mesa3D (vc4)
-  kernel_version: '6.12 (LTS)'
+  kernel_version: 6.12 (LTS)
   manufacturer: Broadcom
   model: BCM2837
   slug: broadcom-bcm2837
@@ -353,6 +435,48 @@ genio-1200-mt8395:
   manufacturer: MediaTek
   model: Genio 1200 (MT8395)
   slug: genio-1200-mt8395
+ingenic-jz4770:
+  manufacturer: Ingenic
+  model: JZ4770
+  slug: ingenic-jz4770
+  cpu:
+    arch: MIPS32
+    cores: ''
+    max_clock: ''
+    model: ''
+  gpu:
+    api: ''
+    model: ''
+    driver: ''
+  kernel_version: 6.6.163
+intel-cyclone-v:
+  manufacturer: Intel
+  model: Cyclone V
+  slug: intel-cyclone-v
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A9
+  gpu:
+    api: ''
+    model: ''
+    driver: ''
+  kernel_version: ''
+nvidia-tegra-x1:
+  manufacturer: NVIDIA
+  model: Tegra X1
+  slug: nvidia-tegra-x1
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A57
+  gpu:
+    api: ''
+    model: ''
+    driver: ''
+  kernel_version: ''
 qualcomm-8gen2-sm8550:
   cpu:
     arch: ARMv8-A
@@ -392,6 +516,48 @@ qualcomm-sd865-sm8250:
   manufacturer: Qualcomm
   model: SD865 (SM8250)
   slug: qualcomm-sd865-sm8250
+qualcomm-sdm845:
+  manufacturer: Qualcomm
+  model: SDM845
+  slug: qualcomm-sdm845
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A75/A55
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Freedreno)
+  kernel_version: 6.18.17
+qualcomm-sm6115:
+  manufacturer: Qualcomm
+  model: SM6115
+  slug: qualcomm-sm6115
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A73/A53
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Freedreno)
+  kernel_version: 6.18.17
+rockchip-rk3128:
+  manufacturer: Rockchip
+  model: RK3128
+  slug: rockchip-rk3128
+  cpu:
+    arch: ARMv7-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A7
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Lima)
+  kernel_version: ''
 rockchip-rk3288:
   cpu:
     arch: ARMv7-A
@@ -418,6 +584,20 @@ rockchip-rk3326:
   manufacturer: Rockchip
   model: RK3326
   slug: rockchip-rk3326
+rockchip-rk3328:
+  manufacturer: Rockchip
+  model: RK3328
+  slug: rockchip-rk3328
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A53
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Lima)
+  kernel_version: ''
 rockchip-rk3399:
   cpu:
     arch: ARMv8-A
@@ -483,6 +663,20 @@ samsung-exynos-5422:
   manufacturer: Samsung
   model: Exynos 5422
   slug: samsung-exynos-5422
+spacemit-k1:
+  manufacturer: SpacemiT
+  model: K1
+  slug: spacemit-k1
+  cpu:
+    arch: RISC-V
+    cores: ''
+    max_clock: ''
+    model: ''
+  gpu:
+    api: ''
+    model: ''
+    driver: IMG PowerVR
+  kernel_version: ''
 starfive-jh7110:
   cpu:
     arch: ''

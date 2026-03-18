@@ -1,38 +1,18 @@
 ---
 title: Anbernic RG28XX
-description: '| SoC | CPU | GPU | | --- | --- | --- | | Allwinner H700 | ARM Cortex-A53
-  (Quad-core) @ 1.4 GHz | Mali G31 | Section: Handhelds / Anbernic / rg28xx.'
+description: REG Linux on Anbernic RG28XX powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg28xx
-url: https://REG Linux.org/handhelds/anbernic/rg28xx
-generated: 2025-11-23 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
 # Anbernic RG28XX
 
 
-## Hardware
+## Hardware & Compatibility
 
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Allwinner H700 | ARM Cortex-A53 (Quad-core) @ 1.4 GHz | Mali G31 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| 2.8-inch 640*480 | 1 GB LPDDR4 | None | None |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Mainline Linux | Panfrost (GL 3.1/GLES 3.1) | Sway | REG-ES |
-
-## Features
-
-| Feature | Notes |
-| --- | --- |
-| Storage | REG Linux can be run from an SD Card and an second SD card can be used to store games |
-| LED | Supports selecting from a set of colors or turning the power LED off (choice persists through reboots) Does not support other effects. |
+<div data-reg-compat="anbernic-rg28xx:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 

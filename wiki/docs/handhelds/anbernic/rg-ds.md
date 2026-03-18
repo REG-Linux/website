@@ -1,36 +1,23 @@
 ---
 title: Anbernic RG DS
-description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3568 | ARM Cortex-A55
-  (Quad-core) | Mali-G52 |'
+description: REG Linux on Anbernic RG DS powered by Rockchip RK3568.
 manufacturer: Anbernic
 slug: anbernic/rg-ds
-url: https://reglinux.org/handhelds/anbernic/rg-ds
+generated: 2026-03-18 22:56:02
 ---
 
 # Anbernic RG DS
 
-## Status
 
-- WIP (support in progress)
+## Hardware & Compatibility
 
-## Hardware
-
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Rockchip RK3568 | ARM Cortex-A55 (Quad-core) | Mali-G52 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| Dual screen 640x480 with dual touch screens | TBD | TBD | TBD |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD |
+<div data-reg-compat="anbernic-rg-ds:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 
 ### Installation
 
-Support for the RG DS is in progress. When images are available, follow the standard installation guide.
+Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.
+
+## Additional References

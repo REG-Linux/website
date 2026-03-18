@@ -4,5 +4,21 @@ _site/
 .static-server.log
 .tmp_*
 codex
+
+# Compat matrix
+.wrangler/
+compat/worker/node_modules/
+compat/dashboard/node_modules/
+compat/dashboard/dist/
+compat/dashboard/.astro/
+compat/widget/node_modules/
+compat/widget/dist/
+compat/scripts/devices_canonical.json
+compat/scripts/seed_devices.sql
+compat/scripts/seed_wiki_results.sql
+
+# Wiki generated output
+wiki/site/
 wiki/docs/assets/data/socs.yml
 wiki/docs/assets/data/socs.json
+compat/worker/dist/

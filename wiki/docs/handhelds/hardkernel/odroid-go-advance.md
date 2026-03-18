@@ -1,31 +1,18 @@
 ---
 title: Odroid Go Advance
-description: '| SoC | CPU | GPU | | --- | --- | --- | | Rockchip RK3326 | ARM Cortex-A35
-  (Quad-core) @ 1.3 GHz | Mali G31 |'
-manufacturer: Hardkernel
+description: REG Linux on Odroid Go Advance powered by Rockchip RK3326.
+manufacturer: HardKernel
 slug: hardkernel/odroid-go-advance
-url: https://REG Linux.org/handhelds/hardkernel/odroid-go-advance
-generated: 2025-11-23 18:01:10.842867
+generated: 2026-03-18 22:56:02
 ---
 
 # Odroid Go Advance
 
 
-## Hardware
+## Hardware & Compatibility
 
-| SoC | CPU | GPU |
-| --- | --- | --- |
-| Rockchip RK3326 | ARM Cortex-A35 (Quad-core) @ 1.3 GHz | Mali G31 |
-
-| Display | RAM | eMMC | Connectivity |
-| --- | --- | --- | --- |
-| 3.5-inch 480*320 | 1 GB DDR3L | None | Black Edition: 2.4 GHz (ESP32-S2) |
-
-## Software
-
-| Kernel | GPU drivers | Compositor | Interface |
-| --- | --- | --- | --- |
-| Mainline Linux | Panfrost (GL 3.1/GLES 3.1) | Sway | REG-ES |
+<div data-reg-compat="hardkernel-odroid-go-advance:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
 
