@@ -12,9 +12,9 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
   <section class="hero community-hero">
     <div class="hero-text">
       <p class="eyebrow">Community</p>
-      <h1>Connect with the REG Linux crew</h1>
+      <h1>Community</h1>
       <p class="lede">
-        Discuss hardware, discover build tips, share improvements, and help keep the wiki and builds polished. Our Discord, GitHub, and documentation hubs stay in sync with every release.
+        REG Linux is built by volunteers. Get help, report bugs, contribute code, or just hang out.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="https://discord.gg/a9HH4ZpVqp" target="_blank" rel="noreferrer">
@@ -30,7 +30,7 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
     <div class="hero-media">
       <figure>
         <img src="{{ '/assets/images/logo-regstation.webp' | relative_url }}" alt="REG-Station logo" loading="lazy" />
-        <figcaption>Community-sourced builds and docs.</figcaption>
+        <figcaption>REG-Station</figcaption>
       </figure>
     </div>
   </section>

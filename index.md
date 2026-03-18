@@ -14,10 +14,10 @@ preload_image: /assets/images/logo-regstation.webp
   <section class="hero" id="home">
     <div class="hero-text">
       <p class="eyebrow">Retro Emulation Gaming Linux</p>
-      <h1>All-in-one retrogaming for any device — ready in minutes.</h1>
+      <h1>Retro gaming OS for any device</h1>
       <p class="lede">
-        Dreamed up by retro fans and open-source tinkerers, REG Linux turns SBCs, handhelds, laptops, and desktops
-        into polished gaming rigs with a curated stack and friendly guides.
+        REG Linux turns SBCs, handhelds, and PCs into dedicated retro gaming machines.
+        Flash an image, boot, and play. 186 devices supported.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
@@ -49,18 +49,15 @@ preload_image: /assets/images/logo-regstation.webp
           </figure>
         {% endfor %}
       </div>
-      <p class="hero-media-note">REG Linux blends a customized REG-Station frontend with curated RetroArch cores on top of a rock-solid Linux foundation.</p>
+      <p class="hero-media-note">REG-Station frontend + RetroArch + mainline Linux kernel</p>
     </div>
   </section>
 
   <section class="feature-grid cv-auto" id="features">
     <div class="section-heading">
       <p class="eyebrow">What makes REG special</p>
-      <h2>Feature-rich out of the box</h2>
-      <p>
-        REG Linux ships with the pieces you expect from a dedicated retro rig—carefully tuned frontends,
-        tested emulators, community-requested ports, and a focus on reliability.
-      </p>
+      <h2>What you get</h2>
+      <p>Everything pre-configured. No setup headaches.</p>
     </div>
     <div class="grid">
       {% for feature in home.features %}
@@ -77,9 +74,7 @@ preload_image: /assets/images/logo-regstation.webp
       <div>
         <h2>Pre-configured emulator stack</h2>
         <p>
-          REG ships with the most requested emulators ready to play: RetroArch, MAME, and specialist cores for
-          handhelds, arcades, and microcomputers. Inputs, shaders, and hotkeys are pre configured, so you
-          can jump straight into the fun.
+          RetroArch, MAME, Dolphin, PCSX2, and more — all pre-configured with working controls, shaders, and hotkeys.
         </p>
         <ul class="stack-list">
           {% for item in home.stack.highlights %}
@@ -109,12 +104,9 @@ preload_image: /assets/images/logo-regstation.webp
   <section class="hardware cv-auto" id="hardware">
     <div class="section-heading">
       <p class="eyebrow">Hardware coverage</p>
-      <h2>Works where you play</h2>
+      <h2>Runs on your hardware</h2>
         <p>
-        REG relies on mainline LTS kernels whenever possible, making it easier to support SBC boards, handhelds,
-        mini consoles, and desktops. The wiki installation guide lists coverage for ARM (Allwinner, Rockchip, Amlogic),
-        AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs, so you can pick the proper guide for your
-        hardware.
+        186 devices across ARM, AArch64, RISC-V, and x86_64. One image per device, tuned for each board's kernel, GPU, and peripherals.
         </p>
     </div>
     <div class="hardware-grid">
@@ -142,7 +134,7 @@ preload_image: /assets/images/logo-regstation.webp
     <div class="cta-panel">
       <div>
         <h3>Need help?</h3>
-        <p>Read the wiki, join Discord, or open a GitHub issue — contributors are active and eager to assist.</p>
+        <p>Check the <a href="/wiki/">wiki</a>, ask on <a href="https://discord.gg/a9HH4ZpVqp" target="_blank">Discord</a>, or file a <a href="https://github.com/REG-Linux" target="_blank">GitHub issue</a>.</p>
       </div>
       <a class="btn primary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Get support</a>
     </div>
@@ -151,10 +143,9 @@ preload_image: /assets/images/logo-regstation.webp
   <section class="community cv-auto" id="community">
     <div class="section-heading">
       <p class="eyebrow">Open source & community</p>
-      <h2>Build with the REG team</h2>
+      <h2>Get involved</h2>
       <p>
-        REG Linux is driven by volunteers. Whether you file bugs, port engines, design themes, or help with docs,
-        every contribution keeps the project thriving.
+        REG Linux is open source and community-driven. Report bugs, contribute code, write docs, or just hang out.
       </p>
     </div>
     <div class="community-links">
