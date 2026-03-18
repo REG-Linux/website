@@ -83,17 +83,32 @@ description: Browse all devices supported by REG Linux — handhelds, SBCs, TV b
     </div>
   </section>
 
-  <!-- Manufacturer logos -->
-  <section class="manufacturer-strip">
+  <!-- Manufacturers -->
+  <section class="manufacturer-section">
     <div class="section-heading">
-      <h2>Manufacturers</h2>
+      <p class="eyebrow">Manufacturers</p>
+      <h2>Hardware makers</h2>
     </div>
-    <div class="manufacturer-logos">
+    <div class="manufacturer-grid">
       {% assign sorted_manufacturers = manufacturers | sort: "name" %}
       {% for mfr in sorted_manufacturers %}
-        <a href="{{ mfr.url }}" target="_blank" rel="noreferrer" class="manufacturer-logo-link" title="{{ mfr.name }}">
-          <img src="{{ mfr.logo_image | relative_url }}" alt="{{ mfr.name }}" loading="lazy" />
+        {% assign mfr_count = 0 %}
+        {% for d in devices_data %}
+          {% if d[1].brand == mfr.id %}
+            {% assign mfr_count = mfr_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {% if mfr_count > 0 %}
+        <a href="{{ mfr.url }}" target="_blank" rel="noreferrer" class="manufacturer-card" title="{{ mfr.name }}">
+          <div class="mfr-logo">
+            <img src="{{ mfr.logo_image | relative_url }}" alt="{{ mfr.name }}" loading="lazy" />
+          </div>
+          <div class="mfr-info">
+            <strong>{{ mfr.name }}</strong>
+            <span class="mfr-count">{{ mfr_count }} device{{ mfr_count | minus: 1 | at_least: 1 | divided_by: 1 }}{% if mfr_count != 1 %}s{% endif %}</span>
+          </div>
         </a>
+        {% endif %}
       {% endfor %}
     </div>
   </section>
@@ -146,17 +161,18 @@ description: Browse all devices supported by REG Linux — handhelds, SBCs, TV b
   }
   .device-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
   }
   .device-card {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
     background: var(--card, rgba(12,16,28,0.75));
     border: 1px solid var(--border, rgba(255,255,255,0.08));
-    border-radius: 12px;
+    border-radius: var(--radius, 18px);
+    box-shadow: var(--shadow, 0 25px 60px rgba(3,9,27,0.55));
     text-decoration: none;
     color: var(--text, #f4f6fb);
     transition: transform 0.15s, border-color 0.15s;
@@ -167,14 +183,14 @@ description: Browse all devices supported by REG Linux — handhelds, SBCs, TV b
     text-decoration: none;
   }
   .device-card[data-hidden="true"] { display: none; }
-  .device-media { width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-  .device-media img { max-width: 50px; max-height: 50px; object-fit: contain; border-radius: 6px; }
-  .device-info { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
-  .device-name { font-size: 0.85rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .device-soc { font-size: 0.72rem; color: var(--text-muted, #b2bed1); font-family: 'JetBrains Mono', monospace; }
+  .device-media { width: 72px; height: 72px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .device-media img { max-width: 72px; max-height: 72px; object-fit: contain; border-radius: 8px; }
+  .device-info { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
+  .device-name { font-size: 0.95rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .device-soc { font-size: 0.78rem; color: var(--text-muted, #b2bed1); font-family: 'JetBrains Mono', monospace; }
   .device-type-badge {
-    font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
-    width: fit-content; padding: 0.05rem 0.35rem; border-radius: 999px;
+    font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+    width: fit-content; padding: 0.1rem 0.45rem; border-radius: 999px;
   }
   .device-type-handheld { color: #2bb0e9; background: rgba(43,176,233,0.1); }
   .device-type-sbc { color: #a78bfa; background: rgba(167,139,250,0.1); }
@@ -182,18 +198,35 @@ description: Browse all devices supported by REG Linux — handhelds, SBCs, TV b
   .device-type-pc { color: #f472b6; background: rgba(244,114,182,0.1); }
   .device-type-console { color: #22c55e; background: rgba(34,197,94,0.1); }
   .device-type-unknown { color: #6b7280; background: rgba(107,114,128,0.1); }
-  .manufacturer-strip { margin-top: 3rem; }
-  .manufacturer-logos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
+  .manufacturer-section { margin-top: 3rem; }
+  .manufacturer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
   }
-  .manufacturer-logo-link { opacity: 0.6; transition: opacity 0.2s; }
-  .manufacturer-logo-link:hover { opacity: 1; }
-  .manufacturer-logo-link img { height: 32px; width: auto; filter: grayscale(0.3); }
+  .manufacturer-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--card, rgba(12,16,28,0.75));
+    border: 1px solid var(--border, rgba(255,255,255,0.08));
+    border-radius: var(--radius, 18px);
+    box-shadow: var(--shadow, 0 25px 60px rgba(3,9,27,0.55));
+    text-decoration: none;
+    color: var(--text, #f4f6fb);
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .manufacturer-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent, #2bb0e9);
+    text-decoration: none;
+  }
+  .mfr-logo { width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .mfr-logo img { max-width: 40px; max-height: 40px; object-fit: contain; }
+  .mfr-info { display: flex; flex-direction: column; gap: 0.1rem; }
+  .mfr-info strong { font-size: 0.85rem; }
+  .mfr-count { font-size: 0.72rem; color: var(--text-muted, #b2bed1); }
 </style>
 
 <script>
