@@ -2,18 +2,16 @@
 layout: default
 title: What you can play
 permalink: /play/
-body_class: play
+body_class: emulators
 description: Emulators, game engines, and native ports bundled with REG Linux — arcade, console, computer, and indie games ready out of the box.
 ---
-{% assign emulators = site.data.emulators %}
+{% assign emulator_categories = site.data.emulators %}
 {% assign engines = site.data.engines %}
 {% assign ports = site.data.ports %}
-{% assign bundled = site.data.bundled %}
-{% assign bundled_games = site.data.bundled_games %}
 {% include site-header.html nav_current="play" %}
 
 <main>
-  <section class="hero">
+  <section class="hero doc-hero">
     <div class="hero-text">
       <p class="eyebrow">50+ systems &middot; 40+ ports &middot; 8 engines</p>
       <h1>Play everything</h1>
@@ -26,47 +24,57 @@ description: Emulators, game engines, and native ports bundled with REG Linux �
         <a class="btn secondary" href="https://reglinux.org/wiki/systems/" target="_blank" rel="noreferrer">Full systems list on wiki</a>
       </div>
     </div>
+    <div class="hero-media">
+      <figure>
+        <img src="{{ '/assets/images/logo-regstation.webp' | relative_url }}" alt="REG-Station" loading="lazy" />
+        <figcaption>REG-Station organizes all systems, ports, and engines.</figcaption>
+      </figure>
+    </div>
   </section>
 
   <!-- Emulators -->
-  <section class="play-section cv-auto" id="emulators">
+  <section class="doc-section" id="emulators">
     <div class="section-heading">
       <p class="eyebrow">Emulators</p>
       <h2>Arcade, console, and computer</h2>
       <p>All emulators are pre-configured with sensible defaults for controls, video, and audio.</p>
     </div>
-    {% for group in emulators %}
-      <h3>{{ group.title }}</h3>
-      <p>{{ group.description }}</p>
-      <div class="emulator-grid">
-        {% for system in group.systems %}
-          <figure class="emulator-card">
-            <img src="{{ system.image | relative_url }}" alt="{{ system.alt }}" loading="lazy" />
-            <figcaption>
-              <strong>{{ system.name }}</strong>
-              <span>{{ system.caption }}</span>
-            </figcaption>
-          </figure>
-        {% endfor %}
-      </div>
-    {% endfor %}
+    <div class="grid">
+      {% for category in emulator_categories %}
+        <article class="card">
+          <h3>{{ category.title }}</h3>
+          <p>{{ category.description }}</p>
+          <div class="{{ category.grid_class }}">
+            {% for system in category.systems %}
+              <figure class="emulator-tile">
+                <img src="{{ system.image | relative_url }}" alt="{{ system.alt }}" loading="lazy" />
+                <figcaption>
+                  <strong>{{ system.name }}</strong>
+                  <span>{{ system.caption }}</span>
+                </figcaption>
+              </figure>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
   </section>
 
   <!-- Game Engines -->
-  <section class="play-section cv-auto" id="engines">
+  <section class="doc-section" id="engines">
     <div class="section-heading">
       <p class="eyebrow">Game engines</p>
-      <h2>Run games natively</h2>
-      <p>Open-source engines that play specific game formats directly, without emulation.</p>
+      <h2>Open-source runtimes</h2>
+      <p>Run game formats natively — no emulation overhead.</p>
     </div>
     <div class="engine-grid">
       {% for engine in engines %}
         <article class="card engine-card">
-          <div class="engine-logos">
+          <figure class="engine-logo">
             {% for logo in engine.logos %}
               <img src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}" loading="lazy" />
             {% endfor %}
-          </div>
+          </figure>
           <h3>{{ engine.name }}</h3>
           <p>{{ engine.description }}</p>
           <a class="btn secondary" href="{{ engine.url }}" target="_blank" rel="noreferrer">{{ engine.cta_label }}</a>
@@ -76,53 +84,35 @@ description: Emulators, game engines, and native ports bundled with REG Linux �
   </section>
 
   <!-- Ports -->
-  <section class="play-section cv-auto" id="ports">
+  <section class="doc-section ports-grid-section" id="ports">
     <div class="section-heading">
       <p class="eyebrow">Native ports</p>
       <h2>Classic games, rebuilt for Linux</h2>
-      <p>Source ports and reimplementations that run natively — no emulation overhead.</p>
+      <p>Source ports and reimplementations that run natively.</p>
     </div>
-    <div class="port-grid">
+    <div class="ports-grid">
       {% for port in ports %}
         <article class="card port-card">
           {% if port.logo %}
-            <img src="{{ port.logo.src | relative_url }}" alt="{{ port.logo.alt }}" loading="lazy" class="port-logo" />
+            <figure class="port-logo">
+              <img src="{{ port.logo.src | relative_url }}" alt="{{ port.logo.alt }}" loading="lazy" />
+            </figure>
           {% endif %}
-          <div>
-            <h3>{{ port.name }}{% if port.release_year %} <small>({{ port.release_year }})</small>{% endif %}</h3>
-            <p>{{ port.overview }}</p>
-          </div>
+          <h3>{{ port.name }}</h3>
+          <p class="port-overview">{{ port.overview }}</p>
+          {% if port.release_year != "" %}
+            <ul class="port-meta">
+              <li><strong>Release year:</strong> {{ port.release_year }}</li>
+            </ul>
+          {% endif %}
+          <p class="port-extensions"><strong>Extensions:</strong> {{ port.extensions }}</p>
+          <a class="btn secondary" href="{{ port.url }}" target="_blank" rel="noreferrer">Read port notes</a>
         </article>
       {% endfor %}
     </div>
   </section>
 
-  <!-- Bundled Games -->
-  <section class="play-section cv-auto" id="bundled">
-    <div class="section-heading">
-      <p class="eyebrow">Ready on first boot</p>
-      <h2>Bundled games</h2>
-      <p>{{ bundled.hero.lede }}</p>
-    </div>
-    <div class="bundled-grid">
-      {% for game in bundled_games %}
-        <article class="card bundled-card">
-          {% if game.image %}
-            <img src="{{ game.image | relative_url }}" alt="{{ game.name }}" loading="lazy" class="bundled-image" />
-          {% endif %}
-          <div>
-            <h3>{{ game.name }}</h3>
-            <p class="bundled-meta">{{ game.platform }} &middot; {{ game.genre }} &middot; {{ game.developer }}</p>
-            <p>{{ game.description }}</p>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-    <p class="small muted" style="margin-top: 1rem;">{{ bundled.legal }}</p>
+  <section class="doc-actions">
+    <a class="btn primary" href="{{ '/bundled-games/' | relative_url }}">Bundled games — free and legal, playable on first boot</a>
   </section>
 </main>
-
-<footer class="site-footer">
-  {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free and community supported.</p>
-</footer>

@@ -15,7 +15,6 @@ layout: default
 {% assign device_image_small = device_image | replace: '.webp', '-sm.webp' %}
 {% assign device_image_small_width = device_image_width | divided_by: 2 %}
 {% assign device_board_url = page.board_url | default: device_lookup.board_url %}
-{% assign device_description = page.description | default: device_lookup.description | default: "REG Linux image for " | append: device_title | append: "." %}
 {% assign raw_manufacturer = page.manufacturer | default: device_lookup.manufacturer %}
 {% if raw_manufacturer %}
   {% assign manufacturers_list = raw_manufacturer %}
@@ -29,8 +28,6 @@ layout: default
   {% assign soc_list = 'Unknown' | split: "|" %}
 {% endif %}
 {% assign soc_text = soc_list | join: ', ' %}
-{% assign notes_summary = device_notes.summary %}
-{% assign device_lede = page.lede | default: notes_summary | default: device_lookup.lede | default: device_title | append: " pairs the " | append: soc_text | append: " SoC with the REG Linux stack for a polished retro console." %}
 {% assign board_link = device_board_url | default: "https://reglinux.org" %}
 {% assign device_url = '/download/' | append: device_slug | append: '/' | relative_url %}
 {% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
@@ -48,16 +45,15 @@ layout: default
     {% endfor %}
   {% endif %}
 {% endfor %}
-{% include site-header.html nav_current="download" ghost_label="Back to downloads" %}
+{% include site-header.html nav_current="devices" ghost_label="All devices" ghost_href="/download/" %}
 
 <main>
-  {% assign brand_anchor = device_brand | slugify %}
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <a href="{{ '/' | relative_url }}">Home</a>
     <span class="crumb-sep">/</span>
-    <a href="{{ '/download/' | relative_url }}">Download</a>
+    <a href="{{ '/devices/' | relative_url }}">Devices</a>
     <span class="crumb-sep">/</span>
-    <a href="{{ '/download/' | relative_url }}#brand-{{ brand_anchor }}">{{ device_brand }}</a>
+    <a href="{{ '/download/' | relative_url }}#brand-{{ device_brand | slugify }}">{{ device_brand }}</a>
     <span class="crumb-sep">/</span>
     <span aria-current="page">{{ device_title }}</span>
   </nav>
@@ -66,42 +62,28 @@ layout: default
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "{{ '/' | absolute_url }}"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Download",
-          "item": "{{ '/download/' | absolute_url }}"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "{{ device_title }}",
-          "item": "{{ device_url | absolute_url }}"
-        }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ '/' | absolute_url }}" },
+        { "@type": "ListItem", "position": 2, "name": "Devices", "item": "{{ '/devices/' | absolute_url }}" },
+        { "@type": "ListItem", "position": 3, "name": "{{ device_title }}", "item": "{{ device_url | absolute_url }}" }
       ]
     }
   </script>
 
+  <!-- Hero: device image + key info + download -->
   <section class="hero download-hero device-hero">
     <div class="hero-text">
-      <p class="eyebrow">REG Linux device image</p>
       <h1>{{ device_title }}</h1>
-      <p class="lede">{{ device_lede }}</p>
-      <div class="hero-cta">
-        <a class="btn primary" href="{{ '/download/' | relative_url }}#brand-{{ device_brand | slugify }}">More {{ device_brand }} devices</a>
-        <a class="btn secondary" href="{{ board_link }}" target="_blank" rel="noreferrer">Official board page</a>
-      </div>
       <ul class="hero-highlights">
-        <li>Manufacturer: {{ manufacturers_list | join: ', ' }}</li>
-        <li>SoC: {{ soc_list | join: ', ' }}</li>
+        <li><strong>{{ device_brand }}</strong> &middot; {{ soc_text }}</li>
         <li><a href="{{ device_download }}" target="_blank" rel="noreferrer">Download image</a></li>
+        {% if device_board_url %}
+          <li><a href="{{ device_board_url }}" target="_blank" rel="noreferrer">Wiki page</a></li>
+        {% endif %}
       </ul>
+      <div class="hero-cta">
+        <a class="btn primary" href="{{ device_download }}" target="_blank" rel="noreferrer">Download</a>
+        <a class="btn secondary" href="https://compat.reglinux.org/device/{{ device_slug }}" target="_blank" rel="noreferrer">Compatibility details</a>
+      </div>
     </div>
     <div class="hero-media">
       <div class="device-quick-card">
@@ -120,26 +102,20 @@ layout: default
             />
           {% endif %}
         </div>
-        <div class="device-quick-info">
-          <h3>Quick specs</h3>
-          <ul class="device-quick-list">
-            <li><strong>Manufacturer:</strong> {{ manufacturers_list | join: ', ' }}</li>
-            <li><strong>SoC:</strong> {{ soc_list | join: ', ' }}</li>
-            <li><strong>Download:</strong> Coming soon</li>
-          </ul>
-        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Compatibility widget: shows hardware specs + live compat status -->
+  <section class="device-compat cv-auto">
+    <div data-reg-compat="{{ device_slug }}:specs"></div>
+    <script src="https://compat.reglinux.org/widget.js"></script>
   </section>
 
   {% if device_notes %}
     <section class="device-notes cv-auto">
       <div class="section-heading">
-        <p class="eyebrow">Device notes</p>
-        <h2>What to expect on {{ device_title }}</h2>
-        {% if device_notes.summary and device_lede != device_notes.summary %}
-          <p>{{ device_notes.summary }}</p>
-        {% endif %}
+        <h2>Device notes</h2>
       </div>
       <div class="notes-grid">
         {% if device_notes.best_for %}
@@ -150,7 +126,7 @@ layout: default
         {% endif %}
         {% if device_notes.field_notes %}
           <article class="note-card">
-            <h3>Field notes</h3>
+            <h3>Notes</h3>
             <ul>
               {% for note in device_notes.field_notes %}
                 <li>{{ note }}</li>
@@ -160,7 +136,7 @@ layout: default
         {% endif %}
         {% if device_notes.known_limits %}
           <article class="note-card">
-            <h3>Known limits</h3>
+            <h3>Known issues</h3>
             <ul>
               {% for limit in device_notes.known_limits %}
                 <li>{{ limit }}</li>
@@ -168,92 +144,32 @@ layout: default
             </ul>
           </article>
         {% endif %}
-        {% if device_notes.compatibility_checks %}
-          <article class="note-card">
-            <h3>Compatibility checks</h3>
-            <div class="compatibility-chips">
-              {% for check in device_notes.compatibility_checks %}
-                <span class="chip">{{ check }}</span>
-              {% endfor %}
-            </div>
-          </article>
-        {% endif %}
       </div>
     </section>
   {% endif %}
 
-  <section class="device-specs cv-auto">
-    <div class="section-heading">
-      <p class="eyebrow">Hardware specifications</p>
-      <h2>Built for {{ device_brand }}</h2>
-      <p>REG Linux targets this hardware profile so you can flash and play without manual tweaking.</p>
-    </div>
-    <div class="spec-grid">
-      <div class="spec-card">
-        <h3>Manufacturer</h3>
-        <p>{{ manufacturers_list | join: ', ' }}</p>
-      </div>
-      <div class="spec-card">
-        <h3>SoC</h3>
-        <p>{{ soc_list | join: ', ' }}</p>
-      </div>
-      <div class="spec-card">
-        <h3>Download link</h3>
-        <a class="btn primary large" href="{{ device_download }}" target="_blank" rel="noreferrer">Coming soon</a>
-      </div>
-    </div>
-  </section>
-
+  <!-- Install -->
   <section class="install-notes cv-auto">
     <div class="section-heading">
-      <p class="eyebrow">Install notes</p>
-      <h2>Flash {{ device_title }} and boot</h2>
-      <p>Follow the workflow below; the official board page contains any extra quirks for the {{ soc_list | join: ', ' }} platform.</p>
+      <h2>Installation</h2>
     </div>
     <ol class="steps">
       <li>
-        <strong>Grab the image.</strong> Download the latest {{ device_title }} build from the downloads page or the <a href="{{ board_link }}" target="_blank" rel="noreferrer">official board entry</a>.
+        <strong>Download.</strong> Get the latest {{ device_title }} image from the <a href="{{ device_download }}" target="_blank" rel="noreferrer">downloads page</a>{% if device_board_url %} or the <a href="{{ device_board_url }}" target="_blank" rel="noreferrer">wiki</a>{% endif %}.
       </li>
       <li>
-        <strong>Flash to storage.</strong> Use <a href="https://etcher.balena.io/" target="_blank" rel="noreferrer">balenaEtcher</a>, <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noreferrer">Raspberry Pi Imager</a>, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
+        <strong>Flash.</strong> Write the image to an SD card or SSD using <a href="https://etcher.balena.io/" target="_blank" rel="noreferrer">balenaEtcher</a>, <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noreferrer">Raspberry Pi Imager</a>, or <code>dd</code>.
       </li>
       <li>
-        <strong>First boot setup.</strong> Insert the media into your {{ device_title }}, power on, and let REG Linux expand the filesystem. Pair controllers inside REG-Station once prompted.
+        <strong>Boot.</strong> Insert the media, power on. REG Linux expands the filesystem on first boot. Pair your controllers when prompted.
       </li>
       <li>
-        <strong>Troubleshoot with rescue tools.</strong> REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
+        <strong>Rescue.</strong> If something goes wrong, reboot into rescue mode — your games are always safe on a separate partition.
       </li>
     </ol>
   </section>
 
-  {% if board_info %}
-    <section class="board-details cv-auto">
-      <div class="section-heading">
-        <p class="eyebrow">Board family guidance</p>
-        <h2>{{ board_info.title }}</h2>
-        <p>{{ board_info.summary }}</p>
-        <p class="small">SoCs tracked: {{ board_info.soCs | join: ', ' }}</p>
-      </div>
-      <div class="board-grid">
-        <article class="card">
-          <h3>What to keep in mind</h3>
-          <ul>
-            {% for highlight in board_info.highlights %}
-              <li>{{ highlight }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Learn more</h3>
-          <p>Drill into the wiki board entry for scripts, overlays, and developer reminders.</p>
-          <a class="btn secondary" href="{{ board_info.wiki_url }}" target="_blank" rel="noreferrer">
-            View wiki guide
-          </a>
-        </article>
-      </div>
-    </section>
-  {% endif %}
-
+  <!-- Related devices -->
   {% assign related_devices = "" | split: "" %}
   {% for entry in site.data.devices %}
     {% assign slug = entry[0] %}
@@ -276,9 +192,7 @@ layout: default
   {% if related_devices.size > 0 %}
     <section class="related-devices cv-auto">
       <div class="section-heading">
-        <p class="eyebrow">Related devices</p>
-        <h2>More hardware to explore</h2>
-        <p>Devices in the same family or sharing the same core SoC.</p>
+        <h2>Related devices</h2>
       </div>
       <div class="related-grid">
         {% for related_slug in related_devices limit: 3 %}
@@ -301,7 +215,6 @@ layout: default
             </div>
             <h3>{{ related_device.title }}</h3>
             <p>{{ related_device.soc | join: ', ' }}</p>
-            <span class="chip">View device page</span>
           </a>
         {% endfor %}
       </div>
@@ -310,15 +223,14 @@ layout: default
 
   <div class="cta-panel cv-auto">
     <div>
-      <h3>Need a refresher?</h3>
-      <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ board_link }}" target="_blank" rel="noreferrer">{{ device_title }} board page</a>.</p>
+      <h3>Browse all devices</h3>
+      <p>Find your next device or check compatibility for your hardware.</p>
     </div>
-    <a class="btn primary" href="{{ '/download/' | relative_url }}">Back to downloads</a>
+    <a class="btn primary" href="{{ '/devices/' | relative_url }}">View all devices</a>
   </div>
 </main>
 
 <footer class="site-footer">
   {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.</p>
-  <p class="small">Board metadata sourced from <a href="https://reglinux.org" target="_blank" rel="noreferrer">reglinux.org</a>.</p>
+  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free and community supported.</p>
 </footer>
