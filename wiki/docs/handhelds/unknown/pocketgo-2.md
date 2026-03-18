@@ -3,7 +3,7 @@ title: Unknown POCKETGO2
 description: REG Linux on Unknown POCKETGO2 powered by Ingenic JZ4770.
 manufacturer: Unknown
 slug: unknown/pocketgo-2
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Unknown POCKETGO2

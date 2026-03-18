@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 800
 description: Orange Pi 800 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Orange Pi 800

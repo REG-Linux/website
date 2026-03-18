@@ -1,7 +1,7 @@
 ---
 title: HardKernel 2L
 description: HardKernel 2L pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # HardKernel 2L

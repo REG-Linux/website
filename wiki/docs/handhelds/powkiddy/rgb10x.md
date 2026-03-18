@@ -3,7 +3,7 @@ title: RGB10X
 description: REG Linux on RGB10X powered by Rockchip RK3326.
 manufacturer: Powkiddy
 slug: powkiddy/rgb10x
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # RGB10X

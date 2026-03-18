@@ -3,7 +3,7 @@ title: Unknown Vega S96
 description: REG Linux on Unknown Vega S96 powered by Amlogic S912.
 manufacturer: Unknown
 slug: unknown/tronsmart-vega-s96
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Unknown Vega S96

@@ -3,7 +3,7 @@ title: MiniLoong POCKET1
 description: REG Linux on MiniLoong POCKET1 powered by Rockchip RK3566/RK3568.
 manufacturer: MiniLoong
 slug: miniloong/pocket1
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # MiniLoong POCKET1

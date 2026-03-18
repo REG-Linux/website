@@ -1,7 +1,7 @@
 ---
 title: ASUS 2
 description: ASUS 2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # ASUS 2

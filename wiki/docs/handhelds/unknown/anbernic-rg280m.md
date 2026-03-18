@@ -3,7 +3,7 @@ title: Unknown RG280M
 description: REG Linux on Unknown RG280M powered by Ingenic JZ4770.
 manufacturer: Unknown
 slug: unknown/anbernic-rg280m
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Unknown RG280M

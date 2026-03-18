@@ -3,7 +3,7 @@ title: Unknown Mxiii Plus
 description: REG Linux on Unknown Mxiii Plus powered by Amlogic S812.
 manufacturer: Unknown
 slug: unknown/amlogic-mxiii-plus
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Unknown Mxiii Plus

@@ -1,7 +1,7 @@
 ---
 title: Radxa Zero
 description: Radxa Zero pairs the Amlogic S905Y2 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Radxa Zero

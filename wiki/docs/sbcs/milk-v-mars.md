@@ -1,7 +1,7 @@
 ---
 title: Milk-V Mars
 description: Milk-V Mars pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Milk-V Mars
