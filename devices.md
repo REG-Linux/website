@@ -65,12 +65,16 @@ description: Browse all devices supported by REG Linux — handhelds, SBCs, TV b
            data-soc="{{ soc_name | downcase }}"
            data-title="{{ device.title | downcase }}">
           <div class="device-media">
-            {% if device.image and device.image != "" %}
-              {% assign img_small = device.image | replace: '.webp', '-sm.webp' %}
-              <img src="{{ device.image | relative_url }}" alt="{{ device.title }}" loading="lazy" decoding="async"
+            {% assign dev_img = device.image | default: "/assets/images/device-placeholder.svg" %}
+            {% if dev_img contains "placeholder" %}
+              <img src="{{ '/assets/images/device-placeholder.svg' | relative_url }}" alt="{{ device.title }}" loading="lazy" />
+            {% else %}
+              {% assign img_small = dev_img | replace: '.webp', '-sm.webp' %}
+              <img src="{{ dev_img | relative_url }}" alt="{{ device.title }}" loading="lazy" decoding="async"
                    {% if device.image_width %}width="{{ device.image_width }}" height="{{ device.image_height }}"
-                   srcset="{{ img_small | relative_url }} {{ device.image_width | divided_by: 2 }}w, {{ device.image | relative_url }} {{ device.image_width }}w"
-                   sizes="140px"{% endif %} />
+                   srcset="{{ img_small | relative_url }} {{ device.image_width | divided_by: 2 }}w, {{ dev_img | relative_url }} {{ device.image_width }}w"
+                   sizes="72px"{% endif %}
+                   onerror="this.src='{{ '/assets/images/device-placeholder.svg' | relative_url }}'" />
             {% endif %}
           </div>
           <div class="device-info">
@@ -203,9 +207,11 @@ description: Browse all devices supported by REG Linux — handhelds, SBCs, TV b
   .manufacturer-section { margin-top: 3rem; }
   .manufacturer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+  @media (max-width: 900px) { .manufacturer-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .manufacturer-grid { grid-template-columns: 1fr; } }
   .manufacturer-card {
     display: flex;
     align-items: center;
