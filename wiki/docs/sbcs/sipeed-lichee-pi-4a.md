@@ -1,7 +1,7 @@
 ---
 title: Sipeed Pi 4A
 description: Sipeed Pi 4A pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Sipeed Pi 4A

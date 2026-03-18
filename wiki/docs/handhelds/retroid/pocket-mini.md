@@ -3,7 +3,7 @@ title: Retroid Pocket Mini
 description: REG Linux on Retroid Pocket Mini powered by Qualcomm SD865 (SM8250).
 manufacturer: Retroid
 slug: retroid/pocket-mini
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Retroid Pocket Mini

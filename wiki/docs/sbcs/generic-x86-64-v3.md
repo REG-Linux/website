@@ -1,7 +1,7 @@
 ---
 title: Generic PC (x86-64-v3)
 description: Generic PC (x86-64-v3) pairs the AMD/Intel x86_64-v3 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Generic PC (x86-64-v3)

@@ -3,7 +3,7 @@ title: RGB30
 description: REG Linux on RGB30 powered by Rockchip RK3566.
 manufacturer: Powkiddy
 slug: powkiddy/rgb30
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # RGB30

@@ -1,7 +1,7 @@
 ---
 title: Unknown DE10_NANO
 description: Unknown DE10_NANO pairs the Intel Cyclone V SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Unknown DE10_NANO

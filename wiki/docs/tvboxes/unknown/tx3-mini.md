@@ -3,7 +3,7 @@ title: Unknown TX3 Mini
 description: REG Linux on Unknown TX3 Mini powered by Amlogic S905(X).
 manufacturer: Unknown
 slug: unknown/tx3-mini
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Unknown TX3 Mini

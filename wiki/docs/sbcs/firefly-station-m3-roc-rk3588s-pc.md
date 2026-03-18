@@ -1,7 +1,7 @@
 ---
 title: Firefly Station M3 / ROC-RK3588S-PC
 description: Firefly Station M3 / ROC-RK3588S-PC pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:56:02
+generated: 2026-03-18 22:04:15
 ---
 
 # Firefly Station M3 / ROC-RK3588S-PC
