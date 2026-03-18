@@ -8,8 +8,8 @@ hero:
     - label: Browse the board directory
       href: https://reglinux.org/wiki/sbcs/catalog/
       style: primary
-    - label: Download builds
-      href: /download/
+    - label: Check compatibility
+      href: https://compat.reglinux.org
       style: secondary
   media:
     image: /assets/images/logo-linux.webp
