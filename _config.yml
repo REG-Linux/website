@@ -6,6 +6,9 @@ og_image: "/assets/images/reg_linux_logo.png"
 markdown: kramdown
 exclude:
   - download-source.html
+  - compat/
+  - wiki/
+  - CLAUDE.md
 collections:
   devices:
     output: true
