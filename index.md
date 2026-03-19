@@ -21,7 +21,7 @@ preload_image: /assets/images/logo-regstation.webp
       </p>
       <div class="hero-cta">
         <a class="btn primary large" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
-        <a class="btn secondary" href="{{ '/devices/' | relative_url }}">View supported devices</a>
+        <a class="btn secondary" href="{{ '/download/' | relative_url }}">Browse all devices</a>
       </div>
     </div>
     <div class="hero-media">
@@ -104,7 +104,7 @@ preload_image: /assets/images/logo-regstation.webp
       </article>
     </div>
     <div style="text-align: center; margin-top: 1.5rem;">
-      <a class="btn primary" href="{{ '/devices/' | relative_url }}">Browse all 186 devices</a>
+      <a class="btn primary" href="{{ '/download/' | relative_url }}">Browse all 186 devices</a>
       <a class="btn secondary" href="https://compat.reglinux.org">Check compatibility</a>
     </div>
   </section>
