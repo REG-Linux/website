@@ -195,8 +195,8 @@ preload_image: /assets/images/logo-regstation.webp
 .emu-logo-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  max-width: 700px;
+  gap: 2.5rem;
+  max-width: 800px;
   margin: 0 auto;
 }
 @media (max-width: 600px) { .emu-logo-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -204,18 +204,19 @@ preload_image: /assets/images/logo-regstation.webp
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   margin: 0;
 }
 .emu-logo img {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 .emu-logo figcaption {
-  font-size: 0.75rem;
-  color: var(--text-muted, #b2bed1);
+  font-size: 0.78rem;
+  color: var(--text-muted);
   text-align: center;
+  font-weight: 500;
 }
 
 /* Hardware cards */
