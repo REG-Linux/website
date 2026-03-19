@@ -2,12 +2,11 @@ hero:
   eyebrow: Curated legal content
   title: Bundled games with REG Linux
   lede: >
-    REG Linux ships with a hand-picked pack of indie and open-source games whose authors have explicitly granted us
-    permission to redistribute their work. Every title below includes proper credits so you know who to thank.
+    Free and legal games included with every REG Linux install. Ready to play on first boot.
   highlights:
-    - Playable out of the box on first boot
-    - Verified licenses / permissions from original creators
-    - Great demos for showcasing REG to friends
+    - Playable immediately — no ROMs needed
+    - All licenses verified with original creators
+    - Great for testing your setup
   media:
     image: /assets/images/games/amoeba-jump-atari2600.png
     alt: Bundled game mosaic
