@@ -103,7 +103,7 @@ preload_image: /assets/images/logo-regstation.webp
         <p>Steam Deck, ROG Ally, or any x86_64 machine. Boot from USB or install to disk.</p>
       </article>
     </div>
-    <div style="text-align: center; margin-top: 1.5rem;">
+    <div style="display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.5rem;">
       <a class="btn primary" href="{{ '/download/' | relative_url }}">Browse all 186 devices</a>
       <a class="btn secondary" href="https://compat.reglinux.org">Check compatibility</a>
     </div>
