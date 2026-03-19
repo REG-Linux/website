@@ -6,8 +6,8 @@
   --text-muted: #b2bed1;
   --accent: #2bb0e9;
   --accent-strong: #ffdb59;
-  --card: rgba(12, 16, 28, 0.75);
-  --border: rgba(255, 255, 255, 0.08);
+  --card: rgba(16, 22, 40, 0.85);
+  --border: rgba(255, 255, 255, 0.12);
   --shadow: 0 25px 60px rgba(3, 9, 27, 0.55);
   --radius: 18px;
 }
