@@ -117,6 +117,11 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 </main>
 
 <style>
+.device-browser { text-align: center; }
+.device-grid { text-align: left; }
+.device-filters { display: flex; flex-direction: column; align-items: center; }
+.filter-row { justify-content: center; }
+.device-count { text-align: center; }
 .device-search {
   width: 100%;
   max-width: 400px;
