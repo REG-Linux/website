@@ -41,10 +41,10 @@ preload_image: /assets/images/logo-regstation.webp
         <img src="https://img.shields.io/github/stars/REG-Linux/REG-Linux?style=flat-square&logo=github&label=GitHub%20Stars&color=2bb0e9" alt="GitHub Stars" loading="lazy" />
       </a>
       <a href="https://discord.gg/a9HH4ZpVqp" target="_blank" rel="noreferrer">
-        <img src="https://img.shields.io/discord/1308118498073255936?style=flat-square&logo=discord&label=Discord&color=5865F2" alt="Discord Members" loading="lazy" />
+        <img src="https://img.shields.io/discord/885430145677164554?style=flat-square&logo=discord&label=Discord&color=5865F2" alt="Discord Members" loading="lazy" />
       </a>
-      <a href="https://github.com/REG-Linux/REG-Linux/releases" target="_blank" rel="noreferrer">
-        <img src="https://img.shields.io/github/v/release/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Latest%20Release&color=22c55e" alt="Latest Release" loading="lazy" />
+      <a href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/commit-activity/m/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Monthly%20Commits&color=22c55e" alt="Monthly Commits" loading="lazy" />
       </a>
       <a href="https://github.com/REG-Linux/REG-Linux/commits/main" target="_blank" rel="noreferrer">
         <img src="https://img.shields.io/github/last-commit/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Last%20Commit&color=f59e0b" alt="Last Commit" loading="lazy" />
@@ -182,8 +182,8 @@ preload_image: /assets/images/logo-regstation.webp
   align-items: center;
   gap: 0.4rem;
   padding: 0.5rem 1rem;
-  background: var(--card, rgba(12,16,28,0.75));
-  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  background: rgba(43, 176, 233, 0.08);
+  border: 1px solid rgba(43, 176, 233, 0.2);
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 600;
