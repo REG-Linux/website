@@ -34,6 +34,24 @@ preload_image: /assets/images/logo-regstation.webp
     </div>
   </section>
 
+  <!-- Social proof -->
+  <section class="social-proof">
+    <div class="proof-badges">
+      <a href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/stars/REG-Linux/REG-Linux?style=flat-square&logo=github&label=GitHub%20Stars&color=2bb0e9" alt="GitHub Stars" loading="lazy" />
+      </a>
+      <a href="https://discord.gg/a9HH4ZpVqp" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/discord/1308118498073255936?style=flat-square&logo=discord&label=Discord&color=5865F2" alt="Discord Members" loading="lazy" />
+      </a>
+      <a href="https://github.com/REG-Linux/REG-Linux/releases" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/v/release/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Latest%20Release&color=22c55e" alt="Latest Release" loading="lazy" />
+      </a>
+      <a href="https://github.com/REG-Linux/REG-Linux/commits/main" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/last-commit/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Last%20Commit&color=f59e0b" alt="Last Commit" loading="lazy" />
+      </a>
+    </div>
+  </section>
+
   <!-- Stats badges -->
   <section class="stats-strip" id="features">
     <div class="stats-grid">
@@ -138,6 +156,18 @@ preload_image: /assets/images/logo-regstation.webp
 </footer>
 
 <style>
+/* Social proof badges */
+.social-proof { padding: 0; }
+.proof-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0 1rem;
+}
+.proof-badges a { display: inline-block; line-height: 0; }
+.proof-badges img { height: 22px; border-radius: 4px; }
+
 /* Stats badges */
 .stats-strip { padding: 0; }
 .stats-grid {
