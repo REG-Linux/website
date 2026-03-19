@@ -1,81 +1,51 @@
 hero:
-  highlights:
-  - Immutable OS — read-only root, built-in rescue, safe to experiment
-  - 186 devices — ARM, AArch64, RISC-V, and x86_64 out of the box
-  - 50+ emulated systems, 40+ native ports, 8 game engines
   logos:
   - image: /assets/images/logo-regstation.webp
     label: REG-Station
     width: 420
     height: 258
-  - image: /assets/images/logo-retroarch.webp
-    label: RetroArch
-    width: 420
-    height: 84
-  - image: /assets/images/logo-linux.webp
-    label: Linux Kernel
-    width: 420
-    height: 208
-  - image: /assets/images/reg_linux_logo.webp
-    label: REG Linux
-    width: 420
-    height: 202
-features:
-- title: REG-Station frontend
-  description: A custom frontend built on top of EmulationStation. Browse your library, configure controllers, and tweak settings without touching a terminal.
-- title: Pre-configured emulators
-  description: RetroArch, MAME, Dolphin, PCSX2, and 50+ systems work out of the box with sensible defaults for controls, video, and audio.
-- title: Immutable and recoverable
-  description: The root filesystem is read-only. If something goes wrong, the built-in rescue mode gets you back in seconds. Your games are always safe.
-- title: Native ports and engines
-  description: Doom, Quake, Cave Story, ScummVM, and 40+ more games run natively — no emulation overhead.
-- title: 186 supported devices
-  description: Raspberry Pi, Anbernic handhelds, Rockchip SBCs, Steam Deck, ASUS ROG Ally, and everything in between. One image per device, flash and boot.
-stack:
-  highlights:
-  - RetroArch with curated core presets per system
-  - MAME for arcade accuracy
-  - Native ports for Doom, Quake, ScummVM, and more
-  logos:
-  - image: /assets/images/emulators/retroarch.png
-    label: RetroArch
-  - image: /assets/images/emulators/mame.png
-    label: MAME
-  - image: /assets/images/emulators/dolphin.png
-    label: Dolphin
-  - image: /assets/images/emulators/ppsspp.png
-    label: PPSSPP
-  - image: /assets/images/emulators/duckstation.png
-    label: DuckStation
-  - image: /assets/images/emulators/flycast.png
-    label: Flycast
-  - image: /assets/images/emulators/pcsx2.png
-    label: PCSX2
-  - image: /assets/images/emulators/citra.png
-    label: Azahar
-  - image: /assets/images/emulators/scummvm.png
-    label: ScummVM
-  - image: /assets/images/emulators/dosbox.png
-    label: DOSBox Staging
-  - image: /assets/images/emulators/mupen64plus.png
-    label: Mupen64Plus
-  - image: /assets/images/emulators/melonds.png
-    label: melonDS
-  - image: /assets/images/emulators/openbor.png
-    label: OpenBOR
-hardware_cards:
-- title: Single-board computers
-  body: Raspberry Pi, Orange Pi, Radxa, Khadas, and more. Plug in, boot, play.
-- title: Handhelds & mini consoles
-  body: Anbernic, Powkiddy, Retroid, AYN, AYANEO. Controls and suspend work out of the box.
-- title: Laptops & desktops
-  body: x86_64 builds for Steam Deck, ROG Ally, or any PC. Boot from USB or install to disk.
+
+stats:
+- icon: "\U0001F4F1"
+  label: "186 devices"
+- icon: "\U0001F3AE"
+  label: "50+ systems"
+- icon: "\U0001F3AF"
+  label: "40+ native ports"
+- icon: "\U0001F6E1"
+  label: "Immutable OS"
+- icon: "\U0001F527"
+  label: "Pre-configured"
+- icon: "\U0001F6DF"
+  label: "Built-in rescue"
+
+emulator_logos:
+- image: /assets/images/emulators/retroarch.png
+  label: RetroArch
+- image: /assets/images/emulators/mame.png
+  label: MAME
+- image: /assets/images/emulators/dolphin.png
+  label: Dolphin
+- image: /assets/images/emulators/ppsspp.png
+  label: PPSSPP
+- image: /assets/images/emulators/duckstation.png
+  label: DuckStation
+- image: /assets/images/emulators/flycast.png
+  label: Flycast
+- image: /assets/images/emulators/pcsx2.png
+  label: PCSX2
+- image: /assets/images/emulators/scummvm.png
+  label: ScummVM
+
 getting_started_steps:
-- title: Download your image.
-  body: Pick your device on the download page and grab the latest build.
-- title: Flash to SD card or SSD.
-  body: Use balenaEtcher, Raspberry Pi Imager, or dd. Takes about two minutes.
-- title: Boot and set up.
-  body: Power on, wait for first-boot setup, pair your controllers.
-- title: Add your games.
-  body: Copy ROMs via network share, USB, or the built-in file manager.
+- number: "1"
+  title: Download
+  body: Pick your device, grab the image.
+  cta_label: Browse devices
+  cta_href: /download/
+- number: "2"
+  title: Flash
+  body: Write to SD card with balenaEtcher or dd.
+- number: "3"
+  title: Play
+  body: Boot, pair controllers, add your games.
