@@ -157,11 +157,11 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 .device-card {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
-  background: var(--card, rgba(12,16,28,0.75));
-  border: 1px solid var(--border, rgba(255,255,255,0.08));
-  border-radius: var(--radius, 18px);
+  gap: 1.1rem;
+  padding: 1.1rem 1.4rem;
+  background: var(--card, rgba(16,22,40,0.85));
+  border: 1px solid var(--border, rgba(255,255,255,0.12));
+  border-radius: var(--radius, 14px);
   box-shadow: var(--shadow, 0 25px 60px rgba(3,9,27,0.55));
   text-decoration: none;
   color: var(--text, #f4f6fb);
@@ -169,14 +169,14 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 }
 .device-card:hover { transform: translateY(-2px); border-color: var(--accent, #2bb0e9); text-decoration: none; }
 .device-card[data-hidden="true"] { display: none; }
-.device-media { width: 72px; height: 72px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-.device-media img { max-width: 72px; max-height: 72px; object-fit: contain; border-radius: 8px; }
-.device-info { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
-.device-name { font-size: 0.95rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.device-soc { font-size: 0.78rem; color: var(--text-muted, #b2bed1); font-family: 'JetBrains Mono', monospace; }
+.device-media { width: 90px; height: 90px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.device-media img { max-width: 90px; max-height: 90px; object-fit: contain; border-radius: 8px; }
+.device-info { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
+.device-name { font-size: 1rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.device-soc { font-size: 0.82rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
 .device-type-badge {
-  font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
-  width: fit-content; padding: 0.1rem 0.45rem; border-radius: 999px;
+  font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+  width: fit-content; padding: 0.12rem 0.5rem; border-radius: 999px;
 }
 .device-type-handheld { color: #2bb0e9; background: rgba(43,176,233,0.1); }
 .device-type-sbc { color: #a78bfa; background: rgba(167,139,250,0.1); }
@@ -193,20 +193,20 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 @media (max-width: 900px) { .manufacturer-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .manufacturer-grid { grid-template-columns: 1fr; } }
 .manufacturer-card {
-  display: flex; align-items: center; gap: 0.75rem; padding: 0.9rem 1.1rem;
-  background: var(--card, rgba(12,16,28,0.75));
-  border: 1px solid var(--border, rgba(255,255,255,0.08));
-  border-radius: var(--radius, 18px);
+  display: flex; align-items: center; gap: 0.9rem; padding: 1rem 1.25rem;
+  background: var(--card, rgba(16,22,40,0.85));
+  border: 1px solid var(--border, rgba(255,255,255,0.12));
+  border-radius: var(--radius, 14px);
   box-shadow: var(--shadow, 0 25px 60px rgba(3,9,27,0.55));
   text-decoration: none; color: var(--text, #f4f6fb);
   transition: transform 0.15s, border-color 0.15s;
 }
 .manufacturer-card:hover { transform: translateY(-2px); border-color: var(--accent, #2bb0e9); text-decoration: none; }
-.mfr-logo { width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-.mfr-logo img { max-width: 40px; max-height: 40px; object-fit: contain; }
-.mfr-info { display: flex; flex-direction: column; gap: 0.1rem; }
-.mfr-info strong { font-size: 0.85rem; }
-.mfr-count { font-size: 0.72rem; color: var(--text-muted, #b2bed1); }
+.mfr-logo { width: 52px; height: 52px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.mfr-logo img { max-width: 52px; max-height: 52px; object-fit: contain; }
+.mfr-info { display: flex; flex-direction: column; gap: 0.15rem; }
+.mfr-info strong { font-size: 0.92rem; }
+.mfr-count { font-size: 0.75rem; color: var(--text-muted); }
 </style>
 
 <script>
