@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: default
 title: Emulators
 body_class: emulators

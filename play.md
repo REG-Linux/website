@@ -1,6 +1,6 @@
 ---
 layout: default
-title: What you can play
+title: Emulators, Ports & Game Engines
 permalink: /play/
 body_class: emulators
 description: Emulators, game engines, and native ports bundled with REG Linux — arcade, console, computer, and indie games ready out of the box.

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: default
 title: Community Ports
 body_class: ports

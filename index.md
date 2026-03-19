@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Retro Emulation OS
+title: Retro Gaming OS for Handhelds, SBCs & PCs
 body_class: home
 description: REG Linux — retro gaming OS for 186 devices. Flash, boot, play. Supports ARM, AArch64, RISC-V, and x86_64.
 preload_image: /assets/images/logo-regstation.webp
