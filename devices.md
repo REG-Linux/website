@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: default
 title: Supported Devices
 permalink: /devices/

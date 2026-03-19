@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Download REG Linux
+title: Download — 186 Supported Devices
 permalink: /download/
 body_class: download
 description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxes, and PCs supported.
