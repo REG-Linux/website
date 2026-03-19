@@ -10,27 +10,27 @@ a95xf3-air:
   description: REG Linux for A95X F3 Air (Amlogic S905X3).
   lede: A95X F3 Air — TV box powered by Amlogic S905X3.
 amlogic-mxiii:
-  title: Amlogic Mxiii
-  brand: Unknown
+  title: MXIII TV Box
+  brand: Amlogic
   manufacturer:
   - Unknown
   soc:
   - Amlogic S812
   image: /assets/images/amlogic-mxiii.webp
   board_url: https://reglinux.org/wiki/other/unknown/amlogic-mxiii/
-  description: REG Linux for Amlogic Mxiii (Amlogic S812).
-  lede: Amlogic Mxiii — TV box powered by Amlogic S812.
+  description: REG Linux for MXIII TV Box (Amlogic S812).
+  lede: MXIII TV Box — TV box powered by Amlogic S812.
 amlogic-mxiii-plus:
-  title: Amlogic Mxiii Plus
-  brand: Unknown
+  title: MXIII Plus TV Box
+  brand: Amlogic
   manufacturer:
   - Unknown
   soc:
   - Amlogic S812
   image: /assets/images/amlogic-mxiii-plus.webp
   board_url: https://reglinux.org/wiki/other/unknown/amlogic-mxiii-plus/
-  description: REG Linux for Amlogic Mxiii Plus (Amlogic S812).
-  lede: Amlogic Mxiii Plus — TV box powered by Amlogic S812.
+  description: REG Linux for MXIII Plus TV Box (Amlogic S812).
+  lede: MXIII Plus TV Box — TV box powered by Amlogic S812.
 anbernic-rg-cubexx:
   title: Anbernic RG CubeXX
   brand: Anbernic
@@ -68,7 +68,7 @@ anbernic-rg-ds:
   compositor: TBD
 anbernic-rg280m:
   title: Anbernic RG280M
-  brand: Unknown
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
@@ -79,7 +79,7 @@ anbernic-rg280m:
   lede: Anbernic RG280M — handheld powered by Ingenic JZ4770.
 anbernic-rg280v:
   title: Anbernic RG280V
-  brand: Unknown
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
@@ -108,7 +108,7 @@ anbernic-rg28xx:
   compositor: Sway
 anbernic-rg300:
   title: Anbernic RG300
-  brand: Unknown
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
@@ -119,7 +119,7 @@ anbernic-rg300:
   lede: Anbernic RG300 — handheld powered by Ingenic JZ4770.
 anbernic-rg300x:
   title: Anbernic RG300X
-  brand: Unknown
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
@@ -148,7 +148,7 @@ anbernic-rg34xx:
   compositor: Sway
 anbernic-rg350:
   title: Anbernic RG350
-  brand: Unknown
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
@@ -159,7 +159,7 @@ anbernic-rg350:
   lede: Anbernic RG350 — handheld powered by Ingenic JZ4770.
 anbernic-rg350m:
   title: Anbernic RG350M
-  brand: Unknown
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
@@ -457,7 +457,7 @@ asus-rog-ally:
   description: REG Linux for Asus ROG Ally (AMD Ryzen Z1).
   lede: Asus ROG Ally — PC powered by AMD Ryzen Z1.
 asus-tinker-board-2:
-  title: ASUS 2
+  title: ASUS Tinker Board 2
   brand: ASUS
   manufacturer:
   - ASUS
@@ -465,8 +465,8 @@ asus-tinker-board-2:
   - Rockchip RK3399
   image: /assets/images/asus-tinker-board-2.webp
   board_url: https://reglinux.org/wiki/sbc/asus/tinker-board-2/
-  description: REG Linux for ASUS 2 (Rockchip RK3399).
-  lede: ASUS 2 — single-board computer powered by Rockchip RK3399.
+  description: REG Linux for ASUS Tinker Board 2 (Rockchip RK3399).
+  lede: ASUS Tinker Board 2 — single-board computer powered by Rockchip RK3399.
 asus-tinker-board-s:
   title: Asus Tinker Board (S)
   brand: ASUS
@@ -481,7 +481,7 @@ asus-tinker-board-s:
   description: REG Linux for Asus Tinker Board (S) (Rockchip RK3288).
   lede: Asus Tinker Board (S) — single-board computer powered by Rockchip RK3288.
 ayaneo-pocket-ace:
-  title: AYANEO Pocketace
+  title: AYANEO Pocket ACE
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -489,10 +489,10 @@ ayaneo-pocket-ace:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-ace.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-ace/
-  description: REG Linux for AYANEO Pocketace (Qualcomm 8gen2 (SM8550)).
-  lede: AYANEO Pocketace — PC powered by Qualcomm 8gen2 (SM8550).
+  description: REG Linux for AYANEO Pocket ACE (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket ACE — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-dmg:
-  title: AYANEO Pocketdmg
+  title: AYANEO Pocket DMG
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -500,10 +500,10 @@ ayaneo-pocket-dmg:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-dmg.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-dmg/
-  description: REG Linux for AYANEO Pocketdmg (Qualcomm 8gen2 (SM8550)).
-  lede: AYANEO Pocketdmg — PC powered by Qualcomm 8gen2 (SM8550).
+  description: REG Linux for AYANEO Pocket DMG (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket DMG — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-ds:
-  title: AYANEO Pocketds
+  title: AYANEO Pocket DS
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -511,10 +511,10 @@ ayaneo-pocket-ds:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-ds.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-ds/
-  description: REG Linux for AYANEO Pocketds (Qualcomm 8gen2 (SM8550)).
-  lede: AYANEO Pocketds — PC powered by Qualcomm 8gen2 (SM8550).
+  description: REG Linux for AYANEO Pocket DS (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket DS — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-evo:
-  title: AYANEO Pocketevo
+  title: AYANEO Pocket EVO
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -522,8 +522,8 @@ ayaneo-pocket-evo:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-evo.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-evo/
-  description: REG Linux for AYANEO Pocketevo (Qualcomm 8gen2 (SM8550)).
-  lede: AYANEO Pocketevo — PC powered by Qualcomm 8gen2 (SM8550).
+  description: REG Linux for AYANEO Pocket EVO (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket EVO — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pockets:
   title: AYANEO Pocket S
   brand: AYANEO
@@ -574,7 +574,7 @@ ayn-odin2-mini:
   description: REG Linux for Ayn ODIN2MINI (Qualcomm 8gen2 (SM8550)).
   lede: Ayn ODIN2MINI — handheld powered by Qualcomm 8gen2 (SM8550).
 ayn-odin2-portal:
-  title: Ayn ODIN2PORTAL
+  title: Ayn Odin 2 Portal
   brand: Ayn
   manufacturer:
   - Ayn
@@ -582,8 +582,8 @@ ayn-odin2-portal:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayn-odin2-portal.webp
   board_url: https://reglinux.org/wiki/handhelds/ayn/odin2-portal/
-  description: REG Linux for Ayn ODIN2PORTAL (Qualcomm 8gen2 (SM8550)).
-  lede: Ayn ODIN2PORTAL — handheld powered by Qualcomm 8gen2 (SM8550).
+  description: REG Linux for Ayn Odin 2 Portal (Qualcomm 8gen2 (SM8550)).
+  lede: Ayn Odin 2 Portal — handheld powered by Qualcomm 8gen2 (SM8550).
 ayn-thor:
   title: Ayn Thor
   brand: Ayn
@@ -646,7 +646,7 @@ banana-pi-m4-berry:
   description: REG Linux for Banana Pi M4 Berry (Allwinner H618).
   lede: Banana Pi M4 Berry — single-board computer powered by Allwinner H618.
 banana-pi-m4-zero:
-  title: Banana Pi M4ZERO
+  title: Banana Pi M4 Zero
   brand: Banana Pi
   manufacturer:
   - Banana Pi
@@ -654,8 +654,8 @@ banana-pi-m4-zero:
   - Allwinner H616
   image: /assets/images/banana-pi-m4-zero.webp
   board_url: https://reglinux.org/wiki/sbc/banana-pi/m4-zero/
-  description: REG Linux for Banana Pi M4ZERO (Allwinner H616).
-  lede: Banana Pi M4ZERO — single-board computer powered by Allwinner H616.
+  description: REG Linux for Banana Pi M4 Zero (Allwinner H616).
+  lede: Banana Pi M4 Zero — single-board computer powered by Allwinner H616.
 banana-pi-m5:
   title: Banana Pi M5
   brand: Banana Pi
@@ -745,7 +745,7 @@ capcom-home-arcade:
   lede: Capcom Home Arcade — console powered by Allwinner H3.
 firefly-renegade:
   title: Firefly Renegade
-  brand: Unknown
+  brand: Firefly
   manufacturer:
   - Unknown
   soc:
@@ -832,7 +832,7 @@ gameforce-chi:
   lede: Gameforce CHI — handheld powered by Rockchip RK3326.
 gcw-zero:
   title: GCW Zero
-  brand: Unknown
+  brand: GCW
   manufacturer:
   - Unknown
   soc:
@@ -840,7 +840,7 @@ gcw-zero:
   image: /assets/images/gcw-zero.webp
   board_url: https://reglinux.org/wiki/other/unknown/gcw-zero/
   description: REG Linux for GCW Zero (Ingenic JZ4770).
-  lede: GCW Zero — device powered by Ingenic JZ4770.
+  lede: GCW Zero — handheld powered by Ingenic JZ4770.
 generic-x86-64:
   title: Generic PC (x86-64)
   brand: Generic
@@ -978,7 +978,7 @@ hardkernel-odroid-m1:
   description: REG Linux for HardKernel ODROID M1 (Rockchip RK3568).
   lede: HardKernel ODROID M1 — single-board computer powered by Rockchip RK3568.
 hardkernel-odroid-m1s:
-  title: HardKernel 1S
+  title: ODROID-M1S
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -986,10 +986,10 @@ hardkernel-odroid-m1s:
   - Rockchip RK3566/RK3568
   image: /assets/images/hardkernel-odroid-m1s.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-m1s/
-  description: REG Linux for HardKernel 1S (Rockchip RK3566/RK3568).
-  lede: HardKernel 1S — single-board computer powered by Rockchip RK3566/RK3568.
+  description: REG Linux for ODROID-M1S (Rockchip RK3566/RK3568).
+  lede: ODROID-M1S — single-board computer powered by Rockchip RK3566/RK3568.
 hardkernel-odroid-m2:
-  title: HardKernel 2
+  title: ODROID-M2
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -997,10 +997,10 @@ hardkernel-odroid-m2:
   - Rockchip RK3588
   image: /assets/images/hardkernel-odroid-m2.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-m2/
-  description: REG Linux for HardKernel 2 (Rockchip RK3588).
-  lede: HardKernel 2 — single-board computer powered by Rockchip RK3588.
+  description: REG Linux for ODROID-M2 (Rockchip RK3588).
+  lede: ODROID-M2 — single-board computer powered by Rockchip RK3588.
 hardkernel-odroid-n2:
-  title: HardKernel 2
+  title: ODROID-N2
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -1008,10 +1008,10 @@ hardkernel-odroid-n2:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2/
-  description: REG Linux for HardKernel 2 (Amlogic S922X).
-  lede: HardKernel 2 — single-board computer powered by Amlogic S922X.
+  description: REG Linux for ODROID-N2 (Amlogic S922X).
+  lede: ODROID-N2 — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-n2-plus:
-  title: HardKernel 2 Plus
+  title: ODROID-N2+
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -1019,10 +1019,10 @@ hardkernel-odroid-n2-plus:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2-plus.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2-plus/
-  description: REG Linux for HardKernel 2 Plus (Amlogic S922X).
-  lede: HardKernel 2 Plus — single-board computer powered by Amlogic S922X.
+  description: REG Linux for ODROID-N2+ (Amlogic S922X).
+  lede: ODROID-N2+ — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-n2l:
-  title: HardKernel 2L
+  title: ODROID-N2L
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -1030,8 +1030,8 @@ hardkernel-odroid-n2l:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2l.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2l/
-  description: REG Linux for HardKernel 2L (Amlogic S922X).
-  lede: HardKernel 2L — single-board computer powered by Amlogic S922X.
+  description: REG Linux for ODROID-N2L (Amlogic S922X).
+  lede: ODROID-N2L — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-xu3-xu4:
   title: HardKernel ODROID XU3/XU4
   brand: HardKernel
@@ -1047,7 +1047,7 @@ hardkernel-odroid-xu3-xu4:
   lede: HardKernel ODROID XU3/XU4 — single-board computer powered by Samsung Exynos 5422.
 hugsun-x99:
   title: Hugsun X99
-  brand: Unknown
+  brand: Hugsun
   manufacturer:
   - Unknown
   soc:
@@ -1068,16 +1068,16 @@ indiedroid-nova:
   description: REG Linux for Indiedroid Nova (Rockchip RK3588).
   lede: Indiedroid Nova — single-board computer powered by Rockchip RK3588.
 intel-de10nano:
-  title: Intel De10Nano
-  brand: Unknown
+  title: Intel DE10-Nano
+  brand: Intel
   manufacturer:
   - Unknown
   soc:
   - Intel Cyclone V
   image: /assets/images/intel-de10nano.webp
   board_url: https://reglinux.org/wiki/other/unknown/intel-de10nano/
-  description: REG Linux for Intel De10Nano (Intel Cyclone V).
-  lede: Intel De10Nano — device powered by Intel Cyclone V.
+  description: REG Linux for Intel DE10-Nano (Intel Cyclone V).
+  lede: Intel DE10-Nano — device powered by Intel Cyclone V.
 khadas-edge-2:
   title: Khadas Edge 2
   brand: Khadas
@@ -1181,18 +1181,18 @@ libretech-lepotato:
   description: REG Linux for Libre Computer Cc (Amlogic S905(X)).
   lede: Libre Computer Cc — single-board computer powered by Amlogic S905(X).
 libretech-s912-pc:
-  title: Libretech S912 Pc
-  brand: Unknown
+  title: Libre Computer S912-PC
+  brand: Libre Computer
   manufacturer:
   - Unknown
   soc:
   - Amlogic S912
   image: /assets/images/libretech-s912-pc.webp
   board_url: https://reglinux.org/wiki/sbc/unknown/libretech-s912-pc/
-  description: REG Linux for Libretech S912 Pc (Amlogic S912).
-  lede: Libretech S912 Pc — single-board computer powered by Amlogic S912.
+  description: REG Linux for Libre Computer S912-PC (Amlogic S912).
+  lede: Libre Computer S912-PC — single-board computer powered by Amlogic S912.
 libretech-tritium-h5:
-  title: Libre Computer All H3 Cc
+  title: Libre Computer Tritium H5
   brand: Libre Computer
   manufacturer:
   - Libre Computer
@@ -1200,8 +1200,8 @@ libretech-tritium-h5:
   - Allwinner H3
   image: /assets/images/libretech-tritium-h5.webp
   board_url: https://reglinux.org/wiki/sbc/libre-computer/libretech-tritium-h5/
-  description: REG Linux for Libre Computer All H3 Cc (Allwinner H3).
-  lede: Libre Computer All H3 Cc — single-board computer powered by Allwinner H3.
+  description: REG Linux for Libre Computer Tritium H5 (Allwinner H3).
+  lede: Libre Computer Tritium H5 — single-board computer powered by Allwinner H3.
 magicx-xu-mini-m:
   title: XU Mini M
   brand: MagicX
@@ -1269,7 +1269,7 @@ milk-v-meles:
   description: REG Linux for Milk-V Meles (TH1520).
   lede: Milk-V Meles — single-board computer powered by TH1520.
 miniloong-pocket1:
-  title: MiniLoong POCKET1
+  title: MiniLoong Pocket 1
   brand: MiniLoong
   manufacturer:
   - MiniLoong
@@ -1277,8 +1277,8 @@ miniloong-pocket1:
   - Rockchip RK3566/RK3568
   image: /assets/images/miniloong-pocket1.webp
   board_url: https://reglinux.org/wiki/handhelds/miniloong/pocket1/
-  description: REG Linux for MiniLoong POCKET1 (Rockchip RK3566/RK3568).
-  lede: MiniLoong POCKET1 — handheld powered by Rockchip RK3566/RK3568.
+  description: REG Linux for MiniLoong Pocket 1 (Rockchip RK3566/RK3568).
+  lede: MiniLoong Pocket 1 — handheld powered by Rockchip RK3566/RK3568.
 minix-neo-u1:
   title: Minix Neo U1
   brand: Minix
@@ -1396,16 +1396,16 @@ nintendo-snes-classic:
   description: REG Linux for Nintendo Super Nes Classic (Allwinner R16).
   lede: Nintendo Super Nes Classic — console powered by Allwinner R16.
 nvidia-jetson-nano:
-  title: Nvidia Jetson Nano
-  brand: Unknown
+  title: NVIDIA Jetson Nano
+  brand: NVIDIA
   manufacturer:
   - Unknown
   soc:
   - NVIDIA Tegra X1
   image: /assets/images/nvidia-jetson-nano.webp
   board_url: https://reglinux.org/wiki/other/unknown/nvidia-jetson-nano/
-  description: REG Linux for Nvidia Jetson Nano (NVIDIA Tegra X1).
-  lede: Nvidia Jetson Nano — device powered by NVIDIA Tegra X1.
+  description: REG Linux for NVIDIA Jetson Nano (NVIDIA Tegra X1).
+  lede: NVIDIA Jetson Nano — handheld powered by NVIDIA Tegra X1.
 orange-pi-3:
   title: Orange Pi 3
   brand: Orange Pi
@@ -1418,7 +1418,7 @@ orange-pi-3:
   description: REG Linux for Orange Pi 3 (Allwinner H5/H6).
   lede: Orange Pi 3 — single-board computer powered by Allwinner H5/H6.
 orange-pi-3-lts:
-  title: Orange Pi 3 Lts
+  title: Orange Pi 3 LTS
   brand: Orange Pi
   manufacturer:
   - Orange Pi
@@ -1426,8 +1426,8 @@ orange-pi-3-lts:
   - Allwinner H5/H6
   image: /assets/images/orange-pi-3-lts.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/3-lts/
-  description: REG Linux for Orange Pi 3 Lts (Allwinner H5/H6).
-  lede: Orange Pi 3 Lts — single-board computer powered by Allwinner H5/H6.
+  description: REG Linux for Orange Pi 3 LTS (Allwinner H5/H6).
+  lede: Orange Pi 3 LTS — single-board computer powered by Allwinner H5/H6.
 orange-pi-4-lts:
   title: Orange Pi 4 Lts
   brand: Orange Pi
@@ -1690,7 +1690,7 @@ pine64-rockpro64:
   lede: Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
 pocketgo-2:
   title: PocketGo 2
-  brand: Unknown
+  brand: Powkiddy
   manufacturer:
   - Unknown
   soc:
@@ -2017,7 +2017,7 @@ radxa-rock-5c:
   description: REG Linux for Radxa 5C (Rockchip RK3588).
   lede: Radxa 5C — single-board computer powered by Rockchip RK3588.
 radxa-rock-pi-4:
-  title: Radxa Pi 4B
+  title: Radxa Rock Pi 4B
   brand: Radxa
   manufacturer:
   - Radxa
@@ -2025,8 +2025,8 @@ radxa-rock-pi-4:
   - Rockchip RK3399
   image: /assets/images/radxa-rock-pi-4.webp
   board_url: https://reglinux.org/wiki/sbc/radxa/rock-pi-4/
-  description: REG Linux for Radxa Pi 4B (Rockchip RK3399).
-  lede: Radxa Pi 4B — single-board computer powered by Rockchip RK3399.
+  description: REG Linux for Radxa Rock Pi 4B (Rockchip RK3399).
+  lede: Radxa Rock Pi 4B — single-board computer powered by Rockchip RK3399.
 radxa-zero:
   title: Radxa Zero
   brand: Radxa
@@ -2212,7 +2212,7 @@ retroid-pocket-mini:
   has_fan: true
 rs97:
   title: RS-97
-  brand: Unknown
+  brand: Unbranded
   manufacturer:
   - Unknown
   soc:
@@ -2222,7 +2222,7 @@ rs97:
   description: REG Linux for RS-97 (Ingenic JZ4770).
   lede: RS-97 — device powered by Ingenic JZ4770.
 sipeed-lichee-pi-4a:
-  title: Sipeed Pi 4A
+  title: Sipeed LicheePi 4A
   brand: Sipeed
   manufacturer:
   - Sipeed
@@ -2230,8 +2230,8 @@ sipeed-lichee-pi-4a:
   - T-Head TH1520
   image: /assets/images/sipeed-lichee-pi-4a.webp
   board_url: https://reglinux.org/wiki/sbc/sipeed/lichee-pi-4a/
-  description: REG Linux for Sipeed Pi 4A (T-Head TH1520).
-  lede: Sipeed Pi 4A — single-board computer powered by T-Head TH1520.
+  description: REG Linux for Sipeed LicheePi 4A (T-Head TH1520).
+  lede: Sipeed LicheePi 4A — single-board computer powered by T-Head TH1520.
 starfive-visionfive-2:
   title: StarFive VisionFive 2
   brand: Starfive
@@ -2271,7 +2271,7 @@ tronsmart-s82:
   lede: Tronsmart S82 — TV box powered by Amlogic S812.
 tronsmart-vega-s96:
   title: Tronsmart Vega S96
-  brand: Unknown
+  brand: Tronsmart
   manufacturer:
   - Unknown
   soc:
@@ -2281,16 +2281,16 @@ tronsmart-vega-s96:
   description: REG Linux for Tronsmart Vega S96 (Amlogic S912).
   lede: Tronsmart Vega S96 — TV box powered by Amlogic S912.
 tx3-mini:
-  title: Tx3 Mini
-  brand: Unknown
+  title: Tanix TX3 Mini
+  brand: Tanix
   manufacturer:
   - Unknown
   soc:
   - Amlogic S905(X)
   image: /assets/images/tx3-mini.webp
   board_url: https://reglinux.org/wiki/other/unknown/tx3-mini/
-  description: REG Linux for Tx3 Mini (Amlogic S905(X)).
-  lede: Tx3 Mini — TV box powered by Amlogic S905(X).
+  description: REG Linux for Tanix TX3 Mini (Amlogic S905(X)).
+  lede: Tanix TX3 Mini — TV box powered by Amlogic S905(X).
 unbranded-game-console-r33s:
   title: Game Console R33S
   brand: Unbranded
@@ -2368,16 +2368,16 @@ unbranded-rk3326-clones:
   storage: 8 GB (often) eMMC + SD
   compositor: Sway
 vamrs-rock960:
-  title: Vamrs Rock960
-  brand: Unknown
+  title: 96Boards Rock960
+  brand: Vamrs
   manufacturer:
   - Unknown
   soc:
   - Rockchip RK3399
   image: /assets/images/vamrs-rock960.webp
   board_url: https://reglinux.org/wiki/other/unknown/vamrs-rock960/
-  description: REG Linux for Vamrs Rock960 (Rockchip RK3399).
-  lede: Vamrs Rock960 — device powered by Rockchip RK3399.
+  description: REG Linux for 96Boards Rock960 (Rockchip RK3399).
+  lede: 96Boards Rock960 — device powered by Rockchip RK3399.
 wetek-core:
   title: WeTek Core
   brand: WeTek
@@ -2424,7 +2424,7 @@ x96-max-plus:
   lede: X96 Max Plus — TV box powered by Amlogic S905X3.
 xpi-3128:
   title: XPi 3128
-  brand: Unknown
+  brand: Unbranded
   manufacturer:
   - Unknown
   soc:
