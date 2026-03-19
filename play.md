@@ -16,8 +16,7 @@ description: Emulators, game engines, and native ports bundled with REG Linux â€
       <p class="eyebrow">50+ systems &middot; 40+ ports &middot; 8 engines</p>
       <h1>Play everything</h1>
       <p class="lede">
-        REG Linux comes with pre-configured emulators, open-source game engines, and native ports.
-        Controllers, shaders, and hotkeys are set up â€” just add your games.
+        Emulators, game engines, and native ports â€” all pre-configured. Just add your games.
       </p>
       <div class="hero-cta">
         <a class="btn primary" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
@@ -37,7 +36,7 @@ description: Emulators, game engines, and native ports bundled with REG Linux â€
     <div class="section-heading">
       <p class="eyebrow">Emulators</p>
       <h2>Arcade, console, and computer</h2>
-      <p>All emulators are pre-configured with sensible defaults for controls, video, and audio.</p>
+      <p>Controls, video, and audio pre-configured. Pick a system and play.</p>
     </div>
     <div class="grid">
       {% for category in emulator_categories %}
@@ -65,7 +64,7 @@ description: Emulators, game engines, and native ports bundled with REG Linux â€
     <div class="section-heading">
       <p class="eyebrow">Game engines</p>
       <h2>Open-source runtimes</h2>
-      <p>Run game formats natively â€” no emulation overhead.</p>
+      <p>Run specific game formats directly, no emulation needed.</p>
     </div>
     <div class="engine-grid">
       {% for engine in engines %}
@@ -88,7 +87,7 @@ description: Emulators, game engines, and native ports bundled with REG Linux â€
     <div class="section-heading">
       <p class="eyebrow">Native ports</p>
       <h2>Classic games, rebuilt for Linux</h2>
-      <p>Source ports and reimplementations that run natively.</p>
+      <p>Classic games rebuilt as native Linux ports. No emulation, full speed.</p>
     </div>
     <div class="ports-grid">
       {% for port in ports %}
