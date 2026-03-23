@@ -11,7 +11,7 @@ interface DeviceToken {
 }
 
 /** Authenticate via JWT cookie (browser) or device token (device). Returns author string or null. */
-async function authenticate(request: Request, env: Env): Promise<{ author: string; source: 'github' | 'device' } | null> {
+async function authenticate(request: Request, env: Env): Promise<{ author: string; source: 'github' | 'device'; deviceId?: string } | null> {
   // Try device token first: Authorization: Bearer device:<token>
   const authHeader = request.headers.get('Authorization');
   if (authHeader?.startsWith('Bearer device:')) {
@@ -30,7 +30,7 @@ async function authenticate(request: Request, env: Env): Promise<{ author: strin
 
     // Author is "device:<uuid_prefix>" for traceability
     const uuidPrefix = row.system_uuid.slice(0, 8);
-    return { author: `device:${uuidPrefix}`, source: 'device' };
+    return { author: `device:${uuidPrefix}`, source: 'device', deviceId: row.device_id };
   }
 
   // Try JWT cookie (browser flow)
@@ -62,6 +62,11 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
   if (typeof result === 'string') return json({ error: result }, 400);
 
   const { device_id, build_date, results, notes } = result;
+
+  // If device token auth, enforce that submitted device_id matches the token's device_id
+  if (auth.source === 'device' && auth.deviceId && auth.deviceId !== device_id) {
+    return json({ error: 'device_id does not match token' }, 403);
+  }
 
   // Check device exists
   const deviceRow = await env.DB.prepare('SELECT id, na_features FROM devices WHERE id = ?')
