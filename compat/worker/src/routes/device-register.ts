@@ -10,6 +10,19 @@ interface RegisterBody {
   reg_version: string;
 }
 
+function truncateIp(ip: string): string {
+  if (ip.includes('.')) {
+    // IPv4: zero out last octet
+    const parts = ip.split('.');
+    if (parts.length === 4) return `${parts[0]}.${parts[1]}.${parts[2]}.0`;
+  } else if (ip.includes(':')) {
+    // IPv6: keep first 3 groups (/48)
+    const parts = ip.split(':');
+    return parts.slice(0, 3).join(':') + '::';
+  }
+  return 'unknown';
+}
+
 function generateToken(): string {
   const bytes = new Uint8Array(32);
   crypto.getRandomValues(bytes);
@@ -75,7 +88,11 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
     }
   }
 
-  const ip = request.headers.get('CF-Connecting-IP') ?? request.headers.get('X-Forwarded-For') ?? 'unknown';
+  // Store truncated IP for rate limiting (GDPR: minimize personal data)
+  // IPv4: keep first 3 octets (192.168.1.x → 192.168.1.0)
+  // IPv6: keep first 48 bits (/48 prefix)
+  const rawIp = request.headers.get('CF-Connecting-IP') ?? request.headers.get('X-Forwarded-For') ?? 'unknown';
+  const ip = truncateIp(rawIp);
 
   // --- Anti-abuse: layered rate limiting ---
 

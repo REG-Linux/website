@@ -7,6 +7,15 @@
 #   reg-compat-sync              # sync if report exists and network is up
 #   reg-compat-sync --force      # sync even if recently synced
 
+# Opt-out: if user sets compat.reporting=0 in system.conf, do nothing
+CONF_FILE="/userdata/system/system.conf"
+if [ -f "$CONF_FILE" ]; then
+    OPT_OUT=$(awk -F= '/^[[:space:]]*compat\.reporting[[:space:]]*=/ { gsub(/[[:space:]]/, "", $2); print $2 }' "$CONF_FILE")
+    if [ "$OPT_OUT" = "0" ]; then
+        exit 0
+    fi
+fi
+
 API="https://compat.reglinux.org"
 REPORT_FILE="/userdata/system/.compat-report.json"
 TOKEN_FILE="/userdata/system/.compat-token"

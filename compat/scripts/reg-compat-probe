@@ -12,6 +12,15 @@
 #   reg-compat-probe --suspend    # mark suspend as working (called on resume)
 #   reg-compat-probe --usb        # re-probe USB
 
+# Opt-out: if user sets compat.reporting=0 in system.conf, do nothing
+CONF_FILE="/userdata/system/system.conf"
+if [ -f "$CONF_FILE" ]; then
+    OPT_OUT=$(awk -F= '/^[[:space:]]*compat\.reporting[[:space:]]*=/ { gsub(/[[:space:]]/, "", $2); print $2 }' "$CONF_FILE")
+    if [ "$OPT_OUT" = "0" ]; then
+        exit 0
+    fi
+fi
+
 REPORT_FILE="/userdata/system/.compat-report.json"
 BOARD_FILE="/boot/boot/system.board"
 VERSION_FILE="/usr/share/reglinux/system.version"
