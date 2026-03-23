@@ -32,12 +32,26 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
     return json({ error: 'missing required fields: device_id, system_uuid, board_file_hash' }, 400);
   }
 
-  if (typeof device_id !== 'string' || device_id.length > 100) {
+  // Strict input validation — only allow safe characters
+  const SAFE_ID = /^[a-z0-9][a-z0-9._-]{1,99}$/;
+  const SAFE_UUID = /^[a-f0-9-]{16,128}$/;
+  const SAFE_HASH = /^[a-f0-9]{32,128}$/;
+  const SAFE_VERSION = /^[a-zA-Z0-9._-]{0,64}$/;
+
+  if (typeof device_id !== 'string' || !SAFE_ID.test(device_id)) {
     return json({ error: 'invalid device_id' }, 400);
   }
 
-  if (typeof system_uuid !== 'string' || system_uuid.length < 16 || system_uuid.length > 128) {
+  if (typeof system_uuid !== 'string' || !SAFE_UUID.test(system_uuid)) {
     return json({ error: 'invalid system_uuid' }, 400);
+  }
+
+  if (typeof board_file_hash !== 'string' || !SAFE_HASH.test(board_file_hash)) {
+    return json({ error: 'invalid board_file_hash' }, 400);
+  }
+
+  if (reg_version && !SAFE_VERSION.test(reg_version)) {
+    return json({ error: 'invalid reg_version' }, 400);
   }
 
   // Check device exists in our database

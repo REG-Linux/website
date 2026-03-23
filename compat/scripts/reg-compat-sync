@@ -77,6 +77,11 @@ json_get() {
     echo "$1" | grep -o "\"$2\"[[:space:]]*:[[:space:]]*\"[^\"]*\"" | head -1 | sed 's/.*: *"\([^"]*\)"/\1/'
 }
 
+# Escape a string for safe JSON embedding
+json_escape() {
+    printf '%s' "$1" | sed 's/\\/\\\\/g; s/"/\\"/g; s/	/\\t/g' | tr -d '\n'
+}
+
 # --- Pre-checks ---
 
 [ -f "$REPORT_FILE" ] || die "No report file at $REPORT_FILE — run reg-compat-probe first"
@@ -123,7 +128,8 @@ if [ -z "$TOKEN" ]; then
     log "No token found — registering device..."
 
     REG_BODY=$(printf '{"device_id":"%s","arch":"%s","kernel":"%s","board_file_hash":"%s","system_uuid":"%s","reg_version":"%s"}' \
-        "$DEVICE_ID" "$ARCH" "$KERNEL" "$BOARD_HASH" "$SYSTEM_UUID" "$REG_VERSION")
+        "$(json_escape "$DEVICE_ID")" "$(json_escape "$ARCH")" "$(json_escape "$KERNEL")" \
+        "$(json_escape "$BOARD_HASH")" "$(json_escape "$SYSTEM_UUID")" "$(json_escape "$REG_VERSION")")
 
     RESPONSE=$(http_post "$API/api/device-register" "$REG_BODY")
 
@@ -190,7 +196,7 @@ esac
 [ -z "$SUBMIT_DATE" ] && SUBMIT_DATE=$(date +%Y-%m-%d)
 
 SUBMIT_BODY=$(printf '{"device_id":"%s","build_date":"%s","results":%s,"notes":"auto-probe %s"}' \
-    "$DEVICE_ID" "$SUBMIT_DATE" "$RESULTS" "$REG_VERSION")
+    "$(json_escape "$DEVICE_ID")" "$(json_escape "$SUBMIT_DATE")" "$RESULTS" "$(json_escape "$REG_VERSION")")
 
 # --- Submit ---
 
