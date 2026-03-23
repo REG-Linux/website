@@ -75,15 +75,48 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
     }
   }
 
-  // Rate limit: max 3 registrations per IP per hour
   const ip = request.headers.get('CF-Connecting-IP') ?? request.headers.get('X-Forwarded-For') ?? 'unknown';
-  const rateResult = await env.DB.prepare(
+
+  // --- Anti-abuse: layered rate limiting ---
+
+  // Layer 1: max 3 registrations per IP per hour
+  const ipRate = await env.DB.prepare(
     `SELECT COUNT(*) as cnt FROM device_tokens
      WHERE ip_address = ? AND created_at >= datetime('now', '-1 hour')`,
   ).bind(ip).first<{ cnt: number }>();
 
-  if (rateResult && rateResult.cnt >= 3) {
-    return json({ error: 'rate_limit_exceeded', detail: 'max 3 device registrations per IP per hour' }, 429);
+  if (ipRate && ipRate.cnt >= 3) {
+    return json({ error: 'rate_limit_exceeded', detail: 'max 3 registrations per IP per hour' }, 429);
+  }
+
+  // Layer 2: max 10 total registrations per IP (lifetime)
+  // Prevents slow-drip abuse over days
+  const ipLifetime = await env.DB.prepare(
+    `SELECT COUNT(*) as cnt FROM device_tokens WHERE ip_address = ?`,
+  ).bind(ip).first<{ cnt: number }>();
+
+  if (ipLifetime && ipLifetime.cnt >= 10) {
+    return json({ error: 'rate_limit_exceeded', detail: 'max 10 registrations per IP' }, 429);
+  }
+
+  // Layer 3: global cap — max 500 total tokens
+  // Prevents DB bloat. 186 devices × ~2-3 installs each = ~500 max realistic
+  const globalCount = await env.DB.prepare(
+    'SELECT COUNT(*) as cnt FROM device_tokens',
+  ).first<{ cnt: number }>();
+
+  if (globalCount && globalCount.cnt >= 500) {
+    return json({ error: 'registration_closed', detail: 'max device registrations reached' }, 429);
+  }
+
+  // Layer 4: max 5 tokens per device_id
+  // Prevents one device model from being spammed
+  const deviceRate = await env.DB.prepare(
+    `SELECT COUNT(*) as cnt FROM device_tokens WHERE device_id = ?`,
+  ).bind(device_id).first<{ cnt: number }>();
+
+  if (deviceRate && deviceRate.cnt >= 5) {
+    return json({ error: 'rate_limit_exceeded', detail: 'max 5 registrations per device model' }, 429);
   }
 
   // Check if this UUID is already registered
@@ -92,14 +125,13 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
   ).bind(system_uuid).first<{ token: string; device_id: string; revoked: number }>();
 
   if (existing) {
-    // UUID already registered
     if (existing.device_id !== device_id) {
       return json({ error: 'system_uuid already registered for a different device' }, 409);
     }
     if (existing.revoked) {
       return json({ error: 'device token has been revoked' }, 403);
     }
-    // Return existing token (idempotent)
+    // Return existing token (idempotent — doesn't count as new registration)
     await env.DB.prepare(
       `UPDATE device_tokens SET last_used = datetime('now'), reg_version = ? WHERE system_uuid = ?`,
     ).bind(reg_version ?? '', system_uuid).run();

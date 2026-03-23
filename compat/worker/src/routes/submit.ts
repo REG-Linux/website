@@ -92,6 +92,18 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
     return json({ error: 'rate_limit_exceeded', detail: 'max 10 submissions per hour' }, 429);
   }
 
+  // For device submissions: limit total rows per author (prevents DB bloat from compromised tokens)
+  if (auth.source === 'device') {
+    const authorTotal = await env.DB.prepare(
+      'SELECT COUNT(*) as cnt FROM test_results WHERE author = ?',
+    ).bind(auth.author).first<{ cnt: number }>();
+
+    // 22 features × ~30 builds = 660 rows max per device lifetime — cap at 1000
+    if (authorTotal && authorTotal.cnt >= 1000) {
+      return json({ error: 'rate_limit_exceeded', detail: 'device submission lifetime limit reached' }, 429);
+    }
+  }
+
   // Upsert results
   const statements = Object.entries(results).map(([featureId, status]) =>
     env.DB.prepare(
