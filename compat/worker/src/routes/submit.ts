@@ -3,13 +3,52 @@ import { json, parseNaFeatures } from '../lib/http';
 import { getJWTFromRequest, verifyJWT } from '../lib/auth';
 import { validateSubmission } from '../lib/validate';
 
-export async function handleSubmit(request: Request, env: Env): Promise<Response> {
-  // Authenticate
-  const token = getJWTFromRequest(request);
-  if (!token) return json({ error: 'not_authenticated' }, 401);
+interface DeviceToken {
+  token: string;
+  device_id: string;
+  system_uuid: string;
+  revoked: number;
+}
 
-  const user = await verifyJWT(token, env.JWT_SECRET);
-  if (!user) return json({ error: 'invalid_token' }, 401);
+/** Authenticate via JWT cookie (browser) or device token (device). Returns author string or null. */
+async function authenticate(request: Request, env: Env): Promise<{ author: string; source: 'github' | 'device' } | null> {
+  // Try device token first: Authorization: Bearer device:<token>
+  const authHeader = request.headers.get('Authorization');
+  if (authHeader?.startsWith('Bearer device:')) {
+    const deviceToken = authHeader.slice('Bearer device:'.length);
+    const row = await env.DB.prepare(
+      'SELECT token, device_id, system_uuid, revoked FROM device_tokens WHERE token = ?',
+    ).bind(deviceToken).first<DeviceToken>();
+
+    if (!row) return null;
+    if (row.revoked) return null;
+
+    // Update last_used
+    await env.DB.prepare(
+      `UPDATE device_tokens SET last_used = datetime('now') WHERE token = ?`,
+    ).bind(deviceToken).run();
+
+    // Author is "device:<uuid_prefix>" for traceability
+    const uuidPrefix = row.system_uuid.slice(0, 8);
+    return { author: `device:${uuidPrefix}`, source: 'device' };
+  }
+
+  // Try JWT cookie (browser flow)
+  const jwt = getJWTFromRequest(request);
+  if (jwt) {
+    const payload = await verifyJWT(jwt, env.JWT_SECRET);
+    if (payload) {
+      return { author: payload.username, source: 'github' };
+    }
+  }
+
+  return null;
+}
+
+export async function handleSubmit(request: Request, env: Env): Promise<Response> {
+  // Authenticate (supports both browser JWT and device token)
+  const auth = await authenticate(request, env);
+  if (!auth) return json({ error: 'not_authenticated' }, 401);
 
   // Parse and validate body
   let body: unknown;
@@ -42,7 +81,7 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
   const rateResult = await env.DB.prepare(
     `SELECT COUNT(*) as cnt FROM test_results
      WHERE author = ? AND submitted_at >= datetime('now', '-1 hour')`,
-  ).bind(user.username).first<{ cnt: number }>();
+  ).bind(auth.author).first<{ cnt: number }>();
 
   if (rateResult && rateResult.cnt >= 10) {
     return json({ error: 'rate_limit_exceeded', detail: 'max 10 submissions per hour' }, 429);
@@ -55,10 +94,10 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
        VALUES (?, ?, ?, ?, ?, ?)
        ON CONFLICT(device_id, feature_id, build_date, author)
        DO UPDATE SET status = excluded.status, notes = excluded.notes, submitted_at = datetime('now')`,
-    ).bind(device_id, featureId, build_date, user.username, status, notes),
+    ).bind(device_id, featureId, build_date, auth.author, status, notes),
   );
 
   await env.DB.batch(statements);
 
-  return json({ ok: true, inserted: Object.keys(results).length });
+  return json({ ok: true, inserted: Object.keys(results).length, author: auth.author });
 }
