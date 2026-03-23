@@ -171,8 +171,22 @@ if [ "$RESULTS" = "{}" ]; then
     exit 0
 fi
 
-# Build date — use REG version date or current date
-SUBMIT_DATE="$BUILD_DATE"
+# Build date — must be ISO format YYYY-MM-DD
+# The probe's BUILD_DATE might be in YY.MM format (from version string)
+# Convert to ISO date, or fall back to today
+SUBMIT_DATE=""
+case "$BUILD_DATE" in
+    [0-9][0-9].[0-9][0-9])
+        # YY.MM → 20YY-MM-01
+        YEAR="20$(echo "$BUILD_DATE" | cut -d. -f1)"
+        MONTH="$(echo "$BUILD_DATE" | cut -d. -f2)"
+        SUBMIT_DATE="${YEAR}-${MONTH}-01"
+        ;;
+    [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])
+        # Already ISO format
+        SUBMIT_DATE="$BUILD_DATE"
+        ;;
+esac
 [ -z "$SUBMIT_DATE" ] && SUBMIT_DATE=$(date +%Y-%m-%d)
 
 SUBMIT_BODY=$(printf '{"device_id":"%s","build_date":"%s","results":%s,"notes":"auto-probe %s"}' \
