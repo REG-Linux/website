@@ -11,11 +11,18 @@ interface DeviceToken {
 }
 
 /** Authenticate via JWT cookie (browser) or device token (device). Returns author string or null. */
-async function authenticate(request: Request, env: Env): Promise<{ author: string; source: 'github' | 'device'; deviceId?: string } | null> {
+async function authenticate(request: Request, env: Env): Promise<{ author: string; source: 'github' | 'device' | 'dev'; deviceId?: string } | null> {
   // Try device token first: Authorization: Bearer device:<token>
   const authHeader = request.headers.get('Authorization');
   if (authHeader?.startsWith('Bearer device:')) {
     const deviceToken = authHeader.slice('Bearer device:'.length);
+
+    // Check if it's a pre-approved dev token (god mode — no rate limits, any device)
+    const devTokens = new Set((env.DEV_TOKENS ?? '').split(',').map(t => t.trim()).filter(Boolean));
+    if (devTokens.has(deviceToken)) {
+      return { author: 'dev', source: 'dev' };
+    }
+
     const row = await env.DB.prepare(
       'SELECT token, device_id, system_uuid, revoked FROM device_tokens WHERE token = ?',
     ).bind(deviceToken).first<DeviceToken>();
@@ -64,6 +71,7 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
   const { device_id, build_date, results, notes } = result;
 
   // If device token auth, enforce that submitted device_id matches the token's device_id
+  // Dev tokens can submit for any device
   if (auth.source === 'device' && auth.deviceId && auth.deviceId !== device_id) {
     return json({ error: 'device_id does not match token' }, 403);
   }
@@ -82,14 +90,16 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
     }
   }
 
-  // Rate limit: max 10 submissions per author per hour
-  const rateResult = await env.DB.prepare(
-    `SELECT COUNT(*) as cnt FROM test_results
-     WHERE author = ? AND submitted_at >= datetime('now', '-1 hour')`,
-  ).bind(auth.author).first<{ cnt: number }>();
+  // Rate limit: dev tokens skip all limits
+  if (auth.source !== 'dev') {
+    const rateResult = await env.DB.prepare(
+      `SELECT COUNT(*) as cnt FROM test_results
+       WHERE author = ? AND submitted_at >= datetime('now', '-1 hour')`,
+    ).bind(auth.author).first<{ cnt: number }>();
 
-  if (rateResult && rateResult.cnt >= 10) {
-    return json({ error: 'rate_limit_exceeded', detail: 'max 10 submissions per hour' }, 429);
+    if (rateResult && rateResult.cnt >= 10) {
+      return json({ error: 'rate_limit_exceeded', detail: 'max 10 submissions per hour' }, 429);
+    }
   }
 
   // For device submissions: limit total rows per author (prevents DB bloat from compromised tokens)

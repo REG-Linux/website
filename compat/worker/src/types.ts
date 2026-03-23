@@ -5,6 +5,7 @@ export interface Env {
   GITHUB_CLIENT_SECRET: string;
   JWT_SECRET: string;
   CORS_ORIGIN: string;
+  DEV_TOKENS?: string; // comma-separated pre-approved device tokens
 }
 
 export type DeviceType = 'handheld' | 'sbc' | 'tvbox' | 'console' | 'pc' | 'unknown';
