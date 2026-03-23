@@ -2,6 +2,7 @@ import { handleMatrix } from './routes/matrix';
 import { handleDevice } from './routes/device';
 import { handleSubmit } from './routes/submit';
 import { handleAuthGithub, handleAuthCallback, handleAuthMe } from './routes/auth';
+import { handleDeviceRegister } from './routes/device-register';
 import type { Env } from './types';
 
 function corsHeaders(origin: string): Record<string, string> {
@@ -45,6 +46,8 @@ export default {
         response = await handleDevice(request, env, deviceId);
       } else if (method === 'POST' && path === '/api/submit') {
         response = await handleSubmit(request, env);
+      } else if (method === 'POST' && path === '/api/device-register') {
+        response = await handleDeviceRegister(request, env);
       } else if (method === 'GET' && path === '/api/auth/github') {
         response = await handleAuthGithub(request, env);
       } else if (method === 'GET' && path === '/api/auth/callback') {
