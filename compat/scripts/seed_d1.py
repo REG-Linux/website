@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Seed the D1 devices table from devices_canonical.json.
 
-Generates a SQL file with INSERT OR IGNORE statements, then optionally
+Generates a SQL file with INSERT OR REPLACE statements, then optionally
 runs it via wrangler.
 
 Usage:
@@ -101,7 +101,7 @@ def main() -> None:
             sql_escape(dev.get("compositor")),
         ]
 
-        line = f"INSERT OR IGNORE INTO devices ({', '.join(cols)}) VALUES ({', '.join(vals)});"
+        line = f"INSERT OR REPLACE INTO devices ({', '.join(cols)}) VALUES ({', '.join(vals)});"
         lines.append(line)
         inserted += 1
 
