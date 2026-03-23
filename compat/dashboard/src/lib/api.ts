@@ -66,6 +66,7 @@ export interface DeviceDetail {
   bt_chip: string | null;
   has_fan: number | null;
   compositor: string | null;
+  install_notes: string | null;
 }
 
 export interface HistoryEntry {

@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS devices (
   bt_chip      TEXT,   -- "RTL8821CS"
   has_fan      INTEGER,-- 1/0/NULL
   compositor   TEXT,   -- "Sway" or "Weston"
+  install_notes TEXT,  -- Markdown: device-specific install instructions
   created_at   TEXT DEFAULT (datetime('now'))
 );
 

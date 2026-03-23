@@ -100,7 +100,6 @@ export function DeviceDetail({ deviceId }: Props) {
           )}
 
           <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
-            {device.wiki_url && <a href={device.wiki_url} target="_blank" rel="noopener" className="btn btn-secondary">Wiki</a>}
             <a href={`/submit?device=${device.id}`} className="btn btn-accent">Submit test for this device</a>
           </div>
         </div>
@@ -142,6 +141,22 @@ export function DeviceDetail({ deviceId }: Props) {
           </div>
         ))}
       </div>
+
+      {/* Install notes */}
+      {device.install_notes && (
+        <>
+          <h2 style={{ fontSize: '1.1rem', margin: '0 0 1rem', fontFamily: 'var(--font-heading)' }}>Installation</h2>
+          <div className="card" style={{ padding: '1.25rem 1.5rem', fontSize: '0.88rem', lineHeight: '1.6', color: 'var(--text-muted)', marginBottom: '2.5rem' }}>
+            {device.install_notes.split('\n').map((line, i) => {
+              const trimmed = line.trim();
+              if (!trimmed) return <br key={i} />;
+              if (trimmed.startsWith('### ')) return <h3 key={i} style={{ fontSize: '0.95rem', color: 'var(--text)', margin: '0.75rem 0 0.25rem', fontFamily: 'var(--font-heading)' }}>{trimmed.slice(4)}</h3>;
+              if (trimmed.startsWith('- ')) return <li key={i} style={{ marginLeft: '1rem', marginBottom: '0.25rem' }}>{trimmed.slice(2)}</li>;
+              return <p key={i} style={{ margin: '0.3rem 0' }}>{trimmed}</p>;
+            })}
+          </div>
+        </>
+      )}
 
       {/* Regressions */}
       {history.length >= 2 && (() => {

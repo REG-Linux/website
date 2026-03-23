@@ -70,6 +70,7 @@ def main() -> None:
             "kernel", "arch", "wiki_url", "image", "na_features",
             "display_size", "display_res", "ram", "storage",
             "wifi_chip", "bt_chip", "has_fan", "compositor",
+            "install_notes",
         ]
 
         vals = [
@@ -99,6 +100,7 @@ def main() -> None:
             sql_escape(dev.get("bt_chip")),
             sql_escape(dev.get("has_fan")),
             sql_escape(dev.get("compositor")),
+            sql_escape(dev.get("install_notes")),
         ]
 
         line = f"INSERT OR REPLACE INTO devices ({', '.join(cols)}) VALUES ({', '.join(vals)});"

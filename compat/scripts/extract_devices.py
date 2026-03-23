@@ -267,6 +267,7 @@ def main() -> None:
             "bt_chip": dev.get("bt_chip") or None,
             "has_fan": 1 if dev.get("has_fan") else (0 if dev.get("has_fan") is False else None),
             "compositor": dev.get("compositor") or None,
+            "install_notes": dev.get("install_notes") or None,
         }
         output.append(record)
 

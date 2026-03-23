@@ -49,6 +49,17 @@ anbernic-rg-cubexx:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg-ds:
   title: Anbernic RG DS
   brand: Anbernic
@@ -66,6 +77,13 @@ anbernic-rg-ds:
   ram: TBD
   storage: TBD eMMC + SD
   compositor: TBD
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg280m:
   title: Anbernic RG280M
   brand: Anbernic
@@ -106,6 +124,17 @@ anbernic-rg28xx:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg300:
   title: Anbernic RG300
   brand: Anbernic
@@ -146,6 +175,17 @@ anbernic-rg34xx:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg350:
   title: Anbernic RG350
   brand: Anbernic
@@ -185,6 +225,14 @@ anbernic-rg351-p-m-mp:
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 anbernic-rg351v:
   title: Anbernic RG351V
   brand: Anbernic
@@ -202,6 +250,14 @@ anbernic-rg351v:
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 anbernic-rg353m:
   title: Anbernic RG353M
   brand: Anbernic
@@ -220,6 +276,13 @@ anbernic-rg353m:
   ram: 1 GB (VS/PS), 2 GB (P/M/V) LPDDR4
   storage: 32GB (P/M/V) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg353p-s:
   title: Anbernic RG353P(S)
   brand: Anbernic
@@ -238,6 +301,13 @@ anbernic-rg353p-s:
   ram: 1 GB (VS/PS), 2 GB (P/M/V) LPDDR4
   storage: 32GB (P/M/V) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg353v-s:
   title: Anbernic RG353V(S)
   brand: Anbernic
@@ -256,6 +326,13 @@ anbernic-rg353v-s:
   ram: 1 GB (VS/PS), 2 GB (P/M/V) LPDDR4
   storage: 32GB (P/M/V) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg35xx-2024:
   title: Anbernic RG35XX 2024
   brand: Anbernic
@@ -274,6 +351,17 @@ anbernic-rg35xx-2024:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-h:
   title: Anbernic RG35XX H
   brand: Anbernic
@@ -292,6 +380,17 @@ anbernic-rg35xx-h:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-plus:
   title: Anbernic RG35XX Plus
   brand: Anbernic
@@ -310,6 +409,17 @@ anbernic-rg35xx-plus:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-pro:
   title: Anbernic RG35XX Pro
   brand: Anbernic
@@ -328,6 +438,17 @@ anbernic-rg35xx-pro:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-sp:
   title: Anbernic RG35XX SP
   brand: Anbernic
@@ -346,6 +467,17 @@ anbernic-rg35xx-sp:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg40xx-h:
   title: Anbernic RG40XX H
   brand: Anbernic
@@ -364,6 +496,17 @@ anbernic-rg40xx-h:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg40xx-v:
   title: Anbernic RG40XX V
   brand: Anbernic
@@ -382,6 +525,17 @@ anbernic-rg40xx-v:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg503:
   title: Anbernic RG503
   brand: Anbernic
@@ -400,6 +554,13 @@ anbernic-rg503:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg552:
   title: Anbernic RG552
   brand: Anbernic
@@ -432,6 +593,13 @@ anbernic-rgarc:
   ram: 1 GB (S), 2 GB (D) LPDDR4
   storage: 32GB (D) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 armsom-sige7:
   title: ArmSoM SIGE7
   brand: ArmSoM
@@ -456,6 +624,22 @@ asus-rog-ally:
   board_url: https://reglinux.org/wiki/handhelds/x86_64/asus-rog-ally/
   description: REG Linux for Asus ROG Ally (AMD Ryzen Z1).
   lede: Asus ROG Ally — PC powered by AMD Ryzen Z1.
+  install_notes: '## Installation notes
+
+
+    1. Grab the image. Download the latest Asus ROG Ally build from the downloads page or the official board entry .
+
+
+    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure
+    to verify the checksum before booting.
+
+
+    3. First boot setup. Insert the media into your Asus ROG Ally, power on, and let REG Linux expand the filesystem. Pair
+    controllers inside EmulationStation once prompted.
+
+
+    4. Troubleshoot with rescue tools. REG Linux ships with an immutable base and rescue partition—if something breaks, reboot
+    into rescue or reflash without touching your ROMs.'
 asus-tinker-board-2:
   title: ASUS Tinker Board 2
   brand: ASUS
@@ -817,6 +1001,13 @@ gameforce-ace:
   board_url: https://reglinux.org/wiki/handhelds/gameforce/gameforce-ace/
   description: REG Linux for Gameforce ACE (Rockchip RK3588).
   lede: Gameforce ACE — handheld powered by Rockchip RK3588.
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3588 REG Linux image from the REG Linux download page. Flash it to an SD card or eMMC.'
 gameforce-chi:
   title: Gameforce CHI
   brand: Gameforce
@@ -830,6 +1021,22 @@ gameforce-chi:
   board_url: https://reglinux.org/wiki/sbcs/gameforce-chi/
   description: REG Linux for Gameforce CHI (Rockchip RK3326).
   lede: Gameforce CHI — handheld powered by Rockchip RK3326.
+  install_notes: '## Installation notes
+
+
+    1. Grab the image. Download the latest Gameforce CHI build from the downloads page or the official board entry .
+
+
+    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure
+    to verify the checksum before booting.
+
+
+    3. First boot setup. Insert the media into your Gameforce CHI, power on, and let REG Linux expand the filesystem. Pair
+    controllers inside EmulationStation once prompted.
+
+
+    4. Troubleshoot with rescue tools. REG Linux ships with an immutable base and rescue partition—if something breaks, reboot
+    into rescue or reflash without touching your ROMs.'
 gcw-zero:
   title: GCW Zero
   brand: GCW
@@ -933,6 +1140,14 @@ hardkernel-odroid-go-advance:
   wifi_chip: ESP32-S2
   bt_chip: ESP32-S2
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.'
 hardkernel-odroid-go-super:
   title: HardKernel ODROID Go Super
   brand: HardKernel
@@ -951,6 +1166,14 @@ hardkernel-odroid-go-super:
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.'
 hardkernel-odroid-go-ultra:
   title: HardKernel ODROID GO Ultra
   brand: HardKernel
@@ -964,6 +1187,30 @@ hardkernel-odroid-go-ultra:
   board_url: https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-ultra/
   description: REG Linux for HardKernel ODROID GO Ultra (Amlogic S922X).
   lede: HardKernel ODROID GO Ultra — handheld powered by Amlogic S922X.
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    First download the latest S922X version of REG Linux from the button below.
+
+
+    To install REG Linux to the eMMC, you need to boot the device into recovery mode. There are 2 ways to do this:
+
+
+    - Hardkernel Recovery SD Download this recovery image . Follow the recovery steps on the Odroid wiki . [this recovery
+    image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery) [the Odroid wiki](https://wiki.odroid.com/odroid_go_ultra/getting_started/recovery_eMMC)
+
+    - REG Linux Recovery hold Volume Down while the device boots.
+
+
+    Once booted into recovery mode and connected to a PC via USB-C, the REG Linux image may be flashed to the eMMC using Balena
+    Etcher, win32diskimager, dd or similar.
+
+
+    Once the REG Linux image has been flashed to the the eMMC, restart the device and REG Linux will go through its first
+    boot process (running from eMMC).'
 hardkernel-odroid-m1:
   title: HardKernel ODROID M1
   brand: HardKernel
@@ -1220,6 +1467,20 @@ magicx-xu-mini-m:
   ram: 1 GB DDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Download
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.
+
+
+    ### Installation guide
+
+
+    TODO'
 mangmi-air-x:
   title: Mangmi Air X
   brand: Mangmi
@@ -1717,6 +1978,14 @@ powkiddy-rgb10:
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 powkiddy-rgb10-max-3:
   title: RGB10 Max 3
   brand: Powkiddy
@@ -1737,6 +2006,13 @@ powkiddy-rgb10-max-3:
   wifi_chip: RTL8723DS
   bt_chip: RTL8723DS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rgb10-max-3-pro:
   title: RGB10 Max 3 Pro
   brand: Powkiddy
@@ -1768,6 +2044,14 @@ powkiddy-rgb10x:
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 powkiddy-rgb20-pro:
   title: RGB20 Pro
   brand: Powkiddy
@@ -1788,6 +2072,13 @@ powkiddy-rgb20-pro:
   wifi_chip: RTL8723DS
   bt_chip: RTL8723DS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rgb20sx:
   title: Powkiddy RGB20SX
   brand: Powkiddy
@@ -1808,6 +2099,13 @@ powkiddy-rgb20sx:
   wifi_chip: RTL8723DS
   bt_chip: RTL8723DS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rgb30:
   title: Powkiddy RGB30
   brand: Powkiddy
@@ -1828,6 +2126,13 @@ powkiddy-rgb30:
   wifi_chip: RTL8821CS
   bt_chip: RTL8821CS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rk2023:
   title: Powkiddy RK2023
   brand: Powkiddy
@@ -1846,6 +2151,13 @@ powkiddy-rk2023:
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x35h:
   title: Powkiddy X35H
   brand: Powkiddy
@@ -1864,6 +2176,13 @@ powkiddy-x35h:
   ram: 1 GB LPDDR4X
   storage: 4 GB eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x35s:
   title: Powkiddy X35S
   brand: Powkiddy
@@ -1882,6 +2201,13 @@ powkiddy-x35s:
   ram: 1 GB LPDDR4X
   storage: 4 GB eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x55:
   title: Powkiddy X55
   brand: Powkiddy
@@ -1902,6 +2228,13 @@ powkiddy-x55:
   wifi_chip: 8821CS
   bt_chip: 8821CS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-xu10:
   title: Powkiddy XU10
   brand: Powkiddy
@@ -1920,6 +2253,14 @@ powkiddy-xu10:
   ram: 1 GB DDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 radxa-dragon-q6a:
   title: Radxa Dragon Q6A
   brand: Radxa
@@ -2309,6 +2650,14 @@ unbranded-game-console-r33s:
   ram: 1 GB (some revisions 512 MB) DDR3
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.'
 unbranded-game-console-r35s-r36s:
   title: Game Console R35S R36S
   brand: Unbranded
@@ -2327,6 +2676,45 @@ unbranded-game-console-r35s-r36s:
   ram: 1 GB DDR3
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.
+
+
+    ### New displays (R36s of year 2024)
+
+
+    Recent R36s have new displays that need some extra actions to work.
+
+
+    The simplest way so far is:
+
+
+    - Determine which panel do you have (or just try every option until it works)
+
+    - Download a mipi-panel.dtbo.r36s-panel* there [there](https://github.com/stolen/r.nix-distribution/releases/tag/panel_overlays)
+
+    - Rename the downloaded file and put it to a boot ( REG Linux ) partition as overlays/mipi-panel.dtbo
+
+
+    These files mostly have just basic refresh rate (77.378 FPS) ( panel4 has 50, 60, 75 because we tested it)
+
+
+    If you have an original .dtb file, you can generate a mipi-panel.dtbo from it. Assuming you have an SSH access and you
+    have scp ''d the original dtb as rk3326-r35s-linux.dtb , the process would be as follows: RK3326:~ # mount -o remount,rw
+    /flash RK3326:~ # mkdir -p /flash/overlays/ RK3326:~ # # ## Be not afraid! importpanel.py may run for a minute or two
+    for some panels RK3326:~ # /usr/libexec/generic-dsi/importpanel.py rk3326-r35s-linux.dtb -O dtbo -o /flash/overlays/mipi-panel.dtbo
+    RK3326:~ # sync ; mount -o remount,ro /flash/ Here we just make an overlays directory writable, then call a script that
+    does all the importing stuff. Feel free to run this script on your PC, modify it and experiment with panel timings.
+
+
+    This script adds a bunch of potentially useful refresh rates, but we have very few knowledge on which modes work well.
+    Please check them with wlr-randr or with game configuration and tell us which modes work with your panel.'
 unbranded-ps5000:
   title: PS5000
   brand: Unbranded
@@ -2367,6 +2755,18 @@ unbranded-rk3326-clones:
   ram: usually 1 GB DDR3, sometimes 512M
   storage: 8 GB (often) eMMC + SD
   compositor: Sway
+  install_notes: '## Installation notes
+
+
+    1. Grab the image. Download the latest RK3326 clones (including K36 and BatleXP G350) build from the downloads page.
+
+
+    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure
+    to verify the checksum before booting.
+
+
+    3. First boot setup. Insert the media into your RK3326 clones (including K36 and BatleXP G350), power on, and let REG
+    Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.'
 vamrs-rock960:
   title: 96Boards Rock960
   brand: Vamrs
