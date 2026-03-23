@@ -20,6 +20,7 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEVICES_YML = REPO_ROOT / "_data" / "devices.yml"
 SOCS_YML = REPO_ROOT / "_data" / "socs.yml"
+OVERRIDES_YML = REPO_ROOT / "_data" / "device_overrides.yml"
 OUTPUT = Path(__file__).resolve().parent / "devices_canonical.json"
 
 # ---------------------------------------------------------------------------
@@ -144,6 +145,23 @@ def main() -> None:
     print(f"Reading {SOCS_YML}")
     with open(SOCS_YML) as f:
         socs_raw = yaml.safe_load(f)
+
+    # Apply manual overrides
+    overrides: dict = {}
+    if OVERRIDES_YML.exists():
+        with open(OVERRIDES_YML) as f:
+            overrides = yaml.safe_load(f) or {}
+        override_count = 0
+        for dev_id, fixes in overrides.items():
+            if dev_id in devices_raw and isinstance(fixes, dict):
+                for key, val in fixes.items():
+                    if val is not None and val != "":
+                        devices_raw[dev_id][key] = val
+                    elif val == "":
+                        devices_raw[dev_id][key] = None
+                override_count += 1
+        if override_count:
+            print(f"Applied {override_count} overrides from {OVERRIDES_YML.name}")
 
     # Build SoC lookup tables
     # 1. By "{manufacturer} {model}" (exact display name used in devices.yml)
