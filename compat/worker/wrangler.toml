@@ -21,3 +21,8 @@ zone_name = "reglinux.org"
 # Secrets (set via wrangler secret put):
 # GITHUB_CLIENT_SECRET
 # JWT_SECRET
+# DEV_TOKENS — comma-separated list of pre-approved device tokens
+#   These bypass registration rate limits and per-device caps.
+#   Generate with: openssl rand -hex 32
+#   Set with: wrangler secret put DEV_TOKENS
+#   On device: echo "<token>" > /userdata/system/.compat-token
