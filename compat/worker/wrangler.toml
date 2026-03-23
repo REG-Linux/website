@@ -13,6 +13,10 @@ GITHUB_CLIENT_ID = "Ov23liZEsqSwNEMVeZSV"
 GITHUB_REDIRECT_URI = "https://compat.reglinux.org/api/auth/callback"
 CORS_ORIGIN = "https://compat.reglinux.org"
 
+# Daily cleanup: purge stale tokens and revoked data
+[triggers]
+crons = ["0 3 * * *"]  # 3:00 AM UTC daily
+
 # Worker route for API under the Pages custom domain
 [[routes]]
 pattern = "compat.reglinux.org/api/*"

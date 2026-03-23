@@ -1,0 +1,76 @@
+---
+import '../styles/global.css';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Privacy — REG-Linux Compatibility Matrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://reglinux.org/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="https://reglinux.org" class="site-logo">
+        <img src="https://reglinux.org/assets/images/reg_linux_logo-sm.webp" alt="REG-Linux" />
+      </a>
+      <span class="separator">/</span>
+      <a href="/" style="color: var(--text-muted); text-decoration: none;">Matrix</a>
+      <span class="separator">/</span>
+      <span class="page-title">Privacy</span>
+    </header>
+    <main style="max-width: 720px; margin: 0 auto;">
+      <h1 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Privacy Notice</h1>
+
+      <p>The REG-Linux Compatibility Matrix (<a href="https://compat.reglinux.org">compat.reglinux.org</a>) collects hardware compatibility data to help users know what works on their device before flashing.</p>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">What we collect</h2>
+
+      <h3 style="font-size: 0.95rem; margin-top: 1.5rem;">From devices (automatic reporting)</h3>
+      <ul>
+        <li><strong>Hardware status</strong> — which features work (WiFi, Bluetooth, display, etc.). This is not personal data.</li>
+        <li><strong>Device model and OS version</strong> — e.g. "Anbernic RG35XX Plus", "REG Linux 26.03". Not personal data.</li>
+        <li><strong>Installation identifier</strong> — a random ID unique to your REG Linux installation. This is a pseudonymous identifier that cannot identify you without additional information.</li>
+        <li><strong>Truncated IP address</strong> — the last octet of your IPv4 address is zeroed (e.g. 192.168.1.x becomes 192.168.1.0). Used only for abuse prevention rate limiting. Cannot identify a specific connection.</li>
+      </ul>
+
+      <h3 style="font-size: 0.95rem; margin-top: 1.5rem;">From the web dashboard (manual submissions)</h3>
+      <ul>
+        <li><strong>GitHub username and avatar</strong> — provided by GitHub when you sign in via OAuth. We only request <code>read:user</code> scope. We do not access your repositories, email, or any other GitHub data.</li>
+      </ul>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">What we don't collect</h2>
+      <ul>
+        <li>No analytics or tracking scripts</li>
+        <li>No cookies on devices (token stored locally only)</li>
+        <li>No device fingerprinting</li>
+        <li>No profiling or behavioral tracking</li>
+        <li>No email addresses</li>
+        <li>No game library, ROM list, or usage data</li>
+      </ul>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">Legal basis (GDPR)</h2>
+      <p><strong>Legitimate interest</strong> — hardware compatibility tracking for an open-source operating system. The data collected is minimal, mostly non-personal, and directly serves the purpose of helping users choose compatible hardware.</p>
+      <p>For GitHub username: <strong>consent</strong> via the OAuth authorization flow.</p>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">Opt out</h2>
+      <p>To disable all automatic reporting from your device, add this line to <code>/userdata/system/system.conf</code>:</p>
+      <pre style="background: var(--bg-soft, #0c101c); padding: 0.75rem 1rem; border-radius: 8px; font-family: var(--font-mono); font-size: 0.85rem; overflow-x: auto;">compat.reporting=0</pre>
+      <p>Both the probe and sync scripts check this flag and exit without collecting or sending any data.</p>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">Data retention</h2>
+      <ul>
+        <li><strong>Device tokens</strong> — automatically deleted after 1 year of inactivity.</li>
+        <li><strong>Test results</strong> — kept indefinitely to maintain compatibility history. Older results are superseded by newer ones in the matrix view.</li>
+        <li><strong>Truncated IP addresses</strong> — stored in device token records only. Deleted when the token is purged.</li>
+      </ul>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">Your rights</h2>
+      <p>You can request deletion of your data by opening an issue on <a href="https://github.com/REG-Linux/website/issues">GitHub</a> or contacting us on <a href="https://discord.gg/a9HH4ZpVqp">Discord</a>. Provide your device's installation identifier (found in <code>/userdata/system/.compat-report.json</code>) and we will delete all associated tokens and test results.</p>
+
+      <h2 style="font-size: 1.1rem; margin-top: 2rem;">Data controller</h2>
+      <p>REG-Linux project. Open source, community-driven. No commercial entity. Data stored on Cloudflare D1 (EU region WEUR).</p>
+
+      <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 3rem;">Last updated: March 2026</p>
+    </main>
+  </body>
+</html>
