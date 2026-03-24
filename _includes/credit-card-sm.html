@@ -1,0 +1,9 @@
+<a href="{{ include.url }}" target="_blank" rel="noreferrer" class="credit-card-sm">
+  <div class="credit-logo-sm">
+    <img src="{{ include.logo | relative_url }}" alt="{{ include.name }}" loading="lazy" />
+  </div>
+  <div>
+    <strong>{{ include.name }}</strong>
+    <span>{{ include.desc }}</span>
+  </div>
+</a>

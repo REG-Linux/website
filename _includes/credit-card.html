@@ -1,0 +1,10 @@
+<a href="{{ include.url }}" target="_blank" rel="noreferrer" class="credit-card">
+  <div class="credit-logo">
+    <img src="{{ include.logo | relative_url }}" alt="{{ include.name }}" loading="lazy" />
+  </div>
+  <div class="credit-info">
+    <h3>{{ include.name }}</h3>
+    <p>{{ include.desc }}</p>
+    <span class="credit-link">{{ include.url | remove: 'https://' | remove: 'http://' | split: '/' | first }}</span>
+  </div>
+</a>
