@@ -45,38 +45,35 @@ description: REG Linux is built on the shoulders of these open-source projects. 
   <!-- Emulators -->
   <section class="credits-section">
     <h2 class="credits-heading">Emulators</h2>
-    <div class="credits-grid-sm">
-      {% include credit-card-sm.html name="RetroArch" logo="/assets/images/credits/retroarch.png" url="https://retroarch.com" desc="Multi-system emulator frontend with 100+ cores." %}
-      {% include credit-card-sm.html name="MAME" logo="/assets/images/credits/mame.png" url="https://mamedev.org" desc="Arcade machine emulator." %}
-      {% include credit-card-sm.html name="Dolphin" logo="/assets/images/credits/dolphin.png" url="https://dolphin-emu.org" desc="GameCube and Wii." %}
-      {% include credit-card-sm.html name="PCSX2" logo="/assets/images/credits/pcsx2.png" url="https://pcsx2.net" desc="PlayStation 2." %}
-      {% include credit-card-sm.html name="PPSSPP" logo="/assets/images/credits/ppsspp.png" url="https://ppsspp.org" desc="PlayStation Portable." %}
-      {% include credit-card-sm.html name="RPCS3" logo="/assets/images/credits/rpcs3.png" url="https://rpcs3.net" desc="PlayStation 3." %}
-      {% include credit-card-sm.html name="DuckStation" logo="/assets/images/credits/duckstation.png" url="https://github.com/stenzek/duckstation" desc="PlayStation 1." %}
-      {% include credit-card-sm.html name="Flycast" logo="/assets/images/credits/flycast.png" url="https://github.com/flyinghead/flycast" desc="Dreamcast and Naomi." %}
-      {% include credit-card-sm.html name="melonDS" logo="/assets/images/credits/melonds.png" url="https://melonds.kuribo64.net" desc="Nintendo DS." %}
-      {% include credit-card-sm.html name="Mupen64Plus" logo="/assets/images/credits/mupen64plus.png" url="https://mupen64plus.org" desc="Nintendo 64." %}
-      {% include credit-card-sm.html name="Snes9x" logo="/assets/images/credits/snes9x.png" url="https://snes9x.com" desc="Super Nintendo." %}
-      {% include credit-card-sm.html name="DOSBox Staging" logo="/assets/images/credits/dosbox.png" url="https://dosbox-staging.github.io" desc="MS-DOS." %}
-      {% include credit-card-sm.html name="Amiberry" logo="/assets/images/credits/armbian.png" url="https://amiberry.com" desc="Amiga." %}
-      {% include credit-card-sm.html name="VICE" logo="/assets/images/credits/vice.png" url="https://vice-emu.sourceforge.io" desc="Commodore 64." %}
-      {% include credit-card-sm.html name="Hatari" logo="/assets/images/credits/hatari.png" url="https://hatari.tuxfamily.org" desc="Atari ST." %}
-      {% include credit-card-sm.html name="xemu" logo="/assets/images/credits/xemu.png" url="https://xemu.app" desc="Original Xbox." %}
+    <div class="credits-logo-grid">
+      {% include credit-logo.html name="RetroArch" logo="/assets/images/credits/retroarch.png" url="https://retroarch.com" %}
+      {% include credit-logo.html name="MAME" logo="/assets/images/credits/mame.png" url="https://mamedev.org" %}
+      {% include credit-logo.html name="Dolphin" logo="/assets/images/credits/dolphin.png" url="https://dolphin-emu.org" %}
+      {% include credit-logo.html name="PCSX2" logo="/assets/images/credits/pcsx2.png" url="https://pcsx2.net" %}
+      {% include credit-logo.html name="PPSSPP" logo="/assets/images/credits/ppsspp.png" url="https://ppsspp.org" %}
+      {% include credit-logo.html name="RPCS3" logo="/assets/images/credits/rpcs3.png" url="https://rpcs3.net" %}
+      {% include credit-logo.html name="DuckStation" logo="/assets/images/credits/duckstation.png" url="https://github.com/stenzek/duckstation" %}
+      {% include credit-logo.html name="Flycast" logo="/assets/images/credits/flycast.png" url="https://github.com/flyinghead/flycast" %}
+      {% include credit-logo.html name="melonDS" logo="/assets/images/credits/melonds.png" url="https://melonds.kuribo64.net" %}
+      {% include credit-logo.html name="Mupen64Plus" logo="/assets/images/credits/mupen64plus.png" url="https://mupen64plus.org" %}
+      {% include credit-logo.html name="Snes9x" logo="/assets/images/credits/snes9x.png" url="https://snes9x.com" %}
+      {% include credit-logo.html name="DOSBox" logo="/assets/images/credits/dosbox.png" url="https://dosbox-staging.github.io" %}
+      {% include credit-logo.html name="VICE" logo="/assets/images/credits/vice.png" url="https://vice-emu.sourceforge.io" %}
+      {% include credit-logo.html name="Hatari" logo="/assets/images/credits/hatari.png" url="https://hatari.tuxfamily.org" %}
+      {% include credit-logo.html name="xemu" logo="/assets/images/credits/xemu.png" url="https://xemu.app" %}
     </div>
   </section>
 
   <!-- Game Engines -->
   <section class="credits-section">
     <h2 class="credits-heading">Game Engines</h2>
-    <div class="credits-grid-sm">
-      {% include credit-card-sm.html name="ScummVM" logo="/assets/images/credits/scummvm.png" url="https://scummvm.org" desc="Point-and-click adventures." %}
-      {% include credit-card-sm.html name="OpenBOR" logo="/assets/images/credits/openbor.png" url="https://github.com/DCurrent/openbor" desc="Beat 'em up engine." %}
-      {% include credit-card-sm.html name="EasyRPG" logo="/assets/images/credits/easyrpg.png" url="https://easyrpg.org" desc="RPG Maker 2000/2003." %}
-      {% include credit-card-sm.html name="Solarus" logo="/assets/images/credits/solarus.png" url="https://solarus-games.org" desc="Zelda-style adventures." %}
-      {% include credit-card-sm.html name="IKEMEN GO" logo="/assets/images/credits/retroarch.png" url="https://ikemen-engine.github.io" desc="M.U.G.E.N fighting engine." %}
-      {% include credit-card-sm.html name="Love2D" logo="/assets/images/credits/love2d.png" url="https://love2d.org" desc="2D game framework." %}
-      {% include credit-card-sm.html name="Ruffle" logo="/assets/images/credits/ruffle.png" url="https://ruffle.rs" desc="Flash player." %}
-      {% include credit-card-sm.html name="TheXTech" logo="/assets/images/credits/retroarch.png" url="https://github.com/Wohlstand/TheXTech" desc="Super Mario Bros. X." %}
+    <div class="credits-logo-grid">
+      {% include credit-logo.html name="ScummVM" logo="/assets/images/credits/scummvm.png" url="https://scummvm.org" %}
+      {% include credit-logo.html name="OpenBOR" logo="/assets/images/credits/openbor.png" url="https://github.com/DCurrent/openbor" %}
+      {% include credit-logo.html name="EasyRPG" logo="/assets/images/credits/easyrpg.png" url="https://easyrpg.org" %}
+      {% include credit-logo.html name="Solarus" logo="/assets/images/credits/solarus.png" url="https://solarus-games.org" %}
+      {% include credit-logo.html name="Love2D" logo="/assets/images/credits/love2d.png" url="https://love2d.org" %}
+      {% include credit-logo.html name="Ruffle" logo="/assets/images/credits/ruffle.png" url="https://ruffle.rs" %}
     </div>
   </section>
 
@@ -120,6 +117,33 @@ description: REG Linux is built on the shoulders of these open-source projects. 
 @media (max-width: 480px) {
   .credits-grid-sm { grid-template-columns: 1fr; }
 }
+
+/* Logo-only grid for emulators and engines */
+.credits-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) { .credits-logo-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.credit-logo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem 1rem;
+  background: var(--card, rgba(16,22,40,0.85));
+  border: 1px solid var(--border, rgba(255,255,255,0.12));
+  border-radius: var(--radius, 14px);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.credit-logo-card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+.credit-logo-card img { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; }
+.credit-logo-card span { font-size: 0.85rem; font-weight: 600; text-align: center; }
 
 /* Large card (distro upstreams, build system) */
 .credit-card {
