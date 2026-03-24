@@ -57,7 +57,6 @@ description: REG Linux is built on the shoulders of these open-source projects. 
       {% include credit-card-sm.html name="melonDS" logo="/assets/images/credits/melonds.png" url="https://melonds.kuribo64.net" desc="Nintendo DS." %}
       {% include credit-card-sm.html name="Mupen64Plus" logo="/assets/images/credits/mupen64plus.png" url="https://mupen64plus.org" desc="Nintendo 64." %}
       {% include credit-card-sm.html name="Snes9x" logo="/assets/images/credits/snes9x.png" url="https://snes9x.com" desc="Super Nintendo." %}
-      {% include credit-card-sm.html name="ScummVM" logo="/assets/images/credits/scummvm.png" url="https://scummvm.org" desc="Point-and-click adventures." %}
       {% include credit-card-sm.html name="DOSBox Staging" logo="/assets/images/credits/dosbox.png" url="https://dosbox-staging.github.io" desc="MS-DOS." %}
       {% include credit-card-sm.html name="Amiberry" logo="/assets/images/credits/armbian.png" url="https://amiberry.com" desc="Amiga." %}
       {% include credit-card-sm.html name="VICE" logo="/assets/images/credits/vice.png" url="https://vice-emu.sourceforge.io" desc="Commodore 64." %}
@@ -70,6 +69,7 @@ description: REG Linux is built on the shoulders of these open-source projects. 
   <section class="credits-section">
     <h2 class="credits-heading">Game Engines</h2>
     <div class="credits-grid-sm">
+      {% include credit-card-sm.html name="ScummVM" logo="/assets/images/credits/scummvm.png" url="https://scummvm.org" desc="Point-and-click adventures." %}
       {% include credit-card-sm.html name="OpenBOR" logo="/assets/images/credits/openbor.png" url="https://github.com/DCurrent/openbor" desc="Beat 'em up engine." %}
       {% include credit-card-sm.html name="EasyRPG" logo="/assets/images/credits/easyrpg.png" url="https://easyrpg.org" desc="RPG Maker 2000/2003." %}
       {% include credit-card-sm.html name="Solarus" logo="/assets/images/credits/solarus.png" url="https://solarus-games.org" desc="Zelda-style adventures." %}
@@ -77,28 +77,6 @@ description: REG Linux is built on the shoulders of these open-source projects. 
       {% include credit-card-sm.html name="Love2D" logo="/assets/images/credits/love2d.png" url="https://love2d.org" desc="2D game framework." %}
       {% include credit-card-sm.html name="Ruffle" logo="/assets/images/credits/ruffle.png" url="https://ruffle.rs" desc="Flash player." %}
       {% include credit-card-sm.html name="TheXTech" logo="/assets/images/credits/retroarch.png" url="https://github.com/Wohlstand/TheXTech" desc="Super Mario Bros. X." %}
-    </div>
-  </section>
-
-  <!-- Game Ports -->
-  <section class="credits-section">
-    <h2 class="credits-heading">Game Ports</h2>
-    <div class="credits-grid-sm">
-      {% include credit-card-sm.html name="GZDoom" logo="/assets/images/credits/gzdoom.png" url="https://zdoom.org" desc="Doom, Heretic, Hexen." %}
-      {% include credit-card-sm.html name="DevilutionX" logo="/assets/images/credits/devilutionx.png" url="https://github.com/diasurgical/devilutionX" desc="Diablo." %}
-      {% include credit-card-sm.html name="ioquake3" logo="/assets/images/credits/ioquake3.png" url="https://ioquake3.org" desc="Quake III Arena." %}
-      {% include credit-card-sm.html name="fheroes2" logo="/assets/images/credits/retroarch.png" url="https://github.com/ihhub/fheroes2" desc="Heroes of Might and Magic II." %}
-      {% include credit-card-sm.html name="Sonic 3 A.I.R." logo="/assets/images/credits/retroarch.png" url="https://github.com/Eukaryot/sonic3air" desc="Sonic 3 remaster." %}
-    </div>
-  </section>
-
-  <!-- Compatibility & Tools -->
-  <section class="credits-section">
-    <h2 class="credits-heading">Compatibility & Tools</h2>
-    <div class="credits-grid-sm">
-      {% include credit-card-sm.html name="Box86 / Box64" logo="/assets/images/credits/box86.png" url="https://github.com/ptitSeb/box86" desc="x86/x86_64 emulation on ARM." %}
-      {% include credit-card-sm.html name="Moonlight" logo="/assets/images/credits/moonlight.png" url="https://moonlight-stream.org" desc="Game streaming from PC." %}
-      {% include credit-card-sm.html name="Syncthing" logo="/assets/images/credits/syncthing.png" url="https://syncthing.net" desc="Save file sync across devices." %}
     </div>
   </section>
 
