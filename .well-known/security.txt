@@ -1,0 +1,5 @@
+Contact: mailto:romain.tisserand@gmail.com
+Contact: https://github.com/REG-Linux/website/security/advisories
+Preferred-Languages: en, fr
+Canonical: https://reglinux.org/.well-known/security.txt
+Expires: 2027-03-26T00:00:00.000Z
