@@ -4,6 +4,8 @@ baseurl: ""
 url: "https://reglinux.org"
 og_image: "/assets/images/reg_linux_logo.png"
 markdown: kramdown
+include:
+  - .well-known
 exclude:
   - download-source.html
   - compat/
