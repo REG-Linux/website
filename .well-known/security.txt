@@ -1,4 +1,4 @@
-Contact: mailto:romain.tisserand@gmail.com
+Contact: mailto:security@reglinux.org
 Contact: https://github.com/REG-Linux/website/security/advisories
 Preferred-Languages: en, fr
 Canonical: https://reglinux.org/.well-known/security.txt
