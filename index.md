@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Retro Emulation OS
+title: Retro Gaming OS for Handhelds, SBCs & PCs
 body_class: home
-description: REG Linux turns SBCs, handhelds, laptops, and mini PCs into a focused retro gaming OS with REG-Station UI, curated emulators, and a stable Buildroot base.
+description: REG Linux — retro gaming OS for 186 devices. Flash, boot, play. Supports ARM, AArch64, RISC-V, and x86_64.
 preload_image: /assets/images/logo-regstation.webp
 ---
 {% assign home = site.data.home %}
@@ -11,162 +11,155 @@ preload_image: /assets/images/logo-regstation.webp
 {% include site-header.html nav_current="home" %}
 
 <main>
+  <!-- Hero -->
   <section class="hero" id="home">
     <div class="hero-text">
-      <p class="eyebrow">Retro Emulation Gaming Linux</p>
-      <h1>All-in-one retrogaming for any device — ready in minutes.</h1>
+      <h1>Retro gaming OS<br/>for any device</h1>
       <p class="lede">
-        Dreamed up by retro fans and open-source tinkerers, REG Linux turns SBCs, handhelds, laptops, and desktops
-        into polished gaming rigs with a curated stack and friendly guides.
+        Flash. Boot. Play.<br/>
+        186 devices. 50+ emulated systems. Pre-configured and ready to go.
       </p>
       <div class="hero-cta">
-        <a class="btn primary" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
-        <a class="btn secondary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">
-          View on GitHub
-        </a>
+        <a class="btn primary large" href="{{ '/download/' | relative_url }}">Download REG Linux</a>
+        <a class="btn secondary" href="{{ '/download/' | relative_url }}">Browse all devices</a>
       </div>
-      <ul class="hero-highlights">
-        {% for highlight in home.hero.highlights %}
-          <li>{{ highlight }}</li>
-        {% endfor %}
-      </ul>
     </div>
     <div class="hero-media">
-      <div class="hero-slideshow" aria-live="polite">
-        {% for logo in home.hero.logos %}
-          {% assign logo_small = logo.image | replace: '.webp', '-sm.webp' %}
-          <figure class="hero-slide" style="animation-delay: {{ forloop.index0 | times: 5 }}s">
-            <img src="{{ logo.image | relative_url }}"
-                 alt="{{ logo.label }} logo"
-                 {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
-                 decoding="async"
-                 {% if logo.width %}width="{{ logo.width }}"{% endif %}
-                 {% if logo.height %}height="{{ logo.height }}"{% endif %}
-                 srcset="{{ logo_small | relative_url }} 210w, {{ logo.image | relative_url }} 420w"
-                 sizes="(max-width: 600px) 70vw, 420px"
-            />
-            <figcaption>{{ logo.label }}</figcaption>
+      <figure>
+        <img src="{{ '/assets/images/logo-regstation.webp' | relative_url }}"
+             alt="REG-Station frontend"
+             width="420" height="258"
+             loading="eager" fetchpriority="high" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="social-proof">
+    <div class="proof-badges">
+      <a href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/stars/REG-Linux/REG-Linux?style=flat-square&logo=github&label=GitHub%20Stars&color=2bb0e9" alt="GitHub Stars" loading="lazy" />
+      </a>
+      <a href="https://discord.gg/a9HH4ZpVqp" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/discord/885430145677164554?style=flat-square&logo=discord&label=Discord&color=5865F2" alt="Discord Members" loading="lazy" />
+      </a>
+      <a href="https://github.com/REG-Linux/REG-Linux" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/commit-activity/m/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Monthly%20Commits&color=22c55e" alt="Monthly Commits" loading="lazy" />
+      </a>
+      <a href="https://github.com/REG-Linux/REG-Linux/commits/main" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/github/last-commit/REG-Linux/REG-Linux?style=flat-square&logo=github&label=Last%20Commit&color=f59e0b" alt="Last Commit" loading="lazy" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-strip" id="features">
+    <div class="stats-grid">
+      {% for stat in home.stats %}
+        <div class="stat-badge">
+          <span class="stat-icon">{{ stat.icon }}</span>
+          <span class="stat-label">{{ stat.label }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Emulators — inside a card like the play page -->
+  <section class="cv-auto" id="stack">
+    <div class="section-heading">
+      <h2>Pre-configured emulators</h2>
+      <p>RetroArch, MAME, and specialist emulators — inputs, shaders, and hotkeys already set up.</p>
+    </div>
+    <div class="card" style="max-width: 900px; margin: 0 auto;">
+      <div class="emu-tile-grid">
+        {% for logo in home.emulator_logos %}
+          <figure class="emulator-tile">
+            <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }}" loading="lazy" />
+            <figcaption>
+              <strong>{{ logo.label }}</strong>
+            </figcaption>
           </figure>
         {% endfor %}
       </div>
-      <p class="hero-media-note">REG Linux blends a customized REG-Station frontend with curated RetroArch cores on top of a rock-solid Linux foundation.</p>
-    </div>
-  </section>
-
-  <section class="feature-grid cv-auto" id="features">
-    <div class="section-heading">
-      <p class="eyebrow">What makes REG special</p>
-      <h2>Feature-rich out of the box</h2>
-      <p>
-        REG Linux ships with the pieces you expect from a dedicated retro rig—carefully tuned frontends,
-        tested emulators, community-requested ports, and a focus on reliability.
-      </p>
-    </div>
-    <div class="grid">
-      {% for feature in home.features %}
-        <article class="card">
-          <h3>{{ feature.title }}</h3>
-          <p>{{ feature.description }}</p>
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="stack cv-auto" id="stack">
-    <div class="stack-card">
-      <div>
-        <h2>Pre-configured emulator stack</h2>
-        <p>
-          REG ships with the most requested emulators ready to play: RetroArch, MAME, and specialist cores for
-          handhelds, arcades, and microcomputers. Inputs, shaders, and hotkeys are pre configured, so you
-          can jump straight into the fun.
-        </p>
-        <ul class="stack-list">
-          {% for item in home.stack.highlights %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
+      <div style="text-align: center; margin-top: 1rem;">
+        <a class="btn secondary" href="{{ '/play/' | relative_url }}">All systems, engines, and ports &rarr;</a>
       </div>
-      <div class="stack-logo-marquee" aria-label="Supported emulation projects">
-        <div class="stack-logo-track">
-          {% for logo in home.stack.logos %}
-            <figure class="stack-logo">
-              <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }} logo" loading="lazy" />
-              <figcaption>{{ logo.label }}</figcaption>
-            </figure>
-          {% endfor %}
-          {% for logo in home.stack.logos %}
-            <figure class="stack-logo">
-              <img src="{{ logo.image | relative_url }}" alt="{{ logo.label }} logo" loading="lazy" />
-              <figcaption>{{ logo.label }}</figcaption>
-            </figure>
-          {% endfor %}
+    </div>
+  </section>
+
+  <!-- Hardware — cards with device counts and links -->
+  <section class="cv-auto" id="hardware">
+    <div class="section-heading">
+      <h2>Runs on your hardware</h2>
+      <p>186 devices across ARM, AArch64, RISC-V, and x86_64.</p>
+    </div>
+    <div class="hw-cards">
+      <a class="card hw-link" href="{{ '/download/' | relative_url }}">
+        <h3>🎮 Handhelds</h3>
+        <p>Anbernic, Powkiddy, Retroid, AYN, AYANEO. Controls and suspend work out of the box.</p>
+        <span class="hw-count">56 devices</span>
+      </a>
+      <a class="card hw-link" href="{{ '/download/' | relative_url }}">
+        <h3>🖥️ SBCs</h3>
+        <p>Raspberry Pi, Orange Pi, Radxa, Khadas. Plug in, boot, play.</p>
+        <span class="hw-count">89 devices</span>
+      </a>
+      <a class="card hw-link" href="{{ '/download/' | relative_url }}">
+        <h3>💻 PCs & TV Boxes</h3>
+        <p>Steam Deck, ROG Ally, x86_64 machines, and Android TV boxes.</p>
+        <span class="hw-count">41 devices</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Get started — 3 substantial steps -->
+  <section class="cv-auto" id="get-started">
+    <div class="section-heading">
+      <h2>Get started</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card card">
+        <span class="step-number">1</span>
+        <h3>Pick your device</h3>
+        <p>Find your hardware and download the right image.</p>
+        <div class="step-pills">
+          <a href="{{ '/download/' | relative_url }}" class="step-pill">Handhelds</a>
+          <a href="{{ '/download/' | relative_url }}" class="step-pill">SBCs</a>
+          <a href="{{ '/download/' | relative_url }}" class="step-pill">PCs</a>
+        </div>
+        <a class="btn primary" href="{{ '/download/' | relative_url }}">Browse devices</a>
+      </div>
+      <div class="step-card card">
+        <span class="step-number">2</span>
+        <h3>Flash</h3>
+        <p>Write the image to an SD card or SSD. Takes about 2 minutes.</p>
+        <div class="step-tools">
+          <a href="https://etcher.balena.io/" target="_blank" rel="noreferrer">balenaEtcher</a>
+          <span class="step-sep">&middot;</span>
+          <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noreferrer">RPi Imager</a>
+          <span class="step-sep">&middot;</span>
+          <code>dd</code>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="hardware cv-auto" id="hardware">
-    <div class="section-heading">
-      <p class="eyebrow">Hardware coverage</p>
-      <h2>Works where you play</h2>
-        <p>
-        REG relies on mainline LTS kernels whenever possible, making it easier to support SBC boards, handhelds,
-        mini consoles, and desktops. The wiki installation guide lists coverage for ARM (Allwinner, Rockchip, Amlogic),
-        AArch64 (RK3588, Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs, so you can pick the proper guide for your
-        hardware.
-        </p>
-    </div>
-    <div class="hardware-grid">
-      {% for card in home.hardware_cards %}
-        <article class="card">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.body }}</p>
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="get-started cv-auto" id="get-started">
-    <div class="section-heading">
-      <p class="eyebrow">Boot and play</p>
-      <h2>Getting started with REG Linux</h2>
-    </div>
-    <ol class="steps">
-      {% for step in home.getting_started_steps %}
-        <li>
-          <strong>{{ step.title }}</strong> {{ step.body }}
-        </li>
-      {% endfor %}
-    </ol>
-    <div class="cta-panel">
-      <div>
-        <h3>Need help?</h3>
-        <p>Read the wiki, join Discord, or open a GitHub issue — contributors are active and eager to assist.</p>
+      <div class="step-card card">
+        <span class="step-number">3</span>
+        <h3>Play</h3>
+        <p>Boot, pair controllers, add your games via network share or USB. That's it.</p>
+        <a class="btn secondary" href="https://compat.reglinux.org">Check compatibility</a>
       </div>
-      <a class="btn primary" href="https://github.com/REG-Linux" target="_blank" rel="noreferrer">Get support</a>
     </div>
   </section>
 
-  <section class="community cv-auto" id="community">
-    <div class="section-heading">
-      <p class="eyebrow">Open source & community</p>
-      <h2>Build with the REG team</h2>
-      <p>
-        REG Linux is driven by volunteers. Whether you file bugs, port engines, design themes, or help with docs,
-        every contribution keeps the project thriving.
-      </p>
-    </div>
-    <div class="community-links">
+  <!-- Community — compact row -->
+  <section class="cv-auto" id="community">
+    <div class="community-row">
       {% for channel_id in home_channel_order %}
         {% assign channel = community_channels | where: "id", channel_id | first %}
         {% if channel %}
-          <a href="{{ channel.url }}" target="_blank" rel="noreferrer" class="community-card community-link-card">
-            <span class="community-link-label">
-              <img src="{{ channel.icon | relative_url }}" alt="{{ channel.icon_alt }}" loading="lazy" />
-              <span>{{ channel.home_label }}</span>
-            </span>
-            <span class="arrow">→</span>
+          <a href="{{ channel.url }}" target="_blank" rel="noreferrer" class="community-link-card">
+            <img src="{{ channel.icon | relative_url }}" alt="{{ channel.icon_alt }}" loading="lazy" />
+            <span>{{ channel.home_label }}</span>
+            <span class="arrow">&rarr;</span>
           </a>
         {% endif %}
       {% endfor %}
@@ -176,11 +169,87 @@ preload_image: /assets/images/logo-regstation.webp
 
 <footer class="site-footer">
   {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free and community supported.<br/>All rights reserved.</p>
-  <p class="small">
-    All product names, logos, and brands are property of their respective owners.<br/>
-    Linux® is the registered trademark of Linus Torvalds.<br/>
-    Other names may be trademarks of their respective holders.<br/>
-    Use of third-party marks is for identification only and does not imply endorsement.
-  </p>
+  <p>&copy; 2025 REG Linux. Free, open source, and community supported.</p>
 </footer>
+
+<style>
+/* Social proof */
+.social-proof { padding: 0; }
+.proof-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; padding: 0.5rem 0 1rem; }
+.proof-badges a { display: inline-block; line-height: 0; }
+.proof-badges img { height: 22px; border-radius: 4px; }
+
+/* Stats */
+.stats-strip { padding: 0; }
+.stats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; padding: 1rem 0; }
+.stat-badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: rgba(43, 176, 233, 0.08); border: 1px solid rgba(43, 176, 233, 0.2);
+  border-radius: 999px; font-size: 0.85rem; font-weight: 600; color: var(--text);
+}
+.stat-icon { font-size: 1.1rem; }
+
+/* Emulator tile grid — reuse play page's .emulator-tile class */
+.emu-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+@media (max-width: 600px) { .emu-tile-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Hardware cards */
+.hw-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+@media (max-width: 768px) { .hw-cards { grid-template-columns: 1fr; } }
+.hw-link {
+  text-decoration: none; color: var(--text);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.hw-link:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+.hw-link h3 { margin-top: 0; font-size: 1.1rem; }
+.hw-link p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.hw-count { font-size: 0.75rem; color: var(--accent); font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+
+/* Get started steps */
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+@media (max-width: 768px) { .steps-grid { grid-template-columns: 1fr; } }
+.step-card { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.step-number {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: linear-gradient(120deg, #2bb0e9, #1d7ddc);
+  color: #030915; font-size: 1.2rem; font-weight: 700;
+}
+.step-card h3 { margin: 0; font-size: 1.1rem; }
+.step-card p { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+.step-pills { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center; }
+.step-pill {
+  padding: 0.25rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;
+  background: rgba(43, 176, 233, 0.08); border: 1px solid rgba(43, 176, 233, 0.2);
+  color: var(--accent); text-decoration: none;
+}
+.step-pill:hover { background: rgba(43, 176, 233, 0.15); text-decoration: none; }
+.step-tools { font-size: 0.82rem; color: var(--text-muted); }
+.step-tools a { color: var(--accent); }
+.step-sep { margin: 0 0.3rem; opacity: 0.4; }
+.step-card .btn { margin-top: auto; }
+
+/* Community row — compact */
+.community-row {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;
+}
+@media (max-width: 600px) { .community-row { grid-template-columns: 1fr; } }
+.community-link-card {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none; color: var(--text);
+  font-size: 0.85rem; font-weight: 500;
+  transition: border-color 0.15s;
+}
+.community-link-card:hover { border-color: var(--accent); text-decoration: none; }
+.community-link-card img { width: 20px; height: 20px; }
+.community-link-card .arrow { margin-left: auto; color: var(--text-muted); }
+</style>

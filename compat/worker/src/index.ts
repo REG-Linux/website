@@ -2,6 +2,7 @@ import { handleMatrix } from './routes/matrix';
 import { handleDevice } from './routes/device';
 import { handleSubmit } from './routes/submit';
 import { handleAuthGithub, handleAuthCallback, handleAuthMe } from './routes/auth';
+import { handleDeviceRegister } from './routes/device-register';
 import type { Env } from './types';
 
 function corsHeaders(origin: string): Record<string, string> {
@@ -20,6 +21,26 @@ function addCors(response: Response, headers: Record<string, string>): Response 
 }
 
 export default {
+  // Scheduled: purge stale device tokens (runs daily via cron trigger)
+  async scheduled(_event: ScheduledEvent, env: Env, _ctx: ExecutionContext): Promise<void> {
+    // Delete device tokens not used in over 1 year
+    await env.DB.prepare(
+      `DELETE FROM device_tokens
+       WHERE last_used < datetime('now', '-1 year')
+         OR (last_used IS NULL AND created_at < datetime('now', '-1 year'))`,
+    ).run();
+
+    // Delete test results from revoked tokens
+    await env.DB.prepare(
+      `DELETE FROM test_results WHERE author IN (
+        SELECT 'device:' || substr(system_uuid, 1, 8) FROM device_tokens WHERE revoked = 1
+      )`,
+    ).run();
+
+    // Delete revoked tokens themselves
+    await env.DB.prepare('DELETE FROM device_tokens WHERE revoked = 1').run();
+  },
+
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const path = url.pathname;
@@ -45,6 +66,8 @@ export default {
         response = await handleDevice(request, env, deviceId);
       } else if (method === 'POST' && path === '/api/submit') {
         response = await handleSubmit(request, env);
+      } else if (method === 'POST' && path === '/api/device-register') {
+        response = await handleDeviceRegister(request, env);
       } else if (method === 'GET' && path === '/api/auth/github') {
         response = await handleAuthGithub(request, env);
       } else if (method === 'GET' && path === '/api/auth/callback') {

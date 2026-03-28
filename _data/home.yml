@@ -1,114 +1,51 @@
 hero:
-  highlights:
-  - Immutable Buildroot-based root filesystem, optimized builds, and rescue workflows
-  - REG-Station frontend tailored by the REG team with curated RetroArch cores
-  - Wiki documentation covering flashing, architecture, builds, and community resources
   logos:
   - image: /assets/images/logo-regstation.webp
     label: REG-Station
     width: 420
     height: 258
-  - image: /assets/images/logo-retroarch.webp
-    label: RetroArch
-    width: 420
-    height: 84
-  - image: /assets/images/logo-linux.webp
-    label: Linux Kernel
-    width: 420
-    height: 208
-  - image: /assets/images/reg_linux_logo.webp
-    label: REG Linux
-    width: 420
-    height: 202
-features:
-- title: REG-Station Frontend
-  description: REG-Station, a bespoke REG frontend, delivers a slick nostalgic UI
-    that is simple to tweak.
-- title: Feature rich curation
-  description: An ever-growing catalog of native ports, engines, and tools sits alongside
-    the default emulator stack.
-- title: Rock solid OS
-  description: Immutable Buildroot base plus an integrated rescue workflow keep experiments
-    safe, backed by a community that keeps the system stable and well maintained.
-- title: Endless gaming possibilities
-  description: Play arcade, console, and computer classics, switching cores or ports
-    with a single menu action.
-- title: Wide hardware support
-  description: From aging laptops to modern SBCs and handhelds, REG targets diverse
-    devices with tuned kernels.
-stack:
-  highlights:
-  - RetroArch (multi-system) with curated core presets
-  - MAME builds tuned for arcade accuracy
-  - "Additional native ports for DOS, ScummVM, Pico-8\u2013style engines, and more"
-  logos:
-  - image: /assets/images/emulators/retroarch.png
-    label: RetroArch
-  - image: /assets/images/emulators/mame.png
-    label: MAME
-  - image: /assets/images/emulators/dolphin.png
-    label: Dolphin
-  - image: /assets/images/emulators/ppsspp.png
-    label: PPSSPP
-  - image: /assets/images/emulators/duckstation.png
-    label: DuckStation
-  - image: /assets/images/emulators/flycast.png
-    label: Flycast
-  - image: /assets/images/emulators/pcsx2.png
-    label: PCSX2
-  - image: /assets/images/emulators/citra.png
-    label: Azahar
-  - image: /assets/images/emulators/scummvm.png
-    label: ScummVM
-  - image: /assets/images/emulators/dosbox.png
-    label: DOSBox Staging
-  - image: /assets/images/emulators/mupen64plus.png
-    label: Mupen64Plus
-  - image: /assets/images/emulators/melonds.png
-    label: melonDS
-  - image: /assets/images/emulators/openbor.png
-    label: OpenBOR
-hardware_cards:
-- title: Single-board computers
-  body: From Raspberry Pi-style boards to RK3588 powerhouses, default settings ensure video,
-    audio, and I/O just work.
-- title: Handhelds & mini consoles
-  body: REG keeps controls responsive and includes handheld-friendly themes plus suspend-safe
-    defaults.
-- title: Laptops & desktops
-  body: Install on internal storage or boot from USB for a dedicated gaming partition
-    that remains isolated.
-doc_cards:
-- title: Getting Started
-  body: Choose an image, flash it safely, and get controller-friendly onboarding tips
-    for REG-Station.
-  url: https://reglinux.org/wiki/getting-started/
-  link_label: Open guide
-- title: Installation
-  body: Supported platforms span ARM (Allwinner, Rockchip, Amlogic), AArch64 (RK3588,
-    Snapdragon), RISC-V (K1, JH7110), and x86_64 mini PCs.
-  url: https://reglinux.org/wiki/installation/
-  link_label: View devices
-- title: Architecture
-  body: Immutable Buildroot layout with sysvinit, a squashfs root, and configurable
-    /userdata partitions for game storage.
-  url: https://reglinux.org/wiki/architecture/
-  link_label: Explore architecture
-- title: Developer Guide
-  body: Build from source with commands like `make h700-build` and tweak configurations
-    inside the configs directory.
-  url: https://reglinux.org/wiki/dev-guide/
-  link_label: See build notes
+
+stats:
+- icon: "\U0001F4F1"
+  label: "186 devices"
+- icon: "\U0001F3AE"
+  label: "50+ systems"
+- icon: "\U0001F3AF"
+  label: "40+ native ports"
+- icon: "\U0001F6E1"
+  label: "Immutable OS"
+- icon: "\U0001F527"
+  label: "Pre-configured"
+- icon: "\U0001F6DF"
+  label: "Built-in rescue"
+
+emulator_logos:
+- image: /assets/images/emulators/retroarch.png
+  label: RetroArch
+- image: /assets/images/emulators/mame.png
+  label: MAME
+- image: /assets/images/emulators/dolphin.png
+  label: Dolphin
+- image: /assets/images/emulators/ppsspp.png
+  label: PPSSPP
+- image: /assets/images/emulators/duckstation.png
+  label: DuckStation
+- image: /assets/images/emulators/flycast.png
+  label: Flycast
+- image: /assets/images/emulators/pcsx2.png
+  label: PCSX2
+- image: /assets/images/emulators/scummvm.png
+  label: ScummVM
+
 getting_started_steps:
-- title: Choose the right image.
-  body: Visit the download page, consult the wiki installation guide for supported
-    devices, and grab the latest release that matches your hardware.
-- title: Flash to storage.
-  body: "Follow the wiki's recommended tools \u2014 balenaEtcher, Raspberry Pi Imager,\
-    \ or plain `dd` \u2014 and verify the image on your SD card or SSD."
-- title: First boot & setup.
-  body: Power on, let the one-time setup run through, pair controllers, and reference
-    the wiki for troubleshooting or controller mapping tips.
-- title: Load your library.
-  body: Add ROMs via network share, USB drive, or the built-in file manager, then
-    refresh the gamelist per the wiki's guidance.
+- number: "1"
+  title: Download
+  body: Pick your device, grab the image.
+  cta_label: Browse devices
+  cta_href: /download/
+- number: "2"
+  title: Flash
+  body: Write to SD card with balenaEtcher or dd.
+- number: "3"
+  title: Play
+  body: Boot, pair controllers, add your games.

@@ -155,12 +155,13 @@ BRAND_RULES = [
     (r"^xu20-",           "XU",            "xu20-"),
     (r"^ps5000",          "Unbranded",     "unbranded-ps5000"),
     (r"^ps7000",          "Unbranded",     "unbranded-ps7000"),
-    (r"^batlexp-",        "BatlExp",       "batlexp-"),
+    (r"^batlexp-",        "BatleXP",       "batlexp-"),
     (r"^nexbox-",         "Nexbox",        "nexbox-"),
     (r"^minix-",          "Minix",         "minix-"),
     (r"^x96-",            "X96",           "x96-"),
     (r"^h96-",            "H96",           "h96-"),
     (r"^a95x",            "A95X",          "a95x-"),
+    (r"^xpi-",            "XPi",           "xpi-"),
     (r"^libretech-",      "Libre Computer","libretech-"),
     (r"^wetek-",          "WeTek",         "wetek-"),
     (r"^tronsmart-",      "Tronsmart",     "tronsmart-"),
@@ -886,6 +887,20 @@ def slug_to_brand(slug: str) -> str:
     return "Unknown"
 
 
+
+# Words that should stay uppercase in titles
+UPPERCASE_WORDS = {
+    "lts", "nes", "snes", "itx", "sbc", "pc", "usb", "otg", "ds", "sp",
+    "ddr", "rgb", "hdmi", "gpu", "cpu", "sd", "tv", "rk", "gba", "nds",
+}
+
+# Brand-specific model prefixes to keep in the title
+# e.g. Radxa "Rock 5C" not just "5C"
+BRAND_MODEL_PREFIXES = {
+    "Radxa": "Rock",
+    "Pine64": "",
+}
+
 def slug_to_title(slug: str, brand: str) -> str:
     """Generate a human-readable title from device slug and brand."""
     # Remove brand prefix from slug to avoid duplication
@@ -895,9 +910,34 @@ def slug_to_title(slug: str, brand: str) -> str:
             title_part = re.sub(pattern, "", slug)
             break
 
-    # Title-case the remaining part
+    # For brands with model prefix (e.g. Radxa → keep "Rock" in title)
+    model_prefix = BRAND_MODEL_PREFIXES.get(brand, "")
+
+    # Split into words
     words = title_part.replace("-", " ").split()
-    titled = " ".join(w.upper() if re.match(r'^[a-z]*\d', w) else w.title() for w in words)
+
+    # Title-case with acronym preservation
+    titled_words = []
+    for w in words:
+        if w.lower() in UPPERCASE_WORDS:
+            titled_words.append(w.upper())
+        elif re.match(r'^[a-z]*\d', w):
+            # Mixed alpha-numeric like "rg35xx" → uppercase
+            titled_words.append(w.upper())
+        else:
+            titled_words.append(w.title())
+
+    titled = " ".join(titled_words)
+
+    # Prepend model prefix if needed and not already present
+    if model_prefix and not titled.lower().startswith(model_prefix.lower()):
+        titled = f"{model_prefix} {titled}"
+
+    # Split concatenated ALL-CAPS words with digits: "ODIN2MINI" → "ODIN2 MINI"
+    # Only split when a digit is followed by 3+ uppercase letters (a new word)
+    titled = re.sub(r'(\d)([A-Z]{3,})', r'\1 \2', titled)
+    # Split camelCase: "OdinMini" → "Odin Mini"
+    titled = re.sub(r'([a-z])([A-Z])', r'\1 \2', titled)
 
     return f"{brand} {titled}".strip()
 

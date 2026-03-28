@@ -1,67 +1,16 @@
 ---
+noindex: true
 layout: default
 title: Community Ports
 body_class: ports
 permalink: /ports/
-description: Discover engine ports and community remakes that REG Linux handles via the wiki’s port-specific pages.
+description: Native game ports bundled with REG Linux — redirects to the unified Play page.
 ---
-{% assign ports = site.data.ports %}
-{% include site-header.html nav_current="ports" %}
-
+{% include site-header.html nav_current="play" %}
+<meta http-equiv="refresh" content="0;url={{ '/play/#ports' | relative_url }}" />
 <main>
-  <section class="hero doc-hero">
-    <div class="hero-text">
-      <p class="eyebrow">Hardware: port</p>
-      <h1>Community ports & remakes</h1>
-      <p class="lede">
-        Forty fan-favorite ports, from Cave Story and Doom 3 to Sonic 3 A.I.R., all launchable straight from REG-Station.
-      </p>
-      <div class="hero-cta">
-        <a class="btn primary" href="https://reglinux.org/wiki/ports/" target="_blank" rel="noreferrer">Browse the ports catalog</a>
-      </div>
-      <ul class="hero-highlights">
-        <li>Covers Doom/Quake, Fallout, Sonic, and homebrew fighters</li>
-        <li>Each page mirrors `es_systems.yml` with technical specs and ROM extensions</li>
-        <li>Useful when building playlists that require community WADs or mods</li>
-      </ul>
-    </div>
-    <div class="hero-media">
-      <figure>
-        <img src="{{ '/assets/images/ports.png' | relative_url }}" alt="Ported engines" loading="lazy" />
-        <figcaption>Ports rely on community builds and external assets.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="doc-section ports-grid-section">
-    <div class="section-heading">
-      <p class="eyebrow">Ports catalog</p>
-      <h2>Community-tested ports & remakes</h2>
-      <p>Every entry below mirrors a wiki port page with the key specs, supported extensions, and emulator notes you need to drop into REG Linux.</p>
-    </div>
-    <div class="ports-grid">
-      {% for port in ports %}
-        <article class="card port-card">
-          {% if port.logo %}
-            <figure class="port-logo">
-              <img src="{{ port.logo.src | relative_url }}" alt="{{ port.logo.alt }}" loading="lazy" />
-            </figure>
-          {% endif %}
-          <h3>{{ port.name }}</h3>
-          <p class="port-overview">{{ port.overview }}</p>
-          {% if port.release_year != "" %}
-            <ul class="port-meta">
-              <li><strong>Release year:</strong> {{ port.release_year }}</li>
-            </ul>
-          {% endif %}
-          <p class="port-extensions"><strong>Extensions:</strong> {{ port.extensions }}</p>
-          <a class="btn secondary" href="{{ port.url }}" target="_blank" rel="noreferrer">Read port notes</a>
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="doc-actions">
-    <a class="btn primary" href="https://reglinux.org/wiki/ports/" target="_blank" rel="noreferrer">Open the ports directory</a>
+  <section class="hero" style="text-align: center; padding: 4rem 2rem;">
+    <h1>This page has moved</h1>
+    <p class="lede">Ports are now listed on the <a href="{{ '/play/#ports' | relative_url }}">Play</a> page.</p>
   </section>
 </main>

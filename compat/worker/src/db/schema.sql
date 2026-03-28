@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS devices (
   bt_chip      TEXT,   -- "RTL8821CS"
   has_fan      INTEGER,-- 1/0/NULL
   compositor   TEXT,   -- "Sway" or "Weston"
+  install_notes TEXT,  -- Markdown: device-specific install instructions
   created_at   TEXT DEFAULT (datetime('now'))
 );
 
@@ -65,6 +66,21 @@ WHERE tr.rowid = (
 CREATE INDEX IF NOT EXISTS idx_results_device     ON test_results(device_id, build_date DESC);
 CREATE INDEX IF NOT EXISTS idx_results_feature    ON test_results(feature_id);
 CREATE INDEX IF NOT EXISTS idx_results_author     ON test_results(author);
+
+-- Device tokens for self-registering devices
+CREATE TABLE IF NOT EXISTS device_tokens (
+  token        TEXT PRIMARY KEY,
+  device_id    TEXT NOT NULL,
+  system_uuid  TEXT NOT NULL UNIQUE,
+  ip_address   TEXT,
+  reg_version  TEXT,
+  created_at   TEXT DEFAULT (datetime('now')),
+  last_used    TEXT,
+  revoked      INTEGER DEFAULT 0
+);
+
+CREATE INDEX IF NOT EXISTS idx_device_tokens_uuid ON device_tokens(system_uuid);
+CREATE INDEX IF NOT EXISTS idx_device_tokens_device ON device_tokens(device_id);
 CREATE INDEX IF NOT EXISTS idx_results_build_date ON test_results(build_date DESC);
 
 -- Seed features (run once)

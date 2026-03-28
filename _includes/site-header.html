@@ -12,8 +12,8 @@
         <img
           src="{{ '/assets/images/reg_linux_logo.webp' | relative_url }}"
           alt="REG Linux"
-          width="120"
-          height="42"
+          width="140"
+          height="49"
           loading="lazy"
         />
       </a>
@@ -23,37 +23,13 @@
       <span></span>
       <span></span>
     </button>
-  {% assign dropdown_active = nav_current == "emulators" or nav_current == "engines" or nav_current == "ports" %}
-  {% assign hardware_dropdown_active = nav_current == "hardware" or nav_current == "manufacturers" %}
-  {% assign home_active = nav_current == "home" %}
   <nav class="site-nav" id="primary-navigation" aria-label="Primary">
-    <div class="nav-dropdown home-dropdown {% if home_active %}is-active{% endif %}" aria-haspopup="true">
-      <a class="dropdown-label" href="{{ '/' | relative_url }}">Home</a>
-      <div class="dropdown-menu">
-        <a href="{{ '/' | relative_url }}#features">Features</a>
-        <a href="{{ '/' | relative_url }}#stack">Stack</a>
-        <a href="{{ '/' | relative_url }}#get-started">Get Started</a>
-      </div>
-    </div>
-    <div class="nav-dropdown {% if dropdown_active %}is-active{% endif %}" aria-haspopup="true">
-      <span class="dropdown-label">Play everything</span>
-      <div class="dropdown-menu">
-        <a href="{{ '/emulators/' | relative_url }}" {% if nav_current == "emulators" %}aria-current="page"{% endif %}>Emulators</a>
-        <a href="{{ '/engines/' | relative_url }}" {% if nav_current == "engines" %}aria-current="page"{% endif %}>Engines</a>
-        <a href="{{ '/ports/' | relative_url }}" {% if nav_current == "ports" %}aria-current="page"{% endif %}>Ports</a>
-      </div>
-    </div>
-    <div class="nav-dropdown {% if hardware_dropdown_active %}is-active{% endif %}" aria-haspopup="true">
-      <span class="dropdown-label">Hardware</span>
-      <div class="dropdown-menu">
-        <a href="{{ '/hardware/' | relative_url }}" {% if nav_current == "hardware" %}aria-current="page"{% endif %}>Devices</a>
-        <a href="{{ '/manufacturers/' | relative_url }}" {% if nav_current == "manufacturers" %}aria-current="page"{% endif %}>Manufacturers</a>
-        <a href="https://compat.reglinux.org">Compatibility</a>
-      </div>
-    </div>
+    <a href="{{ '/' | relative_url }}" {% if nav_current == "home" %}aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/download/' | relative_url }}" {% if nav_current == "download" %}aria-current="page"{% endif %}>Download</a>
+    <a href="{{ '/play/' | relative_url }}" {% if nav_current == "play" %}aria-current="page"{% endif %}>Play</a>
+    <a href="https://compat.reglinux.org">Compatibility</a>
     <a href="{{ '/community/' | relative_url }}" {% if nav_current == "community" %}aria-current="page"{% endif %}>Community</a>
     <a href="{{ '/wiki/' | relative_url }}" {% if nav_current == "wiki" %}aria-current="page"{% endif %}>Wiki</a>
-    <a href="{{ '/bundled-games/' | relative_url }}" {% if nav_current == "bundled-games" %}aria-current="page"{% endif %}>Bundled games</a>
   </nav>
   <a class="btn ghost" href="{{ ghost_target }}">{{ ghost_label }}</a>
   <script>
