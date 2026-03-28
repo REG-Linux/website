@@ -39,8 +39,11 @@ export async function verifyState(token: string, secret: string): Promise<boolea
   if (dot < 0) return false;
   const nonce = token.slice(0, dot);
   const sig = token.slice(dot + 1);
-  const expected = await hmacSign(nonce, secret);
-  return sig === expected;
+  // Constant-time comparison via crypto.subtle.verify
+  const key = await hmacKey(secret);
+  const sigBytes = base64urlDecode(sig);
+  const dataBytes = new TextEncoder().encode(nonce);
+  return crypto.subtle.verify('HMAC', key, sigBytes, dataBytes);
 }
 
 // --- JWT ---
@@ -65,8 +68,12 @@ export async function verifyJWT(token: string, secret: string): Promise<JWTPaylo
   if (parts.length !== 3) return null;
 
   const [header, body, sig] = parts;
-  const expected = await hmacSign(`${header}.${body}`, secret);
-  if (sig !== expected) return null;
+  // Constant-time comparison via crypto.subtle.verify
+  const key = await hmacKey(secret);
+  const sigBytes = base64urlDecode(sig);
+  const dataBytes = new TextEncoder().encode(`${header}.${body}`);
+  const valid = await crypto.subtle.verify('HMAC', key, sigBytes, dataBytes);
+  if (!valid) return null;
 
   try {
     const payload: JWTPayload = JSON.parse(new TextDecoder().decode(base64urlDecode(body)));
@@ -97,5 +104,5 @@ export function getJWTFromRequest(request: Request): string | null {
 }
 
 export function setCookie(name: string, value: string, maxAge: number): string {
-  return `${name}=${value}; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=${maxAge}`;
+  return `${name}=${value}; HttpOnly; Secure; SameSite=Lax; Path=/api; Max-Age=${maxAge}`;
 }

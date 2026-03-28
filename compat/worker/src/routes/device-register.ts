@@ -91,7 +91,7 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
   // Store truncated IP for rate limiting (GDPR: minimize personal data)
   // IPv4: keep first 3 octets (192.168.1.x → 192.168.1.0)
   // IPv6: keep first 48 bits (/48 prefix)
-  const rawIp = request.headers.get('CF-Connecting-IP') ?? request.headers.get('X-Forwarded-For') ?? 'unknown';
+  const rawIp = request.headers.get('CF-Connecting-IP') ?? 'unknown';
   const ip = truncateIp(rawIp);
 
   // --- Anti-abuse: layered rate limiting ---
@@ -138,8 +138,8 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
 
   // Check if this UUID is already registered
   const existing = await env.DB.prepare(
-    'SELECT token, device_id, revoked FROM device_tokens WHERE system_uuid = ?',
-  ).bind(system_uuid).first<{ token: string; device_id: string; revoked: number }>();
+    'SELECT token, device_id, board_file_hash, revoked FROM device_tokens WHERE system_uuid = ?',
+  ).bind(system_uuid).first<{ token: string; device_id: string; board_file_hash: string | null; revoked: number }>();
 
   if (existing) {
     if (existing.device_id !== device_id) {
@@ -148,21 +148,27 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
     if (existing.revoked) {
       return json({ error: 'device token has been revoked' }, 403);
     }
-    // Return existing token (idempotent — doesn't count as new registration)
+    // Re-registration: return token if board_file_hash matches (proves physical access)
+    // Legacy tokens (no stored hash) get the hash backfilled and token returned
+    const hashMatches = !existing.board_file_hash || existing.board_file_hash === board_file_hash;
     await env.DB.prepare(
-      `UPDATE device_tokens SET last_used = datetime('now'), reg_version = ? WHERE system_uuid = ?`,
-    ).bind(reg_version ?? '', system_uuid).run();
+      `UPDATE device_tokens SET last_used = datetime('now'), reg_version = ?,
+       board_file_hash = COALESCE(board_file_hash, ?) WHERE system_uuid = ?`,
+    ).bind(reg_version ?? '', board_file_hash, system_uuid).run();
 
-    return json({ ok: true, token: existing.token, existing: true });
+    if (hashMatches) {
+      return json({ ok: true, token: existing.token, existing: true });
+    }
+    return json({ ok: true, existing: true });
   }
 
   // Generate new token
   const token = generateToken();
 
   await env.DB.prepare(
-    `INSERT INTO device_tokens (token, device_id, system_uuid, ip_address, reg_version)
-     VALUES (?, ?, ?, ?, ?)`,
-  ).bind(token, device_id, system_uuid, ip, reg_version ?? '').run();
+    `INSERT INTO device_tokens (token, device_id, system_uuid, board_file_hash, ip_address, reg_version)
+     VALUES (?, ?, ?, ?, ?, ?)`,
+  ).bind(token, device_id, system_uuid, board_file_hash, ip, reg_version ?? '').run();
 
   return json({ ok: true, token, existing: false });
 }
