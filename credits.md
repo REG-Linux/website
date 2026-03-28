@@ -32,7 +32,7 @@ description: REG Linux is built on the shoulders of these open-source projects. 
 
   <!-- Distro Upstreams -->
   <section class="credits-section">
-    <h2 class="credits-heading">Distribution Upstreams</h2>
+    <h2 class="credits-heading">The Retro Linux Scene</h2>
     <div class="credits-grid">
       {% include credit-card.html name="Armbian" logo="/assets/images/credits/armbian.png" url="https://armbian.com" desc="Kernel patches, device trees, and board support for ARM SBCs." %}
       {% include credit-card.html name="LibreELEC" logo="/assets/images/credits/libreelec.png" url="https://libreelec.tv" desc="Immutable OS architecture and Buildroot packaging patterns." %}
