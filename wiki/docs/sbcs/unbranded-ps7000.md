@@ -1,12 +1,12 @@
 ---
-title: Unbranded
-description: Unbranded pairs the Rockchip RK3128 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: PS7000
+description: PS7000 — handheld powered by Rockchip RK3128.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unbranded
+# PS7000
 
-Unbranded pairs the Rockchip RK3128 SoC with the REG Linux stack for a polished retro console.
+PS7000 — handheld powered by Rockchip RK3128.
 
 
 ## Hardware & Compatibility

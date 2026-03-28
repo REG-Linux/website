@@ -1,12 +1,12 @@
 ---
 title: Orange Pi 3
-description: Orange Pi 3 pairs the Allwinner H5/H6 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Orange Pi 3 — single-board computer powered by Allwinner H5/H6.
+generated: 2026-03-28 17:54:23
 ---
 
 # Orange Pi 3
 
-Orange Pi 3 pairs the Allwinner H5/H6 SoC with the REG Linux stack for a polished retro console.
+Orange Pi 3 — single-board computer powered by Allwinner H5/H6.
 
 
 ## Hardware & Compatibility

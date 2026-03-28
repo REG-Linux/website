@@ -1,12 +1,12 @@
 ---
-title: AYANEO Pocketds
-description: REG Linux on AYANEO Pocketds powered by Qualcomm 8gen2 (SM8550).
+title: AYANEO Pocket DS
+description: REG Linux on AYANEO Pocket DS powered by Qualcomm 8gen2 (SM8550).
 manufacturer: AYANEO
 slug: ayaneo/pocket-ds
-generated: 2026-03-18 22:04:15
+generated: 2026-03-28 17:54:23
 ---
 
-# AYANEO Pocketds
+# AYANEO Pocket DS
 
 
 ## Hardware & Compatibility

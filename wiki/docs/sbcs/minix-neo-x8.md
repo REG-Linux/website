@@ -1,12 +1,12 @@
 ---
 title: Minix Neo X8
-description: Minix Neo X8 pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Minix Neo X8 — device powered by Amlogic S812.
+generated: 2026-03-28 17:54:23
 ---
 
 # Minix Neo X8
 
-Minix Neo X8 pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
+Minix Neo X8 — device powered by Amlogic S812.
 
 
 ## Hardware & Compatibility

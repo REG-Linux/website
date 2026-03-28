@@ -1,12 +1,12 @@
 ---
-title: Firefly
-description: Firefly pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Firefly ROC PC
+description: Firefly ROC PC — single-board computer powered by Rockchip RK3566/RK3568.
+generated: 2026-03-28 17:54:23
 ---
 
-# Firefly
+# Firefly ROC PC
 
-Firefly pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+Firefly ROC PC — single-board computer powered by Rockchip RK3566/RK3568.
 
 
 ## Hardware & Compatibility

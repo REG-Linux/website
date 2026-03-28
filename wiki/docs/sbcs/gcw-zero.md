@@ -1,12 +1,12 @@
 ---
-title: Unknown GCW0
-description: Unknown GCW0 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: GCW Zero
+description: GCW Zero — handheld powered by Ingenic JZ4770.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unknown GCW0
+# GCW Zero
 
-Unknown GCW0 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+GCW Zero — handheld powered by Ingenic JZ4770.
 
 
 ## Hardware & Compatibility

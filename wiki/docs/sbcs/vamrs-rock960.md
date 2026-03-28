@@ -1,12 +1,12 @@
 ---
-title: Unknown ROCK960
-description: Unknown ROCK960 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: 96Boards Rock960
+description: 96Boards Rock960 — device powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unknown ROCK960
+# 96Boards Rock960
 
-Unknown ROCK960 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+96Boards Rock960 — device powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

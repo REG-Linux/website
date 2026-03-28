@@ -1,12 +1,12 @@
 ---
 title: Raspberry Pi 3
-description: Raspberry Pi 3 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Raspberry Pi 3 — single-board computer powered by Broadcom BCM2837.
+generated: 2026-03-28 17:54:23
 ---
 
 # Raspberry Pi 3
 
-Raspberry Pi 3 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.
+Raspberry Pi 3 — single-board computer powered by Broadcom BCM2837.
 
 
 ## Hardware & Compatibility

@@ -1,12 +1,12 @@
 ---
 title: Orange Pi RV2
-description: Orange Pi RV2 pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Orange Pi RV2 — single-board computer powered by SpacemiT K1.
+generated: 2026-03-28 17:54:23
 ---
 
 # Orange Pi RV2
 
-Orange Pi RV2 pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+Orange Pi RV2 — single-board computer powered by SpacemiT K1.
 
 
 ## Hardware & Compatibility

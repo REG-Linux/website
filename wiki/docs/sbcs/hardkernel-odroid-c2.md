@@ -1,12 +1,12 @@
 ---
 title: HardKernel ODROID C2
-description: HardKernel ODROID C2 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: HardKernel ODROID C2 — single-board computer powered by Amlogic S905(X).
+generated: 2026-03-28 17:54:23
 ---
 
 # HardKernel ODROID C2
 
-HardKernel ODROID C2 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+HardKernel ODROID C2 — single-board computer powered by Amlogic S905(X).
 
 
 ## Hardware & Compatibility

@@ -1,12 +1,12 @@
 ---
 title: Khadas VIM 3L
-description: Khadas VIM 3L pairs the Amlogic S905D3 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Khadas VIM 3L — single-board computer powered by Amlogic S905D3.
+generated: 2026-03-28 17:54:23
 ---
 
 # Khadas VIM 3L
 
-Khadas VIM 3L pairs the Amlogic S905D3 SoC with the REG Linux stack for a polished retro console.
+Khadas VIM 3L — single-board computer powered by Amlogic S905D3.
 
 
 ## Hardware & Compatibility

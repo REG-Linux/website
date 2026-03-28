@@ -1,12 +1,12 @@
 ---
 title: HardKernel ODROID C4
-description: HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: HardKernel ODROID C4 — single-board computer powered by Amlogic S905X3.
+generated: 2026-03-28 17:54:23
 ---
 
 # HardKernel ODROID C4
 
-HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+HardKernel ODROID C4 — single-board computer powered by Amlogic S905X3.
 
 
 ## Hardware & Compatibility

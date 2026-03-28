@@ -1,12 +1,12 @@
 ---
 title: Orange Pi Pc Plus
-description: Orange Pi Pc Plus pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Orange Pi Pc Plus — single-board computer powered by Allwinner H3.
+generated: 2026-03-28 17:54:23
 ---
 
 # Orange Pi Pc Plus
 
-Orange Pi Pc Plus pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+Orange Pi Pc Plus — single-board computer powered by Allwinner H3.
 
 
 ## Hardware & Compatibility

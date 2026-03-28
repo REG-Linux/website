@@ -1,12 +1,12 @@
 ---
-title: Unknown P3450 0000
-description: Unknown P3450 0000 pairs the NVIDIA Tegra X1 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: NVIDIA Jetson Nano
+description: NVIDIA Jetson Nano — handheld powered by NVIDIA Tegra X1.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unknown P3450 0000
+# NVIDIA Jetson Nano
 
-Unknown P3450 0000 pairs the NVIDIA Tegra X1 SoC with the REG Linux stack for a polished retro console.
+NVIDIA Jetson Nano — handheld powered by NVIDIA Tegra X1.
 
 
 ## Hardware & Compatibility

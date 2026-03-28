@@ -1,12 +1,12 @@
 ---
 title: Orange Pi PC 2
-description: Orange Pi PC 2 pairs the Allwinner H5 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Orange Pi PC 2 — single-board computer powered by Allwinner H5.
+generated: 2026-03-28 17:54:23
 ---
 
 # Orange Pi PC 2
 
-Orange Pi PC 2 pairs the Allwinner H5 SoC with the REG Linux stack for a polished retro console.
+Orange Pi PC 2 — single-board computer powered by Allwinner H5.
 
 
 ## Hardware & Compatibility

@@ -1,12 +1,12 @@
 ---
 title: Khadas VIM 2
-description: Khadas VIM 2 pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Khadas VIM 2 — single-board computer powered by Amlogic S912.
+generated: 2026-03-28 17:54:23
 ---
 
 # Khadas VIM 2
 
-Khadas VIM 2 pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
+Khadas VIM 2 — single-board computer powered by Amlogic S912.
 
 
 ## Hardware & Compatibility

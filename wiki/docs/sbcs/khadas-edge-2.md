@@ -1,12 +1,12 @@
 ---
 title: Khadas Edge 2
-description: Khadas Edge 2 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Khadas Edge 2 — single-board computer powered by Rockchip RK3588.
+generated: 2026-03-28 17:54:23
 ---
 
 # Khadas Edge 2
 
-Khadas Edge 2 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+Khadas Edge 2 — single-board computer powered by Rockchip RK3588.
 
 
 ## Hardware & Compatibility

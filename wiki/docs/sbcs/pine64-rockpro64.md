@@ -1,12 +1,12 @@
 ---
-title: Pine64
-description: Pine64 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Pine64 RockPro64
+description: Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
-# Pine64
+# Pine64 RockPro64
 
-Pine64 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

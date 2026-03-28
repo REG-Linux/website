@@ -1,12 +1,12 @@
 ---
-title: Radxa Pi 4B
-description: Radxa Pi 4B pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Radxa Rock Pi 4B
+description: Radxa Rock Pi 4B — single-board computer powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
-# Radxa Pi 4B
+# Radxa Rock Pi 4B
 
-Radxa Pi 4B pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+Radxa Rock Pi 4B — single-board computer powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

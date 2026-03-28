@@ -1,12 +1,12 @@
 ---
-title: Libre Computer All H3 Cc
-description: Libre Computer All H3 Cc pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Libre Computer Tritium H5
+description: Libre Computer Tritium H5 — single-board computer powered by Allwinner H3.
+generated: 2026-03-28 17:54:23
 ---
 
-# Libre Computer All H3 Cc
+# Libre Computer Tritium H5
 
-Libre Computer All H3 Cc pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+Libre Computer Tritium H5 — single-board computer powered by Allwinner H3.
 
 
 ## Hardware & Compatibility

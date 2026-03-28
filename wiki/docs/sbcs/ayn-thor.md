@@ -1,12 +1,12 @@
 ---
 title: Ayn Thor
-description: Ayn Thor pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Ayn Thor — device powered by Qualcomm 8gen2 (SM8550).
+generated: 2026-03-28 17:54:23
 ---
 
 # Ayn Thor
 
-Ayn Thor pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+Ayn Thor — device powered by Qualcomm 8gen2 (SM8550).
 
 
 ## Hardware & Compatibility

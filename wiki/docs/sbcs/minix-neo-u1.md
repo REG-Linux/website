@@ -1,12 +1,12 @@
 ---
 title: Minix Neo U1
-description: Minix Neo U1 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Minix Neo U1 — device powered by Amlogic S905(X).
+generated: 2026-03-28 17:54:23
 ---
 
 # Minix Neo U1
 
-Minix Neo U1 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+Minix Neo U1 — device powered by Amlogic S905(X).
 
 
 ## Hardware & Compatibility

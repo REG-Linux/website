@@ -1,12 +1,12 @@
 ---
 title: Banana Pi M4 Berry
-description: Banana Pi M4 Berry pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Banana Pi M4 Berry — single-board computer powered by Allwinner H618.
+generated: 2026-03-28 17:54:23
 ---
 
 # Banana Pi M4 Berry
 
-Banana Pi M4 Berry pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.
+Banana Pi M4 Berry — single-board computer powered by Allwinner H618.
 
 
 ## Hardware & Compatibility

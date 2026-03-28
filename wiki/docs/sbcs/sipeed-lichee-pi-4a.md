@@ -1,12 +1,12 @@
 ---
-title: Sipeed Pi 4A
-description: Sipeed Pi 4A pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Sipeed LicheePi 4A
+description: Sipeed LicheePi 4A — single-board computer powered by T-Head TH1520.
+generated: 2026-03-28 17:54:23
 ---
 
-# Sipeed Pi 4A
+# Sipeed LicheePi 4A
 
-Sipeed Pi 4A pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
+Sipeed LicheePi 4A — single-board computer powered by T-Head TH1520.
 
 
 ## Hardware & Compatibility

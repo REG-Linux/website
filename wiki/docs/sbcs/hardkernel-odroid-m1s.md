@@ -1,12 +1,12 @@
 ---
-title: HardKernel 1S
-description: HardKernel 1S pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: ODROID-M1S
+description: ODROID-M1S — single-board computer powered by Rockchip RK3566/RK3568.
+generated: 2026-03-28 17:54:23
 ---
 
-# HardKernel 1S
+# ODROID-M1S
 
-HardKernel 1S pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+ODROID-M1S — single-board computer powered by Rockchip RK3566/RK3568.
 
 
 ## Hardware & Compatibility

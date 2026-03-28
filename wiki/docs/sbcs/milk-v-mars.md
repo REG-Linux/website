@@ -1,12 +1,12 @@
 ---
 title: Milk-V Mars
-description: Milk-V Mars pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Milk-V Mars — single-board computer powered by StarFive JH7110.
+generated: 2026-03-28 17:54:23
 ---
 
 # Milk-V Mars
 
-Milk-V Mars pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
+Milk-V Mars — single-board computer powered by StarFive JH7110.
 
 
 ## Hardware & Compatibility

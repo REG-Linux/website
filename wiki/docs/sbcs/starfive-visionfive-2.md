@@ -1,12 +1,12 @@
 ---
 title: StarFive VisionFive 2
-description: StarFive VisionFive 2 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: StarFive VisionFive 2 — single-board computer powered by StarFive JH7110.
+generated: 2026-03-28 17:54:23
 ---
 
 # StarFive VisionFive 2
 
-StarFive VisionFive 2 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
+StarFive VisionFive 2 — single-board computer powered by StarFive JH7110.
 
 
 ## Hardware & Compatibility
