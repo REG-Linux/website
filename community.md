@@ -47,4 +47,14 @@ description: Engage with Discord, GitHub, and the wiki to collaborate on REG Lin
       </article>
     {% endfor %}
   </section>
+
+  <section class="cv-auto" style="text-align: center;">
+    <h2>Built on open source</h2>
+    <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 480px; margin: 0 auto 1rem;">
+      REG Linux integrates 35+ upstream projects. We pick, adapt, and ship their work.
+    </p>
+    <a class="btn secondary" href="{{ '/credits/' | relative_url }}">View credits &rarr;</a>
+  </section>
 </main>
+
+{% include site-footer.html %}

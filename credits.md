@@ -186,7 +186,4 @@ description: REG Linux is built on the shoulders of these open-source projects. 
 .credit-card-sm span { display: block; font-size: 0.72rem; color: var(--text-muted); line-height: 1.3; }
 </style>
 
-<footer class="site-footer">
-  {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Free, open source, and community supported.</p>
-</footer>
+{% include site-footer.html %}

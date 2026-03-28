@@ -288,7 +288,4 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 })();
 </script>
 
-<footer class="site-footer">
-  {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Free, open source, and community supported.</p>
-</footer>
+{% include site-footer.html %}

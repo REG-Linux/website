@@ -167,10 +167,7 @@ preload_image: /assets/images/logo-regstation.webp
   </section>
 </main>
 
-<footer class="site-footer">
-  {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Free, open source, and community supported.</p>
-</footer>
+{% include site-footer.html %}
 
 <style>
 /* Social proof */

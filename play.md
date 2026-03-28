@@ -115,3 +115,5 @@ description: Emulators, game engines, and native ports bundled with REG Linux â€
     <a class="btn primary" href="{{ '/bundled-games/' | relative_url }}">Bundled games â€” free and legal, playable on first boot</a>
   </section>
 </main>
+
+{% include site-footer.html %}

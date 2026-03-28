@@ -80,8 +80,4 @@ description: Play the legally licensed indie and open-source titles that ship wi
   </section>
 </main>
 
-<footer class="site-footer">
-  {% include vendor-strip.html %}
-  <p>{{ bundled.footer.text }}</p>
-  <p class="small">{{ bundled.footer.note }}</p>
-</footer>
+{% include site-footer.html %}
