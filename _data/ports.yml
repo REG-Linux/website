@@ -4,7 +4,7 @@
   extensions: game
   url: https://reglinux.org/wiki/games/abuse/
   logo:
-    src: /wiki/assets/systems/icons/abuse.webp
+    src: /assets/images/ports/abuse.webp
     alt: Abuse logo
 - name: Cannonball
   overview: Modern OutRun engine. Boots the 1986 Sega racer with 60fps, widescreen, and enhanced traffic AI from the original
@@ -13,7 +13,7 @@
   extensions: cannonball
   url: https://reglinux.org/wiki/ports/cannonball/
   logo:
-    src: /wiki/assets/systems/logos/cannonball.png
+    src: /assets/images/ports/cannonball.png
     alt: Cannonball logo
 - name: Cave Story
   overview: Cave Story (2004) is the freeware indie adventure by Daisuke “Pixel” Amaya.
@@ -21,7 +21,7 @@
   extensions: exe
   url: https://reglinux.org/wiki/ports/cavestory/
   logo:
-    src: /wiki/assets/systems/logos/cavestory.png
+    src: /assets/images/ports/cavestory.png
     alt: Cave Story logo
 - name: C-Dogs SDL
   overview: C-Dogs is a top-down shooter built for cooperative or deathmatch play.
@@ -29,7 +29,7 @@
   extensions: game
   url: https://reglinux.org/wiki/games/cdogs/
   logo:
-    src: /wiki/assets/systems/logos/cdogs.png
+    src: /assets/images/ports/cdogs.png
     alt: C-Dogs SDL logo
 - name: Commander Genius
   overview: A fan-built engine for the Commander Keen and Cosmos the Cosmic Adventure series.
@@ -37,7 +37,7 @@
   extensions: cgenius
   url: https://reglinux.org/wiki/ports/cgenius/
   logo:
-    src: /wiki/assets/systems/logos/cgenius.png
+    src: /assets/images/ports/cgenius.png
     alt: Commander Genius logo
 - name: CorsixTH
   overview: A Lua-based reimplementation of Theme Hospital.
@@ -45,7 +45,7 @@
   extensions: game
   url: https://reglinux.org/wiki/ports/corsixth/
   logo:
-    src: /wiki/assets/systems/logos/corsixth.png
+    src: /assets/images/ports/corsixth.png
     alt: CorsixTH logo
 - name: DevilutionX
   overview: DevilutionX resurrects Diablo and its Hellfire expansion with an open-source engine that honors the original game
@@ -54,7 +54,7 @@
   extensions: mpq
   url: https://reglinux.org/wiki/ports/devilutionx/
   logo:
-    src: /wiki/assets/systems/logos/devilutionx.png
+    src: /assets/images/ports/devilutionx.png
     alt: DevilutionX logo
 - name: Doom 3
   overview: Doom 3 (2004) runs on the dhewm3 open-source engine.
@@ -62,7 +62,7 @@
   extensions: d3
   url: https://reglinux.org/wiki/ports/doom3/
   logo:
-    src: /wiki/assets/systems/logos/doom3.png
+    src: /assets/images/ports/doom3.png
     alt: Doom 3 logo
 - name: DXX Rebirth
   overview: A modern source port for the Descent series that runs Descent 1 and Descent 2 with improved rendering, mod support,
@@ -71,7 +71,7 @@
   extensions: d1x, d2x
   url: https://reglinux.org/wiki/ports/dxx-rebirth/
   logo:
-    src: /wiki/assets/systems/logos/dxx-rebirth.png
+    src: /assets/images/ports/dxx-rebirth.png
     alt: DXX Rebirth logo
 - name: ECWolf
   overview: A modernized Wolfenstein 3D engine that builds on Wolf4SDL and adds mod support, modern input controls, and configuration
@@ -80,7 +80,7 @@
   extensions: ecwolf, pk3, zar
   url: https://reglinux.org/wiki/ports/ecwolf/
   logo:
-    src: /wiki/assets/systems/logos/ecwolf.png
+    src: /assets/images/ports/ecwolf.png
     alt: ECWolf logo
 - name: EDuke32
   overview: The Build Engine source port that runs Duke Nukem 3D, its expansions, and a wide array of official mods with improved
@@ -89,7 +89,7 @@
   extensions: eduke32
   url: https://reglinux.org/wiki/ports/eduke32/
   logo:
-    src: /wiki/assets/systems/logos/eduke32.png
+    src: /assets/images/ports/eduke32.png
     alt: EDuke32 logo
 - name: Wolfenstein - Enemy Territory
   overview: 'Wolfenstein: Enemy Territory is replayed through the ET: Legacy engine, a modernized client for the free multiplayer
@@ -98,7 +98,7 @@
   extensions: etl
   url: https://reglinux.org/wiki/ports/etlegacy/
   logo:
-    src: /wiki/assets/systems/logos/etlegacy.png
+    src: /assets/images/ports/etlegacy.png
     alt: Wolfenstein - Enemy Territory logo
 - name: Fallout Community Edition
   overview: Fallout Community Edition (Fallout-CE) is a modern rebuild of the Fallout 1 engine. It preserves the original
@@ -107,7 +107,7 @@
   extensions: f1ce
   url: https://reglinux.org/wiki/ports/fallout1-ce/
   logo:
-    src: /wiki/assets/systems/logos/fallout1-ce.png
+    src: /assets/images/ports/fallout1-ce.png
     alt: Fallout Community Edition logo
 - name: Fallout 2 Community Edition
   overview: Fallout 2 Community Edition modernizes the Fallout 2 engine with bug fixes, mod hooks, and enhanced configuration.
@@ -115,7 +115,7 @@
   extensions: f2ce
   url: https://reglinux.org/wiki/ports/fallout2-ce/
   logo:
-    src: /wiki/assets/systems/logos/fallout2-ce.png
+    src: /assets/images/ports/fallout2-ce.png
     alt: Fallout 2 Community Edition logo
 - name: Ion Fury
   overview: Ion Fury (originally Ion Maiden) is a modern Build Engine shooter powered by EDuke32.
@@ -123,7 +123,7 @@
   extensions: grp
   url: https://reglinux.org/wiki/ports/fury/
   logo:
-    src: /wiki/assets/systems/logos/fury.png
+    src: /assets/images/ports/fury.png
     alt: Ion Fury logo
 - name: GZDoom
   overview: A modern source port that extends the Doom engine with slopes, true 3D floors, uncapped framerates, and broad
@@ -132,7 +132,7 @@
   extensions: wad, iwad, pwad, gzdoom
   url: https://reglinux.org/wiki/ports/gzdoom/
   logo:
-    src: /wiki/assets/systems/logos/gzdoom.png
+    src: /assets/images/ports/gzdoom.png
     alt: GZDoom logo
 - name: Hydra Castle Labyrinth
   overview: Metroidvania-inspired action platformer. Explore, fight bosses, and collect upgrades in a freeware NES-style adventure.
@@ -140,7 +140,7 @@
   extensions: game
   url: https://reglinux.org/wiki/games/hcl/
   logo:
-    src: /wiki/assets/systems/icons/hcl.webp
+    src: /assets/images/ports/hcl.webp
     alt: Hydra Castle Labyrinth logo
 - name: Hurrican
   overview: A freeware action-platformer inspired by the Turrican series.
@@ -148,7 +148,7 @@
   extensions: game
   url: https://reglinux.org/wiki/games/hurrican/
   logo:
-    src: /wiki/assets/systems/icons/hurrican.webp
+    src: /assets/images/ports/hurrican.webp
     alt: Hurrican logo
 - name: Return To Castle Wolfenstein
   overview: IORTCW (iouRReturn To Castle Wolfenstein) is a modernized Wolfenstein client that runs the original RTCW assets.
@@ -156,7 +156,7 @@
   extensions: rtcw
   url: https://reglinux.org/wiki/ports/iortcw/
   logo:
-    src: /wiki/assets/systems/logos/iortcw.png
+    src: /assets/images/ports/iortcw.png
     alt: Return To Castle Wolfenstein logo
 - name: Jazz Jackrabbit 2
   overview: A 2D platformer that the native Jazz2 engine replays on modern machines.
@@ -164,7 +164,7 @@
   extensions: game
   url: https://reglinux.org/wiki/ports/jazz2/
   logo:
-    src: /wiki/assets/systems/logos/jazz2.png
+    src: /assets/images/ports/jazz2.png
     alt: Jazz Jackrabbit 2 logo
 - name: MrBoom
   overview: Mr. Boom is a Bomberman-inspired party game packaged as a libretro core.
@@ -172,7 +172,7 @@
   extensions: libretro
   url: https://reglinux.org/wiki/ports/mrboom/
   logo:
-    src: /wiki/assets/systems/logos/mrboom.png
+    src: /assets/images/ports/mrboom.png
     alt: MrBoom logo
 - name: Jazz Jackrabbit
   overview: OpenJazz is an open-source recreation of the original Jazz Jackrabbit that modernizes the Win32 engine while still
@@ -181,7 +181,7 @@
   extensions: game
   url: https://reglinux.org/wiki/ports/openjazz/
   logo:
-    src: /wiki/assets/systems/logos/openjazz.png
+    src: /assets/images/ports/openjazz.png
     alt: Jazz Jackrabbit logo
 - name: OpenLara
   overview: The open-source reimplementation of the original Tomb Raider engine. It uses the original Tomb Raider I assets
@@ -190,7 +190,7 @@
   extensions: croft
   url: https://reglinux.org/wiki/ports/openlara/
   logo:
-    src: /wiki/assets/systems/logos/openlara.png
+    src: /assets/images/ports/openlara.png
     alt: OpenLara logo
 - name: PrBoom
   overview: The libretro-based source port that lets you run Doom, Doom II, and their mods with modern enhancements. wad)
@@ -199,7 +199,7 @@
   extensions: wad, iwad, pwad
   url: https://reglinux.org/wiki/ports/prboom/
   logo:
-    src: /wiki/assets/systems/logos/prboom.png
+    src: /assets/images/ports/prboom.png
     alt: PrBoom logo
 - name: Quake III
   overview: Quake III Arena and its Team Arena expansion are supported through the ioquake3 engine.
@@ -207,7 +207,7 @@
   extensions: quake3
   url: https://reglinux.org/wiki/ports/quake3/
   logo:
-    src: /wiki/assets/systems/logos/quake3.png
+    src: /assets/images/ports/quake3.png
     alt: Quake III logo
 - name: Raze
   overview: Raze runs classic Build engine titles through a unified launcher powered by GZDoom technology. It supports Duke
@@ -216,7 +216,7 @@
   extensions: raze
   url: https://reglinux.org/wiki/ports/raze/
   logo:
-    src: /wiki/assets/systems/logos/raze.png
+    src: /assets/images/ports/raze.png
     alt: Raze logo
 - name: REminiscence
   overview: The libretro wrapper around Gregory Montoir’s Flashback engine. It uses the original Flashback PC data with improved
@@ -225,7 +225,7 @@
   extensions: rem
   url: https://reglinux.org/wiki/ports/reminiscence/
   logo:
-    src: /wiki/assets/systems/logos/reminiscence.png
+    src: /assets/images/ports/reminiscence.png
     alt: REminiscence logo
 - name: Rise of the Triad
   overview: It relies on the commercial game files to reproduce the original fast-paced shooter.
@@ -233,7 +233,7 @@
   extensions: rott
   url: https://reglinux.org/wiki/ports/rott/
   logo:
-    src: /wiki/assets/systems/logos/rott.png
+    src: /assets/images/ports/rott.png
     alt: Rise of the Triad logo
 - name: SdlPop
   overview: The open-source port of the original Prince of Persia.
@@ -241,7 +241,7 @@
   extensions: sdlpop
   url: https://reglinux.org/wiki/ports/sdlpop/
   logo:
-    src: /wiki/assets/systems/logos/sdlpop.png
+    src: /assets/images/ports/sdlpop.png
     alt: SdlPop logo
 - name: Sonic Mania
   overview: A modern 2D platformer that continues the 16-bit Sonic legacy.
@@ -249,7 +249,7 @@
   extensions: sman
   url: https://reglinux.org/wiki/ports/sonic-mania/
   logo:
-    src: /wiki/assets/systems/icons/sonic-mania.webp
+    src: /assets/images/ports/sonic-mania.webp
     alt: Sonic Mania logo
 - name: Sonic 3 A.I.R.
   overview: Sonic 3 A.I.R. (Angel Island Revisited) is the fan remaster of Sonic the Hedgehog 3 & Knuckles running on RSDKv5.
@@ -257,7 +257,7 @@
   extensions: s3air
   url: https://reglinux.org/wiki/ports/sonic3-air/
   logo:
-    src: /wiki/assets/systems/logos/sonic3-air.png
+    src: /assets/images/ports/sonic3-air.png
     alt: Sonic 3 A.I.R. logo
 - name: Sonic Retro Engine
   overview: The Sonic Retro Engine (formerly Star Engine) bundles modern builds of Sonic 1, Sonic 2, and Sonic CD using RSDKv5.
@@ -266,7 +266,7 @@
   extensions: son, scd
   url: https://reglinux.org/wiki/ports/sonicretro/
   logo:
-    src: /wiki/assets/systems/logos/sonicretro.png
+    src: /assets/images/ports/sonicretro.png
     alt: Sonic Retro Engine logo
 - name: Super Mario War
   overview: A multiplayer battle game where up to four players stomp each other across themed arenas.
@@ -274,7 +274,7 @@
   extensions: game
   url: https://reglinux.org/wiki/games/superbroswar/
   logo:
-    src: /wiki/assets/systems/logos/superbroswar.png
+    src: /assets/images/ports/superbroswar.png
     alt: Super Mario War logo
 - name: The Force Engine
   overview: The Force Engine (TFE) recreates classic LucasArts shooters such as Dark Forces and Outlaws.
@@ -282,7 +282,7 @@
   extensions: tfe
   url: https://reglinux.org/wiki/ports/theforceengine/
   logo:
-    src: /wiki/assets/systems/icons/theforceengine.webp
+    src: /assets/images/ports/theforceengine.webp
     alt: The Force Engine logo
 - name: Tyrian
   overview: The shareware/registered shooter bundled as a native port.
@@ -290,7 +290,7 @@
   extensions: game
   url: https://reglinux.org/wiki/games/tyrian/
   logo:
-    src: /wiki/assets/systems/logos/tyrian.png
+    src: /assets/images/ports/tyrian.png
     alt: Tyrian logo
 - name: TyrQuake
   overview: The libretro port of the original Quake shareware and retail episodes.
@@ -298,7 +298,7 @@
   extensions: pak
   url: https://reglinux.org/wiki/ports/tyrquake/
   logo:
-    src: /wiki/assets/systems/logos/tyrquake.png
+    src: /assets/images/ports/tyrquake.png
     alt: TyrQuake logo
 - name: Ur-Quan Masters
   overview: The open-source revival of Star Control II.
@@ -306,7 +306,7 @@
   extensions: game
   url: https://reglinux.org/wiki/ports/uqm/
   logo:
-    src: /wiki/assets/systems/logos/uqm.png
+    src: /assets/images/ports/uqm.png
     alt: Ur-Quan Masters logo
 - name: Quake II
   overview: VitaQuake2 is the libretro port that runs Quake II and its mission packs (Xatrix, Rogue, Zaero).
@@ -314,7 +314,7 @@
   extensions: pak, zip, 7zip
   url: https://reglinux.org/wiki/ports/vitaquake2/
   logo:
-    src: /wiki/assets/systems/logos/vitaquake2.png
+    src: /assets/images/ports/vitaquake2.png
     alt: Quake II logo
 - name: Xash3D-FWGS
   overview: A fork of the Half-Life/Source engine that runs Half-Life, Blue Shift, Opposing Force, and other compatible mods.
@@ -322,7 +322,7 @@
   extensions: game
   url: https://reglinux.org/wiki/ports/xash3d_fwgs/
   logo:
-    src: /wiki/assets/systems/logos/xash3d_fwgs.png
+    src: /assets/images/ports/xash3d_fwgs.png
     alt: Xash3D-FWGS logo
 - name: xrick
   overview: The open-source remake of Rick Dangerous.
@@ -330,5 +330,5 @@
   extensions: zip
   url: https://reglinux.org/wiki/ports/xrick/
   logo:
-    src: /wiki/assets/systems/logos/xrick.png
+    src: /assets/images/ports/xrick.png
     alt: xrick logo
