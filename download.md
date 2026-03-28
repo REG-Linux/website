@@ -68,7 +68,7 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
               <img src="{{ dev_img | relative_url }}" alt="{{ device.title }}" loading="lazy" decoding="async"
                    {% if device.image_width %}width="{{ device.image_width }}" height="{{ device.image_height }}"
                    srcset="{{ img_small | relative_url }} {{ device.image_width | divided_by: 2 }}w, {{ dev_img | relative_url }} {{ device.image_width }}w"
-                   sizes="72px"{% endif %}
+                   sizes="100px"{% endif %}
                    onerror="this.src='{{ '/assets/images/device-placeholder.svg' | relative_url }}'" />
             {% endif %}
           </div>
@@ -154,34 +154,55 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 .device-count { font-size: 0.8rem; color: var(--text-muted, #b2bed1); margin: 0 0 1rem; }
 .device-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
 }
-@media (max-width: 900px) { .device-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .device-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) { .device-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 750px) { .device-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .device-grid { grid-template-columns: 1fr; } }
 .device-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.1rem;
-  padding: 1.1rem 1.4rem;
-  background: var(--card, rgba(16,22,40,0.85));
-  border: 1px solid var(--border, rgba(255,255,255,0.12));
-  border-radius: var(--radius, 14px);
-  box-shadow: var(--shadow, 0 25px 60px rgba(3,9,27,0.55));
+  padding: 0;
+  background: rgba(16, 22, 40, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
   text-decoration: none;
   color: var(--text, #f4f6fb);
-  transition: transform 0.15s, border-color 0.15s;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  overflow: hidden;
+  text-align: center;
 }
-.device-card:hover { transform: translateY(-2px); border-color: var(--accent, #2bb0e9); text-decoration: none; }
+.device-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(43, 176, 233, 0.4);
+  background: rgba(20, 28, 50, 0.9);
+  text-decoration: none;
+  box-shadow: 0 8px 32px rgba(43, 176, 233, 0.08);
+}
 .device-card[data-hidden="true"] { display: none; }
-.device-media { width: 90px; height: 90px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-.device-media img { max-width: 90px; max-height: 90px; object-fit: contain; border-radius: 8px; }
-.device-info { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
-.device-name { font-size: 1rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.device-soc { font-size: 0.82rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
+.device-media {
+  width: 100%; height: 120px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+}
+.device-media img {
+  max-width: 100px; max-height: 100px;
+  object-fit: contain; border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+.device-card:hover .device-media img { transform: scale(1.05); }
+.device-info {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 0.2rem; padding: 0.5rem 0.75rem 0.65rem; width: 100%;
+}
+.device-name { font-size: 0.82rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.device-soc { font-size: 0.68rem; color: #6b7a90; font-family: 'JetBrains Mono', monospace; }
 .device-type-badge {
-  font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
-  width: fit-content; padding: 0.12rem 0.5rem; border-radius: 999px;
+  font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+  width: fit-content; padding: 0.08rem 0.35rem; border-radius: 999px; margin-top: 0.1rem;
 }
 .device-type-handheld { color: #2bb0e9; background: rgba(43,176,233,0.1); }
 .device-type-sbc { color: #a78bfa; background: rgba(167,139,250,0.1); }
@@ -192,13 +213,13 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 .manufacturer-section { margin-top: 3rem; }
 .manufacturer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
 }
-@media (max-width: 900px) { .manufacturer-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .manufacturer-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .manufacturer-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .manufacturer-grid { grid-template-columns: repeat(2, 1fr); } }
 .manufacturer-card {
-  display: flex; align-items: center; gap: 0.9rem; padding: 1rem 1.25rem;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.5rem; padding: 1rem 0.75rem;
   background: var(--card, rgba(16,22,40,0.85));
   border: 1px solid var(--border, rgba(255,255,255,0.12));
   border-radius: var(--radius, 14px);
@@ -209,7 +230,7 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 .manufacturer-card:hover { transform: translateY(-2px); border-color: var(--accent, #2bb0e9); text-decoration: none; }
 .mfr-logo { width: 52px; height: 52px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .mfr-logo img { max-width: 52px; max-height: 52px; object-fit: contain; }
-.mfr-info { display: flex; flex-direction: column; gap: 0.15rem; }
+.mfr-info { display: flex; flex-direction: column; align-items: center; gap: 0.15rem; }
 .mfr-info strong { font-size: 0.92rem; }
 .mfr-count { font-size: 0.75rem; color: var(--text-muted); }
 </style>
