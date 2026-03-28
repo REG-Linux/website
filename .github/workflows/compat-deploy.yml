@@ -31,6 +31,7 @@ jobs:
 
       # Generate fresh data for the build
       - run: python3 compat/scripts/extract_devices.py
+      - run: python3 compat/scripts/generate_download_links.py
       - run: cp compat/scripts/devices_canonical.json compat/dashboard/src/data/devices.json
 
       # Build widget and copy to dashboard public
