@@ -1,12 +1,12 @@
 ---
 title: Raspberry Pi 4
-description: Raspberry Pi 4 pairs the Broadcom BCM2711 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Raspberry Pi 4 — single-board computer powered by Broadcom BCM2711.
+generated: 2026-03-28 17:54:23
 ---
 
 # Raspberry Pi 4
 
-Raspberry Pi 4 pairs the Broadcom BCM2711 SoC with the REG Linux stack for a polished retro console.
+Raspberry Pi 4 — single-board computer powered by Broadcom BCM2711.
 
 
 ## Hardware & Compatibility

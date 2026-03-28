@@ -1,12 +1,12 @@
 ---
 title: MusePi Pro
-description: MusePi Pro pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: MusePi Pro — single-board computer powered by SpacemiT K1.
+generated: 2026-03-28 17:54:23
 ---
 
 # MusePi Pro
 
-MusePi Pro pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+MusePi Pro — single-board computer powered by SpacemiT K1.
 
 
 ## Hardware & Compatibility

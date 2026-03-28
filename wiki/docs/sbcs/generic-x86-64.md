@@ -1,12 +1,12 @@
 ---
 title: Generic PC (x86-64)
-description: Generic PC (x86-64) pairs the AMD/Intel x86_64 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Generic PC (x86-64) — device powered by AMD/Intel x86_64.
+generated: 2026-03-28 17:54:23
 ---
 
 # Generic PC (x86-64)
 
-Generic PC (x86-64) pairs the AMD/Intel x86_64 SoC with the REG Linux stack for a polished retro console.
+Generic PC (x86-64) — device powered by AMD/Intel x86_64.
 
 
 ## Hardware & Compatibility

@@ -1,12 +1,12 @@
 ---
 title: Raspberry Pi 5
-description: Raspberry Pi 5 pairs the Broadcom BCM2712 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Raspberry Pi 5 — single-board computer powered by Broadcom BCM2712.
+generated: 2026-03-28 17:54:23
 ---
 
 # Raspberry Pi 5
 
-Raspberry Pi 5 pairs the Broadcom BCM2712 SoC with the REG Linux stack for a polished retro console.
+Raspberry Pi 5 — single-board computer powered by Broadcom BCM2712.
 
 
 ## Hardware & Compatibility

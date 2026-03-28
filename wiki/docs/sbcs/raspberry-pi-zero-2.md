@@ -1,12 +1,12 @@
 ---
 title: Raspberry Pi Zero 2
-description: Raspberry Pi Zero 2 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Raspberry Pi Zero 2 — single-board computer powered by Broadcom BCM2837.
+generated: 2026-03-28 17:54:23
 ---
 
 # Raspberry Pi Zero 2
 
-Raspberry Pi Zero 2 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.
+Raspberry Pi Zero 2 — single-board computer powered by Broadcom BCM2837.
 
 
 ## Hardware & Compatibility

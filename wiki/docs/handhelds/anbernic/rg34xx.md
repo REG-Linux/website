@@ -3,7 +3,7 @@ title: Anbernic RG34XX
 description: REG Linux on Anbernic RG34XX powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg34xx
-generated: 2026-03-18 22:04:15
+generated: 2026-03-28 17:54:23
 ---
 
 # Anbernic RG34XX

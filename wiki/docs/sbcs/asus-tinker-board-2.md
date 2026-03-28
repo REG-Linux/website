@@ -1,12 +1,12 @@
 ---
-title: ASUS 2
-description: ASUS 2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: ASUS Tinker Board 2
+description: ASUS Tinker Board 2 — single-board computer powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
-# ASUS 2
+# ASUS Tinker Board 2
 
-ASUS 2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+ASUS Tinker Board 2 — single-board computer powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

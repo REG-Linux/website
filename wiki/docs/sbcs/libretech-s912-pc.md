@@ -1,12 +1,12 @@
 ---
-title: Unknown S912 Libretech Pc
-description: Unknown S912 Libretech Pc pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Libre Computer S912-PC
+description: Libre Computer S912-PC — single-board computer powered by Amlogic S912.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unknown S912 Libretech Pc
+# Libre Computer S912-PC
 
-Unknown S912 Libretech Pc pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
+Libre Computer S912-PC — single-board computer powered by Amlogic S912.
 
 
 ## Hardware & Compatibility

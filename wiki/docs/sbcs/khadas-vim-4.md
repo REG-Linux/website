@@ -1,12 +1,12 @@
 ---
 title: Khadas VIM 4
-description: Khadas VIM 4 pairs the Amlogic A311D2 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Khadas VIM 4 — single-board computer powered by Amlogic A311D2.
+generated: 2026-03-28 17:54:23
 ---
 
 # Khadas VIM 4
 
-Khadas VIM 4 pairs the Amlogic A311D2 SoC with the REG Linux stack for a polished retro console.
+Khadas VIM 4 — single-board computer powered by Amlogic A311D2.
 
 
 ## Hardware & Compatibility

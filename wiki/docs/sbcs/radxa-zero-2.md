@@ -1,12 +1,12 @@
 ---
 title: Radxa Zero 2
-description: Radxa Zero 2 pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Radxa Zero 2 — single-board computer powered by Amlogic A311D.
+generated: 2026-03-28 17:54:23
 ---
 
 # Radxa Zero 2
 
-Radxa Zero 2 pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.
+Radxa Zero 2 — single-board computer powered by Amlogic A311D.
 
 
 ## Hardware & Compatibility

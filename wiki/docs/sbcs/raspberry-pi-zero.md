@@ -1,12 +1,12 @@
 ---
 title: Raspberry Pi Zero
-description: Raspberry Pi Zero pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Raspberry Pi Zero — single-board computer powered by Broadcom BCM2835.
+generated: 2026-03-28 17:54:23
 ---
 
 # Raspberry Pi Zero
 
-Raspberry Pi Zero pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.
+Raspberry Pi Zero — single-board computer powered by Broadcom BCM2835.
 
 
 ## Hardware & Compatibility

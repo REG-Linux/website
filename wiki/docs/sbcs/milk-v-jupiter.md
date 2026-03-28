@@ -1,12 +1,12 @@
 ---
 title: Milk-V Jupiter
-description: Milk-V Jupiter pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Milk-V Jupiter — single-board computer powered by SpacemiT K1.
+generated: 2026-03-28 17:54:23
 ---
 
 # Milk-V Jupiter
 
-Milk-V Jupiter pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+Milk-V Jupiter — single-board computer powered by SpacemiT K1.
 
 
 ## Hardware & Compatibility

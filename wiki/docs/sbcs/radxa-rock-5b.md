@@ -1,12 +1,12 @@
 ---
 title: Radxa Rock 5B
-description: Radxa Rock 5B pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Radxa Rock 5B — single-board computer powered by Rockchip RK3588.
+generated: 2026-03-28 17:54:23
 ---
 
 # Radxa Rock 5B
 
-Radxa Rock 5B pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+Radxa Rock 5B — single-board computer powered by Rockchip RK3588.
 
 
 ## Hardware & Compatibility

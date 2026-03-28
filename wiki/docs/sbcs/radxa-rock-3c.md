@@ -1,12 +1,12 @@
 ---
 title: Radxa 3C
-description: Radxa 3C pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Radxa 3C — single-board computer powered by Rockchip RK3566/RK3568.
+generated: 2026-03-28 17:54:23
 ---
 
 # Radxa 3C
 
-Radxa 3C pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+Radxa 3C — single-board computer powered by Rockchip RK3566/RK3568.
 
 
 ## Hardware & Compatibility

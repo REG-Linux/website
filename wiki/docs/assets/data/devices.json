@@ -8,15 +8,15 @@
   },
   {
     "slug": "amlogic-mxiii",
-    "title": "Unknown Mxiii",
-    "brand": "Unknown",
+    "title": "MXIII TV Box",
+    "brand": "Amlogic",
     "soc": "Amlogic S812",
     "board_url": "https://reglinux.org/wiki/other/unknown/amlogic-mxiii/"
   },
   {
     "slug": "amlogic-mxiii-plus",
-    "title": "Unknown Mxiii Plus",
-    "brand": "Unknown",
+    "title": "MXIII Plus TV Box",
+    "brand": "Amlogic",
     "soc": "Amlogic S812",
     "board_url": "https://reglinux.org/wiki/other/unknown/amlogic-mxiii-plus/"
   },
@@ -36,15 +36,15 @@
   },
   {
     "slug": "anbernic-rg280m",
-    "title": "Unknown RG280M",
-    "brand": "Unknown",
+    "title": "Anbernic RG280M",
+    "brand": "Anbernic",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/anbernic-rg280m/"
   },
   {
     "slug": "anbernic-rg280v",
-    "title": "Unknown RG280V",
-    "brand": "Unknown",
+    "title": "Anbernic RG280V",
+    "brand": "Anbernic",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/anbernic-rg280v/"
   },
@@ -57,15 +57,15 @@
   },
   {
     "slug": "anbernic-rg300",
-    "title": "Unknown RG300",
-    "brand": "Unknown",
+    "title": "Anbernic RG300",
+    "brand": "Anbernic",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/anbernic-rg300/"
   },
   {
     "slug": "anbernic-rg300x",
-    "title": "Unknown RG300X",
-    "brand": "Unknown",
+    "title": "Anbernic RG300X",
+    "brand": "Anbernic",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/anbernic-rg300x/"
   },
@@ -78,15 +78,15 @@
   },
   {
     "slug": "anbernic-rg350",
-    "title": "Unknown RG350",
-    "brand": "Unknown",
+    "title": "Anbernic RG350",
+    "brand": "Anbernic",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/anbernic-rg350/"
   },
   {
     "slug": "anbernic-rg350m",
-    "title": "Unknown RG350M",
-    "brand": "Unknown",
+    "title": "Anbernic RG350M",
+    "brand": "Anbernic",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/anbernic-rg350m/"
   },
@@ -211,7 +211,7 @@
   },
   {
     "slug": "asus-tinker-board-2",
-    "title": "ASUS 2",
+    "title": "ASUS Tinker Board 2",
     "brand": "ASUS",
     "soc": "Rockchip RK3399",
     "board_url": "https://reglinux.org/wiki/sbc/asus/tinker-board-2/"
@@ -225,28 +225,28 @@
   },
   {
     "slug": "ayaneo-pocket-ace",
-    "title": "AYANEO Pocketace",
+    "title": "AYANEO Pocket ACE",
     "brand": "AYANEO",
     "soc": "Qualcomm 8gen2 (SM8550)",
     "board_url": "https://reglinux.org/wiki/pc/ayaneo/pocket-ace/"
   },
   {
     "slug": "ayaneo-pocket-dmg",
-    "title": "AYANEO Pocketdmg",
+    "title": "AYANEO Pocket DMG",
     "brand": "AYANEO",
     "soc": "Qualcomm 8gen2 (SM8550)",
     "board_url": "https://reglinux.org/wiki/pc/ayaneo/pocket-dmg/"
   },
   {
     "slug": "ayaneo-pocket-ds",
-    "title": "AYANEO Pocketds",
+    "title": "AYANEO Pocket DS",
     "brand": "AYANEO",
     "soc": "Qualcomm 8gen2 (SM8550)",
     "board_url": "https://reglinux.org/wiki/pc/ayaneo/pocket-ds/"
   },
   {
     "slug": "ayaneo-pocket-evo",
-    "title": "AYANEO Pocketevo",
+    "title": "AYANEO Pocket EVO",
     "brand": "AYANEO",
     "soc": "Qualcomm 8gen2 (SM8550)",
     "board_url": "https://reglinux.org/wiki/pc/ayaneo/pocket-evo/"
@@ -281,7 +281,7 @@
   },
   {
     "slug": "ayn-odin2-portal",
-    "title": "Ayn ODIN2PORTAL",
+    "title": "Ayn Odin 2 Portal",
     "brand": "Ayn",
     "soc": "Qualcomm 8gen2 (SM8550)",
     "board_url": "https://reglinux.org/wiki/handhelds/ayn/odin2-portal/"
@@ -323,7 +323,7 @@
   },
   {
     "slug": "banana-pi-m4-zero",
-    "title": "Banana Pi M4ZERO",
+    "title": "Banana Pi M4 Zero",
     "brand": "Banana Pi",
     "soc": "Allwinner H616",
     "board_url": "https://reglinux.org/wiki/sbc/banana-pi/m4-zero/"
@@ -379,14 +379,14 @@
   },
   {
     "slug": "firefly-renegade",
-    "title": "Unknown Roc Cc",
-    "brand": "Unknown",
+    "title": "Firefly Renegade",
+    "brand": "Firefly",
     "soc": "Rockchip RK3328",
     "board_url": "https://reglinux.org/wiki/sbc/unknown/firefly-renegade/"
   },
   {
     "slug": "firefly-roc-pc",
-    "title": "Firefly",
+    "title": "Firefly ROC PC",
     "brand": "Firefly",
     "soc": "Rockchip RK3566/RK3568",
     "board_url": "https://reglinux.org/wiki/sbc/firefly/roc-pc/"
@@ -428,8 +428,8 @@
   },
   {
     "slug": "gcw-zero",
-    "title": "Unknown GCW0",
-    "brand": "Unknown",
+    "title": "GCW Zero",
+    "brand": "GCW",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/other/unknown/gcw-zero/"
   },
@@ -505,35 +505,35 @@
   },
   {
     "slug": "hardkernel-odroid-m1s",
-    "title": "HardKernel 1S",
+    "title": "ODROID-M1S",
     "brand": "HardKernel",
     "soc": "Rockchip RK3566/RK3568",
     "board_url": "https://reglinux.org/wiki/sbc/hardkernel/odroid-m1s/"
   },
   {
     "slug": "hardkernel-odroid-m2",
-    "title": "HardKernel 2",
+    "title": "ODROID-M2",
     "brand": "HardKernel",
     "soc": "Rockchip RK3588",
     "board_url": "https://reglinux.org/wiki/sbc/hardkernel/odroid-m2/"
   },
   {
     "slug": "hardkernel-odroid-n2",
-    "title": "HardKernel 2",
+    "title": "ODROID-N2",
     "brand": "HardKernel",
     "soc": "Amlogic S922X",
     "board_url": "https://reglinux.org/wiki/sbc/hardkernel/odroid-n2/"
   },
   {
     "slug": "hardkernel-odroid-n2-plus",
-    "title": "HardKernel 2 Plus",
+    "title": "ODROID-N2+",
     "brand": "HardKernel",
     "soc": "Amlogic S922X",
     "board_url": "https://reglinux.org/wiki/sbc/hardkernel/odroid-n2-plus/"
   },
   {
     "slug": "hardkernel-odroid-n2l",
-    "title": "HardKernel 2L",
+    "title": "ODROID-N2L",
     "brand": "HardKernel",
     "soc": "Amlogic S922X",
     "board_url": "https://reglinux.org/wiki/sbc/hardkernel/odroid-n2l/"
@@ -547,8 +547,8 @@
   },
   {
     "slug": "hugsun-x99",
-    "title": "Unknown Hugsun X99",
-    "brand": "Unknown",
+    "title": "Hugsun X99",
+    "brand": "Hugsun",
     "soc": "Rockchip RK3399",
     "board_url": "https://reglinux.org/wiki/other/unknown/hugsun-x99/"
   },
@@ -561,8 +561,8 @@
   },
   {
     "slug": "intel-de10nano",
-    "title": "Unknown DE10_NANO",
-    "brand": "Unknown",
+    "title": "Intel DE10-Nano",
+    "brand": "Intel",
     "soc": "Intel Cyclone V",
     "board_url": "https://reglinux.org/wiki/other/unknown/intel-de10nano/"
   },
@@ -624,14 +624,14 @@
   },
   {
     "slug": "libretech-s912-pc",
-    "title": "Unknown S912 Libretech Pc",
-    "brand": "Unknown",
+    "title": "Libre Computer S912-PC",
+    "brand": "Libre Computer",
     "soc": "Amlogic S912",
     "board_url": "https://reglinux.org/wiki/sbc/unknown/libretech-s912-pc/"
   },
   {
     "slug": "libretech-tritium-h5",
-    "title": "Libre Computer All H3 Cc",
+    "title": "Libre Computer Tritium H5",
     "brand": "Libre Computer",
     "soc": "Allwinner H3",
     "board_url": "https://reglinux.org/wiki/sbc/libre-computer/libretech-tritium-h5/"
@@ -673,7 +673,7 @@
   },
   {
     "slug": "miniloong-pocket1",
-    "title": "MiniLoong POCKET1",
+    "title": "MiniLoong Pocket 1",
     "brand": "MiniLoong",
     "soc": "Rockchip RK3566/RK3568",
     "board_url": "https://reglinux.org/wiki/handhelds/miniloong/pocket1/"
@@ -750,8 +750,8 @@
   },
   {
     "slug": "nvidia-jetson-nano",
-    "title": "Unknown P3450 0000",
-    "brand": "Unknown",
+    "title": "NVIDIA Jetson Nano",
+    "brand": "NVIDIA",
     "soc": "NVIDIA Tegra X1",
     "board_url": "https://reglinux.org/wiki/other/unknown/nvidia-jetson-nano/"
   },
@@ -764,7 +764,7 @@
   },
   {
     "slug": "orange-pi-3-lts",
-    "title": "Orange Pi 3 Lts",
+    "title": "Orange Pi 3 LTS",
     "brand": "Orange Pi",
     "soc": "Allwinner H5/H6",
     "board_url": "https://reglinux.org/wiki/sbc/orange-pi/3-lts/"
@@ -904,35 +904,35 @@
   },
   {
     "slug": "pine64-quartzpro64",
-    "title": "Pine64",
+    "title": "Pine64 QuartzPro64",
     "brand": "Pine64",
     "soc": "Rockchip RK3588",
     "board_url": "https://reglinux.org/wiki/sbc/pine64/quartzpro64/"
   },
   {
     "slug": "pine64-rock64",
-    "title": "Pine64",
+    "title": "Pine64 Rock64",
     "brand": "Pine64",
     "soc": "Rockchip RK3328",
     "board_url": "https://reglinux.org/wiki/sbc/pine64/rock64/"
   },
   {
     "slug": "pine64-rockpro64",
-    "title": "Pine64",
+    "title": "Pine64 RockPro64",
     "brand": "Pine64",
     "soc": "Rockchip RK3399",
     "board_url": "https://reglinux.org/wiki/sbc/pine64/rockpro64/"
   },
   {
     "slug": "pocketgo-2",
-    "title": "Unknown POCKETGO2",
-    "brand": "Unknown",
+    "title": "PocketGo 2",
+    "brand": "Powkiddy",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/pocketgo-2/"
   },
   {
     "slug": "powkiddy-rgb10",
-    "title": "RGB10",
+    "title": "Powkiddy RGB10",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3326",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb10/"
@@ -953,7 +953,7 @@
   },
   {
     "slug": "powkiddy-rgb10x",
-    "title": "RGB10X",
+    "title": "Powkiddy RGB10X",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3326",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb10x/"
@@ -967,49 +967,49 @@
   },
   {
     "slug": "powkiddy-rgb20sx",
-    "title": "RGB20SX",
+    "title": "Powkiddy RGB20SX",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb20sx/"
   },
   {
     "slug": "powkiddy-rgb30",
-    "title": "RGB30",
+    "title": "Powkiddy RGB30",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rgb30/"
   },
   {
     "slug": "powkiddy-rk2023",
-    "title": "RK2023",
+    "title": "Powkiddy RK2023",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rk2023/"
   },
   {
     "slug": "powkiddy-x35h",
-    "title": "X35H",
+    "title": "Powkiddy X35H",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x35h/"
   },
   {
     "slug": "powkiddy-x35s",
-    "title": "X35S",
+    "title": "Powkiddy X35S",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x35s/"
   },
   {
     "slug": "powkiddy-x55",
-    "title": "X55",
+    "title": "Powkiddy X55",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x55/"
   },
   {
     "slug": "powkiddy-xu10",
-    "title": "XU10",
+    "title": "Powkiddy XU10",
     "brand": "Powkiddy",
     "soc": "Rockchip RK3326",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/xu10/"
@@ -1072,7 +1072,7 @@
   },
   {
     "slug": "radxa-rock-pi-4",
-    "title": "Radxa Pi 4B",
+    "title": "Radxa Rock Pi 4B",
     "brand": "Radxa",
     "soc": "Rockchip RK3399",
     "board_url": "https://reglinux.org/wiki/sbc/radxa/rock-pi-4/"
@@ -1177,14 +1177,14 @@
   },
   {
     "slug": "rs97",
-    "title": "Unknown RS97",
-    "brand": "Unknown",
+    "title": "RS-97",
+    "brand": "Unbranded",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/other/unknown/rs97/"
   },
   {
     "slug": "sipeed-lichee-pi-4a",
-    "title": "Sipeed Pi 4A",
+    "title": "Sipeed LicheePi 4A",
     "brand": "Sipeed",
     "soc": "T-Head TH1520",
     "board_url": "https://reglinux.org/wiki/sbc/sipeed/lichee-pi-4a/"
@@ -1212,15 +1212,15 @@
   },
   {
     "slug": "tronsmart-vega-s96",
-    "title": "Unknown Vega S96",
-    "brand": "Unknown",
+    "title": "Tronsmart Vega S96",
+    "brand": "Tronsmart",
     "soc": "Amlogic S912",
     "board_url": "https://reglinux.org/wiki/sbc/unknown/tronsmart-vega-s96/"
   },
   {
     "slug": "tx3-mini",
-    "title": "Unknown TX3 Mini",
-    "brand": "Unknown",
+    "title": "Tanix TX3 Mini",
+    "brand": "Tanix",
     "soc": "Amlogic S905(X)",
     "board_url": "https://reglinux.org/wiki/other/unknown/tx3-mini/"
   },
@@ -1240,14 +1240,14 @@
   },
   {
     "slug": "unbranded-ps5000",
-    "title": "Unbranded",
+    "title": "PS5000",
     "brand": "Unbranded",
     "soc": "Rockchip RK3128",
     "board_url": "https://reglinux.org/wiki/handhelds/unbranded/ps5000/"
   },
   {
     "slug": "unbranded-ps7000",
-    "title": "Unbranded",
+    "title": "PS7000",
     "brand": "Unbranded",
     "soc": "Rockchip RK3128",
     "board_url": "https://reglinux.org/wiki/handhelds/unbranded/ps7000/"
@@ -1261,8 +1261,8 @@
   },
   {
     "slug": "vamrs-rock960",
-    "title": "Unknown ROCK960",
-    "brand": "Unknown",
+    "title": "96Boards Rock960",
+    "brand": "Vamrs",
     "soc": "Rockchip RK3399",
     "board_url": "https://reglinux.org/wiki/other/unknown/vamrs-rock960/"
   },
@@ -1296,8 +1296,8 @@
   },
   {
     "slug": "xpi-3128",
-    "title": "Unknown Xpi 3128",
-    "brand": "Unknown",
+    "title": "XPi 3128",
+    "brand": "Unbranded",
     "soc": "Rockchip RK3128",
     "board_url": "https://reglinux.org/wiki/other/unknown/xpi-3128/"
   }

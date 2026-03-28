@@ -1,12 +1,12 @@
 ---
 title: Mangmi Air X
-description: Mangmi Air X pairs the Qualcomm SM6115 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Mangmi Air X — handheld powered by Qualcomm SM6115.
+generated: 2026-03-28 17:54:23
 ---
 
 # Mangmi Air X
 
-Mangmi Air X pairs the Qualcomm SM6115 SoC with the REG Linux stack for a polished retro console.
+Mangmi Air X — handheld powered by Qualcomm SM6115.
 
 
 ## Hardware & Compatibility

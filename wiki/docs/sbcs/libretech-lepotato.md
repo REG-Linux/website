@@ -1,12 +1,12 @@
 ---
 title: Libre Computer Cc
-description: Libre Computer Cc pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Libre Computer Cc — single-board computer powered by Amlogic S905(X).
+generated: 2026-03-28 17:54:23
 ---
 
 # Libre Computer Cc
 
-Libre Computer Cc pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+Libre Computer Cc — single-board computer powered by Amlogic S905(X).
 
 
 ## Hardware & Compatibility

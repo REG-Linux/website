@@ -1,12 +1,12 @@
 ---
 title: Milk-V Meles
-description: Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Milk-V Meles — single-board computer powered by TH1520.
+generated: 2026-03-28 17:54:23
 ---
 
 # Milk-V Meles
 
-Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console.
+Milk-V Meles — single-board computer powered by TH1520.
 
 
 ## Hardware & Compatibility

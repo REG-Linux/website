@@ -1,12 +1,12 @@
 ---
 title: BeagleBoard Ahead
-description: BeagleBoard Ahead pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: BeagleBoard Ahead — single-board computer powered by T-Head TH1520.
+generated: 2026-03-28 17:54:23
 ---
 
 # BeagleBoard Ahead
 
-BeagleBoard Ahead pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
+BeagleBoard Ahead — single-board computer powered by T-Head TH1520.
 
 
 ## Hardware & Compatibility

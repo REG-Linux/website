@@ -1,12 +1,12 @@
 ---
 title: Orange Pi 4 Lts
-description: Orange Pi 4 Lts pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Orange Pi 4 Lts — single-board computer powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
 # Orange Pi 4 Lts
 
-Orange Pi 4 Lts pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+Orange Pi 4 Lts — single-board computer powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

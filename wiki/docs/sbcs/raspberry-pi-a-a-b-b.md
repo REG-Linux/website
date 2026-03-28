@@ -1,12 +1,12 @@
 ---
 title: Raspberry Pi A/A+/B/B+
-description: Raspberry Pi A/A+/B/B+ pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Raspberry Pi A/A+/B/B+ — single-board computer powered by Broadcom BCM2835.
+generated: 2026-03-28 17:54:23
 ---
 
 # Raspberry Pi A/A+/B/B+
 
-Raspberry Pi A/A+/B/B+ pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.
+Raspberry Pi A/A+/B/B+ — single-board computer powered by Broadcom BCM2835.
 
 
 ## Hardware & Compatibility

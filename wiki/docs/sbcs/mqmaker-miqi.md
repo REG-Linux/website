@@ -1,12 +1,12 @@
 ---
 title: MQMaker MiQi
-description: MQMaker MiQi pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: MQMaker MiQi — single-board computer powered by Rockchip RK3288.
+generated: 2026-03-28 17:54:23
 ---
 
 # MQMaker MiQi
 
-MQMaker MiQi pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
+MQMaker MiQi — single-board computer powered by Rockchip RK3288.
 
 
 ## Hardware & Compatibility

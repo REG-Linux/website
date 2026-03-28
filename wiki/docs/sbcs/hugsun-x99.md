@@ -1,12 +1,12 @@
 ---
-title: Unknown Hugsun X99
-description: Unknown Hugsun X99 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Hugsun X99
+description: Hugsun X99 — device powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unknown Hugsun X99
+# Hugsun X99
 
-Unknown Hugsun X99 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+Hugsun X99 — device powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

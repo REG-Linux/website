@@ -1,12 +1,12 @@
 ---
 title: Khadas VIM 1S
-description: Khadas VIM 1S pairs the Amlogic S905Y4 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Khadas VIM 1S — single-board computer powered by Amlogic S905Y4.
+generated: 2026-03-28 17:54:23
 ---
 
 # Khadas VIM 1S
 
-Khadas VIM 1S pairs the Amlogic S905Y4 SoC with the REG Linux stack for a polished retro console.
+Khadas VIM 1S — single-board computer powered by Amlogic S905Y4.
 
 
 ## Hardware & Compatibility

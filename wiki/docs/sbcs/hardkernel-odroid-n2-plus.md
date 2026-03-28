@@ -1,12 +1,12 @@
 ---
-title: HardKernel 2 Plus
-description: HardKernel 2 Plus pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: ODROID-N2+
+description: ODROID-N2+ — single-board computer powered by Amlogic S922X.
+generated: 2026-03-28 17:54:23
 ---
 
-# HardKernel 2 Plus
+# ODROID-N2+
 
-HardKernel 2 Plus pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+ODROID-N2+ — single-board computer powered by Amlogic S922X.
 
 
 ## Hardware & Compatibility

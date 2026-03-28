@@ -1,12 +1,12 @@
 ---
-title: Unknown DE10_NANO
-description: Unknown DE10_NANO pairs the Intel Cyclone V SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+title: Intel DE10-Nano
+description: Intel DE10-Nano — device powered by Intel Cyclone V.
+generated: 2026-03-28 17:54:23
 ---
 
-# Unknown DE10_NANO
+# Intel DE10-Nano
 
-Unknown DE10_NANO pairs the Intel Cyclone V SoC with the REG Linux stack for a polished retro console.
+Intel DE10-Nano — device powered by Intel Cyclone V.
 
 
 ## Hardware & Compatibility

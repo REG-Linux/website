@@ -1,12 +1,12 @@
 ---
 title: Banana Pi F3
-description: Banana Pi F3 pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Banana Pi F3 — single-board computer powered by SpacemiT K1.
+generated: 2026-03-28 17:54:23
 ---
 
 # Banana Pi F3
 
-Banana Pi F3 pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+Banana Pi F3 — single-board computer powered by SpacemiT K1.
 
 
 ## Hardware & Compatibility

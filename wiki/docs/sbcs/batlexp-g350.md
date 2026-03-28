@@ -1,12 +1,12 @@
 ---
 title: BatlExp G350
-description: BatlExp G350 pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: BatlExp G350 — handheld powered by Rockchip RK3326.
+generated: 2026-03-28 17:54:23
 ---
 
 # BatlExp G350
 
-BatlExp G350 pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+BatlExp G350 — handheld powered by Rockchip RK3326.
 
 
 ## Hardware & Compatibility

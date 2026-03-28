@@ -1,12 +1,12 @@
 ---
 title: Nano Pi M4v2
-description: Nano Pi M4v2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Nano Pi M4v2 — single-board computer powered by Rockchip RK3399.
+generated: 2026-03-28 17:54:23
 ---
 
 # Nano Pi M4v2
 
-Nano Pi M4v2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+Nano Pi M4v2 — single-board computer powered by Rockchip RK3399.
 
 
 ## Hardware & Compatibility

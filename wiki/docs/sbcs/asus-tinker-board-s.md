@@ -1,12 +1,12 @@
 ---
 title: Asus Tinker Board (S)
-description: Asus Tinker Board (S) pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Asus Tinker Board (S) — single-board computer powered by Rockchip RK3288.
+generated: 2026-03-28 17:54:23
 ---
 
 # Asus Tinker Board (S)
 
-Asus Tinker Board (S) pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
+Asus Tinker Board (S) — single-board computer powered by Rockchip RK3288.
 
 
 ## Hardware & Compatibility

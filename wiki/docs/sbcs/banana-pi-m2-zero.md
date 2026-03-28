@@ -1,12 +1,12 @@
 ---
 title: Banana Pi M2 Zero
-description: Banana Pi M2 Zero pairs the Allwinner H2+ SoC with the REG Linux stack for a polished retro console.
-generated: 2026-03-18 22:04:15
+description: Banana Pi M2 Zero — single-board computer powered by Allwinner H2+.
+generated: 2026-03-28 17:54:23
 ---
 
 # Banana Pi M2 Zero
 
-Banana Pi M2 Zero pairs the Allwinner H2+ SoC with the REG Linux stack for a polished retro console.
+Banana Pi M2 Zero — single-board computer powered by Allwinner H2+.
 
 
 ## Hardware & Compatibility
