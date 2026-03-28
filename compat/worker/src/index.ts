@@ -49,8 +49,7 @@ export default {
     // CORS
     const origin = request.headers.get('Origin') ?? '';
     const allowed = [env.CORS_ORIGIN, 'https://reglinux.org'];
-    const isLocalhost = origin.startsWith('http://localhost:');
-    const cors = (allowed.includes(origin) || isLocalhost) ? corsHeaders(origin) : {};
+    const cors = allowed.includes(origin) ? corsHeaders(origin) : {};
 
     if (method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: cors });

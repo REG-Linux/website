@@ -11,6 +11,11 @@ exclude:
   - compat/
   - wiki/
   - CLAUDE.md
+  - scripts/
+  - codex
+  - README.md
+  - WIKI_MIGRATION_PLAN.md
+  - WIKI_ASSET_FETCH_REPORT.md
 collections:
   devices:
     output: true

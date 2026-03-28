@@ -72,6 +72,7 @@ CREATE TABLE IF NOT EXISTS device_tokens (
   token        TEXT PRIMARY KEY,
   device_id    TEXT NOT NULL,
   system_uuid  TEXT NOT NULL UNIQUE,
+  board_file_hash TEXT,
   ip_address   TEXT,
   reg_version  TEXT,
   created_at   TEXT DEFAULT (datetime('now')),
