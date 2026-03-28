@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 4A
 description: Orange Pi 4A — single-board computer powered by Allwinner T527.
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Orange Pi 4A

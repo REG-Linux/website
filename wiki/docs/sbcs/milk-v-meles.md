@@ -1,7 +1,7 @@
 ---
 title: Milk-V Meles
 description: Milk-V Meles — single-board computer powered by TH1520.
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Milk-V Meles

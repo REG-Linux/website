@@ -1,7 +1,7 @@
 ---
 title: ODROID-M1S
 description: ODROID-M1S — single-board computer powered by Rockchip RK3566/RK3568.
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # ODROID-M1S

@@ -1,7 +1,7 @@
 ---
 title: Orange Pi Zero 2
 description: Orange Pi Zero 2 — single-board computer powered by Allwinner H616.
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Orange Pi Zero 2

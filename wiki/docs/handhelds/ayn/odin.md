@@ -3,7 +3,7 @@ title: Ayn Odin
 description: REG Linux on Ayn Odin powered by Qualcomm SDM845.
 manufacturer: Ayn
 slug: ayn/odin
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Ayn Odin
