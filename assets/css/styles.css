@@ -1616,6 +1616,13 @@ h2 {
 .site-footer a {
   color: var(--accent);
 }
+.footer-links {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+.footer-links a { color: var(--text-muted); text-decoration: none; }
+.footer-links a:hover { color: var(--accent); }
+.footer-sep { margin: 0 0.4rem; opacity: 0.3; }
 
 .small {
   font-size: 0.85rem;
