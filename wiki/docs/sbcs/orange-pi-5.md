@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 5
 description: Orange Pi 5 — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Orange Pi 5

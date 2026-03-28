@@ -1,7 +1,7 @@
 ---
 title: Orange Pi RV2
 description: Orange Pi RV2 — single-board computer powered by SpacemiT K1.
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Orange Pi RV2

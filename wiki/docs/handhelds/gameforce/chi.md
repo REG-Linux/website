@@ -3,7 +3,7 @@ title: Gameforce CHI
 description: REG Linux on Gameforce CHI powered by Rockchip RK3326.
 manufacturer: Gameforce
 slug: gameforce/chi
-generated: 2026-03-28 17:54:23
+generated: 2026-03-28 21:25:04
 ---
 
 # Gameforce CHI
