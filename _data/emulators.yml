@@ -1,6 +1,6 @@
 # Emulator catalog for /emulators
 - title: Arcade games & cabinets
-  description: A broad and curated list of arcade emulators for all your needs.
+  description: MAME, FinalBurn Neo, and more.
   grid_class: emulator-grid
   systems:
     - name: MAME
@@ -24,7 +24,7 @@
       alt: Flycast logo
       caption: Sega Dreamcast & Naomi / Naomi 2
 - title: Consoles & handhelds
-  description: NES, SNES, Mega Drive, GameCube, Dreamcast, PSX, PSP, Switch, Wii, and Xbox systems.
+  description: From 8-bit to PS3 and original Xbox.
   grid_class: console-grid
   systems:
     - name: Nestopia
@@ -38,7 +38,7 @@
     - name: Mupen64Plus
       image: /assets/images/emulators/mupen64plus.svg
       alt: Mupen64Plus logo
-      caption: Nintendo 64 pioneers
+      caption: Nintendo 64
     - name: Genesis Plus GX
       image: /assets/images/emulators/genesis-plus-gx.png
       alt: Genesis Plus GX logo
@@ -76,7 +76,7 @@
       alt: MelonDS logo
       caption: Nintendo DS
 - title: Computers
-  description: From Amiga to Apple II, classic computers history and preservation is not forgotten.
+  description: Amiga, C64, DOS, Atari ST, MSX, Apple II.
   grid_class: emulator-grid
   systems:
     - name: Amiberry

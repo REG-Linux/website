@@ -1,0 +1,248 @@
+# Maps device IDs to GitHub release asset slugs.
+# Asset slug is the part between "reglinux-" and "-{version}-{date}.img.gz"
+# One asset can serve multiple devices (umbrella images).
+#
+# Format: device_id: asset_slug
+
+# Allwinner H700 — one image for all Anbernic H700 handhelds
+anbernic-rg-cubexx: h700-anbernic-rg35xx
+anbernic-rg-ds: rk3568-anbernic-rgxx3
+anbernic-rg28xx: h700-anbernic-rg35xx
+anbernic-rg34xx: h700-anbernic-rg35xx
+anbernic-rg35xx-2024: h700-anbernic-rg35xx
+anbernic-rg35xx-h: h700-anbernic-rg35xx
+anbernic-rg35xx-plus: h700-anbernic-rg35xx
+anbernic-rg35xx-pro: h700-anbernic-rg35xx
+anbernic-rg35xx-sp: h700-anbernic-rg35xx
+anbernic-rg40xx-h: h700-anbernic-rg35xx
+anbernic-rg40xx-v: h700-anbernic-rg35xx
+
+# RK3568/RK3566 umbrella — anbernic-rgxx3
+anbernic-rg353m: rk3568-anbernic-rgxx3
+anbernic-rg353p-s: rk3568-anbernic-rgxx3
+anbernic-rg353v-s: rk3568-anbernic-rgxx3
+anbernic-rg503: rk3568-anbernic-rgxx3
+anbernic-rgarc: rk3568-anbernic-rgxx3
+powkiddy-rgb10-max-3: rk3568-anbernic-rgxx3
+powkiddy-rgb20-pro: rk3568-anbernic-rgxx3
+powkiddy-rgb20sx: rk3568-anbernic-rgxx3
+powkiddy-rgb30: rk3568-anbernic-rgxx3
+powkiddy-rk2023: rk3568-anbernic-rgxx3
+powkiddy-x35h: rk3568-anbernic-rgxx3
+powkiddy-x35s: rk3568-anbernic-rgxx3
+
+# RK3568 per-board
+powkiddy-x55: rk3568-powkiddy-x55
+hardkernel-odroid-m1: rk3568-odroid-m1
+hardkernel-odroid-m1s: rk3568-odroid-m1
+firefly-station-m2-roc-rk3566-pc: rk3568-firefly-station-m2
+firefly-station-p2-roc-rk3568-pc: rk3568-firefly-station-p2
+miniloong-pocket1: rk3568-miniloong-pocket1
+radxa-rock-3a: rk3568-rock-3a
+radxa-rock-3c: rk3568-rock-3c
+firefly-roc-pc: rk3568-firefly-station-m2
+
+# RK3326 — one image for all
+anbernic-rg351-p-m-mp: rk3326
+anbernic-rg351v: rk3326
+gameforce-chi: rk3326
+hardkernel-odroid-go-advance: rk3326
+hardkernel-odroid-go-super: rk3326
+magicx-xu-mini-m: rk3326
+powkiddy-rgb10: rk3326
+powkiddy-rgb10x: rk3326
+powkiddy-xu10: rk3326
+unbranded-game-console-r33s: rk3326
+unbranded-game-console-r35s-r36s: rk3326
+unbranded-rk3326-clones: rk3326
+batlexp-g350: rk3326
+pocketgo-2: rk3326
+
+# RK3399 per-board
+anbernic-rg552: rk3399-anbernic-rg552
+hugsun-x99: rk3399-hugsun-x99
+nano-pi-m4v2: rk3399-nanopi-m4v2
+orange-pi-4-lts: rk3399-orangepi-4-lts
+orange-pi-800: rk3399-orangepi-800
+pine64-rockpro64: rk3399-rockpro64
+radxa-rock-pi-4: rk3399-rock-pi-4
+asus-tinker-board-2: rk3399-tinkerboard2
+vamrs-rock960: rk3399-rock960
+
+# RK3588 per-board
+gameforce-ace: rk3588-gameforce-ace
+banana-pi-m7: rk3588-bananapi-m7
+indiedroid-nova: rk3588-indiedroid-nova
+khadas-edge-2: rk3588-khadas-edge-2
+orange-pi-5: rk3588-orangepi-5
+orange-pi-5b: rk3588-orangepi-5b
+orange-pi-5-plus: rk3588-orangepi-5-plus
+orange-pi-5-max: rk3588-orangepi-5
+orange-pi-5-ultra: rk3588-orangepi-5
+radxa-rock-5a: rk3588-rock-5a
+radxa-rock-5b: rk3588-rock-5b
+radxa-rock-5c: rk3588-rock-5c
+radxa-rock-5-itx: rk3588-rock-5c
+armsom-sige7: rk3588-orangepi-5
+firefly-station-m3-roc-rk3588s-pc: rk3588-orangepi-5
+hardkernel-odroid-m2: rk3588-orangepi-5
+pine64-quartzpro64: rk3588-orangepi-5
+
+# RK3288
+asus-tinker-board-s: rk3288-tinkerboard
+mqmaker-miqi: rk3288-miqi
+
+# RK3328
+pine64-rock64: rk3328-rock64
+firefly-renegade: rk3328-renegade
+
+# RK3128
+unbranded-ps5000: rk3128-ps5000
+unbranded-ps7000: rk3128-ps7000
+xpi-3128: rk3128-ps5000
+
+# Broadcom (RPi)
+raspberry-pi-a-a-b-b: bcm2835
+raspberry-pi-zero: bcm2835
+raspberry-pi-2: bcm2836
+raspberry-pi-zero-2: bcm2837
+raspberry-pi-3: bcm2837
+raspberry-pi-4: bcm2711
+raspberry-pi-400: bcm2711
+raspberry-pi-5: bcm2712
+
+# Allwinner H3
+banana-pi-m2-zero: h3-bananapi-m2-zero
+capcom-home-arcade: cha
+orange-pi-one: h3-orangepi-one
+orange-pi-pc: h3-orangepi-pc
+orange-pi-plus-2e: h3-orangepi-plus2e
+orange-pi-pc-plus: h3-orangepi-pc
+
+# Allwinner H5/H6 (sun50i)
+orange-pi-pc-2: h5-orangepi-pc2
+libretech-tritium-h5: h5-tritium-h5
+orange-pi-3: h6-orangepi-3
+orange-pi-3-lts: h6-orangepi-3-lts
+orange-pi-one-plus: h6-orangepi-one-plus
+
+# Allwinner H616/H618
+banana-pi-m4-berry: h616-bananapi-m4-berry
+banana-pi-m4-zero: h616-bananapi-m4-berry
+orange-pi-zero-2: h616-orangepi-zero2
+orange-pi-zero-2w: h616-orangepi-zero2w
+orange-pi-zero-3: h616-orangepi-zero3
+x96-mate: h616-x96-mate
+
+# Amlogic S905
+hardkernel-odroid-c2: s905-odroid-c2
+nano-pi-k2: s905-nanopi-k2
+khadas-vim-1: s905-khadas-vim1
+libretech-lepotato: s905-lepotato
+minix-neo-u1: s905-minix-neo-u1
+nexbox-a95x: s905-s905-tvbox
+
+# Amlogic S905gen2
+khadas-vim-2: s905gen2-khadas-vim2
+radxa-zero: s905gen2-radxa-zero
+nexbox-a1: s905gen2-radxa-zero
+libretech-s912-pc: s905gen2-khadas-vim2
+tronsmart-vega-s96: s905gen2-khadas-vim2
+
+# Amlogic S905gen3
+banana-pi-m5: s905gen3-bananapi-m5
+hardkernel-odroid-c4: s905gen3-odroid-c4
+khadas-vim-3l: s905gen3-khadas-vim3l
+a95xf3-air: s905gen3-s905x3-tvbox
+h96-max: s905gen3-s905x3-tvbox
+x96-air: s905gen3-s905x3-tvbox
+x96-max-plus: s905gen3-s905x3-tvbox
+tx3-mini: s905gen3-s905x3-tvbox
+
+# Amlogic S922X
+banana-pi-m2s: s922x-bananapi-m2s
+beelink-gt-king: s922x-beelink-gtking
+beelink-gt-king-pro: s922x-beelink-gtking-pro
+hardkernel-odroid-go-ultra: s922x-odroid-go-ultra
+hardkernel-odroid-n2: s922x-odroid-n2
+hardkernel-odroid-n2-plus: s922x-odroid-n2plus
+hardkernel-odroid-n2l: s922x-odroid-n2l
+khadas-vim-3: s922x-khadas-vim3
+powkiddy-rgb10-max-3-pro: s922x-odroid-go-ultra
+radxa-zero-2: s922x-radxa-zero2
+
+# Amlogic other
+khadas-vim-1s: s9gen4-khadas-vim1s
+khadas-vim-4: a3gen2-khadas-vim4
+amlogic-mxiii: s812
+amlogic-mxiii-plus: s812
+tronsmart-s82: s812
+minix-neo-x8: s812
+wetek-core: s812
+hardkernel-odroid-c5: odroidc5
+hardkernel-odroid-xu3-xu4: xu4-odroidxu4
+
+# Samsung
+hardkernel-odroid-xu3-xu4: xu4-odroidxu4
+
+# Qualcomm
+retroid-pocket-5: sm8250-rp5
+retroid-pocket-mini: sm8250-rpmini
+retroid-pocket-flip2: sm8250-rpflip2
+ayn-odin2: sm8550-odin2
+ayn-odin2-mini: sm8550-odin2
+ayn-odin2-portal: sm8550-odin2portal
+ayaneo-pockets: sm8550-odin2
+ayaneo-pocket-ace: sm8550-odin2
+ayaneo-pocket-dmg: sm8550-odin2
+ayaneo-pocket-ds: sm8550-odin2
+ayaneo-pocket-evo: sm8550-odin2
+retroid-pocket-6: sm8550-odin2
+ayn-odin: sdm845-odin
+ayn-thor: sm8550-odin2
+mangmi-air-x: sm6115-mangmi-air-x
+radxa-dragon-q6a: qcs6490-radxa-dragon-q6a
+
+# Mediatek
+radxa-nio-12l: mt8395-radxa-nio-12l
+
+# StarFive / RISC-V
+starfive-visionfive-2: jh7110
+milk-v-mars: jh7110
+milk-v-meles: th1520-milk-meles
+sipeed-lichee-pi-4a: th1520-lichee-pi4a
+beaglev-ahead: th1520-beaglev-ahead
+banana-pi-f3: k1-bananapi-f3
+orange-pi-rv2: k1-orangepi-rv2
+milk-v-jupiter: k1-bananapi-f3
+musepi-pro: k1-bananapi-f3
+
+# x86
+steam-deck: x86_64
+asus-rog-ally: x86_64_v3
+generic-x86-64: x86_64
+generic-x86-64-v3: x86_64_v3
+
+# Ingenic
+anbernic-rg280m: jz4770
+anbernic-rg280v: jz4770
+anbernic-rg300: jz4770
+anbernic-rg300x: jz4770
+anbernic-rg350: jz4770
+anbernic-rg350m: jz4770
+gcw-zero: jz4770
+rs97: jz4770
+
+# Nintendo mini
+nintendo-nes-classic: mini
+nintendo-snes-classic: mini
+
+# Intel FPGA
+intel-de10nano: de10nano
+
+# NVIDIA
+nvidia-jetson-nano: l4t
+
+# Allwinner A133
+orange-pi-4a: t527-orangepi-4a
+orange-pi-r2s: k1-orangepi-rv2

@@ -7,30 +7,30 @@ a95xf3-air:
   - Amlogic S905X3
   image: /assets/images/a95xf3-air.webp
   board_url: https://reglinux.org/wiki/sbc/a95x/f3-air/
-  description: REG Linux image for A95X F3 Air powered by Amlogic S905X3.
-  lede: A95X F3 Air pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for A95X F3 Air (Amlogic S905X3).
+  lede: A95X F3 Air — TV box powered by Amlogic S905X3.
 amlogic-mxiii:
-  title: Unknown Mxiii
-  brand: Unknown
+  title: MXIII TV Box
+  brand: Amlogic
   manufacturer:
   - Unknown
   soc:
   - Amlogic S812
   image: /assets/images/amlogic-mxiii.webp
   board_url: https://reglinux.org/wiki/other/unknown/amlogic-mxiii/
-  description: REG Linux image for Unknown Mxiii powered by Amlogic S812.
-  lede: Unknown Mxiii pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for MXIII TV Box (Amlogic S812).
+  lede: MXIII TV Box — TV box powered by Amlogic S812.
 amlogic-mxiii-plus:
-  title: Unknown Mxiii Plus
-  brand: Unknown
+  title: MXIII Plus TV Box
+  brand: Amlogic
   manufacturer:
   - Unknown
   soc:
   - Amlogic S812
   image: /assets/images/amlogic-mxiii-plus.webp
   board_url: https://reglinux.org/wiki/other/unknown/amlogic-mxiii-plus/
-  description: REG Linux image for Unknown Mxiii Plus powered by Amlogic S812.
-  lede: Unknown Mxiii Plus pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for MXIII Plus TV Box (Amlogic S812).
+  lede: MXIII Plus TV Box — TV box powered by Amlogic S812.
 anbernic-rg-cubexx:
   title: Anbernic RG CubeXX
   brand: Anbernic
@@ -42,13 +42,24 @@ anbernic-rg-cubexx:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg-cubexx/
-  description: REG Linux image for Anbernic RG CubeXX powered by Allwinner H700.
-  lede: Anbernic RG CubeXX pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG CubeXX (Allwinner H700).
+  lede: Anbernic RG CubeXX — handheld powered by Allwinner H700.
   display_size: 4.0 inch
   display_res: 720x720
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg-ds:
   title: Anbernic RG DS
   brand: Anbernic
@@ -60,34 +71,41 @@ anbernic-rg-ds:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg-ds/
-  description: REG Linux image for Anbernic RG DS powered by Rockchip RK3568.
-  lede: Anbernic RG DS pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG DS (Rockchip RK3568).
+  lede: Anbernic RG DS — handheld powered by Rockchip RK3568.
   display_res: 640x480
   ram: TBD
   storage: TBD eMMC + SD
   compositor: TBD
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg280m:
-  title: Unknown RG280M
-  brand: Unknown
+  title: Anbernic RG280M
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg280m.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg280m/
-  description: REG Linux image for Unknown RG280M powered by Ingenic JZ4770.
-  lede: Unknown RG280M pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG280M (Ingenic JZ4770).
+  lede: Anbernic RG280M — handheld powered by Ingenic JZ4770.
 anbernic-rg280v:
-  title: Unknown RG280V
-  brand: Unknown
+  title: Anbernic RG280V
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg280v.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg280v/
-  description: REG Linux image for Unknown RG280V powered by Ingenic JZ4770.
-  lede: Unknown RG280V pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG280V (Ingenic JZ4770).
+  lede: Anbernic RG280V — handheld powered by Ingenic JZ4770.
 anbernic-rg28xx:
   title: Anbernic RG28XX
   brand: Anbernic
@@ -99,35 +117,46 @@ anbernic-rg28xx:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg28xx/
-  description: REG Linux image for Anbernic RG28XX powered by Allwinner H700.
-  lede: Anbernic RG28XX pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG28XX (Allwinner H700).
+  lede: Anbernic RG28XX — handheld powered by Allwinner H700.
   display_size: 2.8 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg300:
-  title: Unknown RG300
-  brand: Unknown
+  title: Anbernic RG300
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg300.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg300/
-  description: REG Linux image for Unknown RG300 powered by Ingenic JZ4770.
-  lede: Unknown RG300 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG300 (Ingenic JZ4770).
+  lede: Anbernic RG300 — handheld powered by Ingenic JZ4770.
 anbernic-rg300x:
-  title: Unknown RG300X
-  brand: Unknown
+  title: Anbernic RG300X
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg300x.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg300x/
-  description: REG Linux image for Unknown RG300X powered by Ingenic JZ4770.
-  lede: Unknown RG300X pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG300X (Ingenic JZ4770).
+  lede: Anbernic RG300X — handheld powered by Ingenic JZ4770.
 anbernic-rg34xx:
   title: Anbernic RG34XX
   brand: Anbernic
@@ -139,35 +168,46 @@ anbernic-rg34xx:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg34xx/
-  description: REG Linux image for Anbernic RG34XX powered by Allwinner H700.
-  lede: Anbernic RG34XX pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG34XX (Allwinner H700).
+  lede: Anbernic RG34XX — handheld powered by Allwinner H700.
   display_size: 3.4 inch
   display_res: 720x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg350:
-  title: Unknown RG350
-  brand: Unknown
+  title: Anbernic RG350
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg350.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg350/
-  description: REG Linux image for Unknown RG350 powered by Ingenic JZ4770.
-  lede: Unknown RG350 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG350 (Ingenic JZ4770).
+  lede: Anbernic RG350 — handheld powered by Ingenic JZ4770.
 anbernic-rg350m:
-  title: Unknown RG350M
-  brand: Unknown
+  title: Anbernic RG350M
+  brand: Anbernic
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg350m.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg350m/
-  description: REG Linux image for Unknown RG350M powered by Ingenic JZ4770.
-  lede: Unknown RG350M pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG350M (Ingenic JZ4770).
+  lede: Anbernic RG350M — handheld powered by Ingenic JZ4770.
 anbernic-rg351-p-m-mp:
   title: Anbernic RG351 P/M/MP
   brand: Anbernic
@@ -179,12 +219,20 @@ anbernic-rg351-p-m-mp:
   image_width: 220
   image_height: 114
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg351pmv/
-  description: REG Linux image for Anbernic RG351 P/M/MP powered by Rockchip RK3326.
-  lede: Anbernic RG351 P/M/MP pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG351 P/M/MP (Rockchip RK3326).
+  lede: Anbernic RG351 P/M/MP — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 anbernic-rg351v:
   title: Anbernic RG351V
   brand: Anbernic
@@ -196,12 +244,20 @@ anbernic-rg351v:
   image_width: 148
   image_height: 220
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg351pmv/
-  description: REG Linux image for Anbernic RG351V powered by Rockchip RK3326.
-  lede: Anbernic RG351V pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG351V (Rockchip RK3326).
+  lede: Anbernic RG351V — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 anbernic-rg353m:
   title: Anbernic RG353M
   brand: Anbernic
@@ -213,13 +269,20 @@ anbernic-rg353m:
   image_width: 220
   image_height: 112
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/
-  description: REG Linux image for Anbernic RG353M powered by Rockchip RK3566.
-  lede: Anbernic RG353M pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG353M (Rockchip RK3566).
+  lede: Anbernic RG353M — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB (VS/PS), 2 GB (P/M/V) LPDDR4
   storage: 32GB (P/M/V) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg353p-s:
   title: Anbernic RG353P(S)
   brand: Anbernic
@@ -231,13 +294,20 @@ anbernic-rg353p-s:
   image_width: 220
   image_height: 105
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/
-  description: REG Linux image for Anbernic RG353P(S) powered by Rockchip RK3566.
-  lede: Anbernic RG353P(S) pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG353P(S) (Rockchip RK3566).
+  lede: Anbernic RG353P(S) — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB (VS/PS), 2 GB (P/M/V) LPDDR4
   storage: 32GB (P/M/V) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg353v-s:
   title: Anbernic RG353V(S)
   brand: Anbernic
@@ -249,13 +319,20 @@ anbernic-rg353v-s:
   image_width: 146
   image_height: 220
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/
-  description: REG Linux image for Anbernic RG353V(S) powered by Rockchip RK3566.
-  lede: Anbernic RG353V(S) pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG353V(S) (Rockchip RK3566).
+  lede: Anbernic RG353V(S) — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB (VS/PS), 2 GB (P/M/V) LPDDR4
   storage: 32GB (P/M/V) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg35xx-2024:
   title: Anbernic RG35XX 2024
   brand: Anbernic
@@ -267,13 +344,24 @@ anbernic-rg35xx-2024:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg35xx-2024/
-  description: REG Linux image for Anbernic RG35XX 2024 powered by Allwinner H700.
-  lede: Anbernic RG35XX 2024 pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG35XX 2024 (Allwinner H700).
+  lede: Anbernic RG35XX 2024 — handheld powered by Allwinner H700.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-h:
   title: Anbernic RG35XX H
   brand: Anbernic
@@ -285,13 +373,24 @@ anbernic-rg35xx-h:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg35xx-h/
-  description: REG Linux image for Anbernic RG35XX H powered by Allwinner H700.
-  lede: Anbernic RG35XX H pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG35XX H (Allwinner H700).
+  lede: Anbernic RG35XX H — handheld powered by Allwinner H700.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-plus:
   title: Anbernic RG35XX Plus
   brand: Anbernic
@@ -303,13 +402,24 @@ anbernic-rg35xx-plus:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg35xx-plus/
-  description: REG Linux image for Anbernic RG35XX Plus powered by Allwinner H700.
-  lede: Anbernic RG35XX Plus pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG35XX Plus (Allwinner H700).
+  lede: Anbernic RG35XX Plus — handheld powered by Allwinner H700.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-pro:
   title: Anbernic RG35XX Pro
   brand: Anbernic
@@ -321,13 +431,24 @@ anbernic-rg35xx-pro:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg35xx-pro/
-  description: REG Linux image for Anbernic RG35XX Pro powered by Allwinner H700.
-  lede: Anbernic RG35XX Pro pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG35XX Pro (Allwinner H700).
+  lede: Anbernic RG35XX Pro — handheld powered by Allwinner H700.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg35xx-sp:
   title: Anbernic RG35XX SP
   brand: Anbernic
@@ -339,13 +460,24 @@ anbernic-rg35xx-sp:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg35xx-sp/
-  description: REG Linux image for Anbernic RG35XX SP powered by Allwinner H700.
-  lede: Anbernic RG35XX SP pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG35XX SP (Allwinner H700).
+  lede: Anbernic RG35XX SP — handheld powered by Allwinner H700.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg40xx-h:
   title: Anbernic RG40XX H
   brand: Anbernic
@@ -357,13 +489,24 @@ anbernic-rg40xx-h:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg40xx-h/
-  description: REG Linux image for Anbernic RG40XX H powered by Allwinner H700.
-  lede: Anbernic RG40XX H pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG40XX H (Allwinner H700).
+  lede: Anbernic RG40XX H — handheld powered by Allwinner H700.
   display_size: 4.0 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg40xx-v:
   title: Anbernic RG40XX V
   brand: Anbernic
@@ -375,13 +518,24 @@ anbernic-rg40xx-v:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg40xx-v/
-  description: REG Linux image for Anbernic RG40XX V powered by Allwinner H700.
-  lede: Anbernic RG40XX V pairs the Allwinner H700 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG40XX V (Allwinner H700).
+  lede: Anbernic RG40XX V — handheld powered by Allwinner H700.
   display_size: 4.0 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the
+    Installation guide.
+
+
+    Before booting the device, see the Installation Guide for H700 devices'
 anbernic-rg503:
   title: Anbernic RG503
   brand: Anbernic
@@ -393,13 +547,20 @@ anbernic-rg503:
   image_width: 220
   image_height: 100
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg503/
-  description: REG Linux image for Anbernic RG503 powered by Rockchip RK3566.
-  lede: Anbernic RG503 pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG503 (Rockchip RK3566).
+  lede: Anbernic RG503 — handheld powered by Rockchip RK3566.
   display_size: 5 inch
   display_res: 960x544
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 anbernic-rg552:
   title: Anbernic RG552
   brand: Anbernic
@@ -411,8 +572,8 @@ anbernic-rg552:
   image_width: 220
   image_height: 119
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rg552/
-  description: REG Linux image for Anbernic RG552 powered by Rockchip RK3399.
-  lede: Anbernic RG552 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG552 (Rockchip RK3399).
+  lede: Anbernic RG552 — handheld powered by Rockchip RK3399.
   has_fan: true
 anbernic-rgarc:
   title: Anbernic RG ARC
@@ -425,13 +586,20 @@ anbernic-rgarc:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/anbernic/rgarc/
-  description: REG Linux image for Anbernic RG ARC powered by Rockchip RK3566.
-  lede: Anbernic RG ARC pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Anbernic RG ARC (Rockchip RK3566).
+  lede: Anbernic RG ARC — handheld powered by Rockchip RK3566.
   display_size: 4 inch
   display_res: 640x480
   ram: 1 GB (S), 2 GB (D) LPDDR4
   storage: 32GB (D) eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 armsom-sige7:
   title: ArmSoM SIGE7
   brand: ArmSoM
@@ -441,8 +609,8 @@ armsom-sige7:
   - Rockchip RK3588
   image: /assets/images/armsom-sige7.webp
   board_url: https://reglinux.org/wiki/sbc/armsom/sige7/
-  description: REG Linux image for ArmSoM SIGE7 powered by Rockchip RK3588.
-  lede: ArmSoM SIGE7 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ArmSoM SIGE7 (Rockchip RK3588).
+  lede: ArmSoM SIGE7 — single-board computer powered by Rockchip RK3588.
 asus-rog-ally:
   title: Asus ROG Ally
   brand: ASUS
@@ -454,10 +622,26 @@ asus-rog-ally:
   image_width: 220
   image_height: 91
   board_url: https://reglinux.org/wiki/handhelds/x86_64/asus-rog-ally/
-  description: REG Linux image for Asus ROG Ally powered by AMD Ryzen Z1.
-  lede: Asus ROG Ally pairs the AMD Ryzen Z1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Asus ROG Ally (AMD Ryzen Z1).
+  lede: Asus ROG Ally — PC powered by AMD Ryzen Z1.
+  install_notes: '## Installation notes
+
+
+    1. Grab the image. Download the latest Asus ROG Ally build from the downloads page or the official board entry .
+
+
+    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure
+    to verify the checksum before booting.
+
+
+    3. First boot setup. Insert the media into your Asus ROG Ally, power on, and let REG Linux expand the filesystem. Pair
+    controllers inside EmulationStation once prompted.
+
+
+    4. Troubleshoot with rescue tools. REG Linux ships with an immutable base and rescue partition—if something breaks, reboot
+    into rescue or reflash without touching your ROMs.'
 asus-tinker-board-2:
-  title: ASUS 2
+  title: ASUS Tinker Board 2
   brand: ASUS
   manufacturer:
   - ASUS
@@ -465,8 +649,8 @@ asus-tinker-board-2:
   - Rockchip RK3399
   image: /assets/images/asus-tinker-board-2.webp
   board_url: https://reglinux.org/wiki/sbc/asus/tinker-board-2/
-  description: REG Linux image for ASUS 2 powered by Rockchip RK3399.
-  lede: ASUS 2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ASUS Tinker Board 2 (Rockchip RK3399).
+  lede: ASUS Tinker Board 2 — single-board computer powered by Rockchip RK3399.
 asus-tinker-board-s:
   title: Asus Tinker Board (S)
   brand: ASUS
@@ -478,10 +662,10 @@ asus-tinker-board-s:
   image_width: 220
   image_height: 164
   board_url: https://reglinux.org/wiki/sbcs/asus-tinker-board-s/
-  description: REG Linux image for Asus Tinker Board (S) powered by Rockchip RK3288.
-  lede: Asus Tinker Board (S) pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Asus Tinker Board (S) (Rockchip RK3288).
+  lede: Asus Tinker Board (S) — single-board computer powered by Rockchip RK3288.
 ayaneo-pocket-ace:
-  title: AYANEO Pocketace
+  title: AYANEO Pocket ACE
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -489,10 +673,10 @@ ayaneo-pocket-ace:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-ace.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-ace/
-  description: REG Linux image for AYANEO Pocketace powered by Qualcomm 8gen2 (SM8550).
-  lede: AYANEO Pocketace pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for AYANEO Pocket ACE (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket ACE — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-dmg:
-  title: AYANEO Pocketdmg
+  title: AYANEO Pocket DMG
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -500,10 +684,10 @@ ayaneo-pocket-dmg:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-dmg.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-dmg/
-  description: REG Linux image for AYANEO Pocketdmg powered by Qualcomm 8gen2 (SM8550).
-  lede: AYANEO Pocketdmg pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for AYANEO Pocket DMG (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket DMG — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-ds:
-  title: AYANEO Pocketds
+  title: AYANEO Pocket DS
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -511,10 +695,10 @@ ayaneo-pocket-ds:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-ds.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-ds/
-  description: REG Linux image for AYANEO Pocketds powered by Qualcomm 8gen2 (SM8550).
-  lede: AYANEO Pocketds pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for AYANEO Pocket DS (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket DS — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-evo:
-  title: AYANEO Pocketevo
+  title: AYANEO Pocket EVO
   brand: AYANEO
   manufacturer:
   - AYANEO
@@ -522,8 +706,8 @@ ayaneo-pocket-evo:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-evo.webp
   board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-evo/
-  description: REG Linux image for AYANEO Pocketevo powered by Qualcomm 8gen2 (SM8550).
-  lede: AYANEO Pocketevo pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for AYANEO Pocket EVO (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket EVO — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pockets:
   title: AYANEO Pocket S
   brand: AYANEO
@@ -535,8 +719,8 @@ ayaneo-pockets:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/ayaneo/pockets/
-  description: REG Linux image for AYANEO Pocket S powered by Qualcomm 8gen2 (SM8550).
-  lede: AYANEO Pocket S pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for AYANEO Pocket S (Qualcomm 8gen2 (SM8550)).
+  lede: AYANEO Pocket S — PC powered by Qualcomm 8gen2 (SM8550).
 ayn-odin:
   title: Ayn Odin
   brand: Ayn
@@ -546,8 +730,8 @@ ayn-odin:
   - Qualcomm SDM845
   image: /assets/images/ayn-odin.webp
   board_url: https://reglinux.org/wiki/handhelds/ayn/odin/
-  description: REG Linux image for Ayn Odin powered by Qualcomm SDM845.
-  lede: Ayn Odin pairs the Qualcomm SDM845 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Ayn Odin (Qualcomm SDM845).
+  lede: Ayn Odin — handheld powered by Qualcomm SDM845.
 ayn-odin2:
   title: Ayn Odin 2
   brand: Ayn
@@ -559,8 +743,8 @@ ayn-odin2:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/ayn/odin2/
-  description: REG Linux image for Ayn Odin 2 powered by Qualcomm 8gen2 (SM8550).
-  lede: Ayn Odin 2 pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Ayn Odin 2 (Qualcomm 8gen2 (SM8550)).
+  lede: Ayn Odin 2 — handheld powered by Qualcomm 8gen2 (SM8550).
   has_fan: true
 ayn-odin2-mini:
   title: Ayn ODIN2MINI
@@ -571,10 +755,10 @@ ayn-odin2-mini:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayn-odin2-mini.webp
   board_url: https://reglinux.org/wiki/handhelds/ayn/odin2-mini/
-  description: REG Linux image for Ayn ODIN2MINI powered by Qualcomm 8gen2 (SM8550).
-  lede: Ayn ODIN2MINI pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Ayn ODIN2MINI (Qualcomm 8gen2 (SM8550)).
+  lede: Ayn ODIN2MINI — handheld powered by Qualcomm 8gen2 (SM8550).
 ayn-odin2-portal:
-  title: Ayn ODIN2PORTAL
+  title: Ayn Odin 2 Portal
   brand: Ayn
   manufacturer:
   - Ayn
@@ -582,8 +766,8 @@ ayn-odin2-portal:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayn-odin2-portal.webp
   board_url: https://reglinux.org/wiki/handhelds/ayn/odin2-portal/
-  description: REG Linux image for Ayn ODIN2PORTAL powered by Qualcomm 8gen2 (SM8550).
-  lede: Ayn ODIN2PORTAL pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Ayn Odin 2 Portal (Qualcomm 8gen2 (SM8550)).
+  lede: Ayn Odin 2 Portal — handheld powered by Qualcomm 8gen2 (SM8550).
 ayn-thor:
   title: Ayn Thor
   brand: Ayn
@@ -593,8 +777,8 @@ ayn-thor:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayn-thor.webp
   board_url: https://reglinux.org/wiki/other/ayn/thor/
-  description: REG Linux image for Ayn Thor powered by Qualcomm 8gen2 (SM8550).
-  lede: Ayn Thor pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Ayn Thor (Qualcomm 8gen2 (SM8550)).
+  lede: Ayn Thor — device powered by Qualcomm 8gen2 (SM8550).
 banana-pi-f3:
   title: Banana Pi F3
   brand: Banana Pi
@@ -604,8 +788,8 @@ banana-pi-f3:
   - SpacemiT K1
   image: /assets/images/banana-pi-f3.webp
   board_url: https://reglinux.org/wiki/sbc/banana-pi/f3/
-  description: REG Linux image for Banana Pi F3 powered by SpacemiT K1.
-  lede: Banana Pi F3 pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi F3 (SpacemiT K1).
+  lede: Banana Pi F3 — single-board computer powered by SpacemiT K1.
 banana-pi-m2-zero:
   title: Banana Pi M2 Zero
   brand: Banana Pi
@@ -617,8 +801,8 @@ banana-pi-m2-zero:
   image_width: 220
   image_height: 155
   board_url: https://reglinux.org/wiki/sbcs/banana-pi-m2-zero/
-  description: REG Linux image for Banana Pi M2 Zero powered by Allwinner H2+.
-  lede: Banana Pi M2 Zero pairs the Allwinner H2+ SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi M2 Zero (Allwinner H2+).
+  lede: Banana Pi M2 Zero — single-board computer powered by Allwinner H2+.
 banana-pi-m2s:
   title: Banana Pi M2S
   brand: Banana Pi
@@ -630,8 +814,8 @@ banana-pi-m2s:
   image_width: 220
   image_height: 131
   board_url: https://reglinux.org/wiki/sbcs/banana-pi-m2s/
-  description: REG Linux image for Banana Pi M2S powered by Amlogic A311D.
-  lede: Banana Pi M2S pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi M2S (Amlogic A311D).
+  lede: Banana Pi M2S — single-board computer powered by Amlogic A311D.
 banana-pi-m4-berry:
   title: Banana Pi M4 Berry
   brand: Banana Pi
@@ -643,10 +827,10 @@ banana-pi-m4-berry:
   image_width: 220
   image_height: 140
   board_url: https://reglinux.org/wiki/sbcs/banana-pi-m4-berry/
-  description: REG Linux image for Banana Pi M4 Berry powered by Allwinner H618.
-  lede: Banana Pi M4 Berry pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi M4 Berry (Allwinner H618).
+  lede: Banana Pi M4 Berry — single-board computer powered by Allwinner H618.
 banana-pi-m4-zero:
-  title: Banana Pi M4ZERO
+  title: Banana Pi M4 Zero
   brand: Banana Pi
   manufacturer:
   - Banana Pi
@@ -654,8 +838,8 @@ banana-pi-m4-zero:
   - Allwinner H616
   image: /assets/images/banana-pi-m4-zero.webp
   board_url: https://reglinux.org/wiki/sbc/banana-pi/m4-zero/
-  description: REG Linux image for Banana Pi M4ZERO powered by Allwinner H616.
-  lede: Banana Pi M4ZERO pairs the Allwinner H616 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi M4 Zero (Allwinner H616).
+  lede: Banana Pi M4 Zero — single-board computer powered by Allwinner H616.
 banana-pi-m5:
   title: Banana Pi M5
   brand: Banana Pi
@@ -667,8 +851,8 @@ banana-pi-m5:
   image_width: 220
   image_height: 138
   board_url: https://reglinux.org/wiki/sbcs/banana-pi-m5/
-  description: REG Linux image for Banana Pi M5 powered by Amlogic S905X3.
-  lede: Banana Pi M5 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi M5 (Amlogic S905X3).
+  lede: Banana Pi M5 — single-board computer powered by Amlogic S905X3.
 banana-pi-m7:
   title: Banana Pi M7
   brand: Banana Pi
@@ -680,8 +864,8 @@ banana-pi-m7:
   image_width: 220
   image_height: 126
   board_url: https://reglinux.org/wiki/sbcs/banana-pi-m7/
-  description: REG Linux image for Banana Pi M7 powered by Rockchip RK3588.
-  lede: Banana Pi M7 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Banana Pi M7 (Rockchip RK3588).
+  lede: Banana Pi M7 — single-board computer powered by Rockchip RK3588.
 batlexp-g350:
   title: BatlExp G350
   brand: BatlExp
@@ -691,8 +875,8 @@ batlexp-g350:
   - Rockchip RK3326
   image: /assets/images/batlexp-g350.webp
   board_url: https://reglinux.org/wiki/handhelds/batlexp/g350/
-  description: REG Linux image for BatlExp G350 powered by Rockchip RK3326.
-  lede: BatlExp G350 pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for BatlExp G350 (Rockchip RK3326).
+  lede: BatlExp G350 — handheld powered by Rockchip RK3326.
 beaglev-ahead:
   title: BeagleBoard Ahead
   brand: BeagleBoard
@@ -702,8 +886,8 @@ beaglev-ahead:
   - T-Head TH1520
   image: /assets/images/beaglev-ahead.webp
   board_url: https://reglinux.org/wiki/sbc/beagleboard/beaglev-ahead/
-  description: REG Linux image for BeagleBoard Ahead powered by T-Head TH1520.
-  lede: BeagleBoard Ahead pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for BeagleBoard Ahead (T-Head TH1520).
+  lede: BeagleBoard Ahead — single-board computer powered by T-Head TH1520.
 beelink-gt-king:
   title: Beelink GT King
   brand: Beelink
@@ -715,8 +899,8 @@ beelink-gt-king:
   image_width: 220
   image_height: 129
   board_url: https://reglinux.org/wiki/sbcs/beelink-gt-king/
-  description: REG Linux image for Beelink GT King powered by Amlogic S922X.
-  lede: Beelink GT King pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Beelink GT King (Amlogic S922X).
+  lede: Beelink GT King — TV box powered by Amlogic S922X.
 beelink-gt-king-pro:
   title: Beelink GT King Pro
   brand: Beelink
@@ -728,8 +912,8 @@ beelink-gt-king-pro:
   image_width: 220
   image_height: 148
   board_url: https://reglinux.org/wiki/sbcs/beelink-gt-king-pro/
-  description: REG Linux image for Beelink GT King Pro powered by Amlogic S922X-H.
-  lede: Beelink GT King Pro pairs the Amlogic S922X-H SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Beelink GT King Pro (Amlogic S922X-H).
+  lede: Beelink GT King Pro — TV box powered by Amlogic S922X-H.
 capcom-home-arcade:
   title: Capcom Home Arcade
   brand: Koch Media
@@ -741,21 +925,21 @@ capcom-home-arcade:
   image_width: 220
   image_height: 68
   board_url: https://reglinux.org/wiki/sbcs/capcom-home-arcade/
-  description: REG Linux image for Capcom Home Arcade powered by Allwinner H3.
-  lede: Capcom Home Arcade pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Capcom Home Arcade (Allwinner H3).
+  lede: Capcom Home Arcade — console powered by Allwinner H3.
 firefly-renegade:
-  title: Unknown Roc Cc
-  brand: Unknown
+  title: Firefly Renegade
+  brand: Firefly
   manufacturer:
   - Unknown
   soc:
   - Rockchip RK3328
   image: /assets/images/firefly-renegade.webp
   board_url: https://reglinux.org/wiki/sbc/unknown/firefly-renegade/
-  description: REG Linux image for Unknown Roc Cc powered by Rockchip RK3328.
-  lede: Unknown Roc Cc pairs the Rockchip RK3328 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Firefly Renegade (Rockchip RK3328).
+  lede: Firefly Renegade — single-board computer powered by Rockchip RK3328.
 firefly-roc-pc:
-  title: Firefly
+  title: Firefly ROC PC
   brand: Firefly
   manufacturer:
   - Firefly
@@ -763,8 +947,8 @@ firefly-roc-pc:
   - Rockchip RK3566/RK3568
   image: /assets/images/firefly-roc-pc.webp
   board_url: https://reglinux.org/wiki/sbc/firefly/roc-pc/
-  description: REG Linux image for Firefly powered by Rockchip RK3566/RK3568.
-  lede: Firefly pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Firefly ROC PC (Rockchip RK3566/RK3568).
+  lede: Firefly ROC PC — single-board computer powered by Rockchip RK3566/RK3568.
 firefly-station-m2-roc-rk3566-pc:
   title: Firefly Station M2 / ROC-RK3566-PC
   brand: Firefly
@@ -776,8 +960,8 @@ firefly-station-m2-roc-rk3566-pc:
   image_width: 220
   image_height: 134
   board_url: https://reglinux.org/wiki/sbcs/firefly-station-m2-roc-rk3566-pc/
-  description: REG Linux image for Firefly Station M2 / ROC-RK3566-PC powered by Rockchip RK3566.
-  lede: Firefly Station M2 / ROC-RK3566-PC pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Firefly Station M2 / ROC-RK3566-PC (Rockchip RK3566).
+  lede: Firefly Station M2 / ROC-RK3566-PC — single-board computer powered by Rockchip RK3566.
 firefly-station-m3-roc-rk3588s-pc:
   title: Firefly Station M3 / ROC-RK3588S-PC
   brand: Firefly
@@ -789,8 +973,8 @@ firefly-station-m3-roc-rk3588s-pc:
   image_width: 220
   image_height: 128
   board_url: https://reglinux.org/wiki/sbcs/firefly-station-m3-roc-rk3588s-pc/
-  description: REG Linux image for Firefly Station M3 / ROC-RK3588S-PC powered by Rockchip RK3588.
-  lede: Firefly Station M3 / ROC-RK3588S-PC pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Firefly Station M3 / ROC-RK3588S-PC (Rockchip RK3588).
+  lede: Firefly Station M3 / ROC-RK3588S-PC — single-board computer powered by Rockchip RK3588.
 firefly-station-p2-roc-rk3568-pc:
   title: Firefly Station P2 / ROC-RK3568-PC
   brand: Firefly
@@ -802,8 +986,8 @@ firefly-station-p2-roc-rk3568-pc:
   image_width: 220
   image_height: 136
   board_url: https://reglinux.org/wiki/sbcs/firefly-station-p2-roc-rk3568-pc/
-  description: REG Linux image for Firefly Station P2 / ROC-RK3568-PC powered by Rockchip RK3568.
-  lede: Firefly Station P2 / ROC-RK3568-PC pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Firefly Station P2 / ROC-RK3568-PC (Rockchip RK3568).
+  lede: Firefly Station P2 / ROC-RK3568-PC — single-board computer powered by Rockchip RK3568.
 gameforce-ace:
   title: Gameforce ACE
   brand: Gameforce
@@ -815,8 +999,15 @@ gameforce-ace:
   image_width: 220
   image_height: 96
   board_url: https://reglinux.org/wiki/handhelds/gameforce/gameforce-ace/
-  description: REG Linux image for Gameforce ACE powered by Rockchip RK3588.
-  lede: Gameforce ACE pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Gameforce ACE (Rockchip RK3588).
+  lede: Gameforce ACE — handheld powered by Rockchip RK3588.
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3588 REG Linux image from the REG Linux download page. Flash it to an SD card or eMMC.'
 gameforce-chi:
   title: Gameforce CHI
   brand: Gameforce
@@ -828,19 +1019,35 @@ gameforce-chi:
   image_width: 220
   image_height: 123
   board_url: https://reglinux.org/wiki/sbcs/gameforce-chi/
-  description: REG Linux image for Gameforce CHI powered by Rockchip RK3326.
-  lede: Gameforce CHI pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Gameforce CHI (Rockchip RK3326).
+  lede: Gameforce CHI — handheld powered by Rockchip RK3326.
+  install_notes: '## Installation notes
+
+
+    1. Grab the image. Download the latest Gameforce CHI build from the downloads page or the official board entry .
+
+
+    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or SSD. Make sure
+    to verify the checksum before booting.
+
+
+    3. First boot setup. Insert the media into your Gameforce CHI, power on, and let REG Linux expand the filesystem. Pair
+    controllers inside EmulationStation once prompted.
+
+
+    4. Troubleshoot with rescue tools. REG Linux ships with an immutable base and rescue partition—if something breaks, reboot
+    into rescue or reflash without touching your ROMs.'
 gcw-zero:
-  title: Unknown GCW0
-  brand: Unknown
+  title: GCW Zero
+  brand: GCW
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/gcw-zero.webp
   board_url: https://reglinux.org/wiki/other/unknown/gcw-zero/
-  description: REG Linux image for Unknown GCW0 powered by Ingenic JZ4770.
-  lede: Unknown GCW0 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for GCW Zero (Ingenic JZ4770).
+  lede: GCW Zero — handheld powered by Ingenic JZ4770.
 generic-x86-64:
   title: Generic PC (x86-64)
   brand: Generic
@@ -850,8 +1057,8 @@ generic-x86-64:
   - AMD/Intel x86_64
   image: /assets/images/generic-x86-64.webp
   board_url: https://reglinux.org/wiki/other/generic/x86-64/
-  description: REG Linux image for Generic PC (x86-64) powered by AMD/Intel x86_64.
-  lede: Generic PC (x86-64) pairs the AMD/Intel x86_64 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Generic PC (x86-64) (AMD/Intel x86_64).
+  lede: Generic PC (x86-64) — device powered by AMD/Intel x86_64.
 generic-x86-64-v3:
   title: Generic PC (x86-64-v3)
   brand: Generic
@@ -861,8 +1068,8 @@ generic-x86-64-v3:
   - AMD/Intel x86_64-v3
   image: /assets/images/generic-x86-64-v3.webp
   board_url: https://reglinux.org/wiki/other/generic/x86-64-v3/
-  description: REG Linux image for Generic PC (x86-64-v3) powered by AMD/Intel x86_64-v3.
-  lede: Generic PC (x86-64-v3) pairs the AMD/Intel x86_64-v3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Generic PC (x86-64-v3) (AMD/Intel x86_64-v3).
+  lede: Generic PC (x86-64-v3) — device powered by AMD/Intel x86_64-v3.
 h96-max:
   title: H96 Max
   brand: H96
@@ -872,8 +1079,8 @@ h96-max:
   - Amlogic S905X3
   image: /assets/images/h96-max.webp
   board_url: https://reglinux.org/wiki/sbc/h96/max/
-  description: REG Linux image for H96 Max powered by Amlogic S905X3.
-  lede: H96 Max pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for H96 Max (Amlogic S905X3).
+  lede: H96 Max — TV box powered by Amlogic S905X3.
 hardkernel-odroid-c2:
   title: HardKernel ODROID C2
   brand: HardKernel
@@ -885,8 +1092,8 @@ hardkernel-odroid-c2:
   image_width: 220
   image_height: 156
   board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-c2/
-  description: REG Linux image for HardKernel ODROID C2 powered by Amlogic S905(X).
-  lede: HardKernel ODROID C2 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID C2 (Amlogic S905(X)).
+  lede: HardKernel ODROID C2 — single-board computer powered by Amlogic S905(X).
 hardkernel-odroid-c4:
   title: HardKernel ODROID C4
   brand: HardKernel
@@ -898,8 +1105,8 @@ hardkernel-odroid-c4:
   image_width: 220
   image_height: 193
   board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-c4/
-  description: REG Linux image for HardKernel ODROID C4 powered by Amlogic S905X3.
-  lede: HardKernel ODROID C4 pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID C4 (Amlogic S905X3).
+  lede: HardKernel ODROID C4 — single-board computer powered by Amlogic S905X3.
 hardkernel-odroid-c5:
   title: HardKernel ODROID C5
   brand: HardKernel
@@ -911,8 +1118,8 @@ hardkernel-odroid-c5:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-c5/
-  description: REG Linux image for HardKernel ODROID C5 powered by Amlogic S905X5M.
-  lede: HardKernel ODROID C5 pairs the Amlogic S905X5M SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID C5 (Amlogic S905X5M).
+  lede: HardKernel ODROID C5 — single-board computer powered by Amlogic S905X5M.
 hardkernel-odroid-go-advance:
   title: Odroid Go Advance
   brand: HardKernel
@@ -924,8 +1131,8 @@ hardkernel-odroid-go-advance:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-advance/
-  description: REG Linux image for Odroid Go Advance powered by Rockchip RK3326.
-  lede: Odroid Go Advance pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Odroid Go Advance (Rockchip RK3326).
+  lede: Odroid Go Advance — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   display_res: 480x320
   ram: 1 GB DDR3L
@@ -933,6 +1140,14 @@ hardkernel-odroid-go-advance:
   wifi_chip: ESP32-S2
   bt_chip: ESP32-S2
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.'
 hardkernel-odroid-go-super:
   title: HardKernel ODROID Go Super
   brand: HardKernel
@@ -944,13 +1159,21 @@ hardkernel-odroid-go-super:
   image_width: 220
   image_height: 91
   board_url: https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-super/
-  description: REG Linux image for HardKernel ODROID Go Super powered by Rockchip RK3326.
-  lede: HardKernel ODROID Go Super pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID Go Super (Rockchip RK3326).
+  lede: HardKernel ODROID Go Super — handheld powered by Rockchip RK3326.
   display_size: 5 inch
   display_res: 854x480
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.'
 hardkernel-odroid-go-ultra:
   title: HardKernel ODROID GO Ultra
   brand: HardKernel
@@ -962,8 +1185,32 @@ hardkernel-odroid-go-ultra:
   image_width: 220
   image_height: 91
   board_url: https://reglinux.org/wiki/handhelds/hardkernel/odroid-go-ultra/
-  description: REG Linux image for HardKernel ODROID GO Ultra powered by Amlogic S922X.
-  lede: HardKernel ODROID GO Ultra pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID GO Ultra (Amlogic S922X).
+  lede: HardKernel ODROID GO Ultra — handheld powered by Amlogic S922X.
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    First download the latest S922X version of REG Linux from the button below.
+
+
+    To install REG Linux to the eMMC, you need to boot the device into recovery mode. There are 2 ways to do this:
+
+
+    - Hardkernel Recovery SD Download this recovery image . Follow the recovery steps on the Odroid wiki . [this recovery
+    image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery) [the Odroid wiki](https://wiki.odroid.com/odroid_go_ultra/getting_started/recovery_eMMC)
+
+    - REG Linux Recovery hold Volume Down while the device boots.
+
+
+    Once booted into recovery mode and connected to a PC via USB-C, the REG Linux image may be flashed to the eMMC using Balena
+    Etcher, win32diskimager, dd or similar.
+
+
+    Once the REG Linux image has been flashed to the the eMMC, restart the device and REG Linux will go through its first
+    boot process (running from eMMC).'
 hardkernel-odroid-m1:
   title: HardKernel ODROID M1
   brand: HardKernel
@@ -975,10 +1222,10 @@ hardkernel-odroid-m1:
   image_width: 220
   image_height: 146
   board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-m1/
-  description: REG Linux image for HardKernel ODROID M1 powered by Rockchip RK3568.
-  lede: HardKernel ODROID M1 pairs the Rockchip RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID M1 (Rockchip RK3568).
+  lede: HardKernel ODROID M1 — single-board computer powered by Rockchip RK3568.
 hardkernel-odroid-m1s:
-  title: HardKernel 1S
+  title: ODROID-M1S
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -986,10 +1233,10 @@ hardkernel-odroid-m1s:
   - Rockchip RK3566/RK3568
   image: /assets/images/hardkernel-odroid-m1s.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-m1s/
-  description: REG Linux image for HardKernel 1S powered by Rockchip RK3566/RK3568.
-  lede: HardKernel 1S pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ODROID-M1S (Rockchip RK3566/RK3568).
+  lede: ODROID-M1S — single-board computer powered by Rockchip RK3566/RK3568.
 hardkernel-odroid-m2:
-  title: HardKernel 2
+  title: ODROID-M2
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -997,10 +1244,10 @@ hardkernel-odroid-m2:
   - Rockchip RK3588
   image: /assets/images/hardkernel-odroid-m2.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-m2/
-  description: REG Linux image for HardKernel 2 powered by Rockchip RK3588.
-  lede: HardKernel 2 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ODROID-M2 (Rockchip RK3588).
+  lede: ODROID-M2 — single-board computer powered by Rockchip RK3588.
 hardkernel-odroid-n2:
-  title: HardKernel 2
+  title: ODROID-N2
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -1008,10 +1255,10 @@ hardkernel-odroid-n2:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2/
-  description: REG Linux image for HardKernel 2 powered by Amlogic S922X.
-  lede: HardKernel 2 pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ODROID-N2 (Amlogic S922X).
+  lede: ODROID-N2 — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-n2-plus:
-  title: HardKernel 2 Plus
+  title: ODROID-N2+
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -1019,10 +1266,10 @@ hardkernel-odroid-n2-plus:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2-plus.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2-plus/
-  description: REG Linux image for HardKernel 2 Plus powered by Amlogic S922X.
-  lede: HardKernel 2 Plus pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ODROID-N2+ (Amlogic S922X).
+  lede: ODROID-N2+ — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-n2l:
-  title: HardKernel 2L
+  title: ODROID-N2L
   brand: HardKernel
   manufacturer:
   - HardKernel
@@ -1030,8 +1277,8 @@ hardkernel-odroid-n2l:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2l.webp
   board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2l/
-  description: REG Linux image for HardKernel 2L powered by Amlogic S922X.
-  lede: HardKernel 2L pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for ODROID-N2L (Amlogic S922X).
+  lede: ODROID-N2L — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-xu3-xu4:
   title: HardKernel ODROID XU3/XU4
   brand: HardKernel
@@ -1043,19 +1290,19 @@ hardkernel-odroid-xu3-xu4:
   image_width: 220
   image_height: 195
   board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-xu3-xu4/
-  description: REG Linux image for HardKernel ODROID XU3/XU4 powered by Samsung Exynos 5422.
-  lede: HardKernel ODROID XU3/XU4 pairs the Samsung Exynos 5422 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for HardKernel ODROID XU3/XU4 (Samsung Exynos 5422).
+  lede: HardKernel ODROID XU3/XU4 — single-board computer powered by Samsung Exynos 5422.
 hugsun-x99:
-  title: Unknown Hugsun X99
-  brand: Unknown
+  title: Hugsun X99
+  brand: Hugsun
   manufacturer:
   - Unknown
   soc:
   - Rockchip RK3399
   image: /assets/images/hugsun-x99.webp
   board_url: https://reglinux.org/wiki/other/unknown/hugsun-x99/
-  description: REG Linux image for Unknown Hugsun X99 powered by Rockchip RK3399.
-  lede: Unknown Hugsun X99 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Hugsun X99 (Rockchip RK3399).
+  lede: Hugsun X99 — device powered by Rockchip RK3399.
 indiedroid-nova:
   title: Indiedroid Nova
   brand: Indiedroid
@@ -1065,19 +1312,19 @@ indiedroid-nova:
   - Rockchip RK3588
   image: /assets/images/indiedroid-nova.webp
   board_url: https://reglinux.org/wiki/sbc/indiedroid/nova/
-  description: REG Linux image for Indiedroid Nova powered by Rockchip RK3588.
-  lede: Indiedroid Nova pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Indiedroid Nova (Rockchip RK3588).
+  lede: Indiedroid Nova — single-board computer powered by Rockchip RK3588.
 intel-de10nano:
-  title: Unknown DE10_NANO
-  brand: Unknown
+  title: Intel DE10-Nano
+  brand: Intel
   manufacturer:
   - Unknown
   soc:
   - Intel Cyclone V
   image: /assets/images/intel-de10nano.webp
   board_url: https://reglinux.org/wiki/other/unknown/intel-de10nano/
-  description: REG Linux image for Unknown DE10_NANO powered by Intel Cyclone V.
-  lede: Unknown DE10_NANO pairs the Intel Cyclone V SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Intel DE10-Nano (Intel Cyclone V).
+  lede: Intel DE10-Nano — device powered by Intel Cyclone V.
 khadas-edge-2:
   title: Khadas Edge 2
   brand: Khadas
@@ -1089,8 +1336,8 @@ khadas-edge-2:
   image_width: 220
   image_height: 156
   board_url: https://reglinux.org/wiki/sbcs/khadas-edge-2/
-  description: REG Linux image for Khadas Edge 2 powered by Rockchip RK3588.
-  lede: Khadas Edge 2 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas Edge 2 (Rockchip RK3588).
+  lede: Khadas Edge 2 — single-board computer powered by Rockchip RK3588.
 khadas-vim-1:
   title: Khadas VIM 1
   brand: Khadas
@@ -1102,8 +1349,8 @@ khadas-vim-1:
   image_width: 220
   image_height: 168
   board_url: https://reglinux.org/wiki/sbcs/khadas-vim-1/
-  description: REG Linux image for Khadas VIM 1 powered by Amlogic S905(X).
-  lede: Khadas VIM 1 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas VIM 1 (Amlogic S905(X)).
+  lede: Khadas VIM 1 — single-board computer powered by Amlogic S905(X).
 khadas-vim-1s:
   title: Khadas VIM 1S
   brand: Khadas
@@ -1115,8 +1362,8 @@ khadas-vim-1s:
   image_width: 220
   image_height: 120
   board_url: https://reglinux.org/wiki/sbcs/khadas-vim-1s/
-  description: REG Linux image for Khadas VIM 1S powered by Amlogic S905Y4.
-  lede: Khadas VIM 1S pairs the Amlogic S905Y4 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas VIM 1S (Amlogic S905Y4).
+  lede: Khadas VIM 1S — single-board computer powered by Amlogic S905Y4.
 khadas-vim-2:
   title: Khadas VIM 2
   brand: Khadas
@@ -1128,8 +1375,8 @@ khadas-vim-2:
   image_width: 220
   image_height: 179
   board_url: https://reglinux.org/wiki/sbcs/khadas-vim-2/
-  description: REG Linux image for Khadas VIM 2 powered by Amlogic S912.
-  lede: Khadas VIM 2 pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas VIM 2 (Amlogic S912).
+  lede: Khadas VIM 2 — single-board computer powered by Amlogic S912.
 khadas-vim-3:
   title: Khadas VIM 3
   brand: Khadas
@@ -1141,8 +1388,8 @@ khadas-vim-3:
   image_width: 220
   image_height: 182
   board_url: https://reglinux.org/wiki/sbcs/khadas-vim-3/
-  description: REG Linux image for Khadas VIM 3 powered by Amlogic A311D.
-  lede: Khadas VIM 3 pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas VIM 3 (Amlogic A311D).
+  lede: Khadas VIM 3 — single-board computer powered by Amlogic A311D.
 khadas-vim-3l:
   title: Khadas VIM 3L
   brand: Khadas
@@ -1154,8 +1401,8 @@ khadas-vim-3l:
   image_width: 220
   image_height: 155
   board_url: https://reglinux.org/wiki/sbcs/khadas-vim-3l/
-  description: REG Linux image for Khadas VIM 3L powered by Amlogic S905D3.
-  lede: Khadas VIM 3L pairs the Amlogic S905D3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas VIM 3L (Amlogic S905D3).
+  lede: Khadas VIM 3L — single-board computer powered by Amlogic S905D3.
 khadas-vim-4:
   title: Khadas VIM 4
   brand: Khadas
@@ -1167,8 +1414,8 @@ khadas-vim-4:
   image_width: 220
   image_height: 88
   board_url: https://reglinux.org/wiki/sbcs/khadas-vim-4/
-  description: REG Linux image for Khadas VIM 4 powered by Amlogic A311D2.
-  lede: Khadas VIM 4 pairs the Amlogic A311D2 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Khadas VIM 4 (Amlogic A311D2).
+  lede: Khadas VIM 4 — single-board computer powered by Amlogic A311D2.
 libretech-lepotato:
   title: Libre Computer Cc
   brand: Libre Computer
@@ -1178,21 +1425,21 @@ libretech-lepotato:
   - Amlogic S905(X)
   image: /assets/images/libretech-lepotato.webp
   board_url: https://reglinux.org/wiki/sbc/libre-computer/libretech-lepotato/
-  description: REG Linux image for Libre Computer Cc powered by Amlogic S905(X).
-  lede: Libre Computer Cc pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Libre Computer Cc (Amlogic S905(X)).
+  lede: Libre Computer Cc — single-board computer powered by Amlogic S905(X).
 libretech-s912-pc:
-  title: Unknown S912 Libretech Pc
-  brand: Unknown
+  title: Libre Computer S912-PC
+  brand: Libre Computer
   manufacturer:
   - Unknown
   soc:
   - Amlogic S912
   image: /assets/images/libretech-s912-pc.webp
   board_url: https://reglinux.org/wiki/sbc/unknown/libretech-s912-pc/
-  description: REG Linux image for Unknown S912 Libretech Pc powered by Amlogic S912.
-  lede: Unknown S912 Libretech Pc pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Libre Computer S912-PC (Amlogic S912).
+  lede: Libre Computer S912-PC — single-board computer powered by Amlogic S912.
 libretech-tritium-h5:
-  title: Libre Computer All H3 Cc
+  title: Libre Computer Tritium H5
   brand: Libre Computer
   manufacturer:
   - Libre Computer
@@ -1200,8 +1447,8 @@ libretech-tritium-h5:
   - Allwinner H3
   image: /assets/images/libretech-tritium-h5.webp
   board_url: https://reglinux.org/wiki/sbc/libre-computer/libretech-tritium-h5/
-  description: REG Linux image for Libre Computer All H3 Cc powered by Allwinner H3.
-  lede: Libre Computer All H3 Cc pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Libre Computer Tritium H5 (Allwinner H3).
+  lede: Libre Computer Tritium H5 — single-board computer powered by Allwinner H3.
 magicx-xu-mini-m:
   title: XU Mini M
   brand: MagicX
@@ -1213,13 +1460,27 @@ magicx-xu-mini-m:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/magicx/xu-mini-m/
-  description: REG Linux image for XU Mini M powered by Rockchip RK3326.
-  lede: XU Mini M pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for XU Mini M (Rockchip RK3326).
+  lede: XU Mini M — device powered by Rockchip RK3326.
   display_size: 2.8 inch
   display_res: 640x480
   ram: 1 GB DDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Download
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.
+
+
+    ### Installation guide
+
+
+    TODO'
 mangmi-air-x:
   title: Mangmi Air X
   brand: Mangmi
@@ -1229,8 +1490,8 @@ mangmi-air-x:
   - Qualcomm SM6115
   image: /assets/images/mangmi-air-x.webp
   board_url: https://reglinux.org/wiki/handhelds/mangmi/air-x/
-  description: REG Linux image for Mangmi Air X powered by Qualcomm SM6115.
-  lede: Mangmi Air X pairs the Qualcomm SM6115 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Mangmi Air X (Qualcomm SM6115).
+  lede: Mangmi Air X — handheld powered by Qualcomm SM6115.
 milk-v-jupiter:
   title: Milk-V Jupiter
   brand: Milk-V
@@ -1240,8 +1501,8 @@ milk-v-jupiter:
   - SpacemiT K1
   image: /assets/images/milk-v-jupiter.webp
   board_url: https://reglinux.org/wiki/sbc/milk-v/jupiter/
-  description: REG Linux image for Milk-V Jupiter powered by SpacemiT K1.
-  lede: Milk-V Jupiter pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Milk-V Jupiter (SpacemiT K1).
+  lede: Milk-V Jupiter — single-board computer powered by SpacemiT K1.
 milk-v-mars:
   title: Milk-V Mars
   brand: Milk-V
@@ -1253,8 +1514,8 @@ milk-v-mars:
   image_width: 220
   image_height: 174
   board_url: https://reglinux.org/wiki/sbcs/milk-v-mars/
-  description: REG Linux image for Milk-V Mars powered by StarFive JH7110.
-  lede: Milk-V Mars pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Milk-V Mars (StarFive JH7110).
+  lede: Milk-V Mars — single-board computer powered by StarFive JH7110.
 milk-v-meles:
   title: Milk-V Meles
   brand: Milk-V
@@ -1266,10 +1527,10 @@ milk-v-meles:
   image_width: null
   image_height: null
   board_url: https://reglinux.org/wiki/sbcs/milk-v-meles/
-  description: REG Linux image for Milk-V Meles powered by TH1520.
-  lede: Milk-V Meles pairs the TH1520 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Milk-V Meles (TH1520).
+  lede: Milk-V Meles — single-board computer powered by TH1520.
 miniloong-pocket1:
-  title: MiniLoong POCKET1
+  title: MiniLoong Pocket 1
   brand: MiniLoong
   manufacturer:
   - MiniLoong
@@ -1277,8 +1538,8 @@ miniloong-pocket1:
   - Rockchip RK3566/RK3568
   image: /assets/images/miniloong-pocket1.webp
   board_url: https://reglinux.org/wiki/handhelds/miniloong/pocket1/
-  description: REG Linux image for MiniLoong POCKET1 powered by Rockchip RK3566/RK3568.
-  lede: MiniLoong POCKET1 pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for MiniLoong Pocket 1 (Rockchip RK3566/RK3568).
+  lede: MiniLoong Pocket 1 — handheld powered by Rockchip RK3566/RK3568.
 minix-neo-u1:
   title: Minix Neo U1
   brand: Minix
@@ -1288,8 +1549,8 @@ minix-neo-u1:
   - Amlogic S905(X)
   image: /assets/images/minix-neo-u1.webp
   board_url: https://reglinux.org/wiki/sbc/minix/neo-u1/
-  description: REG Linux image for Minix Neo U1 powered by Amlogic S905(X).
-  lede: Minix Neo U1 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Minix Neo U1 (Amlogic S905(X)).
+  lede: Minix Neo U1 — device powered by Amlogic S905(X).
 minix-neo-x8:
   title: Minix Neo X8
   brand: Minix
@@ -1299,8 +1560,8 @@ minix-neo-x8:
   - Amlogic S812
   image: /assets/images/minix-neo-x8.webp
   board_url: https://reglinux.org/wiki/sbc/minix/neo-x8/
-  description: REG Linux image for Minix Neo X8 powered by Amlogic S812.
-  lede: Minix Neo X8 pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Minix Neo X8 (Amlogic S812).
+  lede: Minix Neo X8 — device powered by Amlogic S812.
 mqmaker-miqi:
   title: MQMaker MiQi
   brand: MQMaker
@@ -1312,8 +1573,8 @@ mqmaker-miqi:
   image_width: 220
   image_height: 152
   board_url: https://reglinux.org/wiki/sbcs/mqmaker-miqi/
-  description: REG Linux image for MQMaker MiQi powered by Rockchip RK3288.
-  lede: MQMaker MiQi pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for MQMaker MiQi (Rockchip RK3288).
+  lede: MQMaker MiQi — single-board computer powered by Rockchip RK3288.
 musepi-pro:
   title: MusePi Pro
   brand: MusePi
@@ -1323,8 +1584,8 @@ musepi-pro:
   - SpacemiT K1
   image: /assets/images/musepi-pro.webp
   board_url: https://reglinux.org/wiki/sbc/musepi/pro/
-  description: REG Linux image for MusePi Pro powered by SpacemiT K1.
-  lede: MusePi Pro pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for MusePi Pro (SpacemiT K1).
+  lede: MusePi Pro — single-board computer powered by SpacemiT K1.
 nano-pi-k2:
   title: Nano Pi K2
   brand: FriendlyElec
@@ -1336,8 +1597,8 @@ nano-pi-k2:
   image_width: 220
   image_height: 176
   board_url: https://reglinux.org/wiki/sbcs/nano-pi-k2/
-  description: REG Linux image for Nano Pi K2 powered by Amlogic S905(X).
-  lede: Nano Pi K2 pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Nano Pi K2 (Amlogic S905(X)).
+  lede: Nano Pi K2 — single-board computer powered by Amlogic S905(X).
 nano-pi-m4v2:
   title: Nano Pi M4v2
   brand: FriendlyElec
@@ -1349,8 +1610,8 @@ nano-pi-m4v2:
   image_width: 220
   image_height: 166
   board_url: https://reglinux.org/wiki/sbcs/nano-pi-m4v2/
-  description: REG Linux image for Nano Pi M4v2 powered by Rockchip RK3399.
-  lede: Nano Pi M4v2 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Nano Pi M4v2 (Rockchip RK3399).
+  lede: Nano Pi M4v2 — single-board computer powered by Rockchip RK3399.
 nexbox-a1:
   title: Nexbox A1
   brand: Nexbox
@@ -1360,8 +1621,8 @@ nexbox-a1:
   - Amlogic S912
   image: /assets/images/nexbox-a1.webp
   board_url: https://reglinux.org/wiki/sbc/nexbox/a1/
-  description: REG Linux image for Nexbox A1 powered by Amlogic S912.
-  lede: Nexbox A1 pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Nexbox A1 (Amlogic S912).
+  lede: Nexbox A1 — TV box powered by Amlogic S912.
 nexbox-a95x:
   title: Nexbox A95X
   brand: Nexbox
@@ -1371,8 +1632,8 @@ nexbox-a95x:
   - Amlogic S905(X)
   image: /assets/images/nexbox-a95x.webp
   board_url: https://reglinux.org/wiki/sbc/nexbox/a95x/
-  description: REG Linux image for Nexbox A95X powered by Amlogic S905(X).
-  lede: Nexbox A95X pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Nexbox A95X (Amlogic S905(X)).
+  lede: Nexbox A95X — TV box powered by Amlogic S905(X).
 nintendo-nes-classic:
   title: Nintendo Nes Classic
   brand: Nintendo
@@ -1382,8 +1643,8 @@ nintendo-nes-classic:
   - Allwinner R16
   image: /assets/images/nintendo-nes-classic.webp
   board_url: https://reglinux.org/wiki/consoles/nintendo/nes-classic/
-  description: REG Linux image for Nintendo Nes Classic powered by Allwinner R16.
-  lede: Nintendo Nes Classic pairs the Allwinner R16 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Nintendo Nes Classic (Allwinner R16).
+  lede: Nintendo Nes Classic — console powered by Allwinner R16.
 nintendo-snes-classic:
   title: Nintendo Super Nes Classic
   brand: Nintendo
@@ -1393,19 +1654,19 @@ nintendo-snes-classic:
   - Allwinner R16
   image: /assets/images/nintendo-snes-classic.webp
   board_url: https://reglinux.org/wiki/consoles/nintendo/snes-classic/
-  description: REG Linux image for Nintendo Super Nes Classic powered by Allwinner R16.
-  lede: Nintendo Super Nes Classic pairs the Allwinner R16 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Nintendo Super Nes Classic (Allwinner R16).
+  lede: Nintendo Super Nes Classic — console powered by Allwinner R16.
 nvidia-jetson-nano:
-  title: Unknown P3450 0000
-  brand: Unknown
+  title: NVIDIA Jetson Nano
+  brand: NVIDIA
   manufacturer:
   - Unknown
   soc:
   - NVIDIA Tegra X1
   image: /assets/images/nvidia-jetson-nano.webp
   board_url: https://reglinux.org/wiki/other/unknown/nvidia-jetson-nano/
-  description: REG Linux image for Unknown P3450 0000 powered by NVIDIA Tegra X1.
-  lede: Unknown P3450 0000 pairs the NVIDIA Tegra X1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for NVIDIA Jetson Nano (NVIDIA Tegra X1).
+  lede: NVIDIA Jetson Nano — handheld powered by NVIDIA Tegra X1.
 orange-pi-3:
   title: Orange Pi 3
   brand: Orange Pi
@@ -1415,10 +1676,10 @@ orange-pi-3:
   - Allwinner H5/H6
   image: /assets/images/orange-pi-3.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/3/
-  description: REG Linux image for Orange Pi 3 powered by Allwinner H5/H6.
-  lede: Orange Pi 3 pairs the Allwinner H5/H6 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 3 (Allwinner H5/H6).
+  lede: Orange Pi 3 — single-board computer powered by Allwinner H5/H6.
 orange-pi-3-lts:
-  title: Orange Pi 3 Lts
+  title: Orange Pi 3 LTS
   brand: Orange Pi
   manufacturer:
   - Orange Pi
@@ -1426,8 +1687,8 @@ orange-pi-3-lts:
   - Allwinner H5/H6
   image: /assets/images/orange-pi-3-lts.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/3-lts/
-  description: REG Linux image for Orange Pi 3 Lts powered by Allwinner H5/H6.
-  lede: Orange Pi 3 Lts pairs the Allwinner H5/H6 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 3 LTS (Allwinner H5/H6).
+  lede: Orange Pi 3 LTS — single-board computer powered by Allwinner H5/H6.
 orange-pi-4-lts:
   title: Orange Pi 4 Lts
   brand: Orange Pi
@@ -1437,8 +1698,8 @@ orange-pi-4-lts:
   - Rockchip RK3399
   image: /assets/images/orange-pi-4-lts.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/4-lts/
-  description: REG Linux image for Orange Pi 4 Lts powered by Rockchip RK3399.
-  lede: Orange Pi 4 Lts pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 4 Lts (Rockchip RK3399).
+  lede: Orange Pi 4 Lts — single-board computer powered by Rockchip RK3399.
 orange-pi-4a:
   title: Orange Pi 4A
   brand: Orange Pi
@@ -1448,8 +1709,8 @@ orange-pi-4a:
   - Allwinner T527
   image: /assets/images/orange-pi-4a.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/4a/
-  description: REG Linux image for Orange Pi 4A powered by Allwinner T527.
-  lede: Orange Pi 4A pairs the Allwinner T527 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 4A (Allwinner T527).
+  lede: Orange Pi 4A — single-board computer powered by Allwinner T527.
 orange-pi-5:
   title: Orange Pi 5
   brand: Orange Pi
@@ -1459,8 +1720,8 @@ orange-pi-5:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/5/
-  description: REG Linux image for Orange Pi 5 powered by Rockchip RK3588.
-  lede: Orange Pi 5 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 5 (Rockchip RK3588).
+  lede: Orange Pi 5 — single-board computer powered by Rockchip RK3588.
 orange-pi-5-max:
   title: Orange Pi 5 Max
   brand: Orange Pi
@@ -1470,8 +1731,8 @@ orange-pi-5-max:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5-max.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/5-max/
-  description: REG Linux image for Orange Pi 5 Max powered by Rockchip RK3588.
-  lede: Orange Pi 5 Max pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 5 Max (Rockchip RK3588).
+  lede: Orange Pi 5 Max — single-board computer powered by Rockchip RK3588.
 orange-pi-5-plus:
   title: Orange Pi 5 Plus
   brand: Orange Pi
@@ -1481,8 +1742,8 @@ orange-pi-5-plus:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5-plus.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/5-plus/
-  description: REG Linux image for Orange Pi 5 Plus powered by Rockchip RK3588.
-  lede: Orange Pi 5 Plus pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 5 Plus (Rockchip RK3588).
+  lede: Orange Pi 5 Plus — single-board computer powered by Rockchip RK3588.
 orange-pi-5-ultra:
   title: Orange Pi 5 Ultra
   brand: Orange Pi
@@ -1492,8 +1753,8 @@ orange-pi-5-ultra:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5-ultra.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/5-ultra/
-  description: REG Linux image for Orange Pi 5 Ultra powered by Rockchip RK3588.
-  lede: Orange Pi 5 Ultra pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 5 Ultra (Rockchip RK3588).
+  lede: Orange Pi 5 Ultra — single-board computer powered by Rockchip RK3588.
 orange-pi-5b:
   title: Orange Pi 5B
   brand: Orange Pi
@@ -1503,8 +1764,8 @@ orange-pi-5b:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5b.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/5b/
-  description: REG Linux image for Orange Pi 5B powered by Rockchip RK3588.
-  lede: Orange Pi 5B pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 5B (Rockchip RK3588).
+  lede: Orange Pi 5B — single-board computer powered by Rockchip RK3588.
 orange-pi-800:
   title: Orange Pi 800
   brand: Orange Pi
@@ -1516,8 +1777,8 @@ orange-pi-800:
   image_width: 220
   image_height: 156
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-800/
-  description: REG Linux image for Orange Pi 800 powered by Rockchip RK3399.
-  lede: Orange Pi 800 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi 800 (Rockchip RK3399).
+  lede: Orange Pi 800 — single-board computer powered by Rockchip RK3399.
 orange-pi-one:
   title: Orange Pi One
   brand: Orange Pi
@@ -1529,8 +1790,8 @@ orange-pi-one:
   image_width: 220
   image_height: 192
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-one/
-  description: REG Linux image for Orange Pi One powered by Allwinner H3.
-  lede: Orange Pi One pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi One (Allwinner H3).
+  lede: Orange Pi One — single-board computer powered by Allwinner H3.
 orange-pi-one-plus:
   title: Orange Pi One Plus
   brand: Orange Pi
@@ -1542,8 +1803,8 @@ orange-pi-one-plus:
   image_width: 220
   image_height: 151
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-one-plus/
-  description: REG Linux image for Orange Pi One Plus powered by Allwinner H6.
-  lede: Orange Pi One Plus pairs the Allwinner H6 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi One Plus (Allwinner H6).
+  lede: Orange Pi One Plus — single-board computer powered by Allwinner H6.
 orange-pi-pc:
   title: Orange Pi PC
   brand: Orange Pi
@@ -1555,8 +1816,8 @@ orange-pi-pc:
   image_width: 220
   image_height: 152
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-pc/
-  description: REG Linux image for Orange Pi PC powered by Allwinner H3.
-  lede: Orange Pi PC pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi PC (Allwinner H3).
+  lede: Orange Pi PC — single-board computer powered by Allwinner H3.
 orange-pi-pc-2:
   title: Orange Pi PC 2
   brand: Orange Pi
@@ -1568,8 +1829,8 @@ orange-pi-pc-2:
   image_width: 220
   image_height: 148
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-pc-2/
-  description: REG Linux image for Orange Pi PC 2 powered by Allwinner H5.
-  lede: Orange Pi PC 2 pairs the Allwinner H5 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi PC 2 (Allwinner H5).
+  lede: Orange Pi PC 2 — single-board computer powered by Allwinner H5.
 orange-pi-pc-plus:
   title: Orange Pi Pc Plus
   brand: Orange Pi
@@ -1579,8 +1840,8 @@ orange-pi-pc-plus:
   - Allwinner H3
   image: /assets/images/orange-pi-pc-plus.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/pc-plus/
-  description: REG Linux image for Orange Pi Pc Plus powered by Allwinner H3.
-  lede: Orange Pi Pc Plus pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi Pc Plus (Allwinner H3).
+  lede: Orange Pi Pc Plus — single-board computer powered by Allwinner H3.
 orange-pi-plus-2e:
   title: Orange Pi Plus 2E
   brand: Orange Pi
@@ -1592,8 +1853,8 @@ orange-pi-plus-2e:
   image_width: 220
   image_height: 146
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-plus-2e/
-  description: REG Linux image for Orange Pi Plus 2E powered by Allwinner H3.
-  lede: Orange Pi Plus 2E pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi Plus 2E (Allwinner H3).
+  lede: Orange Pi Plus 2E — single-board computer powered by Allwinner H3.
 orange-pi-r2s:
   title: Orange Pi R2S
   brand: Orange Pi
@@ -1603,8 +1864,8 @@ orange-pi-r2s:
   - SpacemiT K1
   image: /assets/images/orange-pi-r2s.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/r2s/
-  description: REG Linux image for Orange Pi R2S powered by SpacemiT K1.
-  lede: Orange Pi R2S pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi R2S (SpacemiT K1).
+  lede: Orange Pi R2S — single-board computer powered by SpacemiT K1.
 orange-pi-rv2:
   title: Orange Pi RV2
   brand: Orange Pi
@@ -1614,8 +1875,8 @@ orange-pi-rv2:
   - SpacemiT K1
   image: /assets/images/orange-pi-rv2.webp
   board_url: https://reglinux.org/wiki/sbc/orange-pi/rv2/
-  description: REG Linux image for Orange Pi RV2 powered by SpacemiT K1.
-  lede: Orange Pi RV2 pairs the SpacemiT K1 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi RV2 (SpacemiT K1).
+  lede: Orange Pi RV2 — single-board computer powered by SpacemiT K1.
 orange-pi-zero-2:
   title: Orange Pi Zero 2
   brand: Orange Pi
@@ -1627,8 +1888,8 @@ orange-pi-zero-2:
   image_width: 220
   image_height: 176
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-zero-2/
-  description: REG Linux image for Orange Pi Zero 2 powered by Allwinner H616.
-  lede: Orange Pi Zero 2 pairs the Allwinner H616 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi Zero 2 (Allwinner H616).
+  lede: Orange Pi Zero 2 — single-board computer powered by Allwinner H616.
 orange-pi-zero-2w:
   title: Orange Pi Zero 2W
   brand: Orange Pi
@@ -1640,8 +1901,8 @@ orange-pi-zero-2w:
   image_width: 220
   image_height: 172
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-zero-2w/
-  description: REG Linux image for Orange Pi Zero 2W powered by Allwinner H618.
-  lede: Orange Pi Zero 2W pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi Zero 2W (Allwinner H618).
+  lede: Orange Pi Zero 2W — single-board computer powered by Allwinner H618.
 orange-pi-zero-3:
   title: Orange Pi Zero 3
   brand: Orange Pi
@@ -1653,10 +1914,10 @@ orange-pi-zero-3:
   image_width: 220
   image_height: 128
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-zero-3/
-  description: REG Linux image for Orange Pi Zero 3 powered by Allwinner H618.
-  lede: Orange Pi Zero 3 pairs the Allwinner H618 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Orange Pi Zero 3 (Allwinner H618).
+  lede: Orange Pi Zero 3 — single-board computer powered by Allwinner H618.
 pine64-quartzpro64:
-  title: Pine64
+  title: Pine64 QuartzPro64
   brand: Pine64
   manufacturer:
   - Pine64
@@ -1664,10 +1925,10 @@ pine64-quartzpro64:
   - Rockchip RK3588
   image: /assets/images/pine64-quartzpro64.webp
   board_url: https://reglinux.org/wiki/sbc/pine64/quartzpro64/
-  description: REG Linux image for Pine64 powered by Rockchip RK3588.
-  lede: Pine64 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Pine64 QuartzPro64 (Rockchip RK3588).
+  lede: Pine64 QuartzPro64 — single-board computer powered by Rockchip RK3588.
 pine64-rock64:
-  title: Pine64
+  title: Pine64 Rock64
   brand: Pine64
   manufacturer:
   - Pine64
@@ -1675,10 +1936,10 @@ pine64-rock64:
   - Rockchip RK3328
   image: /assets/images/pine64-rock64.webp
   board_url: https://reglinux.org/wiki/sbc/pine64/rock64/
-  description: REG Linux image for Pine64 powered by Rockchip RK3328.
-  lede: Pine64 pairs the Rockchip RK3328 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Pine64 Rock64 (Rockchip RK3328).
+  lede: Pine64 Rock64 — single-board computer powered by Rockchip RK3328.
 pine64-rockpro64:
-  title: Pine64
+  title: Pine64 RockPro64
   brand: Pine64
   manufacturer:
   - Pine64
@@ -1686,21 +1947,21 @@ pine64-rockpro64:
   - Rockchip RK3399
   image: /assets/images/pine64-rockpro64.webp
   board_url: https://reglinux.org/wiki/sbc/pine64/rockpro64/
-  description: REG Linux image for Pine64 powered by Rockchip RK3399.
-  lede: Pine64 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Pine64 RockPro64 (Rockchip RK3399).
+  lede: Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
 pocketgo-2:
-  title: Unknown POCKETGO2
-  brand: Unknown
+  title: PocketGo 2
+  brand: Powkiddy
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/pocketgo-2.webp
   board_url: https://reglinux.org/wiki/handhelds/unknown/pocketgo-2/
-  description: REG Linux image for Unknown POCKETGO2 powered by Ingenic JZ4770.
-  lede: Unknown POCKETGO2 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for PocketGo 2 (Ingenic JZ4770).
+  lede: PocketGo 2 — handheld powered by Ingenic JZ4770.
 powkiddy-rgb10:
-  title: RGB10
+  title: Powkiddy RGB10
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1710,13 +1971,21 @@ powkiddy-rgb10:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10/
-  description: REG Linux image for RGB10 powered by Rockchip RK3326.
-  lede: RGB10 pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy RGB10 (Rockchip RK3326).
+  lede: Powkiddy RGB10 — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   display_res: 480x320
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 powkiddy-rgb10-max-3:
   title: RGB10 Max 3
   brand: Powkiddy
@@ -1728,8 +1997,8 @@ powkiddy-rgb10-max-3:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3/
-  description: REG Linux image for RGB10 Max 3 powered by Rockchip RK3566.
-  lede: RGB10 Max 3 pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for RGB10 Max 3 (Rockchip RK3566).
+  lede: RGB10 Max 3 — handheld powered by Rockchip RK3566.
   display_size: 5 inch
   display_res: 1280x720
   ram: 1 GB LPDDR4
@@ -1737,6 +2006,13 @@ powkiddy-rgb10-max-3:
   wifi_chip: RTL8723DS
   bt_chip: RTL8723DS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rgb10-max-3-pro:
   title: RGB10 Max 3 Pro
   brand: Powkiddy
@@ -1748,10 +2024,10 @@ powkiddy-rgb10-max-3-pro:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3-pro/
-  description: REG Linux image for RGB10 Max 3 Pro powered by Amlogic A311D.
-  lede: RGB10 Max 3 Pro pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for RGB10 Max 3 Pro (Amlogic A311D).
+  lede: RGB10 Max 3 Pro — handheld powered by Amlogic A311D.
 powkiddy-rgb10x:
-  title: RGB10X
+  title: Powkiddy RGB10X
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1761,13 +2037,21 @@ powkiddy-rgb10x:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10x/
-  description: REG Linux image for RGB10X powered by Rockchip RK3326.
-  lede: RGB10X pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy RGB10X (Rockchip RK3326).
+  lede: Powkiddy RGB10X — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   display_res: 480x320
   ram: 1 GB DDR3L
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 powkiddy-rgb20-pro:
   title: RGB20 Pro
   brand: Powkiddy
@@ -1779,8 +2063,8 @@ powkiddy-rgb20-pro:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb20-pro/
-  description: REG Linux image for RGB20 Pro powered by Rockchip RK3566.
-  lede: RGB20 Pro pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for RGB20 Pro (Rockchip RK3566).
+  lede: RGB20 Pro — handheld powered by Rockchip RK3566.
   display_size: 3.2 inch
   display_res: 1024x768
   ram: 1 GB LPDDR4
@@ -1788,8 +2072,15 @@ powkiddy-rgb20-pro:
   wifi_chip: RTL8723DS
   bt_chip: RTL8723DS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rgb20sx:
-  title: RGB20SX
+  title: Powkiddy RGB20SX
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1799,8 +2090,8 @@ powkiddy-rgb20sx:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb20sx/
-  description: REG Linux image for RGB20SX powered by Rockchip RK3566.
-  lede: RGB20SX pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy RGB20SX (Rockchip RK3566).
+  lede: Powkiddy RGB20SX — handheld powered by Rockchip RK3566.
   display_size: 4 inch
   display_res: 720x720
   ram: 1 GB LPDDR4
@@ -1808,8 +2099,15 @@ powkiddy-rgb20sx:
   wifi_chip: RTL8723DS
   bt_chip: RTL8723DS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rgb30:
-  title: RGB30
+  title: Powkiddy RGB30
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1819,8 +2117,8 @@ powkiddy-rgb30:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb30/
-  description: REG Linux image for RGB30 powered by Rockchip RK3566.
-  lede: RGB30 pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy RGB30 (Rockchip RK3566).
+  lede: Powkiddy RGB30 — handheld powered by Rockchip RK3566.
   display_size: 4 inch
   display_res: 720x720
   ram: 1 GB LPDDR4
@@ -1828,8 +2126,15 @@ powkiddy-rgb30:
   wifi_chip: RTL8821CS
   bt_chip: RTL8821CS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-rk2023:
-  title: RK2023
+  title: Powkiddy RK2023
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1839,15 +2144,22 @@ powkiddy-rk2023:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/rk2023/
-  description: REG Linux image for RK2023 powered by Rockchip RK3566.
-  lede: RK2023 pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy RK2023 (Rockchip RK3566).
+  lede: Powkiddy RK2023 — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x35h:
-  title: X35H
+  title: Powkiddy X35H
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1857,15 +2169,22 @@ powkiddy-x35h:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/x35h/
-  description: REG Linux image for X35H powered by Rockchip RK3566.
-  lede: X35H pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy X35H (Rockchip RK3566).
+  lede: Powkiddy X35H — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4X
   storage: 4 GB eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x35s:
-  title: X35S
+  title: Powkiddy X35S
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1875,15 +2194,22 @@ powkiddy-x35s:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/x35s/
-  description: REG Linux image for X35S powered by Rockchip RK3566.
-  lede: X35S pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy X35S (Rockchip RK3566).
+  lede: Powkiddy X35S — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB LPDDR4X
   storage: 4 GB eMMC + SD
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x55:
-  title: X55
+  title: Powkiddy X55
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1893,8 +2219,8 @@ powkiddy-x55:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/x55/
-  description: REG Linux image for X55 powered by Rockchip RK3566.
-  lede: X55 pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy X55 (Rockchip RK3566).
+  lede: Powkiddy X55 — handheld powered by Rockchip RK3566.
   display_size: 5.5 inch
   display_res: 1280x720
   ram: 2 GB LPDDR4X (except some revisions which only have 1 GB)
@@ -1902,8 +2228,15 @@ powkiddy-x55:
   wifi_chip: 8821CS
   bt_chip: 8821CS
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-xu10:
-  title: XU10
+  title: Powkiddy XU10
   brand: Powkiddy
   manufacturer:
   - Powkiddy
@@ -1913,13 +2246,21 @@ powkiddy-xu10:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/xu10/
-  description: REG Linux image for XU10 powered by Rockchip RK3326.
-  lede: XU10 pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Powkiddy XU10 (Rockchip RK3326).
+  lede: Powkiddy XU10 — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB DDR4
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
+    or dd.'
 radxa-dragon-q6a:
   title: Radxa Dragon Q6A
   brand: Radxa
@@ -1931,8 +2272,8 @@ radxa-dragon-q6a:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/sbcs/radxa-dragon-q6a/
-  description: REG Linux image for Radxa Dragon Q6A powered by Qualcomm QCS6490.
-  lede: Radxa Dragon Q6A pairs the Qualcomm QCS6490 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa Dragon Q6A (Qualcomm QCS6490).
+  lede: Radxa Dragon Q6A — single-board computer powered by Qualcomm QCS6490.
 radxa-nio-12l:
   title: Radxa NIO 12L
   brand: Radxa
@@ -1944,8 +2285,8 @@ radxa-nio-12l:
   image_width: null
   image_height: null
   board_url: https://reglinux.org/wiki/sbcs/radxa-nio-12l/
-  description: REG Linux image for Radxa NIO 12L powered by Genio 1200 (MT8395).
-  lede: Radxa NIO 12L pairs the Genio 1200 (MT8395) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa NIO 12L (Genio 1200 (MT8395)).
+  lede: Radxa NIO 12L — single-board computer powered by Genio 1200 (MT8395).
 radxa-rock-3a:
   title: Radxa 3A
   brand: Radxa
@@ -1955,8 +2296,8 @@ radxa-rock-3a:
   - Rockchip RK3566/RK3568
   image: /assets/images/radxa-rock-3a.webp
   board_url: https://reglinux.org/wiki/sbc/radxa/rock-3a/
-  description: REG Linux image for Radxa 3A powered by Rockchip RK3566/RK3568.
-  lede: Radxa 3A pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa 3A (Rockchip RK3566/RK3568).
+  lede: Radxa 3A — single-board computer powered by Rockchip RK3566/RK3568.
 radxa-rock-3c:
   title: Radxa 3C
   brand: Radxa
@@ -1966,8 +2307,8 @@ radxa-rock-3c:
   - Rockchip RK3566/RK3568
   image: /assets/images/radxa-rock-3c.webp
   board_url: https://reglinux.org/wiki/sbc/radxa/rock-3c/
-  description: REG Linux image for Radxa 3C powered by Rockchip RK3566/RK3568.
-  lede: Radxa 3C pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa 3C (Rockchip RK3566/RK3568).
+  lede: Radxa 3C — single-board computer powered by Rockchip RK3566/RK3568.
 radxa-rock-5-itx:
   title: Radxa 5 Itx
   brand: Radxa
@@ -1977,8 +2318,8 @@ radxa-rock-5-itx:
   - Rockchip RK3588
   image: /assets/images/radxa-rock-5-itx.webp
   board_url: https://reglinux.org/wiki/sbc/radxa/rock-5-itx/
-  description: REG Linux image for Radxa 5 Itx powered by Rockchip RK3588.
-  lede: Radxa 5 Itx pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa 5 Itx (Rockchip RK3588).
+  lede: Radxa 5 Itx — single-board computer powered by Rockchip RK3588.
 radxa-rock-5a:
   title: Radxa Rock 5A
   brand: Radxa
@@ -1990,8 +2331,8 @@ radxa-rock-5a:
   image_width: 220
   image_height: 145
   board_url: https://reglinux.org/wiki/sbcs/radxa-rock-5a/
-  description: REG Linux image for Radxa Rock 5A powered by Rockchip RK3588.
-  lede: Radxa Rock 5A pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa Rock 5A (Rockchip RK3588).
+  lede: Radxa Rock 5A — single-board computer powered by Rockchip RK3588.
 radxa-rock-5b:
   title: Radxa Rock 5B
   brand: Radxa
@@ -2003,8 +2344,8 @@ radxa-rock-5b:
   image_width: 220
   image_height: 181
   board_url: https://reglinux.org/wiki/sbcs/radxa-rock-5b/
-  description: REG Linux image for Radxa Rock 5B powered by Rockchip RK3588.
-  lede: Radxa Rock 5B pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa Rock 5B (Rockchip RK3588).
+  lede: Radxa Rock 5B — single-board computer powered by Rockchip RK3588.
 radxa-rock-5c:
   title: Radxa 5C
   brand: Radxa
@@ -2014,10 +2355,10 @@ radxa-rock-5c:
   - Rockchip RK3588
   image: /assets/images/radxa-rock-5c.webp
   board_url: https://reglinux.org/wiki/sbc/radxa/rock-5c/
-  description: REG Linux image for Radxa 5C powered by Rockchip RK3588.
-  lede: Radxa 5C pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa 5C (Rockchip RK3588).
+  lede: Radxa 5C — single-board computer powered by Rockchip RK3588.
 radxa-rock-pi-4:
-  title: Radxa Pi 4B
+  title: Radxa Rock Pi 4B
   brand: Radxa
   manufacturer:
   - Radxa
@@ -2025,8 +2366,8 @@ radxa-rock-pi-4:
   - Rockchip RK3399
   image: /assets/images/radxa-rock-pi-4.webp
   board_url: https://reglinux.org/wiki/sbc/radxa/rock-pi-4/
-  description: REG Linux image for Radxa Pi 4B powered by Rockchip RK3399.
-  lede: Radxa Pi 4B pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa Rock Pi 4B (Rockchip RK3399).
+  lede: Radxa Rock Pi 4B — single-board computer powered by Rockchip RK3399.
 radxa-zero:
   title: Radxa Zero
   brand: Radxa
@@ -2038,8 +2379,8 @@ radxa-zero:
   image_width: 220
   image_height: 147
   board_url: https://reglinux.org/wiki/sbcs/radxa-zero/
-  description: REG Linux image for Radxa Zero powered by Amlogic S905Y2.
-  lede: Radxa Zero pairs the Amlogic S905Y2 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa Zero (Amlogic S905Y2).
+  lede: Radxa Zero — single-board computer powered by Amlogic S905Y2.
 radxa-zero-2:
   title: Radxa Zero 2
   brand: Radxa
@@ -2051,8 +2392,8 @@ radxa-zero-2:
   image_width: 220
   image_height: 125
   board_url: https://reglinux.org/wiki/sbcs/radxa-zero-2/
-  description: REG Linux image for Radxa Zero 2 powered by Amlogic A311D.
-  lede: Radxa Zero 2 pairs the Amlogic A311D SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Radxa Zero 2 (Amlogic A311D).
+  lede: Radxa Zero 2 — single-board computer powered by Amlogic A311D.
 raspberry-pi-2:
   title: Raspberry Pi 2
   brand: Raspberry
@@ -2064,8 +2405,8 @@ raspberry-pi-2:
   image_width: 220
   image_height: 145
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-2/
-  description: REG Linux image for Raspberry Pi 2 powered by Broadcom BCM2836.
-  lede: Raspberry Pi 2 pairs the Broadcom BCM2836 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi 2 (Broadcom BCM2836).
+  lede: Raspberry Pi 2 — single-board computer powered by Broadcom BCM2836.
 raspberry-pi-3:
   title: Raspberry Pi 3
   brand: Raspberry
@@ -2077,8 +2418,8 @@ raspberry-pi-3:
   image_width: 220
   image_height: 151
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-3/
-  description: REG Linux image for Raspberry Pi 3 powered by Broadcom BCM2837.
-  lede: Raspberry Pi 3 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi 3 (Broadcom BCM2837).
+  lede: Raspberry Pi 3 — single-board computer powered by Broadcom BCM2837.
 raspberry-pi-4:
   title: Raspberry Pi 4
   brand: Raspberry
@@ -2090,8 +2431,8 @@ raspberry-pi-4:
   image_width: 220
   image_height: 161
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-4/
-  description: REG Linux image for Raspberry Pi 4 powered by Broadcom BCM2711.
-  lede: Raspberry Pi 4 pairs the Broadcom BCM2711 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi 4 (Broadcom BCM2711).
+  lede: Raspberry Pi 4 — single-board computer powered by Broadcom BCM2711.
 raspberry-pi-400:
   title: Raspberry Pi 400
   brand: Raspberry
@@ -2103,8 +2444,8 @@ raspberry-pi-400:
   image_width: 220
   image_height: 101
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-400/
-  description: REG Linux image for Raspberry Pi 400 powered by Broadcom BCM2711.
-  lede: Raspberry Pi 400 pairs the Broadcom BCM2711 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi 400 (Broadcom BCM2711).
+  lede: Raspberry Pi 400 — single-board computer powered by Broadcom BCM2711.
 raspberry-pi-5:
   title: Raspberry Pi 5
   brand: Raspberry
@@ -2116,8 +2457,8 @@ raspberry-pi-5:
   image_width: 220
   image_height: 166
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-5/
-  description: REG Linux image for Raspberry Pi 5 powered by Broadcom BCM2712.
-  lede: Raspberry Pi 5 pairs the Broadcom BCM2712 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi 5 (Broadcom BCM2712).
+  lede: Raspberry Pi 5 — single-board computer powered by Broadcom BCM2712.
 raspberry-pi-a-a-b-b:
   title: Raspberry Pi A/A+/B/B+
   brand: Raspberry
@@ -2129,8 +2470,8 @@ raspberry-pi-a-a-b-b:
   image_width: 220
   image_height: 157
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-a-a-b-b/
-  description: REG Linux image for Raspberry Pi A/A+/B/B+ powered by Broadcom BCM2835.
-  lede: Raspberry Pi A/A+/B/B+ pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi A/A+/B/B+ (Broadcom BCM2835).
+  lede: Raspberry Pi A/A+/B/B+ — single-board computer powered by Broadcom BCM2835.
 raspberry-pi-zero:
   title: Raspberry Pi Zero
   brand: Raspberry
@@ -2142,8 +2483,8 @@ raspberry-pi-zero:
   image_width: 220
   image_height: 160
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-zero/
-  description: REG Linux image for Raspberry Pi Zero powered by Broadcom BCM2835.
-  lede: Raspberry Pi Zero pairs the Broadcom BCM2835 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi Zero (Broadcom BCM2835).
+  lede: Raspberry Pi Zero — single-board computer powered by Broadcom BCM2835.
 raspberry-pi-zero-2:
   title: Raspberry Pi Zero 2
   brand: Raspberry
@@ -2155,8 +2496,8 @@ raspberry-pi-zero-2:
   image_width: 220
   image_height: 108
   board_url: https://reglinux.org/wiki/sbcs/raspberry-pi-zero-2/
-  description: REG Linux image for Raspberry Pi Zero 2 powered by Broadcom BCM2837.
-  lede: Raspberry Pi Zero 2 pairs the Broadcom BCM2837 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Raspberry Pi Zero 2 (Broadcom BCM2837).
+  lede: Raspberry Pi Zero 2 — single-board computer powered by Broadcom BCM2837.
 retroid-pocket-5:
   title: Retroid Pocket 5
   brand: Retroid
@@ -2168,8 +2509,8 @@ retroid-pocket-5:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-5/
-  description: REG Linux image for Retroid Pocket 5 powered by Qualcomm SD865 (SM8250).
-  lede: Retroid Pocket 5 pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Retroid Pocket 5 (Qualcomm SD865 (SM8250)).
+  lede: Retroid Pocket 5 — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
 retroid-pocket-6:
   title: Retroid Pocket RP6
@@ -2180,8 +2521,8 @@ retroid-pocket-6:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/retroid-pocket-6.webp
   board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-6/
-  description: REG Linux image for Retroid Pocket RP6 powered by Qualcomm 8gen2 (SM8550).
-  lede: Retroid Pocket RP6 pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Retroid Pocket RP6 (Qualcomm 8gen2 (SM8550)).
+  lede: Retroid Pocket RP6 — handheld powered by Qualcomm 8gen2 (SM8550).
 retroid-pocket-flip2:
   title: Retroid Pocket Flip2
   brand: Retroid
@@ -2193,8 +2534,8 @@ retroid-pocket-flip2:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-flip2/
-  description: REG Linux image for Retroid Pocket Flip2 powered by Qualcomm SD865 (SM8250).
-  lede: Retroid Pocket Flip2 pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Retroid Pocket Flip2 (Qualcomm SD865 (SM8250)).
+  lede: Retroid Pocket Flip2 — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
 retroid-pocket-mini:
   title: Retroid Pocket Mini
@@ -2207,22 +2548,22 @@ retroid-pocket-mini:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-mini/
-  description: REG Linux image for Retroid Pocket Mini powered by Qualcomm SD865 (SM8250).
-  lede: Retroid Pocket Mini pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Retroid Pocket Mini (Qualcomm SD865 (SM8250)).
+  lede: Retroid Pocket Mini — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
 rs97:
-  title: Unknown RS97
-  brand: Unknown
+  title: RS-97
+  brand: Unbranded
   manufacturer:
   - Unknown
   soc:
   - Ingenic JZ4770
   image: /assets/images/rs97.webp
   board_url: https://reglinux.org/wiki/other/unknown/rs97/
-  description: REG Linux image for Unknown RS97 powered by Ingenic JZ4770.
-  lede: Unknown RS97 pairs the Ingenic JZ4770 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for RS-97 (Ingenic JZ4770).
+  lede: RS-97 — device powered by Ingenic JZ4770.
 sipeed-lichee-pi-4a:
-  title: Sipeed Pi 4A
+  title: Sipeed LicheePi 4A
   brand: Sipeed
   manufacturer:
   - Sipeed
@@ -2230,8 +2571,8 @@ sipeed-lichee-pi-4a:
   - T-Head TH1520
   image: /assets/images/sipeed-lichee-pi-4a.webp
   board_url: https://reglinux.org/wiki/sbc/sipeed/lichee-pi-4a/
-  description: REG Linux image for Sipeed Pi 4A powered by T-Head TH1520.
-  lede: Sipeed Pi 4A pairs the T-Head TH1520 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Sipeed LicheePi 4A (T-Head TH1520).
+  lede: Sipeed LicheePi 4A — single-board computer powered by T-Head TH1520.
 starfive-visionfive-2:
   title: StarFive VisionFive 2
   brand: Starfive
@@ -2243,8 +2584,8 @@ starfive-visionfive-2:
   image_width: 220
   image_height: 153
   board_url: https://reglinux.org/wiki/sbcs/starfive-visionfive-2/
-  description: REG Linux image for StarFive VisionFive 2 powered by StarFive JH7110.
-  lede: StarFive VisionFive 2 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for StarFive VisionFive 2 (StarFive JH7110).
+  lede: StarFive VisionFive 2 — single-board computer powered by StarFive JH7110.
 steam-deck:
   title: Steam Deck
   brand: Valve
@@ -2256,8 +2597,8 @@ steam-deck:
   image_width: 220
   image_height: 82
   board_url: https://reglinux.org/wiki/handhelds/x86_64/steam-deck/
-  description: REG Linux image for Steam Deck powered by AMD Zen 2 APU.
-  lede: Steam Deck pairs the AMD Zen 2 APU SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Steam Deck (AMD Zen 2 APU).
+  lede: Steam Deck — PC powered by AMD Zen 2 APU.
 tronsmart-s82:
   title: Tronsmart S82
   brand: Tronsmart
@@ -2267,30 +2608,30 @@ tronsmart-s82:
   - Amlogic S812
   image: /assets/images/tronsmart-s82.webp
   board_url: https://reglinux.org/wiki/sbc/tronsmart/s82/
-  description: REG Linux image for Tronsmart S82 powered by Amlogic S812.
-  lede: Tronsmart S82 pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Tronsmart S82 (Amlogic S812).
+  lede: Tronsmart S82 — TV box powered by Amlogic S812.
 tronsmart-vega-s96:
-  title: Unknown Vega S96
-  brand: Unknown
+  title: Tronsmart Vega S96
+  brand: Tronsmart
   manufacturer:
   - Unknown
   soc:
   - Amlogic S912
   image: /assets/images/tronsmart-vega-s96.webp
   board_url: https://reglinux.org/wiki/sbc/unknown/tronsmart-vega-s96/
-  description: REG Linux image for Unknown Vega S96 powered by Amlogic S912.
-  lede: Unknown Vega S96 pairs the Amlogic S912 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Tronsmart Vega S96 (Amlogic S912).
+  lede: Tronsmart Vega S96 — TV box powered by Amlogic S912.
 tx3-mini:
-  title: Unknown TX3 Mini
-  brand: Unknown
+  title: Tanix TX3 Mini
+  brand: Tanix
   manufacturer:
   - Unknown
   soc:
   - Amlogic S905(X)
   image: /assets/images/tx3-mini.webp
   board_url: https://reglinux.org/wiki/other/unknown/tx3-mini/
-  description: REG Linux image for Unknown TX3 Mini powered by Amlogic S905(X).
-  lede: Unknown TX3 Mini pairs the Amlogic S905(X) SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Tanix TX3 Mini (Amlogic S905(X)).
+  lede: Tanix TX3 Mini — TV box powered by Amlogic S905(X).
 unbranded-game-console-r33s:
   title: Game Console R33S
   brand: Unbranded
@@ -2302,13 +2643,21 @@ unbranded-game-console-r33s:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/unbranded/game-console-r33s/
-  description: REG Linux image for Game Console R33S powered by Rockchip RK3326.
-  lede: Game Console R33S pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Game Console R33S (Rockchip RK3326).
+  lede: Game Console R33S — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB (some revisions 512 MB) DDR3
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.'
 unbranded-game-console-r35s-r36s:
   title: Game Console R35S R36S
   brand: Unbranded
@@ -2320,15 +2669,54 @@ unbranded-game-console-r35s-r36s:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/unbranded/game-console-r35s-r36s/
-  description: REG Linux image for Game Console R35S R36S powered by Rockchip RK3326.
-  lede: Game Console R35S R36S pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for Game Console R35S R36S (Rockchip RK3326).
+  lede: Game Console R35S R36S — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
   display_res: 640x480
   ram: 1 GB DDR3
   storage: SD only
   compositor: Sway
+  install_notes: '## Install REG Linux
+
+
+    ### Installation
+
+
+    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
+    the Installation guide.
+
+
+    ### New displays (R36s of year 2024)
+
+
+    Recent R36s have new displays that need some extra actions to work.
+
+
+    The simplest way so far is:
+
+
+    - Determine which panel do you have (or just try every option until it works)
+
+    - Download a mipi-panel.dtbo.r36s-panel* there [there](https://github.com/stolen/r.nix-distribution/releases/tag/panel_overlays)
+
+    - Rename the downloaded file and put it to a boot ( REG Linux ) partition as overlays/mipi-panel.dtbo
+
+
+    These files mostly have just basic refresh rate (77.378 FPS) ( panel4 has 50, 60, 75 because we tested it)
+
+
+    If you have an original .dtb file, you can generate a mipi-panel.dtbo from it. Assuming you have an SSH access and you
+    have scp ''d the original dtb as rk3326-r35s-linux.dtb , the process would be as follows: RK3326:~ # mount -o remount,rw
+    /flash RK3326:~ # mkdir -p /flash/overlays/ RK3326:~ # # ## Be not afraid! importpanel.py may run for a minute or two
+    for some panels RK3326:~ # /usr/libexec/generic-dsi/importpanel.py rk3326-r35s-linux.dtb -O dtbo -o /flash/overlays/mipi-panel.dtbo
+    RK3326:~ # sync ; mount -o remount,ro /flash/ Here we just make an overlays directory writable, then call a script that
+    does all the importing stuff. Feel free to run this script on your PC, modify it and experiment with panel timings.
+
+
+    This script adds a bunch of potentially useful refresh rates, but we have very few knowledge on which modes work well.
+    Please check them with wlr-randr or with game configuration and tell us which modes work with your panel.'
 unbranded-ps5000:
-  title: Unbranded
+  title: PS5000
   brand: Unbranded
   manufacturer:
   - Unbranded
@@ -2336,10 +2724,10 @@ unbranded-ps5000:
   - Rockchip RK3128
   image: /assets/images/unbranded-ps5000.webp
   board_url: https://reglinux.org/wiki/handhelds/unbranded/ps5000/
-  description: REG Linux image for Unbranded powered by Rockchip RK3128.
-  lede: Unbranded pairs the Rockchip RK3128 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for PS5000 (Rockchip RK3128).
+  lede: PS5000 — handheld powered by Rockchip RK3128.
 unbranded-ps7000:
-  title: Unbranded
+  title: PS7000
   brand: Unbranded
   manufacturer:
   - Unbranded
@@ -2347,8 +2735,8 @@ unbranded-ps7000:
   - Rockchip RK3128
   image: /assets/images/unbranded-ps7000.webp
   board_url: https://reglinux.org/wiki/handhelds/unbranded/ps7000/
-  description: REG Linux image for Unbranded powered by Rockchip RK3128.
-  lede: Unbranded pairs the Rockchip RK3128 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for PS7000 (Rockchip RK3128).
+  lede: PS7000 — handheld powered by Rockchip RK3128.
 unbranded-rk3326-clones:
   title: RK3326 clones (including K36 and BatleXP G350)
   brand: Unbranded
@@ -2360,25 +2748,36 @@ unbranded-rk3326-clones:
   image_width: 220
   image_height: 130
   board_url: https://reglinux.org/wiki/handhelds/unbranded/rk3326-clones/
-  description: REG Linux image for RK3326 clones (including K36 and BatleXP G350) powered by Rockchip RK3326.
-  lede: RK3326 clones (including K36 and BatleXP G350) pairs the Rockchip RK3326 SoC with the REG Linux stack for a polished
-    retro console.
+  description: REG Linux for RK3326 clones (including K36 and BatleXP G350) (Rockchip RK3326).
+  lede: RK3326 clones (including K36 and BatleXP G350) — handheld powered by Rockchip RK3326.
   display_size: 4.0 inch
   display_res: 720x720
   ram: usually 1 GB DDR3, sometimes 512M
   storage: 8 GB (often) eMMC + SD
   compositor: Sway
+  install_notes: '## Installation notes
+
+
+    1. Grab the image. Download the latest RK3326 clones (including K36 and BatleXP G350) build from the downloads page.
+
+
+    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure
+    to verify the checksum before booting.
+
+
+    3. First boot setup. Insert the media into your RK3326 clones (including K36 and BatleXP G350), power on, and let REG
+    Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.'
 vamrs-rock960:
-  title: Unknown ROCK960
-  brand: Unknown
+  title: 96Boards Rock960
+  brand: Vamrs
   manufacturer:
   - Unknown
   soc:
   - Rockchip RK3399
   image: /assets/images/vamrs-rock960.webp
   board_url: https://reglinux.org/wiki/other/unknown/vamrs-rock960/
-  description: REG Linux image for Unknown ROCK960 powered by Rockchip RK3399.
-  lede: Unknown ROCK960 pairs the Rockchip RK3399 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for 96Boards Rock960 (Rockchip RK3399).
+  lede: 96Boards Rock960 — device powered by Rockchip RK3399.
 wetek-core:
   title: WeTek Core
   brand: WeTek
@@ -2388,8 +2787,8 @@ wetek-core:
   - Amlogic S812
   image: /assets/images/wetek-core.webp
   board_url: https://reglinux.org/wiki/sbc/wetek/core/
-  description: REG Linux image for WeTek Core powered by Amlogic S812.
-  lede: WeTek Core pairs the Amlogic S812 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for WeTek Core (Amlogic S812).
+  lede: WeTek Core — TV box powered by Amlogic S812.
 x96-air:
   title: X96 Air
   brand: X96
@@ -2399,8 +2798,8 @@ x96-air:
   - Amlogic S905X3
   image: /assets/images/x96-air.webp
   board_url: https://reglinux.org/wiki/sbc/x96/air/
-  description: REG Linux image for X96 Air powered by Amlogic S905X3.
-  lede: X96 Air pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for X96 Air (Amlogic S905X3).
+  lede: X96 Air — TV box powered by Amlogic S905X3.
 x96-mate:
   title: X96 Mate
   brand: X96
@@ -2410,8 +2809,8 @@ x96-mate:
   - Allwinner H616
   image: /assets/images/x96-mate.webp
   board_url: https://reglinux.org/wiki/sbc/x96/mate/
-  description: REG Linux image for X96 Mate powered by Allwinner H616.
-  lede: X96 Mate pairs the Allwinner H616 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for X96 Mate (Allwinner H616).
+  lede: X96 Mate — TV box powered by Allwinner H616.
 x96-max-plus:
   title: X96 Max Plus
   brand: X96
@@ -2421,16 +2820,16 @@ x96-max-plus:
   - Amlogic S905X3
   image: /assets/images/x96-max-plus.webp
   board_url: https://reglinux.org/wiki/sbc/x96/max-plus/
-  description: REG Linux image for X96 Max Plus powered by Amlogic S905X3.
-  lede: X96 Max Plus pairs the Amlogic S905X3 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for X96 Max Plus (Amlogic S905X3).
+  lede: X96 Max Plus — TV box powered by Amlogic S905X3.
 xpi-3128:
-  title: Unknown Xpi 3128
-  brand: Unknown
+  title: XPi 3128
+  brand: Unbranded
   manufacturer:
   - Unknown
   soc:
   - Rockchip RK3128
   image: /assets/images/xpi-3128.webp
   board_url: https://reglinux.org/wiki/other/unknown/xpi-3128/
-  description: REG Linux image for Unknown Xpi 3128 powered by Rockchip RK3128.
-  lede: Unknown Xpi 3128 pairs the Rockchip RK3128 SoC with the REG Linux stack for a polished retro console.
+  description: REG Linux for XPi 3128 (Rockchip RK3128).
+  lede: XPi 3128 — device powered by Rockchip RK3128.

@@ -1,56 +1,16 @@
 ---
+noindex: true
 layout: default
 title: Game Engines
 body_class: engines
 permalink: /engines/
-description: Learn about the curated open souce engines REG Linux comes with and what you can do with.
+description: Game engines bundled with REG Linux — redirects to the unified Play page.
 ---
-{% assign engines = site.data.engines %}
-{% include site-header.html nav_current="engines" %}
-
+{% include site-header.html nav_current="play" %}
+<meta http-equiv="refresh" content="0;url={{ '/play/#engines' | relative_url }}" />
 <main>
-  <section class="hero doc-hero">
-    <div class="hero-text">
-      <p class="eyebrow">Engine companions</p>
-      <h1>Open-source runtimes</h1>
-      <p class="lede">
-        Eight curated engines — from ScummVM and EasyRPG to OpenBOR and Singe — let you launch story adventures,
-        beat ’em ups, RPG Maker classics, Flash games, and LaserDisc FMV without fuss.
-      </p>
-      <div class="hero-cta">
-        <a class="btn primary" href="https://reglinux.org/wiki/engines/" target="_blank" rel="noreferrer">Browse the engine guides</a>
-      </div>
-    </div>
-    <div class="hero-media">
-      <figure>
-        <img src="{{ '/assets/images/engines/engines-hero.png' | relative_url }}" alt="Collage of REG Linux engine logos" loading="lazy" />
-        <figcaption>Every engine pairs with curated ROM metadata.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section-heading">
-    <p class="eyebrow">Browse our wiki</p>
-    <h2>Engine-specific instructions</h2>
-    <p>Each entry in the wiki describes the engines, supported formats, and best practices for enjoying your content into REG Linux.</p>
-  </section>
-
-  <div class="engine-grid">
-    {% for engine in engines %}
-      <article class="card engine-card">
-        <figure class="engine-logo">
-          {% for logo in engine.logos %}
-            <img src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}" loading="lazy" />
-          {% endfor %}
-        </figure>
-        <h3>{{ engine.name }}</h3>
-        <p>{{ engine.description }}</p>
-        <a class="btn secondary" href="{{ engine.url }}" target="_blank" rel="noreferrer">{{ engine.cta_label }}</a>
-      </article>
-    {% endfor %}
-  </div>
-
-  <section class="doc-actions">
-    <a class="btn primary" href="https://reglinux.org/wiki/engines/" target="_blank" rel="noreferrer">Open the engines directory</a>
+  <section class="hero" style="text-align: center; padding: 4rem 2rem;">
+    <h1>This page has moved</h1>
+    <p class="lede">Game engines are now listed on the <a href="{{ '/play/#engines' | relative_url }}">Play</a> page.</p>
   </section>
 </main>

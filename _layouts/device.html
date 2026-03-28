@@ -15,245 +15,73 @@ layout: default
 {% assign device_image_small = device_image | replace: '.webp', '-sm.webp' %}
 {% assign device_image_small_width = device_image_width | divided_by: 2 %}
 {% assign device_board_url = page.board_url | default: device_lookup.board_url %}
-{% assign device_description = page.description | default: device_lookup.description | default: "REG Linux image for " | append: device_title | append: "." %}
-{% assign raw_manufacturer = page.manufacturer | default: device_lookup.manufacturer %}
-{% if raw_manufacturer %}
-  {% assign manufacturers_list = raw_manufacturer %}
-{% else %}
-  {% assign manufacturers_list = 'Unknown' | split: "|" %}
-{% endif %}
 {% assign raw_soc = page.soc | default: device_lookup.soc %}
-{% if raw_soc %}
-  {% assign soc_list = raw_soc %}
-{% else %}
-  {% assign soc_list = 'Unknown' | split: "|" %}
-{% endif %}
+{% if raw_soc %}{% assign soc_list = raw_soc %}{% else %}{% assign soc_list = 'Unknown' | split: "|" %}{% endif %}
 {% assign soc_text = soc_list | join: ', ' %}
-{% assign notes_summary = device_notes.summary %}
-{% assign device_lede = page.lede | default: notes_summary | default: device_lookup.lede | default: device_title | append: " pairs the " | append: soc_text | append: " SoC with the REG Linux stack for a polished retro console." %}
-{% assign board_link = device_board_url | default: "https://reglinux.org" %}
-{% assign device_url = '/download/' | append: device_slug | append: '/' | relative_url %}
 {% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
-{% assign soc_identifier = soc_list | first | default: '' %}
-{% assign normalized_soc = soc_identifier | downcase %}
-{% assign board_info = nil %}
-{% for board_entry in site.data.board_families %}
-  {% if board_info == nil %}
-    {% assign family = board_entry[1] %}
-    {% for soc_key in family.soCs %}
-      {% assign normalized_key = soc_key | downcase %}
-      {% if normalized_soc contains normalized_key %}
-        {% assign board_info = family %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-{% include site-header.html nav_current="download" ghost_label="Back to downloads" %}
+{% include site-header.html nav_current="download" ghost_label="All devices" ghost_href="/download/" %}
 
 <main>
-  {% assign brand_anchor = device_brand | slugify %}
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <a href="{{ '/' | relative_url }}">Home</a>
     <span class="crumb-sep">/</span>
     <a href="{{ '/download/' | relative_url }}">Download</a>
     <span class="crumb-sep">/</span>
-    <a href="{{ '/download/' | relative_url }}#brand-{{ brand_anchor }}">{{ device_brand }}</a>
-    <span class="crumb-sep">/</span>
     <span aria-current="page">{{ device_title }}</span>
   </nav>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "{{ '/' | absolute_url }}"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Download",
-          "item": "{{ '/download/' | absolute_url }}"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "{{ device_title }}",
-          "item": "{{ device_url | absolute_url }}"
-        }
-      ]
-    }
-  </script>
 
-  <section class="hero download-hero device-hero">
-    <div class="hero-text">
-      <p class="eyebrow">REG Linux device image</p>
+  <!-- Compact hero: image left, info right — side by side -->
+  <section class="dev-hero">
+    {% if device_image %}
+      <div class="dev-hero-img">
+        <img src="{{ device_image | relative_url }}" alt="{{ device_title }}" loading="eager"
+             {% if device_image_width %}width="{{ device_image_width }}" height="{{ device_image_height }}"{% endif %} />
+      </div>
+    {% endif %}
+    <div class="dev-hero-info">
       <h1>{{ device_title }}</h1>
-      <p class="lede">{{ device_lede }}</p>
-      <div class="hero-cta">
-        <a class="btn primary" href="{{ '/download/' | relative_url }}#brand-{{ device_brand | slugify }}">More {{ device_brand }} devices</a>
-        <a class="btn secondary" href="{{ board_link }}" target="_blank" rel="noreferrer">Official board page</a>
-      </div>
-      <ul class="hero-highlights">
-        <li>Manufacturer: {{ manufacturers_list | join: ', ' }}</li>
-        <li>SoC: {{ soc_list | join: ', ' }}</li>
-        <li><a href="{{ device_download }}" target="_blank" rel="noreferrer">Download image</a></li>
-      </ul>
-    </div>
-    <div class="hero-media">
-      <div class="device-quick-card">
-        <div class="device-quick-media">
-          {% if device_image %}
-            <img src="{{ device_image | relative_url }}"
-                 alt="{{ device_title }}"
-                 loading="lazy"
-                 decoding="async"
-                 {% if device_image_width %}width="{{ device_image_width }}"{% endif %}
-                 {% if device_image_height %}height="{{ device_image_height }}"{% endif %}
-                 {% if device_image_width and device_image_height %}
-                 srcset="{{ device_image_small | relative_url }} {{ device_image_small_width }}w, {{ device_image | relative_url }} {{ device_image_width }}w"
-                 sizes="(max-width: 600px) {{ device_image_small_width }}px, {{ device_image_width }}px"
-                 {% endif %}
-            />
-          {% endif %}
-        </div>
-        <div class="device-quick-info">
-          <h3>Quick specs</h3>
-          <ul class="device-quick-list">
-            <li><strong>Manufacturer:</strong> {{ manufacturers_list | join: ', ' }}</li>
-            <li><strong>SoC:</strong> {{ soc_list | join: ', ' }}</li>
-            <li><strong>Download:</strong> Coming soon</li>
-          </ul>
-        </div>
+      <p class="dev-meta">{{ device_brand }} &middot; {{ soc_text }}</p>
+      <div class="dev-cta">
+        <a class="btn primary" href="{{ device_download }}" target="_blank" rel="noreferrer">Download</a>
+        <a class="btn secondary" href="https://compat.reglinux.org/device/{{ device_slug }}" target="_blank" rel="noreferrer">Compatibility</a>
       </div>
     </div>
   </section>
 
-  {% if device_notes %}
-    <section class="device-notes cv-auto">
-      <div class="section-heading">
-        <p class="eyebrow">Device notes</p>
-        <h2>What to expect on {{ device_title }}</h2>
-        {% if device_notes.summary and device_lede != device_notes.summary %}
-          <p>{{ device_notes.summary }}</p>
-        {% endif %}
-      </div>
-      <div class="notes-grid">
-        {% if device_notes.best_for %}
-          <article class="note-card">
-            <h3>Best for</h3>
-            <p>{{ device_notes.best_for }}</p>
-          </article>
-        {% endif %}
-        {% if device_notes.field_notes %}
-          <article class="note-card">
-            <h3>Field notes</h3>
-            <ul>
-              {% for note in device_notes.field_notes %}
-                <li>{{ note }}</li>
-              {% endfor %}
-            </ul>
-          </article>
-        {% endif %}
-        {% if device_notes.known_limits %}
-          <article class="note-card">
-            <h3>Known limits</h3>
-            <ul>
-              {% for limit in device_notes.known_limits %}
-                <li>{{ limit }}</li>
-              {% endfor %}
-            </ul>
-          </article>
-        {% endif %}
-        {% if device_notes.compatibility_checks %}
-          <article class="note-card">
-            <h3>Compatibility checks</h3>
-            <div class="compatibility-chips">
-              {% for check in device_notes.compatibility_checks %}
-                <span class="chip">{{ check }}</span>
-              {% endfor %}
-            </div>
-          </article>
-        {% endif %}
-      </div>
-    </section>
-  {% endif %}
-
-  <section class="device-specs cv-auto">
-    <div class="section-heading">
-      <p class="eyebrow">Hardware specifications</p>
-      <h2>Built for {{ device_brand }}</h2>
-      <p>REG Linux targets this hardware profile so you can flash and play without manual tweaking.</p>
-    </div>
-    <div class="spec-grid">
-      <div class="spec-card">
-        <h3>Manufacturer</h3>
-        <p>{{ manufacturers_list | join: ', ' }}</p>
-      </div>
-      <div class="spec-card">
-        <h3>SoC</h3>
-        <p>{{ soc_list | join: ', ' }}</p>
-      </div>
-      <div class="spec-card">
-        <h3>Download link</h3>
-        <a class="btn primary large" href="{{ device_download }}" target="_blank" rel="noreferrer">Coming soon</a>
-      </div>
-    </div>
+  <!-- Widget: specs + compat -->
+  <section class="dev-widget">
+    <div data-reg-compat="{{ device_slug }}:specs"></div>
+    <script src="https://compat.reglinux.org/widget.js"></script>
   </section>
 
-  <section class="install-notes cv-auto">
-    <div class="section-heading">
-      <p class="eyebrow">Install notes</p>
-      <h2>Flash {{ device_title }} and boot</h2>
-      <p>Follow the workflow below; the official board page contains any extra quirks for the {{ soc_list | join: ', ' }} platform.</p>
-    </div>
-    <ol class="steps">
-      <li>
-        <strong>Grab the image.</strong> Download the latest {{ device_title }} build from the downloads page or the <a href="{{ board_link }}" target="_blank" rel="noreferrer">official board entry</a>.
-      </li>
-      <li>
-        <strong>Flash to storage.</strong> Use <a href="https://etcher.balena.io/" target="_blank" rel="noreferrer">balenaEtcher</a>, <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noreferrer">Raspberry Pi Imager</a>, or `dd` to write the image to an SD card or SSD. Make sure to verify the checksum before booting.
-      </li>
-      <li>
-        <strong>First boot setup.</strong> Insert the media into your {{ device_title }}, power on, and let REG Linux expand the filesystem. Pair controllers inside REG-Station once prompted.
-      </li>
-      <li>
-        <strong>Troubleshoot with rescue tools.</strong> REG Linux ships with an immutable base and rescue partition—if something breaks, reboot into rescue or reflash without touching your ROMs.
-      </li>
+  <!-- Install — compact, no card wrapper -->
+  <section class="dev-install">
+    <h2>Installation</h2>
+    <ol>
+      <li><strong>Download.</strong> Get the latest {{ device_title }} image from the <a href="{{ device_download }}" target="_blank" rel="noreferrer">downloads page</a>{% if device_board_url %} or the <a href="{{ device_board_url }}" target="_blank" rel="noreferrer">wiki</a>{% endif %}.</li>
+      <li><strong>Flash.</strong> Write to SD card or SSD with <a href="https://etcher.balena.io/" target="_blank" rel="noreferrer">balenaEtcher</a> or <code>dd</code>.</li>
+      <li><strong>Boot.</strong> Insert media, power on. Controllers pair on first boot.</li>
+      <li><strong>Rescue.</strong> If something breaks, reboot into rescue mode.</li>
     </ol>
   </section>
 
-  {% if board_info %}
-    <section class="board-details cv-auto">
-      <div class="section-heading">
-        <p class="eyebrow">Board family guidance</p>
-        <h2>{{ board_info.title }}</h2>
-        <p>{{ board_info.summary }}</p>
-        <p class="small">SoCs tracked: {{ board_info.soCs | join: ', ' }}</p>
-      </div>
-      <div class="board-grid">
-        <article class="card">
-          <h3>What to keep in mind</h3>
-          <ul>
-            {% for highlight in board_info.highlights %}
-              <li>{{ highlight }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Learn more</h3>
-          <p>Drill into the wiki board entry for scripts, overlays, and developer reminders.</p>
-          <a class="btn secondary" href="{{ board_info.wiki_url }}" target="_blank" rel="noreferrer">
-            View wiki guide
-          </a>
-        </article>
-      </div>
-    </section>
+  {% if device_notes %}
+    {% if device_notes.best_for or device_notes.field_notes or device_notes.known_limits %}
+      <section class="dev-notes">
+        <h2>Notes</h2>
+        {% if device_notes.best_for %}<p>{{ device_notes.best_for }}</p>{% endif %}
+        {% if device_notes.field_notes %}
+          <ul>{% for note in device_notes.field_notes %}<li>{{ note }}</li>{% endfor %}</ul>
+        {% endif %}
+        {% if device_notes.known_limits %}
+          <h3>Known issues</h3>
+          <ul>{% for limit in device_notes.known_limits %}<li>{{ limit }}</li>{% endfor %}</ul>
+        {% endif %}
+      </section>
+    {% endif %}
   {% endif %}
 
+  <!-- Related devices -->
   {% assign related_devices = "" | split: "" %}
   {% for entry in site.data.devices %}
     {% assign slug = entry[0] %}
@@ -262,63 +90,90 @@ layout: default
       {% assign related_devices = related_devices | push: slug %}
     {% endif %}
   {% endfor %}
-  {% if related_devices.size < 3 and soc_identifier != "" %}
-    {% for entry in site.data.devices %}
-      {% assign slug = entry[0] %}
-      {% assign device = entry[1] %}
-      {% if slug != device_slug and device.soc contains soc_identifier %}
-        {% unless related_devices contains slug %}
-          {% assign related_devices = related_devices | push: slug %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
   {% if related_devices.size > 0 %}
-    <section class="related-devices cv-auto">
-      <div class="section-heading">
-        <p class="eyebrow">Related devices</p>
-        <h2>More hardware to explore</h2>
-        <p>Devices in the same family or sharing the same core SoC.</p>
-      </div>
-      <div class="related-grid">
-        {% for related_slug in related_devices limit: 3 %}
-          {% assign related_device = site.data.devices[related_slug] %}
-          {% assign related_image_small = related_device.image | replace: '.webp', '-sm.webp' %}
-          {% assign related_small_width = related_device.image_width | divided_by: 2 %}
-          <a class="device-card" href="{{ '/download/' | append: related_slug | append: '/' | relative_url }}">
-            <div class="device-media">
-              <img src="{{ related_device.image | relative_url }}"
-                   alt="{{ related_device.title }}"
-                   loading="lazy"
-                   decoding="async"
-                   {% if related_device.image_width %}width="{{ related_device.image_width }}"{% endif %}
-                   {% if related_device.image_height %}height="{{ related_device.image_height }}"{% endif %}
-                   {% if related_device.image_width and related_device.image_height %}
-                   srcset="{{ related_image_small | relative_url }} {{ related_small_width }}w, {{ related_device.image | relative_url }} {{ related_device.image_width }}w"
-                   sizes="(max-width: 600px) {{ related_small_width }}px, {{ related_device.image_width }}px"
-                   {% endif %}
-              />
-            </div>
-            <h3>{{ related_device.title }}</h3>
-            <p>{{ related_device.soc | join: ', ' }}</p>
-            <span class="chip">View device page</span>
+    <section class="dev-related">
+      <h2>More {{ device_brand }} devices</h2>
+      <div class="dev-related-grid">
+        {% for related_slug in related_devices limit: 4 %}
+          {% assign rd = site.data.devices[related_slug] %}
+          <a class="dev-related-card" href="{{ '/download/' | append: related_slug | append: '/' | relative_url }}">
+            {% if rd.image %}<img src="{{ rd.image | relative_url }}" alt="{{ rd.title }}" loading="lazy" />{% endif %}
+            <span>{{ rd.title }}</span>
           </a>
         {% endfor %}
       </div>
     </section>
   {% endif %}
 
-  <div class="cta-panel cv-auto">
-    <div>
-      <h3>Need a refresher?</h3>
-      <p>Cross-check kernel notes, device trees, or wiring tips on the <a href="{{ board_link }}" target="_blank" rel="noreferrer">{{ device_title }} board page</a>.</p>
-    </div>
-    <a class="btn primary" href="{{ '/download/' | relative_url }}">Back to downloads</a>
+  <div style="text-align: center; margin-top: 1.5rem;">
+    <a class="btn secondary" href="{{ '/download/' | relative_url }}">Browse all devices</a>
   </div>
 </main>
 
+<style>
+/* Compact device page layout */
+.dev-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.dev-hero-img { flex-shrink: 0; }
+.dev-hero-img img { max-width: 180px; max-height: 160px; object-fit: contain; border-radius: 12px; }
+.dev-hero-info h1 { margin: 0 0 0.3rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+.dev-meta { color: var(--text-muted); font-size: 0.9rem; margin: 0 0 0.75rem; font-family: 'JetBrains Mono', monospace; }
+.dev-cta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.dev-widget { margin: 0; }
+
+.dev-install { margin: 0; }
+.dev-install h2 { font-size: 1.1rem; margin: 0 0 0.5rem; }
+.dev-install ol { margin: 0; padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
+.dev-install li { margin-bottom: 0.25rem; }
+.dev-install strong { color: var(--text); }
+.dev-install a { color: var(--accent); }
+
+.dev-notes { margin: 0; }
+.dev-notes h2 { font-size: 1.1rem; margin: 0 0 0.5rem; }
+.dev-notes h3 { font-size: 0.95rem; margin: 0.75rem 0 0.3rem; }
+.dev-notes p, .dev-notes li { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+.dev-notes ul { margin: 0; padding-left: 1.25rem; }
+
+.dev-related { margin: 0; }
+.dev-related h2 { font-size: 1.1rem; margin: 0 0 0.75rem; }
+.dev-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+@media (max-width: 750px) { .dev-related-grid { grid-template-columns: repeat(2, 1fr); } }
+.dev-related-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.dev-related-card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+.dev-related-card img { max-width: 80px; max-height: 60px; object-fit: contain; }
+
+@media (max-width: 600px) {
+  .dev-hero { flex-direction: column; text-align: center; }
+  .dev-hero-info { align-items: center; display: flex; flex-direction: column; }
+  .dev-cta { justify-content: center; }
+}
+</style>
+
 <footer class="site-footer">
   {% include vendor-strip.html %}
-  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free, open source, and community supported.</p>
-  <p class="small">Board metadata sourced from <a href="https://reglinux.org" target="_blank" rel="noreferrer">reglinux.org</a>.</p>
+  <p>&copy; 2025 REG Linux. Retro Emulation Gaming Linux is free and community supported.</p>
 </footer>
