@@ -1,0 +1,170 @@
+---
+layout: default
+---
+{% include site-header.html nav_current="blog" %}
+
+<main>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <span class="crumb-sep">/</span>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <span class="crumb-sep">/</span>
+    <span aria-current="page">{{ page.title | escape }}</span>
+  </nav>
+
+  <article class="blog-article">
+    <header class="blog-article-header">
+      <time class="blog-article-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <h1>{{ page.title | escape }}</h1>
+      {% if page.author %}
+        <p class="blog-article-author">By {{ page.author }}</p>
+      {% endif %}
+      {% if page.tags.size > 0 %}
+        <div class="blog-article-tags">
+          {% for tag in page.tags %}
+            <span class="blog-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </header>
+
+    <div class="blog-article-body">
+      {{ content }}
+    </div>
+
+    <footer class="blog-article-footer">
+      <a class="btn secondary" href="{{ '/blog/' | relative_url }}">&larr; All posts</a>
+    </footer>
+  </article>
+</main>
+
+{% include site-footer.html %}
+
+<style>
+.blog-article {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blog-article-header {
+  margin-bottom: 2rem;
+}
+
+.blog-article-date {
+  font-size: 0.78rem;
+  color: var(--text-muted, #8b99b0);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.02em;
+}
+
+.blog-article-header h1 {
+  margin: 0.4rem 0 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.blog-article-author {
+  font-size: 0.85rem;
+  color: var(--text-muted, #8b99b0);
+  margin: 0 0 0.5rem;
+}
+
+.blog-article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.blog-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(43, 176, 233, 0.08);
+  border: 1px solid rgba(43, 176, 233, 0.2);
+  color: var(--accent, #2bb0e9);
+}
+
+/* Article body — prose styling */
+.blog-article-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text, #f4f6fb);
+}
+
+.blog-article-body h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.blog-article-body h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.blog-article-body p {
+  margin: 0 0 1rem;
+  color: var(--text-muted, #8b99b0);
+}
+
+.blog-article-body a {
+  color: var(--accent, #2bb0e9);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.blog-article-body a:hover {
+  color: var(--text, #f4f6fb);
+}
+
+.blog-article-body ul,
+.blog-article-body ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+  color: var(--text-muted, #8b99b0);
+}
+
+.blog-article-body li {
+  margin-bottom: 0.35rem;
+}
+
+.blog-article-body strong {
+  color: var(--text, #f4f6fb);
+  font-weight: 600;
+}
+
+.blog-article-body code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  padding: 0.15rem 0.4rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  color: var(--accent, #2bb0e9);
+}
+
+.blog-article-body blockquote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent, #2bb0e9);
+  background: rgba(43, 176, 233, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+.blog-article-body blockquote p {
+  margin: 0;
+}
+
+.blog-article-body hr {
+  border: none;
+  border-top: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  margin: 2rem 0;
+}
+
+.blog-article-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+}
+</style>
