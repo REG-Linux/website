@@ -3,7 +3,7 @@ title: A95X F3 Air
 description: REG Linux on A95X F3 Air powered by Amlogic S905X3.
 manufacturer: A95X
 slug: a95x/f3-air
-generated: 2026-03-29 19:53:15
+generated: 2026-03-29 20:24:06
 ---
 
 # A95X F3 Air

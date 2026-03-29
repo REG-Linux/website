@@ -3,7 +3,7 @@ title: Asus ROG Ally
 description: REG Linux on Asus ROG Ally powered by AMD Ryzen Z1.
 manufacturer: ASUS
 slug: x86_64/rog-ally
-generated: 2026-03-29 19:53:15
+generated: 2026-03-29 20:24:06
 ---
 
 # Asus ROG Ally

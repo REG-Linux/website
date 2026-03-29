@@ -1,7 +1,7 @@
 ---
 title: PS5000
 description: PS5000 — handheld powered by Rockchip RK3128.
-generated: 2026-03-29 19:53:15
+generated: 2026-03-29 20:24:07
 ---
 
 # PS5000
