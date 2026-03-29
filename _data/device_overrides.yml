@@ -1,691 +1,457 @@
-# Device overrides — edit this file to fix titles, brands, and image paths.
-# Delete entries that look correct. Remaining entries override auto-generated data.
-# Survives sync_devices.py and extract_devices.py runs.
-#
-# Fields you can override: title, brand, image, lede, description, status
-# Status values: released | testing | wip | todo (default: todo)
-# Leave a field out to keep the auto-generated value.
-# Set image to empty string for devices with no image available.
-
-# MISSING | SoC: Amlogic S905X3
 a95xf3-air:
-  title: "A95X F3 Air TV Box"
-  brand: "Amlogic"
-  image: "/assets/images/a95xf3-air.webp"
-
+  title: A95X F3 Air TV Box
+  brand: Amlogic
+  image: /assets/images/a95xf3-air.webp
 anbernic-rg-ds:
-  title: "Anbernic RG DS"
-  brand: "Anbernic"
-  image: "./assets/images/anbernic-rg-ds.webp"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG DS
+  brand: Anbernic
+  image: ./assets/images/anbernic-rg-ds.webp
 anbernic-rg28xx:
-  title: "Anbernic RG28XX"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Ingenic JZ4770
+  title: Anbernic RG28XX
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg300:
-  title: "Anbernic RG300"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg300.webp"
-
-# OK | SoC: Ingenic JZ4770
+  title: Anbernic RG300
+  brand: Anbernic
+  image: /assets/images/anbernic-rg300.webp
 anbernic-rg300x:
-  title: "Anbernic RG300X"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg300x.webp"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG300X
+  brand: Anbernic
+  image: /assets/images/anbernic-rg300x.webp
 anbernic-rg34xx:
-  title: "Anbernic RG34XX"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Ingenic JZ4770
+  title: Anbernic RG34XX
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg350:
-  title: "Anbernic RG350"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg350.webp"
-
-# MISSING | SoC: Ingenic JZ4770
+  title: Anbernic RG350
+  brand: Anbernic
+  image: /assets/images/anbernic-rg350.webp
 anbernic-rg350m:
-  title: "Anbernic RG350M"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg350m.webp"
-
-# OK | SoC: Rockchip RK3326
+  title: Anbernic RG350M
+  brand: Anbernic
+  image: /assets/images/anbernic-rg350m.webp
 anbernic-rg351-p-m-mp:
-  title: "Anbernic RG351 P/M/MP"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg351p-m-mp.webp"
-
-# OK | SoC: Rockchip RK3326
+  title: Anbernic RG351 P/M/MP
+  brand: Anbernic
+  image: /assets/images/anbernic-rg351p-m-mp.webp
 anbernic-rg351v:
-  title: "Anbernic RG351V"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg351v.webp"
-
-# OK | SoC: Rockchip RK3566
+  title: Anbernic RG351V
+  brand: Anbernic
+  image: /assets/images/anbernic-rg351v.webp
 anbernic-rg353m:
-  title: "Anbernic RG353M"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg353m.webp"
-
-# OK | SoC: Rockchip RK3566
+  title: Anbernic RG353M
+  brand: Anbernic
+  image: /assets/images/anbernic-rg353m.webp
 anbernic-rg353p-s:
-  title: "Anbernic RG353P(S)"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg353p.webp"
-
-# OK | SoC: Rockchip RK3566
+  title: Anbernic RG353P(S)
+  brand: Anbernic
+  image: /assets/images/anbernic-rg353p.webp
 anbernic-rg353v-s:
-  title: "Anbernic RG353V(S)"
-  brand: "Anbernic"
-  image: "/assets/images/anbernic-rg353v.webp"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG353V(S)
+  brand: Anbernic
+  image: /assets/images/anbernic-rg353v.webp
 anbernic-rg35xx-2024:
-  title: "Anbernic RG35XX 2024"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG35XX 2024
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg35xx-h:
-  title: "Anbernic RG35XX H"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG35XX H
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg35xx-plus:
-  title: "Anbernic RG35XX Plus"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG35XX Plus
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg35xx-pro:
-  title: "Anbernic RG35XX Pro"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG35XX Pro
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg35xx-sp:
-  title: "Anbernic RG35XX SP"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG35XX SP
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg40xx-h:
-  title: "Anbernic RG40XX H"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Allwinner H700
+  title: Anbernic RG40XX H
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rg40xx-v:
-  title: "Anbernic RG40XX V"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Anbernic RG40XX V
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 anbernic-rgarc:
-  title: "Anbernic RG ARC"
-  brand: "Anbernic"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3588
+  title: Anbernic RG ARC
+  brand: Anbernic
+  image: /assets/images/device-placeholder.svg
 armsom-sige7:
-  title: "ArmSoM SIGE7"
-  brand: "ArmSoM"
-  image: "/assets/images/armsom-sige7.webp"
-
-# OK | SoC: AMD Ryzen Z1
+  title: BananaPi M7
+  brand: BananaPi
+  image: /assets/images/armsom-sige7.webp
+  status: todo
 asus-rog-ally:
-  title: "Asus ROG Ally"
-  brand: "ASUS"
-  image: "/assets/images/asus-rog-ally.webp"
-
-# OK | SoC: Rockchip RK3399
+  title: Asus ROG Ally
+  brand: ASUS
+  image: /assets/images/asus-rog-ally.webp
 asus-tinker-board-2:
-  title: "ASUS Tinker Board 2"
-  brand: "ASUS"
-  image: "/assets/images/asus-tinker-board-2.webp"
-
-# OK | SoC: Rockchip RK3288
+  title: ASUS Tinker Board 2
+  brand: ASUS
+  image: /assets/images/asus-tinker-board-2.webp
 asus-tinker-board-s:
-  title: "Asus Tinker Board (S)"
-  brand: "ASUS"
-  image: "/assets/images/asus-tinker-board.webp"
-
-# MISSING | SoC: Qualcomm 8gen2 (SM8550)
+  title: Asus Tinker Board (S)
+  brand: ASUS
+  image: /assets/images/asus-tinker-board.webp
 ayaneo-pocket-ace:
-  title: "AYANEO Pocket ACE"
-  brand: "AYANEO"
-  image: "/assets/images/ayaneo-pocket-ace.webp"
-
-# MISSING | SoC: Qualcomm 8gen2 (SM8550)
+  title: AYANEO Pocket ACE
+  brand: AYANEO
+  image: /assets/images/ayaneo-pocket-ace.webp
 ayaneo-pocket-dmg:
-  title: "AYANEO Pocket DMG"
-  brand: "AYANEO"
-  image: "/assets/images/ayaneo-pocket-dmg.webp"
-
-# MISSING | SoC: Qualcomm 8gen2 (SM8550)
+  title: AYANEO Pocket DMG
+  brand: AYANEO
+  image: /assets/images/ayaneo-pocket-dmg.webp
 ayaneo-pocket-ds:
-  title: "AYANEO Pocket DS"
-  brand: "AYANEO"
-  image: "/assets/images/ayaneo-pocket-ds.webp"
-
-# MISSING | SoC: Qualcomm 8gen2 (SM8550)
+  title: AYANEO Pocket DS
+  brand: AYANEO
+  image: /assets/images/ayaneo-pocket-ds.webp
 ayaneo-pocket-evo:
-  title: "AYANEO Pocket EVO"
-  brand: "AYANEO"
-  image: "/assets/images/ayaneo-pocket-evo.webp"
-
-# OK | SoC: Qualcomm 8gen2 (SM8550)
+  title: AYANEO Pocket EVO
+  brand: AYANEO
+  image: /assets/images/ayaneo-pocket-evo.webp
 ayaneo-pockets:
-  title: "AYANEO Pocket S"
-  brand: "AYANEO"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Qualcomm SDM845
+  title: AYANEO Pocket S
+  brand: AYANEO
+  image: /assets/images/device-placeholder.svg
 ayn-odin:
-  title: "Ayn Odin"
-  brand: "Ayn"
-  image: "/assets/images/ayn-odin.webp"
-
-# OK | SoC: Qualcomm 8gen2 (SM8550)
+  title: Ayn Odin
+  brand: Ayn
+  image: /assets/images/ayn-odin.webp
 ayn-odin2:
-  title: "Ayn Odin 2"
-  brand: "Ayn"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Qualcomm 8gen2 (SM8550)
+  title: Ayn Odin 2
+  brand: Ayn
+  image: /assets/images/device-placeholder.svg
 ayn-odin2-mini:
-  title: "Ayn Odin 2 Mini"
-  brand: "Ayn"
-  image: "/assets/images/ayn-odin2-mini.webp"
-
-# MISSING | SoC: Rockchip RK3326
+  title: Ayn Odin 2 Mini
+  brand: Ayn
+  image: /assets/images/ayn-odin2-mini.webp
 batlexp-g350:
-  title: "BatleXP G350"
-  brand: "BatleXP"
-  image: "/assets/images/batlexp-g350.webp"
-
-# OK | SoC: T-Head TH1520
+  title: BatleXP G350
+  brand: BatleXP
+  image: /assets/images/batlexp-g350.webp
 beaglev-ahead:
-  title: "BeagleBoard Ahead"
-  brand: "BeagleBoard"
-  image: "/assets/images/beaglev-ahead.webp"
-
-# OK | SoC: Rockchip RK3328
+  title: BeagleBoard Ahead
+  brand: BeagleBoard
+  image: /assets/images/beaglev-ahead.webp
 firefly-renegade:
-  title: "Firefly Renegade"
-  brand: "Firefly"
-  image: "/assets/images/firefly-renegade.webp"
-
-# MISSING | SoC: Rockchip RK3566/RK3568
+  title: Firefly Renegade
+  brand: Firefly
+  image: /assets/images/firefly-renegade.webp
 firefly-roc-pc:
-  title: "Firefly ROC PC"
-  brand: "Firefly"
-  image: "/assets/images/firefly-roc-pc.webp"
-
-# OK | SoC: Ingenic JZ4770
+  title: Firefly ROC PC
+  brand: Firefly
+  image: /assets/images/firefly-roc-pc.webp
 gcw-zero:
-  title: "GCW Zero"
-  brand: "GCW"
-  image: "/assets/images/gcw-zero.webp"
-
-# MISSING | SoC: AMD/Intel x86_64
+  title: GCW Zero
+  brand: GCW
+  image: /assets/images/gcw-zero.webp
 generic-x86-64:
-  title: "Generic PC (x86-64)"
-  brand: "Generic"
-  image: "/assets/images/generic-x86-64.webp"
-
-# MISSING | SoC: AMD/Intel x86_64-v3
+  title: Generic PC (x86-64)
+  brand: Generic
+  image: /assets/images/generic-x86-64.webp
 generic-x86-64-v3:
-  title: "Generic PC (x86-64-v3)"
-  brand: "Generic"
-  image: "/assets/images/generic-x86-64-v3.webp"
-
-# OK | SoC: Amlogic S905X3
+  title: Generic PC (x86-64-v3)
+  brand: Generic
+  image: /assets/images/generic-x86-64-v3.webp
 h96-max:
-  title: "H96 Max"
-  brand: "H96"
-  image: "/assets/images/h96-max.webp"
-
-# OK | SoC: Amlogic S905X5M
+  title: H96 Max
+  brand: H96
+  image: /assets/images/h96-max.webp
 hardkernel-odroid-c5:
-  title: "HardKernel ODROID C5"
-  brand: "HardKernel"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3326
+  title: HardKernel ODROID C5
+  brand: HardKernel
+  image: /assets/images/device-placeholder.svg
 hardkernel-odroid-go-advance:
-  title: "Odroid Go Advance"
-  brand: "HardKernel"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Rockchip RK3399
+  title: Odroid Go Advance
+  brand: HardKernel
+  image: /assets/images/device-placeholder.svg
 hugsun-x99:
-  title: "Hugsun X99"
-  brand: "Hugsun"
-  image: "/assets/images/hugsun-x99.webp"
-
-# MISSING | SoC: Rockchip RK3588
+  title: Hugsun X99
+  brand: Hugsun
+  image: /assets/images/hugsun-x99.webp
 indiedroid-nova:
-  title: "Indiedroid Nova"
-  brand: "Indiedroid"
-  image: "/assets/images/indiedroid-nova.webp"
-
-# MISSING | SoC: Intel Cyclone V
+  title: Indiedroid Nova
+  brand: Indiedroid
+  image: /assets/images/indiedroid-nova.webp
 intel-de10nano:
-  title: "Intel DE10-Nano"
-  brand: "Intel"
-  image: "/assets/images/intel-de10nano.webp"
-
-# OK | SoC: Amlogic S905(X)
+  title: Intel DE10-Nano
+  brand: Intel
+  image: /assets/images/intel-de10nano.webp
 libretech-lepotato:
-  title: "Libre Computer Cc"
-  brand: "Libre Computer"
-  image: "/assets/images/libretech-lepotato.webp"
-
-# MISSING | SoC: Amlogic S912
+  title: Libre Computer Cc
+  brand: Libre Computer
+  image: /assets/images/libretech-lepotato.webp
 libretech-s912-pc:
-  title: "Libre Computer S912-PC"
-  brand: "Libre Computer"
-  image: "/assets/images/libretech-s912-pc.webp"
-
-# OK | SoC: Allwinner H3
+  title: Libre Computer S912-PC
+  brand: Libre Computer
+  image: /assets/images/libretech-s912-pc.webp
 libretech-tritium-h5:
-  title: "Libre Computer Tritium H5"
-  brand: "Libre Computer"
-  image: "/assets/images/libretech-tritium-h5.webp"
-
-# OK | SoC: Rockchip RK3326
+  title: Libre Computer Tritium H5
+  brand: Libre Computer
+  image: /assets/images/libretech-tritium-h5.webp
 magicx-xu-mini-m:
-  title: "XU Mini M"
-  brand: "MagicX"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Qualcomm SM6115
+  title: XU Mini M
+  brand: MagicX
+  image: /assets/images/device-placeholder.svg
 mangmi-air-x:
-  title: "Mangmi Air X"
-  brand: "Mangmi"
-  image: "/assets/images/mangmi-air-x.webp"
-
-# OK | SoC: SpacemiT K1
+  title: Mangmi Air X
+  brand: Mangmi
+  image: /assets/images/mangmi-air-x.webp
 milk-v-jupiter:
-  title: "Milk-V Jupiter"
-  brand: "Milk-V"
-  image: "/assets/images/milk-v-jupiter.webp"
-
-# OK | SoC: StarFive JH7110
+  title: Milk-V Jupiter
+  brand: Milk-V
+  image: /assets/images/milk-v-jupiter.webp
 milk-v-mars:
-  title: "Milk-V Mars"
-  brand: "Milk-V"
-  image: "/assets/images/milk-mars.webp"
-
-# MISSING | SoC: TH1520
+  title: Milk-V Mars
+  brand: Milk-V
+  image: /assets/images/milk-mars.webp
 milk-v-meles:
-  title: "Milk-V Meles"
-  brand: "Milk-V"
-  image: "None"
-
-# MISSING | SoC: Rockchip RK3566/RK3568
+  title: Milk-V Meles
+  brand: Milk-V
+  image: None
 miniloong-pocket1:
-  title: "MiniLoong Pocket 1"
-  brand: "MiniLoong"
-  image: "/assets/images/miniloong-pocket1.webp"
-
-# MISSING | SoC: Amlogic S905(X)
+  title: MiniLoong Pocket 1
+  brand: MiniLoong
+  image: /assets/images/miniloong-pocket1.webp
 minix-neo-u1:
-  title: "Minix Neo U1"
-  brand: "Minix"
-  image: "/assets/images/minix-neo-u1.webp"
-
-# MISSING | SoC: Amlogic S812
+  title: Minix Neo U1
+  brand: Minix
+  image: /assets/images/minix-neo-u1.webp
 minix-neo-x8:
-  title: "Minix Neo X8"
-  brand: "Minix"
-  image: "/assets/images/minix-neo-x8.webp"
-
-# OK | SoC: Rockchip RK3288
+  title: Minix Neo X8
+  brand: Minix
+  image: /assets/images/minix-neo-x8.webp
 mqmaker-miqi:
-  title: "MQMaker MiQi"
-  brand: "MQMaker"
-  image: "/assets/images/mqmaker-miqi.webp"
-
-# MISSING | SoC: SpacemiT K1
+  title: MQMaker MiQi
+  brand: MQMaker
+  image: /assets/images/mqmaker-miqi.webp
 musepi-pro:
-  title: "MusePi Pro"
-  brand: "MusePi"
-  image: "/assets/images/musepi-pro.webp"
-
-# OK | SoC: Amlogic S905(X)
+  title: MusePi Pro
+  brand: MusePi
+  image: /assets/images/musepi-pro.webp
 nano-pi-k2:
-  title: "Nano Pi K2"
-  brand: "FriendlyElec"
-  image: "/assets/images/nanopik2.webp"
-
-# OK | SoC: Rockchip RK3399
+  title: Nano Pi K2
+  brand: FriendlyElec
+  image: /assets/images/nanopik2.webp
 nano-pi-m4v2:
-  title: "Nano Pi M4v2"
-  brand: "FriendlyElec"
-  image: "/assets/images/nanopim4v2.webp"
-
-# MISSING | SoC: Amlogic S912
+  title: Nano Pi M4v2
+  brand: FriendlyElec
+  image: /assets/images/nanopim4v2.webp
 nexbox-a1:
-  title: "Nexbox A1"
-  brand: "Nexbox"
-  image: "/assets/images/nexbox-a1.webp"
-
-# MISSING | SoC: Amlogic S905(X)
+  title: Nexbox A1
+  brand: Nexbox
+  image: /assets/images/nexbox-a1.webp
 nexbox-a95x:
-  title: "Nexbox A95X"
-  brand: "Nexbox"
-  image: "/assets/images/nexbox-a95x.webp"
-
-# OK | SoC: Allwinner R16
+  title: Nexbox A95X
+  brand: Nexbox
+  image: /assets/images/nexbox-a95x.webp
 nintendo-nes-classic:
-  title: "Nintendo NES Classic"
-  brand: "Nintendo"
-  image: "/assets/images/nintendo-nes-classic.webp"
-
-# OK | SoC: Allwinner R16
+  title: Nintendo NES Classic
+  brand: Nintendo
+  image: /assets/images/nintendo-nes-classic.webp
 nintendo-snes-classic:
-  title: "Nintendo Super NES Classic"
-  brand: "Nintendo"
-  image: "/assets/images/nintendo-snes-classic.webp"
-
-# OK | SoC: NVIDIA Tegra X1
+  title: Nintendo Super NES Classic
+  brand: Nintendo
+  image: /assets/images/nintendo-snes-classic.webp
 nvidia-jetson-nano:
-  title: "NVIDIA Jetson Nano"
-  brand: "NVIDIA"
-  image: "/assets/images/nvidia-jetson-nano.webp"
-
-# OK | SoC: Allwinner H5/H6
+  title: NVIDIA Jetson Nano
+  brand: NVIDIA
+  image: /assets/images/nvidia-jetson-nano.webp
 orange-pi-3:
-  title: "Orange Pi 3"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-3.webp"
-
-# MISSING | SoC: Allwinner H5/H6
+  title: Orange Pi 3
+  brand: Orange Pi
+  image: /assets/images/orange-pi-3.webp
 orange-pi-3-lts:
-  title: "Orange Pi 3 LTS"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-3-lts.webp"
-
-# OK | SoC: Rockchip RK3399
+  title: Orange Pi 3 LTS
+  brand: Orange Pi
+  image: /assets/images/orange-pi-3-lts.webp
 orange-pi-4-lts:
-  title: "Orange Pi 4 LTS"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-4-lts.webp"
-
-# OK | SoC: Allwinner T527
+  title: Orange Pi 4 LTS
+  brand: Orange Pi
+  image: /assets/images/orange-pi-4-lts.webp
 orange-pi-4a:
-  title: "Orange Pi 4A"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-4a.webp"
-
-# OK | SoC: Rockchip RK3588
+  title: Orange Pi 4A
+  brand: Orange Pi
+  image: /assets/images/orange-pi-4a.webp
 orange-pi-5:
-  title: "Orange Pi 5"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-5.webp"
-
-# OK | SoC: Rockchip RK3588
+  title: Orange Pi 5
+  brand: Orange Pi
+  image: /assets/images/orange-pi-5.webp
 orange-pi-5-max:
-  title: "Orange Pi 5 Max"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-5-max.webp"
-
-# MISSING | SoC: Rockchip RK3588
+  title: Orange Pi 5 Max
+  brand: Orange Pi
+  image: /assets/images/orange-pi-5-max.webp
 orange-pi-5-plus:
-  title: "Orange Pi 5 Plus"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-5-plus.webp"
-
-# OK | SoC: Rockchip RK3588
+  title: Orange Pi 5 Plus
+  brand: Orange Pi
+  image: /assets/images/orange-pi-5-plus.webp
 orange-pi-5-ultra:
-  title: "Orange Pi 5 Ultra"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-5-ultra.webp"
-
-# OK | SoC: Rockchip RK3588
+  title: Orange Pi 5 Ultra
+  brand: Orange Pi
+  image: /assets/images/orange-pi-5-ultra.webp
 orange-pi-5b:
-  title: "Orange Pi 5B"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-5b.webp"
-
-# OK | SoC: Allwinner H6
+  title: Orange Pi 5B
+  brand: Orange Pi
+  image: /assets/images/orange-pi-5b.webp
 orange-pi-one-plus:
-  title: "Orange Pi One Plus"
-  brand: "Orange Pi"
-  image: "/assets/images/orangepi-one-plus_0.webp"
-
-# MISSING | SoC: SpacemiT K1
+  title: Orange Pi One Plus
+  brand: Orange Pi
+  image: /assets/images/orangepi-one-plus_0.webp
 orange-pi-r2s:
-  title: "Orange Pi R2S"
-  brand: "Orange Pi"
-  image: "/assets/images/orange-pi-r2s.webp"
-
-# OK | SoC: Rockchip RK3328
+  title: Orange Pi R2S
+  brand: Orange Pi
+  image: /assets/images/orange-pi-r2s.webp
 pine64-rock64:
-  title: "Pine64 Rock64"
-  brand: "Pine64"
-  image: "/assets/images/pine64-rock64.webp"
-
-# OK | SoC: Rockchip RK3399
+  title: Pine64 Rock64
+  brand: Pine64
+  image: /assets/images/pine64-rock64.webp
 pine64-rockpro64:
-  title: "Pine64 RockPro64"
-  brand: "Pine64"
-  image: "/assets/images/pine64-rockpro64.webp"
-
-# MISSING | SoC: Ingenic JZ4770
+  title: Pine64 RockPro64
+  brand: Pine64
+  image: /assets/images/pine64-rockpro64.webp
 pocketgo-2:
-  title: "PocketGo 2"
-  brand: "Powkiddy"
-  image: "/assets/images/pocketgo-2.webp"
-
-# OK | SoC: Rockchip RK3326
+  title: PocketGo 2
+  brand: Powkiddy
+  image: /assets/images/pocketgo-2.webp
 powkiddy-rgb10:
-  title: "Powkiddy RGB10"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy RGB10
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rgb10-max-3:
-  title: "RGB10 Max 3"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Amlogic A311D
+  title: RGB10 Max 3
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rgb10-max-3-pro:
-  title: "RGB10 Max 3 Pro"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3326
+  title: RGB10 Max 3 Pro
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rgb10x:
-  title: "Powkiddy RGB10X"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy RGB10X
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rgb20-pro:
-  title: "RGB20 Pro"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: RGB20 Pro
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rgb20sx:
-  title: "Powkiddy RGB20SX"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy RGB20SX
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rgb30:
-  title: "Powkiddy RGB30"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy RGB30
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-rk2023:
-  title: "Powkiddy RK2023"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy RK2023
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-x35h:
-  title: "Powkiddy X35H"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy X35H
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-x35s:
-  title: "Powkiddy X35S"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3566
+  title: Powkiddy X35S
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-x55:
-  title: "Powkiddy X55"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3326
+  title: Powkiddy X55
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 powkiddy-xu10:
-  title: "Powkiddy XU10"
-  brand: "Powkiddy"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Qualcomm QCS6490
+  title: Powkiddy XU10
+  brand: Powkiddy
+  image: /assets/images/device-placeholder.svg
 radxa-dragon-q6a:
-  title: "Radxa Dragon Q6A"
-  brand: "Radxa"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Genio 1200 (MT8395)
+  title: Radxa Dragon Q6A
+  brand: Radxa
+  image: /assets/images/device-placeholder.svg
 radxa-nio-12l:
-  title: "Radxa NIO 12L"
-  brand: "Radxa"
-  image: "None"
-
-# OK | SoC: Rockchip RK3566/RK3568
+  title: Radxa NIO 12L
+  brand: Radxa
+  image: None
 radxa-rock-3a:
-  title: "Radxa Rock 3A"
-  brand: "Radxa"
-  image: "/assets/images/radxa-rock-3a.webp"
-
-# OK | SoC: Rockchip RK3566/RK3568
+  title: Radxa Rock 3A
+  brand: Radxa
+  image: /assets/images/radxa-rock-3a.webp
 radxa-rock-3c:
-  title: "Radxa Rock 3C"
-  brand: "Radxa"
-  image: "/assets/images/radxa-rock-3c.webp"
-
-# OK | SoC: Rockchip RK3588
+  title: Radxa Rock 3C
+  brand: Radxa
+  image: /assets/images/radxa-rock-3c.webp
 radxa-rock-5-itx:
-  title: "Radxa Rock 5 ITX"
-  brand: "Radxa"
-  image: "/assets/images/radxa-rock-5-itx.webp"
-
-# OK | SoC: Rockchip RK3588
+  title: Radxa Rock 5 ITX
+  brand: Radxa
+  image: /assets/images/radxa-rock-5-itx.webp
 radxa-rock-5c:
-  title: "Radxa Rock 5C"
-  brand: "Radxa"
-  image: "/assets/images/radxa-rock-5c.webp"
-
-# MISSING | SoC: Rockchip RK3399
+  title: Radxa Rock 5C
+  brand: Radxa
+  image: /assets/images/radxa-rock-5c.webp
 radxa-rock-pi-4:
-  title: "Radxa Rock Pi 4B"
-  brand: "Radxa"
-  image: "/assets/images/radxa-rock-pi-4.webp"
-
-# OK | SoC: Qualcomm SD865 (SM8250)
+  title: Radxa Rock Pi 4B
+  brand: Radxa
+  image: /assets/images/radxa-rock-pi-4.webp
 retroid-pocket-5:
-  title: "Retroid Pocket 5"
-  brand: "Retroid"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Qualcomm SD865 (SM8250)
+  title: Retroid Pocket 5
+  brand: Retroid
+  image: /assets/images/device-placeholder.svg
 retroid-pocket-flip2:
-  title: "Retroid Pocket Flip2"
-  brand: "Retroid"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Qualcomm SD865 (SM8250)
+  title: Retroid Pocket Flip2
+  brand: Retroid
+  image: /assets/images/device-placeholder.svg
 retroid-pocket-mini:
-  title: "Retroid Pocket Mini"
-  brand: "Retroid"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Ingenic JZ4770
+  title: Retroid Pocket Mini
+  brand: Retroid
+  image: /assets/images/device-placeholder.svg
 rs97:
-  title: "RS-97"
-  brand: "Unbranded"
-  image: "/assets/images/rs97.webp"
-
-# OK | SoC: Rockchip RK3326
+  title: RS-97
+  brand: Unbranded
+  image: /assets/images/rs97.webp
 unbranded-game-console-r33s:
-  title: "Game Console R33S"
-  brand: "Unbranded"
-  image: "/assets/images/device-placeholder.svg"
-
-# OK | SoC: Rockchip RK3326
+  title: Game Console R33S
+  brand: Unbranded
+  image: /assets/images/device-placeholder.svg
 unbranded-game-console-r35s-r36s:
-  title: "Game Console R35S R36S"
-  brand: "Unbranded"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Rockchip RK3128
+  title: Game Console R35S R36S
+  brand: Unbranded
+  image: /assets/images/device-placeholder.svg
 unbranded-ps5000:
-  title: "PS5000"
-  brand: "Unbranded"
-  image: "/assets/images/unbranded-ps5000.webp"
-
-# MISSING | SoC: Rockchip RK3128
+  title: PS5000
+  brand: Unbranded
+  image: /assets/images/unbranded-ps5000.webp
 unbranded-ps7000:
-  title: "PS7000"
-  brand: "Unbranded"
-  image: "/assets/images/unbranded-ps7000.webp"
-
-# OK | SoC: Rockchip RK3326
+  title: PS7000
+  brand: Unbranded
+  image: /assets/images/unbranded-ps7000.webp
 unbranded-rk3326-clones:
-  title: "RK3326 clones (including K36 and BatleXP G350)"
-  brand: "Unbranded"
-  image: "/assets/images/device-placeholder.svg"
-
-# MISSING | SoC: Rockchip RK3399
+  title: RK3326 clones (including K36 and BatleXP G350)
+  brand: Unbranded
+  image: /assets/images/device-placeholder.svg
 vamrs-rock960:
-  title: "96Boards Rock960"
-  brand: "Vamrs"
-  image: "/assets/images/vamrs-rock960.webp"
-
-# MISSING | SoC: Amlogic S812
+  title: 96Boards Rock960
+  brand: Vamrs
+  image: /assets/images/vamrs-rock960.webp
 wetek-core:
-  title: "WeTek Core"
-  brand: "WeTek"
-  image: "/assets/images/wetek-core.webp"
-
-# MISSING | SoC: Amlogic S905X3
+  title: WeTek Core
+  brand: WeTek
+  image: /assets/images/wetek-core.webp
 x96-air:
-  title: "X96 Air"
-  brand: "X96"
-  image: "/assets/images/x96-air.webp"
-
-# MISSING | SoC: Allwinner H616
+  title: X96 Air
+  brand: X96
+  image: /assets/images/x96-air.webp
 x96-mate:
-  title: "X96 Mate"
-  brand: "X96"
-  image: "/assets/images/x96-mate.webp"
-
-# MISSING | SoC: Amlogic S905X3
+  title: X96 Mate
+  brand: X96
+  image: /assets/images/x96-mate.webp
 x96-max-plus:
-  title: "X96 Max Plus TV Box"
-  brand: "Amlogic"
-  image: "/assets/images/x96-max-plus.webp"
-
-# MISSING | SoC: Rockchip RK3128
+  title: X96 Max Plus TV Box
+  brand: Amlogic
+  image: /assets/images/x96-max-plus.webp
 xpi-3128:
-  title: "XPi 3128"
-  brand: "Geniatech"
-  image: "/assets/images/xpi-3128.webp"
+  title: XPi 3128
+  brand: Geniatech
+  image: /assets/images/xpi-3128.webp
