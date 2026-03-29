@@ -1,0 +1,35 @@
+---
+import '../../../styles/global.css';
+import { AdminDeviceEditor } from '../../../components/AdminDeviceEditor';
+
+export function getStaticPaths() {
+  // Dynamic at runtime via client:only
+  return [{ params: { id: '_' } }];
+}
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Edit Device — Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="https://reglinux.org/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="https://reglinux.org" class="site-logo">
+        <img src="https://reglinux.org/assets/images/reg_linux_logo-sm.webp" alt="REG-Linux" />
+      </a>
+      <span class="separator">/</span>
+      <a href="/admin" class="page-title" style="text-decoration: none; color: var(--text-muted);">Admin</a>
+      <span class="separator">/</span>
+      <span class="page-title">Edit Device</span>
+      <nav>
+        <a href="/admin">Back to list</a>
+      </nav>
+    </header>
+    <main>
+      <AdminDeviceEditor client:only="react" />
+    </main>
+  </body>
+</html>

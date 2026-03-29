@@ -118,6 +118,96 @@ export async function fetchMe(): Promise<MeResponse | null> {
   }
 }
 
+// --- Admin API ---
+
+export type DeviceStatus = 'released' | 'testing' | 'wip' | 'todo';
+
+export interface AdminDevice {
+  id: string;
+  title: string;
+  brand: string;
+  type: DeviceType;
+  soc_name: string | null;
+  arch: Arch | null;
+  image: string | null;
+  status: DeviceStatus;
+}
+
+export interface DeviceOverrides {
+  title?: string;
+  brand?: string;
+  image?: string;
+  status?: DeviceStatus;
+  [key: string]: string | undefined;
+}
+
+export interface AdminDeviceResponse {
+  device: DeviceDetail & { status: DeviceStatus };
+  overrides: DeviceOverrides;
+  sha: string;
+}
+
+export interface WorkflowRun {
+  id: number;
+  name: string;
+  status: string;
+  conclusion: string | null;
+  created_at: string;
+  html_url: string;
+}
+
+export async function fetchAdminDevices(): Promise<{ devices: AdminDevice[] }> {
+  const res = await fetch(`${API}/api/admin/devices`, { credentials: 'include' });
+  if (res.status === 401) throw new Error('not_authenticated');
+  if (res.status === 403) throw new Error('not_admin');
+  if (!res.ok) throw new Error(`admin devices fetch failed: ${res.status}`);
+  return res.json();
+}
+
+export async function fetchAdminDevice(id: string): Promise<AdminDeviceResponse> {
+  const res = await fetch(`${API}/api/admin/device/${encodeURIComponent(id)}`, { credentials: 'include' });
+  if (res.status === 401) throw new Error('not_authenticated');
+  if (res.status === 403) throw new Error('not_admin');
+  if (!res.ok) throw new Error(`admin device fetch failed: ${res.status}`);
+  return res.json();
+}
+
+export async function updateAdminDevice(id: string, fields: DeviceOverrides, sha: string): Promise<{ ok: boolean; sha: string }> {
+  const res = await fetch(`${API}/api/admin/device/${encodeURIComponent(id)}`, {
+    method: 'PUT',
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ fields, sha }),
+  });
+  if (res.status === 401) throw new Error('not_authenticated');
+  if (res.status === 403) throw new Error('not_admin');
+  if (res.status === 409) throw new Error('conflict');
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({})) as { error?: string };
+    throw new Error(data.error ?? `update failed: ${res.status}`);
+  }
+  return res.json();
+}
+
+export async function runPipeline(pipeline: string): Promise<{ ok: boolean }> {
+  const res = await fetch(`${API}/api/admin/run/${pipeline}`, {
+    method: 'POST',
+    credentials: 'include',
+  });
+  if (res.status === 401) throw new Error('not_authenticated');
+  if (res.status === 403) throw new Error('not_admin');
+  if (!res.ok) throw new Error(`run failed: ${res.status}`);
+  return res.json();
+}
+
+export async function fetchAdminRuns(): Promise<{ runs: WorkflowRun[] }> {
+  const res = await fetch(`${API}/api/admin/runs`, { credentials: 'include' });
+  if (res.status === 401) throw new Error('not_authenticated');
+  if (res.status === 403) throw new Error('not_admin');
+  if (!res.ok) throw new Error(`runs fetch failed: ${res.status}`);
+  return res.json();
+}
+
 export async function submitResults(body: {
   device_id: string;
   build_date: string;

@@ -1,0 +1,36 @@
+---
+import '../../styles/global.css';
+import { AdminDeviceList } from '../../components/AdminDeviceList';
+import { AdminPipelinePanel } from '../../components/AdminPipelinePanel';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin — REG-Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="https://reglinux.org/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="https://reglinux.org" class="site-logo">
+        <img src="https://reglinux.org/assets/images/reg_linux_logo-sm.webp" alt="REG-Linux" />
+      </a>
+      <span class="separator">/</span>
+      <span class="page-title">Admin</span>
+      <nav>
+        <a href="/">Matrix</a>
+        <a href="/admin">Devices</a>
+      </nav>
+    </header>
+    <main style="display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start;">
+      <AdminDeviceList client:only="react" />
+      <AdminPipelinePanel client:only="react" />
+    </main>
+    <style>
+      @media (max-width: 900px) {
+        main { grid-template-columns: 1fr !important; }
+      }
+    </style>
+  </body>
+</html>

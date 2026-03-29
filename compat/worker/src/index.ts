@@ -3,12 +3,13 @@ import { handleDevice } from './routes/device';
 import { handleSubmit } from './routes/submit';
 import { handleAuthGithub, handleAuthCallback, handleAuthMe } from './routes/auth';
 import { handleDeviceRegister } from './routes/device-register';
+import { handleAdminDevices, handleAdminDevice, handleAdminDeviceUpdate, handleAdminRun, handleAdminRuns } from './routes/admin';
 import type { Env } from './types';
 
 function corsHeaders(origin: string): Record<string, string> {
   return {
     'Access-Control-Allow-Origin': origin,
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'Access-Control-Allow-Credentials': 'true',
   };
@@ -73,6 +74,19 @@ export default {
         response = await handleAuthCallback(request, env);
       } else if (method === 'GET' && path === '/api/auth/me') {
         response = await handleAuthMe(request, env);
+      } else if (method === 'GET' && path === '/api/admin/devices') {
+        response = await handleAdminDevices(request, env);
+      } else if (method === 'GET' && path.startsWith('/api/admin/device/')) {
+        const deviceId = decodeURIComponent(path.slice('/api/admin/device/'.length));
+        response = await handleAdminDevice(request, env, deviceId);
+      } else if (method === 'PUT' && path.startsWith('/api/admin/device/')) {
+        const deviceId = decodeURIComponent(path.slice('/api/admin/device/'.length));
+        response = await handleAdminDeviceUpdate(request, env, deviceId);
+      } else if (method === 'POST' && path.startsWith('/api/admin/run/')) {
+        const pipeline = path.slice('/api/admin/run/'.length);
+        response = await handleAdminRun(request, env, pipeline);
+      } else if (method === 'GET' && path === '/api/admin/runs') {
+        response = await handleAdminRuns(request, env);
       } else {
         response = Response.json({ error: 'not_found' }, { status: 404 });
       }
