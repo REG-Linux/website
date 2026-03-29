@@ -35,7 +35,7 @@
     {% if page.layout == "device" %}
       {% assign og_type = "article" %}
     {% endif %}
-    <title>{{ full_title }}</title>
+    <title>{{ full_title | escape }}</title>
     {% if meta_description %}
     <meta name="description" content="{{ meta_description | strip_newlines | strip | escape }}" />
     {% endif %}
@@ -96,7 +96,12 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": {{ site.title | jsonify }},
-        "url": {{ site.url | default: "" | jsonify }}
+        "url": {{ site.url | default: "" | jsonify }},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://reglinux.org/wiki/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
     {% if page.layout == "device" and device_lookup %}
@@ -106,15 +111,27 @@
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
           "name": {{ "REG Linux for " | append: meta_title | jsonify }},
-          "operatingSystem": "Linux",
+          "operatingSystem": "REG Linux",
           "applicationCategory": "GameApplication",
           "description": {{ meta_description | jsonify }},
           "downloadUrl": {{ device_download | jsonify }},
           "softwareHelp": {{ device_lookup.board_url | default: "https://reglinux.org/wiki/" | jsonify }},
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
           "author": {
             "@type": "Organization",
             "name": {{ site.title | jsonify }}
           }
+        }
+      </script>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://reglinux.org/" },
+            { "@type": "ListItem", "position": 2, "name": "Download", "item": "https://reglinux.org/download/" },
+            { "@type": "ListItem", "position": 3, "name": {{ meta_title | jsonify }} }
+          ]
         }
       </script>
     {% endif %}
@@ -125,6 +142,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" /></noscript>
+    <meta name="theme-color" content="#05060a" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/reg_linux_logo.png' | relative_url }}" />
     <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
   </head>
   <body class="{{ page.body_class | default: '' }}">
