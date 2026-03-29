@@ -6,6 +6,8 @@ export interface Env {
   JWT_SECRET: string;
   CORS_ORIGIN: string;
   DEV_TOKENS?: string; // comma-separated pre-approved device tokens
+  GITHUB_REPO_TOKEN?: string; // Bot PAT for GitHub API commits
+  ADMIN_USERS?: string; // Comma-separated GitHub usernames
 }
 
 export type DeviceType = 'handheld' | 'sbc' | 'tvbox' | 'console' | 'pc' | 'unknown';
