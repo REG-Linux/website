@@ -19,6 +19,8 @@ layout: default
 {% if raw_soc %}{% assign soc_list = raw_soc %}{% else %}{% assign soc_list = 'Unknown' | split: "|" %}{% endif %}
 {% assign soc_text = soc_list | join: ', ' %}
 {% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
+{% assign device_override = site.data.device_overrides[device_slug] %}
+{% assign device_status = device_override.status | default: "todo" %}
 {% include site-header.html nav_current="download" ghost_label="All devices" ghost_href="/download/" %}
 
 <main>
@@ -29,6 +31,14 @@ layout: default
     <span class="crumb-sep">/</span>
     <span aria-current="page">{{ device_title }}</span>
   </nav>
+
+  {% if device_status == "testing" %}
+    <div class="dev-status-banner dev-status-testing">This device image is in testing. Feedback welcome on <a href="https://discord.gg/a9HH4ZpVqp">Discord</a>.</div>
+  {% elsif device_status == "wip" %}
+    <div class="dev-status-banner dev-status-wip">Work in progress — not ready for daily use yet.</div>
+  {% elsif device_status == "todo" %}
+    <div class="dev-status-banner dev-status-todo">Support planned but not yet available.</div>
+  {% endif %}
 
   <!-- Compact hero: image left, info right — side by side -->
   <section class="dev-hero">
@@ -42,7 +52,11 @@ layout: default
       <h1>{{ device_title | escape }}</h1>
       <p class="dev-meta">{{ device_brand }} &middot; {{ soc_text }}</p>
       <div class="dev-cta">
-        <a class="btn primary" href="{{ device_download }}" target="_blank" rel="noreferrer">Download</a>
+        {% if device_status == "todo" %}
+          <span class="btn primary" style="opacity: 0.4; pointer-events: none;">Coming soon</span>
+        {% else %}
+          <a class="btn primary" href="{{ device_download }}" target="_blank" rel="noreferrer">Download{% if device_status == "testing" %} (testing){% endif %}</a>
+        {% endif %}
         <a class="btn secondary" href="https://compat.reglinux.org/device/{{ device_slug }}" target="_blank" rel="noreferrer">Compatibility</a>
       </div>
     </div>
@@ -111,6 +125,13 @@ layout: default
 </main>
 
 <style>
+/* Status banners */
+.dev-status-banner { padding: 0.6rem 1rem; border-radius: var(--radius); font-size: 0.85rem; text-align: center; }
+.dev-status-banner a { color: inherit; text-decoration: underline; }
+.dev-status-testing { background: rgba(59,130,246,0.15); color: #93c5fd; border: 1px solid rgba(59,130,246,0.3); }
+.dev-status-wip { background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.3); }
+.dev-status-todo { background: rgba(239,68,68,0.15); color: #fca5a5; border: 1px solid rgba(239,68,68,0.3); }
+
 /* Compact device page layout */
 .dev-hero {
   display: flex;

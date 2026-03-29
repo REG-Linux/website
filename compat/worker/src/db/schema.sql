@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS devices (
   has_fan      INTEGER,-- 1/0/NULL
   compositor   TEXT,   -- "Sway" or "Weston"
   install_notes TEXT,  -- Markdown: device-specific install instructions
+  status       TEXT DEFAULT 'todo' CHECK(status IN ('released','testing','wip','todo')),
   created_at   TEXT DEFAULT (datetime('now'))
 );
 

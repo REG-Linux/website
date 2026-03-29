@@ -10,6 +10,7 @@ export interface Env {
 
 export type DeviceType = 'handheld' | 'sbc' | 'tvbox' | 'console' | 'pc' | 'unknown';
 export type Arch = 'armv7' | 'aarch64' | 'riscv64' | 'x86_64';
+export type DeviceStatus = 'released' | 'testing' | 'wip' | 'todo';
 export type Status = 'works' | 'partial' | 'broken' | 'na' | 'untested';
 
 export interface Device {
@@ -40,6 +41,7 @@ export interface Device {
   has_fan: number | null;
   compositor: string | null;
   install_notes: string | null;
+  status: DeviceStatus;
   created_at: string;
 }
 
