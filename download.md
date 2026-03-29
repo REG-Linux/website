@@ -31,6 +31,13 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
           <button class="filter-btn" data-filter="pc">PCs <span id="count-pc"></span></button>
           <button class="filter-btn" data-filter="console">Consoles <span id="count-console"></span></button>
         </div>
+        <div class="filter-group" id="status-filters">
+          <button class="filter-btn status-filter active" data-status="all">All statuses</button>
+          <button class="filter-btn status-filter" data-status="released">Released</button>
+          <button class="filter-btn status-filter" data-status="testing">Testing</button>
+          <button class="filter-btn status-filter" data-status="wip">WIP</button>
+          <button class="filter-btn status-filter" data-status="todo">Planned</button>
+        </div>
       </div>
     </div>
 
@@ -54,8 +61,11 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
         {% elsif slug contains "raspberry" or slug contains "banana-pi" or slug contains "orange-pi" or slug contains "khadas" or slug contains "radxa" or slug contains "firefly" or slug contains "milk-v" or slug contains "starfive" or slug contains "pine64" or slug contains "tinker" or slug contains "miqi" %}
           {% assign device_type = "sbc" %}
         {% endif %}
-        <a class="device-card" href="{{ '/download/' | append: slug | append: '/' | relative_url }}"
+        {% assign dev_override = site.data.device_overrides[slug] %}
+        {% assign dev_status = dev_override.status | default: "todo" %}
+        <a class="device-card{% if dev_status == 'todo' %} device-card-todo{% endif %}" href="{{ '/download/' | append: slug | append: '/' | relative_url }}"
            data-type="{{ device_type }}"
+           data-status="{{ dev_status }}"
            data-brand="{{ device.brand | downcase }}"
            data-soc="{{ soc_name | downcase }}"
            data-title="{{ device.title | downcase }}">
@@ -76,6 +86,7 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
             <strong class="device-name">{{ device.title }}</strong>
             <span class="device-soc">{{ soc_name }}</span>
             <span class="device-type-badge device-type-{{ device_type }}">{{ device_type }}</span>
+            {% if dev_status != "released" %}<span class="device-status-badge device-status-{{ dev_status }}">{{ dev_status }}</span>{% endif %}
           </div>
         </a>
       {% endfor %}
@@ -209,6 +220,14 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
 .device-type-pc { color: #f472b6; background: rgba(244,114,182,0.1); }
 .device-type-console { color: #22c55e; background: rgba(34,197,94,0.1); }
 .device-type-unknown { color: #6b7280; background: rgba(107,114,128,0.1); }
+.device-status-badge {
+  font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+  width: fit-content; padding: 0.1rem 0.4rem; border-radius: 999px; margin-top: 0.1rem;
+}
+.device-status-testing { color: #93c5fd; background: rgba(59,130,246,0.15); }
+.device-status-wip { color: #fcd34d; background: rgba(245,158,11,0.15); }
+.device-status-todo { color: #fca5a5; background: rgba(239,68,68,0.15); }
+.device-card-todo { opacity: 0.5; }
 .manufacturer-section { margin-top: 3rem; }
 .manufacturer-grid {
   display: grid;
@@ -242,8 +261,10 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
   var grid = document.getElementById('device-grid');
   var countEl = document.getElementById('device-count');
   var typeFilters = document.getElementById('type-filters');
+  var statusFilters = document.getElementById('status-filters');
   var cards = Array.from(grid.querySelectorAll('.device-card'));
   var activeType = 'all';
+  var activeStatus = 'all';
 
   // Count per type
   var typeCounts = {};
@@ -265,9 +286,11 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
       var brand = card.dataset.brand || '';
       var soc = card.dataset.soc || '';
       var type = card.dataset.type || '';
+      var status = card.dataset.status || 'todo';
       var matchesType = activeType === 'all' || type === activeType;
+      var matchesStatus = activeStatus === 'all' || status === activeStatus;
       var matchesSearch = !q || title.indexOf(q) >= 0 || brand.indexOf(q) >= 0 || soc.indexOf(q) >= 0;
-      var show = matchesType && matchesSearch;
+      var show = matchesType && matchesStatus && matchesSearch;
       card.setAttribute('data-hidden', show ? 'false' : 'true');
       if (show) visible++;
     });
@@ -277,10 +300,19 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
   search.addEventListener('input', filter);
   typeFilters.addEventListener('click', function(e) {
     var btn = e.target.closest('.filter-btn');
-    if (btn) {
+    if (btn && btn.dataset.filter) {
       typeFilters.querySelector('.active').classList.remove('active');
       btn.classList.add('active');
       activeType = btn.dataset.filter;
+      filter();
+    }
+  });
+  statusFilters.addEventListener('click', function(e) {
+    var btn = e.target.closest('.status-filter');
+    if (btn) {
+      statusFilters.querySelector('.active').classList.remove('active');
+      btn.classList.add('active');
+      activeStatus = btn.dataset.status;
       filter();
     }
   });

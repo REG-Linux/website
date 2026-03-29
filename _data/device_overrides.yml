@@ -2,7 +2,8 @@
 # Delete entries that look correct. Remaining entries override auto-generated data.
 # Survives sync_devices.py and extract_devices.py runs.
 #
-# Fields you can override: title, brand, image, lede, description
+# Fields you can override: title, brand, image, lede, description, status
+# Status values: released | testing | wip | todo (default: todo)
 # Leave a field out to keep the auto-generated value.
 # Set image to empty string for devices with no image available.
 
