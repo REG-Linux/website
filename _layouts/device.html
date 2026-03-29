@@ -39,7 +39,7 @@ layout: default
       </div>
     {% endif %}
     <div class="dev-hero-info">
-      <h1>{{ device_title }}</h1>
+      <h1>{{ device_title | escape }}</h1>
       <p class="dev-meta">{{ device_brand }} &middot; {{ soc_text }}</p>
       <div class="dev-cta">
         <a class="btn primary" href="{{ device_download }}" target="_blank" rel="noreferrer">Download</a>

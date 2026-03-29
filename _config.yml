@@ -1,5 +1,5 @@
 title: REG Linux
-description: Retro Emulation Gaming Linux community builds for SBCs, handhelds, and mini PCs.
+description: Free retrogaming OS for 186+ devices. Emulators pre-configured for handhelds, SBCs, and PCs. Open source Batocera alternative with RISC-V support.
 baseurl: ""
 url: "https://reglinux.org"
 og_image: "/assets/images/reg_linux_logo.png"
@@ -13,6 +13,7 @@ exclude:
   - CLAUDE.md
   - scripts/
   - codex
+  - reglinux/
   - README.md
   - WIKI_MIGRATION_PLAN.md
   - WIKI_ASSET_FETCH_REPORT.md
