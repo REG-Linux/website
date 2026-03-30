@@ -2,7 +2,13 @@ name: Deploy compat.reglinux.org
 on:
   push:
     branches: [main]
-    paths: ['compat/**', '_data/devices.yml', '_data/socs.yml', '.github/workflows/compat-deploy.yml']
+    paths:
+      - 'compat/**'
+      - '_data/devices.yml'
+      - '_data/socs.yml'
+      - '_data/device_overrides.yml'
+      - '_data/device_notes.yml'
+      - '.github/workflows/compat-deploy.yml'
   workflow_dispatch:
 
 jobs:
@@ -19,8 +25,28 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
+  seed-database:
+    runs-on: ubuntu-latest
+    needs: deploy-worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: pip install pyyaml
+
+      # Extract canonical device data and seed D1
+      - run: python3 compat/scripts/extract_devices.py
+      - run: npm ci
+        working-directory: compat/worker
+      - run: python3 compat/scripts/seed_d1.py --execute
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+
   deploy-dashboard:
     runs-on: ubuntu-latest
+    needs: seed-database
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
