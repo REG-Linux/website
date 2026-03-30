@@ -1,7 +1,7 @@
 ---
 title: Orange Pi Plus 2E
 description: Orange Pi Plus 2E — single-board computer powered by Allwinner H3.
-generated: 2026-03-30 17:26:48
+generated: 2026-03-30 21:46:16
 ---
 
 # Orange Pi Plus 2E
