@@ -2800,6 +2800,28 @@ wetek-core:
   board_url: https://reglinux.org/wiki/sbc/wetek/core/
   description: REG Linux for WeTek Core (Amlogic S812).
   lede: WeTek Core — TV box powered by Amlogic S812.
+x86_64:
+  title: Unknown X86_64
+  brand: Unknown
+  manufacturer:
+  - Unknown
+  soc:
+  - AMD/Intel x86_64
+  image: /assets/images/x86_64.webp
+  board_url: https://reglinux.org/wiki/other/unknown/x86_64/
+  description: REG Linux image for Unknown X86_64 powered by AMD/Intel x86_64.
+  lede: Unknown X86_64 pairs the AMD/Intel x86_64 SoC with the REG Linux stack for a polished retro console.
+x86_64_v3:
+  title: Unknown X86_64_V3
+  brand: Unknown
+  manufacturer:
+  - Unknown
+  soc:
+  - AMD/Intel x86_64-v3
+  image: /assets/images/x86_64_v3.webp
+  board_url: https://reglinux.org/wiki/other/unknown/x86_64_v3/
+  description: REG Linux image for Unknown X86_64_V3 powered by AMD/Intel x86_64-v3.
+  lede: Unknown X86_64_V3 pairs the AMD/Intel x86_64-v3 SoC with the REG Linux stack for a polished retro console.
 x96-air:
   title: X96 Air
   brand: X96
