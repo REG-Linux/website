@@ -651,6 +651,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/mangmi/air-x/"
   },
   {
+    "slug": "mangmi-pocketmax",
+    "title": "Mangmi Pocketmax",
+    "brand": "Mangmi",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/mangmi/pocketmax/"
+  },
+  {
     "slug": "milk-v-jupiter",
     "title": "Milk-V Jupiter",
     "brand": "Milk-V",

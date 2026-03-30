@@ -1,7 +1,7 @@
 ---
 title: Sipeed LicheePi 4A
 description: Sipeed LicheePi 4A — single-board computer powered by T-Head TH1520.
-generated: 2026-03-30 16:57:35
+generated: 2026-03-30 17:26:48
 ---
 
 # Sipeed LicheePi 4A
