@@ -16,9 +16,12 @@ Outputs:
 
 Run from the website repo root:
     python3 compat/scripts/sync_devices.py [--dry-run]
+
+Set REG_LINUX_PATH env var to override the default ~/REG-Linux path.
 """
 
 import argparse
+import os
 import re
 import sys
 from pathlib import Path
@@ -29,7 +32,7 @@ import yaml
 # Paths
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parents[2]
-REG_LINUX = Path.home() / "REG-Linux"
+REG_LINUX = Path(os.environ.get("REG_LINUX_PATH", str(Path.home() / "REG-Linux")))
 CONFIGS_DIR = REG_LINUX / "configs"
 TARGETS_FILE = REG_LINUX / "package" / "system" / "reglinux-system" / "Config.in.targets"
 DEVICES_YML = REPO_ROOT / "_data" / "devices.yml"
