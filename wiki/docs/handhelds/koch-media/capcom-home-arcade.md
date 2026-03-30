@@ -3,7 +3,7 @@ title: Capcom Home Arcade
 description: REG Linux on Capcom Home Arcade powered by Allwinner H3.
 manufacturer: Koch Media
 slug: koch media/capcom-home-arcade
-generated: 2026-03-30 21:54:08
+generated: 2026-03-30 22:50:11
 ---
 
 # Capcom Home Arcade

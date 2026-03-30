@@ -1,7 +1,7 @@
 ---
 title: HardKernel ODROID M1
 description: HardKernel ODROID M1 — single-board computer powered by Rockchip RK3568.
-generated: 2026-03-30 21:54:08
+generated: 2026-03-30 22:50:11
 ---
 
 # HardKernel ODROID M1

@@ -3,7 +3,7 @@ title: WeTek Core
 description: REG Linux on WeTek Core powered by Amlogic S812.
 manufacturer: WeTek
 slug: wetek/core
-generated: 2026-03-30 21:54:08
+generated: 2026-03-30 22:50:11
 ---
 
 # WeTek Core

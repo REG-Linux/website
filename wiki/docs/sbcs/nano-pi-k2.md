@@ -1,7 +1,7 @@
 ---
 title: Nano Pi K2
 description: Nano Pi K2 — single-board computer powered by Amlogic S905(X).
-generated: 2026-03-30 21:54:08
+generated: 2026-03-30 22:50:11
 ---
 
 # Nano Pi K2
