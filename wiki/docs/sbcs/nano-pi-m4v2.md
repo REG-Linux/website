@@ -1,7 +1,7 @@
 ---
 title: Nano Pi M4v2
 description: Nano Pi M4v2 — single-board computer powered by Rockchip RK3399.
-generated: 2026-03-30 12:33:56
+generated: 2026-03-30 16:18:19
 ---
 
 # Nano Pi M4v2
