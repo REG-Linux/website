@@ -1,7 +1,7 @@
 ---
 title: Minix Neo X8
 description: Minix Neo X8 — device powered by Amlogic S812.
-generated: 2026-03-30 16:18:19
+generated: 2026-03-30 16:57:35
 ---
 
 # Minix Neo X8
