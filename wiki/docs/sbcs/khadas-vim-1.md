@@ -1,7 +1,7 @@
 ---
 title: Khadas VIM 1
 description: Khadas VIM 1 — single-board computer powered by Amlogic S905(X).
-generated: 2026-03-30 22:50:11
+generated: 2026-03-30 23:44:36
 ---
 
 # Khadas VIM 1
