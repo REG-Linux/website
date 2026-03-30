@@ -1,7 +1,7 @@
 ---
 title: PS7000
 description: PS7000 — handheld powered by Rockchip RK3128.
-generated: 2026-03-29 20:24:07
+generated: 2026-03-30 12:33:56
 ---
 
 # PS7000
