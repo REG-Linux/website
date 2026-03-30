@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi 3
 description: Raspberry Pi 3 — single-board computer powered by Broadcom BCM2837.
-generated: 2026-03-30 23:46:16
+generated: 2026-03-30 23:50:34
 ---
 
 # Raspberry Pi 3

@@ -3,7 +3,7 @@ title: X96 Mate
 description: REG Linux on X96 Mate powered by Allwinner H616.
 manufacturer: X96
 slug: x96/mate
-generated: 2026-03-30 23:46:16
+generated: 2026-03-30 23:50:34
 ---
 
 # X96 Mate
