@@ -1,6 +1,15 @@
 name: Sync Devices
 on:
   workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source repo to sync from'
+        required: true
+        type: choice
+        options:
+          - REG-Linux/REG-Linux
+          - REG-Linux/REG-WIP
+        default: REG-Linux/REG-Linux
 
 permissions:
   contents: write
@@ -12,12 +21,13 @@ jobs:
       - name: Checkout website
         uses: actions/checkout@v4
 
-      - name: Checkout REG-Linux
+      - name: Checkout source repo
         uses: actions/checkout@v4
         with:
-          repository: REG-Linux/REG-Linux
+          repository: ${{ inputs.source }}
           path: reglinux
           fetch-depth: 1
+          token: ${{ secrets.REG_REPO_PAT }}
 
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
@@ -35,6 +45,6 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add _data/devices.yml _data/socs.yml
-            git commit -m "chore: sync devices from REG-Linux repo"
+            git commit -m "chore: sync devices from ${{ inputs.source }}"
             git push
           }

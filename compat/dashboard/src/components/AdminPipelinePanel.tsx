@@ -2,10 +2,15 @@ import { useState, useEffect, useRef } from 'react';
 import { runPipeline, fetchAdminRuns, type WorkflowRun } from '../lib/api';
 
 const PIPELINES = [
-  { id: 'sync-devices', label: 'Sync Devices', desc: 'Pull new devices from REG-Linux repo' },
+  { id: 'sync-devices', label: 'Sync Devices', desc: 'Pull new devices from source repo' },
   { id: 'deploy-site', label: 'Rebuild Site', desc: 'Jekyll + MkDocs + GitHub Pages' },
   { id: 'deploy-compat', label: 'Rebuild Compat', desc: 'Worker + Dashboard + Wiki' },
   { id: 'refresh-downloads', label: 'Refresh Downloads', desc: 'Update download links from releases' },
+];
+
+const SYNC_SOURCES = [
+  { value: 'REG-Linux/REG-Linux', label: 'Public (REG-Linux)' },
+  { value: 'REG-Linux/REG-WIP', label: 'Private (REG-WIP)' },
 ];
 
 const STATUS_ICONS: Record<string, string> = {
@@ -28,6 +33,7 @@ export function AdminPipelinePanel() {
   const [running, setRunning] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [syncSource, setSyncSource] = useState(SYNC_SOURCES[0].value);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   function refreshRuns() {
@@ -59,9 +65,12 @@ export function AdminPipelinePanel() {
     setError(null);
     setSuccess(null);
     try {
-      await runPipeline(pipelineId);
-      setSuccess(`${pipelineId} triggered`);
-      // Start polling immediately
+      // Pass source input for sync-devices
+      const inputs = pipelineId === 'sync-devices'
+        ? { source: syncSource }
+        : undefined;
+      await runPipeline(pipelineId, inputs);
+      setSuccess(`${pipelineId} triggered${inputs ? ` (${syncSource})` : ''}`);
       setTimeout(refreshRuns, 2000);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed');
@@ -84,16 +93,35 @@ export function AdminPipelinePanel() {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '1.5rem' }}>
         {PIPELINES.map(p => (
-          <button key={p.id} onClick={() => handleRun(p.id)} disabled={running !== null}
-            style={{
-              padding: '0.5rem 0.75rem', borderRadius: 'var(--radius-sm)',
-              border: '1px solid var(--border)', background: 'var(--card)',
-              color: 'var(--text)', cursor: running ? 'wait' : 'pointer',
-              textAlign: 'left', fontSize: '0.8rem', opacity: running && running !== p.id ? 0.5 : 1,
-            }}>
-            <div style={{ fontWeight: 600 }}>{p.label}</div>
-            <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{p.desc}</div>
-          </button>
+          <div key={p.id}>
+            <button onClick={() => handleRun(p.id)} disabled={running !== null}
+              style={{
+                width: '100%',
+                padding: '0.5rem 0.75rem', borderRadius: 'var(--radius-sm)',
+                border: '1px solid var(--border)', background: 'var(--card)',
+                color: 'var(--text)', cursor: running ? 'wait' : 'pointer',
+                textAlign: 'left', fontSize: '0.8rem', opacity: running && running !== p.id ? 0.5 : 1,
+              }}>
+              <div style={{ fontWeight: 600 }}>{p.label}</div>
+              <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>{p.desc}</div>
+            </button>
+            {/* Source selector for sync-devices */}
+            {p.id === 'sync-devices' && (
+              <div style={{ display: 'flex', gap: '4px', marginTop: '4px' }}>
+                {SYNC_SOURCES.map(s => (
+                  <button key={s.value} onClick={() => setSyncSource(s.value)} style={{
+                    flex: 1, padding: '0.2rem 0.4rem', borderRadius: '6px', fontSize: '0.65rem',
+                    border: syncSource === s.value ? '1px solid var(--accent)' : '1px solid var(--border)',
+                    background: syncSource === s.value ? 'rgba(43,176,233,0.1)' : 'transparent',
+                    color: syncSource === s.value ? 'var(--accent)' : 'var(--text-muted)',
+                    cursor: 'pointer', fontWeight: syncSource === s.value ? 600 : 400,
+                  }}>
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </div>
 

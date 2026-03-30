@@ -324,10 +324,12 @@ export async function updateAdminDevice(id: string, fields: DeviceOverrides, sha
   return res.json();
 }
 
-export async function runPipeline(pipeline: string): Promise<{ ok: boolean }> {
+export async function runPipeline(pipeline: string, inputs?: Record<string, string>): Promise<{ ok: boolean }> {
   const res = await fetch(`${API}/api/admin/run/${pipeline}`, {
     method: 'POST',
     credentials: 'include',
+    headers: inputs ? { 'Content-Type': 'application/json' } : {},
+    body: inputs ? JSON.stringify({ inputs }) : undefined,
   });
   if (res.status === 401) throw new Error('not_authenticated');
   if (res.status === 403) throw new Error('not_admin');
