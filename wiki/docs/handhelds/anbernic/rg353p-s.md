@@ -3,7 +3,7 @@ title: Anbernic RG353P(S)
 description: REG Linux on Anbernic RG353P(S) powered by Rockchip RK3566.
 manufacturer: Anbernic
 slug: anbernic/rg353p-s
-generated: 2026-03-29 20:24:06
+generated: 2026-03-30 12:33:56
 ---
 
 # Anbernic RG353P(S)

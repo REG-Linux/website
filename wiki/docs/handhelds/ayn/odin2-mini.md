@@ -3,7 +3,7 @@ title: Ayn ODIN2MINI
 description: REG Linux on Ayn ODIN2MINI powered by Qualcomm 8gen2 (SM8550).
 manufacturer: Ayn
 slug: ayn/odin2-mini
-generated: 2026-03-29 20:24:06
+generated: 2026-03-30 12:33:56
 ---
 
 # Ayn ODIN2MINI
