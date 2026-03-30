@@ -1,7 +1,7 @@
 ---
 title: GCW Zero
 description: GCW Zero — handheld powered by Ingenic JZ4770.
-generated: 2026-03-30 23:50:34
+generated: 2026-03-30 23:53:46
 ---
 
 # GCW Zero

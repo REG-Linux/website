@@ -1,7 +1,7 @@
 ---
 title: Orange Pi R2S
 description: Orange Pi R2S — single-board computer powered by SpacemiT K1.
-generated: 2026-03-30 23:50:34
+generated: 2026-03-30 23:53:46
 ---
 
 # Orange Pi R2S

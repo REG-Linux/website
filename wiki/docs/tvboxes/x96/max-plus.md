@@ -3,7 +3,7 @@ title: X96 Max Plus
 description: REG Linux on X96 Max Plus powered by Amlogic S905X3.
 manufacturer: X96
 slug: x96/max-plus
-generated: 2026-03-30 23:50:34
+generated: 2026-03-30 23:53:46
 ---
 
 # X96 Max Plus

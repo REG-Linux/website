@@ -1,7 +1,7 @@
 ---
 title: Radxa Rock 5B
 description: Radxa Rock 5B — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-30 23:50:34
+generated: 2026-03-30 23:53:46
 ---
 
 # Radxa Rock 5B
