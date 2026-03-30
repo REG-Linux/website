@@ -1,7 +1,7 @@
 ---
 title: Milk-V Jupiter
 description: Milk-V Jupiter — single-board computer powered by SpacemiT K1.
-generated: 2026-03-30 21:46:16
+generated: 2026-03-30 21:54:08
 ---
 
 # Milk-V Jupiter

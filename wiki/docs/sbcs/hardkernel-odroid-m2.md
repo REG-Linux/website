@@ -1,7 +1,7 @@
 ---
 title: ODROID-M2
 description: ODROID-M2 — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-30 21:46:16
+generated: 2026-03-30 21:54:08
 ---
 
 # ODROID-M2
