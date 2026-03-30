@@ -3,7 +3,7 @@ title: AYANEO Pocket DMG
 description: REG Linux on AYANEO Pocket DMG powered by Qualcomm 8gen2 (SM8550).
 manufacturer: AYANEO
 slug: ayaneo/pocket-dmg
-generated: 2026-03-30 17:26:48
+generated: 2026-03-30 21:46:16
 ---
 
 # AYANEO Pocket DMG
