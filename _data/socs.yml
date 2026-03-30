@@ -637,6 +637,20 @@ rockchip-rk3568:
   manufacturer: Rockchip
   model: RK3568
   slug: rockchip-rk3568
+rockchip-rk3576:
+  manufacturer: Rockchip
+  model: RK3576
+  slug: rockchip-rk3576
+  cpu:
+    arch: ARMv8-A
+    cores: ''
+    max_clock: ''
+    model: Cortex-A72/A53
+  gpu:
+    api: ''
+    model: ''
+    driver: Mesa3D (Panfrost)
+  kernel_version: ''
 rockchip-rk3588:
   cpu:
     arch: ARMv8-A
