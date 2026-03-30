@@ -119,7 +119,7 @@ def main() -> None:
     if args.execute:
         print(f"\nExecuting via wrangler...")
         result = subprocess.run(
-            ["npx", "wrangler", "d1", "execute", "reg-compat",
+            ["npx", "wrangler", "d1", "execute", "reg-compat", "--remote",
              f"--file={OUTPUT_SQL}"],
             cwd=SCRIPT_DIR.parent / "worker",
             capture_output=True, text=True,
