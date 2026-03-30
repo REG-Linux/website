@@ -35,6 +35,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg-ds/"
   },
   {
+    "slug": "anbernic-rg-vita-pro",
+    "title": "Anbernic Rg Vita Pro",
+    "brand": "Anbernic",
+    "soc": "Rockchip RK3576",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg-vita-pro/"
+  },
+  {
     "slug": "anbernic-rg280m",
     "title": "Anbernic RG280M",
     "brand": "Anbernic",
@@ -644,6 +651,20 @@
     "board_url": "https://reglinux.org/wiki/handhelds/magicx/xu-mini-m/"
   },
   {
+    "slug": "magicx-zero-28",
+    "title": "MagicX Zero 28",
+    "brand": "MagicX",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/magicx/zero-28/"
+  },
+  {
+    "slug": "magicx-zero-40",
+    "title": "MagicX Zero 40",
+    "brand": "MagicX",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/magicx/zero-40/"
+  },
+  {
     "slug": "mangmi-air-x",
     "title": "Mangmi Air X",
     "brand": "Mangmi",
@@ -938,6 +959,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/pocketgo-2/"
   },
   {
+    "slug": "powkiddy",
+    "title": "Unknown Powkiddy",
+    "brand": "Unknown",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/unknown/powkiddy/"
+  },
+  {
     "slug": "powkiddy-rgb10",
     "title": "Powkiddy RGB10",
     "brand": "Powkiddy",
@@ -992,6 +1020,13 @@
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/rk2023/"
+  },
+  {
+    "slug": "powkiddy-v90s",
+    "title": "Powkiddy V90S",
+    "brand": "Powkiddy",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/v90s/"
   },
   {
     "slug": "powkiddy-x35h",
@@ -1211,6 +1246,20 @@
     "board_url": "https://reglinux.org/wiki/handhelds/x86_64/steam-deck/"
   },
   {
+    "slug": "trimui-brick",
+    "title": "TrimUI Brick",
+    "brand": "TrimUI",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/trimui/brick/"
+  },
+  {
+    "slug": "trimui-smart-pro",
+    "title": "TrimUI Smart Pro",
+    "brand": "TrimUI",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/trimui/smart-pro/"
+  },
+  {
     "slug": "tronsmart-s82",
     "title": "Tronsmart S82",
     "brand": "Tronsmart",
@@ -1281,6 +1330,20 @@
     "board_url": "https://reglinux.org/wiki/sbc/wetek/core/"
   },
   {
+    "slug": "x86_64",
+    "title": "Unknown X86_64",
+    "brand": "Unknown",
+    "soc": "AMD/Intel x86_64",
+    "board_url": "https://reglinux.org/wiki/other/unknown/x86_64/"
+  },
+  {
+    "slug": "x86_64_v3",
+    "title": "Unknown X86_64_V3",
+    "brand": "Unknown",
+    "soc": "AMD/Intel x86_64-v3",
+    "board_url": "https://reglinux.org/wiki/other/unknown/x86_64_v3/"
+  },
+  {
     "slug": "x96-air",
     "title": "X96 Air",
     "brand": "X96",
@@ -1307,5 +1370,12 @@
     "brand": "Unbranded",
     "soc": "Rockchip RK3128",
     "board_url": "https://reglinux.org/wiki/other/unknown/xpi-3128/"
+  },
+  {
+    "slug": "xu20",
+    "title": "Unknown XU20",
+    "brand": "Unknown",
+    "soc": "Allwinner A133",
+    "board_url": "https://reglinux.org/wiki/handhelds/unknown/xu20/"
   }
 ]
