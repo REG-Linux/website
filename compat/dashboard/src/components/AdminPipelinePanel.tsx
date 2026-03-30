@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { runPipeline, fetchAdminRuns, type WorkflowRun } from '../lib/api';
 
 const PIPELINES = [
@@ -28,12 +28,31 @@ export function AdminPipelinePanel() {
   const [running, setRunning] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  function refreshRuns() {
+    fetchAdminRuns().then(data => setRuns(data.runs)).catch(() => {});
+  }
 
   useEffect(() => {
-    fetchAdminRuns()
-      .then(data => setRuns(data.runs))
-      .catch(() => {});
+    refreshRuns();
+    return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, []);
+
+  // Auto-poll: when any run is in_progress or queued, poll every 5s
+  useEffect(() => {
+    const hasActive = runs.some(r => r.status === 'in_progress' || r.status === 'queued');
+    if (hasActive) {
+      if (!pollRef.current) {
+        pollRef.current = setInterval(refreshRuns, 5000);
+      }
+    } else {
+      if (pollRef.current) {
+        clearInterval(pollRef.current);
+        pollRef.current = null;
+      }
+    }
+  }, [runs]);
 
   async function handleRun(pipelineId: string) {
     setRunning(pipelineId);
@@ -42,19 +61,26 @@ export function AdminPipelinePanel() {
     try {
       await runPipeline(pipelineId);
       setSuccess(`${pipelineId} triggered`);
-      // Refresh runs after a short delay
-      setTimeout(() => {
-        fetchAdminRuns().then(data => setRuns(data.runs)).catch(() => {});
-      }, 3000);
+      // Start polling immediately
+      setTimeout(refreshRuns, 2000);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed');
     }
     setRunning(null);
   }
 
+  // Find last successful deploy timestamp
+  const lastDeploy = runs.find(r => r.conclusion === 'success');
+
   return (
     <div style={{ position: 'sticky', top: '4rem' }}>
       <h3 style={{ margin: '0 0 0.75rem', fontFamily: 'var(--font-heading)', fontSize: '1rem' }}>Pipelines</h3>
+
+      {lastDeploy && (
+        <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+          Last success: {new Date(lastDeploy.created_at).toLocaleString()}
+        </div>
+      )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '1.5rem' }}>
         {PIPELINES.map(p => (
@@ -74,12 +100,20 @@ export function AdminPipelinePanel() {
       {error && <div style={{ fontSize: '0.75rem', color: '#ef4444', marginBottom: '0.5rem' }}>{error}</div>}
       {success && <div style={{ fontSize: '0.75rem', color: '#22c55e', marginBottom: '0.5rem' }}>{success}</div>}
 
-      <h3 style={{ margin: '0 0 0.5rem', fontFamily: 'var(--font-heading)', fontSize: '1rem' }}>Recent Runs</h3>
+      <h3 style={{ margin: '0 0 0.5rem', fontFamily: 'var(--font-heading)', fontSize: '1rem' }}>
+        Recent Runs
+        {runs.some(r => r.status === 'in_progress' || r.status === 'queued') && (
+          <span style={{ marginLeft: '0.5rem', fontSize: '0.65rem', color: '#f59e0b' }}>
+            (auto-refreshing)
+          </span>
+        )}
+      </h3>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
         {runs.length === 0 && <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>No runs found</span>}
         {runs.map(r => {
           const color = STATUS_COLORS[r.conclusion || r.status] || 'var(--text-muted)';
           const icon = STATUS_ICONS[r.conclusion === 'success' ? 'completed' : r.status] || '○';
+          const isActive = r.status === 'in_progress' || r.status === 'queued';
           return (
             <a key={r.id} href={r.html_url} target="_blank" rel="noreferrer"
               style={{
@@ -87,7 +121,12 @@ export function AdminPipelinePanel() {
                 padding: '0.3rem 0.5rem', borderRadius: '4px',
                 textDecoration: 'none', color: 'var(--text)', fontSize: '0.75rem',
               }}>
-              <span style={{ color, fontFamily: 'var(--font-mono)' }}>{icon}</span>
+              <span style={{
+                color, fontFamily: 'var(--font-mono)',
+                animation: isActive ? 'pulse 1.5s ease-in-out infinite' : 'none',
+              }}>
+                {icon}
+              </span>
               <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                 {r.name}
               </span>
@@ -98,6 +137,13 @@ export function AdminPipelinePanel() {
           );
         })}
       </div>
+
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.4; }
+        }
+      `}</style>
     </div>
   );
 }

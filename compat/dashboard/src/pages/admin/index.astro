@@ -1,6 +1,6 @@
 ---
 import '../../styles/global.css';
-import { AdminDeviceList } from '../../components/AdminDeviceList';
+import { AdminTabs } from '../../components/AdminTabs';
 import { AdminPipelinePanel } from '../../components/AdminPipelinePanel';
 ---
 <html lang="en">
@@ -20,11 +20,11 @@ import { AdminPipelinePanel } from '../../components/AdminPipelinePanel';
       <span class="page-title">Admin</span>
       <nav>
         <a href="/">Matrix</a>
-        <a href="/admin">Devices</a>
+        <a href="/admin">Admin</a>
       </nav>
     </header>
     <main style="display: grid; grid-template-columns: 1fr 300px; gap: 2rem; align-items: start;">
-      <AdminDeviceList client:only="react" />
+      <AdminTabs client:only="react" />
       <AdminPipelinePanel client:only="react" />
     </main>
     <style>

@@ -3,13 +3,22 @@ import { handleDevice } from './routes/device';
 import { handleSubmit } from './routes/submit';
 import { handleAuthGithub, handleAuthCallback, handleAuthMe } from './routes/auth';
 import { handleDeviceRegister } from './routes/device-register';
-import { handleAdminDevices, handleAdminDevice, handleAdminDeviceUpdate, handleAdminRun, handleAdminRuns } from './routes/admin';
+import {
+  handleAdminDevices, handleAdminDevice, handleAdminDeviceUpdate, handleAdminDeviceStatusPatch,
+  handleAdminRun, handleAdminRuns, handleAdminStats,
+  handleAdminResults, handleAdminResultDelete, handleAdminResultsBatchDelete,
+  handleAdminTokens, handleAdminTokenRevoke,
+  handleAdminBulkStatus,
+  handleAdminDeviceNotes, handleAdminDeviceNotesUpdate,
+  handleAdminFeatures, handleAdminFeatureCreate, handleAdminFeatureUpdate, handleAdminFeatureDelete,
+  handleAdminSocs, handleAdminDeviceCreate, handleAdminUploadImage,
+} from './routes/admin';
 import type { Env } from './types';
 
 function corsHeaders(origin: string): Record<string, string> {
   return {
     'Access-Control-Allow-Origin': origin,
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'Access-Control-Allow-Credentials': 'true',
   };
@@ -74,8 +83,27 @@ export default {
         response = await handleAuthCallback(request, env);
       } else if (method === 'GET' && path === '/api/auth/me') {
         response = await handleAuthMe(request, env);
+      } else if (method === 'GET' && path === '/api/admin/stats') {
+        response = await handleAdminStats(request, env);
+      } else if (method === 'GET' && path === '/api/admin/socs') {
+        response = await handleAdminSocs(request, env);
       } else if (method === 'GET' && path === '/api/admin/devices') {
         response = await handleAdminDevices(request, env);
+      } else if (method === 'POST' && path === '/api/admin/devices') {
+        response = await handleAdminDeviceCreate(request, env);
+      } else if (method === 'POST' && path === '/api/admin/upload-image') {
+        response = await handleAdminUploadImage(request, env);
+      // --- Device sub-routes (specific patterns BEFORE catch-all startsWith) ---
+      } else if (method === 'PATCH' && path.match(/^\/api\/admin\/device\/[^/]+\/status$/)) {
+        const deviceId = decodeURIComponent(path.slice('/api/admin/device/'.length).replace(/\/status$/, ''));
+        response = await handleAdminDeviceStatusPatch(request, env, deviceId);
+      } else if (method === 'GET' && path.match(/^\/api\/admin\/device\/[^/]+\/notes$/)) {
+        const deviceId = decodeURIComponent(path.slice('/api/admin/device/'.length).replace(/\/notes$/, ''));
+        response = await handleAdminDeviceNotes(request, env, deviceId);
+      } else if (method === 'PUT' && path.match(/^\/api\/admin\/device\/[^/]+\/notes$/)) {
+        const deviceId = decodeURIComponent(path.slice('/api/admin/device/'.length).replace(/\/notes$/, ''));
+        response = await handleAdminDeviceNotesUpdate(request, env, deviceId);
+      // --- Device catch-all (must come AFTER sub-routes) ---
       } else if (method === 'GET' && path.startsWith('/api/admin/device/')) {
         const deviceId = decodeURIComponent(path.slice('/api/admin/device/'.length));
         response = await handleAdminDevice(request, env, deviceId);
@@ -87,6 +115,39 @@ export default {
         response = await handleAdminRun(request, env, pipeline);
       } else if (method === 'GET' && path === '/api/admin/runs') {
         response = await handleAdminRuns(request, env);
+
+      // --- Moderation ---
+      } else if (method === 'GET' && path === '/api/admin/results') {
+        response = await handleAdminResults(request, env);
+      } else if (method === 'DELETE' && path.match(/^\/api\/admin\/result\/\d+$/)) {
+        const resultId = path.slice('/api/admin/result/'.length);
+        response = await handleAdminResultDelete(request, env, resultId);
+      } else if (method === 'POST' && path === '/api/admin/results/batch-delete') {
+        response = await handleAdminResultsBatchDelete(request, env);
+
+      // --- Tokens ---
+      } else if (method === 'GET' && path === '/api/admin/tokens') {
+        response = await handleAdminTokens(request, env);
+      } else if (method === 'POST' && path.match(/^\/api\/admin\/token\/[a-f0-9]+\/revoke$/)) {
+        const token = path.slice('/api/admin/token/'.length).replace(/\/revoke$/, '');
+        response = await handleAdminTokenRevoke(request, env, token);
+
+      // --- Bulk status ---
+      } else if (method === 'POST' && path === '/api/admin/bulk-status') {
+        response = await handleAdminBulkStatus(request, env);
+
+      // --- Features ---
+      } else if (method === 'GET' && path === '/api/admin/features') {
+        response = await handleAdminFeatures(request, env);
+      } else if (method === 'POST' && path === '/api/admin/features') {
+        response = await handleAdminFeatureCreate(request, env);
+      } else if (method === 'PUT' && path.match(/^\/api\/admin\/feature\/[^/]+$/)) {
+        const featureId = decodeURIComponent(path.slice('/api/admin/feature/'.length));
+        response = await handleAdminFeatureUpdate(request, env, featureId);
+      } else if (method === 'DELETE' && path.match(/^\/api\/admin\/feature\/[^/]+$/)) {
+        const featureId = decodeURIComponent(path.slice('/api/admin/feature/'.length));
+        response = await handleAdminFeatureDelete(request, env, featureId);
+
       } else {
         response = Response.json({ error: 'not_found' }, { status: 404 });
       }
