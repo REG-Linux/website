@@ -84,6 +84,17 @@ anbernic-rg-ds:
 
 
     Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
+anbernic-rg-vita-pro:
+  title: Anbernic Rg Vita Pro
+  brand: Anbernic
+  manufacturer:
+  - Anbernic
+  soc:
+  - Rockchip RK3576
+  image: /assets/images/anbernic-rg-vita-pro.webp
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg-vita-pro/
+  description: REG Linux image for Anbernic Rg Vita Pro powered by Rockchip RK3576.
+  lede: Anbernic Rg Vita Pro pairs the Rockchip RK3576 SoC with the REG Linux stack for a polished retro console.
 anbernic-rg280m:
   title: Anbernic RG280M
   brand: Anbernic
@@ -1481,6 +1492,28 @@ magicx-xu-mini-m:
 
 
     TODO'
+magicx-zero-28:
+  title: MagicX Zero 28
+  brand: MagicX
+  manufacturer:
+  - MagicX
+  soc:
+  - Allwinner A133
+  image: /assets/images/magicx-zero-28.webp
+  board_url: https://reglinux.org/wiki/handhelds/magicx/zero-28/
+  description: REG Linux image for MagicX Zero 28 powered by Allwinner A133.
+  lede: MagicX Zero 28 pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
+magicx-zero-40:
+  title: MagicX Zero 40
+  brand: MagicX
+  manufacturer:
+  - MagicX
+  soc:
+  - Allwinner A133
+  image: /assets/images/magicx-zero-40.webp
+  board_url: https://reglinux.org/wiki/handhelds/magicx/zero-40/
+  description: REG Linux image for MagicX Zero 40 powered by Allwinner A133.
+  lede: MagicX Zero 40 pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
 mangmi-air-x:
   title: Mangmi Air X
   brand: Mangmi
@@ -1971,6 +2004,17 @@ pocketgo-2:
   board_url: https://reglinux.org/wiki/handhelds/unknown/pocketgo-2/
   description: REG Linux for PocketGo 2 (Ingenic JZ4770).
   lede: PocketGo 2 — handheld powered by Ingenic JZ4770.
+powkiddy:
+  title: Unknown Powkiddy
+  brand: Unknown
+  manufacturer:
+  - Unknown
+  soc:
+  - Allwinner A133
+  image: /assets/images/powkiddy.webp
+  board_url: https://reglinux.org/wiki/handhelds/unknown/powkiddy/
+  description: REG Linux image for Unknown Powkiddy powered by Allwinner A133.
+  lede: Unknown Powkiddy pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
 powkiddy-rgb10:
   title: Powkiddy RGB10
   brand: Powkiddy
@@ -2169,6 +2213,17 @@ powkiddy-rk2023:
 
 
     Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
+powkiddy-v90s:
+  title: Powkiddy V90S
+  brand: Powkiddy
+  manufacturer:
+  - Powkiddy
+  soc:
+  - Allwinner A133
+  image: /assets/images/powkiddy-v90s.webp
+  board_url: https://reglinux.org/wiki/handhelds/powkiddy/v90s/
+  description: REG Linux image for Powkiddy V90S powered by Allwinner A133.
+  lede: Powkiddy V90S pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
 powkiddy-x35h:
   title: Powkiddy X35H
   brand: Powkiddy
@@ -2610,6 +2665,28 @@ steam-deck:
   board_url: https://reglinux.org/wiki/handhelds/x86_64/steam-deck/
   description: REG Linux for Steam Deck (AMD Zen 2 APU).
   lede: Steam Deck — PC powered by AMD Zen 2 APU.
+trimui-brick:
+  title: TrimUI Brick
+  brand: TrimUI
+  manufacturer:
+  - TrimUI
+  soc:
+  - Allwinner A133
+  image: /assets/images/trimui-brick.webp
+  board_url: https://reglinux.org/wiki/handhelds/trimui/brick/
+  description: REG Linux image for TrimUI Brick powered by Allwinner A133.
+  lede: TrimUI Brick pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
+trimui-smart-pro:
+  title: TrimUI Smart Pro
+  brand: TrimUI
+  manufacturer:
+  - TrimUI
+  soc:
+  - Allwinner A133
+  image: /assets/images/trimui-smart-pro.webp
+  board_url: https://reglinux.org/wiki/handhelds/trimui/smart-pro/
+  description: REG Linux image for TrimUI Smart Pro powered by Allwinner A133.
+  lede: TrimUI Smart Pro pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
 tronsmart-s82:
   title: Tronsmart S82
   brand: Tronsmart
@@ -2866,3 +2943,14 @@ xpi-3128:
   board_url: https://reglinux.org/wiki/other/unknown/xpi-3128/
   description: REG Linux for XPi 3128 (Rockchip RK3128).
   lede: XPi 3128 — device powered by Rockchip RK3128.
+xu20:
+  title: Unknown XU20
+  brand: Unknown
+  manufacturer:
+  - Unknown
+  soc:
+  - Allwinner A133
+  image: /assets/images/xu20.webp
+  board_url: https://reglinux.org/wiki/handhelds/unknown/xu20/
+  description: REG Linux image for Unknown XU20 powered by Allwinner A133.
+  lede: Unknown XU20 pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
