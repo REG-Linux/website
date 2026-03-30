@@ -1492,6 +1492,17 @@ mangmi-air-x:
   board_url: https://reglinux.org/wiki/handhelds/mangmi/air-x/
   description: REG Linux for Mangmi Air X (Qualcomm SM6115).
   lede: Mangmi Air X — handheld powered by Qualcomm SM6115.
+mangmi-pocketmax:
+  title: Mangmi Pocketmax
+  brand: Mangmi
+  manufacturer:
+  - Mangmi
+  soc:
+  - Qualcomm SD865 (SM8250)
+  image: /assets/images/mangmi-pocketmax.webp
+  board_url: https://reglinux.org/wiki/handhelds/mangmi/pocketmax/
+  description: REG Linux image for Mangmi Pocketmax powered by Qualcomm SD865 (SM8250).
+  lede: Mangmi Pocketmax pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
 milk-v-jupiter:
   title: Milk-V Jupiter
   brand: Milk-V
