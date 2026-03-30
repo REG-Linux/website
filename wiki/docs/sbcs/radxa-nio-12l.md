@@ -1,7 +1,7 @@
 ---
 title: Radxa NIO 12L
 description: Radxa NIO 12L — single-board computer powered by Genio 1200 (MT8395).
-generated: 2026-03-30 21:46:16
+generated: 2026-03-30 21:54:08
 ---
 
 # Radxa NIO 12L
