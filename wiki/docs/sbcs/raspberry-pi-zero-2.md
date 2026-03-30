@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi Zero 2
 description: Raspberry Pi Zero 2 — single-board computer powered by Broadcom BCM2837.
-generated: 2026-03-30 16:57:35
+generated: 2026-03-30 17:26:48
 ---
 
 # Raspberry Pi Zero 2

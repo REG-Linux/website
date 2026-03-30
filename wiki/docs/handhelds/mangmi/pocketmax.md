@@ -1,17 +1,17 @@
 ---
-title: Retroid Pocket RP6
-description: REG Linux on Retroid Pocket RP6 powered by Qualcomm 8gen2 (SM8550).
-manufacturer: Retroid
-slug: retroid/pocket-6
+title: Mangmi Pocketmax
+description: REG Linux on Mangmi Pocketmax powered by Qualcomm SD865 (SM8250).
+manufacturer: Mangmi
+slug: mangmi/pocketmax
 generated: 2026-03-30 17:26:48
 ---
 
-# Retroid Pocket RP6
+# Mangmi Pocketmax
 
 
 ## Hardware & Compatibility
 
-<div data-reg-compat="retroid-pocket-6:specs"></div>
+<div data-reg-compat="mangmi-pocketmax:specs"></div>
 <script src="https://compat.reglinux.org/widget.js"></script>
 
 ## Install REG Linux
