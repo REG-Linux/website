@@ -1,7 +1,7 @@
 ---
 title: Indiedroid Nova
 description: Indiedroid Nova — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-30 22:50:11
+generated: 2026-03-30 23:44:36
 ---
 
 # Indiedroid Nova
