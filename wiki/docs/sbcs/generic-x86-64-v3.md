@@ -1,7 +1,7 @@
 ---
 title: Generic PC (x86-64-v3)
 description: Generic PC (x86-64-v3) — device powered by AMD/Intel x86_64-v3.
-generated: 2026-03-30 23:44:36
+generated: 2026-03-30 23:46:16
 ---
 
 # Generic PC (x86-64-v3)
