@@ -1025,6 +1025,52 @@ def main() -> None:
                 "gpu_driver": info.get("gpu_driver"),
             }
 
+    # Fallback: for targets with no DTS names, use board image paths from Config.in.targets
+    # This handles boards that use stock DTB files instead of compiling from DTS source.
+    for target, board_paths in target_boards.items():
+        if target not in board_info:
+            continue
+        info = board_info[target]
+        if info.get("dts_names"):
+            continue  # already processed via DTS
+
+        for board_path in board_paths:
+            # board_path is like "rockchip/rk3576/anbernic-rg-vita-pro"
+            slug = board_path.rsplit("/", 1)[-1]
+            slug = dedupe_slug(slug)
+
+            if slug in dts_devices:
+                continue
+
+            if slug in MANUAL_DTS_TO_DEVICE_ID:
+                device_id = MANUAL_DTS_TO_DEVICE_ID[slug]
+                if device_id is None:
+                    continue
+            else:
+                device_id = slug_to_device_id(slug)
+
+            brand = slug_to_brand(slug)
+            title = slug_to_title(slug, brand)
+            soc_slug = SOC_TARGET_TO_SLUG.get(target)
+            mfr, model = SOC_DISPLAY_NAMES.get(target, ("Unknown", target))
+            soc_name = f"{mfr} {model}".strip()
+            arch = BOARD_ARCH_MAP.get(target)
+
+            dts_devices[slug] = {
+                "slug": slug,
+                "device_id": device_id,
+                "target": target,
+                "dts": board_path,
+                "brand": brand,
+                "title": title,
+                "soc_slug": soc_slug,
+                "soc_name": soc_name,
+                "arch": arch,
+                "cpu_model": info.get("cpu_model"),
+                "kernel": info.get("kernel"),
+                "gpu_driver": info.get("gpu_driver"),
+            }
+
     # Also add x86_64 and x86_64_v3 as generic PC targets
     for target in ["X86_64", "X86_64_V3"]:
         if target in board_info:
