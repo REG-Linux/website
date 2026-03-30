@@ -237,7 +237,20 @@ export async function handleAdminRun(request: Request, env: Env, pipeline: strin
     return json({ error: 'invalid pipeline', valid: Object.keys(PIPELINE_WORKFLOWS) }, 400);
   }
 
-  await dispatchWorkflow(env.GITHUB_REPO_TOKEN!, OWNER, REPO, workflowFile);
+  // Parse optional inputs from request body (for workflow_dispatch inputs)
+  let inputs: Record<string, string> | undefined;
+  if (request.body) {
+    try {
+      const body = await request.json() as { inputs?: Record<string, string> };
+      if (body.inputs && typeof body.inputs === 'object') {
+        inputs = body.inputs;
+      }
+    } catch {
+      // No body or invalid JSON — that's fine, dispatch without inputs
+    }
+  }
+
+  await dispatchWorkflow(env.GITHUB_REPO_TOKEN!, OWNER, REPO, workflowFile, 'main', inputs);
 
   return json({ ok: true, pipeline });
 }

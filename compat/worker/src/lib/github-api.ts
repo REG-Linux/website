@@ -128,13 +128,17 @@ export async function dispatchWorkflow(
   repo: string,
   workflowId: string,
   ref = 'main',
+  inputs?: Record<string, string>,
 ): Promise<void> {
+  const body: Record<string, unknown> = { ref };
+  if (inputs && Object.keys(inputs).length > 0) body.inputs = inputs;
+
   const res = await fetch(
     `${GITHUB_API}/repos/${owner}/${repo}/actions/workflows/${workflowId}/dispatches`,
     {
       method: 'POST',
       headers: headers(token),
-      body: JSON.stringify({ ref }),
+      body: JSON.stringify(body),
     },
   );
 
