@@ -1,7 +1,7 @@
 ---
 title: Radxa 3A
 description: Radxa 3A — single-board computer powered by Rockchip RK3566/RK3568.
-generated: 2026-03-30 23:44:36
+generated: 2026-03-30 23:46:16
 ---
 
 # Radxa 3A
