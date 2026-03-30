@@ -212,7 +212,7 @@ BOARD_ARCH_MAP = {
     "ODROIDC5": "aarch64",
     "RK3128": "armv7", "RK3288": "armv7",
     "RK3326": "aarch64", "RK3328": "aarch64", "RK3399": "aarch64",
-    "RK3568": "aarch64", "RK3588": "aarch64",
+    "RK3568": "aarch64", "RK3576": "aarch64", "RK3588": "aarch64",
     "BCM2835": "armv7", "BCM2836": "armv7", "BCM2837": "aarch64",
     "BCM2711": "aarch64", "BCM2712": "aarch64",
     "XU4": "armv7",
@@ -282,6 +282,7 @@ SOC_DISPLAY_NAMES = {
     "RK3328": ("Rockchip", "RK3328"),
     "RK3399": ("Rockchip", "RK3399"),
     "RK3568": ("Rockchip", "RK3566/RK3568"),
+    "RK3576": ("Rockchip", "RK3576"),
     "RK3588": ("Rockchip", "RK3588"),
     "BCM2835": ("Broadcom", "BCM2835"),
     "BCM2836": ("Broadcom", "BCM2836"),
@@ -331,6 +332,7 @@ SOC_TARGET_TO_SLUG = {
     "RK3328": "rockchip-rk3328",
     "RK3399": "rockchip-rk3399",
     "RK3568": "rockchip-rk3566",   # board covers both rk3566 and rk3568
+    "RK3576": "rockchip-rk3576",
     "RK3588": "rockchip-rk3588",
     "BCM2835": "broadcom-bcm2835",
     "BCM2836": "broadcom-bcm2836",
@@ -402,6 +404,7 @@ MANUAL_DTS_TO_DEVICE_ID = {
     "anbernic-rg40xx-h": "anbernic-rg40xx-h",
     "anbernic-rg40xx-v": "anbernic-rg40xx-v",
     "anbernic-rgcubexx": "anbernic-rg-cubexx",
+    "anbernic-rg-vita-pro": "anbernic-rg-vita-pro",
 
     # -----------------------------------------------------------------------
     # Allwinner H3 — naming normalization
