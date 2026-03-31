@@ -3,7 +3,7 @@ title: Game Console R33S
 description: REG Linux on Game Console R33S powered by Rockchip RK3326.
 manufacturer: Unbranded
 slug: unbranded/game-console-r33s
-generated: 2026-03-30 23:53:46
+generated: 2026-03-31 00:00:09
 ---
 
 # Game Console R33S

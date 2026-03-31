@@ -3,7 +3,7 @@ title: Retroid Pocket RP6
 description: REG Linux on Retroid Pocket RP6 powered by Qualcomm 8gen2 (SM8550).
 manufacturer: Retroid
 slug: retroid/pocket-6
-generated: 2026-03-30 23:53:46
+generated: 2026-03-31 00:00:09
 ---
 
 # Retroid Pocket RP6
