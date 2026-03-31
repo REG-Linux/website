@@ -3,7 +3,7 @@ title: Beelink GT King Pro
 description: REG Linux on Beelink GT King Pro powered by Amlogic S922X-H.
 manufacturer: Beelink
 slug: beelink/gt-king-pro
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # Beelink GT King Pro

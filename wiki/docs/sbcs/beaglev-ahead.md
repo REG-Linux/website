@@ -1,7 +1,7 @@
 ---
 title: BeagleBoard Ahead
 description: BeagleBoard Ahead — single-board computer powered by T-Head TH1520.
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # BeagleBoard Ahead
