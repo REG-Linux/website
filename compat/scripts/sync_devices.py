@@ -419,6 +419,7 @@ MANUAL_DTS_TO_DEVICE_ID = {
     # -----------------------------------------------------------------------
     # Allwinner H3 / CHA / MINI — special board targets
     # -----------------------------------------------------------------------
+    "cha": "capcom-home-arcade",
     "libretech-all-h3-cc": "libretech-tritium-h5",
 
     "nintendo-nes-classic": "nintendo-nes-classic",
@@ -1232,6 +1233,38 @@ def main() -> None:
         dts = dev.get("dts", "")
         if dts and "/" in dts and dts not in board_map:
             board_map[dts] = dev["device_id"]
+
+    # Map board paths whose slug doesn't match any dts_device but maps to a known device
+    # via MANUAL_DTS_TO_DEVICE_ID or slug_to_device_id. Also add the bare last segment
+    # since system.board often contains just that (e.g. "cha" not "allwinner/h3/cha").
+    for target, board_paths in target_boards.items():
+        for board_path in board_paths:
+            if board_path in board_map:
+                continue
+            slug = board_path.rsplit("/", 1)[-1]
+            slug = dedupe_slug(slug)
+            # Try manual mapping
+            if slug in MANUAL_DTS_TO_DEVICE_ID:
+                device_id = MANUAL_DTS_TO_DEVICE_ID[slug]
+                if device_id and device_id in existing_devices:
+                    board_map[board_path] = device_id
+                    continue
+            # Try slug_to_device_id heuristic
+            candidate = slug_to_device_id(slug)
+            if candidate in existing_devices:
+                board_map[board_path] = candidate
+                continue
+            # Try the slug directly as a device ID
+            if slug in existing_devices:
+                board_map[board_path] = slug
+
+    # Ensure bare last segments are also mapped (system.board often contains just "cha" not "allwinner/h3/cha")
+    extra = {}
+    for board_path, device_id in board_map.items():
+        bare = board_path.rsplit("/", 1)[-1]
+        if bare not in board_map and bare != device_id:
+            extra[bare] = device_id
+    board_map.update(extra)
 
     board_map_file = REPO_ROOT / "compat" / "scripts" / "board_device_map.json"
     with open(board_map_file, "w") as f:
