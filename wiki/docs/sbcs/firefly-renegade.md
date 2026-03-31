@@ -1,7 +1,7 @@
 ---
 title: Firefly Renegade
 description: Firefly Renegade — single-board computer powered by Rockchip RK3328.
-generated: 2026-03-31 10:12:37
+generated: 2026-03-31 10:13:16
 ---
 
 # Firefly Renegade
