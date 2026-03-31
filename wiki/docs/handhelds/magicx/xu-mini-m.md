@@ -3,7 +3,7 @@ title: XU Mini M
 description: REG Linux on XU Mini M powered by Rockchip RK3326.
 manufacturer: MagicX
 slug: magicx/xu-mini-m
-generated: 2026-03-31 20:22:29
+generated: 2026-03-31 21:41:55
 ---
 
 # XU Mini M

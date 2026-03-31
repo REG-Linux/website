@@ -1,7 +1,7 @@
 ---
 title: Libre Computer Cc
 description: Libre Computer Cc — single-board computer powered by Amlogic S905(X).
-generated: 2026-03-31 20:22:29
+generated: 2026-03-31 21:41:55
 ---
 
 # Libre Computer Cc

@@ -1,7 +1,7 @@
 ---
 title: Banana Pi M4 Zero
 description: Banana Pi M4 Zero — single-board computer powered by Allwinner H616.
-generated: 2026-03-31 20:22:29
+generated: 2026-03-31 21:41:55
 ---
 
 # Banana Pi M4 Zero
