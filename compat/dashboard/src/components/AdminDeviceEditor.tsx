@@ -121,7 +121,8 @@ export function AdminDeviceEditor() {
     try {
       // Resize + convert to WebP on the client
       const base64 = await processImage(file, 400, 300);
-      const result = await uploadDeviceImage(deviceId, base64, `${deviceId}.webp`);
+      const ext = base64.startsWith('data:image/webp') ? 'webp' : 'png';
+      const result = await uploadDeviceImage(deviceId, base64, `${deviceId}.${ext}`);
       // Update the image field
       setField('image', result.image_url);
     } catch (err) {
@@ -390,26 +391,35 @@ export function AdminDeviceEditor() {
 /** Resize image to fit within maxW x maxH and convert to WebP base64 (data URI). */
 function processImage(file: File, maxW: number, maxH: number): Promise<string> {
   return new Promise((resolve, reject) => {
-    const objectUrl = URL.createObjectURL(file);
-    const img = new Image();
-    img.onload = () => {
-      URL.revokeObjectURL(objectUrl);
-      let { width, height } = img;
-      if (width > maxW || height > maxH) {
-        const scale = Math.min(maxW / width, maxH / height);
-        width = Math.round(width * scale);
-        height = Math.round(height * scale);
-      }
-      const canvas = document.createElement('canvas');
-      canvas.width = width;
-      canvas.height = height;
-      const ctx = canvas.getContext('2d');
-      if (!ctx) { reject(new Error('no canvas context')); return; }
-      ctx.drawImage(img, 0, 0, width, height);
-      const dataUrl = canvas.toDataURL('image/webp', 0.85);
-      resolve(dataUrl);
+    // Use FileReader instead of createObjectURL for broader compatibility
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error(`Failed to read file: ${file.name} (${file.type}, ${file.size} bytes)`));
+    reader.onload = () => {
+      const dataUrl = reader.result as string;
+      const img = new Image();
+      img.onload = () => {
+        let { width, height } = img;
+        if (width > maxW || height > maxH) {
+          const scale = Math.min(maxW / width, maxH / height);
+          width = Math.round(width * scale);
+          height = Math.round(height * scale);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) { reject(new Error('No canvas context')); return; }
+        ctx.drawImage(img, 0, 0, width, height);
+        // Try WebP first, fall back to PNG if browser doesn't support WebP encoding
+        let output = canvas.toDataURL('image/webp', 0.85);
+        if (!output.startsWith('data:image/webp')) {
+          output = canvas.toDataURL('image/png');
+        }
+        resolve(output);
+      };
+      img.onerror = () => reject(new Error(`Browser cannot decode image: ${file.name} (${file.type}). Try PNG or JPG.`));
+      img.src = dataUrl;
     };
-    img.onerror = () => { URL.revokeObjectURL(objectUrl); reject(new Error('failed to load image')); };
-    img.src = objectUrl;
+    reader.readAsDataURL(file);
   });
 }
