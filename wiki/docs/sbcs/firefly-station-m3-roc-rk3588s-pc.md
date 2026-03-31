@@ -1,7 +1,7 @@
 ---
 title: Firefly Station M3 / ROC-RK3588S-PC
 description: Firefly Station M3 / ROC-RK3588S-PC — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 20:22:29
+generated: 2026-03-31 21:41:55
 ---
 
 # Firefly Station M3 / ROC-RK3588S-PC
