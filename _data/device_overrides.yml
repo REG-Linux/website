@@ -455,3 +455,6 @@ xpi-3128:
   title: XPi 3128
   brand: Geniatech
   image: /assets/images/xpi-3128.webp
+anbernic-rg-vita-pro:
+  title: Anbernic RG Vita Pro
+  status: todo
