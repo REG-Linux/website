@@ -1,7 +1,7 @@
 ---
 title: Khadas VIM 3L
 description: Khadas VIM 3L — single-board computer powered by Amlogic S905D3.
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # Khadas VIM 3L

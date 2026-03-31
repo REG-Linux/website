@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi 5
 description: Raspberry Pi 5 — single-board computer powered by Broadcom BCM2712.
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # Raspberry Pi 5

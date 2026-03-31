@@ -1,7 +1,7 @@
 ---
 title: Banana Pi M7
 description: Banana Pi M7 — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # Banana Pi M7

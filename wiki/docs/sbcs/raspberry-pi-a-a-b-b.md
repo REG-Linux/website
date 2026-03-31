@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi A/A+/B/B+
 description: Raspberry Pi A/A+/B/B+ — single-board computer powered by Broadcom BCM2835.
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # Raspberry Pi A/A+/B/B+

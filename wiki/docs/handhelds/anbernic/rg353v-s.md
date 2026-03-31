@@ -3,7 +3,7 @@ title: Anbernic RG353V(S)
 description: REG Linux on Anbernic RG353V(S) powered by Rockchip RK3566.
 manufacturer: Anbernic
 slug: anbernic/rg353v-s
-generated: 2026-03-31 15:33:18
+generated: 2026-03-31 20:22:29
 ---
 
 # Anbernic RG353V(S)
