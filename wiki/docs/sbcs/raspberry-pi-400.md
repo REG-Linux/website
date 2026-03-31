@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi 400
 description: Raspberry Pi 400 — single-board computer powered by Broadcom BCM2711.
-generated: 2026-03-31 10:58:42
+generated: 2026-03-31 11:05:20
 ---
 
 # Raspberry Pi 400
