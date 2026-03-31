@@ -3,7 +3,7 @@ title: Anbernic RG351 P/M/MP
 description: REG Linux on Anbernic RG351 P/M/MP powered by Rockchip RK3326.
 manufacturer: Anbernic
 slug: anbernic/rg351-p-m-mp
-generated: 2026-03-31 10:13:53
+generated: 2026-03-31 10:29:23
 ---
 
 # Anbernic RG351 P/M/MP
