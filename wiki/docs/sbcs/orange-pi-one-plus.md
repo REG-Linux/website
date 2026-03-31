@@ -1,7 +1,7 @@
 ---
 title: Orange Pi One Plus
 description: Orange Pi One Plus — single-board computer powered by Allwinner H6.
-generated: 2026-03-31 10:13:16
+generated: 2026-03-31 10:13:53
 ---
 
 # Orange Pi One Plus

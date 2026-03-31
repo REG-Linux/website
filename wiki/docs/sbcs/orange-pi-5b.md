@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 5B
 description: Orange Pi 5B — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 10:13:16
+generated: 2026-03-31 10:13:53
 ---
 
 # Orange Pi 5B
