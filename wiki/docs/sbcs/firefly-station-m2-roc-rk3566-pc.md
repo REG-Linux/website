@@ -1,7 +1,7 @@
 ---
 title: Firefly Station M2 / ROC-RK3566-PC
 description: Firefly Station M2 / ROC-RK3566-PC — single-board computer powered by Rockchip RK3566.
-generated: 2026-03-31 00:38:55
+generated: 2026-03-31 00:39:23
 ---
 
 # Firefly Station M2 / ROC-RK3566-PC

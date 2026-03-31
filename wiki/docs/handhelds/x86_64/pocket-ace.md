@@ -3,7 +3,7 @@ title: AYANEO Pocket ACE
 description: REG Linux on AYANEO Pocket ACE powered by Qualcomm 8gen2 (SM8550).
 manufacturer: AYANEO
 slug: ayaneo/pocket-ace
-generated: 2026-03-31 00:38:55
+generated: 2026-03-31 00:39:23
 ---
 
 # AYANEO Pocket ACE
