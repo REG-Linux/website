@@ -1,7 +1,7 @@
 ---
 title: Firefly ROC PC
 description: Firefly ROC PC — single-board computer powered by Rockchip RK3566/RK3568.
-generated: 2026-03-31 21:41:55
+generated: 2026-03-31 21:49:20
 ---
 
 # Firefly ROC PC
