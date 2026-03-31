@@ -288,6 +288,7 @@ orange-pi-5:
   title: Orange Pi 5
   brand: Orange Pi
   image: /assets/images/orange-pi-5.webp
+  status: testing
 orange-pi-5-max:
   title: Orange Pi 5 Max
   brand: Orange Pi
