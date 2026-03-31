@@ -58,11 +58,14 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
   if (!auth) return json({ error: 'not_authenticated' }, 401);
 
   // Parse and validate body
+  const contentType = request.headers.get('Content-Type') ?? 'missing';
+  const rawBody = await request.text();
   let body: unknown;
   try {
-    body = await request.json();
+    body = JSON.parse(rawBody);
   } catch {
-    return json({ error: 'invalid JSON body' }, 400);
+    const preview = rawBody.length > 200 ? rawBody.slice(0, 200) + '...' : rawBody;
+    return json({ error: 'invalid JSON body', content_type: contentType, body_preview: preview }, 400);
   }
 
   const result = validateSubmission(body);
