@@ -1,7 +1,7 @@
 ---
 title: Minix Neo U1
 description: Minix Neo U1 — device powered by Amlogic S905(X).
-generated: 2026-03-31 10:51:09
+generated: 2026-03-31 10:58:42
 ---
 
 # Minix Neo U1

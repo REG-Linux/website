@@ -1,7 +1,7 @@
 ---
 title: MusePi Pro
 description: MusePi Pro — single-board computer powered by SpacemiT K1.
-generated: 2026-03-31 10:51:09
+generated: 2026-03-31 10:58:42
 ---
 
 # MusePi Pro
