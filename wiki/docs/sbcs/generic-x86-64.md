@@ -1,7 +1,7 @@
 ---
 title: Generic PC (x86-64)
 description: Generic PC (x86-64) — device powered by AMD/Intel x86_64.
-generated: 2026-03-31 11:05:20
+generated: 2026-03-31 15:32:45
 ---
 
 # Generic PC (x86-64)

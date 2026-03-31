@@ -3,7 +3,7 @@ title: Anbernic RG40XX V
 description: REG Linux on Anbernic RG40XX V powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg40xx-v
-generated: 2026-03-31 11:05:20
+generated: 2026-03-31 15:32:45
 ---
 
 # Anbernic RG40XX V
