@@ -21,6 +21,7 @@ Set REG_LINUX_PATH env var to override the default ~/REG-Linux path.
 """
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -1214,6 +1215,28 @@ def main() -> None:
 
     if not new_entries and not missing_socs:
         print("\nEverything is in sync!")
+
+    # --- Write board_device_map.json ---
+    # Maps board image paths (what system.board contains) → website device IDs
+    board_map: dict[str, str] = {}
+    for target, board_paths in target_boards.items():
+        for board_path in board_paths:
+            # Find which dts_device this board_path corresponds to
+            slug = board_path.rsplit("/", 1)[-1]
+            slug = dedupe_slug(slug)
+            if slug in dts_devices:
+                board_map[board_path] = dts_devices[slug]["device_id"]
+
+    # Also map DTS names that include vendor dir (e.g. "allwinner/sun50i-h700-anbernic-rg28xx")
+    for slug, dev in dts_devices.items():
+        dts = dev.get("dts", "")
+        if dts and "/" in dts and dts not in board_map:
+            board_map[dts] = dev["device_id"]
+
+    board_map_file = REPO_ROOT / "compat" / "scripts" / "board_device_map.json"
+    with open(board_map_file, "w") as f:
+        json.dump(board_map, f, indent=2, sort_keys=True)
+    print(f"\nWrote {len(board_map)} board path mappings to {board_map_file}")
 
     print("\nDone.")
 

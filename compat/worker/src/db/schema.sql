@@ -85,6 +85,13 @@ CREATE INDEX IF NOT EXISTS idx_device_tokens_uuid ON device_tokens(system_uuid);
 CREATE INDEX IF NOT EXISTS idx_device_tokens_device ON device_tokens(device_id);
 CREATE INDEX IF NOT EXISTS idx_results_build_date ON test_results(build_date DESC);
 
+-- Board path → device ID mapping (system.board contains paths like "amlogic/odroidc5")
+CREATE TABLE IF NOT EXISTS board_device_map (
+  board_path   TEXT PRIMARY KEY,
+  device_id    TEXT NOT NULL REFERENCES devices(id)
+);
+CREATE INDEX IF NOT EXISTS idx_board_device_map_device ON board_device_map(device_id);
+
 -- Seed features (run once)
 INSERT OR IGNORE INTO features VALUES
   -- Boot

@@ -46,12 +46,14 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
   }
 
   // Strict input validation — only allow safe characters
+  // device_id can be a device slug (a-z0-9-) or a board path (vendor/board with slashes)
   const SAFE_ID = /^[a-z0-9][a-z0-9._-]{1,99}$/;
+  const SAFE_BOARD_PATH = /^[a-z0-9][a-z0-9._/-]{1,199}$/;
   const SAFE_UUID = /^[a-f0-9-]{16,128}$/;
   const SAFE_HASH = /^[a-f0-9]{32,128}$/;
   const SAFE_VERSION = /^[a-zA-Z0-9._-]{0,64}$/;
 
-  if (typeof device_id !== 'string' || !SAFE_ID.test(device_id)) {
+  if (typeof device_id !== 'string' || (!SAFE_ID.test(device_id) && !SAFE_BOARD_PATH.test(device_id))) {
     return json({ error: 'invalid device_id' }, 400);
   }
 
@@ -67,12 +69,22 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
     return json({ error: 'invalid reg_version' }, 400);
   }
 
+  // Resolve board path → device ID if needed (system.board contains paths like "amlogic/odroidc5")
+  let resolvedId = device_id;
+  if (device_id.includes('/')) {
+    const mapped = await env.DB.prepare('SELECT device_id FROM board_device_map WHERE board_path = ?')
+      .bind(device_id).first<{ device_id: string }>();
+    if (mapped) {
+      resolvedId = mapped.device_id;
+    }
+  }
+
   // Check device exists in our database
   const device = await env.DB.prepare('SELECT id, arch FROM devices WHERE id = ?')
-    .bind(device_id).first<{ id: string; arch: string | null }>();
+    .bind(resolvedId).first<{ id: string; arch: string | null }>();
 
   if (!device) {
-    return json({ error: 'unknown device_id' }, 404);
+    return json({ error: 'unknown device_id', received: device_id, resolved: resolvedId }, 404);
   }
 
   // Check arch matches (if we have it on record)
@@ -130,7 +142,7 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
   // Prevents one device model from being spammed
   const deviceRate = await env.DB.prepare(
     `SELECT COUNT(*) as cnt FROM device_tokens WHERE device_id = ?`,
-  ).bind(device_id).first<{ cnt: number }>();
+  ).bind(resolvedId).first<{ cnt: number }>();
 
   if (deviceRate && deviceRate.cnt >= 5) {
     return json({ error: 'rate_limit_exceeded', detail: 'max 5 registrations per device model' }, 429);
@@ -142,7 +154,7 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
   ).bind(system_uuid).first<{ token: string; device_id: string; board_file_hash: string | null; revoked: number }>();
 
   if (existing) {
-    if (existing.device_id !== device_id) {
+    if (existing.device_id !== resolvedId) {
       return json({ error: 'system_uuid already registered for a different device' }, 409);
     }
     if (existing.revoked) {
@@ -168,7 +180,7 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
   await env.DB.prepare(
     `INSERT INTO device_tokens (token, device_id, system_uuid, board_file_hash, ip_address, reg_version)
      VALUES (?, ?, ?, ?, ?, ?)`,
-  ).bind(token, device_id, system_uuid, board_file_hash, ip, reg_version ?? '').run();
+  ).bind(token, resolvedId, system_uuid, board_file_hash, ip, reg_version ?? '').run();
 
   return json({ ok: true, token, existing: false });
 }
