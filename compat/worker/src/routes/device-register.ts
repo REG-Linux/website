@@ -69,23 +69,30 @@ export async function handleDeviceRegister(request: Request, env: Env): Promise<
     return json({ error: 'invalid reg_version' }, 400);
   }
 
-  // Resolve board path → device ID if needed (system.board contains paths like "amlogic/odroidc5")
+  // Resolve board path/name → device ID
+  // system.board can contain: "amlogic/odroidc5", "odroidc5", or "hardkernel-odroid-c5"
   let resolvedId = device_id;
-  if (device_id.includes('/')) {
-    const mapped = await env.DB.prepare('SELECT device_id FROM board_device_map WHERE board_path = ?')
-      .bind(device_id).first<{ device_id: string }>();
+
+  // First try direct D1 lookup (already a valid device ID)
+  let device = await env.DB.prepare('SELECT id, arch FROM devices WHERE id = ?')
+    .bind(device_id).first<{ id: string; arch: string | null }>();
+
+  // If not found, try board_device_map (exact match on full path or bare name)
+  if (!device) {
+    const mapped = await env.DB.prepare(
+      `SELECT device_id FROM board_device_map WHERE board_path = ? OR board_path LIKE ?`
+    ).bind(device_id, `%/${device_id}`).first<{ device_id: string }>();
     if (mapped) {
       resolvedId = mapped.device_id;
+      device = await env.DB.prepare('SELECT id, arch FROM devices WHERE id = ?')
+        .bind(resolvedId).first<{ id: string; arch: string | null }>();
     }
   }
-
-  // Check device exists in our database
-  const device = await env.DB.prepare('SELECT id, arch FROM devices WHERE id = ?')
-    .bind(resolvedId).first<{ id: string; arch: string | null }>();
 
   if (!device) {
     return json({ error: 'unknown device_id', received: device_id, resolved: resolvedId }, 404);
   }
+  resolvedId = device.id;
 
   // Check arch matches (if we have it on record)
   if (device.arch && arch) {
