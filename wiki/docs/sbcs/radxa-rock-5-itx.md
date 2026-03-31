@@ -1,7 +1,7 @@
 ---
 title: Radxa 5 Itx
 description: Radxa 5 Itx — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 10:11:21
+generated: 2026-03-31 10:12:01
 ---
 
 # Radxa 5 Itx

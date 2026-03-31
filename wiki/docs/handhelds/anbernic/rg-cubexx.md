@@ -3,7 +3,7 @@ title: Anbernic RG CubeXX
 description: REG Linux on Anbernic RG CubeXX powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg-cubexx
-generated: 2026-03-31 10:11:21
+generated: 2026-03-31 10:12:01
 ---
 
 # Anbernic RG CubeXX

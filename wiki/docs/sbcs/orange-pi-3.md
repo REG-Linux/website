@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 3
 description: Orange Pi 3 — single-board computer powered by Allwinner H5/H6.
-generated: 2026-03-31 10:11:21
+generated: 2026-03-31 10:12:01
 ---
 
 # Orange Pi 3
