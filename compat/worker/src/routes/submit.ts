@@ -70,17 +70,31 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
 
   const { device_id, build_date, results, notes } = result;
 
-  // If device token auth, enforce that submitted device_id matches the token's device_id
-  // Dev tokens can submit for any device
-  if (auth.source === 'device' && auth.deviceId && auth.deviceId !== device_id) {
-    return json({ error: 'device_id does not match token' }, 403);
-  }
-
-  // Check device exists
-  const deviceRow = await env.DB.prepare('SELECT id, na_features FROM devices WHERE id = ?')
+  // Resolve board path → device ID (system.board sends "odroidc5" not "hardkernel-odroid-c5")
+  let resolvedDeviceId = device_id;
+  let deviceRow = await env.DB.prepare('SELECT id, na_features FROM devices WHERE id = ?')
     .bind(device_id).first<Pick<Device, 'id' | 'na_features'>>();
 
+  if (!deviceRow) {
+    // Try board_device_map (exact or suffix match)
+    const mapped = await env.DB.prepare(
+      `SELECT device_id FROM board_device_map WHERE board_path = ? OR board_path LIKE ?`
+    ).bind(device_id, `%/${device_id}`).first<{ device_id: string }>();
+    if (mapped) {
+      resolvedDeviceId = mapped.device_id;
+      deviceRow = await env.DB.prepare('SELECT id, na_features FROM devices WHERE id = ?')
+        .bind(resolvedDeviceId).first<Pick<Device, 'id' | 'na_features'>>();
+    }
+  }
+
   if (!deviceRow) return json({ error: 'device not found' }, 404);
+  resolvedDeviceId = deviceRow.id;
+
+  // If device token auth, enforce that submitted device_id matches the token's device_id
+  // Dev tokens can submit for any device
+  if (auth.source === 'device' && auth.deviceId && auth.deviceId !== resolvedDeviceId) {
+    return json({ error: 'device_id does not match token' }, 403);
+  }
 
   // Validate na constraints
   const naFeatures = new Set(parseNaFeatures(deviceRow.na_features));
@@ -121,7 +135,7 @@ export async function handleSubmit(request: Request, env: Env): Promise<Response
        VALUES (?, ?, ?, ?, ?, ?)
        ON CONFLICT(device_id, feature_id, build_date, author)
        DO UPDATE SET status = excluded.status, notes = excluded.notes, submitted_at = datetime('now')`,
-    ).bind(device_id, featureId, build_date, auth.author, status, notes),
+    ).bind(resolvedDeviceId, featureId, build_date, auth.author, status, notes),
   );
 
   await env.DB.batch(statements);
