@@ -1,7 +1,7 @@
 ---
 title: Radxa 5C
 description: Radxa 5C — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 00:00:44
+generated: 2026-03-31 00:38:29
 ---
 
 # Radxa 5C
