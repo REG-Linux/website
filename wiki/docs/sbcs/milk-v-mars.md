@@ -1,7 +1,7 @@
 ---
 title: Milk-V Mars
 description: Milk-V Mars — single-board computer powered by StarFive JH7110.
-generated: 2026-03-31 09:46:12
+generated: 2026-03-31 09:53:31
 ---
 
 # Milk-V Mars

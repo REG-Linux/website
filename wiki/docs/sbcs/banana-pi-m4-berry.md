@@ -1,7 +1,7 @@
 ---
 title: Banana Pi M4 Berry
 description: Banana Pi M4 Berry — single-board computer powered by Allwinner H618.
-generated: 2026-03-31 09:46:12
+generated: 2026-03-31 09:53:31
 ---
 
 # Banana Pi M4 Berry

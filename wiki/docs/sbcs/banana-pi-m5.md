@@ -1,7 +1,7 @@
 ---
 title: Banana Pi M5
 description: Banana Pi M5 — single-board computer powered by Amlogic S905X3.
-generated: 2026-03-31 09:46:12
+generated: 2026-03-31 09:53:31
 ---
 
 # Banana Pi M5
