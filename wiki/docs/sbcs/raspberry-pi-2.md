@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi 2
 description: Raspberry Pi 2 — single-board computer powered by Broadcom BCM2836.
-generated: 2026-03-31 10:10:39
+generated: 2026-03-31 10:11:21
 ---
 
 # Raspberry Pi 2
