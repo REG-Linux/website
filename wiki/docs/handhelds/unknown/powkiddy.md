@@ -3,7 +3,7 @@ title: Unknown Powkiddy
 description: REG Linux on Unknown Powkiddy powered by Allwinner A133.
 manufacturer: Unknown
 slug: unknown/powkiddy
-generated: 2026-03-31 09:53:31
+generated: 2026-03-31 10:09:58
 ---
 
 # Unknown Powkiddy

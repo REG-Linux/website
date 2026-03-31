@@ -3,7 +3,7 @@ title: MXIII Plus TV Box
 description: REG Linux on MXIII Plus TV Box powered by Amlogic S812.
 manufacturer: Amlogic
 slug: amlogic/mxiii-plus
-generated: 2026-03-31 09:53:31
+generated: 2026-03-31 10:09:58
 ---
 
 # MXIII Plus TV Box
