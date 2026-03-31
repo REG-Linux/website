@@ -3,7 +3,7 @@ title: Anbernic RG ARC
 description: REG Linux on Anbernic RG ARC powered by Rockchip RK3566.
 manufacturer: Anbernic
 slug: anbernic/rgarc
-generated: 2026-03-30 23:53:46
+generated: 2026-03-31 00:00:09
 ---
 
 # Anbernic RG ARC

@@ -1,7 +1,7 @@
 ---
 title: Pine64 RockPro64
 description: Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
-generated: 2026-03-30 23:53:46
+generated: 2026-03-31 00:00:09
 ---
 
 # Pine64 RockPro64
