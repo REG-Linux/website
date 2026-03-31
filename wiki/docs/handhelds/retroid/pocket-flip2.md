@@ -3,7 +3,7 @@ title: Retroid Pocket Flip2
 description: REG Linux on Retroid Pocket Flip2 powered by Qualcomm SD865 (SM8250).
 manufacturer: Retroid
 slug: retroid/pocket-flip2
-generated: 2026-03-31 10:12:37
+generated: 2026-03-31 10:13:16
 ---
 
 # Retroid Pocket Flip2

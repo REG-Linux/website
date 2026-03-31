@@ -1,7 +1,7 @@
 ---
 title: Radxa Zero
 description: Radxa Zero — single-board computer powered by Amlogic S905Y2.
-generated: 2026-03-31 10:12:37
+generated: 2026-03-31 10:13:16
 ---
 
 # Radxa Zero
