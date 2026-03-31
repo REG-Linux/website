@@ -3,7 +3,7 @@ title: AYANEO Pocket EVO
 description: REG Linux on AYANEO Pocket EVO powered by Qualcomm 8gen2 (SM8550).
 manufacturer: AYANEO
 slug: ayaneo/pocket-evo
-generated: 2026-03-31 09:53:31
+generated: 2026-03-31 10:09:58
 ---
 
 # AYANEO Pocket EVO
