@@ -3,7 +3,7 @@ title: X96 Air
 description: REG Linux on X96 Air powered by Amlogic S905X3.
 manufacturer: X96
 slug: x96/air
-generated: 2026-03-31 00:00:09
+generated: 2026-03-31 00:00:44
 ---
 
 # X96 Air
