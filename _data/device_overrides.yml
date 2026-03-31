@@ -459,6 +459,6 @@ xpi-3128:
   image: /assets/images/xpi-3128.webp
 anbernic-rg-vita-pro:
   title: Anbernic RG Vita Pro
-  status: todo
+  status: wip
 gameforce-ace:
   status: wip
