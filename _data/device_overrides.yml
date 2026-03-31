@@ -404,6 +404,7 @@ retroid-pocket-5:
   title: Retroid Pocket 5
   brand: Retroid
   image: /assets/images/device-placeholder.svg
+  status: testing
 retroid-pocket-flip2:
   title: Retroid Pocket Flip2
   brand: Retroid
