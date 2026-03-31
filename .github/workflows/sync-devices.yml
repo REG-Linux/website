@@ -41,10 +41,10 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git diff --quiet _data/devices.yml _data/socs.yml || {
+          git add _data/devices.yml _data/socs.yml compat/scripts/board_device_map.json
+          git diff --cached --quiet || {
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add _data/devices.yml _data/socs.yml
             git commit -m "chore: sync devices from ${{ inputs.source }}"
             git pull --rebase
             git push

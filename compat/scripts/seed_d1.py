@@ -19,6 +19,7 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 CANONICAL_JSON = SCRIPT_DIR / "devices_canonical.json"
+BOARD_MAP_JSON = SCRIPT_DIR / "board_device_map.json"
 OUTPUT_SQL = SCRIPT_DIR / "seed_devices.sql"
 
 
@@ -107,6 +108,22 @@ def main() -> None:
         line = f"INSERT OR REPLACE INTO devices ({', '.join(cols)}) VALUES ({', '.join(vals)});"
         lines.append(line)
         inserted += 1
+
+    # Seed board_device_map if the file exists
+    if BOARD_MAP_JSON.exists():
+        print(f"Reading {BOARD_MAP_JSON}")
+        with open(BOARD_MAP_JSON) as f:
+            board_map = json.load(f)
+        lines.append("")
+        lines.append("-- Board path → device ID mapping (from Config.in.targets)")
+        lines.append("DELETE FROM board_device_map;")
+        for board_path, device_id in sorted(board_map.items()):
+            bp = sql_escape(board_path)
+            did = sql_escape(device_id)
+            lines.append(f"INSERT INTO board_device_map (board_path, device_id) VALUES ({bp}, {did});")
+        print(f"  {len(board_map)} board path mappings")
+    else:
+        print(f"No {BOARD_MAP_JSON} found — skipping board_device_map")
 
     sql_content = "\n".join(lines) + "\n"
 
