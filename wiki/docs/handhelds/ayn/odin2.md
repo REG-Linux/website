@@ -3,7 +3,7 @@ title: Ayn Odin 2
 description: REG Linux on Ayn Odin 2 powered by Qualcomm 8gen2 (SM8550).
 manufacturer: Ayn
 slug: ayn/odin2
-generated: 2026-03-31 00:39:23
+generated: 2026-03-31 09:46:12
 ---
 
 # Ayn Odin 2
