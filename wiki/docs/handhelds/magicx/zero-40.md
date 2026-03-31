@@ -3,7 +3,7 @@ title: MagicX Zero 40
 description: REG Linux on MagicX Zero 40 powered by Allwinner A133.
 manufacturer: MagicX
 slug: magicx/zero-40
-generated: 2026-03-31 10:34:27
+generated: 2026-03-31 10:51:09
 ---
 
 # MagicX Zero 40

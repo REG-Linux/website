@@ -1,7 +1,7 @@
 ---
 title: StarFive VisionFive 2
 description: StarFive VisionFive 2 — single-board computer powered by StarFive JH7110.
-generated: 2026-03-31 10:34:27
+generated: 2026-03-31 10:51:09
 ---
 
 # StarFive VisionFive 2

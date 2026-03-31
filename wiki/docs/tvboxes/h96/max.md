@@ -3,7 +3,7 @@ title: H96 Max
 description: REG Linux on H96 Max powered by Amlogic S905X3.
 manufacturer: H96
 slug: h96/max
-generated: 2026-03-31 10:34:27
+generated: 2026-03-31 10:51:09
 ---
 
 # H96 Max

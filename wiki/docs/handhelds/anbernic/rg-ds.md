@@ -3,7 +3,7 @@ title: Anbernic RG DS
 description: REG Linux on Anbernic RG DS powered by Rockchip RK3568.
 manufacturer: Anbernic
 slug: anbernic/rg-ds
-generated: 2026-03-31 10:34:27
+generated: 2026-03-31 10:51:09
 ---
 
 # Anbernic RG DS

@@ -1,7 +1,7 @@
 ---
 title: Intel DE10-Nano
 description: Intel DE10-Nano — device powered by Intel Cyclone V.
-generated: 2026-03-31 10:34:27
+generated: 2026-03-31 10:51:09
 ---
 
 # Intel DE10-Nano
