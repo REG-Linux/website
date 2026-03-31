@@ -1,7 +1,7 @@
 ---
 title: Khadas Edge 2
 description: Khadas Edge 2 — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 10:10:39
+generated: 2026-03-31 10:11:21
 ---
 
 # Khadas Edge 2
