@@ -99,6 +99,7 @@ asus-tinker-board-s:
   title: Asus Tinker Board (S)
   brand: ASUS
   image: /assets/images/asus-tinker-board.webp
+  status: wip
 ayaneo-pocket-ace:
   title: AYANEO Pocket ACE
   brand: AYANEO
