@@ -1,7 +1,7 @@
 ---
 title: Khadas VIM 4
 description: Khadas VIM 4 — single-board computer powered by Amlogic A311D2.
-generated: 2026-03-31 00:39:23
+generated: 2026-03-31 09:46:12
 ---
 
 # Khadas VIM 4

@@ -1,7 +1,7 @@
 ---
 title: Radxa Rock 5A
 description: Radxa Rock 5A — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 00:39:23
+generated: 2026-03-31 09:46:12
 ---
 
 # Radxa Rock 5A
