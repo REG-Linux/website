@@ -1,7 +1,7 @@
 ---
 title: ODROID-N2+
 description: ODROID-N2+ — single-board computer powered by Amlogic S922X.
-generated: 2026-03-31 10:58:42
+generated: 2026-03-31 11:05:20
 ---
 
 # ODROID-N2+
