@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi Zero
 description: Raspberry Pi Zero — single-board computer powered by Broadcom BCM2835.
-generated: 2026-03-31 15:32:45
+generated: 2026-03-31 15:33:18
 ---
 
 # Raspberry Pi Zero

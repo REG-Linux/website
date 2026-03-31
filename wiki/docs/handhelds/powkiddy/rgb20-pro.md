@@ -3,7 +3,7 @@ title: RGB20 Pro
 description: REG Linux on RGB20 Pro powered by Rockchip RK3566.
 manufacturer: Powkiddy
 slug: powkiddy/rgb20-pro
-generated: 2026-03-31 15:32:45
+generated: 2026-03-31 15:33:18
 ---
 
 # RGB20 Pro
