@@ -169,6 +169,7 @@ hardkernel-odroid-c5:
   title: HardKernel ODROID C5
   brand: HardKernel
   image: /assets/images/device-placeholder.svg
+  status: wip
 hardkernel-odroid-go-advance:
   title: Odroid Go Advance
   brand: HardKernel
