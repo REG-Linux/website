@@ -1,7 +1,7 @@
 ---
 title: Orange Pi One
 description: Orange Pi One — single-board computer powered by Allwinner H3.
-generated: 2026-03-31 09:46:12
+generated: 2026-03-31 09:53:31
 ---
 
 # Orange Pi One

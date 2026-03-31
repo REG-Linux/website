@@ -3,7 +3,7 @@ title: RGB10 Max 3 Pro
 description: REG Linux on RGB10 Max 3 Pro powered by Amlogic A311D.
 manufacturer: Powkiddy
 slug: powkiddy/rgb10-max-3-pro
-generated: 2026-03-31 09:46:12
+generated: 2026-03-31 09:53:31
 ---
 
 # RGB10 Max 3 Pro
