@@ -338,9 +338,14 @@ ALL_FEATURES="boot rescue_mode display hdmi_out audio hdmi_audio wifi bluetooth 
 
         # If no new result, try to keep the old one
         if [ -z "$NEW_VAL" ] && [ -n "$OLD_RESULTS" ]; then
-            # Extract old value from JSON (simple grep, no jq needed)
-            OLD_VAL=$(echo "$OLD_RESULTS" | grep "\"${feat}\"" | sed 's/.*: *"\([^"]*\)".*/\1/' | head -1)
-            NEW_VAL="$OLD_VAL"
+            # Extract old value from JSON — only if it's a quoted string (skip null)
+            OLD_VAL=$(echo "$OLD_RESULTS" | grep "\"${feat}\"" | sed -n 's/.*: *"\([^"]*\)".*/\1/p' | head -1)
+            # Trim whitespace and reject empty/null values
+            OLD_VAL=$(printf '%s' "$OLD_VAL" | tr -d '[:space:]')
+            case "$OLD_VAL" in
+                works|partial|broken|na|untested) NEW_VAL="$OLD_VAL" ;;
+                *) NEW_VAL="" ;;
+            esac
         fi
 
         [ "$FIRST" = "1" ] && FIRST=0 || printf ',\n'
