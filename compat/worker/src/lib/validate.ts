@@ -46,10 +46,14 @@ export function validateSubmission(body: unknown): SubmissionInput | string {
   }
   const results = b.results as Record<string, unknown>;
   const validated: Record<string, Status> = {};
-  for (const [featureId, status] of Object.entries(results)) {
+  for (const [featureId, rawStatus] of Object.entries(results)) {
     if (!VALID_FEATURE_IDS.has(featureId)) {
       return `unknown feature_id: ${featureId}`;
     }
+    // Skip null, empty, or whitespace-only values (unprobed features from device reports)
+    if (rawStatus === null || rawStatus === undefined) continue;
+    const status = typeof rawStatus === 'string' ? rawStatus.trim() : rawStatus;
+    if (status === '' || status === 'null') continue;
     if (typeof status !== 'string' || !VALID_STATUSES.has(status as Status)) {
       return `invalid status "${status}" for feature ${featureId}`;
     }
