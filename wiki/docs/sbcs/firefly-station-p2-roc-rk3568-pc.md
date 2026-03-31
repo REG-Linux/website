@@ -1,7 +1,7 @@
 ---
 title: Firefly Station P2 / ROC-RK3568-PC
 description: Firefly Station P2 / ROC-RK3568-PC — single-board computer powered by Rockchip RK3568.
-generated: 2026-03-31 10:29:23
+generated: 2026-03-31 10:34:27
 ---
 
 # Firefly Station P2 / ROC-RK3568-PC
