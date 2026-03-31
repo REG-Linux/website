@@ -223,6 +223,7 @@ miniloong-pocket1:
   title: MiniLoong Pocket 1
   brand: MiniLoong
   image: /assets/images/miniloong-pocket1.webp
+  status: wip
 minix-neo-u1:
   title: Minix Neo U1
   brand: Minix
