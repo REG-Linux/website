@@ -160,6 +160,7 @@ generic-x86-64-v3:
   title: Generic PC (x86-64-v3)
   brand: Generic
   image: /assets/images/generic-x86-64-v3.webp
+  status: wip
 h96-max:
   title: H96 Max
   brand: H96
