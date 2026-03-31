@@ -1,7 +1,7 @@
 ---
 title: Radxa Dragon Q6A
 description: Radxa Dragon Q6A — single-board computer powered by Qualcomm QCS6490.
-generated: 2026-03-31 21:49:20
+generated: 2026-03-31 21:49:38
 ---
 
 # Radxa Dragon Q6A
