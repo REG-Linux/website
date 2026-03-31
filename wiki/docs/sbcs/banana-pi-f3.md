@@ -1,7 +1,7 @@
 ---
 title: Banana Pi F3
 description: Banana Pi F3 — single-board computer powered by SpacemiT K1.
-generated: 2026-03-31 15:32:45
+generated: 2026-03-31 15:33:18
 ---
 
 # Banana Pi F3
