@@ -470,3 +470,6 @@ anbernic-rg552:
   status: wip
 gameforce-chi:
   status: wip
+mangmi-pocketmax:
+  title: Mangmi Pocket Max
+  status: todo
