@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 5 Ultra
 description: Orange Pi 5 Ultra — single-board computer powered by Rockchip RK3588.
-generated: 2026-03-31 10:09:58
+generated: 2026-03-31 10:10:39
 ---
 
 # Orange Pi 5 Ultra

@@ -1,7 +1,7 @@
 ---
 title: Orange Pi PC 2
 description: Orange Pi PC 2 — single-board computer powered by Allwinner H5.
-generated: 2026-03-31 10:09:58
+generated: 2026-03-31 10:10:39
 ---
 
 # Orange Pi PC 2

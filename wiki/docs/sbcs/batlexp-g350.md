@@ -1,7 +1,7 @@
 ---
 title: BatlExp G350
 description: BatlExp G350 — handheld powered by Rockchip RK3326.
-generated: 2026-03-31 10:09:58
+generated: 2026-03-31 10:10:39
 ---
 
 # BatlExp G350
