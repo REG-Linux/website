@@ -3,7 +3,7 @@ title: Mangmi Pocketmax
 description: REG Linux on Mangmi Pocketmax powered by Qualcomm SD865 (SM8250).
 manufacturer: Mangmi
 slug: mangmi/pocketmax
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Mangmi Pocketmax

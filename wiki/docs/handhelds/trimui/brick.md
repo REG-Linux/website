@@ -3,7 +3,7 @@ title: TrimUI Brick
 description: REG Linux on TrimUI Brick powered by Allwinner A133.
 manufacturer: TrimUI
 slug: trimui/brick
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # TrimUI Brick

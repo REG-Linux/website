@@ -3,7 +3,7 @@ title: Steam Deck
 description: REG Linux on Steam Deck powered by AMD Zen 2 APU.
 manufacturer: Valve
 slug: x86_64/steam-deck
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Steam Deck

@@ -1,7 +1,7 @@
 ---
 title: Orange Pi PC
 description: Orange Pi PC — single-board computer powered by Allwinner H3.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Orange Pi PC

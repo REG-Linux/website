@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 4 Lts
 description: Orange Pi 4 Lts — single-board computer powered by Rockchip RK3399.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Orange Pi 4 Lts

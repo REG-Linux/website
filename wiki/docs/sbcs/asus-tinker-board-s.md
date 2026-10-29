@@ -1,7 +1,7 @@
 ---
 title: Asus Tinker Board (S)
 description: Asus Tinker Board (S) — single-board computer powered by Rockchip RK3288.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Asus Tinker Board (S)

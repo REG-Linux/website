@@ -1,7 +1,7 @@
 ---
 title: Hugsun X99
 description: Hugsun X99 — device powered by Rockchip RK3399.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Hugsun X99

@@ -1,7 +1,7 @@
 ---
 title: Orange Pi Zero 2W
 description: Orange Pi Zero 2W — single-board computer powered by Allwinner H618.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Orange Pi Zero 2W

@@ -1,7 +1,7 @@
 ---
 title: HardKernel ODROID C4
 description: HardKernel ODROID C4 — single-board computer powered by Amlogic S905X3.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # HardKernel ODROID C4

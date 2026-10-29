@@ -3,7 +3,7 @@ title: Nintendo Nes Classic
 description: REG Linux on Nintendo Nes Classic powered by Allwinner R16.
 manufacturer: Nintendo
 slug: unbranded/nes-classic
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Nintendo Nes Classic

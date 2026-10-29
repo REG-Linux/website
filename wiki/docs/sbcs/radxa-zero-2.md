@@ -1,7 +1,7 @@
 ---
 title: Radxa Zero 2
 description: Radxa Zero 2 — single-board computer powered by Amlogic A311D.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Radxa Zero 2

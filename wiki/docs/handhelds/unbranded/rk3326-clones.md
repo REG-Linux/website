@@ -3,7 +3,7 @@ title: RK3326 clones (including K36 and BatleXP G350)
 description: REG Linux on RK3326 clones (including K36 and BatleXP G350) powered by Rockchip RK3326.
 manufacturer: Unbranded
 slug: unbranded/rk3326-clones
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # RK3326 clones (including K36 and BatleXP G350)

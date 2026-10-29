@@ -1,7 +1,7 @@
 ---
 title: Banana Pi M2 Zero
 description: Banana Pi M2 Zero — single-board computer powered by Allwinner H2+.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Banana Pi M2 Zero

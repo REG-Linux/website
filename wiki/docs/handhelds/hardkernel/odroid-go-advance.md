@@ -3,7 +3,7 @@ title: Odroid Go Advance
 description: REG Linux on Odroid Go Advance powered by Rockchip RK3326.
 manufacturer: HardKernel
 slug: hardkernel/odroid-go-advance
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Odroid Go Advance

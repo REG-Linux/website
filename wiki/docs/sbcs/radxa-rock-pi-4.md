@@ -1,7 +1,7 @@
 ---
 title: Radxa Rock Pi 4B
 description: Radxa Rock Pi 4B — single-board computer powered by Rockchip RK3399.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Radxa Rock Pi 4B

@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 5 Plus
 description: Orange Pi 5 Plus — single-board computer powered by Rockchip RK3588.
-generated: 2026-10-29 19:09:06
+generated: 2026-10-29 19:11:49
 ---
 
 # Orange Pi 5 Plus
