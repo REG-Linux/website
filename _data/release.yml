@@ -5,7 +5,12 @@
 #   2. run the "Refresh Downloads" workflow (or
 #      `python3 compat/scripts/generate_download_links.py`), which rebuilds
 #      _data/download_links.yml from that release's assets
-#   3. review and push the regenerated links
+#   3. review the regenerated links, set `available: true` below, and push
 #
 # `tag: latest` follows the newest GitHub release instead of pinning one.
 tag: "26.11"
+
+# While false, download pages show a "coming soon" banner and Download buttons
+# are disabled. Set to true once the release is published and the links point
+# at real assets.
+available: false

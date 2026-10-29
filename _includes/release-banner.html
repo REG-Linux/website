@@ -1,0 +1,6 @@
+{% comment %}"Coming soon" banner shown until _data/release.yml sets available: true.{% endcomment %}
+{% unless site.data.release.available %}
+<div class="release-banner" role="status" style="max-width: 960px; margin: 0 auto 1.25rem; padding: 0.7rem 1rem; border: 1px solid var(--border, #2a2f3a); border-radius: 10px; background: rgba(43,176,233,0.10); font-size: 0.9rem; text-align: center;">
+  <strong>REG Linux {{ site.data.release.tag }}</strong> images are coming soon. Download links go live when the release is published &mdash; follow <a href="https://discord.gg/a9HH4ZpVqp" target="_blank" rel="noreferrer">Discord</a> or <a href="https://github.com/REG-Linux/REG-Linux/releases" target="_blank" rel="noreferrer">GitHub releases</a>.
+</div>
+{% endunless %}

@@ -19,6 +19,8 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
     </div>
   </section>
 
+  {% include release-banner.html %}
+
   <section class="device-browser" id="device-list">
     <div class="device-filters" id="device-filters">
       <input type="text" id="device-search" placeholder="Search by name, brand, or SoC..." class="device-search" />

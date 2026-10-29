@@ -106,6 +106,7 @@
     </script>
     {% if page.layout == "device" and device_lookup %}
       {% assign device_download = site.data.download_links[device_slug] | default: "https://github.com/REG-Linux/REG-Linux/releases" %}
+      {% unless site.data.release.available %}{% assign device_download = "https://github.com/REG-Linux/REG-Linux/releases" %}{% endunless %}
       <script type="application/ld+json">
         {
           "@context": "https://schema.org",
