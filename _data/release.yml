@@ -8,4 +8,4 @@
 #   3. review and push the regenerated links
 #
 # `tag: latest` follows the newest GitHub release instead of pinning one.
-tag: "25.09-preview"
+tag: "26.11"
