@@ -1,5 +1,5 @@
 title: REG Linux
-description: Free retrogaming OS for 186+ devices. Emulators pre-configured for handhelds, SBCs, and PCs. Open source Batocera alternative with RISC-V support.
+description: Free retrogaming OS for 186+ devices. Emulators pre-configured for handhelds, SBCs, and PCs, built on open source, with RISC-V support.
 baseurl: ""
 url: "https://reglinux.org"
 og_image: "/assets/images/reg_linux_logo.png"

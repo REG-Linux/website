@@ -21,6 +21,18 @@ function corsHeaders(origin: string): Record<string, string> {
     'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'Access-Control-Allow-Credentials': 'true',
+    'Vary': 'Origin',
+  };
+}
+
+// Read-only, credential-less access for the embeddable widget on reglinux.org
+// (and the wiki). Admin and submit calls stay limited to the dashboard origin.
+function widgetCorsHeaders(origin: string): Record<string, string> {
+  return {
+    'Access-Control-Allow-Origin': origin,
+    'Access-Control-Allow-Methods': 'GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Vary': 'Origin',
   };
 }
 
@@ -58,8 +70,9 @@ export default {
 
     // CORS
     const origin = request.headers.get('Origin') ?? '';
-    const allowed = [env.CORS_ORIGIN, 'https://reglinux.org'];
-    const cors = allowed.includes(origin) ? corsHeaders(origin) : {};
+    const cors = origin === env.CORS_ORIGIN ? corsHeaders(origin)
+      : origin === 'https://reglinux.org' ? widgetCorsHeaders(origin)
+      : {};
 
     if (method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: cors });

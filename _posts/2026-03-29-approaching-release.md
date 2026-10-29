@@ -25,7 +25,7 @@ The first public images landed in mid-2024 with the **24.06** and **24.07** rele
 
 Some milestones along the way:
 
-**RISC-V support.** We added images for the Milk-V Mars, Milk-V Meles, StarFive VisionFive 2, and SpacemiT K1 boards. REG Linux is still the only retrogaming OS running on RISC-V. It's early, but the 8-bit and 16-bit emulators run at full speed and PS1 is playable on the faster boards.
+**RISC-V support.** We added images for the Milk-V Mars, Milk-V Meles, StarFive VisionFive 2, and SpacemiT K1 boards. REG Linux is among the few retrogaming systems running on RISC-V. It's early, but the 8-bit and 16-bit emulators run at full speed and PS1 is playable on the faster boards.
 
 **TV box support.** Cheap Amlogic-based Android TV boxes can run REG Linux. We added a `tvbox` device class and images for the Beelink GT-King, GT-King Pro, and others. These are $30-50 boxes with good SoCs that make decent emulation stations.
 

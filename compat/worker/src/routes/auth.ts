@@ -78,7 +78,8 @@ export async function handleAuthCallback(request: Request, env: Env): Promise<Re
 
   // Determine redirect
   const redirect = url.searchParams.get('redirect');
-  const target = redirect && redirect.startsWith('/') ? redirect : '/submit';
+  // Same-site paths only: reject protocol-relative (//host) and backslash tricks.
+  const target = redirect && /^\/(?![/\\])/.test(redirect) ? redirect : '/submit';
 
   return new Response(null, {
     status: 302,

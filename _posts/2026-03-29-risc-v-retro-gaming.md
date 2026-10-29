@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "RISC-V Retro Gaming: The First Retrogaming OS with RISC-V Support"
+title: "RISC-V Retro Gaming: REG Linux Now Supports RISC-V"
 date: 2026-03-29
 author: REG Linux Team
-description: "REG Linux is the first and only retrogaming OS to support RISC-V devices. Here's what works, what doesn't, and why RISC-V matters for open-source gaming."
+description: "REG Linux now supports RISC-V devices. Here's what works, what doesn't, and why RISC-V matters for retro gaming."
 tags: [risc-v, hardware, emulation]
 ---
 
-REG Linux now runs on RISC-V hardware. As far as we know, no other retrogaming OS does this. It's early, it's not perfect, and it matters more than you might think.
+REG Linux now runs on RISC-V hardware. As far as we know, few retrogaming systems do this. It's early, it's not perfect, and it matters more than you might think.
 
 ## What RISC-V is and why it matters
 

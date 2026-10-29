@@ -3,11 +3,11 @@ layout: post
 title: "REG Linux: A Retrogaming OS for 186+ Devices"
 date: 2026-03-29
 author: REG Linux Team
-description: "REG Linux is a free, open source retrogaming OS supporting 186+ handhelds, SBCs, and PCs. Buildroot-based, immutable, with RISC-V support and a live compatibility matrix."
+description: "REG Linux is a free retrogaming OS, built on open source, supporting 186+ handhelds, SBCs, and PCs. Buildroot-based, immutable, with RISC-V support and a live compatibility matrix."
 tags: [retrogaming, introduction, open-source]
 ---
 
-REG Linux is a free, open-source operating system built for one thing: playing retro games on real hardware. Flash it to an SD card, boot, and you're in a game within seconds. No desktop, no package manager, no configuration — just emulators, your ROMs, and a controller.
+REG Linux is a free operating system, built on open-source components, made for one thing: playing retro games on real hardware. Flash it to an SD card, boot, and you're in a game within seconds. No desktop, no package manager, no configuration — just emulators, your ROMs, and a controller.
 
 ## What it runs on
 
@@ -27,7 +27,7 @@ Under the hood, REG Linux ships [RetroArch](https://retroarch.com/) plus standal
 
 **Device breadth.** 186+ devices is a lot. REG Linux adds support for new hardware fast — sometimes within days of a device hitting the market. Budget handhelds get first-class treatment, not just the flagship boards.
 
-**RISC-V support.** REG Linux is the only retrogaming OS that runs on RISC-V hardware. The Milk-V Mars, Milk-V Meles, StarFive VisionFive 2, and SpacemiT-based boards are all supported. Read more in our [RISC-V post](/blog/2026/03/29/risc-v-retro-gaming/).
+**RISC-V support.** REG Linux runs on RISC-V hardware, which few retrogaming systems do. The Milk-V Mars, Milk-V Meles, StarFive VisionFive 2, and SpacemiT-based boards are all supported. Read more in our [RISC-V post](/blog/2026/03/29/risc-v-retro-gaming/).
 
 **Live compatibility matrix.** At [compat.reglinux.org](https://compat.reglinux.org), every device has a feature-by-feature status page: boot, WiFi, Bluetooth, display, GPU acceleration, suspend, audio, USB. Real test data from real hardware, not guesswork. Devices can even self-report their compatibility status automatically.
 
@@ -44,8 +44,8 @@ That's it. No installer, no configuration wizard. If something goes wrong, reboo
 
 Need help? Join the [Discord](https://discord.gg/a9HH4ZpVqp), check the [wiki](https://reglinux.org/wiki/), or open an issue on [GitHub](https://github.com/REG-Linux/REG-Linux).
 
-## Free and open source
+## Free to use, built on open source
 
-REG Linux is community-built and free to use. The source code is on [GitHub](https://github.com/REG-Linux/REG-Linux). Contributions, bug reports, and device testing are all welcome.
+REG Linux is community-built and free to use. Most of the system is open source, with its source code on [GitHub](https://github.com/REG-Linux/REG-Linux); some components are distributed in binary form only. See the [Legal](/legal/) page for details. Bug reports and device testing are welcome.
 
 If you want to see how your device performs before flashing, start with the [compatibility matrix](https://compat.reglinux.org). If your device is listed and the features you care about work — grab the image and try it.

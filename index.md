@@ -2,7 +2,7 @@
 layout: default
 title: Retro Gaming OS for Handhelds, SBCs & PCs
 body_class: home
-description: Free retrogaming OS for 186+ handhelds, SBCs and PCs. Open source Batocera alternative with RISC-V support. Flash, boot, play.
+description: Free retrogaming OS for 186+ handhelds, SBCs and PCs, built on open source, with RISC-V support. Flash, boot, play.
 preload_image: /assets/images/logo-regstation.webp
 ---
 {% assign home = site.data.home %}
