@@ -39,8 +39,8 @@ description: Licenses, source code, trademarks, disclaimers and how to contact t
     <h2>No warranty</h2>
     <p>REG Linux is provided "as is", without warranty of any kind. Flashing a device carries risk: back up your data, and use it at your own risk. To the extent permitted by law, the project and its contributors are not liable for damage to your device, data or anything else.</p>
 
-    <h2>Donations</h2>
-    <p>Donations, where offered, are voluntary gifts to support development. They do not buy features, support, source access or license rights, and they do not change the terms above.</p>
+    <h2>No donations or payments</h2>
+    <p>REG Linux is run as a non-commercial project. It does not ask for or accept donations, sponsorships or payments, and it does not sell anything or carry advertising. Some components we ship are licensed for non-commercial use only, and this is why.</p>
 
     <h2>Reporting content and contact</h2>
     <p>To report content, request a takedown, or ask a privacy question, open an issue on <a href="https://github.com/REG-Linux/website/issues">GitHub</a>{% if legal.contact_email != "" %} or write to <a href="mailto:{{ legal.contact_email }}">{{ legal.contact_email }}</a>{% endif %}. Please do not post personal information in public issues; use email for that.{% if legal.maintainer != "" %} Responsible for this site: {{ legal.maintainer }}.{% endif %}</p>
