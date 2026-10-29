@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """Generate _data/download_links.yml from GitHub releases + download_map.yml.
 
-Fetches the latest REG-Linux release from GitHub, matches each device
-to its release asset via the mapping in _data/download_map.yml, and
-writes direct download URLs to _data/download_links.yml.
+Fetches the REG-Linux release named in _data/release.yml (`tag`, or the
+newest release when it is "latest") from GitHub, matches each device to its
+release asset via the mapping in _data/download_map.yml, and writes direct
+download URLs to _data/download_links.yml.
 
 Run from the website repo root:
-    python3 compat/scripts/generate_download_links.py
+    python3 compat/scripts/generate_download_links.py [--tag TAG]
 
 Requires: GITHUB_TOKEN env var or gh CLI authenticated.
 """
 
+import argparse
 import json
 import os
 import subprocess
@@ -23,14 +25,27 @@ REPO = "REG-Linux/REG-Linux"
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DOWNLOAD_MAP = REPO_ROOT / "_data" / "download_map.yml"
 OUTPUT = REPO_ROOT / "_data" / "download_links.yml"
+RELEASE_FILE = REPO_ROOT / "_data" / "release.yml"
 
 
-def fetch_latest_release() -> dict:
-    """Fetch the latest release from GitHub API."""
+def configured_tag() -> str:
+    """Release tag from _data/release.yml ("latest" if unset)."""
+    if RELEASE_FILE.exists():
+        data = yaml.safe_load(RELEASE_FILE.read_text()) or {}
+        return str(data.get("tag") or "latest")
+    return "latest"
+
+
+def fetch_release(tag: str) -> dict:
+    """Fetch the release for `tag` (or the newest one for "latest")."""
+    endpoint = (
+        f"repos/{REPO}/releases/tags/{tag}" if tag != "latest" else f"repos/{REPO}/releases"
+    )
+    jq = "." if tag != "latest" else ".[0]"
     # Try gh CLI first
     try:
         result = subprocess.run(
-            ["gh", "api", f"repos/{REPO}/releases", "--jq", ".[0]"],
+            ["gh", "api", endpoint, "--jq", jq],
             capture_output=True, text=True, timeout=30,
         )
         if result.returncode == 0 and result.stdout.strip():
@@ -39,6 +54,7 @@ def fetch_latest_release() -> dict:
         pass
 
     # Fallback: direct API call
+    import urllib.error
     import urllib.request
     headers = {}
     token = os.environ.get("GITHUB_TOKEN", "")
@@ -46,13 +62,20 @@ def fetch_latest_release() -> dict:
         headers["Authorization"] = f"Bearer {token}"
     headers["User-Agent"] = "reg-linux-download-gen"
 
-    req = urllib.request.Request(
-        f"https://api.github.com/repos/{REPO}/releases?per_page=1",
-        headers=headers,
+    url = (
+        f"https://api.github.com/repos/{REPO}/releases/tags/{tag}"
+        if tag != "latest"
+        else f"https://api.github.com/repos/{REPO}/releases?per_page=1"
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        releases = json.loads(resp.read())
-        return releases[0] if releases else {}
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read())
+    except urllib.error.HTTPError:
+        return {}
+    if tag == "latest":
+        return data[0] if data else {}
+    return data
 
 
 def main() -> None:
@@ -62,11 +85,15 @@ def main() -> None:
 
     print(f"  {len(download_map)} device mappings")
 
-    print(f"Fetching latest release from {REPO}...")
-    release = fetch_latest_release()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tag", help="release tag (default: _data/release.yml)")
+    wanted = parser.parse_args().tag or configured_tag()
+
+    print(f"Fetching release {wanted!r} from {REPO}...")
+    release = fetch_release(wanted)
 
     if not release:
-        print("ERROR: No releases found")
+        print(f"ERROR: release {wanted!r} not found in {REPO}")
         sys.exit(1)
 
     tag = release.get("tag_name", "unknown")

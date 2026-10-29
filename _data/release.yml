@@ -1,0 +1,11 @@
+# Single switch for which GitHub release the download links point to.
+#
+# To publish a new release:
+#   1. set `tag` below to the release tag (e.g. "26.10")
+#   2. run the "Refresh Downloads" workflow (or
+#      `python3 compat/scripts/generate_download_links.py`), which rebuilds
+#      _data/download_links.yml from that release's assets
+#   3. review and push the regenerated links
+#
+# `tag: latest` follows the newest GitHub release instead of pinning one.
+tag: "25.09-preview"
