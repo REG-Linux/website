@@ -38,7 +38,7 @@ description: REG Linux is built on the shoulders of these open-source projects. 
       {% include credit-card.html name="LibreELEC" logo="/assets/images/credits/libreelec.png" url="https://libreelec.tv" desc="Immutable OS architecture and Buildroot packaging patterns." %}
       {% include credit-card.html name="Batocera" logo="/assets/images/credits/batocera.png" url="https://batocera.org" desc="EmulationStation frontend, packaging recipes, and emulator integration. REG Linux forked from Batocera." %}
       {% include credit-card.html name="ROCKNIX" logo="/assets/images/credits/rocknix.svg" url="https://rocknix.org" desc="Handheld device support, controller configs, and suspend/resume fixes." %}
-      {% include credit-card.html name="KNULLI" logo="/assets/images/credits/knulli.png" url="https://knulli.org" desc="Budget handheld support and Allwinner/RK3128 board work." %}
+      {% include credit-card.html name="KNULLI" logo="/assets/images/credits/knulli.png" url="https://knulli.org" desc="Reference device trees and vendor-kernel analysis for TrimUI A133 and RK3128 handhelds." %}
     </div>
   </section>
 
