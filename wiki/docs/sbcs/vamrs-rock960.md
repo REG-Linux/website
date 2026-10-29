@@ -1,7 +1,7 @@
 ---
 title: 96Boards Rock960
 description: 96Boards Rock960 — device powered by Rockchip RK3399.
-generated: 2026-03-31 21:49:38
+generated: 2026-10-29 19:09:06
 ---
 
 # 96Boards Rock960

@@ -1,7 +1,7 @@
 ---
 title: Libre Computer S912-PC
 description: Libre Computer S912-PC — single-board computer powered by Amlogic S912.
-generated: 2026-03-31 21:49:38
+generated: 2026-10-29 19:09:06
 ---
 
 # Libre Computer S912-PC

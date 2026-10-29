@@ -1,7 +1,7 @@
 ---
 title: Banana Pi M2S
 description: Banana Pi M2S — single-board computer powered by Amlogic A311D.
-generated: 2026-03-31 21:49:38
+generated: 2026-10-29 19:09:06
 ---
 
 # Banana Pi M2S

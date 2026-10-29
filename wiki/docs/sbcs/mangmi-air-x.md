@@ -1,7 +1,7 @@
 ---
 title: Mangmi Air X
 description: Mangmi Air X — handheld powered by Qualcomm SM6115.
-generated: 2026-03-31 21:49:38
+generated: 2026-10-29 19:09:06
 ---
 
 # Mangmi Air X

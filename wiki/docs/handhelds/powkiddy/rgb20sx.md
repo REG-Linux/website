@@ -3,7 +3,7 @@ title: Powkiddy RGB20SX
 description: REG Linux on Powkiddy RGB20SX powered by Rockchip RK3566.
 manufacturer: Powkiddy
 slug: powkiddy/rgb20sx
-generated: 2026-03-31 21:49:38
+generated: 2026-10-29 19:09:06
 ---
 
 # Powkiddy RGB20SX

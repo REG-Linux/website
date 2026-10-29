@@ -1,7 +1,7 @@
 ---
 title: NVIDIA Jetson Nano
 description: NVIDIA Jetson Nano — handheld powered by NVIDIA Tegra X1.
-generated: 2026-03-31 21:49:38
+generated: 2026-10-29 19:09:06
 ---
 
 # NVIDIA Jetson Nano
