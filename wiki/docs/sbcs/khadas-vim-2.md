@@ -1,7 +1,7 @@
 ---
 title: Khadas VIM 2
 description: Khadas VIM 2 — single-board computer powered by Amlogic S912.
-generated: 2026-10-29 19:11:49
+generated: 2026-10-31 01:45:25
 ---
 
 # Khadas VIM 2
