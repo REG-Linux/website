@@ -3,8 +3,8 @@
 Welcome to the **REG Linux Wiki** — the official documentation site for **REG Linux**,  
 an **immutable Linux system for retro gaming devices**.
 
-🌐 **Live site:** [https://wiki.reglinux.org](https://wiki.reglinux.org)  
-📦 **Repository:** [REG-Linux/wiki](https://github.com/REG-Linux/wiki)
+🌐 **Live site:** [https://reglinux.org/wiki/](https://reglinux.org/wiki/)  
+📦 **Repository:** [REG-Linux/website](https://github.com/REG-Linux/website), folder `wiki/`
 
 ---
 
