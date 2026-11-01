@@ -3,7 +3,7 @@ title: Anbernic RG34XX
 description: REG Linux on Anbernic RG34XX powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg34xx
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # Anbernic RG34XX
@@ -16,10 +16,30 @@ generated: 2026-10-31 01:45:25
 
 ## Install REG Linux
 
-### Installation
+1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
 
-Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the Installation guide.
+REG Linux runs from the card and leaves the device's internal storage alone.
 
-Before booting the device, see the Installation Guide for H700 devices
+## Files and settings
 
-## Additional References
+The card has two partitions:
+
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
+
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled.
+
+## Notes
+
+No device-specific notes yet.

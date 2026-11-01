@@ -3,7 +3,7 @@ title: HardKernel ODROID GO Ultra
 description: REG Linux on HardKernel ODROID GO Ultra powered by Amlogic S922X.
 manufacturer: HardKernel
 slug: hardkernel/odroid-go-ultra
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # HardKernel ODROID GO Ultra
@@ -16,19 +16,30 @@ generated: 2026-10-31 01:45:25
 
 ## Install REG Linux
 
-### Installation
+1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
 
-First download the latest S922X version of REG Linux from the button below.
+REG Linux runs from the card and leaves the device's internal storage alone.
 
-To install REG Linux to the eMMC, you need to boot the device into recovery mode. There are 2 ways to do this:
+## Files and settings
 
-- Hardkernel Recovery SD Download this recovery image . Follow the recovery steps on the Odroid wiki . [this recovery image](https://wiki.odroid.com/odroid_go_ultra/os_image/recovery) [the Odroid wiki](https://wiki.odroid.com/odroid_go_ultra/getting_started/recovery_eMMC)
-- REG Linux Recovery hold Volume Down while the device boots.
+The card has two partitions:
 
-Once booted into recovery mode and connected to a PC via USB-C, the REG Linux image may be flashed to the eMMC using Balena Etcher, win32diskimager, dd or similar.
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
 
-Once the REG Linux image has been flashed to the the eMMC, restart the device and REG Linux will go through its first boot process (running from eMMC).
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled.
 
-## Additional References
+## Notes
 
-- Odroid Go Ultra wiki [Odroid Go Ultra wiki](https://wiki.odroid.com/odroid_go_ultra/odroid_go_ultra)
+No device-specific notes yet.

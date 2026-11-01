@@ -1,11 +1,12 @@
 ---
 title: Community
-description: Join the REG Linux community on Discord or GitHub!
+description: Where REG Linux users and developers talk and work.
 ---
 
 # Community
 
-Join the REG Linux community on Discord or GitHub!
-
-- [Discord](https://discord.gg/a9HH4ZpVqp)
-- [GitHub](https://github.com/REG-Linux)
+- **[Discord](https://discord.gg/a9HH4ZpVqp)**: questions, device testing reports and
+  development news.
+- **[GitHub](https://github.com/REG-Linux)**: the source code, bug reports and pull
+  requests. Wiki corrections go to
+  [REG-Linux/website](https://github.com/REG-Linux/website) (folder `wiki/`).

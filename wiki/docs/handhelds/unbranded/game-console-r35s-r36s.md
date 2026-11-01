@@ -3,7 +3,7 @@ title: Game Console R35S R36S
 description: REG Linux on Game Console R35S R36S powered by Rockchip RK3326.
 manufacturer: Unbranded
 slug: unbranded/game-console-r35s-r36s
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # Game Console R35S R36S
@@ -16,22 +16,30 @@ generated: 2026-10-31 01:45:25
 
 ## Install REG Linux
 
-### Installation
+1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
 
-Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in the Installation guide.
+REG Linux runs from the card and leaves the device's internal storage alone.
 
-### New displays (R36s of year 2024)
+## Files and settings
 
-Recent R36s have new displays that need some extra actions to work.
+The card has two partitions:
 
-The simplest way so far is:
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
 
-- Determine which panel do you have (or just try every option until it works)
-- Download a mipi-panel.dtbo.r36s-panel* there [there](https://github.com/stolen/r.nix-distribution/releases/tag/panel_overlays)
-- Rename the downloaded file and put it to a boot ( REG Linux ) partition as overlays/mipi-panel.dtbo
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled.
 
-These files mostly have just basic refresh rate (77.378 FPS) ( panel4 has 50, 60, 75 because we tested it)
+## Notes
 
-If you have an original .dtb file, you can generate a mipi-panel.dtbo from it. Assuming you have an SSH access and you have scp 'd the original dtb as rk3326-r35s-linux.dtb , the process would be as follows: RK3326:~ # mount -o remount,rw /flash RK3326:~ # mkdir -p /flash/overlays/ RK3326:~ # # ## Be not afraid! importpanel.py may run for a minute or two for some panels RK3326:~ # /usr/libexec/generic-dsi/importpanel.py rk3326-r35s-linux.dtb -O dtbo -o /flash/overlays/mipi-panel.dtbo RK3326:~ # sync ; mount -o remount,ro /flash/ Here we just make an overlays directory writable, then call a script that does all the importing stuff. Feel free to run this script on your PC, modify it and experiment with panel timings.
-
-This script adds a bunch of potentially useful refresh rates, but we have very few knowledge on which modes work well. Please check them with wlr-randr or with game configuration and tell us which modes work with your panel.
+No device-specific notes yet.

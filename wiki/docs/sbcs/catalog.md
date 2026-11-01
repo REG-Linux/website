@@ -48,7 +48,7 @@ The download catalog now exposes one REG Linux page per supported single-board p
 - [Khadas VIM 4](khadas-vim-4.md) — **SoC:** Amlogic A311D2 — Khadas VIM 4 pairs the Amlogic A311D2 SoC with the REG Linux stack for a polished retro console.
 
 ### Koch Media
-- [Capcom Home Arcade](capcom-home-arcade.md) — **SoC:** Allwinner H3 — Capcom Home Arcade pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
+- [Capcom Home Arcade](../handhelds/koch-media/capcom-home-arcade.md) — **SoC:** Allwinner H3 — Capcom Home Arcade pairs the Allwinner H3 SoC with the REG Linux stack for a polished retro console.
 
 ### Milk-V
 - [Milk-V Mars](milk-v-mars.md) — **SoC:** StarFive JH7110 — Milk-V Mars pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.

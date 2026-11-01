@@ -1,7 +1,7 @@
 ---
 title: ASUS Tinker Board 2
 description: ASUS Tinker Board 2 — single-board computer powered by Rockchip RK3399.
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # ASUS Tinker Board 2
