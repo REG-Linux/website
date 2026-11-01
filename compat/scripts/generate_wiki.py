@@ -21,6 +21,11 @@ DEVICES_YML = REPO_ROOT / "_data" / "devices.yml"
 SOCS_YML = REPO_ROOT / "_data" / "socs.yml"
 WIKI_DOCS = REPO_ROOT / "wiki" / "docs"
 WIKI_DATA = WIKI_DOCS / "assets" / "data"
+# REG-verified, hand-written notes appended to a device page: wiki/notes/<device-id>.md
+WIKI_NOTES = REPO_ROOT / "wiki" / "notes"
+MKDOCS_YML = REPO_ROOT / "wiki" / "mkdocs.yml"
+NAV_BEGIN = "    # BEGIN generated handhelds nav (compat/scripts/generate_wiki.py)"
+NAV_END = "    # END generated handhelds nav"
 CANONICAL_JSON = Path(__file__).resolve().parent / "devices_canonical.json"
 
 # Type → wiki directory
@@ -61,16 +66,47 @@ BRAND_DIRS = {
     "Minix": "minix",
 }
 
-# SoC family installation guides
-SOC_INSTALL_GUIDES = {
-    "allwinner-h700": "Download the current H700 REG Linux image for this device from the REG Linux download page, then follow the steps in the Installation guide.\n\nBefore booting the device, see the Installation Guide for H700 devices",
-    "rockchip-rk3326": "Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher or dd.",
-    "rockchip-rk3566": "Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.",
-    "rockchip-rk3568": "Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.",
-    "rockchip-rk3588": "Download the current RK3588 REG Linux image from the REG Linux download page. Flash it to an SD card or eMMC.",
+# Installation and file layout, written for REG Linux (same for every device that
+# boots REG from an SD card).
+INSTALL_TEXT = """1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
+
+REG Linux runs from the card and leaves the device's internal storage alone."""
+
+# Devices that don't simply boot from the card (verified notes go in wiki/notes/<id>.md)
+BOOT_CAVEATS = {
+    "qualcomm": "This device has a Qualcomm SoC: its stock bootloader does not start REG Linux "
+                "from the card by itself, and a bootloader change is needed first. The steps "
+                "will be documented here once they are verified for this device.",
+    "x86": "This is an x86_64 device: write the image to a USB stick or microSD card and pick "
+           "it from the firmware boot menu.",
 }
 
-DEFAULT_INSTALL = "Download the latest REG Linux image for this device from the REG Linux download page. Flash it to an SD card using balenaEtcher, Raspberry Pi Imager, or dd. Insert the media, power on, and let REG Linux expand the filesystem on first boot."
+
+def boot_caveat(device: dict) -> str:
+    soc = (device.get("soc_name", "") or "").lower()
+    if "qualcomm" in soc or "snapdragon" in soc:
+        return BOOT_CAVEATS["qualcomm"]
+    if any(x in soc for x in ("intel", "amd", "x86")) or device.get("id", "") in ("valve-steam-deck", "asus-rog-ally"):
+        return BOOT_CAVEATS["x86"]
+    return ""
+
+FILES_TEXT = """The card has two partitions:
+
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
+
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled."""
 
 WIDGET_TEMPLATE = """
 ## Hardware & Compatibility
@@ -114,7 +150,17 @@ def extract_manual_sections(path: Path) -> str | None:
     return manual if manual else None
 
 
-def generate_handheld_page(device: dict, soc: dict | None, preserved_sections: str | None = None, widget_url: str = "") -> str:
+def load_device_notes(dev_id: str) -> str:
+    """REG-verified notes for a device, from wiki/notes/<device-id>.md, if any."""
+    path = WIKI_NOTES / f"{dev_id}.md"
+    if path.exists():
+        text = path.read_text(encoding="utf-8").strip()
+        if text:
+            return text
+    return "No device-specific notes yet."
+
+
+def generate_handheld_page(device: dict, soc: dict | None, widget_url: str = "") -> str:
     """Generate a wiki page for a handheld/tvbox device (Template A/B)."""
     dev_id = device["id"]
     title = device["title"]
@@ -177,34 +223,26 @@ def generate_handheld_page(device: dict, soc: dict | None, preserved_sections: s
     kernel = device.get("kernel", "") or "Mainline Linux"
     kernel_str = f"Mainline Linux" if not kernel.startswith("Mainline") else kernel
 
-    soc_slug = device.get("soc_slug", "")
-    install_text = SOC_INSTALL_GUIDES.get(soc_slug, DEFAULT_INSTALL)
 
     slug = f"{BRAND_DIRS.get(brand, brand.lower())}/{dev_id.replace(brand.lower() + '-', '').replace(brand.lower(), '')}"
     slug = slug.strip("/").replace("--", "-")
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Features section
-    features_rows = []
-    features_rows.append("| Storage | REG Linux can be run from an SD Card. |")
-    if connectivity != "None":
-        features_rows.append("| Wifi | Can be turned on in REG-ES under Main Menu > Network Settings |")
-        features_rows.append("| Bluetooth | Supports bluetooth audio and controllers |")
-    if device.get("has_fan"):
-        features_rows.append("| Fan | Fan control can be adjusted per system or per game |")
+    notes = load_device_notes(dev_id)
+    caveat = boot_caveat(device)
+    install = f"!!! note\n    {caveat}\n\n{INSTALL_TEXT}" if caveat else INSTALL_TEXT
+    tail = f"""## Install REG Linux
 
-    # Use preserved manual sections if available, otherwise default
-    if preserved_sections:
-        tail = preserved_sections
-    else:
-        tail = f"""## Install REG Linux
+{install}
 
-### Installation
+## Files and settings
 
-{install_text}
+{FILES_TEXT}
 
-## Additional References"""
+## Notes
+
+{notes}"""
 
     widget = WIDGET_TEMPLATE.format(device_id=device["id"], widget_url=widget_url)
 
@@ -287,6 +325,53 @@ generated: {now}
     return page
 
 
+def grouped_handhelds(pages: list[tuple[str, str, str]]) -> dict[str, list[tuple[str, str]]]:
+    groups: dict[str, list[tuple[str, str]]] = {}
+    for brand, title, rel in sorted(pages, key=lambda p: (p[0].lower(), p[1].lower())):
+        groups.setdefault(brand, []).append((title, rel))
+    return groups
+
+
+def write_handheld_index(pages: list[tuple[str, str, str]]) -> None:
+    """handhelds/index.md: every handheld page, grouped by manufacturer."""
+    lines = [
+        "---",
+        "title: Handhelds",
+        "description: Handheld devices with a REG Linux page.",
+        "---",
+        "",
+        "# Handhelds",
+        "",
+        "Each page shows the device's REG Linux status, its hardware and how to",
+        "install REG Linux. The status comes from the compatibility matrix.",
+        "",
+    ]
+    for brand, items in grouped_handhelds(pages).items():
+        lines.append(f"## {brand}")
+        lines.append("")
+        for title, rel in items:
+            link = rel[len("handhelds/"):] if rel.startswith("handhelds/") else "../" + rel
+            lines.append(f"- [{title}]({link})")
+        lines.append("")
+    (WIKI_DOCS / "handhelds" / "index.md").write_text("\n".join(lines), encoding="utf-8")
+
+
+def write_handheld_nav(pages: list[tuple[str, str, str]]) -> None:
+    """Replace the Handhelds part of the nav in mkdocs.yml, between NAV_BEGIN and NAV_END."""
+    text = MKDOCS_YML.read_text(encoding="utf-8")
+    start, end = text.find(NAV_BEGIN), text.find(NAV_END)
+    if start < 0 or end < 0:
+        print("  mkdocs.yml has no generated handhelds nav markers, nav left alone")
+        return
+    block = [NAV_BEGIN, "  - Handhelds:", "    - Overview: handhelds/index.md"]
+    for brand, items in grouped_handhelds(pages).items():
+        block.append(f"    - {brand}:")
+        for title, rel in items:
+            block.append(f"      - \"{title}\": {rel}")
+    text = text[:start] + "\n".join(block) + "\n" + text[end:]
+    MKDOCS_YML.write_text(text, encoding="utf-8")
+
+
 def generate_data_files(devices_raw: dict, socs_raw: dict) -> None:
     """Generate wiki/docs/assets/data/ JSON files from canonical data."""
     WIKI_DATA.mkdir(parents=True, exist_ok=True)
@@ -345,6 +430,7 @@ def main() -> None:
 
     generated = 0
     skipped = 0
+    handheld_pages: list[tuple[str, str, str]] = []
 
     for dev_id, dev in sorted(devices_raw.items()):
         # Detect type using canonical JSON if available, else patterns
@@ -355,7 +441,13 @@ def main() -> None:
                     device_type = "tvbox"
                     break
         if not device_type or device_type == "unknown":
-            for pat in ["rg", "rgb", "pocket", "odin", "gameforce", "powkiddy", "trimui", "steam-deck", "rog-ally", "ayaneo"]:
+            for pat in ["nes-classic", "snes-classic", "capcom-home-arcade"]:
+                if pat in dev_id:
+                    device_type = "console"
+                    break
+        if not device_type or device_type == "unknown":
+            for pat in ["rg", "rgb", "pocket", "odin", "gameforce", "powkiddy", "trimui", "steam-deck", "rog-ally", "ayaneo",
+                        "odroid-go", "game-console", "rk3326-clones", "xu-mini"]:
                 if pat in dev_id:
                     device_type = "handheld"
                     break
@@ -415,8 +507,13 @@ def main() -> None:
             filename = filename.strip("-") + ".md"
 
             out_path = out_dir / filename
-            preserved = extract_manual_sections(out_path)
-            content = generate_handheld_page(device, soc, preserved, widget_url)
+            # Handheld, console and TV box pages are generated in full: earlier
+            # hand-written tails are not carried over (they held text taken from
+            # other projects' docs). Verified notes go in wiki/notes/<id>.md.
+            preserved = None
+            content = generate_handheld_page(device, soc, widget_url)
+            if device_type in ("handheld", "console", "pc"):
+                handheld_pages.append((brand or "Other", device["title"], out_path.relative_to(WIKI_DOCS).as_posix()))
         else:
             out_dir = WIKI_DOCS / "sbcs"
             filename = f"{dev_id}.md"
@@ -436,10 +533,12 @@ def main() -> None:
 
     print(f"\n{'[DRY RUN] Would generate' if args.dry_run else 'Generated'} {generated} wiki pages")
 
-    # Generate data files
+    # Generate data files, the handheld index and the Handhelds nav
     if not args.dry_run:
         print("\nGenerating data files...")
         generate_data_files(devices_raw, socs_raw)
+        write_handheld_index(handheld_pages)
+        write_handheld_nav(handheld_pages)
 
     print("Done.")
 
