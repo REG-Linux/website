@@ -3,7 +3,7 @@ title: RK3326 clones (including K36 and BatleXP G350)
 description: REG Linux on RK3326 clones (including K36 and BatleXP G350) powered by Rockchip RK3326.
 manufacturer: Unbranded
 slug: unbranded/rk3326-clones
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # RK3326 clones (including K36 and BatleXP G350)
@@ -16,25 +16,30 @@ generated: 2026-10-31 01:45:25
 
 ## Install REG Linux
 
-### Installation
+1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
 
-- Flash image to SD
-- If your device has a stock firmware on SD, move that card to SD2 (GAME) slot
-- Insert REG Linux SD to SD1 (OS) slot (or the only slot for some devices with SDIO WiFi)
-- Power on your device with charger unplugged. Wait till it reboots several times (about 5 minutes)
-- Should be working!
+REG Linux runs from the card and leaves the device's internal storage alone.
 
-### In case of issues with display/sound/etc.
+## Files and settings
 
-- While device is off, connect it to your PC with a USB cable (use "OTG" port as we need data transfer)
-- Hold Vol- while booting, your device should enter recovery mode, and all storage should appear as USB drives to your PC
-- from REG Linux partition take stock directory and save it somewhere ( you may suddenly need it later in case of broken stock SD or wiped EMMC )
-- there is a stock whatever.dtb file in stock dir. Upload it to DTBO generator and experiment with options [DTBO generator](https://REG Linux.gosk.in/dtbo/)
-- put the mipi-panel.dtbo you get from the service to overlays folder
-- safely remove all the drives and boot your device with updated dtbo to see if the issue is fixed
+The card has two partitions:
 
-### Do NOT flash to eMMC
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
 
-We strongly discourage anyone to flash eMMC on those devices.
-Your mileage will vary, eMMC could be very slow, and flashing could brick your device.
-Running from a good SD card may be faster and way safer.
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled.
+
+## Notes
+
+No device-specific notes yet.

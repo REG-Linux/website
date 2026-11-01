@@ -3,7 +3,7 @@ title: Ayn Odin 2 Portal
 description: REG Linux on Ayn Odin 2 Portal powered by Qualcomm 8gen2 (SM8550).
 manufacturer: Ayn
 slug: ayn/odin2-portal
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # Ayn Odin 2 Portal
@@ -16,8 +16,33 @@ generated: 2026-10-31 01:45:25
 
 ## Install REG Linux
 
-### Installation
+!!! note
+    This device has a Qualcomm SoC: its stock bootloader does not start REG Linux from the card by itself, and a bootloader change is needed first. The steps will be documented here once they are verified for this device.
 
-Download the latest REG Linux image for this device from the REG Linux download page. Flash it to an SD card using balenaEtcher, Raspberry Pi Imager, or dd. Insert the media, power on, and let REG Linux expand the filesystem on first boot.
+1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
 
-## Additional References
+REG Linux runs from the card and leaves the device's internal storage alone.
+
+## Files and settings
+
+The card has two partitions:
+
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
+
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled.
+
+## Notes
+
+No device-specific notes yet.

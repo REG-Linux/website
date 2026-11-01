@@ -1,7 +1,7 @@
 ---
 title: Ayn Thor
 description: Ayn Thor — device powered by Qualcomm 8gen2 (SM8550).
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # Ayn Thor

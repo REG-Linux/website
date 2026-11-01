@@ -1,7 +1,7 @@
 ---
 title: HardKernel ODROID XU3/XU4
 description: HardKernel ODROID XU3/XU4 — single-board computer powered by Samsung Exynos 5422.
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # HardKernel ODROID XU3/XU4

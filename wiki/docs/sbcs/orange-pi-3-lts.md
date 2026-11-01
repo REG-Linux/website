@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 3 LTS
 description: Orange Pi 3 LTS — single-board computer powered by Allwinner H5/H6.
-generated: 2026-10-31 01:45:25
+generated: 2026-11-01 16:45:33
 ---
 
 # Orange Pi 3 LTS

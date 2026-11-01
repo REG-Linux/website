@@ -15,7 +15,7 @@ REG Linux targets handhelds, single-board computers, and small consoles across m
 
 - [Handhelds](../handhelds/index.md)
 - [Single-board computers](../sbcs/catalog.md)
-- [Consoles](../sbcs/capcom-home-arcade.md)
+- [Consoles](../handhelds/koch-media/capcom-home-arcade.md)
 
 ## SoC families
 
