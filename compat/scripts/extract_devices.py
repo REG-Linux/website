@@ -47,7 +47,7 @@ SBC_PATTERNS = [
 
 CONSOLE_PATTERNS = ["capcom", "nes-classic", "snes-classic", "nintendo"]
 
-PC_PATTERNS = ["steam-deck", "rog-ally", "ayaneo"]
+PC_PATTERNS = ["steam-deck", "rog-ally"]
 
 # N/A features by device type
 NA_BY_TYPE = {
@@ -220,7 +220,8 @@ def main() -> None:
             warn(f"{device_id}: SoC '{soc_slug}' missing gpu.model")
 
         # Detect type and arch
-        device_type = detect_type(device_id)
+        # A type set in devices.yml wins; the ID patterns are the fallback
+        device_type = dev.get("type") or detect_type(device_id)
         arch = infer_arch(cpu_arch_raw)
 
         # Special handling for RISC-V SoCs with missing cpu.arch
