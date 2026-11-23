@@ -67,7 +67,6 @@ nav:
       - Banana Pi M4 Berry: sbcs/banana-pi-m4-berry.md
       - Banana Pi M5: sbcs/banana-pi-m5.md
       - Banana Pi M7: sbcs/banana-pi-m7.md
-    - Beelink:
     - Firefly:
       - Firefly Station M2 ROC-RK3566 PC: sbcs/firefly-station-m2-roc-rk3566-pc.md
       - Firefly Station M3 ROC-RK3588S PC: sbcs/firefly-station-m3-roc-rk3588s-pc.md

@@ -19,8 +19,8 @@ The download catalog now exposes one REG Linux page per supported single-board p
 - [Banana Pi M7](banana-pi-m7.md) — **SoC:** Rockchip RK3588 — Banana Pi M7 pairs the Rockchip RK3588 SoC with the REG Linux stack for a polished retro console.
 
 ### Beelink
-- [Beelink GT King](beelink-gt-king.md) — **SoC:** Amlogic S922X — Beelink GT King pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
-- [Beelink GT King Pro](beelink-gt-king-pro.md) — **SoC:** Amlogic S922X-H — Beelink GT King Pro pairs the Amlogic S922X-H SoC with the REG Linux stack for a polished retro console.
+- [Beelink GT King](../tvboxes/beelink/gt-king.md) — **SoC:** Amlogic S922X — Beelink GT King pairs the Amlogic S922X SoC with the REG Linux stack for a polished retro console.
+- [Beelink GT King Pro](../tvboxes/beelink/gt-king-pro.md) — **SoC:** Amlogic S922X-H — Beelink GT King Pro pairs the Amlogic S922X-H SoC with the REG Linux stack for a polished retro console.
 
 ### Firefly
 - [Firefly Station M2 / ROC-RK3566-PC](firefly-station-m2-roc-rk3566-pc.md) — **SoC:** Rockchip RK3566 — Firefly Station M2 / ROC-RK3566-PC pairs the Rockchip RK3566 SoC with the REG Linux stack for a polished retro console.
