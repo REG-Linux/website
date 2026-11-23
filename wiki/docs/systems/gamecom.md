@@ -51,8 +51,6 @@ Standardized options: `gamecom.videomode`, `gamecom.decoration`, `gamecom.padtok
 
 The default Game.com button mapping appears on a REG-Linux Retropad overlay:
 
-![Game.com controller overlay](../images/controller-overlays/gamecom-1.png)
-
 Use the MAME input menu to remap extra buttons or stylus inputs when needed.
 
 ## Troubleshooting

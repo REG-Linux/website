@@ -111,8 +111,6 @@ Other libretro cores such as `puae2021` and `uae4arm` expose largely the same ke
 
 Here are the default Amiga controls mapped to a REG-Linux Retropad:
 
-![amiga500-1](../images/controller-overlays/amiga500-1.png)
-
 Per-game remapping can be done via RetroArch’s Quick Menu or by editing the core options using the input remapping guide.
 
 ## Troubleshooting

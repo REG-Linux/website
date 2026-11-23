@@ -98,8 +98,6 @@ Standardized features for MAME include `archimedes.videomode`, `archimedes.padto
 
 Default Archimedes controls map to a REG-Linux Retropad:
 
-![](../images/controller-overlays/archimedes.png)
-
 RetroArch, MAME and CLK all allow per-game or per-core remapping through their respective menus.
 
 ## Troubleshooting

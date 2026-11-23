@@ -71,8 +71,6 @@ Standardized REG-Linux features available for this system are `arcadia.videomode
 
 The default Arcadia 2001 controls map to a REG-Linux Retropad:
 
-![arcadia-1](../images/controller-overlays/arcadia-1.png)
-
 Use MAME’s in-game menu if you need to tweak controller mappings beyond the default.
 
 ## Troubleshooting

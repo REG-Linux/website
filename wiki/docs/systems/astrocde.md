@@ -71,8 +71,6 @@ Open the in-game [MAME menu](https://docs.mamedev.org/usingmame/ui.html) with `[
 
 Here are the default Bally Astrocade controls mapped to a REG-Linux Retropad:
 
-![astrocde-1](../images/controller-overlays/astrocde-1.png)
-
 Use MAME’s menu if you need alternate controller layouts.
 
 ## Troubleshooting

@@ -80,8 +80,6 @@ The standalone MAME builds can also launch Laser 310 titles. Hit `[HOTKEY]` + th
 
 Laser 310 games map to the REG-Linux Retropad. Use the on-screen overlay or MAME’s input config to align the buttons with the device’s keypad and joystick.
 
-![Laser 310 controller overlay](../images/controller-overlays/laser310.png)
-
 ## Troubleshooting
 
 Consult the [MAME troubleshooting section](mame.md#troubleshooting) for system-specific issues.

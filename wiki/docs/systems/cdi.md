@@ -58,8 +58,6 @@ Open the MAME in-game menu with `[HOTKEY]` + south button or `Tab` to remap inpu
 
 The standard CD-i controller mapping overlays on a REG-Linux Retropad:
 
-![CD-i controller overlay](../images/controller-overlays/cdi.png)
-
 MAME’s UI and REG-Linux’s controller settings let you remap individual buttons as needed.
 
 ## Troubleshooting

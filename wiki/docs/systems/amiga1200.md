@@ -109,8 +109,6 @@ Uae4arm is another libretro Amiga core that follows the same general conventions
 
 Here are the default Amiga 1200 controls mapped onto a REG-Linux Retropad:
 
-![](../images/controller-overlays/amiga1200-1.png)
-
 When using `libretro: puae`/`puae2021` you can remap per-game inputs through the RetroArch Quick Menu or the input remapping guide.
 
 ## Troubleshooting

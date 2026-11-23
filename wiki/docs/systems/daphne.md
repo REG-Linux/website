@@ -67,8 +67,6 @@ Use a `<game>.commands` file inside the `.daphne` folder to pass extra command-l
 
 The default overlay maps console inputs to the Retropad. Press `Start` to toggle the overlay, move to a button with the D-pad/stick, and press a face button to activate it. Press `Start` again to hide the overlay.
 
-![DAPHNE controller overlay](../images/controller-overlays/daphne.png)
-
 | Gamepad control | Arcade function |
 | --- | --- |
 | SELECT | Insert coin |

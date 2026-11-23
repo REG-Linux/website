@@ -73,8 +73,6 @@ Many settings (cartridge type, keyboard layouts, disk selection) can be edited i
 
 The default Atari 8-bit pad mapping appears on a REG-Linux Retropad:
 
-![atari800](../images/controller-overlays/atari800.png)
-
 Use RetroArch’s Quick Menu or the atari800 menu to remap buttons or tweak analog controls.
 
 ## Troubleshooting

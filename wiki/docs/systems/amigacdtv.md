@@ -76,8 +76,6 @@ Libretro cores such as `puae2021` and `uae4arm` expose the same core options whe
 
 The CDTV remote/controller layout is mapped to a REG-Linux Retropad:
 
-![amigacdtv controller overlay](../images/controller-overlays/amigacdtv-1.png)
-
 Use RetroArch’s Quick Menu to tweak any button mapping that needs changing.
 
 ## Troubleshooting

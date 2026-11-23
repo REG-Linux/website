@@ -72,8 +72,6 @@ The standalone `xplus4` emulator targets the Plus/4, C16 and related machines. R
 
 The default Plus/4 layout maps to the REG-Linux Retropad. Use VICE or RetroArch’s input configuration for title-specific adjustments.
 
-![Commodore Plus/4 controller overlay](../images/controller-overlays/cplus4.png)
-
 ## Troubleshooting
 
 - Switch joystick ports if input feels wrong (`global.vice_joyport`).

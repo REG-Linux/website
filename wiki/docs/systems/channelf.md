@@ -69,8 +69,6 @@ Use the Quick Menu (`[HOTKEY]` + south button) to open FreeChaF’s core menu fo
 
 FreeChaF exposes the Channel F console overlay through the RETROPAD. Press `Start` to show the virtual buttons, use the D-pad or stick to pick a button, then press a face button to activate it. Press `Start` again to hide the overlay.
 
-![Channel F controller overlay](../images/controller-overlays/channelf.png)
-
 | FreeChaF Function | Retropad mapping |
 | --- | --- |
 | Forward | D-pad Up / Left analog Up |

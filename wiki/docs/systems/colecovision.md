@@ -63,8 +63,6 @@ Bluemsx is the libretro core for ColecoVision within RetroArch. It provides unif
 
 The ColecoVision controller had a numeric keypad plus joystick and action buttons; the default mapping is shown on a REG-Linux Retropad:
 
-![ColecoVision controller overlay](../images/controller-overlays/colecovision-1.png)
-
 Remap inputs per game via RetroArch’s Quick Menu if your title needs keypad entry or overlays.
 
 ## Troubleshooting

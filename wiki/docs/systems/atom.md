@@ -71,8 +71,6 @@ RetroArch runs `libretro: mess`, giving you unified controls, shaders, overlays 
 
 Here are the default Atom controls shown on a REG-Linux Retropad:
 
-![atom controller overlay](../images/controller-overlays/atom.png)
-
 Use RetroArch or MAME’s input configuration if you need alternate layouts for joysticks, paddles or keyboard-driven titles.
 
 ## Troubleshooting

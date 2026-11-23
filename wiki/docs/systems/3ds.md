@@ -99,8 +99,6 @@ The libretro Citra core brings core Citra functionality into RetroArch so you ca
 
 The default Nintendo 3DS layout maps to the REG-Linux Retropad. Use the standard controller configuration tools to adjust mappings per-core or per-game when needed.
 
-![3ds controller overlay](../images/controller-overlays/3ds-1.png)
-
 ## Troubleshooting
 
 ### "Could not Determine System Mode" / "Failed to Decrypt"

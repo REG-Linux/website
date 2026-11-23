@@ -82,9 +82,10 @@ REG Linux runs from the card and leaves the device's internal storage alone."""
 
 # Devices that don't simply boot from the card (verified notes go in wiki/notes/<id>.md)
 BOOT_CAVEATS = {
-    "qualcomm": "This device has a Qualcomm SoC: its stock bootloader does not start REG Linux "
-                "from the card by itself, and a bootloader change is needed first. The steps "
-                "will be documented here once they are verified for this device.",
+    "qualcomm": "This device has a Qualcomm SoC. Qualcomm devices are not part of the "
+                "REG Linux 26.12 release: no image is published for them yet. They need a "
+                "bootloader change before REG Linux can start from the card, and that step "
+                "will be documented once it is verified for this device.",
     "x86": "This is an x86_64 device: write the image to a USB stick or microSD card and pick "
            "it from the firmware boot menu.",
 }

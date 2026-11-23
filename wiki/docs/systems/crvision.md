@@ -59,8 +59,6 @@ MAME handles CreatiVision emulation. Use the in-game menu (`[HOTKEY]` + south bu
 
 The CreatiVision controller overlay features a numeric keypad and joystick. The default mapping is shown on a REG-Linux Retropad:
 
-![CreatiVision controller overlay](../images/controller-overlays/crvision-1.png)
-
 Remap inputs per game through MAME’s UI when certain keypad buttons are required.
 
 ## Troubleshooting

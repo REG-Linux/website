@@ -71,8 +71,6 @@ Many emulator parameters (cartridge type selection, advanced input mapping, vide
 
 Here are the default Atari 5200 controls mapped to a REG-Linux Retropad:
 
-![](../images/controller-overlays/atari5200-1.png)
-
 Use the Quick Menu to tweak mappings if you need to adjust keypad buttons or analog input handling.
 
 ## Troubleshooting

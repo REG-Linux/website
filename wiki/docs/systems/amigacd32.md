@@ -88,8 +88,6 @@ RetroArch provides uniform features (shaders, overlays, rewind, etc.) across all
 
 Default CD32 button mapping uses a REG-Linux Retropad:
 
-![amigacd32-1](../images/controller-overlays/amigacd32-1.png)
-
 RetroArch and FS-UAE allow per-game remapping as needed.
 
 ## Troubleshooting

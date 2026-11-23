@@ -109,8 +109,6 @@ Launch the Hatari GUI (press the west icon or `[L3]`) to tweak system options pe
 
 The default Atari ST layout is shown on a REG-Linux Retropad:
 
-![atarist-1](../images/controller-overlays/atarist-1.png)
-
 Use RetroArch’s Quick Menu or Hatari’s built-in configuration screens to remap or assign mouse/keyboard inputs when needed. The Hatari overlay also documents which RetroPad button corresponds to actions like opening the GUI or toggling mouse mode.
 
 ## Troubleshooting

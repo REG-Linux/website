@@ -72,8 +72,6 @@ Standardized features exposed via REG-Linux include `bbc.videomode`, `bbc.decora
 
 The BBC Micro supported joysticks, paddles and light pens; REG-Linux maps the default layout to a REG-Linux Retropad:
 
-![bbcmicro controller overlay](../images/controller-overlays/bbcmicro.png)
-
 Use the MAME menu or the `bbc.altlayout` option to mimic special peripherals if required.
 
 ## Troubleshooting

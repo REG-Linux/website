@@ -54,8 +54,6 @@ Supermodel also supports save states (F5 save, F7 load, select slot with F6) sto
 
 The default arcade layout maps to the REG-Linux Retropad; heavy use of keyboard (F5–F12) handles save states and volume controls. Use the overlays in `docs/images/controller-overlays/model3.png` for a visual guide.
 
-![Model3 controller overlay](../images/controller-overlays/model3.png)
-
 ## Troubleshooting
 
 - Refer to the [Supermodel FAQ](https://www.supermodel3.com/FAQ.html) for game-specific fixes.
