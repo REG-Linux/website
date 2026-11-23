@@ -45,11 +45,11 @@ The Hypseus rendering core reads the `.daphne` scripts and plays video using SDL
 | `daphne.singe_crosshair` | Toggle the crosshair overlay on/off. |
 | `daphne.singe_joystick_range` | Adjust analog cursor sensitivity. |
 
-Toggle these via `[HOTKEY]` + south button or through EmulationStation’s advanced options.
+Toggle these via `[HOTKEY]` + south button or through REG Station’s advanced options.
 
 ## Controls
 
-Gun-based games expect a mouse or light gun; REG-Linux maps the Retropad buttons to emulate light-gun triggers, start, and special actions. Use `/remapping_controls_per_emulator` when you want to move crosshair commands to shoulder buttons or analog sticks.
+Gun-based games expect a mouse or light gun; REG-Linux maps the Retropad buttons to emulate light-gun triggers, start, and special actions. Use [Controllers](/wiki/start-here/controllers/) when you want to move crosshair commands to shoulder buttons or analog sticks.
 
 ## Troubleshooting
 

@@ -27,7 +27,7 @@ EasyRPG uses only the game’s data files and does not need a BIOS dump.
 
 ## Game files
 
-Drop each RPG Maker project into `/userdata/roms/easyrpg/` so the folder name ends with `.easyrpg`. The required files include `RPG_RT.ldb`, `RPG_RT.lmt`, and the typical asset folders (`Backdrop`, `Battle`, `Music`, `Picture`, `System`, `Title`, etc.). If a project ships inside a `Data` subfolder, move its contents into a `.easyrpg` folder so the key files sit at the top level. Easily distributed `.zip`/`.squashfs` archives are supported starting in REG-Linux v33 as long as the archive contains the properly structured project root.
+Drop each RPG Maker project into `/userdata/roms/easyrpg/` so the folder name ends with `.easyrpg`. The required files include `RPG_RT.ldb`, `RPG_RT.lmt`, and the typical asset folders (`Backdrop`, `Battle`, `Music`, `Picture`, `System`, `Title`, etc.). If a project ships inside a `Data` subfolder, move its contents into a `.easyrpg` folder so the key files sit at the top level. `.zip`/`.squashfs` archives also work, as long as the archive contains the properly structured project root.
 
 ### Encoding and tools
 

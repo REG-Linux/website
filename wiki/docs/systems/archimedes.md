@@ -51,7 +51,7 @@ RetroArch boots libretro cores such as `mess` for Archimedes titles. Open the Qu
 
 #### RetroArch configuration
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS API `archimedes.gfxbackend` | Choose the renderer (OpenGL/GLCore/Vulkan). |
 | AUDIO LATENCY `archimedes.audio_latency` | Adjust buffer size in milliseconds. |
@@ -62,14 +62,13 @@ RetroArch boots libretro cores such as `mess` for Archimedes titles. Open the Qu
 
 The libretro `mess` core exposes standard keys like `archimedes.autosave`, `archimedes.netplay` and `archimedes.padtokeyboard` plus classic MAME-style options.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | OVERCLOCK (UNSTABLE) `global.mame_cpu_overclock` | Boost CPU speed (use with caution). |
 | RENDERING RESOLUTION `global.mame_altres` | Increase resolution for clearer output. |
 | SHARE MAME ARTWORK `global.sharemameart` | Share artwork paths with standalone MAME. |
 | CROP ARTWORK `global.artworkcrop` | Crop surrounding decorations to focus on the game. |
 | CUSTOM MAME CONFIG `global.customcfg` | Apply a central `mame.ini`. |
-| ALT DPAD MODE `global.altdpad` | Adjust D-pad orientation. |
 | SOFTWARE LIST `archimedes.softList` | Pick the appropriate software list. |
 | ARCHIMEDES MODEL `archimedes.altmodel` | Force a specific model (AA310, A3000, AA4401, AA540). |
 | UI KEYS `archimedes.enableui` | Toggle MAME UI bindings at startup. |
@@ -81,14 +80,13 @@ Standalone MAME also runs Archimedes software using the same BIOS requirements (
 
 Standardized features for MAME include `archimedes.videomode`, `archimedes.padtokeyboard`, `archimedes.bezel`, `archimedes.bezel_stretch`, `archimedes.hud` and related bezel/tattoo options.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | VIDEO MODE `archimedes.video` | Choose BGFX or Accel/OpenGL rendering. |
 | BGFX GRAPHICS API `archimedes.bgfxbackend` | Select the BGFX backend when BGFX is enabled. |
 | BGFX VIDEO FILTER `archimedes.bgfxshaders` | Apply a visual shader. |
 | CRT SWITCHRES `archimedes.switchres` | Enable SwitchRes profiles. |
 | ARTWORK CROP `archimedes.artworkcrop` | Crop decorations. |
-| ALT DPAD MODE `archimedes.altdpad` | Tweak D-pad orientation. |
 | CUSTOM MAME CONFIG `archimedes.customcfg` | Use a shared config file. |
 | DATA PLUGIN `archimedes.dataplugin` | Display game history or instructions. |
 

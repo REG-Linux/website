@@ -40,7 +40,7 @@ Put PC-FX disc images in `/userdata/roms/pcfx`. CHD containers are preferred bec
 
 ### RetroArch
 
-RetroArch runs the `libretro: pcfx` core. Open the Quick Menu (`[HOTKEY]` + south face button) for shader tweaks, overrides, and controller options. REG-Linux exposes `pcfx.videomode`, `pcfx.ratio`, `pcfx.smooth`, `pcfx.shaders`, `pcfx.pixel_perfect`, `pcfx.decoration`, `pcfx.game_translation`, as well as backend toggles (`pcfx.gfxbackend`, `pcfx.audio_latency`, `pcfx.video_threaded`) in EmulationStation.
+RetroArch runs the `libretro: pcfx` core. Open the Quick Menu (`[HOTKEY]` + south face button) for shader tweaks, overrides, and controller options. REG-Linux exposes `pcfx.videomode`, `pcfx.ratio`, `pcfx.smooth`, `pcfx.shaders`, `pcfx.pixel_perfect`, `pcfx.decoration`, `pcfx.game_translation`, as well as backend toggles (`pcfx.gfxbackend`, `pcfx.audio_latency`, `pcfx.video_threaded`) in REG Station.
 
 ### libretro: pcfx
 
@@ -50,7 +50,7 @@ The single libretro core focuses on authenticity. Important options:
 
 ## Controls
 
-PC-FX pads resemble the Genesis controller with six face buttons. Adjust inputs via the Quick Menu or save a custom remap (`/remapping_controls_per_emulator`) if you need to remap the six-button layout.
+PC-FX pads resemble the Genesis controller with six face buttons. Adjust inputs via the Quick Menu or save a custom remap ([Controllers](/wiki/start-here/controllers/)) if you need to remap the six-button layout.
 
 ## Troubleshooting
 

@@ -60,7 +60,7 @@ RetroArch runs the `libretro: mame` core for Apple II emulation. Use the Quick M
 
 #### libretro: mame configuration
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all systems this core supports |  |
 | OVERCLOCK (UNSTABLE) `global.mame_cpu_overclock` | Push the emulated CPU speed above 100% (use carefully).  => default `default`, 30 `30`, 35 `35`, …, 150 `150`. |

@@ -30,7 +30,7 @@ X96 Max Plus pairs the Amlogic S905X3 SoC with the REG Linux stack for a polishe
 
 | Kernel | GPU drivers | Compositor | Interface |
 | --- | --- | --- | --- |
-| Linux | — | Device-specific | REG-ES |
+| Linux | — | Device-specific | REG Station |
 
 ## Installation notes
 
@@ -38,7 +38,7 @@ X96 Max Plus pairs the Amlogic S905X3 SoC with the REG Linux stack for a polishe
 
 2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure to verify the checksum before booting.
 
-3. First boot setup. Insert the media into your X96 Max Plus, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+3. First boot setup. Insert the media into your X96 Max Plus, power on, and let REG Linux expand the filesystem. Pair controllers inside REG Station once prompted.
 
 ## Resources
 

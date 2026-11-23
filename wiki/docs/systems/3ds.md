@@ -71,28 +71,20 @@ Citra is the principal standalone Nintendo 3DS emulator bundled with REG-Linux. 
 
 Common settings exposed for the Citra builds included with REG-Linux are `3ds.videomode` and `3ds.ratio`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all cores of this emulator |  |
-| SCREEN LAYOUT `3ds.citra_screen_layout` | Adjusts how the dual screens appear on your display, useful for widescreen setups or streaming. => top/bottom `4-false`, bottom/top `4-true`, left/right `3-false`, right/left `3-true`, top only `1-false`, bottom only `1-true`, hybrid top ratio 4 `2-false`, hybrid bottom ratio 4 `2-true`. |
-| VIDEO RESOLUTION `3ds.citra_resolution_factor` | Scales the internal 3D render target for crisper models. Higher factors demand more GPU performance. => Native (400x240) `1`, 2x (800x480) `2`, 3x (1200x720) `3`, 4x (1600x960) `4`, 5x (2000x1200) `5`, 6x (2400x1440) `6`, 7x (2800x1680) `7`, 8x (3200x1920) `8`, 9x (3600x2160) `9`, 10x (4000x2400) `10`. |
-| VSYNC `3ds.use_vsync_new` | Reduces screen tearing at the cost of some CPU/GPU load. => Off `0`, On `1`. |
-| FRAME LIMIT `3ds.citra_use_frame_limit` | Keep this On to stay closer to original speeds. Off lets some games run too fast. => Off `0`, On `1`. |
-| DISK SHADER CACHE `3ds.citra_use_disk_shader_cache` | Saves generated shaders to disk to reduce stutter when revisiting sections. => Off `0`, On `1`. |
-| CUSTOM TEXTURES `3ds.citra_custom_textures` | Enables HD texture packs; large packs will increase load times. => Off `0`, On `1-normal`. |
-| IS NEW 3DS `3ds.citra_is_new_3ds` | Forces New 3DS mode with faster CPU and extra inputs. Some games benefit, others behave identically. => Off `0`, On `1`. |
-
 ### RetroArch
 
 RetroArch is the libretro frontend that exposes multiple emulator cores under a unified interface. Any 3DS core loaded through RetroArch inherits the platform's standard menus, overrides, shaders and input hotkeys.
 
 #### RetroArch configuration
 
-Open the Quick Menu with `[HOTKEY]` + the south face button to adjust advanced RetroArch settings, controller mappings and per-core options. REG-Linux also surfaces many of the same options through EmulationStation menus.
+Open the Quick Menu with `[HOTKEY]` + the south face button to adjust advanced RetroArch settings, controller mappings and per-core options. REG-Linux also surfaces many of the same options through REG Station menus.
 
 Standardized features across libretro cores for this system include `3ds.videomode`, `3ds.ratio`, `3ds.smooth`, `3ds.shaders`, `3ds.pixel_perfect`, `3ds.decoration` and `3ds.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all cores of this emulator |  |
 | GRAPHICS BACKEND `3ds.gfxbackend` | Select the rendering API. OpenGL is broadly compatible; Vulkan may boost performance on newer GPUs. => OpenGL `opengl`, Vulkan `vulkan`. |

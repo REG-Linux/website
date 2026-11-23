@@ -74,7 +74,7 @@ Amiberry is tuned for performance on single-board computers while exposing many 
 
 #### Amiberry options table
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | LINE MODE `amiga500.amiberry_linemode` | Controls how scanlines are drawn. => SINGLE none, DOUBLE double, SCANLINES scanlines. |
 | VIDEO RESOLUTION `amiga500.amiberry_resolution` | Selects an internal rendering resolution. => Low lores, High hires, Super high superhires. |
@@ -88,7 +88,7 @@ RetroArch runs the libretro cores for Amiga emulation and shares its features (s
 
 #### libretro: puae
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | AMIGA MODEL `global.puae_model` | Force a specific Amiga model. => Autodetect `automatic`, A500 `A500`, A500+ `A500PLUS`, A600 `A600`, A1200 `A1200`, A4000/040 `A4040`, CDTV `CDTV`, CD32 `CD32`, etc. |
 | CPU COMPATIBILITY `global.cpu_compatibility` | Improve compatibility for tricky titles. => Normal `normal`, More compatible `compatible`, Cycle-exact `exact`. |

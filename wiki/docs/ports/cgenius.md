@@ -43,7 +43,7 @@ alongside the originals; just keep each game’s files in its own directory to a
 ### cgenius
 
 The `cgenius` executable is the only emulator for this entry and requires `BR2_PACKAGE_CGENIUS` to be
-built. It honors EmulationStation’s standard video and input mappings, so you can adjust controller
+built. It honors REG Station’s standard video and input mappings, so you can adjust controller
 bindings through the Quick Menu if the default Retropad layout doesn’t feel accurate.
 
 ## Controls
@@ -54,6 +54,6 @@ mirror the original keyboard-based setup.
 
 ## Troubleshooting
 
-- Ensure each `.cgenius` file points to the correct subfolder; misnamed launchers will prevent the game from appearing in EmulationStation.
+- Ensure each `.cgenius` file points to the correct subfolder; misnamed launchers will prevent the game from appearing in REG Station.
 - Verify that the DOS data (IWAD/TWAD equivalents) reside beneath `/userdata/roms/cgenius/games/<title>/`.
 - Consult the generic support pages if you run into input issues or if REG-Linux refuses to start the launcher.

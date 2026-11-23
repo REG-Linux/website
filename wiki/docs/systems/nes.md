@@ -52,7 +52,7 @@ Mesen boasts full mapper coverage and a modern UI. It offers region selection (`
 
 ## Separation of NES and Famicom
 
-By default REG-Linux exposes distinct system entries for NES (`/userdata/roms/nes`) and Famicom Disk System (`/userdata/roms/fds`). If you want both in EmulationStation at the same time, drop a custom `es_systems_famicom.cfg` (as shown in the old instructions) under `/userdata/system/configs/emulationstation/`, then adjust theme coordinates to show the desired artwork.
+By default REG-Linux exposes distinct system entries for NES (`/userdata/roms/nes`) and Famicom Disk System (`/userdata/roms/fds`). If you want both in REG Station at the same time, drop a custom `es_systems_famicom.cfg` (as shown in the old instructions) under `/userdata/system/configs/emulationstation/`, then adjust theme coordinates to show the desired artwork.
 
 ## Controls
 

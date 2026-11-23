@@ -13,7 +13,7 @@ description: PlayStation Vita documentation for REG Linux.
 ## Overview
 
 Introduced in 2012 by Sony, the PlayStation Vita was a portable system.
-Vita3K is the experimental PS Vita emulator included with REG-Linux v36+. It targets x86_64 machines and requires decrypted firmware components; compatibility is limited and depends on ongoing development.
+Vita3K is the experimental PS Vita emulator included with REG Linux. It targets x86_64 machines and requires decrypted firmware components; compatibility is limited and depends on ongoing development.
 
 ## Technical specifications
 
@@ -35,7 +35,7 @@ Copy the official PS Vita firmware (`PSP2UPDAT.PUP`) and the font firmware packa
 
 ## ROMs
 
-Mai dump ZIPs are the only confirmed playable files. Install each archive through Vita3K’s **File → Install archive** menu; the emulator unpacks the data into `/userdata/saves/psvita/ux0/app/<TITLEID>/`. After installation, create a `.psvita` launcher in `/userdata/roms/psvita/<Title>[<TITLEID>].psvita` (e.g., `Street Fighter X Tekken (USA) [PCSE00005].psvita`). The `.psvita` file can be empty—its filename carries the metadata and tells EmulationStation what to launch.
+Mai dump ZIPs are the only confirmed playable files. Install each archive through Vita3K’s **File → Install archive** menu; the emulator unpacks the data into `/userdata/saves/psvita/ux0/app/<TITLEID>/`. After installation, create a `.psvita` launcher in `/userdata/roms/psvita/<Title>[<TITLEID>].psvita` (e.g., `Street Fighter X Tekken (USA) [PCSE00005].psvita`). The `.psvita` file can be empty—its filename carries the metadata and tells REG Station what to launch.
 
 ## Emulators
 

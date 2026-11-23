@@ -33,11 +33,11 @@ Solarus exposes standard display overrides (`solarus.videomode`, `solarus.decora
 | --- | --- |
 | `solarus.joystick` | Select which controller input drives the hero (Joypad, Left stick, Right stick). |
 
-Adjust options via the Quick Menu (`[HOTKEY]` + south button) or the advanced game settings in EmulationStation.
+Adjust options via the Quick Menu (`[HOTKEY]` + south button) or the advanced game settings in REG Station.
 
 ## Controls
 
-The default overlay maps movement to the D-pad/analog stick and face buttons to attack/jump actions. Use `/remapping_controls_per_emulator` if you want to assign the Storm Sword or Shield to shoulder buttons.
+The default overlay maps movement to the D-pad/analog stick and face buttons to attack/jump actions. Use [Controllers](/wiki/start-here/controllers/) if you want to assign the Storm Sword or Shield to shoulder buttons.
 
 ## Troubleshooting
 

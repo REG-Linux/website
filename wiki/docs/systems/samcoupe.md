@@ -36,7 +36,7 @@ Drop disk, tape or cartridge dumps into `/userdata/roms/samcoupe`. The emulator 
 
 ### samcoupe
 
-The integrated core reproduces the original keyboard, joystick and expansion chips. It runs inside EmulationStation with sensible defaults; use `/remapping_controls_per_emulator` to tweak the keyboard or joystick mapping when necessary.
+The integrated core reproduces the original keyboard, joystick and expansion chips. It runs inside REG Station with sensible defaults; use [Controllers](/wiki/start-here/controllers/) to tweak the keyboard or joystick mapping when necessary.
 
 ## Controls
 

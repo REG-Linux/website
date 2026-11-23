@@ -30,7 +30,7 @@ Create a marker file per title such as:
 touch "/userdata/roms/theforceengine/Star Wars - Dark Forces.tfe"
 ```
 
-This `.tfe` file keeps the entry visible in EmulationStation. The port reads the original files and maps them through the TFE binary.
+This `.tfe` file keeps the entry visible in REG Station. The port reads the original files and maps them through the TFE binary.
 
 ## Mods
 

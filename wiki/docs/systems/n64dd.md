@@ -31,7 +31,7 @@ The Nintendo 64DD is the magneto-optical accessory released in 1999 that brings 
 ## ROMs
 
 Keep `.ndd` or `.z64.ndd` archives zipped inside `/userdata/roms/n64dd`. Each disc image references `.pak0.pak`
-files stored inside the archive, so do not extract them. Use EmulationStation’s `[SELECT]` → **Advanced System Options** to
+files stored inside the archive, so do not extract them. Use REG Station’s `[SELECT]` → **Advanced System Options** to
 confirm that `global.mupen64-dd` is enabled prior to launching a title.
 
 ## BIOS

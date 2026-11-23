@@ -33,7 +33,7 @@ Copy your Fallout 1 data into `/userdata/roms/fallout1-ce/`, including `CRITTER.
 touch "/userdata/roms/fallout1-ce/Fallout.f1ce"
 ```
 
-This file is what EmulationStation scans to list the entry.
+This file is what REG Station scans to list the entry.
 
 ### Configuration notes
 

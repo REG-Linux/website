@@ -49,7 +49,7 @@ Store ROM images under `/userdata/roms/colecovision`. Both raw files and zipped 
 
 Bluemsx is the libretro core for ColecoVision within RetroArch. It provides unified hotkeys, stackable shaders and netplay. Use the Quick Menu (`[HOTKEY] + south button`) to access advanced options or controller remapping. REG-Linux exposes system options such as `colecovision.videomode`, `colecovision.ratio`, `colecovision.shaders`, `colecovision.pixel_perfect`, `colecovision.decoration`, and `colecovision.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS BACKEND `colecovision.gfxbackend` | Choose OpenGL for compatibility or Vulkan for performance. => OpenGL `opengl`, Vulkan `vulkan`. |
 | AUDIO LATENCY `colecovision.audio_latency` | Adjust buffer in milliseconds to prevent crackling. => 256 `256`, 192 `192`, 128 `128`, 64 `64`, 32 `32`, 16 `16`, 8 `8`. |

@@ -34,7 +34,7 @@ The SDL-based Abuse engine reads the files from `abuse_data` and launches them u
 
 ## Controls
 
-Abuse defaults to keyboard + mouse, but REG-Linux ships with a pad2key profile that maps movement/aim to the Retropad. Adjust buttons in `/remapping_controls_per_emulator` if you prefer a different layout.
+Abuse defaults to keyboard + mouse, but REG-Linux ships with a pad2key profile that maps movement/aim to the Retropad. Adjust buttons in [Controllers](/wiki/start-here/controllers/) if you prefer a different layout.
 
 ## Troubleshooting
 

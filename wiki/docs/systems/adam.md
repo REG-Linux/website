@@ -62,7 +62,7 @@ While a game is running, open MAME’s UI menu with `[HOTKEY]` + south button or
 
 Standardized REG-Linux features available for this system are `adam.videomode`, `adam.decoration`, `adam.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all versions of this emulator |  |
 | VIDEO MODE `adam.video` | Choose the renderer. **BGFX** enables shader-based post-processing, while **Accel/OpenGL** provide more direct paths.  => BGFX `bgfx`, Accel `accel`, OpenGL `opengl`. |
@@ -70,7 +70,6 @@ Standardized REG-Linux features available for this system are `adam.videomode`, 
 | BGFX VIDEO FILTER `adam.bgfxshaders` | Applies CRT-like or scaling filters from the BGFX shader list.  => Off `None`, Bilinear `default`, CRT Geom `crt-geom`, CRT Geom Deluxe `crt-geom-deluxe`, Super Eagle `eagle`, HLSL `hlsl`, HQ2X `hq2x`, HQ3X `hq3x`, HQ4X `hq4x`. |
 | CRT SWITCHRES `adam.switchres` | Enables SwitchRes profiles for real CRT displays. Leave Off unless using a CRT.  => Off `0`, On `1`. |
 | VERTICAL ROTATION (TATE) `adam.rotation` | Rotates the video output 90°/270° for vertical (TATE) displays.  => Off `None`, Rotate 90 `autoror`, Rotate 270 `autorol`. |
-| ALT DPAD MODE `adam.altdpad` | Adjusts the D-pad orientation for different controller stacks.  => Off (Default) `0`, DS3 Orientation `1`, X360 Orientation `2`. |
 | SPECIAL CONTROL LAYOUTS `adam.altlayout` | Offers alternate layouts for fighters, twin sticks and other control schemes.  => Default Only `0`, Street Fighter (SNES) `1`, Street Fighter (Modern) `4`, Mortal Kombat (SNES) `2`, Killer Instinct (SNES) `3`, Genesis 6-Button (Retroarch) `5`, Neo Geo 6-Button (Retro Mini Pad) `6`, Neo Geo (Offset Fightstick) `7`, Twin Stick with Triggers `8`, Rotated 4-Way Stick (Q*Bert) `9`. |
 | Settings specific to ADAM |  |
 | MEDIA TYPE `adam.altromtype` | Selects which internal slot MAME uses (cassette, disk or cartridge).  => Cassette 1 `cass1`, Cassette 2 `cass2`, Disk (Drive 1) `flop1`, Disk (Drive 2) `flop2`, Cartridge (Slot 1) `cart1`, Cartridge (Slot 2) `cart2`, Cartridge (Slot 3) `cart3`, Cartridge (Slot 4) `cart4`. |
@@ -82,7 +81,7 @@ Default Coleco ADAM controls map to a REG-Linux Retropad:
 
 ![adam controller overlay](../images/controller-overlays/adam-1.png)
 
-If necessary, remap inputs through EmulationStation’s MAME settings or via MAME’s own in-game menu.
+If necessary, remap inputs through REG Station’s MAME settings or via MAME’s own in-game menu.
 
 ## Troubleshooting
 

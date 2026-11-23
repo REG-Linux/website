@@ -23,7 +23,7 @@ XRick is the open-source remake of Rick Dangerous. REG-Linux treats it as a `por
 
 ## ROMs
 
-Place the official `data.zip` (or another XRick archive) into `/userdata/roms/xrick/`. EmulationStation scans the folder and the core reads the assets without needing to unpack the archive.
+Place the official `data.zip` (or another XRick archive) into `/userdata/roms/xrick/`. REG Station scans the folder and the core reads the assets without needing to unpack the archive.
 
 ## Emulators
 
@@ -33,7 +33,7 @@ The core exposes the standard video/input overrides. Use the Quick Menu to remap
 
 ## Controls
 
-The overlay replicates the arcade-style run-and-jump layout. Use `/remapping_controls_per_emulator` if you need to bind buttons differently.
+The overlay replicates the arcade-style run-and-jump layout. Use [Controllers](/wiki/start-here/controllers/) if you need to bind buttons differently.
 
 ## Troubleshooting
 

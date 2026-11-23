@@ -35,7 +35,7 @@ Mr. Boom stores its assets as a `.libretro` package inside `/userdata/roms/mrboo
 
 The MrBoom libretro core exposes the standard `mrboom.*` options (`videomode`, `ratio`, `smooth`, `shaders`, `pixel_perfect`, `decoration`, and `game_translation`).
 
-| ES setting name | Description |
+| REG Station setting | Description |
 | --- | --- |
 | `mrboom.gfxbackend` | Choose between OpenGL or Vulkan rendering. |
 | `mrboom.audio_latency` | Increase this value if you hear distortion. |
@@ -43,7 +43,7 @@ The MrBoom libretro core exposes the standard `mrboom.*` options (`videomode`, `
 
 #### MrBoom-specific options
 
-| ES setting name | Description |
+| REG Station setting | Description |
 | --- | --- |
 | `global.mrboom-aspect` | Pick the palette used for team matches (Selfie Native, Color Color, etc.). |
 | `global.mrboom-nomonster` | Disable the monster NPCs for arena-style gameplay. |

@@ -33,7 +33,7 @@ Drop a valid `.sdlpop` archive—or a `.squashfs` container that includes it—i
 
 ### SDLPop
 
-The SDLPop binary exposes the usual video/input overrides (`sdlpop.videomode`, `sdlpop.ratio`, `sdlpop.padtokeyboard`, `sdlpop.decoration`). Use the Quick Menu (`[HOTKEY]` + south button) or the EmulationStation advanced options to adjust shaders, scaling, or controller mapping.
+The SDLPop binary exposes the usual video/input overrides (`sdlpop.videomode`, `sdlpop.ratio`, `sdlpop.padtokeyboard`, `sdlpop.decoration`). Use the Quick Menu (`[HOTKEY]` + south button) or the REG Station advanced options to adjust shaders, scaling, or controller mapping.
 
 ## Controls
 

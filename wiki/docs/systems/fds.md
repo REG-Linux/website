@@ -47,7 +47,7 @@ RetroArch hosts the NES cores, and they expose the FDS options described below. 
 
 Standardized options across libretro NES cores: `fds.videomode`, `fds.ratio`, `fds.smooth`, `fds.shaders`, `fds.pixel_perfect`, `fds.decoration`, `fds.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS API `fds.gfxbackend` | Choose OpenGL or Vulkan rendering. |
 | AUDIO LATENCY `fds.audio_latency` | Raise buffer to fix crackling; lower to reduce latency. |
@@ -55,7 +55,7 @@ Standardized options across libretro NES cores: `fds.videomode`, `fds.ratio`, `f
 
 #### libretro: fceumm configuration
 
-| ES setting name | Description => Value |
+| REG Station setting | Description => Value |
 | --- | --- |
 |`global.fceumm_nospritelimit`| Remove sprite per line limit.|
 |`global.fceumm_palette`| Select color palette (default, composite, smooth, etc.).|
@@ -65,7 +65,7 @@ Standardized options across libretro NES cores: `fds.videomode`, `fds.ratio`, `f
 
 #### libretro: Nestopia configuration
 
-| ES setting name | Description => Value |
+| REG Station setting | Description => Value |
 | --- | --- |
 |`global.nestopia_nospritelimit`| Remove sprite per line limit.|
 |`global.nestopia_palette`| Choose color palette.|

@@ -29,7 +29,7 @@ OpenLara requires no BIOS files.
 
 Copy the entire Windows installation of Tomb Raider I into `/userdata/roms/openlara/croft/`. The directory should include the `sound` and `data` folders as well as `london.dat` or other level packs depending on your edition.
 
-Create a placeholder file at `/userdata/roms/openlara/OpenLara.croft` to let EmulationStation register the ROM entry. Keep the folder structure intact so OpenLara can find the `.bin` files it expects.
+Create a placeholder file at `/userdata/roms/openlara/OpenLara.croft` to let REG Station register the ROM entry. Keep the folder structure intact so OpenLara can find the `.bin` files it expects.
 
 ## Emulators
 

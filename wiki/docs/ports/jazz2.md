@@ -33,7 +33,7 @@ Copy your Jazz Jackrabbit 2 installation (Steam, GOG, or disc) to `/userdata/rom
 touch "/userdata/roms/jazz2/Jazz Jackrabbit 2.game"
 ```
 
-This tells EmulationStation to list Jazz Jackrabbit 2 in the ports section. Keep the file names and capitalization as they appear on Windows to avoid mismatches.
+This tells REG Station to list Jazz Jackrabbit 2 in the ports section. Keep the file names and capitalization as they appear on Windows to avoid mismatches.
 
 ## Emulators
 

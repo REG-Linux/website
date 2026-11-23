@@ -20,7 +20,7 @@ REG-Linux keeps these ROMs under a separate `snes-msu1` system so they appear wi
 - Manufacturer: Nintendo
 - Release year: 1991
 - Hardware type: console
-- EmulationStation group: snes
+- REG Station group: snes
 
 ### Quick reference
 
@@ -39,7 +39,7 @@ When the ROM loads, the core reads the header and automatically binds the audio 
 
 ### RetroArch / bsnes / snes9x cores
 
-RetroArch exposes MSU-1–capable cores (`bsnes`, `bsnes_hd`, `snes9x`, `snes9x_next`, `pocketsnes`). Open the Quick Menu (`[HOTKEY]` + south face button) to toggle the standard SNES options (`snes.videomode`, `snes.ratio`, `snes.shaders`, `snes.gfxbackend`, `snes.audio_latency`, `snes.video_threaded`). Use per-game overrides to lock in settings such as:
+RetroArch exposes MSU-1–capable cores (`bsnes`, `bsnes_hd`, `snes9x`, `snes9x_next`, `pocketsnes`). Open the Quick Menu (`[HOTKEY]` + south face button) to toggle the standard SNREG Station options (`snes.videomode`, `snes.ratio`, `snes.shaders`, `snes.gfxbackend`, `snes.audio_latency`, `snes.video_threaded`). Use per-game overrides to lock in settings such as:
 
 - `snes.dual_cpu_mode`/`snes.cpu_clock` (bsnes) for speed ceilings.
 - `snes.nine_slot_offset` or custom MC features for patch compatibility.
@@ -48,7 +48,7 @@ Enabling Fast Boot in the Quick Menu also ensures MSU-1 games load quickly witho
 
 ## Controls
 
-The SNES overlay at `../images/controller-overlays/snes-1.png` reflects the DualShock-style layout required by most MSU-1 hacks. Bind any extra hotkeys (e.g., cycle tracks, reset) via `/remapping_controls_per_emulator`.
+The SNES overlay at `../images/controller-overlays/snes-1.png` reflects the DualShock-style layout required by most MSU-1 hacks. Bind any extra hotkeys (e.g., cycle tracks, reset) via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

@@ -29,11 +29,11 @@ The base game resides inside the `baseq2/` folder, while the mission packs live 
 
 ### RetroArch / libretro: VitaQuake2
 
-The core honors the usual `vitaquake2.*` overrides. Adjust video, shaders, and controllers through the Quick Menu or EmulationStation advanced options.
+The core honors the usual `vitaquake2.*` overrides. Adjust video, shaders, and controllers through the Quick Menu or REG Station advanced options.
 
 ## Controls
 
-The overlay demonstrates the FPS layout; configure movement, jump, and fire through the standard `remapping_controls_per_emulator` workflow if you need adjustments.
+The overlay demonstrates the FPS layout; configure movement, jump, and fire through the [Controllers](/wiki/start-here/controllers/) page workflow if you need adjustments.
 
 ## Troubleshooting
 

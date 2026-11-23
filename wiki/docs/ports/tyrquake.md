@@ -43,7 +43,7 @@ Adjust these options from the Quick Menu (`[HOTKEY]` + south button) or by editi
 
 ## Controls
 
-The overlay mirrors the PC-style FPS layout. Save a custom remap via `/remapping_controls_per_emulator` if you prefer WASD, alternate strafing, or deeper joystick tweaks.
+The overlay mirrors the PC-style FPS layout. Save a custom remap via [Controllers](/wiki/start-here/controllers/) if you prefer WASD, alternate strafing, or deeper joystick tweaks.
 
 ## Troubleshooting
 

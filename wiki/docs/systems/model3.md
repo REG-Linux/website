@@ -38,7 +38,7 @@ Drop each official Model 3 ZIP into `/userdata/roms/model3`. Supermodel expects 
 
 [Supermodel](https://www.supermodel3.com/) is the dedicated Sega Model 3 emulator bundled with REG-Linux. It exposes `model3.videomode` plus the options below; configuration is also stored in `/userdata/system/configs/supermodel/supermodel.ini`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | 3D ENGINE | `model3.engine3D` | Select Legacy3D (`legacy3d`) or New3D (`new3d`). |
 | QUAD RENDERING | `model3.quadRendering` | Enable modern quad rendering (`0` Off, `1` On). |

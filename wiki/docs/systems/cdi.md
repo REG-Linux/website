@@ -46,7 +46,7 @@ Copy your CD-i disc images into `/userdata/roms/cdi`. Use CHD for maximal compat
 
 Open the MAME in-game menu with `[HOTKEY]` + south button or `Tab` to remap inputs, adjust video options, or configure audio. Standardized REG-Linux features for CD-i include `cdi.videomode`, `cdi.decoration` and `cdi.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all versions of this emulator |  |
 | VIDEO MODE `cdi.video` | Choose BGFX shaders or Accel/OpenGL rendering. => BGFX `bgfx`, Accel `accel`, OpenGL `opengl`. |
@@ -54,8 +54,6 @@ Open the MAME in-game menu with `[HOTKEY]` + south button or `Tab` to remap inpu
 | BGFX VIDEO FILTER `cdi.bgfxshaders` | Apply CRT/scaling shaders. => Off `None`, Bilinear `default`, CRT Geom `crt-geom`, CRT Geom Deluxe `crt-geom-deluxe`, Super Eagle `eagle`, HLSL `hlsl`, HQ2X `hq2x`, HQ3X `hq3x`, HQ4X `hq4x`. |
 | CRT SWITCHRES `cdi.switchres` | Enable SwitchRes if you have a CRT. => Off `0`, On `1`. |
 | VERTICAL ROTATION `cdi.rotation` | Rotate the output for TATE displays. => Off `None`, Rotate 90 `autoror`, Rotate 270 `autorol`. |
-| ALT DPAD MODE `cdi.altdpad` | Adjust D-pad orientation for alternate controllers. => Off (Default) `0`, DS3 Orientation `1`, X360 Orientation `2`. |
-
 ## Controls
 
 The standard CD-i controller mapping overlays on a REG-Linux Retropad:

@@ -12,7 +12,7 @@ description: CorsixTH documentation for REG Linux.
 
 ## Overview
 
-CorsixTH is a Lua-based reimplementation of Theme Hospital. It boots the original data files with quality-of-life tweaks while remaining grouped under `ports` in EmulationStation so it keeps pace with REG-Linux’s other non-console engines.
+CorsixTH is a Lua-based reimplementation of Theme Hospital. It boots the original data files with quality-of-life tweaks while remaining grouped under `ports` in REG Station so it keeps pace with REG-Linux’s other non-console engines.
 
 ### Quick reference
 
@@ -33,7 +33,7 @@ Purchase or locate the Theme Hospital install (GoG, Steam, or original CD) and e
 Theme Hospital.game
 ```
 
-Each `.game` file should contain the relative folder name (e.g., `Theme Hospital/`) so REG-Linux knows where to scrape the executable. This file also names the entry shown in EmulationStation.
+Each `.game` file should contain the relative folder name (e.g., `Theme Hospital/`) so REG-Linux knows where to scrape the executable. This file also names the entry shown in REG Station.
 
 ### Custom music
 
@@ -47,7 +47,7 @@ Having a complete Theme Hospital directory with its `data` subfolder, `executabl
 
 ### CorsixTH
 
-The dedicated CorsixTH executable lives under `/usr/bin/corsixth`. Launching it from EmulationStation exposes options for fullscreen or windowed display, vsync, and controller polling. Use the Quick Menu (`[HOTKEY]` + south button) if you need to tweak inputs or override video settings at runtime.
+The dedicated CorsixTH executable lives under `/usr/bin/corsixth`. Launching it from REG Station exposes options for fullscreen or windowed display, vsync, and controller polling. Use the Quick Menu (`[HOTKEY]` + south button) if you need to tweak inputs or override video settings at runtime.
 
 ## Controls
 

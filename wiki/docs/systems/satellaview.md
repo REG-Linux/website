@@ -46,7 +46,7 @@ RetroArch loads the SNES cores listed above and uses the BS-X BIOS when the file
 
 ## Controls
 
-Gameplay mirrors standard SNES input, so use the SNES overlay or map the pad however you prefer. Save custom remaps through `/remapping_controls_per_emulator` whenever a title expects unusual button combos.
+Gameplay mirrors standard SNES input, so use the SNES overlay or map the pad however you prefer. Save custom remaps through [Controllers](/wiki/start-here/controllers/) whenever a title expects unusual button combos.
 
 ## Troubleshooting
 

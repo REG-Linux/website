@@ -40,7 +40,7 @@ Use `[HOTKEY]` + south face button to open the RetroArch Quick Menu and adjust `
 
 ## Controls
 
-The default overlay depicts the WonderSwan pad (D-pad and four buttons). Adjust any mapping through `/remapping_controls_per_emulator` when you prefer a different layout.
+The default overlay depicts the WonderSwan pad (D-pad and four buttons). Adjust any mapping through [Controllers](/wiki/start-here/controllers/) when you prefer a different layout.
 
 ## Troubleshooting
 

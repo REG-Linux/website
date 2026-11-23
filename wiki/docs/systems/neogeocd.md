@@ -30,7 +30,7 @@ SNK's Neo-Geo CD brought arcade-perfect games to discs in 1994 by reusing the sa
 
 ## BIOS
 
-Install the required Neo-Geo CD BIOS files in `/userdata/bios/neocd/`. Having multiple revisions lets you select the desired system variant through the advanced system options. For REG-Linux v34+, the recommended list includes:
+Install the required Neo-Geo CD BIOS files in `/userdata/bios/neocd/`. Having multiple revisions lets you select the desired system variant through the advanced system options. The recommended list includes:
 
 | MD5 checksum                       | Share file path            | Description       |
 |------------------------------------|-----------------------------|-------------------|

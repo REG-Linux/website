@@ -33,7 +33,7 @@ Copy the Fallout 2 files into `/userdata/roms/fallout2-ce/`, including `master.d
 touch "/userdata/roms/fallout2-ce/Fallout 2.f2ce"
 ```
 
-This `.f2ce` file lets EmulationStation discover the ROM entry.
+This `.f2ce` file lets REG Station discover the ROM entry.
 
 ### Configuration notes
 

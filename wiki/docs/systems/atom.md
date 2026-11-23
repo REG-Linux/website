@@ -55,7 +55,7 @@ RetroArch runs `libretro: mess`, giving you unified controls, shaders, overlays 
 
 #### Key configuration options
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | OVERCLOCK (UNSTABLE) `global.mame_cpu_overclock` | Boost Atom CPU speed (use only if you know the game benefits). |
 | RENDERING RESOLUTION `global.mame_altres` | Increase resolution for crisp rendering. |

@@ -23,13 +23,13 @@ Super Mario War is a multiplayer battle game where up to four players stomp each
 
 ## ROMs
 
-Install the `.game` folder delivered by the Content Downloader into `/userdata/roms/superbroswar/`. The folder should include the zipped data, levels, and textures that the libretro core needs. Keep the folder intact so EmulationStation can recognize the entry.
+Install the `.game` folder delivered by the Content Downloader into `/userdata/roms/superbroswar/`. The folder should include the zipped data, levels, and textures that the libretro core needs. Keep the folder intact so REG Station can recognize the entry.
 
 ## Emulators
 
 ### RetroArch / libretro: Superbroswar
 
-The core loads the assets directly and exposes the usual RetroArch video/input options. Use `/remapping_controls_per_emulator` or the Quick Menu to customize button layouts if the defaults don’t suit you.
+The core loads the assets directly and exposes the usual RetroArch video/input options. Use [Controllers](/wiki/start-here/controllers/) or the Quick Menu to customize button layouts if the defaults don’t suit you.
 
 ## Controls
 

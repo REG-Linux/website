@@ -48,7 +48,7 @@ Press `[HOTKEY]` + the south face button or `[Tab]` to access the MAME menu, adj
 
 #### In-Emulation Options
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | VIDEO MODE | `megaduck.video` | Choose BGFX, Accel or OpenGL rendering. |
 | BGFX GRAPHICS API | `megaduck.bgfxbackend` | Select backend when BGFX is active. |

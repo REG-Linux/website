@@ -57,14 +57,13 @@ MAME (which includes the former MESS project) emulates the BBC Micro driver. Eac
 
 Standardized features exposed via REG-Linux include `bbc.videomode`, `bbc.decoration` and `bbc.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | VIDEO MODE `bbc.video` | Choose BGFX shaders or direct Accel/OpenGL rendering. |
 | BGFX GRAPHICS API `bbc.bgfxbackend` | Select the API used by BGFX if enabled (OpenGL, GLES, Vulkan). |
 | BGFX VIDEO FILTER `bbc.bgfxshaders` | Apply CRT/smoothing shaders from the BGFX list. |
 | CRT SWITCHRES `bbc.switchres` | Use SwitchRes profiles on CRT displays. |
 | VERTICAL ROTATION `bbc.rotation` | Rotate output for vertical setups. |
-| ALT DPAD MODE `bbc.altdpad` | Adjust D-pad orientation when controllers behave oddly. |
 | SPECIAL CONTROL LAYOUTS `bbc.altlayout` | Choose alternate layouts for unique control needs. |
 | MEDIA TYPE `bbc.altromtype` | Specify the media you are loading (cassette/disk/ROM). |
 | UI KEYS `bbc.enableui` | Enable MAME UI key bindings at launch. |

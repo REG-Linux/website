@@ -53,7 +53,7 @@ Shenmue (Disc 2).gdi
 Shenmue (Passport).gdi
 ```
 
-Load the playlist in EmulationStation to let Flycast swap discs automatically.
+Load the playlist in REG Station to let Flycast swap discs automatically.
 
 ## Disc compression
 
@@ -87,7 +87,7 @@ The default Dreamcast layout maps to the REG-Linux Retropad overlay:
 
 ![Dreamcast controller overlay](../images/controller-overlays/dreamcast-1.png)
 
-Each emulator also uses its own `[HOTKEY]` combos—consult the EmulationStation menu or the emulator’s documentation for precise bindings.
+Each emulator also uses its own `[HOTKEY]` combos—consult the REG Station menu or the emulator’s documentation for precise bindings.
 
 ## Troubleshooting
 

@@ -322,7 +322,6 @@ nav:
     - Dos (x86): systems/dos.md
     - Electron: systems/electron.md
     - Final Burn Neo: systems/fbneo.md
-    - Applications: systems/flatpak.md
     - FM-7: systems/fm7.md
     - FM-TOWNS: systems/fmtowns.md
     - Gamate: systems/gamate.md
@@ -356,7 +355,6 @@ nav:
     - Super Game Boy: systems/sgb.md
     - Socrates: systems/socrates.md
     - Spectravideo SV-328: systems/spectravideo.md
-    - Steam: systems/steam.md
     - SuFami Turbo: systems/sufami.md
     - Supervision: systems/supervision.md
     - Super A'Can: systems/supracan.md

@@ -55,7 +55,7 @@ Amiberry is optimized for SBCs and shares the same REG-Linux hooks (`amigacd32.v
 
 #### Amiberry configuration table
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | LINE MODE `amigacd32.amiberry_linemode` | Controls scanline rendering. => SINGLE none, DOUBLE double, SCANLINES scanlines. |
 | VIDEO RESOLUTION `amigacd32.amiberry_resolution` | Defines internal rendering resolution. => Low lores, High hires, Super high superhires. |
@@ -69,7 +69,7 @@ RetroArch provides uniform features (shaders, overlays, rewind, etc.) across all
 
 #### libretro: puae
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | AMIGA MODEL `global.puae_model` | Force an Amiga model. => Autodetect `automatic`, CD32 `CD32`, CDTV `CDTV`, etc. |
 | CPU COMPATIBILITY `global.cpu_compatibility` | Improve compatibility. => Normal `normal`, More compatible `compatible`, Cycle-exact `exact`. |

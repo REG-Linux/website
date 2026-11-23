@@ -57,7 +57,7 @@ RetroArch uses libretro cores to emulate the system; open the Quick Menu (`[HOTK
 
 #### libretro: puae
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | AMIGA MODEL `global.puae_model` | Force a specific Amiga model (CDTV, CD32, etc.). |
 | CPU COMPATIBILITY `global.cpu_compatibility` | Help games that run too fast. |

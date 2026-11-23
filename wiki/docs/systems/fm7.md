@@ -58,7 +58,7 @@ MAME’s FM-7/MESS driver handles all FM/Electron machines. Access the MAME menu
 
 Standardized REG-Linux flags: `fm7.videomode`, `fm7.decoration`, `fm7.padtokeyboard`.
 
-| ES setting name | Description => ES option key_value |
+| REG Station setting | Description => values |
 | --- | --- |
 | VIDEO MODE `fm7.video` | Enable BGFX shaders or Accel/OpenGL rendering. |
 | BGFX API `fm7.bgfxbackend` | Select BGFX backend (OpenGL, GLES, Vulkan). |

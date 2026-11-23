@@ -36,7 +36,7 @@ Store Spectravideo programs (tape `.cas` or disk `.dsk` files) inside `/userdata
 
 ### openMSX
 
-openMSX emulates Spectravideo hardware using the same MSX options (`msx1.videomode`, `msx1.a3`, etc.) plus global switches such as `msx1.padtokeyboard`, `msx1.bezel` and the AI helpers. Access these via `[HOTKEY]` + south or EmulationStation’s advanced game options.
+openMSX emulates Spectravideo hardware using the same MSX options (`msx1.videomode`, `msx1.a3`, etc.) plus global switches such as `msx1.padtokeyboard`, `msx1.bezel` and the AI helpers. Access these via `[HOTKEY]` + south or REG Station’s advanced game options.
 
 ### RetroArch / bluemsx
 

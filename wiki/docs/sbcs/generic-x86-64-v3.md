@@ -20,7 +20,7 @@ Generic PC (x86-64-v3) — device powered by AMD/Intel x86_64-v3.
 
 2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure to verify the checksum before booting.
 
-3. First boot setup. Insert the media into your Generic PC (x86-64-v3), power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+3. First boot setup. Insert the media into your Generic PC (x86-64-v3), power on, and let REG Linux expand the filesystem. Pair controllers inside REG Station once prompted.
 
 ## Resources
 

@@ -37,7 +37,7 @@ Copy Commander X16 files into `/userdata/roms/commanderx16`. Games in `.IMG` or 
 
 1. Create a BASIC loader (e.g., `PLANETX16.BAS`) in the game folder.  
 2. Add commands such as `LOAD "PLANETX16"` and `RUN`.  
-3. Save and return to EmulationStation to launch the `.BAS` file.  
+3. Save and return to REG Station to launch the `.BAS` file.  
 
 Disk images sometimes require an `autorun.cmd` (DOS-style commands) containing e.g.:
 

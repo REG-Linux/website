@@ -51,7 +51,7 @@ RetroArch works with the `libretro: flycast` core and shares the same Quick Menu
 
 ## Controls
 
-System SP titles use gun/mouse inputs for select cabinets. Follow the general arcade overlay inside the repo or remap via `/remapping_controls_per_emulator` when playing with a gamepad.
+System SP titles use gun/mouse inputs for select cabinets. Follow the general arcade overlay inside the repo or remap via [Controllers](/wiki/start-here/controllers/) when playing with a gamepad.
 
 ## Troubleshooting
 

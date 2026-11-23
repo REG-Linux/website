@@ -46,7 +46,7 @@ Use `[SELECT]` → **Game Aspect Ratio** from the system’s advanced options me
 
 PCSX2 is the primary emulator for PS2 games. It requires a Vulkan-capable GPU and a modern x86_64 CPU. Launch `pcsx2-config` from `[F1]` → **Applications** to tweak rendering, hacks and controller presets.
 
-Key settings available through EmulationStation:
+Key settings available through REG Station:
 
 - `ps2.gfxbackend`: choose between OpenGL and Vulkan rendering.
 - `ps2.internal_resolution`: upscales the framebuffer (higher values improve clarity but cost performance).
@@ -60,7 +60,7 @@ If performance suffers, lower the internal resolution, disable hacks, or shift t
 
 ### RetroArch
 
-RetroArch hosts the libretro PCsX2 and play cores (among community builds). Open the Quick Menu (`[HOTKEY]` + south face button) to tweak shaders, overrides and controller mapping. EmulationStation surfaces the shared options (`ps2.videomode`, `ps2.ratio`, `ps2.smooth`, `ps2.shaders`, `ps2.pixel_perfect`, `ps2.decoration`, `ps2.game_translation`) plus backend/latency controls (`ps2.gfxbackend`, `ps2.audio_latency`, `ps2.video_threaded`).
+RetroArch hosts the libretro PCsX2 and play cores (among community builds). Open the Quick Menu (`[HOTKEY]` + south face button) to tweak shaders, overrides and controller mapping. REG Station surfaces the shared options (`ps2.videomode`, `ps2.ratio`, `ps2.smooth`, `ps2.shaders`, `ps2.pixel_perfect`, `ps2.decoration`, `ps2.game_translation`) plus backend/latency controls (`ps2.gfxbackend`, `ps2.audio_latency`, `ps2.video_threaded`).
 
 ## Texture packs
 

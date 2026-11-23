@@ -33,11 +33,11 @@ Dump each VMU application into `/userdata/roms/vemulator`. `.vms` is the native 
 
 ## Emulator
 
-`libretro: vemulator` runs the VMU software with accurate screen and button handling. Use `[HOTKEY]` + south face button to open RetroArch’s Quick Menu and adjust video settings (`vemulator.videomode`, `vemulator.ratio`, `vemulator.shaders`). EmulationStation mirrors backend/latency controls (`vemulator.gfxbackend`, `vemulator.audio_latency`, `vemulator.video_threaded`) as well.
+`libretro: vemulator` runs the VMU software with accurate screen and button handling. Use `[HOTKEY]` + south face button to open RetroArch’s Quick Menu and adjust video settings (`vemulator.videomode`, `vemulator.ratio`, `vemulator.shaders`). REG Station mirrors backend/latency controls (`vemulator.gfxbackend`, `vemulator.audio_latency`, `vemulator.video_threaded`) as well.
 
 ## Controls
 
-The emulator maps the Dreamcast controller’s D-pad and face buttons directly. If a mini-game uses soft keys, save a custom remap through `/remapping_controls_per_emulator` to match your physical gamepad.
+The emulator maps the Dreamcast controller’s D-pad and face buttons directly. If a mini-game uses soft keys, save a custom remap through [Controllers](/wiki/start-here/controllers/) to match your physical gamepad.
 
 ## Troubleshooting
 

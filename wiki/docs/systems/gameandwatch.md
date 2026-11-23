@@ -12,7 +12,7 @@ description: Nintendo Game & Watch documentation for REG Linux.
 
 ## Overview
 
-Nintendo’s Game & Watch line (1980–1991) consists of simple LCD handhelds that predate the Game Boy. Each system features a single game with dedicated buttons, and REG-Linux emulates the range via the `gameandwatch` system group, grouped under `lcdgames` in EmulationStation.
+Nintendo’s Game & Watch line (1980–1991) consists of simple LCD handhelds that predate the Game Boy. Each system features a single game with dedicated buttons, and REG-Linux emulates the range via the `gameandwatch` system group, grouped under `lcdgames` in REG Station.
 
 ## Supported ROM extensions
 
@@ -41,7 +41,7 @@ The `gw-libretro` core simulates Game & Watch hardware using original artwork an
 
 Standardized options: `gameandwatch.videomode`, `gameandwatch.ratio`, `gameandwatch.smooth`, `gameandwatch.shaders`, `gameandwatch.pixel_perfect`, `gameandwatch.decoration`, `gameandwatch.game_translation`, `gameandwatch.audio_latency`, `gameandwatch.video_threaded`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS BACKEND `gameandwatch.gfxbackend` | Choose OpenGL or Vulkan rendering. |
 | AUDIO LATENCY `gameandwatch.audio_latency` | Adjust buffer size to reduce crackle. |

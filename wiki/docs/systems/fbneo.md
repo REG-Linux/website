@@ -39,7 +39,7 @@ FBNeo uses CLRMAME-compatible ROMsets; the specific version needed is listed in 
 
 The preferred core for FBNeo is `libretro: FBNeo`. Open the Quick Menu (`[HOTKEY]` + south button) to adjust options, DIP switches and inputs.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | CPU CLOCK `global.fbneo-cpu-speed-adjust` | Overclock/underclock the emulated CPU. | 30%–200% choices |
 | FRAMESKIP `global.fbneo-frameskip` | Skip frames to improve performance. | 0–4 |

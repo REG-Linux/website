@@ -33,7 +33,7 @@ Copy the licensed Rise of the Triad files (`DARKWAR.WAD`, `DARKWAR.RTL`, `DARKWA
 touch "/userdata/roms/rott/Rise of the Triad.rott"
 ```
 
-The `.rott` file signals EmulationStation to show the entry. Keep filenames in the directory either uppercase or lowercase—ROT accepts both.
+The `.rott` file signals REG Station to show the entry. Keep filenames in the directory either uppercase or lowercase—ROT accepts both.
 
 ## Emulators
 

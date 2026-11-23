@@ -40,15 +40,13 @@ MAME (and the former MESS project) provides the Game.com driver. Use the in-game
 
 Standardized options: `gamecom.videomode`, `gamecom.decoration`, `gamecom.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS BACKEND `gamecom.video` | Choose BGFX, Accel or OpenGL rendering. |
 | BGFX GRAPHICS API `gamecom.bgfxbackend` | Choose the BGFX backend. |
 | BGFX VIDEO FILTER `gamecom.bgfxshaders` | Apply CRT/scaling shaders. |
 | CRT SWITCHRES `gamecom.switchres` | Enable SwitchRes profiles. |
 | VERTICAL ROTATION `gamecom.rotation` | Rotate for vertical games. |
-| ALT DPAD MODE `gamecom.altdpad` | Adjust D-pad orientation for odd controllers. |
-
 ## Controls
 
 The default Game.com button mapping appears on a REG-Linux Retropad overlay:

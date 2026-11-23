@@ -55,7 +55,7 @@ All RetroArch graphics and performance toggles (`sgb.gfxbackend`, `sgb.audio_lat
 
 ## Controls
 
-The SNES overlay (`../images/controller-overlays/nes-1.png`) works for SGB titles because they mirror the SNES digital pad layout. Use `/remapping_controls_per_emulator` if you need to assign additional buttons.
+The SNES overlay (`../images/controller-overlays/nes-1.png`) works for SGB titles because they mirror the SNES digital pad layout. Use [Controllers](/wiki/start-here/controllers/) if you need to assign additional buttons.
 
 ## Troubleshooting
 

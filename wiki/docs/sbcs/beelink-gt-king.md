@@ -30,7 +30,7 @@ Beelink GT King pairs the Amlogic S922X SoC with the REG Linux stack for a polis
 
 | Kernel | GPU drivers | Compositor | Interface |
 | --- | --- | --- | --- |
-| Linux | — | Device-specific | REG-ES |
+| Linux | — | Device-specific | REG Station |
 
 ## Installation notes
 
@@ -38,7 +38,7 @@ Beelink GT King pairs the Amlogic S922X SoC with the REG Linux stack for a polis
 
 2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure to verify the checksum before booting.
 
-3. First boot setup. Insert the media into your Beelink GT King, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+3. First boot setup. Insert the media into your Beelink GT King, power on, and let REG Linux expand the filesystem. Pair controllers inside REG Station once prompted.
 
 ## Resources
 

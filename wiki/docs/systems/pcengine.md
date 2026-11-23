@@ -40,7 +40,7 @@ Extract `.pce` images into `/userdata/roms/pcengine`. Zip or 7z archives may wor
 
 ### RetroArch
 
-RetroArch is the host for the PC Engine cores. Use `[HOTKEY]` + the south button to open the Quick Menu for shader tweaks, overrides and controller remaps. EmulationStation exposes `pcengine.videomode`, `pcengine.ratio`, `pcengine.smooth`, `pcengine.shaders`, `pcengine.pixel_perfect`, `pcengine.decoration`, `pcengine.game_translation`, as well as the backend selectors `pcengine.gfxbackend`, `pcengine.audio_latency` and `pcengine.video_threaded`.
+RetroArch is the host for the PC Engine cores. Use `[HOTKEY]` + the south button to open the Quick Menu for shader tweaks, overrides and controller remaps. REG Station exposes `pcengine.videomode`, `pcengine.ratio`, `pcengine.smooth`, `pcengine.shaders`, `pcengine.pixel_perfect`, `pcengine.decoration`, `pcengine.game_translation`, as well as the backend selectors `pcengine.gfxbackend`, `pcengine.audio_latency` and `pcengine.video_threaded`.
 
 ### libretro: pce / pce_fast
 

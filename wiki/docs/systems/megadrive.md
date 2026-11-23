@@ -50,11 +50,11 @@ Some displays require `xrandr` or custom monitor profiles to expose 50 Hz modes;
 
 ### RetroArch
 
-RetroArch hosts the Mega Drive cores. The Quick Menu adjusts shaders, hotkeys, controller mappings and per-game overrides. REG-Linux surfaces many of these options through EmulationStation menus as well.
+RetroArch hosts the Mega Drive cores. The Quick Menu adjusts shaders, hotkeys, controller mappings and per-game overrides. REG-Linux surfaces many of these options through REG Station menus as well.
 
 Standard retro settings: `megadrive.videomode`, `megadrive.ratio`, `megadrive.smooth`, `megadrive.shaders`, `megadrive.pixel_perfect`, `megadrive.decoration`, `megadrive.game_translation`, `megadrive.audio_latency`, `megadrive.video_threaded`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `megadrive.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `megadrive.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase if you hear crackles. |

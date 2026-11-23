@@ -30,7 +30,7 @@ Install the files through the Content Downloader or manually drop the `.game` fo
 
 ## Controls
 
-Hurrican uses standard controller mapping for ports. Use the Quick Menu or `/remapping_controls_per_emulator` to remap buttons if needed.
+Hurrican uses standard controller mapping for ports. Use the Quick Menu or [Controllers](/wiki/start-here/controllers/) to remap buttons if needed.
 
 ## Troubleshooting
 

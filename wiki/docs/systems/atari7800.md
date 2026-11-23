@@ -48,13 +48,13 @@ Place Atari 7800 dumps in `/userdata/roms/atari7800`. RetroArch handles raw `.a7
 
 ### RetroArch
 
-RetroArch hosts `libretro: ProSystem`, offering unified hotkeys, shaders, overlays and input mappings across cores. Open the Quick Menu with `[HOTKEY]` + south button to tweak settings or per-game controls, or use EmulationStation menus for the most common options.
+RetroArch hosts `libretro: ProSystem`, offering unified hotkeys, shaders, overlays and input mappings across cores. Open the Quick Menu with `[HOTKEY]` + south button to tweak settings or per-game controls, or use REG Station menus for the most common options.
 
 #### RetroArch configuration
 
 Standardized features available to all libretro cores in this system include `atari7800.videomode`, `atari7800.ratio`, `atari7800.smooth`, `atari7800.shaders`, `atari7800.pixel_perfect`, `atari7800.decoration` and `atari7800.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS API `atari7800.gfxbackend` | Choose the renderer. OpenGL is safest; Vulkan can offer better performance on some GPUs. => OpenGL `opengl`, Vulkan `vulkan`. |
 | AUDIO LATENCY `atari7800.audio_latency` | Audio buffer length in ms. Raise if you hear crackles or dropouts; lower once audio is stable. => 256 `256`, 192 `192`, 128 `128`, 64 `64`, 32 `32`, 16 `16`, 8 `8`. |

@@ -36,11 +36,11 @@ Copy Wii and GameCube images into `/userdata/roms/wii`. Rename `.rvz` files to `
 
 ### Dolphin standalone
 
-Dolphin builds the NAND on first launch and stores shader caches under `/userdata/system/configs/dolphin-emu/shaderCache/`. Adjust render resolution, frame limiting, Ubershaders, and controller profiles through the Dolphin UI before launching games through EmulationStation.
+Dolphin builds the NAND on first launch and stores shader caches under `/userdata/system/configs/dolphin-emu/shaderCache/`. Adjust render resolution, frame limiting, Ubershaders, and controller profiles through the Dolphin UI before launching games through REG Station.
 
 ### libretro: dolphin
 
-RetroArch hosts the libretro core and exposes the same Quick Menu options (`dolphin.videomode`, `dolphin.ratio`, `dolphin.shaders`). Use `[HOTKEY]` + south face button to tweak overrides, and configure Discord, Wiimote emulation (`wii.emulatedwiimotes`), and classic controllers through EmulationStation’s advanced settings.
+RetroArch hosts the libretro core and exposes the same Quick Menu options (`dolphin.videomode`, `dolphin.ratio`, `dolphin.shaders`). Use `[HOTKEY]` + south face button to tweak overrides, and configure Discord, Wiimote emulation (`wii.emulatedwiimotes`), and classic controllers through REG Station’s advanced settings.
 
 ## Controls & peripherals
 

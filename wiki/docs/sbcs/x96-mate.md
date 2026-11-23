@@ -30,7 +30,7 @@ X96 Mate pairs the Allwinner H616 SoC with the REG Linux stack for a polished re
 
 | Kernel | GPU drivers | Compositor | Interface |
 | --- | --- | --- | --- |
-| Linux | Mesa3D (Panfrost) | Device-specific | REG-ES |
+| Linux | Mesa3D (Panfrost) | Device-specific | REG Station |
 
 ## Installation notes
 
@@ -38,7 +38,7 @@ X96 Mate pairs the Allwinner H616 SoC with the REG Linux stack for a polished re
 
 2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure to verify the checksum before booting.
 
-3. First boot setup. Insert the media into your X96 Mate, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+3. First boot setup. Insert the media into your X96 Mate, power on, and let REG Linux expand the filesystem. Pair controllers inside REG Station once prompted.
 
 ## Resources
 

@@ -45,14 +45,13 @@ Place CreatiVision cartridge images in `/userdata/roms/crvision`. MAME loads raw
 
 MAME handles CreatiVision emulation. Use the in-game menu (`[HOTKEY]` + south button or `Tab`) to adjust controllers, scaling or other options. REG-Linux exposes `crvision.videomode`, `crvision.decoration` and `crvision.padtokeyboard` system-wide.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS BACKEND `crvision.video` | Choose BGFX shader-based rendering or Accel/OpenGL for a direct feed. |
 | BGFX BACKEND `crvision.bgfxbackend` | Select the BGFX graphics API. |
 | BGFX VIDEO FILTER `crvision.bgfxshaders` | Apply CRT or scaling shaders. |
 | CRT SWITCHRES `crvision.switchres` | Enable SwitchRes for CRT setups. |
 | TATE MODE `crvision.rotation` | Rotate the output for vertical monitors. |
-| ALT DPAD MODE `crvision.altdpad` | Adjust D-pad orientation if controllers behave oddly. |
 | MEDIA TYPE `crvision.altromtype` | Signal whether a file is a cartridge or cassette. |
 | CUSTOM CONFIG `crvision.pergamecfg` | Enable per-game MAME configuration. |
 

@@ -39,7 +39,7 @@ Use RetroArch’s `libretro: mame` core or the standalone MAME binary with the `
 
 ## Controls
 
-Super A’Can games rely on a straightforward D-pad and buttons set. Map them through the MAME input menu or `/remapping_controls_per_emulator` if you need custom bindings.
+Super A’Can games rely on a straightforward D-pad and buttons set. Map them through the MAME input menu or [Controllers](/wiki/start-here/controllers/) if you need custom bindings.
 
 ## Troubleshooting
 

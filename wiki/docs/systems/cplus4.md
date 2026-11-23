@@ -45,7 +45,7 @@ Store Plus/4 disk, cartridge and tape images in `/userdata/roms/cplus4`. Use raw
 
 The standalone `xplus4` emulator targets the Plus/4, C16 and related machines. REG-Linux surfaces standardized options such as `cplus4.videomode`, `cplus4.padtokeyboard`, `cplus4.ratio`, `cplus4.bezel`, `cplus4.hud`, etc.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | ZOOM (HIDE BORDERS) `cplus4.noborder` | Hide the overscan border (useful when games draw HUD elements in it).  => NO (default) `0`, YES `1`. |
 
@@ -53,7 +53,7 @@ The standalone `xplus4` emulator targets the Plus/4, C16 and related machines. R
 
 `libretro: vice_xplus4` runs Plus/4 content inside RetroArch. Settings are available via the Quick Menu (`[HOTKEY]` + south button) and include global options (`cplus4.videomode`, `cplus4.shaderset`) plus `vice` core keys.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS API `cplus4.gfxbackend` | Choose OpenGL or Vulkan. |
 | AUDIO LATENCY `cplus4.audio_latency` | Adjust buffer size to fix pops. |

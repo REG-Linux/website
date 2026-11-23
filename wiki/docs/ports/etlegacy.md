@@ -29,7 +29,7 @@ ET: Legacy does not require BIOS files.
 
 Copy the contents of your `etmain` folder from the official Wolfenstein: Enemy Territory install (GOG, Steam, or Splash Damage) into `/userdata/roms/etlegacy/etmain/`. The key `pk3` archives include `pak0.pk3` and the map-specific packages; keep them inside the `etmain` subfolder so the engine can locate them.
 
-Next, create an empty marker file such as `Wolfenstein - Enemy Territory.etl` inside `/userdata/roms/etlegacy/`. That blank file is how EmulationStation scrapes and launches the title.
+Next, create an empty marker file such as `Wolfenstein - Enemy Territory.etl` inside `/userdata/roms/etlegacy/`. That blank file is how REG Station scrapes and launches the title.
 
 ## ROMs
 

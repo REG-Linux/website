@@ -46,9 +46,9 @@ Store zipped or raw Gamate ROMs in `/userdata/roms/gamate`. Leave archives zippe
 
 [MAME](https://www.mamedev.org/) reproduces the Gamate hardware. Use the in-game menu (`[HOTKEY]` + the south face button or `Tab`) to adjust inputs, DIP switches or other game settings. Visit the [MAMEdev FAQ for the title](https://wiki.mamedev.org/index.php/FAQ:Games) if a specific ROM misbehaves.
 
-Standardized options for this system include `gamate.videomode`, `gamate.decoration` and `gamate.padtokeyboard`, and EmulationStation exposes the following settings:
+Standardized options for this system include `gamate.videomode`, `gamate.decoration` and `gamate.padtokeyboard`, and REG Station exposes the following settings:
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | VIDEO MODE | `gamate.video` | Choose BGFX, Accel or OpenGL rendering. |
 | BGFX GRAPHICS API | `gamate.bgfxbackend` | Pick BGFX backend (automatic/opengl/gles/vulkan). |

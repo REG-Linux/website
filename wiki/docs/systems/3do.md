@@ -74,7 +74,7 @@ Core-specific documentation and compatibility lists can be found via:
 
 ##### Opera core features & options
 
-| ES setting name + REG-Linux.conf key | Description => ES option value |
+| REG Station setting + system.conf key | Description => values |
 | --- | --- |
 | VIDEO RESOLUTION `global.high_resolution` | Increase the internal framebuffer from 320x240 to 640x480 for better 3D visuals without touching 2D sprites. => 320x240 `disabled`, 640x480 `enabled`. |
 | CPU OVERCLOCK `global.cpu_overclock` | Emulates the original 12.5 MHz ARM60 CPU but allows up to 2x overclocking; 1.5x is typically a good balance for demanding titles such as *Need for Speed*. => 1.0x (12.50Mhz) `1.0x (12.50Mhz)`, 1.1x (13.75Mhz) `1.1x (13.75Mhz)`, 1.2x (15.00Mhz) `1.2x (15.00Mhz)`, 1.5x (18.75Mhz) `1.5x (18.75Mhz)`, 1.6x (20.00Mhz) `1.6x (20.00Mhz)`, 1.8x (22.50Mhz) `1.8x (22.50Mhz)`, 2.0x (25.00Mhz) `2.0x (25.00Mhz)`. |

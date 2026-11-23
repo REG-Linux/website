@@ -53,7 +53,7 @@ Use the Dolphin Triforce branch to launch these arcade images. Advanced options 
 
 ## Controls
 
-Map credit/start buttons and the arcade stick using the controller overlay or via EmulationStation’s remapping interface. Many titles expect additional buttons (e.g., Z for credits on Mario Kart arcade).
+Map credit/start buttons and the arcade stick using the controller overlay or via REG Station’s remapping interface. Many titles expect additional buttons (e.g., Z for credits on Mario Kart arcade).
 
 ## Troubleshooting
 

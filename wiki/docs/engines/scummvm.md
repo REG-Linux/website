@@ -32,7 +32,7 @@ Create one directory per game under `/userdata/roms/scummvm/`. Copy the original
 
 ScummVM can also read `.squashfs` archives; the archive must contain the same `.scummvm` file inside so the emulator can register it automatically.
 
-Autodetection (default in REG-Linux v42+) will scan the folder when no launcher is present, but it may pick the first entry it finds, so keep only the desired release in each directory until you confirm the ID.
+Autodetection scans the folder when no launcher is present, but it may pick the first entry it finds, so keep only the desired release in each directory until you confirm the ID.
 
 ## Setup helpers
 
@@ -42,7 +42,7 @@ Use the `scummvm-addgames-v2.sh` script (place it in `/userdata/roms/scummvm/`, 
 
 ### ScummVM (standalone)
 
-Launch it from EmulationStation and open `[F1] > Applications > scummvm` to add folders, inspect GameIDs, and adjust global settings.
+Launch it from REG Station and open `[F1] > Applications > scummvm` to add folders, inspect GameIDs, and adjust global settings.
 
 ### RetroArch / libretro: ScummVM
 
@@ -50,7 +50,7 @@ The libretro core uses the same GameIDs and saves as the standalone build. Press
 
 ## Controls
 
-Point-and-click adventure controls rely on cursor movement. The default overlay mirrors the mouse + menu layout, but you can remap keys or button combinations with `/remapping_controls_per_emulator`. Use the emulator’s in-game options to adjust mouse speed or key bindings if a title feels sluggish.
+Point-and-click adventure controls rely on cursor movement. The default overlay mirrors the mouse + menu layout, but you can remap keys or button combinations with [Controllers](/wiki/start-here/controllers/). Use the emulator’s in-game options to adjust mouse speed or key bindings if a title feels sluggish.
 
 ## Troubleshooting
 

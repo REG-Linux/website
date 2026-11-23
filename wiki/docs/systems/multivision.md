@@ -42,7 +42,7 @@ Drop Multivision/SG-1000 ROMs into `/userdata/roms/multivision`. The same core h
 
 RetroArch runs the `libretro: GenesisPlusGX` core for Multivision titles. Standard SG-1000 options include `sg1000.videomode`, `sg1000.ratio`, `sg1000.shaders`, `sg1000.pixel_perfect`, `sg1000.decoration`, `sg1000.game_translation`, `sg1000.audio_latency`, and `sg1000.video_threaded`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `sg1000.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `sg1000.audio_latency` | Buffer in milliseconds (256, 192, 128, 64, 32, 16, 8). |

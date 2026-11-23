@@ -38,7 +38,7 @@ Download the official `PS3UPDAT.PUP` file and place it inside `/userdata/bios/`.
 
 ### Disc-based releases
 
-Each PS3 disc game lives inside `/userdata/roms/ps3/<Game>.ps3`. The folder must contain the standard `PS3_GAME/` structure with `PARAM.SFO`, `ICON0.PNG`, etc. The `.ps3` suffix tells EmulationStation that this is a PS3 entry.
+Each PS3 disc game lives inside `/userdata/roms/ps3/<Game>.ps3`. The folder must contain the standard `PS3_GAME/` structure with `PARAM.SFO`, `ICON0.PNG`, etc. The `.ps3` suffix tells REG Station that this is a PS3 entry.
 
 SquashFS support allows you to compress the folder:
 
@@ -54,7 +54,7 @@ RPCS3 treats the `.squashfs` like a regular folder, saving disk space without lo
 1. Run `rpcs3-config` from `[F1]` → **Applications**.
 2. Choose **File → Install Packages, Raps, Edats** and install the `.pkg` (and related `.rap`, `.edat`) files.
 3. After installation, right-click the title → **Copy Info → Copy Name + Serial** and paste the result inside `/userdata/roms/ps3/<Title>.psn`.
-4. Populate the `.psn` text file with the game ID (e.g., `NPUB30162`) and refresh the gamelist. EmulationStation will spot the new entry, and the installed data resides under `/userdata/system/configs/rpcs3/dev_hdd0/`.
+4. Populate the `.psn` text file with the game ID (e.g., `NPUB30162`) and refresh the gamelist. REG Station will spot the new entry, and the installed data resides under `/userdata/system/configs/rpcs3/dev_hdd0/`.
 
 ## Emulators
 
@@ -72,7 +72,7 @@ Key options surfaced by REG-Linux include:
 - `ps3.rpcs3_controller1-7`: configure controller drivers per port.
 - `ps3.rpcs3_gui`: toggle the internal GUI for manual disc swaps.
 
-Always launch games from EmulationStation; running them directly in RPCS3 may cause missing audio or input issues.
+Always launch games from REG Station; running them directly in RPCS3 may cause missing audio or input issues.
 
 ## Controls
 

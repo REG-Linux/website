@@ -54,7 +54,7 @@ Open the MAME UI menu via `[HOTKEY]` + south button or `[Tab]` on a keyboard whi
 
 Standardized REG-Linux features for Adventure Vision setups are `advision.videomode`, `advision.decoration` and `advision.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all versions of this emulator |  |
 | GRAPHICS BACKEND `advision.video` | Selects the renderer. **BGFX** enables shader-based post-processing; **Accel/OpenGL** expose more direct paths.  => BGFX `bgfx`, Accel `accel`, OpenGL `opengl`. |
@@ -62,8 +62,6 @@ Standardized REG-Linux features for Adventure Vision setups are `advision.videom
 | BGFX VIDEO FILTER `advision.bgfxshaders` | Applies a shader such as CRT, scaling or scanline styles.  => Off `None`, Bilinear `default`, CRT Geom `crt-geom`, CRT Geom Deluxe `crt-geom-deluxe`, Super Eagle `eagle`, HLSL `hlsl`, HQ2X `hq2x`, HQ3X `hq3x`, HQ4X `hq4x`. |
 | CRT SWITCHRES `advision.switchres` | Enables SwitchRes profiles for CRT setups. Leave Off unless you have special hardware.  => Off `0`, On `1`. |
 | TATE MODE `advision.rotation` | Rotates the output 90° or 270° for vertical (TATE) displays.  => Off `None`, Rotate 90 `autoror`, Rotate 270 `autorol`. |
-| ALT DPAD MODE `advision.altdpad` | Adjust the D-pad orientation for different controller form factors.  => Off (Default) `0`, DS3 Orientation `1`, X360 Orientation `2`. |
-
 ## Controls
 
 The Adventure Vision was designed to sit on a table and be gripped from both sides of the controller array. The default layout maps to a REG-Linux Retropad:

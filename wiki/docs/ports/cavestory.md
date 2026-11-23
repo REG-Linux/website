@@ -48,7 +48,7 @@ if your pad differs from the Retropad layout.
 ## Controls
 
 The default overlay matches the Cave Story input scheme. You can adjust the button
-profiles in EmulationStation’s controller settings or within RetroArch’s input menu.
+profiles in REG Station’s controller settings or within RetroArch’s input menu.
 
 ## Troubleshooting
 
