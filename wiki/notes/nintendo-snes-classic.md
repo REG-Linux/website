@@ -1,0 +1,3 @@
+- Same image and method as the NES Classic: a USB stick started by the `reglinux-usb.hmod` module installed with [hakchi2-CE](https://github.com/TeamShinkansen/Hakchi2-CE).
+- Needs a USB OTG Y-cable with its own power supply for the stick.
+- See [Install: NES Classic / SNES Classic](../../installation.md#nes-classic-snes-classic).

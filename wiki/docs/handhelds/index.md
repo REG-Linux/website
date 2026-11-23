@@ -55,11 +55,20 @@ install REG Linux. The status comes from the compatibility matrix.
 - [Ayn Odin 2](ayn/odin2.md)
 - [Ayn Odin 2 Portal](ayn/odin2-portal.md)
 - [Ayn ODIN2MINI](ayn/odin2-mini.md)
+- [Ayn Thor](ayn/thor.md)
 
 ## Gameforce
 
 - [Gameforce ACE](gameforce/ace.md)
 - [Gameforce CHI](gameforce/chi.md)
+
+## GCW
+
+- [GCW Zero](gcw/zero.md)
+
+## GPD
+
+- [GPD XD](gpd/xd.md)
 
 ## HardKernel
 
@@ -71,6 +80,11 @@ install REG Linux. The status comes from the compatibility matrix.
 
 - [Capcom Home Arcade](koch-media/capcom-home-arcade.md)
 
+## MagicX
+
+- [MagicX Zero 28](magicx/zero-28.md)
+- [MagicX Zero 40](magicx/zero-40.md)
+
 ## Mangmi
 
 - [Mangmi Pocketmax](mangmi/pocketmax.md)
@@ -79,10 +93,18 @@ install REG Linux. The status comes from the compatibility matrix.
 
 - [MiniLoong Pocket 1](miniloong/pocket1.md)
 
+## Miyoo
+
+- [Miyoo A30](miyoo/a30.md)
+
 ## Nintendo
 
 - [Nintendo Nes Classic](unbranded/nes-classic.md)
 - [Nintendo Super Nes Classic](unbranded/snes-classic.md)
+
+## PocketGo
+
+- [PocketGo S30](pocketgo/s30.md)
 
 ## Powkiddy
 
@@ -105,6 +127,11 @@ install REG Linux. The status comes from the compatibility matrix.
 
 - [TrimUI Brick](trimui/brick.md)
 - [TrimUI Smart Pro](trimui/smart-pro.md)
+- [TrimUI Smart Pro S](trimui/smart-pro-s.md)
+
+## Unbranded
+
+- [G28](unbranded/g28.md)
 
 ## Unknown
 

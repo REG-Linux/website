@@ -1,0 +1,4 @@
+- Boots from the microSD card; the internal storage is not touched.
+- The CPU is limited to 1008 MHz for now, for stability.
+- The screen refreshes at about 59 Hz instead of 60 Hz.
+- Sleep is not supported yet.

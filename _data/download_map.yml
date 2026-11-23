@@ -234,3 +234,8 @@ nvidia-jetson-nano: l4t
 # Allwinner A133
 orange-pi-4a: t527-orangepi-4a
 orange-pi-r2s: k1-orangepi-rv2
+miyoo-a30: a33-miyoo-a30
+pocketgo-s30: a33-pocketgo-s30
+trimui-smart-pro-s: t527-trimui-smart-pro-s
+unbranded-g28: rk3128-g28
+gpd-xd: rk3288-gpd-xd

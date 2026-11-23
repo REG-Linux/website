@@ -6,7 +6,7 @@ a95xf3-air:
   soc:
   - Amlogic S905X3
   image: /assets/images/a95xf3-air.webp
-  board_url: https://reglinux.org/wiki/sbc/a95x/f3-air/
+  board_url: https://reglinux.org/wiki/tvboxes/a95x/a95xf3-air/
   description: REG Linux for A95X F3 Air (Amlogic S905X3).
   lede: A95X F3 Air — TV box powered by Amlogic S905X3.
 amlogic-mxiii:
@@ -17,7 +17,7 @@ amlogic-mxiii:
   soc:
   - Amlogic S812
   image: /assets/images/amlogic-mxiii.webp
-  board_url: https://reglinux.org/wiki/other/unknown/amlogic-mxiii/
+  board_url: https://reglinux.org/wiki/tvboxes/amlogic/mxiii/
   description: REG Linux for MXIII TV Box (Amlogic S812).
   lede: MXIII TV Box — TV box powered by Amlogic S812.
 amlogic-mxiii-plus:
@@ -28,7 +28,7 @@ amlogic-mxiii-plus:
   soc:
   - Amlogic S812
   image: /assets/images/amlogic-mxiii-plus.webp
-  board_url: https://reglinux.org/wiki/other/unknown/amlogic-mxiii-plus/
+  board_url: https://reglinux.org/wiki/tvboxes/amlogic/mxiii-plus/
   description: REG Linux for MXIII Plus TV Box (Amlogic S812).
   lede: MXIII Plus TV Box — TV box powered by Amlogic S812.
 anbernic-rg-cubexx:
@@ -103,7 +103,7 @@ anbernic-rg280m:
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg280m.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg280m/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg280m/
   description: REG Linux for Anbernic RG280M (Ingenic JZ4770).
   lede: Anbernic RG280M — handheld powered by Ingenic JZ4770.
 anbernic-rg280v:
@@ -114,7 +114,7 @@ anbernic-rg280v:
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg280v.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg280v/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg280v/
   description: REG Linux for Anbernic RG280V (Ingenic JZ4770).
   lede: Anbernic RG280V — handheld powered by Ingenic JZ4770.
 anbernic-rg28xx:
@@ -154,7 +154,7 @@ anbernic-rg300:
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg300.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg300/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg300/
   description: REG Linux for Anbernic RG300 (Ingenic JZ4770).
   lede: Anbernic RG300 — handheld powered by Ingenic JZ4770.
 anbernic-rg300x:
@@ -165,7 +165,7 @@ anbernic-rg300x:
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg300x.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg300x/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg300x/
   description: REG Linux for Anbernic RG300X (Ingenic JZ4770).
   lede: Anbernic RG300X — handheld powered by Ingenic JZ4770.
 anbernic-rg34xx:
@@ -205,7 +205,7 @@ anbernic-rg350:
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg350.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg350/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg350/
   description: REG Linux for Anbernic RG350 (Ingenic JZ4770).
   lede: Anbernic RG350 — handheld powered by Ingenic JZ4770.
 anbernic-rg350m:
@@ -216,7 +216,7 @@ anbernic-rg350m:
   soc:
   - Ingenic JZ4770
   image: /assets/images/anbernic-rg350m.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/anbernic-rg350m/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg350m/
   description: REG Linux for Anbernic RG350M (Ingenic JZ4770).
   lede: Anbernic RG350M — handheld powered by Ingenic JZ4770.
 anbernic-rg351-p-m-mp:
@@ -229,7 +229,7 @@ anbernic-rg351-p-m-mp:
   image: /assets/images/anbernic-rg351p-m-mp.webp
   image_width: 220
   image_height: 114
-  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg351pmv/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg351-p-m-mp/
   description: REG Linux for Anbernic RG351 P/M/MP (Rockchip RK3326).
   lede: Anbernic RG351 P/M/MP — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
@@ -254,7 +254,7 @@ anbernic-rg351v:
   image: /assets/images/anbernic-rg351v.webp
   image_width: 148
   image_height: 220
-  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg351pmv/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg351v/
   description: REG Linux for Anbernic RG351V (Rockchip RK3326).
   lede: Anbernic RG351V — handheld powered by Rockchip RK3326.
   display_size: 3.5 inch
@@ -279,7 +279,7 @@ anbernic-rg353m:
   image: /assets/images/anbernic-rg353m.webp
   image_width: 220
   image_height: 112
-  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353m/
   description: REG Linux for Anbernic RG353M (Rockchip RK3566).
   lede: Anbernic RG353M — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
@@ -304,7 +304,7 @@ anbernic-rg353p-s:
   image: /assets/images/anbernic-rg353p.webp
   image_width: 220
   image_height: 105
-  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353p-s/
   description: REG Linux for Anbernic RG353P(S) (Rockchip RK3566).
   lede: Anbernic RG353P(S) — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
@@ -329,7 +329,7 @@ anbernic-rg353v-s:
   image: /assets/images/anbernic-rg353v.webp
   image_width: 146
   image_height: 220
-  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353pmvvs/
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg353v-s/
   description: REG Linux for Anbernic RG353V(S) (Rockchip RK3566).
   lede: Anbernic RG353V(S) — handheld powered by Rockchip RK3566.
   display_size: 3.5 inch
@@ -619,7 +619,7 @@ armsom-sige7:
   soc:
   - Rockchip RK3588
   image: /assets/images/armsom-sige7.webp
-  board_url: https://reglinux.org/wiki/sbc/armsom/sige7/
+  board_url: https://reglinux.org/wiki/sbcs/armsom-sige7/
   description: REG Linux for ArmSoM SIGE7 (Rockchip RK3588).
   lede: ArmSoM SIGE7 — single-board computer powered by Rockchip RK3588.
 asus-rog-ally:
@@ -632,7 +632,7 @@ asus-rog-ally:
   image: /assets/images/asus-rog-ally.webp
   image_width: 220
   image_height: 91
-  board_url: https://reglinux.org/wiki/handhelds/x86_64/asus-rog-ally/
+  board_url: https://reglinux.org/wiki/handhelds/x86_64/rog-ally/
   description: REG Linux for Asus ROG Ally (AMD Ryzen Z1).
   lede: Asus ROG Ally — PC powered by AMD Ryzen Z1.
   install_notes: '## Installation notes
@@ -659,7 +659,7 @@ asus-tinker-board-2:
   soc:
   - Rockchip RK3399
   image: /assets/images/asus-tinker-board-2.webp
-  board_url: https://reglinux.org/wiki/sbc/asus/tinker-board-2/
+  board_url: https://reglinux.org/wiki/sbcs/asus-tinker-board-2/
   description: REG Linux for ASUS Tinker Board 2 (Rockchip RK3399).
   lede: ASUS Tinker Board 2 — single-board computer powered by Rockchip RK3399.
 asus-tinker-board-s:
@@ -683,7 +683,7 @@ ayaneo-pocket-ace:
   soc:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-ace.webp
-  board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-ace/
+  board_url: https://reglinux.org/wiki/handhelds/ayaneo/pocket-ace/
   description: REG Linux for AYANEO Pocket ACE (Qualcomm 8gen2 (SM8550)).
   lede: AYANEO Pocket ACE — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-dmg:
@@ -694,7 +694,7 @@ ayaneo-pocket-dmg:
   soc:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-dmg.webp
-  board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-dmg/
+  board_url: https://reglinux.org/wiki/handhelds/ayaneo/pocket-dmg/
   description: REG Linux for AYANEO Pocket DMG (Qualcomm 8gen2 (SM8550)).
   lede: AYANEO Pocket DMG — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-ds:
@@ -705,7 +705,7 @@ ayaneo-pocket-ds:
   soc:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-ds.webp
-  board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-ds/
+  board_url: https://reglinux.org/wiki/handhelds/ayaneo/pocket-ds/
   description: REG Linux for AYANEO Pocket DS (Qualcomm 8gen2 (SM8550)).
   lede: AYANEO Pocket DS — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pocket-evo:
@@ -716,7 +716,7 @@ ayaneo-pocket-evo:
   soc:
   - Qualcomm 8gen2 (SM8550)
   image: /assets/images/ayaneo-pocket-evo.webp
-  board_url: https://reglinux.org/wiki/pc/ayaneo/pocket-evo/
+  board_url: https://reglinux.org/wiki/handhelds/ayaneo/pocket-evo/
   description: REG Linux for AYANEO Pocket EVO (Qualcomm 8gen2 (SM8550)).
   lede: AYANEO Pocket EVO — handheld powered by Qualcomm 8gen2 (SM8550).
 ayaneo-pockets:
@@ -786,8 +786,9 @@ ayn-thor:
   - Ayn
   soc:
   - Qualcomm 8gen2 (SM8550)
+  type: handheld
   image: /assets/images/ayn-thor.webp
-  board_url: https://reglinux.org/wiki/other/ayn/thor/
+  board_url: https://reglinux.org/wiki/handhelds/ayn/thor/
   description: REG Linux for Ayn Thor (Qualcomm 8gen2 (SM8550)).
   lede: Ayn Thor — device powered by Qualcomm 8gen2 (SM8550).
 banana-pi-f3:
@@ -798,7 +799,7 @@ banana-pi-f3:
   soc:
   - SpacemiT K1
   image: /assets/images/banana-pi-f3.webp
-  board_url: https://reglinux.org/wiki/sbc/banana-pi/f3/
+  board_url: https://reglinux.org/wiki/sbcs/banana-pi-f3/
   description: REG Linux for Banana Pi F3 (SpacemiT K1).
   lede: Banana Pi F3 — single-board computer powered by SpacemiT K1.
 banana-pi-m2-zero:
@@ -848,7 +849,7 @@ banana-pi-m4-zero:
   soc:
   - Allwinner H616
   image: /assets/images/banana-pi-m4-zero.webp
-  board_url: https://reglinux.org/wiki/sbc/banana-pi/m4-zero/
+  board_url: https://reglinux.org/wiki/sbcs/banana-pi-m4-zero/
   description: REG Linux for Banana Pi M4 Zero (Allwinner H616).
   lede: Banana Pi M4 Zero — single-board computer powered by Allwinner H616.
 banana-pi-m5:
@@ -885,7 +886,7 @@ batlexp-g350:
   soc:
   - Rockchip RK3326
   image: /assets/images/batlexp-g350.webp
-  board_url: https://reglinux.org/wiki/handhelds/batlexp/g350/
+  board_url: https://reglinux.org/wiki/sbcs/batlexp-g350/
   description: REG Linux for BatlExp G350 (Rockchip RK3326).
   lede: BatlExp G350 — handheld powered by Rockchip RK3326.
 beaglev-ahead:
@@ -896,7 +897,7 @@ beaglev-ahead:
   soc:
   - T-Head TH1520
   image: /assets/images/beaglev-ahead.webp
-  board_url: https://reglinux.org/wiki/sbc/beagleboard/beaglev-ahead/
+  board_url: https://reglinux.org/wiki/sbcs/beaglev-ahead/
   description: REG Linux for BeagleBoard Ahead (T-Head TH1520).
   lede: BeagleBoard Ahead — single-board computer powered by T-Head TH1520.
 beelink-gt-king:
@@ -909,7 +910,7 @@ beelink-gt-king:
   image: /assets/images/Beelink-GT-King.webp
   image_width: 220
   image_height: 129
-  board_url: https://reglinux.org/wiki/sbcs/beelink-gt-king/
+  board_url: https://reglinux.org/wiki/tvboxes/beelink/gt-king/
   description: REG Linux for Beelink GT King (Amlogic S922X).
   lede: Beelink GT King — TV box powered by Amlogic S922X.
 beelink-gt-king-pro:
@@ -922,7 +923,7 @@ beelink-gt-king-pro:
   image: /assets/images/beelink-gt-king-pro.webp
   image_width: 220
   image_height: 148
-  board_url: https://reglinux.org/wiki/sbcs/beelink-gt-king-pro/
+  board_url: https://reglinux.org/wiki/tvboxes/beelink/gt-king-pro/
   description: REG Linux for Beelink GT King Pro (Amlogic S922X-H).
   lede: Beelink GT King Pro — TV box powered by Amlogic S922X-H.
 capcom-home-arcade:
@@ -935,7 +936,7 @@ capcom-home-arcade:
   image: /assets/images/capcom_home_arcade.webp
   image_width: 220
   image_height: 68
-  board_url: https://reglinux.org/wiki/sbcs/capcom-home-arcade/
+  board_url: https://reglinux.org/wiki/handhelds/koch-media/capcom-home-arcade/
   description: REG Linux for Capcom Home Arcade (Allwinner H3).
   lede: Capcom Home Arcade — console powered by Allwinner H3.
 firefly-renegade:
@@ -946,7 +947,7 @@ firefly-renegade:
   soc:
   - Rockchip RK3328
   image: /assets/images/firefly-renegade.webp
-  board_url: https://reglinux.org/wiki/sbc/unknown/firefly-renegade/
+  board_url: https://reglinux.org/wiki/sbcs/firefly-renegade/
   description: REG Linux for Firefly Renegade (Rockchip RK3328).
   lede: Firefly Renegade — single-board computer powered by Rockchip RK3328.
 firefly-roc-pc:
@@ -957,7 +958,7 @@ firefly-roc-pc:
   soc:
   - Rockchip RK3566/RK3568
   image: /assets/images/firefly-roc-pc.webp
-  board_url: https://reglinux.org/wiki/sbc/firefly/roc-pc/
+  board_url: https://reglinux.org/wiki/sbcs/firefly-roc-pc/
   description: REG Linux for Firefly ROC PC (Rockchip RK3566/RK3568).
   lede: Firefly ROC PC — single-board computer powered by Rockchip RK3566/RK3568.
 firefly-station-m2-roc-rk3566-pc:
@@ -1009,7 +1010,7 @@ gameforce-ace:
   image: /assets/images/gameforce-ace.webp
   image_width: 220
   image_height: 96
-  board_url: https://reglinux.org/wiki/handhelds/gameforce/gameforce-ace/
+  board_url: https://reglinux.org/wiki/handhelds/gameforce/ace/
   description: REG Linux for Gameforce ACE (Rockchip RK3588).
   lede: Gameforce ACE — handheld powered by Rockchip RK3588.
   install_notes: '## Install REG Linux
@@ -1029,7 +1030,7 @@ gameforce-chi:
   image: /assets/images/gameforce-chi.webp
   image_width: 220
   image_height: 123
-  board_url: https://reglinux.org/wiki/sbcs/gameforce-chi/
+  board_url: https://reglinux.org/wiki/handhelds/gameforce/chi/
   description: REG Linux for Gameforce CHI (Rockchip RK3326).
   lede: Gameforce CHI — handheld powered by Rockchip RK3326.
   install_notes: '## Installation notes
@@ -1055,8 +1056,9 @@ gcw-zero:
   - Unknown
   soc:
   - Ingenic JZ4770
+  type: handheld
   image: /assets/images/gcw-zero.webp
-  board_url: https://reglinux.org/wiki/other/unknown/gcw-zero/
+  board_url: https://reglinux.org/wiki/handhelds/gcw/zero/
   description: REG Linux for GCW Zero (Ingenic JZ4770).
   lede: GCW Zero — handheld powered by Ingenic JZ4770.
 generic-x86-64:
@@ -1067,7 +1069,7 @@ generic-x86-64:
   soc:
   - AMD/Intel x86_64
   image: /assets/images/generic-x86-64.webp
-  board_url: https://reglinux.org/wiki/other/generic/x86-64/
+  board_url: https://reglinux.org/wiki/sbcs/generic-x86-64/
   description: REG Linux for Generic PC (x86-64) (AMD/Intel x86_64).
   lede: Generic PC (x86-64) — device powered by AMD/Intel x86_64.
 generic-x86-64-v3:
@@ -1078,7 +1080,7 @@ generic-x86-64-v3:
   soc:
   - AMD/Intel x86_64-v3
   image: /assets/images/generic-x86-64-v3.webp
-  board_url: https://reglinux.org/wiki/other/generic/x86-64-v3/
+  board_url: https://reglinux.org/wiki/sbcs/generic-x86-64-v3/
   description: REG Linux for Generic PC (x86-64-v3) (AMD/Intel x86_64-v3).
   lede: Generic PC (x86-64-v3) — device powered by AMD/Intel x86_64-v3.
 h96-max:
@@ -1089,7 +1091,7 @@ h96-max:
   soc:
   - Amlogic S905X3
   image: /assets/images/h96-max.webp
-  board_url: https://reglinux.org/wiki/sbc/h96/max/
+  board_url: https://reglinux.org/wiki/tvboxes/h96/max/
   description: REG Linux for H96 Max (Amlogic S905X3).
   lede: H96 Max — TV box powered by Amlogic S905X3.
 hardkernel-odroid-c2:
@@ -1243,7 +1245,7 @@ hardkernel-odroid-m1s:
   soc:
   - Rockchip RK3566/RK3568
   image: /assets/images/hardkernel-odroid-m1s.webp
-  board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-m1s/
+  board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-m1s/
   description: REG Linux for ODROID-M1S (Rockchip RK3566/RK3568).
   lede: ODROID-M1S — single-board computer powered by Rockchip RK3566/RK3568.
 hardkernel-odroid-m2:
@@ -1254,7 +1256,7 @@ hardkernel-odroid-m2:
   soc:
   - Rockchip RK3588
   image: /assets/images/hardkernel-odroid-m2.webp
-  board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-m2/
+  board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-m2/
   description: REG Linux for ODROID-M2 (Rockchip RK3588).
   lede: ODROID-M2 — single-board computer powered by Rockchip RK3588.
 hardkernel-odroid-n2:
@@ -1265,7 +1267,7 @@ hardkernel-odroid-n2:
   soc:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2.webp
-  board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2/
+  board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-n2/
   description: REG Linux for ODROID-N2 (Amlogic S922X).
   lede: ODROID-N2 — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-n2-plus:
@@ -1276,7 +1278,7 @@ hardkernel-odroid-n2-plus:
   soc:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2-plus.webp
-  board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2-plus/
+  board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-n2-plus/
   description: REG Linux for ODROID-N2+ (Amlogic S922X).
   lede: ODROID-N2+ — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-n2l:
@@ -1287,7 +1289,7 @@ hardkernel-odroid-n2l:
   soc:
   - Amlogic S922X
   image: /assets/images/hardkernel-odroid-n2l.webp
-  board_url: https://reglinux.org/wiki/sbc/hardkernel/odroid-n2l/
+  board_url: https://reglinux.org/wiki/sbcs/hardkernel-odroid-n2l/
   description: REG Linux for ODROID-N2L (Amlogic S922X).
   lede: ODROID-N2L — single-board computer powered by Amlogic S922X.
 hardkernel-odroid-xu3-xu4:
@@ -1311,7 +1313,7 @@ hugsun-x99:
   soc:
   - Rockchip RK3399
   image: /assets/images/hugsun-x99.webp
-  board_url: https://reglinux.org/wiki/other/unknown/hugsun-x99/
+  board_url: https://reglinux.org/wiki/sbcs/hugsun-x99/
   description: REG Linux for Hugsun X99 (Rockchip RK3399).
   lede: Hugsun X99 — device powered by Rockchip RK3399.
 indiedroid-nova:
@@ -1322,7 +1324,7 @@ indiedroid-nova:
   soc:
   - Rockchip RK3588
   image: /assets/images/indiedroid-nova.webp
-  board_url: https://reglinux.org/wiki/sbc/indiedroid/nova/
+  board_url: https://reglinux.org/wiki/sbcs/indiedroid-nova/
   description: REG Linux for Indiedroid Nova (Rockchip RK3588).
   lede: Indiedroid Nova — single-board computer powered by Rockchip RK3588.
 intel-de10nano:
@@ -1333,7 +1335,7 @@ intel-de10nano:
   soc:
   - Intel Cyclone V
   image: /assets/images/intel-de10nano.webp
-  board_url: https://reglinux.org/wiki/other/unknown/intel-de10nano/
+  board_url: https://reglinux.org/wiki/sbcs/intel-de10nano/
   description: REG Linux for Intel DE10-Nano (Intel Cyclone V).
   lede: Intel DE10-Nano — device powered by Intel Cyclone V.
 khadas-edge-2:
@@ -1435,7 +1437,7 @@ libretech-lepotato:
   soc:
   - Amlogic S905(X)
   image: /assets/images/libretech-lepotato.webp
-  board_url: https://reglinux.org/wiki/sbc/libre-computer/libretech-lepotato/
+  board_url: https://reglinux.org/wiki/sbcs/libretech-lepotato/
   description: REG Linux for Libre Computer Cc (Amlogic S905(X)).
   lede: Libre Computer Cc — single-board computer powered by Amlogic S905(X).
 libretech-s912-pc:
@@ -1446,7 +1448,7 @@ libretech-s912-pc:
   soc:
   - Amlogic S912
   image: /assets/images/libretech-s912-pc.webp
-  board_url: https://reglinux.org/wiki/sbc/unknown/libretech-s912-pc/
+  board_url: https://reglinux.org/wiki/sbcs/libretech-s912-pc/
   description: REG Linux for Libre Computer S912-PC (Amlogic S912).
   lede: Libre Computer S912-PC — single-board computer powered by Amlogic S912.
 libretech-tritium-h5:
@@ -1457,7 +1459,7 @@ libretech-tritium-h5:
   soc:
   - Allwinner H3
   image: /assets/images/libretech-tritium-h5.webp
-  board_url: https://reglinux.org/wiki/sbc/libre-computer/libretech-tritium-h5/
+  board_url: https://reglinux.org/wiki/sbcs/libretech-tritium-h5/
   description: REG Linux for Libre Computer Tritium H5 (Allwinner H3).
   lede: Libre Computer Tritium H5 — single-board computer powered by Allwinner H3.
 magicx-zero-28:
@@ -1467,6 +1469,7 @@ magicx-zero-28:
   - MagicX
   soc:
   - Allwinner A133
+  type: handheld
   image: /assets/images/magicx-zero-28.webp
   board_url: https://reglinux.org/wiki/handhelds/magicx/zero-28/
   description: REG Linux image for MagicX Zero 28 powered by Allwinner A133.
@@ -1478,6 +1481,7 @@ magicx-zero-40:
   - MagicX
   soc:
   - Allwinner A133
+  type: handheld
   image: /assets/images/magicx-zero-40.webp
   board_url: https://reglinux.org/wiki/handhelds/magicx/zero-40/
   description: REG Linux image for MagicX Zero 40 powered by Allwinner A133.
@@ -1490,7 +1494,7 @@ mangmi-air-x:
   soc:
   - Qualcomm SM6115
   image: /assets/images/mangmi-air-x.webp
-  board_url: https://reglinux.org/wiki/handhelds/mangmi/air-x/
+  board_url: https://reglinux.org/wiki/sbcs/mangmi-air-x/
   description: REG Linux for Mangmi Air X (Qualcomm SM6115).
   lede: Mangmi Air X — handheld powered by Qualcomm SM6115.
 mangmi-pocketmax:
@@ -1512,7 +1516,7 @@ milk-v-jupiter:
   soc:
   - SpacemiT K1
   image: /assets/images/milk-v-jupiter.webp
-  board_url: https://reglinux.org/wiki/sbc/milk-v/jupiter/
+  board_url: https://reglinux.org/wiki/sbcs/milk-v-jupiter/
   description: REG Linux for Milk-V Jupiter (SpacemiT K1).
   lede: Milk-V Jupiter — single-board computer powered by SpacemiT K1.
 milk-v-mars:
@@ -1560,7 +1564,7 @@ minix-neo-u1:
   soc:
   - Amlogic S905(X)
   image: /assets/images/minix-neo-u1.webp
-  board_url: https://reglinux.org/wiki/sbc/minix/neo-u1/
+  board_url: https://reglinux.org/wiki/sbcs/minix-neo-u1/
   description: REG Linux for Minix Neo U1 (Amlogic S905(X)).
   lede: Minix Neo U1 — device powered by Amlogic S905(X).
 minix-neo-x8:
@@ -1571,7 +1575,7 @@ minix-neo-x8:
   soc:
   - Amlogic S812
   image: /assets/images/minix-neo-x8.webp
-  board_url: https://reglinux.org/wiki/sbc/minix/neo-x8/
+  board_url: https://reglinux.org/wiki/sbcs/minix-neo-x8/
   description: REG Linux for Minix Neo X8 (Amlogic S812).
   lede: Minix Neo X8 — device powered by Amlogic S812.
 mqmaker-miqi:
@@ -1595,7 +1599,7 @@ musepi-pro:
   soc:
   - SpacemiT K1
   image: /assets/images/musepi-pro.webp
-  board_url: https://reglinux.org/wiki/sbc/musepi/pro/
+  board_url: https://reglinux.org/wiki/sbcs/musepi-pro/
   description: REG Linux for MusePi Pro (SpacemiT K1).
   lede: MusePi Pro — single-board computer powered by SpacemiT K1.
 nano-pi-k2:
@@ -1632,7 +1636,7 @@ nexbox-a1:
   soc:
   - Amlogic S912
   image: /assets/images/nexbox-a1.webp
-  board_url: https://reglinux.org/wiki/sbc/nexbox/a1/
+  board_url: https://reglinux.org/wiki/tvboxes/nexbox/a1/
   description: REG Linux for Nexbox A1 (Amlogic S912).
   lede: Nexbox A1 — TV box powered by Amlogic S912.
 nexbox-a95x:
@@ -1643,7 +1647,7 @@ nexbox-a95x:
   soc:
   - Amlogic S905(X)
   image: /assets/images/nexbox-a95x.webp
-  board_url: https://reglinux.org/wiki/sbc/nexbox/a95x/
+  board_url: https://reglinux.org/wiki/tvboxes/nexbox/a95x/
   description: REG Linux for Nexbox A95X (Amlogic S905(X)).
   lede: Nexbox A95X — TV box powered by Amlogic S905(X).
 nintendo-nes-classic:
@@ -1654,7 +1658,7 @@ nintendo-nes-classic:
   soc:
   - Allwinner R16
   image: /assets/images/nintendo-nes-classic.webp
-  board_url: https://reglinux.org/wiki/consoles/nintendo/nes-classic/
+  board_url: https://reglinux.org/wiki/handhelds/unbranded/nes-classic/
   description: REG Linux for Nintendo Nes Classic (Allwinner R16).
   lede: Nintendo Nes Classic — console powered by Allwinner R16.
 nintendo-snes-classic:
@@ -1665,7 +1669,7 @@ nintendo-snes-classic:
   soc:
   - Allwinner R16
   image: /assets/images/nintendo-snes-classic.webp
-  board_url: https://reglinux.org/wiki/consoles/nintendo/snes-classic/
+  board_url: https://reglinux.org/wiki/handhelds/unbranded/snes-classic/
   description: REG Linux for Nintendo Super Nes Classic (Allwinner R16).
   lede: Nintendo Super Nes Classic — console powered by Allwinner R16.
 nvidia-jetson-nano:
@@ -1676,7 +1680,7 @@ nvidia-jetson-nano:
   soc:
   - NVIDIA Tegra X1
   image: /assets/images/nvidia-jetson-nano.webp
-  board_url: https://reglinux.org/wiki/other/unknown/nvidia-jetson-nano/
+  board_url: https://reglinux.org/wiki/sbcs/nvidia-jetson-nano/
   description: REG Linux for NVIDIA Jetson Nano (NVIDIA Tegra X1).
   lede: NVIDIA Jetson Nano — handheld powered by NVIDIA Tegra X1.
 orange-pi-3:
@@ -1687,7 +1691,7 @@ orange-pi-3:
   soc:
   - Allwinner H5/H6
   image: /assets/images/orange-pi-3.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/3/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-3/
   description: REG Linux for Orange Pi 3 (Allwinner H5/H6).
   lede: Orange Pi 3 — single-board computer powered by Allwinner H5/H6.
 orange-pi-3-lts:
@@ -1698,7 +1702,7 @@ orange-pi-3-lts:
   soc:
   - Allwinner H5/H6
   image: /assets/images/orange-pi-3-lts.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/3-lts/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-3-lts/
   description: REG Linux for Orange Pi 3 LTS (Allwinner H5/H6).
   lede: Orange Pi 3 LTS — single-board computer powered by Allwinner H5/H6.
 orange-pi-4-lts:
@@ -1709,7 +1713,7 @@ orange-pi-4-lts:
   soc:
   - Rockchip RK3399
   image: /assets/images/orange-pi-4-lts.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/4-lts/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-4-lts/
   description: REG Linux for Orange Pi 4 Lts (Rockchip RK3399).
   lede: Orange Pi 4 Lts — single-board computer powered by Rockchip RK3399.
 orange-pi-4a:
@@ -1720,7 +1724,7 @@ orange-pi-4a:
   soc:
   - Allwinner T527
   image: /assets/images/orange-pi-4a.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/4a/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-4a/
   description: REG Linux for Orange Pi 4A (Allwinner T527).
   lede: Orange Pi 4A — single-board computer powered by Allwinner T527.
 orange-pi-5:
@@ -1731,7 +1735,7 @@ orange-pi-5:
   soc:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/5/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-5/
   description: REG Linux for Orange Pi 5 (Rockchip RK3588).
   lede: Orange Pi 5 — single-board computer powered by Rockchip RK3588.
 orange-pi-5-max:
@@ -1742,7 +1746,7 @@ orange-pi-5-max:
   soc:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5-max.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/5-max/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-5-max/
   description: REG Linux for Orange Pi 5 Max (Rockchip RK3588).
   lede: Orange Pi 5 Max — single-board computer powered by Rockchip RK3588.
 orange-pi-5-plus:
@@ -1753,7 +1757,7 @@ orange-pi-5-plus:
   soc:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5-plus.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/5-plus/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-5-plus/
   description: REG Linux for Orange Pi 5 Plus (Rockchip RK3588).
   lede: Orange Pi 5 Plus — single-board computer powered by Rockchip RK3588.
 orange-pi-5-ultra:
@@ -1764,7 +1768,7 @@ orange-pi-5-ultra:
   soc:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5-ultra.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/5-ultra/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-5-ultra/
   description: REG Linux for Orange Pi 5 Ultra (Rockchip RK3588).
   lede: Orange Pi 5 Ultra — single-board computer powered by Rockchip RK3588.
 orange-pi-5b:
@@ -1775,7 +1779,7 @@ orange-pi-5b:
   soc:
   - Rockchip RK3588
   image: /assets/images/orange-pi-5b.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/5b/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-5b/
   description: REG Linux for Orange Pi 5B (Rockchip RK3588).
   lede: Orange Pi 5B — single-board computer powered by Rockchip RK3588.
 orange-pi-800:
@@ -1851,7 +1855,7 @@ orange-pi-pc-plus:
   soc:
   - Allwinner H3
   image: /assets/images/orange-pi-pc-plus.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/pc-plus/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-pc-plus/
   description: REG Linux for Orange Pi Pc Plus (Allwinner H3).
   lede: Orange Pi Pc Plus — single-board computer powered by Allwinner H3.
 orange-pi-plus-2e:
@@ -1875,7 +1879,7 @@ orange-pi-r2s:
   soc:
   - SpacemiT K1
   image: /assets/images/orange-pi-r2s.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/r2s/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-r2s/
   description: REG Linux for Orange Pi R2S (SpacemiT K1).
   lede: Orange Pi R2S — single-board computer powered by SpacemiT K1.
 orange-pi-rv2:
@@ -1886,7 +1890,7 @@ orange-pi-rv2:
   soc:
   - SpacemiT K1
   image: /assets/images/orange-pi-rv2.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/rv2/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-rv2/
   description: REG Linux for Orange Pi RV2 (SpacemiT K1).
   lede: Orange Pi RV2 — single-board computer powered by SpacemiT K1.
 orange-pi-zero-2:
@@ -1936,7 +1940,7 @@ pine64-quartzpro64:
   soc:
   - Rockchip RK3588
   image: /assets/images/pine64-quartzpro64.webp
-  board_url: https://reglinux.org/wiki/sbc/pine64/quartzpro64/
+  board_url: https://reglinux.org/wiki/sbcs/pine64-quartzpro64/
   description: REG Linux for Pine64 QuartzPro64 (Rockchip RK3588).
   lede: Pine64 QuartzPro64 — single-board computer powered by Rockchip RK3588.
 pine64-rock64:
@@ -1947,7 +1951,7 @@ pine64-rock64:
   soc:
   - Rockchip RK3328
   image: /assets/images/pine64-rock64.webp
-  board_url: https://reglinux.org/wiki/sbc/pine64/rock64/
+  board_url: https://reglinux.org/wiki/sbcs/pine64-rock64/
   description: REG Linux for Pine64 Rock64 (Rockchip RK3328).
   lede: Pine64 Rock64 — single-board computer powered by Rockchip RK3328.
 pine64-rockpro64:
@@ -1958,7 +1962,7 @@ pine64-rockpro64:
   soc:
   - Rockchip RK3399
   image: /assets/images/pine64-rockpro64.webp
-  board_url: https://reglinux.org/wiki/sbc/pine64/rockpro64/
+  board_url: https://reglinux.org/wiki/sbcs/pine64-rockpro64/
   description: REG Linux for Pine64 RockPro64 (Rockchip RK3399).
   lede: Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
 pocketgo-2:
@@ -1969,7 +1973,7 @@ pocketgo-2:
   soc:
   - Ingenic JZ4770
   image: /assets/images/pocketgo-2.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/pocketgo-2/
+  board_url: https://reglinux.org/wiki/handhelds/powkiddy/pocketgo-2/
   description: REG Linux for PocketGo 2 (Ingenic JZ4770).
   lede: PocketGo 2 — handheld powered by Ingenic JZ4770.
 powkiddy:
@@ -2161,7 +2165,7 @@ radxa-rock-3a:
   soc:
   - Rockchip RK3566/RK3568
   image: /assets/images/radxa-rock-3a.webp
-  board_url: https://reglinux.org/wiki/sbc/radxa/rock-3a/
+  board_url: https://reglinux.org/wiki/sbcs/radxa-rock-3a/
   description: REG Linux for Radxa 3A (Rockchip RK3566/RK3568).
   lede: Radxa 3A — single-board computer powered by Rockchip RK3566/RK3568.
 radxa-rock-3c:
@@ -2172,7 +2176,7 @@ radxa-rock-3c:
   soc:
   - Rockchip RK3566/RK3568
   image: /assets/images/radxa-rock-3c.webp
-  board_url: https://reglinux.org/wiki/sbc/radxa/rock-3c/
+  board_url: https://reglinux.org/wiki/sbcs/radxa-rock-3c/
   description: REG Linux for Radxa 3C (Rockchip RK3566/RK3568).
   lede: Radxa 3C — single-board computer powered by Rockchip RK3566/RK3568.
 radxa-rock-5-itx:
@@ -2183,7 +2187,7 @@ radxa-rock-5-itx:
   soc:
   - Rockchip RK3588
   image: /assets/images/radxa-rock-5-itx.webp
-  board_url: https://reglinux.org/wiki/sbc/radxa/rock-5-itx/
+  board_url: https://reglinux.org/wiki/sbcs/radxa-rock-5-itx/
   description: REG Linux for Radxa 5 Itx (Rockchip RK3588).
   lede: Radxa 5 Itx — single-board computer powered by Rockchip RK3588.
 radxa-rock-5a:
@@ -2220,7 +2224,7 @@ radxa-rock-5c:
   soc:
   - Rockchip RK3588
   image: /assets/images/radxa-rock-5c.webp
-  board_url: https://reglinux.org/wiki/sbc/radxa/rock-5c/
+  board_url: https://reglinux.org/wiki/sbcs/radxa-rock-5c/
   description: REG Linux for Radxa 5C (Rockchip RK3588).
   lede: Radxa 5C — single-board computer powered by Rockchip RK3588.
 radxa-rock-pi-4:
@@ -2231,7 +2235,7 @@ radxa-rock-pi-4:
   soc:
   - Rockchip RK3399
   image: /assets/images/radxa-rock-pi-4.webp
-  board_url: https://reglinux.org/wiki/sbc/radxa/rock-pi-4/
+  board_url: https://reglinux.org/wiki/sbcs/radxa-rock-pi-4/
   description: REG Linux for Radxa Rock Pi 4B (Rockchip RK3399).
   lede: Radxa Rock Pi 4B — single-board computer powered by Rockchip RK3399.
 radxa-zero:
@@ -2374,7 +2378,7 @@ retroid-pocket-5:
   image: /assets/images/device-placeholder.svg
   image_width: 220
   image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-5/
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-5/
   description: REG Linux for Retroid Pocket 5 (Qualcomm SD865 (SM8250)).
   lede: Retroid Pocket 5 — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
@@ -2399,7 +2403,7 @@ retroid-pocket-flip2:
   image: /assets/images/device-placeholder.svg
   image_width: 220
   image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-flip2/
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-flip2/
   description: REG Linux for Retroid Pocket Flip2 (Qualcomm SD865 (SM8250)).
   lede: Retroid Pocket Flip2 — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
@@ -2413,7 +2417,7 @@ retroid-pocket-mini:
   image: /assets/images/device-placeholder.svg
   image_width: 220
   image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-mini/
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-mini/
   description: REG Linux for Retroid Pocket Mini (Qualcomm SD865 (SM8250)).
   lede: Retroid Pocket Mini — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
@@ -2425,7 +2429,7 @@ rs97:
   soc:
   - Ingenic JZ4770
   image: /assets/images/rs97.webp
-  board_url: https://reglinux.org/wiki/other/unknown/rs97/
+  board_url: https://reglinux.org/wiki/sbcs/rs97/
   description: REG Linux for RS-97 (Ingenic JZ4770).
   lede: RS-97 — device powered by Ingenic JZ4770.
 sipeed-lichee-pi-4a:
@@ -2436,7 +2440,7 @@ sipeed-lichee-pi-4a:
   soc:
   - T-Head TH1520
   image: /assets/images/sipeed-lichee-pi-4a.webp
-  board_url: https://reglinux.org/wiki/sbc/sipeed/lichee-pi-4a/
+  board_url: https://reglinux.org/wiki/sbcs/sipeed-lichee-pi-4a/
   description: REG Linux for Sipeed LicheePi 4A (T-Head TH1520).
   lede: Sipeed LicheePi 4A — single-board computer powered by T-Head TH1520.
 starfive-visionfive-2:
@@ -2495,7 +2499,7 @@ tronsmart-s82:
   soc:
   - Amlogic S812
   image: /assets/images/tronsmart-s82.webp
-  board_url: https://reglinux.org/wiki/sbc/tronsmart/s82/
+  board_url: https://reglinux.org/wiki/tvboxes/tronsmart/s82/
   description: REG Linux for Tronsmart S82 (Amlogic S812).
   lede: Tronsmart S82 — TV box powered by Amlogic S812.
 tronsmart-vega-s96:
@@ -2506,7 +2510,7 @@ tronsmart-vega-s96:
   soc:
   - Amlogic S912
   image: /assets/images/tronsmart-vega-s96.webp
-  board_url: https://reglinux.org/wiki/sbc/unknown/tronsmart-vega-s96/
+  board_url: https://reglinux.org/wiki/tvboxes/tronsmart/vega-s96/
   description: REG Linux for Tronsmart Vega S96 (Amlogic S912).
   lede: Tronsmart Vega S96 — TV box powered by Amlogic S912.
 tx3-mini:
@@ -2517,7 +2521,7 @@ tx3-mini:
   soc:
   - Amlogic S905(X)
   image: /assets/images/tx3-mini.webp
-  board_url: https://reglinux.org/wiki/other/unknown/tx3-mini/
+  board_url: https://reglinux.org/wiki/tvboxes/tanix/tx3-mini/
   description: REG Linux for Tanix TX3 Mini (Amlogic S905(X)).
   lede: Tanix TX3 Mini — TV box powered by Amlogic S905(X).
 unbranded-ps5000:
@@ -2528,7 +2532,7 @@ unbranded-ps5000:
   soc:
   - Rockchip RK3128
   image: /assets/images/unbranded-ps5000.webp
-  board_url: https://reglinux.org/wiki/handhelds/unbranded/ps5000/
+  board_url: https://reglinux.org/wiki/sbcs/unbranded-ps5000/
   description: REG Linux for PS5000 (Rockchip RK3128).
   lede: PS5000 — handheld powered by Rockchip RK3128.
 unbranded-ps7000:
@@ -2539,7 +2543,7 @@ unbranded-ps7000:
   soc:
   - Rockchip RK3128
   image: /assets/images/unbranded-ps7000.webp
-  board_url: https://reglinux.org/wiki/handhelds/unbranded/ps7000/
+  board_url: https://reglinux.org/wiki/sbcs/unbranded-ps7000/
   description: REG Linux for PS7000 (Rockchip RK3128).
   lede: PS7000 — handheld powered by Rockchip RK3128.
 vamrs-rock960:
@@ -2550,7 +2554,7 @@ vamrs-rock960:
   soc:
   - Rockchip RK3399
   image: /assets/images/vamrs-rock960.webp
-  board_url: https://reglinux.org/wiki/other/unknown/vamrs-rock960/
+  board_url: https://reglinux.org/wiki/sbcs/vamrs-rock960/
   description: REG Linux for 96Boards Rock960 (Rockchip RK3399).
   lede: 96Boards Rock960 — device powered by Rockchip RK3399.
 wetek-core:
@@ -2561,7 +2565,7 @@ wetek-core:
   soc:
   - Amlogic S812
   image: /assets/images/wetek-core.webp
-  board_url: https://reglinux.org/wiki/sbc/wetek/core/
+  board_url: https://reglinux.org/wiki/tvboxes/wetek/core/
   description: REG Linux for WeTek Core (Amlogic S812).
   lede: WeTek Core — TV box powered by Amlogic S812.
 x86_64:
@@ -2572,7 +2576,7 @@ x86_64:
   soc:
   - AMD/Intel x86_64
   image: /assets/images/x86_64.webp
-  board_url: https://reglinux.org/wiki/other/unknown/x86_64/
+  board_url: https://reglinux.org/wiki/sbcs/x86_64/
   description: REG Linux image for Unknown X86_64 powered by AMD/Intel x86_64.
   lede: Unknown X86_64 pairs the AMD/Intel x86_64 SoC with the REG Linux stack for a polished retro console.
 x86_64_v3:
@@ -2583,7 +2587,7 @@ x86_64_v3:
   soc:
   - AMD/Intel x86_64-v3
   image: /assets/images/x86_64_v3.webp
-  board_url: https://reglinux.org/wiki/other/unknown/x86_64_v3/
+  board_url: https://reglinux.org/wiki/sbcs/x86_64_v3/
   description: REG Linux image for Unknown X86_64_V3 powered by AMD/Intel x86_64-v3.
   lede: Unknown X86_64_V3 pairs the AMD/Intel x86_64-v3 SoC with the REG Linux stack for a polished retro console.
 x96-air:
@@ -2594,7 +2598,7 @@ x96-air:
   soc:
   - Amlogic S905X3
   image: /assets/images/x96-air.webp
-  board_url: https://reglinux.org/wiki/sbc/x96/air/
+  board_url: https://reglinux.org/wiki/tvboxes/x96/air/
   description: REG Linux for X96 Air (Amlogic S905X3).
   lede: X96 Air — TV box powered by Amlogic S905X3.
 x96-mate:
@@ -2605,7 +2609,7 @@ x96-mate:
   soc:
   - Allwinner H616
   image: /assets/images/x96-mate.webp
-  board_url: https://reglinux.org/wiki/sbc/x96/mate/
+  board_url: https://reglinux.org/wiki/tvboxes/x96/mate/
   description: REG Linux for X96 Mate (Allwinner H616).
   lede: X96 Mate — TV box powered by Allwinner H616.
 x96-max-plus:
@@ -2616,7 +2620,7 @@ x96-max-plus:
   soc:
   - Amlogic S905X3
   image: /assets/images/x96-max-plus.webp
-  board_url: https://reglinux.org/wiki/sbc/x96/max-plus/
+  board_url: https://reglinux.org/wiki/tvboxes/x96/max-plus/
   description: REG Linux for X96 Max Plus (Amlogic S905X3).
   lede: X96 Max Plus — TV box powered by Amlogic S905X3.
 xpi-3128:
@@ -2627,7 +2631,7 @@ xpi-3128:
   soc:
   - Rockchip RK3128
   image: /assets/images/xpi-3128.webp
-  board_url: https://reglinux.org/wiki/other/unknown/xpi-3128/
+  board_url: https://reglinux.org/wiki/sbcs/xpi-3128/
   description: REG Linux for XPi 3128 (Rockchip RK3128).
   lede: XPi 3128 — device powered by Rockchip RK3128.
 xu20:
@@ -2638,6 +2642,76 @@ xu20:
   soc:
   - Allwinner A133
   image: /assets/images/xu20.webp
-  board_url: https://reglinux.org/wiki/handhelds/unknown/xu20/
+  board_url: https://reglinux.org/wiki/sbcs/xu20/
   description: REG Linux image for Unknown XU20 powered by Allwinner A133.
   lede: Unknown XU20 pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
+miyoo-a30:
+  title: Miyoo A30
+  brand: Miyoo
+  manufacturer:
+  - Miyoo
+  soc:
+  - Allwinner A33
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/miyoo/a30/
+  description: REG Linux for the Miyoo A30 (Allwinner A33).
+  lede: Miyoo A30, a handheld powered by the Allwinner A33, running REG Linux from a microSD card.
+pocketgo-s30:
+  title: PocketGo S30
+  brand: PocketGo
+  manufacturer:
+  - PocketGo
+  soc:
+  - Allwinner A33
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/pocketgo/s30/
+  description: REG Linux for the PocketGo S30 (Allwinner A33).
+  lede: PocketGo S30, a handheld powered by the Allwinner A33, running REG Linux from a microSD card.
+trimui-smart-pro-s:
+  title: TrimUI Smart Pro S
+  brand: TrimUI
+  manufacturer:
+  - TrimUI
+  soc:
+  - Allwinner T527
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/trimui/smart-pro-s/
+  description: REG Linux for the TrimUI Smart Pro S (Allwinner T527).
+  lede: TrimUI Smart Pro S, a handheld powered by the Allwinner T527, running REG Linux from a microSD card.
+unbranded-g28:
+  title: G28
+  brand: Unbranded
+  manufacturer:
+  - Unbranded
+  soc:
+  - Rockchip RK3128
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/unbranded/g28/
+  description: REG Linux for the G28 (Rockchip RK3128).
+  lede: G28, a handheld powered by the Rockchip RK3128, running REG Linux from a microSD card.
+gpd-xd:
+  title: GPD XD
+  brand: GPD
+  manufacturer:
+  - GPD
+  soc:
+  - Rockchip RK3288
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/gpd/xd/
+  description: REG Linux for the GPD XD (Rockchip RK3288).
+  lede: GPD XD, a handheld powered by the Rockchip RK3288, running REG Linux from a microSD card.

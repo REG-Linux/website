@@ -1,0 +1,5 @@
+- Boots from the microSD card; the internal storage is not touched.
+- Wi-Fi (Realtek RTL8188FU) works.
+- Sound: built-in speaker.
+- The screen is mounted sideways in the case; REG Linux turns the picture the right way.
+- Sleep is not supported yet.

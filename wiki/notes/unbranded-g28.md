@@ -1,0 +1,3 @@
+- Boots from the microSD card; the internal storage is not touched.
+- No Wi-Fi.
+- Only one of the two USB-C ports carries data (the other one only charges).
