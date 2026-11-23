@@ -68,8 +68,8 @@ the file name on the `FDT /boot/...dtb` line to your model's:
 | RG28XX | `sun50i-h700-anbernic-rg28xx.dtb` |
 | RG CubeXX | `sun50i-h700-anbernic-rgcubexx.dtb` |
 
-The wrong file usually means a black screen or no controls. A system update
-writes `extlinux.conf` again: after updating, check the `FDT` line.
+The wrong file usually means a black screen or no controls. System updates
+keep the file you chose.
 
 ### Allwinner A133 (TrimUI Smart Pro, TrimUI Brick, MagicX Zero 28 / Zero 40)
 

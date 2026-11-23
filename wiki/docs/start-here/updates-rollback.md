@@ -25,9 +25,10 @@ does the same; its log is `/userdata/system/logs/system-upgrade.log`.
 - **Kept:** everything in `/userdata`: games, saves, BIOS files, screenshots,
   your `system.conf` settings, controller configurations and REG Station
   settings. Also `system-boot.conf` on the `REGLINUX` partition.
-- **Replaced:** the system itself, and the boot files. On the Anbernic H700
-  image this includes `extlinux/extlinux.conf`: check the `FDT` line after an
-  update (see [Install](../installation.md#anbernic-h700-rg35xx-rg40xx-rg34xx-rg28xx-rg-cubexx)).
+- **Replaced:** the system itself and the boot files. A device tree chosen by
+  hand in `extlinux/extlinux.conf` (the `FDT` line, see
+  [Install](../installation.md#anbernic-h700-rg35xx-rg40xx-rg34xx-rg28xx-rg-cubexx))
+  is kept.
 
 ## Going back to an earlier version
 
