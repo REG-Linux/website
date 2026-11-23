@@ -69,8 +69,11 @@ Set them on the command line (`make DEBUG_BUILD=n h700-build`) or in a
 ## Closed-source parts
 
 REG Station (the frontend) and regmsgd (the service that launches emulators and
-applies settings) are not open source. Builds download their published binaries
-for your target's CPU; nothing else is needed.
+applies settings) are not open source. REG Linux provides prebuilt binaries of
+both for every supported CPU
+([REG-Station-binaries](https://github.com/REG-Linux/REG-Station-binaries/releases),
+[regmsg-binaries](https://github.com/REG-Linux/regmsg-binaries/releases)), and the
+build downloads the ones for your target: nothing else is needed.
 
 ## Testing a build
 
