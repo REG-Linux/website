@@ -164,7 +164,9 @@ def main() -> int:
             cpu["arch"] = info["cpu_arch"]
         if not gpu.get("model") and info["gpu_model"]:
             gpu["model"] = info["gpu_model"]
-        if not soc.get("kernel_version") and info["kernel_version"]:
+        # the board file is the source of truth for the kernel: refresh it
+        if info["kernel_version"] and soc.get("kernel_version") != info["kernel_version"]:
+            print(f"{model}: kernel {soc.get('kernel_version') or '-'} -> {info['kernel_version']}")
             soc["kernel_version"] = info["kernel_version"]
 
         soc["cpu"] = cpu
