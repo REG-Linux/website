@@ -37,13 +37,15 @@ nav:
   - Community: https://reglinux.org/community/
 - Start Here:
   - Overview: start-here/index.md
-  - Getting Started: getting-started.md
-  - Installation: installation.md
-  - First Boot Checklist: start-here/first-boot.md
-  - Updates & Rollback: start-here/updates-rollback.md
-- Players:
-  - Overview: players/index.md
-  - Controller Setup: players/controller-setup.md
+  - Install: installation.md
+  - First Boot: start-here/first-boot.md
+  - Add Games and BIOS: start-here/adding-games.md
+  - Controllers and Hotkeys: start-here/controllers.md
+  - Network, SSH and Samba: start-here/network.md
+  - Updates: start-here/updates-rollback.md
+- Help:
+  - Troubleshooting: help/troubleshooting.md
+  - FAQ: help/faq.md
 - Devices:
   - Overview: devices/index.md
   - Compatibility: devices/compatibility.md
@@ -430,6 +432,9 @@ plugins:
 - search
 - redirects:
     redirect_maps:
+      getting-started.md: start-here/index.md
+      players/controller-setup.md: start-here/controllers.md
+      players/index.md: start-here/index.md
       handhelds/anbernic.md: handhelds/index.md
       handhelds/anbernic/rg351pmv.md: handhelds/anbernic/rg351-p-m-mp.md
       handhelds/anbernic/rg353pmvvs.md: handhelds/anbernic/rg353p-s.md
@@ -476,6 +481,7 @@ markdown_extensions:
     permalink: true
 - footnotes
 - md_in_html
+- attr_list
 extra_css:
   - assets/reglinux-theme.css
 extra:

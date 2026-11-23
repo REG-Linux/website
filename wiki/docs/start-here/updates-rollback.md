@@ -1,37 +1,38 @@
 ---
-title: Updates and Rollback
-description: This guide covers safe update habits and what to do if a new build causes
-  issues.
+title: Updates
+description: How REG Linux updates itself, what an update keeps, and how to go back to an earlier version.
 ---
 
-# Updates and Rollback
+# Updates
 
-This guide covers safe update habits and what to do if a new build causes issues.
+## Update from the menu
 
-## Before you update
+`SYSTEM > SOFTWARE UPDATES`:
 
-- Read the release notes for your device family.
-- Make a backup of `/userdata/` (saves, configs, BIOS, and ROMs).
-- Ensure stable power; avoid updating on low battery.
+- **CHECK FOR UPDATES** turns the check on or off (on by default).
+- **UPDATE TYPE**: `stable`, or `stable and beta` to also get test versions.
+- **START UPDATE** downloads the new system; once it is ready the entry
+  becomes **APPLY UPDATE**, and the update is installed on the next restart.
 
-## Update options
+Updates come from the
+[REG Linux releases on GitHub](https://github.com/REG-Linux/REG-Linux/releases).
+Each download is checked against its checksum before it is installed. Keep the
+device charged or plugged in during an update. From a shell, `system-upgrade`
+does the same; its log is `/userdata/system/logs/system-upgrade.log`.
 
-Use the in-system updater if it is available on your device. This is the safest path because it applies the correct build and preserves your data.
+## What an update keeps
 
-If you prefer a manual update, reflash the latest image for your device and restore your `/userdata/` backup afterward.
+- **Kept:** everything in `/userdata`: games, saves, BIOS files, screenshots,
+  your `system.conf` settings, controller configurations and REG Station
+  settings. Also `system-boot.conf` on the `REGLINUX` partition.
+- **Replaced:** the system itself, and the boot files. On the Anbernic H700
+  image this includes `extlinux/extlinux.conf`: check the `FDT` line after an
+  update (see [Install](../installation.md#anbernic-h700-rg35xx-rg40xx-rg34xx-rg28xx-rg-cubexx)).
 
-## After updating
+## Going back to an earlier version
 
-- Check the system version in the settings or system info screen.
-- Confirm that controllers, audio, and Wi-Fi work before loading large game libraries.
-- If you use shaders or overlays, verify that they still load as expected.
-
-## Rollback basics
-
-If a new build causes problems, the most reliable rollback is:
-
-1. Reflash the previous image for your device.
-2. Restore your `/userdata/` backup.
-3. Confirm the system boots and your saves are intact.
-
-If you cannot access the UI, try a known-good SD card or USB drive first to confirm the issue is not hardware-specific.
+REG Linux has no one-click rollback: an update replaces the previous system.
+To go back, write the earlier image from the
+[releases page](https://github.com/REG-Linux/REG-Linux/releases) to a card. To
+keep your data, copy `/userdata` (or at least `roms`, `saves`, `bios` and
+`system/system.conf`) somewhere else first, then copy it back.
