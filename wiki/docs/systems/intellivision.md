@@ -55,11 +55,11 @@ Store Intellivision ROMs in `/userdata/roms/intellivision` using one of the acce
 
 ### RetroArch (libretro: freeintv)
 
-[RetroArch](https://docs.libretro.com/) runs the `freeintv` core to recreate the Intellivision hardware. Use the Quick Menu (`[HOTKEY]` + the south face button, see controller configuration) to adjust hotkeys, controller mappings and shaders. REG-Linux also surfaces many of the same settings through EmulationStation menus.
+[RetroArch](https://docs.libretro.com/) runs the `freeintv` core to recreate the Intellivision hardware. Use the Quick Menu (`[HOTKEY]` + the south face button, see controller configuration) to adjust hotkeys, controller mappings and shaders. REG-Linux also surfaces many of the same settings through REG Station menus.
 
 Standardized options available to every Intellivision session include `intellivision.videomode`, `intellivision.ratio`, `intellivision.smooth`, `intellivision.shaders`, `intellivision.pixel_perfect`, `intellivision.decoration`, `intellivision.game_translation`, `intellivision.audio_latency` and `intellivision.video_threaded`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `intellivision.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `intellivision.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase if you hear crackles. |
@@ -71,7 +71,7 @@ Standardized options available to every Intellivision session include `intellivi
 
 ## Controls
 
-The Intellivision controller combined side-mounted face buttons with a 12-button numeric keypad. REG-Linux recommends enabling controller tattoos (REG-Linux v39+) and using bezel overlays (e.g., from the [BezelProject](https://github.com/thebezelproject/BezelProject)) so keypad layouts remain visible.
+The Intellivision controller combined side-mounted face buttons with a 12-button numeric keypad. REG-Linux recommends enabling controller tattoos and using bezel overlays (e.g., from the [BezelProject](https://github.com/thebezelproject/BezelProject)) so keypad layouts remain visible.
 
 Here are the default Intellivision controls shown on the REG-Linux Retropad:
 

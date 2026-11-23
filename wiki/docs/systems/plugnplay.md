@@ -29,11 +29,11 @@ This grouping covers self-contained Plug ‘n’ Play TV game units such as Jakk
 
 ## ROMs
 
-Drop each ROM archive into `/userdata/roms/plugnplay` and refresh EmulationStation so the new entries appear. EmulationStation treats these as MAME games, so include any ZIP/7z container that holds the plug-and-play image.
+Drop each ROM archive into `/userdata/roms/plugnplay` and refresh REG Station so the new entries appear. REG Station treats these as MAME games, so include any ZIP/7z container that holds the plug-and-play image.
 
 ## Native Linux ports
 
-REG-Linux also accepts native Linux ports under the same system. Place the unpacked game data in `/userdata/roms/ports/.data/<Game>` and create an executable launcher script in `/userdata/roms/ports/` that changes into the `.data/<Game>` directory before launching the binary. After marking the script executable (`chmod +x <script>.sh`), refresh the gamelist and launch the script from EmulationStation.
+REG-Linux also accepts native Linux ports under the same system. Place the unpacked game data in `/userdata/roms/ports/.data/<Game>` and create an executable launcher script in `/userdata/roms/ports/` that changes into the `.data/<Game>` directory before launching the binary. After marking the script executable (`chmod +x <script>.sh`), refresh the gamelist and launch the script from REG Station.
 
 ## Emulators
 
@@ -43,7 +43,7 @@ MAME handles both the plug-and-play archives and the native Linux port wrappers.
 
 ## Controls
 
-Plug-and-play titles shipped with proprietary controllers, so MAME indexes the inputs numerically. Use `/remapping_controls_per_emulator` to swap buttons if the layout feels wrong; the default overlay is the generic MAME mapping shown inside the repository.
+Plug-and-play titles shipped with proprietary controllers, so MAME indexes the inputs numerically. Use [Controllers](/wiki/start-here/controllers/) to swap buttons if the layout feels wrong; the default overlay is the generic MAME mapping shown inside the repository.
 
 ## Troubleshooting
 

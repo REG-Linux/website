@@ -56,7 +56,7 @@ RetroArch's `libretro: vice_xpet` mirrors the standalone accuracy while running 
 
 ## Controls
 
-PET titles rely on the integrated keyboard and optionally the analog joystick in port 2. Use the overlay described at `../images/controller-overlays/pet.png` or remap keys manually via `/remapping_controls_per_emulator`.
+PET titles rely on the integrated keyboard and optionally the analog joystick in port 2. Use the overlay described at `../images/controller-overlays/pet.png` or remap keys manually via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

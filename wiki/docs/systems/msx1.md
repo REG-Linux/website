@@ -42,7 +42,7 @@ Microsoft’s MSX1 standard debuted in 1983 and laid the foundation for a compat
 ## ROMs
 
 Store every MSX1 title inside `/userdata/roms/msx1`. Wrap multi-disk games in `.m3u` playlists so
-EmulationStation shows a single entry (see `/cd_image_formats#multi-disc_games`).
+REG Station shows a single entry (see `/cd_image_formats#multi-disc_games`).
 
 ## BIOS
 

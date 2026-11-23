@@ -38,7 +38,7 @@ Moonlight writes its library data into `/userdata/system/configs/moonlight/gamel
 
 ## Configuration
 
-Streaming resolution, bitrate, and framerate are set via the Advanced System Options menu inside EmulationStation. For fine-grained control, drop a `moonlight.conf` file into `/userdata/system/configs/moonlight/`; the upstream `moonlight.conf` samples at https://github.com/moonlight-stream/moonlight-embedded/blob/master/moonlight.conf provide useful defaults.
+Streaming resolution, bitrate, and framerate are set via the Advanced System Options menu inside REG Station. For fine-grained control, drop a `moonlight.conf` file into `/userdata/system/configs/moonlight/`; the upstream `moonlight.conf` samples at https://github.com/moonlight-stream/moonlight-embedded/blob/master/moonlight.conf provide useful defaults.
 
 On some devices (e.g., Odroid Go Advance), add `platform = sdl` to `moonlight.conf` or select “SDL” as the Preferred AV Decoder to ensure correct orientation.
 

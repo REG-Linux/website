@@ -54,7 +54,7 @@ The standalone MAME builds replicate the original hardware with high accuracy. U
 
 #### RetroArch configuration
 
-While a core is running, press `[HOTKEY]` + the south face button (see controller configuration) to open the Quick Menu. From there you can change inputs, overrides, shaders and the RetroArch advanced settings. REG-Linux also exposes many of those toggles within EmulationStation for convenience.
+While a core is running, press `[HOTKEY]` + the south face button (see controller configuration) to open the Quick Menu. From there you can change inputs, overrides, shaders and the RetroArch advanced settings. REG-Linux also exposes many of those toggles within REG Station for convenience.
 
 ## Controls
 

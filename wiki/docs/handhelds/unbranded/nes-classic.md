@@ -3,7 +3,7 @@ title: Nintendo Nes Classic
 description: REG Linux on Nintendo Nes Classic powered by Allwinner R16.
 manufacturer: Nintendo
 slug: unbranded/nes-classic
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 16:44:01
 ---
 
 # Nintendo Nes Classic
@@ -42,4 +42,7 @@ service is enabled.
 
 ## Notes
 
-No device-specific notes yet.
+- Starts REG Linux from a **USB stick**, through the `reglinux-usb.hmod` module installed with [hakchi2-CE](https://github.com/TeamShinkansen/Hakchi2-CE). The console's own storage and bootloader are not replaced.
+- Needs a USB OTG Y-cable with its own power supply for the stick.
+- To start the original console menu again: create `/var/lib/reglinux-usb/disable` on the console, or uninstall the module in hakchi2-CE.
+- See [Install: NES Classic / SNES Classic](../../installation.md#nes-classic-snes-classic).

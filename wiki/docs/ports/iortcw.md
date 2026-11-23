@@ -35,7 +35,7 @@ Create a blank launcher in `/userdata/roms/iortcw/` such as:
 touch "/userdata/roms/iortcw/Return to Castle Wolfenstein.rtcw"
 ```
 
-This `.rtcw` marker allows EmulationStation to scrape and start the game.
+This `.rtcw` marker allows REG Station to scrape and start the game.
 
 The `.pk3` archives must stay in the `main` subdirectory; do not rename the folder. If you want to run additional mods, drop their `.pk3` files next to the core data and add their names to the `set fs_game` command in your custom `.rtcw` file.
 

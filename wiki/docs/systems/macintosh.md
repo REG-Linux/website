@@ -57,7 +57,7 @@ Store Macintosh disk and hard disk images in `/userdata/roms/macintosh`. Consult
 
 ### RetroArch
 
-RetroArch exposes `libretro: minivmac` for early Macs and `libretro: mame` for broader model coverage. Open the Quick Menu (`[HOTKEY]` + the south face button) to adjust hotkeys, shaders, controller mapping and overrides. REG-Linux mirrors many options via EmulationStation’s settings menus.
+RetroArch exposes `libretro: minivmac` for early Macs and `libretro: mame` for broader model coverage. Open the Quick Menu (`[HOTKEY]` + the south face button) to adjust hotkeys, shaders, controller mapping and overrides. REG-Linux mirrors many options via REG Station’s settings menus.
 
 #### libretro: minivmac
 
@@ -73,7 +73,7 @@ Standalone MAME provides complete Macintosh hardware emulation. Press `[HOTKEY]`
 
 ### CLK (Clock Signal)
 
-[CLK](https://github.com/TomHarte/CLK) is a native low-latency emulator integrated into REG-Linux v42+ that also supports classic Macintosh systems, especially for quick-loading disk images.
+[CLK](https://github.com/TomHarte/CLK) is a native low-latency emulator that also supports classic Macintosh systems, especially for quick-loading disk images.
 
 ## Controls
 

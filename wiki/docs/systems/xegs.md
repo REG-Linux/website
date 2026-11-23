@@ -19,7 +19,7 @@ The Atari XE Game System packages the Atari 8-bit XE hardware inside a console-f
 - Manufacturer: Atari
 - Release year: 1987
 - Hardware type: computer
-- EmulationStation group: atari8bit
+- REG Station group: atari8bit
 
 ### Quick reference
 

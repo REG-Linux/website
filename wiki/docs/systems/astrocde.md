@@ -56,7 +56,7 @@ Store your Astrocade dumps in `/userdata/roms/astrocde`. MAME can launch raw `.b
 
 Open the in-game [MAME menu](https://docs.mamedev.org/usingmame/ui.html) with `[HOTKEY]` + south button or `[Tab]` on a keyboard to remap inputs, adjust video options, switch DIP settings and more. Standardized REG-Linux features for this system include `astrocde.videomode`, `astrocde.decoration` and `astrocde.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all versions of this emulator |  |
 | GRAPHICS BACKEND `astrocde.video` | Choose BGFX shaders or Accel/OpenGL rendering.  => BGFX `bgfx`, Accel `accel`, OpenGL `opengl`. |
@@ -64,15 +64,12 @@ Open the in-game [MAME menu](https://docs.mamedev.org/usingmame/ui.html) with `[
 | BGFX VIDEO FILTER `astrocde.bgfxshaders` | Apply CRT/super-sampling filters.  => Off `None`, Bilinear `default`, CRT Geom `crt-geom`, CRT Geom Deluxe `crt-geom-deluxe`, Super Eagle `eagle`, HLSL `hlsl`, HQ2X `hq2x`, HQ3X `hq3x`, HQ4X `hq4x`. |
 | CRT SWITCHRES `astrocde.switchres` | Enable SwitchRes for CRTs.  => Off `0`, On `1`. |
 | TATE MODE `astrocde.rotation` | Rotate output for vertical displays.  => Off `None`, Rotate 90 `autoror`, Rotate 270 `autorol`. |
-| ALT DPAD MODE `astrocde.altdpad` | Adjust D-pad orientation when controllers behave oddly.  => Off (Default) `0`, DS3 Orientation `1`, X360 Orientation `2`. |
 | Settings specific to Astrocade |  |
 | CUSTOM CONFIG `astrocde.pergamecfg` | Allow per-game custom configuration via MAME’s UI.  => On `1`, Off `0`. |
 
 ## Controls
 
 Here are the default Bally Astrocade controls mapped to a REG-Linux Retropad:
-
-![astrocde-1](../images/controller-overlays/astrocde-1.png)
 
 Use MAME’s menu if you need alternate controller layouts.
 

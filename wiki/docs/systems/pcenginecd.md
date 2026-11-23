@@ -44,7 +44,7 @@ Copy each CD-ROM² release into `/userdata/roms/pcenginecd`. Use cue-based archi
 
 ### RetroArch
 
-RetroArch runs both the `libretro: pce` and `libretro: pce_fast` cores. Open the Quick Menu (`[HOTKEY]` + south button) to tweak shaders, overrides or controller bindings. EmulationStation also exposes `pcenginecd.videomode`, `pcenginecd.ratio`, `pcenginecd.smooth`, `pcenginecd.shaders`, `pcenginecd.pixel_perfect`, `pcenginecd.decoration`, `pcenginecd.game_translation`, and the usual backend/latency (`pcenginecd.gfxbackend`, `pcenginecd.audio_latency`, `pcenginecd.video_threaded`) options.
+RetroArch runs both the `libretro: pce` and `libretro: pce_fast` cores. Open the Quick Menu (`[HOTKEY]` + south button) to tweak shaders, overrides or controller bindings. REG Station also exposes `pcenginecd.videomode`, `pcenginecd.ratio`, `pcenginecd.smooth`, `pcenginecd.shaders`, `pcenginecd.pixel_perfect`, `pcenginecd.decoration`, `pcenginecd.game_translation`, and the usual backend/latency (`pcenginecd.gfxbackend`, `pcenginecd.audio_latency`, `pcenginecd.video_threaded`) options.
 
 ### libretro: pce / pce_fast
 

@@ -42,7 +42,7 @@ Dolphin uses the GameCube IPL to deliver the original boot animation and allow a
 
 ## ROM storage and formats
 
-Store every GameCube ROM in `/userdata/roms/gamecube`. If you use a Riivolution patch, follow the JSON structure described on the Dolphin emulator page before launching the game from EmulationStation.
+Store every GameCube ROM in `/userdata/roms/gamecube`. If you use a Riivolution patch, follow the JSON structure described on the Dolphin emulator page before launching the game from REG Station.
 
 ### Multi-disc games
 
@@ -53,11 +53,11 @@ Tales of Symphonia - Disc 1.rvz
 Tales of Symphonia - Disc 2.rvz
 ```
 
-REG-Linux v31 and higher hide the extra discs in EmulationStation, leaving only the playlist entry visible. If you edit the Dolphin configuration directly, keep **Change Discs Automatically** enabled so Dolphin knows how to swap discs without prompting.
+REG Station hides the extra discs, leaving only the playlist entry visible. If you edit the Dolphin configuration directly, keep **Change Discs Automatically** enabled so Dolphin knows how to swap discs without prompting.
 
 ## GBA Link
 
-REG-Linux v36 added GameCube Port Type options that emulate accessories like the Game Boy Advance player. The **GBA (Internal)** port type lets Dolphin load a Game Boy Advance ROM internally, and the **Auto e-Reader** option for port 2 attaches one of the available e-Reader models. The mapping always mirrors the physical controller number (a GBA on port 2 uses Player 2's controller, port 4 uses Player 4 and so forth).
+Dolphin's GameCube Port Type options that emulate accessories like the Game Boy Advance player. The **GBA (Internal)** port type lets Dolphin load a Game Boy Advance ROM internally, and the **Auto e-Reader** option for port 2 attaches one of the available e-Reader models. The mapping always mirrors the physical controller number (a GBA on port 2 uses Player 2's controller, port 4 uses Player 4 and so forth).
 
 #### No Cartridge
 
@@ -88,9 +88,9 @@ Dolphin is the primary emulator for GameCube games in REG-Linux. Its performance
 
 #### Dolphin configuration
 
-Standardized features available to Dolphin include `gamecube.videomode` and `gamecube.ratio`. Additional toggles appear in the EmulationStation Advanced Options. The most important options include:
+Standardized features available to Dolphin include `gamecube.videomode` and `gamecube.ratio`. Additional toggles appear in the REG Station Advanced Options. The most important options include:
 
-| ES setting name | REG-Linux.conf_key | Description & possible values |
+| REG Station setting | `system.conf` key | Description & possible values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `gamecube.gfxbackend` | Rendering API: OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | RENDERING RESOLUTION | `gamecube.internal_resolution` | Internal render scale for 3D models. 1x native through 8x+ resolutions. |
@@ -143,11 +143,11 @@ Save it as `userdata/system/udev/rules.d/51-gcadapter.rules` (a reboot is the si
 
 ### Custom Pad Profile
 
-Since REG-Linux v31 you can create and save custom GameCube controller profiles in Dolphin. Press `F1` while Dolphin is running through EmulationStation to open the pad options screen. Here you can remap buttons, calibrate sticks and save the profile. Only one profile can be active per port.
+You can create and save custom GameCube controller profiles in Dolphin. Press `F1` while Dolphin is running through REG Station to open the pad options screen. Here you can remap buttons, calibrate sticks and save the profile. Only one profile can be active per port.
 
 Once saved, set **USE PAD PROFILES** (`gamecube.use_pad_profiles`) to **TRUE** and Dolphin will load your layout. Profiles live under `/userdata/system/configs/dolphin-emu/Profiles`.
 
-For more remapping guidance see /remapping_controls_per_emulator#gamecube.
+For more remapping guidance see [Controllers](/wiki/start-here/controllers/)#gamecube.
 
 ## Troubleshooting
 

@@ -38,7 +38,7 @@ RetroArch’s Quick Menu (`[HOTKEY]` + south face button) controls video, shader
 
 ## Controls
 
-Consult the Thomson keyboard overlay (from the controller overlay repo) to map keys or use `/remapping_controls_per_emulator` for any custom assignments when a game relies on special buttons.
+Consult the Thomson keyboard overlay (from the controller overlay repo) to map keys or use [Controllers](/wiki/start-here/controllers/) for any custom assignments when a game relies on special buttons.
 
 ## Troubleshooting
 

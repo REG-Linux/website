@@ -39,7 +39,7 @@ The Sega 32X is an add-on for the Mega Drive/Genesis that equips the console wit
 
 ### RetroArch / PicoDrive
 
-`libretro: picodrive` is the go-to core for running 32X games. It exposes the usual Quick Menu and supports options such as `global.picodrive_sprlim` (sprite limit removal), `global.picodrive_cropoverscan` (hide borders), and per-port controller entries (`global.picodrive_controller1`/`2`). Use `[HOTKEY]` + south face button or EmulationStation’s advanced options to configure the backend (`sega32x.gfxbackend`), audio latency (`sega32x.audio_latency`), and threaded video (`sega32x.video_threaded`).
+`libretro: picodrive` is the go-to core for running 32X games. It exposes the usual Quick Menu and supports options such as `global.picodrive_sprlim` (sprite limit removal), `global.picodrive_cropoverscan` (hide borders), and per-port controller entries (`global.picodrive_controller1`/`2`). Use `[HOTKEY]` + south face button or REG Station’s advanced options to configure the backend (`sega32x.gfxbackend`), audio latency (`sega32x.audio_latency`), and threaded video (`sega32x.video_threaded`).
 
 ## ROMs
 

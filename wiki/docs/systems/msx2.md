@@ -41,7 +41,7 @@ Microsoft updated the original MSX1 in 1985 with the MSX2 standard, bringing bet
 
 ## ROMs
 
-Place MSX2 titles inside `/userdata/roms/msx2`. Wrap multi-disk games in `.m3u` playlists for a cleaner EmulationStation entry (see `/cd_image_formats#multi-disc_games`).
+Place MSX2 titles inside `/userdata/roms/msx2`. Wrap multi-disk games in `.m3u` playlists for a cleaner REG Station entry (see `/cd_image_formats#multi-disc_games`).
 
 ## BIOS
 

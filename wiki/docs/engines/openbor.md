@@ -55,7 +55,7 @@ Standardized controls: `openbor.videomode`, `openbor.ratio`, `openbor.filter`.
 
 ## Controls
 
-The default overlay matches beat ’em up layouts: D-pad/analog for movement, face buttons for attack/jump/special. Adjust the mapping via `/remapping_controls_per_emulator` if you need additional combos.
+The default overlay matches beat ’em up layouts: D-pad/analog for movement, face buttons for attack/jump/special. Adjust the mapping via [Controllers](/wiki/start-here/controllers/) if you need additional combos.
 
 ## Troubleshooting
 

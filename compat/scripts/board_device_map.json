@@ -457,5 +457,10 @@
   "x1_orangepi-r2s": "orange-pi-r2s",
   "x86_64": "x86_64",
   "x86_64_v3": "x86_64_v3",
-  "xu20-v32": "xu20"
+  "xu20-v32": "xu20",
+  "allwinner/a33/miyoo-a30": "miyoo-a30",
+  "allwinner/a33/pocketgo-s30": "pocketgo-s30",
+  "allwinner/t527/trimui-smart-pro-s": "trimui-smart-pro-s",
+  "rockchip/rk3128/g28": "unbranded-g28",
+  "rockchip/rk3288/gpd-xd": "gpd-xd"
 }

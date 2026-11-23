@@ -51,7 +51,7 @@ Press `[HOTKEY]` + the south face button (or `[Tab]` on a keyboard) inside a tit
 
 Standardized MAME options exposed on REG-Linux include `gmaster.videomode`, `gmaster.decoration` and `gmaster.padtokeyboard`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | VIDEO MODE | `gmaster.video` | Choose BGFX post-processing, Accel, or OpenGL rendering. |
 | BGFX GRAPHICS API | `gmaster.bgfxbackend` | Pick the backend when BGFX is active (`automatic`, `opengl`, `gles`, `vulkan`). |

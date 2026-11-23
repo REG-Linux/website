@@ -49,7 +49,7 @@ Keep archives zipped unless the emulator refuses to start them, and keep each pa
 
 RetroArch is the frontend used to launch `libretro: O2EM`. It shares the usual options (`odyssey2.videomode`, `odyssey2.ratio`, `odyssey2.smooth`, `odyssey2.shaders`, `odyssey2.pixel_perfect`, `odyssey2.decoration`, `odyssey2.game_translation`) and exposes `[HOTKEY]` + south face button for the Quick Menu so you can tweak overrides on the fly.
 
-Standard EmulationStation settings let you choose the graphics backend (`odyssey2.gfxbackend`), raise audio latency (`odyssey2.audio_latency`), or toggle threaded video rendering (`odyssey2.video_threaded`).
+Standard REG Station settings let you choose the graphics backend (`odyssey2.gfxbackend`), raise audio latency (`odyssey2.audio_latency`), or toggle threaded video rendering (`odyssey2.video_threaded`).
 
 ### libretro: O2EM
 
@@ -76,7 +76,7 @@ REG-Linux added support for the voice samples that O2EM can play. Download the p
 
 ## Controls
 
-The system emulates the single-button joystick plus built-in keyboard. The RetroPad maps the joystick axes, primary button, and keyboard letters; see the REG-Linux controller overlay for details. If a game swaps player inputs, flip the player sides in the core options or save a custom remap (`/remapping_controls_per_emulator`).
+The system emulates the single-button joystick plus built-in keyboard. The RetroPad maps the joystick axes, primary button, and keyboard letters; see the REG-Linux controller overlay for details. If a game swaps player inputs, flip the player sides in the core options or save a custom remap ([Controllers](/wiki/start-here/controllers/)).
 
 ## Troubleshooting
 

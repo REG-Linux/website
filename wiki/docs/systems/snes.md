@@ -53,7 +53,7 @@ All cores expose `snes.videomode`, `snes.ratio`, `snes.smooth`, `snes.shaders`, 
 
 ## Controls
 
-The SNES overlay at `../images/controller-overlays/snes-1.png` shows the DualShock-style layout that matches the SNES pad, shoulder buttons, and turbo assignments. Customize any mapping via `/remapping_controls_per_emulator`.
+The SNES overlay at `../images/controller-overlays/snes-1.png` shows the DualShock-style layout that matches the SNES pad, shoulder buttons, and turbo assignments. Customize any mapping via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

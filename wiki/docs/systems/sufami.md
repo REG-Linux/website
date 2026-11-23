@@ -42,7 +42,7 @@ Store each SuFami Turbo cartridge (and any companion ROM) inside `/userdata/roms
 
 ## Emulation
 
-`libretro: snes9x` handles the SuFami Turbo hardware with its usual SNES option tree (`snes.*`). RetroArch also exposes SuFami-specific settings such as graphics backend, audio latency, and threaded video. Access them through `[HOTKEY]` + south face button or in EmulationStation’s advanced options.
+`libretro: snes9x` handles the SuFami Turbo hardware with its usual SNES option tree (`snes.*`). RetroArch also exposes SuFami-specific settings such as graphics backend, audio latency, and threaded video. Access them through `[HOTKEY]` + south face button or in REG Station’s advanced options.
 
 Shared settings to tweak:
 

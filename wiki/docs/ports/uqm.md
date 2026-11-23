@@ -29,7 +29,7 @@ Create a `packages/` subfolder inside `/userdata/roms/uqm/` and place your `uqm-
 touch "/userdata/roms/uqm/Ur-Quan Masters.game"
 ```
 
-The `.game` file tells EmulationStation to expose the entry while the content bundle supplies all of the assets.
+The `.game` file tells REG Station to expose the entry while the content bundle supplies all of the assets.
 
 ## Emulators
 

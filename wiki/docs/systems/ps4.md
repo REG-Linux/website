@@ -32,7 +32,7 @@ ShadPS4 is the experimental PlayStation 4 emulator included in REG-Linux. It dem
 ## ROMs
 
 1. Install the `.pkg` packages via `rpcs3-config`–style tools inside the ShadPS4 interface; the extracted data lands in `/userdata/system/configs/shadps4/`.
-2. Create an empty `.ps4` launcher (e.g., `/userdata/roms/ps4/CUSA03173/Bloodborne.ps4`). The filename is what EmulationStation uses to display the entry.
+2. Create an empty `.ps4` launcher (e.g., `/userdata/roms/ps4/CUSA03173/Bloodborne.ps4`). The filename is what REG Station uses to display the entry.
 3. Copy DLC into `/userdata/roms/ps4/DLC`.
 
 RPCS4 reads the `.ps4` placeholder and redirects to the installed files; the game folder needs only the metadata filename.

@@ -57,7 +57,7 @@ Store Channel F cartridge images in `/userdata/roms/channelf`. RetroArch will ac
 
 `libretro: FreeChaF` is the FreeChaF core used within RetroArch. REG-Linux exposes system-wide features such as `channelf.videomode`, `channelf.ratio`, `channelf.smooth`, `channelf.shaders`, `channelf.pixel_perfect`, `channelf.decoration`, and `channelf.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS BACKEND `channelf.gfxbackend` | Choose OpenGL (safe) or Vulkan (fast when supported). => OpenGL `opengl`, Vulkan `vulkan`. |
 | AUDIO LATENCY `channelf.audio_latency` | Adjust buffer in milliseconds to eliminate crackling. => 256 `256`, 192 `192`, 128 `128`, 64 `64`, 32 `32`, 16 `16`, 8 `8`. |
@@ -68,8 +68,6 @@ Use the Quick Menu (`[HOTKEY]` + south button) to open FreeChaF’s core menu fo
 ## Controls
 
 FreeChaF exposes the Channel F console overlay through the RETROPAD. Press `Start` to show the virtual buttons, use the D-pad or stick to pick a button, then press a face button to activate it. Press `Start` again to hide the overlay.
-
-![Channel F controller overlay](../images/controller-overlays/channelf.png)
 
 | FreeChaF Function | Retropad mapping |
 | --- | --- |

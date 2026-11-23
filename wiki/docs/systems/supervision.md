@@ -36,11 +36,11 @@ Place every Supervision cartridge dump into `/userdata/roms/supervision`. Use `.
 
 ### RetroArch / potator
 
-`libretro: potator` is the recommended core. Open the Quick Menu (`[HOTKEY]` + south face button) to tweak shaders, ratios, or controller mapping. Use the EmulationStation options for `supervision.videomode`, `supervision.smooth`, `supervision.shaders`, `supervision.pixel_perfect`, `supervision.decoration`, `supervision.gfxbackend`, `supervision.audio_latency`, and `supervision.video_threaded`.
+`libretro: potator` is the recommended core. Open the Quick Menu (`[HOTKEY]` + south face button) to tweak shaders, ratios, or controller mapping. Use the REG Station options for `supervision.videomode`, `supervision.smooth`, `supervision.shaders`, `supervision.pixel_perfect`, `supervision.decoration`, `supervision.gfxbackend`, `supervision.audio_latency`, and `supervision.video_threaded`.
 
 ## Controls
 
-The Supervision uses a D-pad plus two buttons and a Start key. Map those inputs via `/remapping_controls_per_emulator` when the defaults don’t match your pad layout.
+The Supervision uses a D-pad plus two buttons and a Start key. Map those inputs via [Controllers](/wiki/start-here/controllers/) when the defaults don’t match your pad layout.
 
 ## Troubleshooting
 

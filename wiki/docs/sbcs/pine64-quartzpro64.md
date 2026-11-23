@@ -20,7 +20,7 @@ Pine64 QuartzPro64 — single-board computer powered by Rockchip RK3588.
 
 2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure to verify the checksum before booting.
 
-3. First boot setup. Insert the media into your Pine64, power on, and let REG Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.
+3. First boot setup. Insert the media into your Pine64, power on, and let REG Linux expand the filesystem. Pair controllers inside REG Station once prompted.
 
 ## Resources
 

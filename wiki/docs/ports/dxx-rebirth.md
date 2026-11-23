@@ -38,7 +38,7 @@ Place each release inside its own subfolder under `/userdata/roms/dxx-rebirth/`,
 - `/userdata/roms/dxx-rebirth/Descent/Descent.d1x`
 - `/userdata/roms/dxx-rebirth/Descent2/Descent2.d2x`
 
-These launcher files appear in EmulationStation and start the corresponding game data.
+These launcher files appear in REG Station and start the corresponding game data.
 
 ## Emulators
 
@@ -46,7 +46,7 @@ These launcher files appear in EmulationStation and start the corresponding game
 
 DXX Rebirth runs natively via the `dxx-rebirth` binary included in REG-Linux. It exposes RetroArch-style options such as `dxx-rebirth.videomode`, `dxx-rebirth.pad_to_keyboard`, `dxx-rebirth.powermode`, and bezel/hud overrides (`dxx-rebirth.bezel`, `dxx-rebirth.hud`, etc.). Use the Quick Menu (`[HOTKEY]` + south button) for any runtime adjustments or controller remapping.
 
-| ES setting name | Description |
+| REG Station setting | Description |
 | --- | --- |
 | `dxx-rebirth.rebirth_vsync` | Toggle vsync to prevent tearing. |
 | `dxx-rebirth.rebirth_filtering` | Choose texture filtering (Classic, Blocky, Smooth). |
@@ -61,6 +61,6 @@ The default overlay reflects the keyboard/mouse layout, but you can bind actions
 
 ## Troubleshooting
 
-- Confirm the appropriate `.d1x` or `.d2x` launcher lives beside its data directory; missing files mean the title never appears in EmulationStation.
+- Confirm the appropriate `.d1x` or `.d2x` launcher lives beside its data directory; missing files mean the title never appears in REG Station.
 - If the port refuses to start, double-check that every PK5/PK4 file from the retail install is present within the matching folder.
 - For detailed assistance, visit the REG-Linux [DXX-Rebirth wiki](https://wiki.reglinux.org/systems:dxx-rebirth) or the generic support pages.

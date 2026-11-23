@@ -46,13 +46,13 @@ Place every Atari 2600 ROM (or archive containing `.a26`/`.bin`) into `/userdata
 
 ### RetroArch
 
-RetroArch hosts the Stella cores for Atari 2600 emulation, providing consistent hotkeys, shaders, overlays and netplay options. Access the Quick Menu with `[HOTKEY]` + the south button to open advanced options and input mapping. Many of the popular settings are also surfaced via EmulationStation menus.
+RetroArch hosts the Stella cores for Atari 2600 emulation, providing consistent hotkeys, shaders, overlays and netplay options. Access the Quick Menu with `[HOTKEY]` + the south button to open advanced options and input mapping. Many of the popular settings are also surfaced via REG Station menus.
 
 #### RetroArch configuration
 
 Standardized features for the system include `atari2600.videomode`, `atari2600.ratio`, `atari2600.smooth`, `atari2600.shaders`, `atari2600.pixel_perfect`, `atari2600.decoration` and `atari2600.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all cores of this emulator |  |
 | GRAPHICS BACKEND `atari2600.gfxbackend` | Choose the rendering backend (OpenGL or Vulkan).  => OpenGL `opengl`, Vulkan `vulkan`. |

@@ -81,7 +81,7 @@ RetroArch runs the `libretro: Hatari` core, giving you shaders, overlays, rewind
 
 Standardized features for this system include `atarist.videomode`, `atarist.ratio`, `atarist.smooth`, `atarist.shaders`, `atarist.decoration` and `atarist.game_translation`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS API `atarist.gfxbackend` | Choose the backend (OpenGL or Vulkan). |
 | AUDIO LATENCY `atarist.audio_latency` | Set buffer size in milliseconds to eliminate crackle. |
@@ -95,7 +95,7 @@ Launch the Hatari GUI (press the west icon or `[L3]`) to tweak system options pe
 
 [Hatari](http://hatari.tuxfamily.org/) is the dedicated Atari ST/STE/TT/Falcon emulator bundled with REG-Linux. It exposes keys like `atarist.videomode`, `atarist.padtokeyboard` and `atarist.decoration` through the frontend.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | MODEL `atarist.model` | Choose an ST/STE/MEGA/TT/Falcon target (e.g., 520ST, 1040STE, Mega STE, Falcon). |
 | LANGUAGE `atarist.language` | Pick the TOS language (DE, ES, FR, IT, NL, RU, SE, UK, US). |
@@ -108,8 +108,6 @@ Launch the Hatari GUI (press the west icon or `[L3]`) to tweak system options pe
 ## Controls
 
 The default Atari ST layout is shown on a REG-Linux Retropad:
-
-![atarist-1](../images/controller-overlays/atarist-1.png)
 
 Use RetroArch’s Quick Menu or Hatari’s built-in configuration screens to remap or assign mouse/keyboard inputs when needed. The Hatari overlay also documents which RetroPad button corresponds to actions like opening the GUI or toggling mouse mode.
 

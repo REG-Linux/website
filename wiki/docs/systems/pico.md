@@ -19,7 +19,7 @@ The Sega Pico launched in 1993 as a child-friendly “edutainment” device that
 - Manufacturer: Sega
 - Release year: 1993
 - Hardware type: console
-- EmulationStation group: megadrive
+- REG Station group: megadrive
 
 ### Quick reference
 
@@ -36,7 +36,7 @@ Drop Sega Pico binaries (`.bin`, `.md`) into `/userdata/roms/pico`. Avoid packin
 
 ### RetroArch
 
-RetroArch runs the Pico-focused libretro cores. The Quick Menu (`[HOTKEY]` + south face button) allows you to adjust shaders, overrides and controller mappings, while EmulationStation mirrors the shared settings such as `pico.rewind`, `pico.autosave`, `pico.netplay`, and `pico.cheevos`.
+RetroArch runs the Pico-focused libretro cores. The Quick Menu (`[HOTKEY]` + south face button) allows you to adjust shaders, overrides and controller mappings, while REG Station mirrors the shared settings such as `pico.rewind`, `pico.autosave`, `pico.netplay`, and `pico.cheevos`.
 
 ### libretro: genesisplusgx / genesisplusgx-wide
 
@@ -55,7 +55,7 @@ Picodrive is an alternative with similar accuracy and additional toggles:
 
 ## Controls
 
-The Pico pad resembles a Mega Drive controller with an alphabet dial. REG-Linux maps this layout automatically; create a manual remap via `/remapping_controls_per_emulator` if a game requires special bindings.
+The Pico pad resembles a Mega Drive controller with an alphabet dial. REG-Linux maps this layout automatically; create a manual remap via [Controllers](/wiki/start-here/controllers/) if a game requires special bindings.
 
 ## Troubleshooting
 

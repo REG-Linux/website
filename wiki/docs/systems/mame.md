@@ -39,7 +39,7 @@ Store your ROMs in `/userdata/roms/mame`. You can create subfolders for each ROM
 
 - `libretro: imame4all`: MAME 0.37b5 ROMset
 - `libretro: mame078plus`: MAME 0.78+ ROMset
-- `libretro: mame0139`: MAME 0.139 ROMset (removed in v41+)
+- `libretro: mame0139`: MAME 0.139 ROMset (MAME 2010)
 - `libretro: mame` and standalone MAME: the current MAME version shipped with REG-Linux
 
 Refer to the arcade guide to identify the ROMset required for each emulator release.
@@ -48,13 +48,13 @@ Refer to the arcade guide to identify the ROMset required for each emulator rele
 
 ### RetroArch
 
-[RetroArch](https://docs.libretro.com/) hosts the libretro MAME cores. Each core shares the Quick Menu (`[HOTKEY]` + south face button) for remapping, shaders, overrides and hotkey configuration. Additional libretro-specific options (frameskip, input interface, Neo Geo BIOS selection, etc.) appear in EmulationStation’s advanced menus when available.
+[RetroArch](https://docs.libretro.com/) hosts the libretro MAME cores. Each core shares the Quick Menu (`[HOTKEY]` + south face button) for remapping, shaders, overrides and hotkey configuration. Additional libretro-specific options (frameskip, input interface, Neo Geo BIOS selection, etc.) appear in REG Station’s advanced menus when available.
 
 #### Core highlights
 
-- **libretro: imame4all** – stripped-down 0.37b5 build for weaker hardware; use for very old titles but expect compatibility gaps. No extra configuration inside EmulationStation.
+- **libretro: imame4all** – stripped-down 0.37b5 build for weaker hardware; use for very old titles but expect compatibility gaps. No extra configuration inside REG Station.
 - **libretro: mame078plus** – the favored middle ground combining accuracy and performance; exposes options such as analog/digital mapping, frameskip, TATE mode, Neo Geo BIOS selection and more.
-- **libretro: mame0139** – MAME 2010 core that provides a larger library than 0.78 while still being lighter than the latest builds. Removed in v41+; available only on older images.
+- **libretro: mame0139** – MAME 2010 core that provides a larger library than 0.78 while still being lighter than the latest builds.
 - **libretro: mame** – the latest stable MAME release. Use it when you need the newest ROMsets, hardware support or additional MESS systems.
 
 ### MAME (standalone)

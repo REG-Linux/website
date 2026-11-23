@@ -36,7 +36,7 @@ Drop PDP-1 tapes or disk packs into `/userdata/roms/pdp1`. Text-based tape games
 
 ### RetroArch / libretro: mame
 
-RetroArch hosts `libretro: mame` for PDP-1 titles. Use the Quick Menu (`[HOTKEY]` + south face button) to adjust video, input, or latency options, or use EmulationStation’s advanced settings for features such as `pdp1.autosave`, `pdp1.netplay`, and `pdp1.padtokeyboard`.
+RetroArch hosts `libretro: mame` for PDP-1 titles. Use the Quick Menu (`[HOTKEY]` + south face button) to adjust video, input, or latency options, or use REG Station’s advanced settings for features such as `pdp1.autosave`, `pdp1.netplay`, and `pdp1.padtokeyboard`.
 
 Key global MAME options include CPU overclock (`global.mame_cpu_overclock`), rendering resolution (`global.mame_altres`), artwork cropping (`global.artworkcrop`) and the PDP-1 software list selector (`pdp1.softList`).
 
@@ -46,7 +46,7 @@ The standalone MAME binary mirrors the RetroArch setup with direct access to the
 
 ## Controls
 
-PDP-1 titles typically rely on simple joysticks/keyboard combinations. Save a custom remap through `/remapping_controls_per_emulator` when player order needs adjusting.
+PDP-1 titles typically rely on simple joysticks/keyboard combinations. Save a custom remap through [Controllers](/wiki/start-here/controllers/) when player order needs adjusting.
 
 ## Troubleshooting
 

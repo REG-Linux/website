@@ -45,13 +45,12 @@ Store cassette, disk and cartridge images under `/userdata/roms/coco`. MAME’s 
 
 [MAME](https://www.mamedev.org/) includes the TRS-80 Color Computer driver. Open the in-game menu (`[HOTKEY]` + south button or `Tab`) to remap inputs, attach media or adjust video/audio options. Standardized REG-Linux features for CoCo include `coco.videomode`, `coco.decoration` and `coco.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all versions of this emulator |  |
 | VIDEO MODE `coco.video` | Choose BGFX for shaders or Accel/OpenGL for direct rendering.  => BGFX `bgfx`, Accel `accel`, OpenGL `opengl`. |
 | BGFX GRAPHICS API `coco.bgfxbackend` | Specify the backend when BGFX is active.  => MAME Detect `automatic`, OpenGL `opengl`, OpenGL ES `gles`, Vulkan `vulkan`. |
 | BGFX VIDEO FILTER `coco.bgfxshaders` | Apply CRT/smoothing filters.  => Off `None`, Bilinear `default`, CRT Geom `crt-geom`, CRT Geom Deluxe `crt-geom-deluxe`, Super Eagle `eagle`, HLSL `hlsl`, HQ2X `hq2x`, HQ3X `hq3x`, HQ4X `hq4x`. |
-| ALT DPAD MODE `coco.altdpad` | Adjust D-pad orientation when controllers behave oddly.  => Off `0`, DS3 `1`, X360 `2`. |
 | SPECIAL CONTROL LAYOUTS `coco.altlayout` | Alternate layouts for modern pads.  => Default `0`, SNES `1`, Genesis `4`, etc. |
 | MEDIA TYPE `coco.altromtype` | Specify media (cassette vs cartridge) if MAME misdetects.  => Cassette `cass`, Cartridge `cart`. |
 | UI KEYS `coco.enableui` | Toggle MAME’s UI key bindings at startup.  => Off `0`, On `1`. |

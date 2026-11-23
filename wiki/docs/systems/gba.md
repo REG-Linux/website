@@ -52,7 +52,7 @@ Store all Game Boy Advance images in `/userdata/roms/gba`.
 
 ### RetroArch
 
-[RetroArch](https://docs.libretro.com/) is the frontend that runs every libretro core, sharing shaders, overlays, hotkeys, netplay, rewind and other features independent of the platform. REG-Linux exposes many of the same options through EmulationStation.
+[RetroArch](https://docs.libretro.com/) is the frontend that runs every libretro core, sharing shaders, overlays, hotkeys, netplay, rewind and other features independent of the platform. REG-Linux exposes many of the same options through REG Station.
 
 #### RetroArch configuration
 
@@ -60,7 +60,7 @@ While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south fac
 
 Standardized features available to every Game Boy Advance core include `gba.videomode`, `gba.ratio`, `gba.smooth`, `gba.shaders`, `gba.pixel_perfect`, `gba.decoration` and `gba.game_translation`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS API | `gba.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `gba.audio_latency` | Audio buffer size (256, 192, 128, 64, 32, 16, 8). Increase to reduce crackles, decrease once audio is stable. |
@@ -72,7 +72,7 @@ mGBA targets accuracy and speed, and it also simulates Game Boy and Game Boy Col
 
 #### libretro: mGBA configuration
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | SHOW BIOS BOOTLOGO | `global.skip_bios_mgba` | Display the BIOS animation if the BIOS file exists. `True` shows it, `False` hides it. |
 | SUPER GB BORDERS | `gb.sgb_borders` | Show Super Game Boy borders for compatible games (`False` Off, `True` On). |
@@ -88,7 +88,7 @@ VBA-M is a continuation of VisualBoyAdvance with compatibility across GB, GBC an
 
 #### libretro: VBA-M configuration
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | COLORIZATION (GB) | `gb.palettes` | Choose Game Boy palettes: `original gameboy`, `black and white`, `gba sp`, `blue sea`, `dark knight`, `green forest`, `hot desert`, `pink dreams`, `weird colors`. |
 | COLOR CORRECTION (GB) | `gb.gbcoloroption_gb` | Simulate LCD color imperfections (`disabled`, `enabled`). |

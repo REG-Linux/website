@@ -27,7 +27,7 @@ No BIOS is required.
 
 ## Game files
 
-Place each IKEMEN project (usually distributed with a `system.def` plus character/stage folders) inside `/userdata/roms/ikemen/`. Typical folders contain `data/`, `chars/`, `portraits/`, and `save/`. The engine expects version 0.98.x content on REG-Linux v36–39 and version 0.99 or newer on v40+, so ensure your data matches the shipped engine level. If you upgrade REG-Linux and see JSON errors, delete `save/config.json` inside the game directory and rebuild the config from the in-game menu.
+Place each IKEMEN project (usually distributed with a `system.def` plus character/stage folders) inside `/userdata/roms/ikemen/`. Typical folders contain `data/`, `chars/`, `portraits/`, and `save/`. Content must match the IKEMEN Go version REG Linux ships (0.99 or newer). If you update REG Linux and see JSON errors, delete `save/config.json` inside the game directory and rebuild the config from the in-game menu.
 
 If your game uses `.zss` files (e.g., `action.zss`, `common1.cns.zss`, `functions.zss`), copy them from the IKEMEN GO GitHub `data/` tree so the engine has the required combat definitions.
 
@@ -39,7 +39,7 @@ The IKEMEN binary uses the standard Quick Menu (`[HOTKEY]` + `Start`) for video/
 
 ## Controls
 
-Fighting games use the usual RETROpad layout. Bind movement to the D-pad/analog stick, assign light/medium/heavy buttons, and map `Start`/`Select` to pause or menu access. Use the IKEMEN in-game options or `/remapping_controls_per_emulator` to tweak any missing keys.
+Fighting games use the usual RETROpad layout. Bind movement to the D-pad/analog stick, assign light/medium/heavy buttons, and map `Start`/`Select` to pause or menu access. Use the IKEMEN in-game options or [Controllers](/wiki/start-here/controllers/) to tweak any missing keys.
 
 ## Troubleshooting
 

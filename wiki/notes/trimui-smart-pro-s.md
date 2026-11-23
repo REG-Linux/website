@@ -1,0 +1,4 @@
+- Boots from the microSD card; nothing is written to the eMMC. Remove the card to start the original system.
+- Use the default image. The `-spl.img` variant starts with a different boot loader and does not start on every unit.
+- Wi-Fi (AIC8800) and Bluetooth work.
+- Sleep works (the power key suspends).

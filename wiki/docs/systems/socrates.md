@@ -61,7 +61,7 @@ Standalone MAME loads the `socrates` software list. Open the MAME menu (`[HOTKEY
 
 ## Controls
 
-The built-in overlay documents the two-button Socrates controller. If you require a light pen or alternate mapping, save a custom remap via `/remapping_controls_per_emulator`.
+The built-in overlay documents the two-button Socrates controller. If you require a light pen or alternate mapping, save a custom remap via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

@@ -19,7 +19,7 @@ The Atari 8-bit family (400, 800, XL, XE) debuted in 1979 with the Atari 800 as 
 - Manufacturer: Atari
 - Release year: 1979
 - Hardware type: computer
-- EmulationStation group: `atari8bit`
+- REG Station group: `atari8bit`
 
 ## Supported ROM extensions
 
@@ -58,7 +58,7 @@ RetroArch runs the libretro `atari800` core, giving you unified hotkeys, shaders
 
 #### libretro: atari800 configuration
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | ATARI SYSTEM `atari800.atari800_system` | Choose the machine mode (400/800, 800XL, 130XE, Modern XL/XE variations). |
 | VIDEO STANDARD `atari800.atari800_ntscpal` | Switch between NTSC and PAL timing and resolutions. |
@@ -72,8 +72,6 @@ Many settings (cartridge type, keyboard layouts, disk selection) can be edited i
 ## Controls
 
 The default Atari 8-bit pad mapping appears on a REG-Linux Retropad:
-
-![atari800](../images/controller-overlays/atari800.png)
 
 Use RetroArch’s Quick Menu or the atari800 menu to remap buttons or tweak analog controls.
 

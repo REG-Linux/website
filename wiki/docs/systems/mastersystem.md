@@ -48,7 +48,7 @@ Place every Master System ROM in `/userdata/roms/mastersystem`. The same cores a
 
 Standardized options: `mastersystem.videomode`, `mastersystem.ratio`, `mastersystem.smooth`, `mastersystem.shaders`, `mastersystem.pixel_perfect`, `mastersystem.decoration`, `mastersystem.game_translation`, `mastersystem.audio_latency`, `mastersystem.video_threaded`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `mastersystem.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `mastersystem.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase if you hear pops. |
@@ -64,7 +64,7 @@ Picodrive is a lightweight alternative with similar Sega 8-bit settings referenc
 
 ### CLK (Clock Signal)
 
-[CLK](https://github.com/TomHarte/CLK) arrived in REG-Linux v42+. It offers a low-latency, accurate Banana-style emulation path for the Master System alongside other retro platforms.
+[CLK](https://github.com/TomHarte/CLK) offers a low-latency, accurate Banana-style emulation path for the Master System alongside other retro platforms.
 
 ## Controls
 

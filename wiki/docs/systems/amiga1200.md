@@ -68,7 +68,7 @@ Store Amiga 1200 titles in `/userdata/roms/amiga1200`. The accepted filetypes co
 
 #### Common GUI options for Amiberry
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | LINE MODE `amiga1200.amiberry_linemode` | Adjust how scanlines are drawn. => SINGLE none, DOUBLE double, SCANLINES scanlines. |
 | VIDEO RESOLUTION `amiga1200.amiberry_resolution` | Selects an internal rendering resolution. => Low lores, High hires, Super high superhires. |
@@ -84,7 +84,7 @@ RetroArch hosts the libretro cores for Amiga emulation. While RetroArch supplies
 
 PUAE is a highly accurate Amiga core that supports a wide range of models, CPU modes, video standards and per-core tweaks. REG-Linux exposes standard hooks such as `amiga1200.rewind`, `amiga1200.autosave` and `amiga1200.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | AMIGA MODEL `global.puae_model` | Force a specific Amiga model. => Autodetect `automatic`, A1200 `A1200`, A4000/040 `A4040`, CD32 `CD32`, etc. |
 | CPU COMPATIBILITY `global.cpu_compatibility` | Improves compatibility for problematic titles. => Normal `normal`, More compatible `compatible`, Cycle-exact `exact`. |
@@ -108,8 +108,6 @@ Uae4arm is another libretro Amiga core that follows the same general conventions
 ## Controls
 
 Here are the default Amiga 1200 controls mapped onto a REG-Linux Retropad:
-
-![](../images/controller-overlays/amiga1200-1.png)
 
 When using `libretro: puae`/`puae2021` you can remap per-game inputs through the RetroArch Quick Menu or the input remapping guide.
 

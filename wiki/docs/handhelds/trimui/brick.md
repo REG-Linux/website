@@ -3,7 +3,7 @@ title: TrimUI Brick
 description: REG Linux on TrimUI Brick powered by Allwinner A133.
 manufacturer: TrimUI
 slug: trimui/brick
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 16:44:01
 ---
 
 # TrimUI Brick
@@ -42,4 +42,5 @@ service is enabled.
 
 ## Notes
 
-No device-specific notes yet.
+- Boots from the microSD card; the internal eMMC is not touched.
+- Sleep is not supported yet.

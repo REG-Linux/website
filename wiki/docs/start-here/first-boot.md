@@ -1,38 +1,44 @@
 ---
-title: First Boot Checklist
-description: Use this checklist the first time REG Linux boots on a new device. It
-  is intentionally short, so you can finish setup fast and get to playing.
+title: First boot
+description: What happens the first time REG Linux starts, and the few settings to check before playing.
 ---
 
-# First Boot Checklist
+# First boot
 
-Use this checklist the first time REG Linux boots on a new device. It is intentionally short, so you can finish setup fast and get to playing.
+## What you will see
 
-## Before you power on
+1. **Install pass.** The first start installs the system files and grows the
+   data partition to the full size of the card. The device then **reboots by
+   itself**. Do not take the card out or power off during this step.
+2. **Extracting files.** On the next start, the boot screen shows
+   *Extracting files to /userdata* while the default folders, BIOS
+   placeholders and settings are copied to the card.
+3. **REG Station.** The game menu appears.
 
-- Use the device-specific page in the [Devices](../devices/index.md) section to confirm any quirks or firmware notes.
-- Make sure the image was flashed cleanly and the storage media is reliable.
-- If you plan to use Wi-Fi, have your network name and password ready.
+If extraction is interrupted, it runs again on the next start. Its log is
+`/userdata/system/logs/extracted.files.log`.
 
-## During first boot
+## Controllers
 
-- Let the system finish its initial setup. The first boot can take longer while storage is prepared.
-- Keep the device powered and avoid removing the storage media until you reach the main menu.
-- When prompted, map a controller. If the prompt does not appear, see [Controller setup](../players/controller-setup.md).
+A handheld's own buttons are ready to use. When you press a button on a new
+external controller or keyboard, REG Station opens the controller
+configuration by itself. See [Controllers and hotkeys](controllers.md).
 
-## Quick setup tasks
+## Settings to check
 
-- Set language, time zone, and regional format in the system settings.
-- Connect to the network (Ethernet or Wi-Fi) so updates and metadata downloads can work.
-- Confirm audio and display output are correct (volume, resolution, rotation).
+Open the menu with **Start**:
 
-## Add your content
+| What | Where |
+|---|---|
+| Language | `SYSTEM > SYSTEM SETTINGS > LANGUAGE (REGION)` |
+| Time zone | `SYSTEM > SYSTEM SETTINGS > TIME ZONE` |
+| Wi-Fi | `NETWORK & SERVICES > NETWORK`: enable Wi-Fi, pick the network, enter the key |
+| Screen rotation | `SYSTEM > SYSTEM SETTINGS > SCREEN ROTATION` |
+| Sound output | `SYSTEM > SYSTEM SETTINGS > AUDIO OUTPUT` |
+| Confirm / cancel buttons | `CONTROLLERS > CONFIGURE > SWITCH CONFIRM & CANCEL BUTTONS IN REG-STATION` |
 
-- ROMs: copy to `/userdata/roms/` using USB, network share, or SSH.
-- BIOS files: copy to `/userdata/bios/` as required by each system.
-- If you are unsure which systems are supported, start with [Emulated systems](../systems/index.md).
+## Next
 
-## Next steps
-
-- Run an update if a newer release is available: [Updates & rollback](updates-rollback.md).
-- Browse engines and ports for non-console content: [Engines](../engines/index.md) and [Ports](../ports/index.md).
+- [Add games and BIOS files](adding-games.md)
+- [Network, SSH and Samba](network.md)
+- [Updates](updates-rollback.md)

@@ -48,7 +48,7 @@ Place each disc image inside `/userdata/roms/segacd`. CHD archives are preferred
 
 ### RetroArch / GenesisPlusGX / Picodrive
 
-RetroArch hosts both PicoDrive and GenesisPlusGX for Sega CD. Launch the Quick Menu (`[HOTKEY]` + south face button) to adjust shaders, audio latency, controller mapping, and per-game overrides. EmulationStation exposes:
+RetroArch hosts both PicoDrive and GenesisPlusGX for Sega CD. Launch the Quick Menu (`[HOTKEY]` + south face button) to adjust shaders, audio latency, controller mapping, and per-game overrides. REG Station exposes:
 
 * `megacd.videomode`, `megacd.ratio`, `megacd.smooth`, `megacd.shaders`, `megacd.pixel_perfect`, `megacd.decoration`, `megacd.game_translation`
 * `megacd.gfxbackend` (OpenGL/Vulkan), `megacd.audio_latency`, `megacd.video_threaded`

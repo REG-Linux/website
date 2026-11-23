@@ -1,28 +1,22 @@
 ---
-title: Start Here
-description: First-boot checklist, updates, and rollback guidance for REG Linux.
+title: Start here
+description: From a new device to playing: install REG Linux, first boot, games, controllers, network and updates.
 ---
 
-# Start Here
+# Start here
 
-Use this hub to get REG Linux onto your hardware and reach a working first boot.
+From a new device to your first game, in order:
 
-## Quick path
+1. **[Install REG Linux](../installation.md)**: download the image for your
+   device and write it to a microSD card.
+2. **[First boot](first-boot.md)**: the device installs itself and reboots
+   once; then set the language, time zone and Wi-Fi.
+3. **[Add games and BIOS files](adding-games.md)**: over Wi-Fi, a USB cable or
+   the card itself.
+4. **[Controllers and hotkeys](controllers.md)**: external controllers, and the
+   shortcuts to quit a game or save a state.
+5. **[Network, SSH and Samba](network.md)**: logins, and how to protect them.
+6. **[Updates](updates-rollback.md)**: keep REG Linux up to date.
 
-1. Choose hardware: [Handhelds](../handhelds/index.md), [Single-board computers](../sbcs/catalog.md), or the [Capcom Home Arcade](../handhelds/koch-media/capcom-home-arcade.md).
-2. Flash an image: [Installation guide](../installation.md).
-3. Finish first boot tasks: [First boot checklist](first-boot.md).
-4. Join the community: [Community links](../community.md).
-
-## Go deeper
-
-- Want a player-focused route? Visit [Players](../players/index.md).
-- Maintaining device support? Visit [Maintainers](../maintainers/index.md).
-- Building from source? Visit [Developers](../developers/index.md).
-
-## Task guides
-
-- [Getting started](../getting-started.md)
-- [First boot checklist](first-boot.md)
-- [Controller setup](../players/controller-setup.md)
-- [Updates and rollback](updates-rollback.md)
+Something wrong? See [Troubleshooting](../help/troubleshooting.md) and the
+[FAQ](../help/faq.md).

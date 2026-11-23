@@ -56,11 +56,11 @@ Store your Atari Lynx ROMs inside `/userdata/roms/lynx` using any of the accepte
 
 #### RetroArch configuration
 
-Open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to adjust core-specific values and mappings. REG-Linux also exposes many of those settings directly in EmulationStation.
+Open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to adjust core-specific values and mappings. REG-Linux also exposes many of those settings directly in REG Station.
 
 Standardized options available to every Lynx session include `lynx.videomode`, `lynx.ratio`, `lynx.smooth`, `lynx.shaders`, `lynx.pixel_perfect`, `lynx.decoration`, `lynx.game_translation`, `lynx.audio_latency`, `lynx.video_threaded`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `lynx.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `lynx.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Raise if you hear crackles. |

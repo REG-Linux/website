@@ -40,7 +40,7 @@ MAME executes the Tutor driver via `[HOTKEY]` + south face button or `[Tab]`. Co
 
 ## Controls
 
-The overlay linked in the controller repo mirrors the Tutor keyboard layout; use it when mapping the keys or joystick input via `/remapping_controls_per_emulator`.
+The overlay linked in the controller repo mirrors the Tutor keyboard layout; use it when mapping the keys or joystick input via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

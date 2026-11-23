@@ -44,7 +44,7 @@ A hybrid that can emulate Windows 3.x/9x while still running older DOS games. Us
 
 The libretro port automates much of the setup: point it to the game folder and it prompts for the executable, configures input, and handles fast-forward, multi-disk `.m3u` playlists and cartridge/tape/disk abstractions.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | `global.pure_cpu_type` | Choose a CPU profile (386, 486, Pentium, etc.). |
 | `global.pure_cycles` | Tune the emulated cycle count for speed/accuracy. |
@@ -53,8 +53,6 @@ The libretro port automates much of the setup: point it to the game folder and i
 | `global.pure_keyboard_layout` | Set the physical keyboard layout (US, UK, FR, etc.). |
 | `global.pure_savestate` | Enable savestate/rewind support. |
 | `global.pure_joystick_analog_deadzone` | Adjust joystick deadzone for drifting sticks. |
-| `global.pure_controllerN_dosbox_pure` | Assign controller emulation profile (Gamepad, Keyboard, Flightstick). |
-
 ## Setup tips
 
 - Keep a `dosbox.bat` in every game folder that issues the needed `MOUNT`, `IMG`, `C:` and `RUN` commands. Example:

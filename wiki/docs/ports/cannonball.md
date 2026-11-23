@@ -51,7 +51,7 @@ Refer to Cannonball’s README/`roms.txt` for the current list of ROM filenames.
 
 ### Cannonball
 
-`cannonball` is the dedicated PC port bundled with REG-Linux. Its EmulationStation
+`cannonball` is the dedicated PC port bundled with REG-Linux. Its REG Station
 entry exposes `cannonball.videomode`, `cannonball.ratio`, and the `cannonball.highResolution`
 option so you can crank up the internal rendering resolution when needed.
 
@@ -63,6 +63,6 @@ doesn’t feel right.
 
 ## Troubleshooting
 
-- If the entry remains disabled, make sure `Cannonball.cannonball.disabled` is renamed so EmulationStation sees the ROM.
+- If the entry remains disabled, make sure `Cannonball.cannonball.disabled` is renamed so REG Station sees the ROM.
 - Double-check that the ROM set matches one of the MD5 values above; missing files stop the port from starting.
 - For developer or input questions, visit the generic support pages.

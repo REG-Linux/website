@@ -3,7 +3,7 @@ title: AYANEO Pocket S
 description: REG Linux on AYANEO Pocket S powered by Qualcomm 8gen2 (SM8550).
 manufacturer: AYANEO
 slug: ayaneo/pockets
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 15:39:58
 ---
 
 # AYANEO Pocket S
@@ -17,7 +17,7 @@ generated: 2026-11-01 16:45:33
 ## Install REG Linux
 
 !!! note
-    This device has a Qualcomm SoC: its stock bootloader does not start REG Linux from the card by itself, and a bootloader change is needed first. The steps will be documented here once they are verified for this device.
+    This device has a Qualcomm SoC. Qualcomm devices are not part of the REG Linux 26.12 release: no image is published for them yet. They need a bootloader change before REG Linux can start from the card, and that step will be documented once it is verified for this device.
 
 1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
    file, from the [download page](https://reglinux.org/download/). REG Linux is in

@@ -34,7 +34,7 @@ OpenJazz does not require BIOS dumps.
 touch "/userdata/roms/openjazz/Jazz Jackrabbit.game"
 ```
 
-This file alerts EmulationStation to the available ROM.
+This file alerts REG Station to the available ROM.
 
 ## ROM files
 

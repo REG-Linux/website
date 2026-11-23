@@ -52,7 +52,7 @@ Put Game Boy ROMs in `/userdata/roms/gb`. Want to boot games in Super Game Boy m
 
 ### RetroArch
 
-[RetroArch](https://docs.libretro.com/) is the frontend that unifies libretro cores, providing shared shaders, overlays, hotkeys, rewind, netplay and other enhancements. REG-Linux exposes many of the same options through EmulationStation menus.
+[RetroArch](https://docs.libretro.com/) is the frontend that unifies libretro cores, providing shared shaders, overlays, hotkeys, rewind, netplay and other enhancements. REG-Linux exposes many of the same options through REG Station menus.
 
 #### RetroArch configuration
 
@@ -60,7 +60,7 @@ Open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller 
 
 Standardized settings available to every Game Boy core include `gb.videomode`, `gb.ratio`, `gb.smooth`, `gb.shaders`, `gb.pixel_perfect`, `gb.decoration` and `gb.game_translation`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS API | `gb.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `gb.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase for crackles, lower for tighter latency once audio stabilizes. |
@@ -72,7 +72,7 @@ Gambatte is Nintendo-accurate, high-compatibility Game Boy/Color emulation built
 
 #### libretro: Gambatte configuration
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | SHOW BIOS BOOTLOGO | `global.gb_bootloader` | Show the original boot animation when starting a ROM (`enabled`, `disabled`). |
 | GHOSTING EFFECT | `global.gb_mix_frames` | Simulate the original LCD ghosting (`disabled`, `mix`, `mix_fast`, `lcd_ghosting`, `lcd_ghosting_fast`). |
@@ -85,7 +85,7 @@ mGBA is a fast, accurate Game Boy Advance-focused core that also handles Game Bo
 
 #### libretro: mGBA configuration
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | SHOW BIOS BOOTLOGO | `global.skip_bios_mgba` | Show the BIOS animation when a BIOS file is present (`True`, `False`). |
 | SUPER GB BORDERS (GB) | `gb.sgb_borders` | Display Super Game Boy borders for compatible Game Boy titles (`False`, `True`). |
@@ -101,7 +101,7 @@ VBA-M builds on the classic VisualBoyAdvance with debugging, filtering and palet
 
 #### libretro: VBA-M configuration
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | COLORIZATION (GB) | `gb.palettes` | Choose from palettes such as `original gameboy`, `black and white`, `gba sp`, `blue sea`, `dark knight`, `green forest`, `hot desert`, `pink dreams`, `weird colors`, plus many Super Game Boy and special palettes. |
 | COLOR CORRECTION (GB) | `gb.gbcoloroption_gb` | Simulate OG LCD color inaccuracies (`disabled`, `enabled`). |

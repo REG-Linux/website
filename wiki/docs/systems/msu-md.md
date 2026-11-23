@@ -33,7 +33,7 @@ GenesisPlusGX handles the Mega Drive, Master System, Game Gear and Mega CD libra
 
 #### Relevant configuration options
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | REDUCE SPRITE FLICKERING | `global.gpgx_no_sprite_limit` | Disable the 80-sprite limit. |
 | NTSC FILTER (MD) | `megadrive.gpgx_blargg_filter_md` | Choose Blargg filters (Off, Composite, SVGA, RGB). |
@@ -44,7 +44,7 @@ GenesisPlusGX handles the Mega Drive, Master System, Game Gear and Mega CD libra
 
 ## Controls
 
-MSU-MD uses the standard Mega Drive controller mapping on the REG-Linux Retropad. Use RetroArch or EmulationStation’s input remapping for light guns, paddle controllers, or extra keys when needed.
+MSU-MD uses the standard Mega Drive controller mapping on the REG-Linux Retropad. Use RetroArch or REG Station’s input remapping for light guns, paddle controllers, or extra keys when needed.
 
 ![megadrive controller overlay](../images/controller-overlays/megadrive-1.png)
 

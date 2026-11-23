@@ -54,7 +54,7 @@ RetroArch runs the `libretro: atari800` core for Atari 5200 content, sharing con
 
 #### libretro: atari800 configuration
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings specific to atari800 |  |
 | ATARI SYSTEM `atari800.atari800_system` | Pick the Atari model/emulation mode, affecting RAM/ROM expectations.  => 400/800 (OS B) `400/800`, 800XL `800XL`, 130XE `130XE`, Modern XL/XE `Modern`, etc. |
@@ -70,8 +70,6 @@ Many emulator parameters (cartridge type selection, advanced input mapping, vide
 ## Controls
 
 Here are the default Atari 5200 controls mapped to a REG-Linux Retropad:
-
-![](../images/controller-overlays/atari5200-1.png)
 
 Use the Quick Menu to tweak mappings if you need to adjust keypad buttons or analog input handling.
 

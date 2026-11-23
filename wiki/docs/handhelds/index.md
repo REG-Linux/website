@@ -55,11 +55,20 @@ install REG Linux. The status comes from the compatibility matrix.
 - [Ayn Odin 2](ayn/odin2.md)
 - [Ayn Odin 2 Portal](ayn/odin2-portal.md)
 - [Ayn ODIN2MINI](ayn/odin2-mini.md)
+- [Ayn Thor](ayn/thor.md)
 
 ## Gameforce
 
 - [Gameforce ACE](gameforce/ace.md)
 - [Gameforce CHI](gameforce/chi.md)
+
+## GCW
+
+- [GCW Zero](gcw/zero.md)
+
+## GPD
+
+- [GPD XD](gpd/xd.md)
 
 ## HardKernel
 
@@ -73,7 +82,8 @@ install REG Linux. The status comes from the compatibility matrix.
 
 ## MagicX
 
-- [XU Mini M](magicx/xu-mini-m.md)
+- [MagicX Zero 28](magicx/zero-28.md)
+- [MagicX Zero 40](magicx/zero-40.md)
 
 ## Mangmi
 
@@ -83,27 +93,28 @@ install REG Linux. The status comes from the compatibility matrix.
 
 - [MiniLoong Pocket 1](miniloong/pocket1.md)
 
+## Miyoo
+
+- [Miyoo A30](miyoo/a30.md)
+
 ## Nintendo
 
 - [Nintendo Nes Classic](unbranded/nes-classic.md)
 - [Nintendo Super Nes Classic](unbranded/snes-classic.md)
 
+## PocketGo
+
+- [PocketGo S30](pocketgo/s30.md)
+
 ## Powkiddy
 
 - [PocketGo 2](powkiddy/pocketgo-2.md)
-- [Powkiddy RGB10](powkiddy/rgb10.md)
-- [Powkiddy RGB10X](powkiddy/rgb10x.md)
 - [Powkiddy RGB20SX](powkiddy/rgb20sx.md)
 - [Powkiddy RGB30](powkiddy/rgb30.md)
 - [Powkiddy RK2023](powkiddy/rk2023.md)
 - [Powkiddy V90S](powkiddy/v90s.md)
-- [Powkiddy X35H](powkiddy/x35h.md)
-- [Powkiddy X35S](powkiddy/x35s.md)
 - [Powkiddy X55](powkiddy/x55.md)
-- [Powkiddy XU10](powkiddy/xu10.md)
 - [RGB10 Max 3](powkiddy/rgb10-max-3.md)
-- [RGB10 Max 3 Pro](powkiddy/rgb10-max-3-pro.md)
-- [RGB20 Pro](powkiddy/rgb20-pro.md)
 
 ## Retroid
 
@@ -116,12 +127,11 @@ install REG Linux. The status comes from the compatibility matrix.
 
 - [TrimUI Brick](trimui/brick.md)
 - [TrimUI Smart Pro](trimui/smart-pro.md)
+- [TrimUI Smart Pro S](trimui/smart-pro-s.md)
 
 ## Unbranded
 
-- [Game Console R33S](unbranded/game-console-r33s.md)
-- [Game Console R35S R36S](unbranded/game-console-r35s-r36s.md)
-- [RK3326 clones (including K36 and BatleXP G350)](unbranded/rk3326-clones.md)
+- [G28](unbranded/g28.md)
 
 ## Unknown
 

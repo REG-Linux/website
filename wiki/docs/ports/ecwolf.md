@@ -55,7 +55,7 @@ Really custom setups can mix `.pk3` archives directly next to the `.ecwolf` fold
 
 ### ECWolf
 
-REG-Linux bundles the ECWolf binary with the standard `ecwolf.*` ES options (`videomode`, `padtokeyboard`, `decoration`, etc.). Most tuning is done inside ECWolf’s native menu or by editing its `config.wl6`/`config.sod` files.
+REG-Linux bundles the ECWolf binary with the standard `ecwolf.*` REG Station options (`videomode`, `padtokeyboard`, `decoration`, etc.). Most tuning is done inside ECWolf’s native menu or by editing its `config.wl6`/`config.sod` files.
 
 ## Controls
 

@@ -54,11 +54,11 @@ Place your Sega Game Gear ROMs in `/userdata/roms/gamegear`.
 
 #### RetroArch configuration
 
-While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration). From here you can tweak core options, controller mappings and load/save states. REG-Linux also mirrors many of those options inside EmulationStation menus.
+While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration). From here you can tweak core options, controller mappings and load/save states. REG-Linux also mirrors many of those options inside REG Station menus.
 
 Standardized features available to all Game Gear cores include `gamegear.videomode`, `gamegear.ratio`, `gamegear.smooth`, `gamegear.shaders`, `gamegear.pixel_perfect`, `gamegear.decoration` and `gamegear.game_translation`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS BACKEND | `gamegear.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `gamegear.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase for pops/crackles, reduce once audio is stable. |

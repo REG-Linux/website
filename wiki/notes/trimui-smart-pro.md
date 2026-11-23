@@ -1,0 +1,2 @@
+- Boots from the microSD card; the internal eMMC is not touched.
+- Sleep is not supported yet.

@@ -73,7 +73,7 @@ RetroAchievements are supported with `libretro: PPSSPP` when launching `.iso` im
 2. Enable texture dumping (`Settings → Tools → Developer Tools → Texture Replacement`), run briefly, then disable **Save new textures** while leaving **Replace textures** active.
 3. Replace the dumped textures in `/userdata/saves/psp/PSP/TEXTURES/<TITLE>/new/` with HD packs.
 
-In REG-Linux v39+, the cache moved to `/userdata/system/configs/ppsspp/PSP/TEXTURES/`; adjust paths if needed. If a game looks wrong due to missing fonts, copy `ltn*.pgf`, `jpn0.pgf`, and `krn0.pgf` from `/usr/share/ppsspp/PPSSPP/flash0/font` into the same directory and run `REG-Linux-save-overlay`.
+The cache is in `/userdata/system/configs/ppsspp/PSP/TEXTURES/`; adjust paths if needed. If a game looks wrong due to missing fonts, copy `ltn*.pgf`, `jpn0.pgf`, and `krn0.pgf` from `/usr/share/ppsspp/PPSSPP/flash0/font` into the same directory and run `REG-Linux-save-overlay`.
 
 If `libretro: PPSSPP` complains about missing fonts, either symlink or copy the `/usr/share/ppsspp/PPSSPP` directory into `/userdata/bios/`.
 

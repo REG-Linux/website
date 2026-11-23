@@ -51,7 +51,7 @@ DuckStation’s libretro ports (`libretro: swanstation`) and alternatives such a
 
 ## Controls
 
-The overlay at `../images/controller-overlays/psx-1.png` maps the DualShock layout. Use `/remapping_controls_per_emulator` to customize button assignments or set up GunCon/mouse input as needed.
+The overlay at `../images/controller-overlays/psx-1.png` maps the DualShock layout. Use [Controllers](/wiki/start-here/controllers/) to customize button assignments or set up GunCon/mouse input as needed.
 
 ## Troubleshooting
 

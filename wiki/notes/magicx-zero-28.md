@@ -1,0 +1,3 @@
+- Put the microSD card in the **TF1** slot. The internal storage is not touched.
+- Wi-Fi and Bluetooth (XR829): 2.4 GHz only, and downloads are slow (a few Mbit/s).
+- Sleep is not supported yet: the power key turns the device off.

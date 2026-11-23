@@ -56,29 +56,16 @@ roms/
 
 REG-Linux runs the Hypseus Singe fork. It exposes standardized features such as `daphne.videomode`, `daphne.ratio`, `daphne.padtokeyboard` plus detailed `daphne.*` configuration keys.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | GRAPHICS API `daphne.gfxbackend` | Choose OpenGL or Vulkan. |
-| ASPECT RATIO `daphne.daphne_ratio` | Original, stretch or forced 4:3. |
-| SCREEN ROTATION `daphne.daphne_rotate` | Rotate 0°/90°/270°. |
-| BILINEAR FILTER `daphne.bilinear_filter` | Smooth video with bilinear filtering. |
-| SCANLINES `daphne.daphne_scanlines` | Toggle scanline overlay. |
-| BLEND SPRITES `daphne.blend_sprites` | Restore outlines for Singe sprites (ActionMax). |
-| OVERLAY SIZE `daphne.overlay_size` | Change overlay scaling for Singe games. |
-| ABSOLUTE MOUSE `daphne.abs_mouse_input` | Needed for lightgun-based titles. |
-| INVERT AXIS `daphne.invert_axis` | Flip vertical axis for flight games. |
 | JOYSTICK SENSITIVITY `daphne.singe_joystick_range` | Set joystick response (5-20). |
 | HIDE CROSSHAIRS `daphne.singe_crosshair` | Hide lightgun cursors when desired. |
-| TEXTURE STREAMING `daphne.daphne_texturestream` | Stream video textures for performance (avoid with ActionMax/scanlines). |
-| CUSTOM CONTROLLER `daphne.daphne_joy` | Force custom controller config from `custom.ini`. |
-
 Use a `<game>.commands` file inside the `.daphne` folder to pass extra command-line parameters (e.g., `-nocrc -latency 950`).
 
 ## Controls
 
 The default overlay maps console inputs to the Retropad. Press `Start` to toggle the overlay, move to a button with the D-pad/stick, and press a face button to activate it. Press `Start` again to hide the overlay.
-
-![DAPHNE controller overlay](../images/controller-overlays/daphne.png)
 
 | Gamepad control | Arcade function |
 | --- | --- |

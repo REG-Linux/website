@@ -31,7 +31,7 @@ No BIOS files are required for LCD games emulation.
 
 ## ROMs
 
-Put LCD handheld images in `/userdata/roms/lcdgames`. MAME/MESS can load `.mgw` snapshots directly; zipped collections and `.zip`/`.7z` archives are also accepted. Nintendo Game & Watch dumps can live here, but they may benefit from the dedicated Game & Watch system, with both systems optionally grouped under a single LCD collection in EmulationStation.
+Put LCD handheld images in `/userdata/roms/lcdgames`. MAME/MESS can load `.mgw` snapshots directly; zipped collections and `.zip`/`.7z` archives are also accepted. Nintendo Game & Watch dumps can live here, but they may benefit from the dedicated Game & Watch system, with both systems optionally grouped under a single LCD collection in REG Station.
 
 ## Emulators
 
@@ -41,11 +41,11 @@ Put LCD handheld images in `/userdata/roms/lcdgames`. MAME/MESS can load `.mgw` 
 
 #### RetroArch configuration
 
-While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to edit options, controller mappings and shaders. REG-Linux mirrors many of those toggles through EmulationStation menus.
+While a core is running, open the **Quick Menu** with `[HOTKEY]` + the south face button (see controller configuration) to edit options, controller mappings and shaders. REG-Linux mirrors many of those toggles through REG Station menus.
 
 Standardized settings include `lcdgames.videomode`, `lcdgames.ratio`, `lcdgames.smooth`, `lcdgames.shaders`, `lcdgames.pixel_perfect`, `lcdgames.decoration`, `lcdgames.game_translation`, `lcdgames.audio_latency`, `lcdgames.video_threaded`.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | GRAPHICS API | `lcdgames.gfxbackend` | Choose OpenGL (`opengl`) or Vulkan (`vulkan`). |
 | AUDIO LATENCY | `lcdgames.audio_latency` | Buffer size in milliseconds: 256, 192, 128, 64, 32, 16, 8. Increase if you hear crackles. |
@@ -59,7 +59,7 @@ Standardized settings include `lcdgames.videomode`, `lcdgames.ratio`, `lcdgames.
 
 Standardized options include `lcdgames.videomode`, `lcdgames.decoration`, `lcdgames.padtokeyboard` plus the global BGFX/resolution options.
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | VIDEO MODE | `lcdgames.video` | BGFX post-processing, Accel or OpenGL rendering. |
 | BGFX GRAPHICS API | `lcdgames.bgfxbackend` | Select backend when BGFX is enabled. |

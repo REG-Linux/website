@@ -26,11 +26,11 @@ No BIOS is needed.
 
 ## Game data
 
-Install the HCL data via the Content Downloader into `/userdata/roms/hcl/`. Once the package is present, the `.game` entry surfaces in EmulationStation automatically.
+Install the HCL data via the Content Downloader into `/userdata/roms/hcl/`. Once the package is present, the `.game` entry surfaces in REG Station automatically.
 
 ## Controls
 
-The default mapping uses the RETROpad for movement, attacks, and jumps. Adjust button mapping in the Quick Menu or through `/remapping_controls_per_emulator` if you need alternative bindings.
+The default mapping uses the RETROpad for movement, attacks, and jumps. Adjust button mapping in the Quick Menu or through [Controllers](/wiki/start-here/controllers/) if you need alternative bindings.
 
 ## Troubleshooting
 

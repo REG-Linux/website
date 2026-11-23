@@ -1,0 +1,4 @@
+- Boots from the microSD card (the device tries the card first); nothing is written to the eMMC.
+- Sleep and the lid sensor work.
+- HDMI output is not supported yet; the headphone output is untested.
+- It sometimes does not finish booting: power off and on again.

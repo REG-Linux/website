@@ -30,7 +30,7 @@ Create a placeholder file in the same folder:
 touch "/userdata/roms/sonic-mania/Sonic Mania.sman"
 ```
 
-This file allows EmulationStation to identify and launch the game.
+This file allows REG Station to identify and launch the game.
 
 ## Shaders
 
@@ -50,7 +50,7 @@ This ensures the port loads the proper shader packs.
 
 ### Sonic Mania
 
-The `sonic-mania` binary honors Quick Menu overrides and supports custom mods inside the `mods/` folder. Use the Quick Menu or EmulationStation advanced options to tweak graphics, shaders, or controller mappings.
+The `sonic-mania` binary honors Quick Menu overrides and supports custom mods inside the `mods/` folder. Use the Quick Menu or REG Station advanced options to tweak graphics, shaders, or controller mappings.
 
 ## Controls
 

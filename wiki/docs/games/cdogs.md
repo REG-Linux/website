@@ -30,7 +30,7 @@ Install the assets through the Content Downloader into `/userdata/roms/cdogs/`. 
 
 ## Controls
 
-C-Dogs uses the standard RETROpad mappings. Configure action buttons or keyboard bindings via the Quick Menu or `/remapping_controls_per_emulator` if you want to tweak the layout.
+C-Dogs uses the standard RETROpad mappings. Configure action buttons or keyboard bindings via the Quick Menu or [Controllers](/wiki/start-here/controllers/) if you want to tweak the layout.
 
 ## Troubleshooting
 

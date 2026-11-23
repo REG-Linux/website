@@ -42,7 +42,7 @@ Download games from <http://uzebox.org/wiki/Games_and_Demos> and drop the `.uze`
 
 Uzebox games mimic the NES pad layout. Refer to
 `https://raw.githubusercontent.com/batocera-linux/batocera-controller-overlays/master/solid-4k/uzebox.png`
-for the default mapping and customize inputs via `/remapping_controls_per_emulator`.
+for the default mapping and customize inputs via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

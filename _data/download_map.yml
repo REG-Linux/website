@@ -24,13 +24,9 @@ anbernic-rg353v-s: rk3568-anbernic-rgxx3
 anbernic-rg503: rk3568-anbernic-rgxx3
 anbernic-rgarc: rk3568-anbernic-rgxx3
 powkiddy-rgb10-max-3: rk3568-anbernic-rgxx3
-powkiddy-rgb20-pro: rk3568-anbernic-rgxx3
 powkiddy-rgb20sx: rk3568-anbernic-rgxx3
 powkiddy-rgb30: rk3568-anbernic-rgxx3
 powkiddy-rk2023: rk3568-anbernic-rgxx3
-powkiddy-x35h: rk3568-anbernic-rgxx3
-powkiddy-x35s: rk3568-anbernic-rgxx3
-
 # RK3568 per-board
 powkiddy-x55: rk3568-powkiddy-x55
 hardkernel-odroid-m1: rk3568-odroid-m1
@@ -48,13 +44,6 @@ anbernic-rg351v: rk3326
 gameforce-chi: rk3326
 hardkernel-odroid-go-advance: rk3326
 hardkernel-odroid-go-super: rk3326
-magicx-xu-mini-m: rk3326
-powkiddy-rgb10: rk3326
-powkiddy-rgb10x: rk3326
-powkiddy-xu10: rk3326
-unbranded-game-console-r33s: rk3326
-unbranded-game-console-r35s-r36s: rk3326
-unbranded-rk3326-clones: rk3326
 batlexp-g350: rk3326
 pocketgo-2: rk3326
 
@@ -168,7 +157,6 @@ hardkernel-odroid-n2: s922x-odroid-n2
 hardkernel-odroid-n2-plus: s922x-odroid-n2plus
 hardkernel-odroid-n2l: s922x-odroid-n2l
 khadas-vim-3: s922x-khadas-vim3
-powkiddy-rgb10-max-3-pro: s922x-odroid-go-ultra
 radxa-zero-2: s922x-radxa-zero2
 
 # Amlogic other
@@ -246,3 +234,8 @@ nvidia-jetson-nano: l4t
 # Allwinner A133
 orange-pi-4a: t527-orangepi-4a
 orange-pi-r2s: k1-orangepi-rv2
+miyoo-a30: a33-miyoo-a30
+pocketgo-s30: a33-pocketgo-s30
+trimui-smart-pro-s: t527-trimui-smart-pro-s
+unbranded-g28: rk3128-g28
+gpd-xd: rk3288-gpd-xd

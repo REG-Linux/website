@@ -1,0 +1,45 @@
+---
+title: GCW Zero
+description: REG Linux on GCW Zero powered by Ingenic JZ4770.
+manufacturer: GCW
+slug: gcw/zero
+generated: 2026-11-23 16:44:01
+---
+
+# GCW Zero
+
+
+## Hardware & Compatibility
+
+<div data-reg-compat="gcw-zero:specs"></div>
+<script src="https://compat.reglinux.org/widget.js"></script>
+
+## Install REG Linux
+
+1. Download the image for this device, a `reglinux-<target>-<board>-<version>.img.gz`
+   file, from the [download page](https://reglinux.org/download/). REG Linux is in
+   pre-release: images are not published for every device yet.
+2. Write the image to a microSD card with balenaEtcher or Raspberry Pi Imager, or from
+   a Linux shell: check with `lsblk` which device is the card, then
+   `gunzip -c reglinux-*.img.gz | sudo dd of=/dev/sdX bs=4M conv=fsync`.
+   Writing the image erases the card.
+3. Insert the card and power the device on. On the first boot REG Linux grows its data
+   partition to the size of the card, then reboots once.
+
+REG Linux runs from the card and leaves the device's internal storage alone.
+
+## Files and settings
+
+The card has two partitions:
+
+| Partition | Format | Contents |
+|---|---|---|
+| `REGLINUX` | FAT | boot files and `system-boot.conf` |
+| `SHARE` | ext4, mounted at `/userdata` | games in `/userdata/roms/<system>/`, BIOS files in `/userdata/bios/`, settings in `/userdata/system/system.conf` |
+
+The `SHARE` partition is also reachable over the network through Samba when the
+service is enabled.
+
+## Notes
+
+No device-specific notes yet.

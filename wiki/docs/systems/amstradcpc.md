@@ -59,7 +59,7 @@ Standardized REG-Linux features exposed for CPC cores include `amstradcpc.videom
 
 #### libretro: cap32
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all systems this core supports |  |
 | GRAPHICS API `amstradcpc.gfxbackend` | Choose the renderer: OpenGL for compatibility, Vulkan for accelerated builds.  => OpenGL `opengl`, Vulkan `vulkan`. |
@@ -68,7 +68,7 @@ Standardized REG-Linux features exposed for CPC cores include `amstradcpc.videom
 
 ##### cap32-specific options
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | CPC MODEL `global.cap32_model` | Emulate a specific CPC model, affecting memory/ROM expectations.  => 464 `464`, 6128 `6128`, 6128+ `6128+`. |
 | RAM SIZE `global.cap32_ram` | Choose how much RAM the emulated CPC exposes; keep this in line with the software’s requirements.  => 64 `64`, 128 `128`, 192+ `192`, 512 `512`, 576+ `576`. |

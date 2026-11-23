@@ -1,0 +1,3 @@
+- Boots from the microSD card; the internal storage is not touched.
+- Sound: built-in speaker only; the headphone jack is not handled yet.
+- Sleep is not supported yet.

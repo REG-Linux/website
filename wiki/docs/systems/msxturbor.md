@@ -39,7 +39,7 @@ The MSX Turbo-R closed the MSX era in 1990 with a high-speed R800 processor plus
 
 ## ROMs
 
-Keep Turbo-R cartridge dumps in `/userdata/roms/msxturbor`. Wrap multi-disk packages with `.m3u` playlists so EmulationStation presents a single listing.
+Keep Turbo-R cartridge dumps in `/userdata/roms/msxturbor`. Wrap multi-disk packages with `.m3u` playlists so REG Station presents a single listing.
 
 ## BIOS
 

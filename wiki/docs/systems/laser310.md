@@ -49,13 +49,13 @@ Store Laser 310 software under `/userdata/roms/laser310`. Snapshots (`.vz`) are 
 
 ### RetroArch
 
-RetroArch exposes the `libretro: mame` core for Laser 310 content. Use the Quick Menu (`[HOTKEY]` + south face button) to edit core settings, controller mappings and shaders. REG-Linux surfaces many of the same options via EmulationStation.
+RetroArch exposes the `libretro: mame` core for Laser 310 content. Use the Quick Menu (`[HOTKEY]` + south face button) to edit core settings, controller mappings and shaders. REG-Linux surfaces many of the same options via REG Station.
 
 #### libretro: mame configuration
 
 Standardized options include `laser310.autosave` and `laser310.netplay`. The bulk of RetroArch/MAME’s global toggles remain the same as other MAME systems (overclock, rendering resolution, art filters, etc.).
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | OVERCLOCK (UNSTABLE) | `global.mame_cpu_overclock` | Increase CPU speed (`default`, `30`–`150`). |
 | RENDERING RESOLUTION | `global.mame_altres` | Scale the render target (`640x480`, `800x600`, ..., `3840x2160`). |
@@ -79,8 +79,6 @@ The standalone MAME builds can also launch Laser 310 titles. Hit `[HOTKEY]` + th
 ## Controls
 
 Laser 310 games map to the REG-Linux Retropad. Use the on-screen overlay or MAME’s input config to align the buttons with the device’s keypad and joystick.
-
-![Laser 310 controller overlay](../images/controller-overlays/laser310.png)
 
 ## Troubleshooting
 

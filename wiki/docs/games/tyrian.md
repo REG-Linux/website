@@ -33,7 +33,7 @@ The native Tyrian binary uses the provided data. It respects the standard Quick 
 
 ## Controls
 
-Tyrian ships with keyboard and controller presets. Map movement, fire, and bombs via the in-game controls menu or use `/remapping_controls_per_emulator` when you want to swap actions to other buttons.
+Tyrian ships with keyboard and controller presets. Map movement, fire, and bombs via the in-game controls menu or use [Controllers](/wiki/start-here/controllers/) when you want to swap actions to other buttons.
 
 ## Troubleshooting
 

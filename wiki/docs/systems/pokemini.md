@@ -42,7 +42,7 @@ The libretro core emulates the console’s LCD with motion sensors. It shows com
 
 ## Controls
 
-Default mappings mirror the Game Boy layout: D-pad for movement and the two face buttons for the Pokémon Mini’s action buttons. If necessary, create a custom remap via `/remapping_controls_per_emulator`.
+Default mappings mirror the Game Boy layout: D-pad for movement and the two face buttons for the Pokémon Mini’s action buttons. If necessary, create a custom remap via [Controllers](/wiki/start-here/controllers/).
 
 ## Troubleshooting
 

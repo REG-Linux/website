@@ -57,8 +57,6 @@ RetroArch loads Arduboy software through the `libretro: arduous` core. For gener
 
 Here’s the default Arduboy layout mapped onto a REG-Linux Retropad:
 
-![arduboy controller overlay](../images/controller-overlays/arduboy.png)
-
 To change mappings, use RetroArch’s input settings or REG-Linux’s controller configuration menus.
 
 ## Troubleshooting

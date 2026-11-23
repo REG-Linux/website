@@ -37,13 +37,15 @@ nav:
   - Community: https://reglinux.org/community/
 - Start Here:
   - Overview: start-here/index.md
-  - Getting Started: getting-started.md
-  - Installation: installation.md
-  - First Boot Checklist: start-here/first-boot.md
-  - Updates & Rollback: start-here/updates-rollback.md
-- Players:
-  - Overview: players/index.md
-  - Controller Setup: players/controller-setup.md
+  - Install: installation.md
+  - First Boot: start-here/first-boot.md
+  - Add Games and BIOS: start-here/adding-games.md
+  - Controllers and Hotkeys: start-here/controllers.md
+  - Network, SSH and Samba: start-here/network.md
+  - Updates: start-here/updates-rollback.md
+- Help:
+  - Troubleshooting: help/troubleshooting.md
+  - FAQ: help/faq.md
 - Devices:
   - Overview: devices/index.md
   - Compatibility: devices/compatibility.md
@@ -65,9 +67,6 @@ nav:
       - Banana Pi M4 Berry: sbcs/banana-pi-m4-berry.md
       - Banana Pi M5: sbcs/banana-pi-m5.md
       - Banana Pi M7: sbcs/banana-pi-m7.md
-    - Beelink:
-      - Beelink GT King: sbcs/beelink-gt-king.md
-      - Beelink GT King Pro: sbcs/beelink-gt-king-pro.md
     - Firefly:
       - Firefly Station M2 ROC-RK3566 PC: sbcs/firefly-station-m2-roc-rk3566-pc.md
       - Firefly Station M3 ROC-RK3588S PC: sbcs/firefly-station-m3-roc-rk3588s-pc.md
@@ -163,9 +162,14 @@ nav:
       - "Ayn Odin 2": handhelds/ayn/odin2.md
       - "Ayn Odin 2 Portal": handhelds/ayn/odin2-portal.md
       - "Ayn ODIN2MINI": handhelds/ayn/odin2-mini.md
+      - "Ayn Thor": handhelds/ayn/thor.md
     - Gameforce:
       - "Gameforce ACE": handhelds/gameforce/ace.md
       - "Gameforce CHI": handhelds/gameforce/chi.md
+    - GCW:
+      - "GCW Zero": handhelds/gcw/zero.md
+    - GPD:
+      - "GPD XD": handhelds/gpd/xd.md
     - HardKernel:
       - "HardKernel ODROID Go Super": handhelds/hardkernel/odroid-go-super.md
       - "HardKernel ODROID GO Ultra": handhelds/hardkernel/odroid-go-ultra.md
@@ -173,29 +177,27 @@ nav:
     - Koch Media:
       - "Capcom Home Arcade": handhelds/koch-media/capcom-home-arcade.md
     - MagicX:
-      - "XU Mini M": handhelds/magicx/xu-mini-m.md
+      - "MagicX Zero 28": handhelds/magicx/zero-28.md
+      - "MagicX Zero 40": handhelds/magicx/zero-40.md
     - Mangmi:
       - "Mangmi Pocketmax": handhelds/mangmi/pocketmax.md
     - MiniLoong:
       - "MiniLoong Pocket 1": handhelds/miniloong/pocket1.md
+    - Miyoo:
+      - "Miyoo A30": handhelds/miyoo/a30.md
     - Nintendo:
       - "Nintendo Nes Classic": handhelds/unbranded/nes-classic.md
       - "Nintendo Super Nes Classic": handhelds/unbranded/snes-classic.md
+    - PocketGo:
+      - "PocketGo S30": handhelds/pocketgo/s30.md
     - Powkiddy:
       - "PocketGo 2": handhelds/powkiddy/pocketgo-2.md
-      - "Powkiddy RGB10": handhelds/powkiddy/rgb10.md
-      - "Powkiddy RGB10X": handhelds/powkiddy/rgb10x.md
       - "Powkiddy RGB20SX": handhelds/powkiddy/rgb20sx.md
       - "Powkiddy RGB30": handhelds/powkiddy/rgb30.md
       - "Powkiddy RK2023": handhelds/powkiddy/rk2023.md
       - "Powkiddy V90S": handhelds/powkiddy/v90s.md
-      - "Powkiddy X35H": handhelds/powkiddy/x35h.md
-      - "Powkiddy X35S": handhelds/powkiddy/x35s.md
       - "Powkiddy X55": handhelds/powkiddy/x55.md
-      - "Powkiddy XU10": handhelds/powkiddy/xu10.md
       - "RGB10 Max 3": handhelds/powkiddy/rgb10-max-3.md
-      - "RGB10 Max 3 Pro": handhelds/powkiddy/rgb10-max-3-pro.md
-      - "RGB20 Pro": handhelds/powkiddy/rgb20-pro.md
     - Retroid:
       - "Retroid Pocket 5": handhelds/retroid/pocket-5.md
       - "Retroid Pocket Flip2": handhelds/retroid/pocket-flip2.md
@@ -204,10 +206,9 @@ nav:
     - TrimUI:
       - "TrimUI Brick": handhelds/trimui/brick.md
       - "TrimUI Smart Pro": handhelds/trimui/smart-pro.md
+      - "TrimUI Smart Pro S": handhelds/trimui/smart-pro-s.md
     - Unbranded:
-      - "Game Console R33S": handhelds/unbranded/game-console-r33s.md
-      - "Game Console R35S R36S": handhelds/unbranded/game-console-r35s-r36s.md
-      - "RK3326 clones (including K36 and BatleXP G350)": handhelds/unbranded/rk3326-clones.md
+      - "G28": handhelds/unbranded/g28.md
     - Unknown:
       - "Unknown Powkiddy": handhelds/unknown/powkiddy.md
     - Valve:
@@ -322,7 +323,6 @@ nav:
     - Dos (x86): systems/dos.md
     - Electron: systems/electron.md
     - Final Burn Neo: systems/fbneo.md
-    - Applications: systems/flatpak.md
     - FM-7: systems/fm7.md
     - FM-TOWNS: systems/fmtowns.md
     - Gamate: systems/gamate.md
@@ -356,7 +356,6 @@ nav:
     - Super Game Boy: systems/sgb.md
     - Socrates: systems/socrates.md
     - Spectravideo SV-328: systems/spectravideo.md
-    - Steam: systems/steam.md
     - SuFami Turbo: systems/sufami.md
     - Supervision: systems/supervision.md
     - Super A'Can: systems/supracan.md
@@ -437,14 +436,34 @@ nav:
 - Maintainers: maintainers/index.md
 - Developers:
   - Overview: developers/index.md
+  - Build REG Linux: developers/build.md
+  - Add a Board: developers/new-board.md
   - Architecture: architecture.md
-  - Developer Guide: dev-guide.md
 - Community: community.md
 - Credits & licence: credits.md
 plugins:
 - search
 - redirects:
     redirect_maps:
+      dev-guide.md: developers/build.md
+      sbcs/x96-max-plus.md: tvboxes/x96/max-plus.md
+      sbcs/x96-mate.md: tvboxes/x96/mate.md
+      sbcs/x96-air.md: tvboxes/x96/air.md
+      sbcs/wetek-core.md: tvboxes/wetek/core.md
+      sbcs/tronsmart-s82.md: tvboxes/tronsmart/s82.md
+      sbcs/nexbox-a95x.md: tvboxes/nexbox/a95x.md
+      sbcs/nexbox-a1.md: tvboxes/nexbox/a1.md
+      sbcs/h96-max.md: tvboxes/h96/max.md
+      sbcs/beelink-gt-king-pro.md: tvboxes/beelink/gt-king-pro.md
+      sbcs/beelink-gt-king.md: tvboxes/beelink/gt-king.md
+      sbcs/a95xf3-air.md: tvboxes/a95x/a95xf3-air.md
+      sbcs/gcw-zero.md: handhelds/gcw/zero.md
+      sbcs/ayn-thor.md: handhelds/ayn/thor.md
+      sbcs/magicx-zero-40.md: handhelds/magicx/zero-40.md
+      sbcs/magicx-zero-28.md: handhelds/magicx/zero-28.md
+      getting-started.md: start-here/index.md
+      players/controller-setup.md: start-here/controllers.md
+      players/index.md: start-here/index.md
       handhelds/anbernic.md: handhelds/index.md
       handhelds/anbernic/rg351pmv.md: handhelds/anbernic/rg351-p-m-mp.md
       handhelds/anbernic/rg353pmvvs.md: handhelds/anbernic/rg353p-s.md
@@ -452,8 +471,6 @@ plugins:
       handhelds/ayn.md: handhelds/index.md
       handhelds/gameforce/gameforce-ace.md: handhelds/gameforce/ace.md
       handhelds/hardkernel.md: handhelds/index.md
-      handhelds/magicx/zero-28.md: handhelds/index.md
-      handhelds/magicx/zero-40.md: handhelds/index.md
       handhelds/powkiddy.md: handhelds/index.md
       handhelds/retroid.md: handhelds/index.md
       handhelds/retroid/retroid-pocket-5.md: handhelds/retroid/pocket-5.md
@@ -477,12 +494,8 @@ plugins:
       sbcs/hardkernel-odroid-go-advance.md: handhelds/hardkernel/odroid-go-advance.md
       sbcs/hardkernel-odroid-go-super.md: handhelds/hardkernel/odroid-go-super.md
       sbcs/hardkernel-odroid-go-ultra.md: handhelds/hardkernel/odroid-go-ultra.md
-      sbcs/magicx-xu-mini-m.md: handhelds/magicx/xu-mini-m.md
       sbcs/nintendo-nes-classic.md: handhelds/unbranded/nes-classic.md
       sbcs/nintendo-snes-classic.md: handhelds/unbranded/snes-classic.md
-      sbcs/unbranded-game-console-r33s.md: handhelds/unbranded/game-console-r33s.md
-      sbcs/unbranded-game-console-r35s-r36s.md: handhelds/unbranded/game-console-r35s-r36s.md
-      sbcs/unbranded-rk3326-clones.md: handhelds/unbranded/rk3326-clones.md
 - git-revision-date-localized:
     fallback_to_build_date: true
     strict: false
@@ -495,6 +508,7 @@ markdown_extensions:
     permalink: true
 - footnotes
 - md_in_html
+- attr_list
 extra_css:
   - assets/reglinux-theme.css
 extra:

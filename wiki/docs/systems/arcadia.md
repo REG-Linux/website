@@ -56,7 +56,7 @@ Open the MAME [in-game menu](https://docs.mamedev.org/usingmame/ui.html) with `[
 
 Standardized REG-Linux features available for this system are `arcadia.videomode`, `arcadia.decoration` and `arcadia.padtokeyboard`.
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all versions of this emulator |  |
 | GRAPHICS BACKEND `arcadia.video` | Choose the renderer. BGFX enables shaders while Accel/OpenGL provide more direct paths.  => BGFX `bgfx`, Accel `accel`, OpenGL `opengl`. |
@@ -64,15 +64,12 @@ Standardized REG-Linux features available for this system are `arcadia.videomode
 | BGFX VIDEO FILTER `arcadia.bgfxshaders` | Apply a post-processing shader.  => Off `None`, Bilinear `default`, CRT Geom `crt-geom`, CRT Geom Deluxe `crt-geom-deluxe`, Super Eagle `eagle`, HLSL `hlsl`, HQ2X `hq2x`, HQ3X `hq3x`, HQ4X `hq4x`. |
 | CRT SWITCHRES `arcadia.switchres` | Enable SwitchRes profiles for CRT displays.  => Off `0`, On `1`. |
 | TATE MODE `arcadia.rotation` | Rotate the output 90°/270° for vertical displays.  => Off `None`, Rotate 90 `autoror`, Rotate 270 `autorol`. |
-| ALT DPAD MODE `arcadia.altdpad` | Adjust D-pad orientation for different controllers.  => Off (Default) `0`, DS3 Orientation `1`, X360 Orientation `2`. |
 | Settings specific to Arcadia |  |
 | CUSTOM CONFIG `arcadia.pergamecfg` | Allow per-game custom configuration via the MAME menu.  => On `1`, Off `0`. |
 
 ## Controls
 
 The default Arcadia 2001 controls map to a REG-Linux Retropad:
-
-![arcadia-1](../images/controller-overlays/arcadia-1.png)
 
 Use MAME’s in-game menu if you need to tweak controller mappings beyond the default.
 

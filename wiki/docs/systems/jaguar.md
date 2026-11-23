@@ -50,7 +50,7 @@ Save files are written to `/userdata/saves/jaguar`. Virtual Jaguar generates bot
 
 #### libretro: virtualjaguar configuration
 
-| ES setting name | REG-Linux.conf_key | Description & values |
+| REG Station setting | `system.conf` key | Description & values |
 | --- | --- | --- |
 | FAST BLITTER (LESS COMPATIBLE) | `global.usefastblitter` | Enable on weak hardware; some games won’t work when it’s on (`disabled`, `enabled`). |
 | SHOW BIOS BOOTLOGO | `global.bios_vj` | Display Jaguar boot animation when enabled (`enabled`, `disabled`). |

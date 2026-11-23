@@ -62,7 +62,7 @@ Standardized features available for all Apple IIGS libretro cores include `apple
 
 #### libretro: mame
 
-| ES setting name REG-Linux.conf_key | Description => ES option key_value |
+| REG Station setting `system.conf` key | Description => values |
 | --- | --- |
 | Settings that apply to all systems this core supports |  |
 | OVERCLOCK (UNSTABLE) `global.mame_cpu_overclock` | Gentle overclocking can reduce slowdown but may destabilize certain titles.  => default `default`, 30 `30`, 35 `35`, 40 `40`, 45 `45`, 50 `50`, 55 `55`, 60 `60`, 65 `65`, 70 `70`, 75 `75`, 80 `80`, 85 `85`, 90 `90`, 95 `95`, 100 `100`, 105 `105`, 110 `110`, 115 `115`, 120 `120`, 125 `125`, 130 `130`, 135 `135`, 140 `140`, 145 `145`, 150 `150`. |
