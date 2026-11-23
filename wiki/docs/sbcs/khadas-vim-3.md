@@ -1,7 +1,7 @@
 ---
 title: Khadas VIM 3
 description: Khadas VIM 3 — single-board computer powered by Amlogic A311D.
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # Khadas VIM 3

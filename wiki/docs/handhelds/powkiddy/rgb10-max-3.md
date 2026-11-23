@@ -3,7 +3,7 @@ title: RGB10 Max 3
 description: REG Linux on RGB10 Max 3 powered by Rockchip RK3566.
 manufacturer: Powkiddy
 slug: powkiddy/rgb10-max-3
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # RGB10 Max 3

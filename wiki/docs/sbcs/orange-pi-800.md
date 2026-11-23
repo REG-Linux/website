@@ -1,7 +1,7 @@
 ---
 title: Orange Pi 800
 description: Orange Pi 800 — single-board computer powered by Rockchip RK3399.
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # Orange Pi 800

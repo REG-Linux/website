@@ -1,7 +1,7 @@
 ---
 title: Pine64 QuartzPro64
 description: Pine64 QuartzPro64 — single-board computer powered by Rockchip RK3588.
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # Pine64 QuartzPro64

@@ -3,7 +3,7 @@ title: Anbernic Rg Vita Pro
 description: REG Linux on Anbernic Rg Vita Pro powered by Rockchip RK3576.
 manufacturer: Anbernic
 slug: anbernic/rg-vita-pro
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # Anbernic Rg Vita Pro

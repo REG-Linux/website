@@ -1,7 +1,7 @@
 ---
 title: Radxa 3C
 description: Radxa 3C — single-board computer powered by Rockchip RK3566/RK3568.
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # Radxa 3C

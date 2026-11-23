@@ -3,7 +3,7 @@ title: Retroid Pocket 5
 description: REG Linux on Retroid Pocket 5 powered by Qualcomm SD865 (SM8250).
 manufacturer: Retroid
 slug: retroid/pocket-5
-generated: 2026-11-23 15:39:58
+generated: 2026-11-23 18:05:31
 ---
 
 # Retroid Pocket 5

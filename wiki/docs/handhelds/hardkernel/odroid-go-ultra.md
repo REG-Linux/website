@@ -3,7 +3,7 @@ title: HardKernel ODROID GO Ultra
 description: REG Linux on HardKernel ODROID GO Ultra powered by Amlogic S922X.
 manufacturer: HardKernel
 slug: hardkernel/odroid-go-ultra
-generated: 2026-11-01 16:45:33
+generated: 2026-11-23 18:05:31
 ---
 
 # HardKernel ODROID GO Ultra
