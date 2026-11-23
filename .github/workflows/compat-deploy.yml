@@ -107,10 +107,10 @@ jobs:
 
       - name: Commit wiki updates
         run: |
-          git diff --quiet wiki/docs/ || {
+          git add wiki/docs/ wiki/mkdocs.yml
+          git diff --cached --quiet || {
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add wiki/docs/
             git commit -m "chore: regenerate wiki pages"
             git pull --rebase
             git push
