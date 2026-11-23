@@ -1460,38 +1460,6 @@ libretech-tritium-h5:
   board_url: https://reglinux.org/wiki/sbc/libre-computer/libretech-tritium-h5/
   description: REG Linux for Libre Computer Tritium H5 (Allwinner H3).
   lede: Libre Computer Tritium H5 — single-board computer powered by Allwinner H3.
-magicx-xu-mini-m:
-  title: XU Mini M
-  brand: MagicX
-  manufacturer:
-  - MagicX
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/magicx/xu-mini-m/
-  description: REG Linux for XU Mini M (Rockchip RK3326).
-  lede: XU Mini M — device powered by Rockchip RK3326.
-  display_size: 2.8 inch
-  display_res: 640x480
-  ram: 1 GB DDR4
-  storage: SD only
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Download
-
-
-    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
-    the Installation guide.
-
-
-    ### Installation guide
-
-
-    TODO'
 magicx-zero-28:
   title: MagicX Zero 28
   brand: MagicX
@@ -2015,32 +1983,6 @@ powkiddy:
   board_url: https://reglinux.org/wiki/handhelds/unknown/powkiddy/
   description: REG Linux image for Unknown Powkiddy powered by Allwinner A133.
   lede: Unknown Powkiddy pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
-powkiddy-rgb10:
-  title: Powkiddy RGB10
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10/
-  description: REG Linux for Powkiddy RGB10 (Rockchip RK3326).
-  lede: Powkiddy RGB10 — handheld powered by Rockchip RK3326.
-  display_size: 3.5 inch
-  display_res: 480x320
-  ram: 1 GB DDR3L
-  storage: SD only
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
-    or dd.'
 powkiddy-rgb10-max-3:
   title: RGB10 Max 3
   brand: Powkiddy
@@ -2056,72 +1998,6 @@ powkiddy-rgb10-max-3:
   lede: RGB10 Max 3 — handheld powered by Rockchip RK3566.
   display_size: 5 inch
   display_res: 1280x720
-  ram: 1 GB LPDDR4
-  storage: SD only
-  wifi_chip: RTL8723DS
-  bt_chip: RTL8723DS
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
-powkiddy-rgb10-max-3-pro:
-  title: RGB10 Max 3 Pro
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Amlogic A311D
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3-pro/
-  description: REG Linux for RGB10 Max 3 Pro (Amlogic A311D).
-  lede: RGB10 Max 3 Pro — handheld powered by Amlogic A311D.
-powkiddy-rgb10x:
-  title: Powkiddy RGB10X
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb10x/
-  description: REG Linux for Powkiddy RGB10X (Rockchip RK3326).
-  lede: Powkiddy RGB10X — handheld powered by Rockchip RK3326.
-  display_size: 3.5 inch
-  display_res: 480x320
-  ram: 1 GB DDR3L
-  storage: SD only
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
-    or dd.'
-powkiddy-rgb20-pro:
-  title: RGB20 Pro
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Rockchip RK3566
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/rgb20-pro/
-  description: REG Linux for RGB20 Pro (Rockchip RK3566).
-  lede: RGB20 Pro — handheld powered by Rockchip RK3566.
-  display_size: 3.2 inch
-  display_res: 1024x768
   ram: 1 GB LPDDR4
   storage: SD only
   wifi_chip: RTL8723DS
@@ -2224,56 +2100,6 @@ powkiddy-v90s:
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/v90s/
   description: REG Linux image for Powkiddy V90S powered by Allwinner A133.
   lede: Powkiddy V90S pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
-powkiddy-x35h:
-  title: Powkiddy X35H
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Rockchip RK3566
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/x35h/
-  description: REG Linux for Powkiddy X35H (Rockchip RK3566).
-  lede: Powkiddy X35H — handheld powered by Rockchip RK3566.
-  display_size: 3.5 inch
-  display_res: 640x480
-  ram: 1 GB LPDDR4X
-  storage: 4 GB eMMC + SD
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
-powkiddy-x35s:
-  title: Powkiddy X35S
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Rockchip RK3566
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/x35s/
-  description: REG Linux for Powkiddy X35S (Rockchip RK3566).
-  lede: Powkiddy X35S — handheld powered by Rockchip RK3566.
-  display_size: 3.5 inch
-  display_res: 640x480
-  ram: 1 GB LPDDR4X
-  storage: 4 GB eMMC + SD
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
 powkiddy-x55:
   title: Powkiddy X55
   brand: Powkiddy
@@ -2301,32 +2127,6 @@ powkiddy-x55:
 
 
     Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
-powkiddy-xu10:
-  title: Powkiddy XU10
-  brand: Powkiddy
-  manufacturer:
-  - Powkiddy
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/powkiddy/xu10/
-  description: REG Linux for Powkiddy XU10 (Rockchip RK3326).
-  lede: Powkiddy XU10 — handheld powered by Rockchip RK3326.
-  display_size: 3.5 inch
-  display_res: 640x480
-  ram: 1 GB DDR4
-  storage: SD only
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3326 REG Linux image from the REG Linux download page. Flash it to an SD card using balenaEtcher
-    or dd.'
 radxa-dragon-q6a:
   title: Radxa Dragon Q6A
   brand: Radxa
@@ -2720,89 +2520,6 @@ tx3-mini:
   board_url: https://reglinux.org/wiki/other/unknown/tx3-mini/
   description: REG Linux for Tanix TX3 Mini (Amlogic S905(X)).
   lede: Tanix TX3 Mini — TV box powered by Amlogic S905(X).
-unbranded-game-console-r33s:
-  title: Game Console R33S
-  brand: Unbranded
-  manufacturer:
-  - Unbranded
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/unbranded/game-console-r33s/
-  description: REG Linux for Game Console R33S (Rockchip RK3326).
-  lede: Game Console R33S — handheld powered by Rockchip RK3326.
-  display_size: 3.5 inch
-  display_res: 640x480
-  ram: 1 GB (some revisions 512 MB) DDR3
-  storage: SD only
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
-    the Installation guide.'
-unbranded-game-console-r35s-r36s:
-  title: Game Console R35S R36S
-  brand: Unbranded
-  manufacturer:
-  - Unbranded
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/unbranded/game-console-r35s-r36s/
-  description: REG Linux for Game Console R35S R36S (Rockchip RK3326).
-  lede: Game Console R35S R36S — handheld powered by Rockchip RK3326.
-  display_size: 3.5 inch
-  display_res: 640x480
-  ram: 1 GB DDR3
-  storage: SD only
-  compositor: Sway
-  install_notes: '## Install REG Linux
-
-
-    ### Installation
-
-
-    Download the current RK3326 REG Linux image for this device from the REG Linux download page, then follow the steps in
-    the Installation guide.
-
-
-    ### New displays (R36s of year 2024)
-
-
-    Recent R36s have new displays that need some extra actions to work.
-
-
-    The simplest way so far is:
-
-
-    - Determine which panel do you have (or just try every option until it works)
-
-    - Download a mipi-panel.dtbo.r36s-panel* there [there](https://github.com/stolen/r.nix-distribution/releases/tag/panel_overlays)
-
-    - Rename the downloaded file and put it to a boot ( REG Linux ) partition as overlays/mipi-panel.dtbo
-
-
-    These files mostly have just basic refresh rate (77.378 FPS) ( panel4 has 50, 60, 75 because we tested it)
-
-
-    If you have an original .dtb file, you can generate a mipi-panel.dtbo from it. Assuming you have an SSH access and you
-    have scp ''d the original dtb as rk3326-r35s-linux.dtb , the process would be as follows: RK3326:~ # mount -o remount,rw
-    /flash RK3326:~ # mkdir -p /flash/overlays/ RK3326:~ # # ## Be not afraid! importpanel.py may run for a minute or two
-    for some panels RK3326:~ # /usr/libexec/generic-dsi/importpanel.py rk3326-r35s-linux.dtb -O dtbo -o /flash/overlays/mipi-panel.dtbo
-    RK3326:~ # sync ; mount -o remount,ro /flash/ Here we just make an overlays directory writable, then call a script that
-    does all the importing stuff. Feel free to run this script on your PC, modify it and experiment with panel timings.
-
-
-    This script adds a bunch of potentially useful refresh rates, but we have very few knowledge on which modes work well.
-    Please check them with wlr-randr or with game configuration and tell us which modes work with your panel.'
 unbranded-ps5000:
   title: PS5000
   brand: Unbranded
@@ -2825,36 +2542,6 @@ unbranded-ps7000:
   board_url: https://reglinux.org/wiki/handhelds/unbranded/ps7000/
   description: REG Linux for PS7000 (Rockchip RK3128).
   lede: PS7000 — handheld powered by Rockchip RK3128.
-unbranded-rk3326-clones:
-  title: RK3326 clones (including K36 and BatleXP G350)
-  brand: Unbranded
-  manufacturer:
-  - Unbranded
-  soc:
-  - Rockchip RK3326
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/unbranded/rk3326-clones/
-  description: REG Linux for RK3326 clones (including K36 and BatleXP G350) (Rockchip RK3326).
-  lede: RK3326 clones (including K36 and BatleXP G350) — handheld powered by Rockchip RK3326.
-  display_size: 4.0 inch
-  display_res: 720x720
-  ram: usually 1 GB DDR3, sometimes 512M
-  storage: 8 GB (often) eMMC + SD
-  compositor: Sway
-  install_notes: '## Installation notes
-
-
-    1. Grab the image. Download the latest RK3326 clones (including K36 and BatleXP G350) build from the downloads page.
-
-
-    2. Flash to storage. Use balenaEtcher, Raspberry Pi Imager, or `dd` to write the image to an SD card or eMMC. Make sure
-    to verify the checksum before booting.
-
-
-    3. First boot setup. Insert the media into your RK3326 clones (including K36 and BatleXP G350), power on, and let REG
-    Linux expand the filesystem. Pair controllers inside EmulationStation once prompted.'
 vamrs-rock960:
   title: 96Boards Rock960
   brand: Vamrs

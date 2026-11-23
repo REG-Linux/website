@@ -39,8 +39,6 @@ REG Linux device coverage is tracked here. Status values are editable in
 | [Firefly Station M2 / ROC-RK3566-PC](https://reglinux.org/wiki/sbcs/firefly-station-m2-roc-rk3566-pc/) | Firefly | Rockchip RK3566 | unknown |  |
 | [Firefly Station M3 / ROC-RK3588S-PC](https://reglinux.org/wiki/sbcs/firefly-station-m3-roc-rk3588s-pc/) | Firefly | Rockchip RK3588 | unknown |  |
 | [Firefly Station P2 / ROC-RK3568-PC](https://reglinux.org/wiki/sbcs/firefly-station-p2-roc-rk3568-pc/) | Firefly | Rockchip RK3568 | unknown |  |
-| [Game Console R33S](https://reglinux.org/wiki/handhelds/unbranded/game-console-r33s/) | Unbranded | Rockchip RK3326 | unknown |  |
-| [Game Console R35S R36S](https://reglinux.org/wiki/handhelds/unbranded/game-console-r35s-r36s/) | Unbranded | Rockchip RK3326 | unknown |  |
 | [Gameforce ACE](https://reglinux.org/wiki/handhelds/gameforce/gameforce-ace/) | Gameforce | Rockchip RK3588 | unknown |  |
 | [Gameforce CHI](https://reglinux.org/wiki/sbcs/gameforce-chi/) | Gameforce | Rockchip RK3326 | unknown |  |
 | [HardKernel ODROID C2](https://reglinux.org/wiki/sbcs/hardkernel-odroid-c2/) | HardKernel | Amlogic S905(X) | unknown |  |
@@ -89,19 +87,10 @@ REG Linux device coverage is tracked here. Status values are editable in
 | [Retroid Pocket 5](https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-5/) | Retroid | Qualcomm SD865 (SM8250) | unknown |  |
 | [Retroid Pocket Flip2](https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-flip2/) | Retroid | Qualcomm SD865 (SM8250) | unknown |  |
 | [Retroid Pocket Mini](https://reglinux.org/wiki/handhelds/retroid/retroid-pocket-mini/) | Retroid | Qualcomm SD865 (SM8250) | unknown |  |
-| [RGB10](https://reglinux.org/wiki/handhelds/powkiddy/rgb10/) | Powkiddy | Rockchip RK3326 | unknown |  |
 | [RGB10 Max 3](https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3/) | Powkiddy | Rockchip RK3566 | unknown |  |
-| [RGB10 Max 3 Pro](https://reglinux.org/wiki/handhelds/powkiddy/rgb10-max-3-pro/) | Powkiddy | Amlogic A311D | unknown |  |
-| [RGB10X](https://reglinux.org/wiki/handhelds/powkiddy/rgb10x/) | Powkiddy | Rockchip RK3326 | unknown |  |
-| [RGB20 Pro](https://reglinux.org/wiki/handhelds/powkiddy/rgb20-pro/) | Powkiddy | Rockchip RK3566 | unknown |  |
 | [RGB20SX](https://reglinux.org/wiki/handhelds/powkiddy/rgb20sx/) | Powkiddy | Rockchip RK3566 | unknown |  |
 | [RGB30](https://reglinux.org/wiki/handhelds/powkiddy/rgb30/) | Powkiddy | Rockchip RK3566 | unknown |  |
 | [RK2023](https://reglinux.org/wiki/handhelds/powkiddy/rk2023/) | Powkiddy | Rockchip RK3566 | unknown |  |
-| [RK3326 clones (including K36 and BatleXP G350)](https://reglinux.org/wiki/handhelds/unbranded/rk3326-clones/) | Unbranded | Rockchip RK3326 | unknown |  |
 | [StarFive VisionFive 2](https://reglinux.org/wiki/sbcs/starfive-visionfive-2/) | Starfive | StarFive JH7110 | unknown |  |
 | [Steam Deck](https://reglinux.org/wiki/handhelds/x86_64/steam-deck/) | Valve | AMD Zen 2 APU | unknown |  |
-| [X35H](https://reglinux.org/wiki/handhelds/powkiddy/x35h/) | Powkiddy | Rockchip RK3566 | unknown |  |
-| [X35S](https://reglinux.org/wiki/handhelds/powkiddy/x35s/) | Powkiddy | Rockchip RK3566 | unknown |  |
 | [X55](https://reglinux.org/wiki/handhelds/powkiddy/x55/) | Powkiddy | Rockchip RK3566 | unknown |  |
-| [XU Mini M](https://reglinux.org/wiki/handhelds/magicx/xu-mini-m/) | MagicX | Rockchip RK3326 | unknown |  |
-| [XU10](https://reglinux.org/wiki/handhelds/powkiddy/xu10/) | Powkiddy | Rockchip RK3326 | unknown |  |
