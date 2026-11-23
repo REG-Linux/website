@@ -436,14 +436,16 @@ nav:
 - Maintainers: maintainers/index.md
 - Developers:
   - Overview: developers/index.md
+  - Build REG Linux: developers/build.md
+  - Add a Board: developers/new-board.md
   - Architecture: architecture.md
-  - Developer Guide: dev-guide.md
 - Community: community.md
 - Credits & licence: credits.md
 plugins:
 - search
 - redirects:
     redirect_maps:
+      dev-guide.md: developers/build.md
       sbcs/x96-max-plus.md: tvboxes/x96/max-plus.md
       sbcs/x96-mate.md: tvboxes/x96/mate.md
       sbcs/x96-air.md: tvboxes/x96/air.md
