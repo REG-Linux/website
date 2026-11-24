@@ -1,7 +1,7 @@
 ---
 title: HardKernel ODROID C2
 description: HardKernel ODROID C2 — single-board computer powered by Amlogic S905(X).
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # HardKernel ODROID C2

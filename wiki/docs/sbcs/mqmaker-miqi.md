@@ -1,7 +1,7 @@
 ---
 title: MQMaker MiQi
 description: MQMaker MiQi — single-board computer powered by Rockchip RK3288.
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # MQMaker MiQi

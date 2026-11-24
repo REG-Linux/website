@@ -10,6 +10,7 @@ install REG Linux. The status comes from the compatibility matrix.
 
 ## Anbernic
 
+- [Anbernic](anbernic/rg-vita.md)
 - [Anbernic RG ARC](anbernic/rgarc.md)
 - [Anbernic RG CubeXX](anbernic/rg-cubexx.md)
 - [Anbernic RG DS](anbernic/rg-ds.md)
@@ -54,6 +55,7 @@ install REG Linux. The status comes from the compatibility matrix.
 - [Ayn Odin](ayn/odin.md)
 - [Ayn Odin 2](ayn/odin2.md)
 - [Ayn Odin 2 Portal](ayn/odin2-portal.md)
+- [Ayn Odin M2](ayn/odin-m2.md)
 - [Ayn ODIN2MINI](ayn/odin2-mini.md)
 - [Ayn Thor](ayn/thor.md)
 
@@ -109,6 +111,7 @@ install REG Linux. The status comes from the compatibility matrix.
 ## Powkiddy
 
 - [PocketGo 2](powkiddy/pocketgo-2.md)
+- [Powkiddy A13](powkiddy/a13.md)
 - [Powkiddy RGB20SX](powkiddy/rgb20sx.md)
 - [Powkiddy RGB30](powkiddy/rgb30.md)
 - [Powkiddy RK2023](powkiddy/rk2023.md)
@@ -120,8 +123,12 @@ install REG Linux. The status comes from the compatibility matrix.
 
 - [Retroid Pocket 5](retroid/pocket-5.md)
 - [Retroid Pocket Flip2](retroid/pocket-flip2.md)
+- [Retroid Pocket FLIP2 Visionox](retroid/pocket-flip2-visionox.md)
 - [Retroid Pocket Mini](retroid/pocket-mini.md)
+- [Retroid Pocket RP5 Visionox](retroid/pocket-rp5-visionox.md)
 - [Retroid Pocket RP6](retroid/pocket-6.md)
+- [Retroid Pocket RPMINIV2](retroid/pocket-rpminiv2.md)
+- [Retroid Pocket Rpnova](retroid/pocket-rpnova.md)
 
 ## TrimUI
 

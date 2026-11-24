@@ -3,7 +3,7 @@ title: PocketGo 2
 description: REG Linux on PocketGo 2 powered by Ingenic JZ4770.
 manufacturer: Powkiddy
 slug: powkiddy/pocketgo-2
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # PocketGo 2

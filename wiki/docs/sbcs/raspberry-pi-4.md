@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi 4
 description: Raspberry Pi 4 — single-board computer powered by Broadcom BCM2711.
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # Raspberry Pi 4

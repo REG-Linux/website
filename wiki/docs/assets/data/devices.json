@@ -35,6 +35,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg-ds/"
   },
   {
+    "slug": "anbernic-rg-vita",
+    "title": "Anbernic",
+    "brand": "Anbernic",
+    "soc": "Unisoc T618 (UMS512)",
+    "board_url": "https://reglinux.org/wiki/handhelds/anbernic/rg-vita/"
+  },
+  {
     "slug": "anbernic-rg-vita-pro",
     "title": "Anbernic Rg Vita Pro",
     "brand": "Anbernic",
@@ -273,6 +280,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/ayn/odin/"
   },
   {
+    "slug": "ayn-odin-m2",
+    "title": "Ayn Odin M2",
+    "brand": "Ayn",
+    "soc": "Qualcomm SDM845",
+    "board_url": "https://reglinux.org/wiki/handhelds/ayn/odin-m2/"
+  },
+  {
     "slug": "ayn-odin2",
     "title": "Ayn Odin 2",
     "brand": "Ayn",
@@ -299,6 +313,13 @@
     "brand": "Ayn",
     "soc": "Qualcomm 8gen2 (SM8550)",
     "board_url": "https://reglinux.org/wiki/handhelds/ayn/thor/"
+  },
+  {
+    "slug": "ayn-thorlite",
+    "title": "Ayn Thorlite",
+    "brand": "Ayn",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/other/ayn/thorlite/"
   },
   {
     "slug": "banana-pi-f3",
@@ -385,6 +406,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/koch-media/capcom-home-arcade/"
   },
   {
+    "slug": "deepcomputing-fml13v01",
+    "title": "DeepComputing FML13V01",
+    "brand": "DeepComputing",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/other/deepcomputing/fml13v01/"
+  },
+  {
     "slug": "firefly-renegade",
     "title": "Firefly Renegade",
     "brand": "Firefly",
@@ -453,6 +481,13 @@
     "brand": "Generic",
     "soc": "AMD/Intel x86_64-v3",
     "board_url": "https://reglinux.org/wiki/sbcs/generic-x86-64-v3/"
+  },
+  {
+    "slug": "gpd-q9",
+    "title": "GPD Q9",
+    "brand": "GPD",
+    "soc": "Rockchip RK3288",
+    "board_url": "https://reglinux.org/wiki/other/gpd/q9/"
   },
   {
     "slug": "gpd-xd",
@@ -672,11 +707,32 @@
     "board_url": "https://reglinux.org/wiki/sbcs/mangmi-air-x/"
   },
   {
+    "slug": "mangmi-air-y",
+    "title": "Mangmi Air Y",
+    "brand": "Mangmi",
+    "soc": "Qualcomm SM6115",
+    "board_url": "https://reglinux.org/wiki/handhelds/mangmi/air-y/"
+  },
+  {
+    "slug": "mangmi-air-y-pro",
+    "title": "Mangmi Air Y Pro",
+    "brand": "Mangmi",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/mangmi/air-y-pro/"
+  },
+  {
     "slug": "mangmi-pocketmax",
     "title": "Mangmi Pocketmax",
     "brand": "Mangmi",
     "soc": "Qualcomm SD865 (SM8250)",
     "board_url": "https://reglinux.org/wiki/handhelds/mangmi/pocketmax/"
+  },
+  {
+    "slug": "microsoft-wsl2",
+    "title": "Microsoft",
+    "brand": "Microsoft",
+    "soc": "Microsoft WSL2 (x86_64)",
+    "board_url": "https://reglinux.org/wiki/other/microsoft/wsl2/"
   },
   {
     "slug": "milk-v-jupiter",
@@ -691,6 +747,20 @@
     "brand": "Milk-V",
     "soc": "StarFive JH7110",
     "board_url": "https://reglinux.org/wiki/sbcs/milk-v-mars/"
+  },
+  {
+    "slug": "milk-v-marscm-emmc",
+    "title": "Milk-V Marscm Emmc",
+    "brand": "Milk-V",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbc/milk-v/marscm-emmc/"
+  },
+  {
+    "slug": "milk-v-marscm-lite",
+    "title": "Milk-V Marscm Lite",
+    "brand": "Milk-V",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbc/milk-v/marscm-lite/"
   },
   {
     "slug": "milk-v-meles",
@@ -726,6 +796,13 @@
     "brand": "Miyoo",
     "soc": "Allwinner A33",
     "board_url": "https://reglinux.org/wiki/handhelds/miyoo/a30/"
+  },
+  {
+    "slug": "miyoo-flip",
+    "title": "Miyoo Flip",
+    "brand": "Miyoo",
+    "soc": "Rockchip RK3566/RK3568",
+    "board_url": "https://reglinux.org/wiki/other/miyoo/flip/"
   },
   {
     "slug": "mqmaker-miqi",
@@ -910,6 +987,13 @@
     "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-r2s/"
   },
   {
+    "slug": "orange-pi-rv",
+    "title": "Orange Pi Rv",
+    "brand": "Orange Pi",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbc/orange-pi/rv/"
+  },
+  {
     "slug": "orange-pi-rv2",
     "title": "Orange Pi RV2",
     "brand": "Orange Pi",
@@ -959,6 +1043,13 @@
     "board_url": "https://reglinux.org/wiki/sbcs/pine64-rockpro64/"
   },
   {
+    "slug": "pine64-star64",
+    "title": "Pine64 STAR64",
+    "brand": "Pine64",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbc/pine64/star64/"
+  },
+  {
     "slug": "pocketgo-2",
     "title": "PocketGo 2",
     "brand": "Powkiddy",
@@ -978,6 +1069,13 @@
     "brand": "Unknown",
     "soc": "Allwinner A133",
     "board_url": "https://reglinux.org/wiki/handhelds/unknown/powkiddy/"
+  },
+  {
+    "slug": "powkiddy-a13",
+    "title": "Powkiddy A13",
+    "brand": "Powkiddy",
+    "soc": "Rockchip RK3128",
+    "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/a13/"
   },
   {
     "slug": "powkiddy-rgb10-max-3",
@@ -1020,6 +1118,13 @@
     "brand": "Powkiddy",
     "soc": "Rockchip RK3566",
     "board_url": "https://reglinux.org/wiki/handhelds/powkiddy/x55/"
+  },
+  {
+    "slug": "radxa-cubie-a5e",
+    "title": "Radxa Rock A5E",
+    "brand": "Radxa",
+    "soc": "Allwinner T527",
+    "board_url": "https://reglinux.org/wiki/sbc/radxa/cubie-a5e/"
   },
   {
     "slug": "radxa-dragon-q6a",
@@ -1176,6 +1281,13 @@
     "board_url": "https://reglinux.org/wiki/handhelds/retroid/pocket-flip2/"
   },
   {
+    "slug": "retroid-pocket-flip2-visionox",
+    "title": "Retroid Pocket FLIP2 Visionox",
+    "brand": "Retroid",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/pocket-flip2-visionox/"
+  },
+  {
     "slug": "retroid-pocket-mini",
     "title": "Retroid Pocket Mini",
     "brand": "Retroid",
@@ -1183,11 +1295,39 @@
     "board_url": "https://reglinux.org/wiki/handhelds/retroid/pocket-mini/"
   },
   {
+    "slug": "retroid-pocket-rp5-visionox",
+    "title": "Retroid Pocket RP5 Visionox",
+    "brand": "Retroid",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/pocket-rp5-visionox/"
+  },
+  {
+    "slug": "retroid-pocket-rpminiv2",
+    "title": "Retroid Pocket RPMINIV2",
+    "brand": "Retroid",
+    "soc": "Qualcomm SD865 (SM8250)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/pocket-rpminiv2/"
+  },
+  {
+    "slug": "retroid-pocket-rpnova",
+    "title": "Retroid Pocket Rpnova",
+    "brand": "Retroid",
+    "soc": "Qualcomm 8gen2 (SM8550)",
+    "board_url": "https://reglinux.org/wiki/handhelds/retroid/pocket-rpnova/"
+  },
+  {
     "slug": "rs97",
     "title": "RS-97",
     "brand": "Unbranded",
     "soc": "Ingenic JZ4770",
     "board_url": "https://reglinux.org/wiki/sbcs/rs97/"
+  },
+  {
+    "slug": "sipeed-k3-com260",
+    "title": "Sipeed COM260",
+    "brand": "Sipeed",
+    "soc": "SpacemiT K3",
+    "board_url": "https://reglinux.org/wiki/sbc/sipeed/k3-com260/"
   },
   {
     "slug": "sipeed-lichee-pi-4a",
@@ -1202,6 +1342,20 @@
     "brand": "Starfive",
     "soc": "StarFive JH7110",
     "board_url": "https://reglinux.org/wiki/sbcs/starfive-visionfive-2/"
+  },
+  {
+    "slug": "starfive-visionfive-2-lite",
+    "title": "Starfive 2 Lite",
+    "brand": "Starfive",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite/"
+  },
+  {
+    "slug": "starfive-visionfive-2-lite-emmc",
+    "title": "Starfive 2 Lite Emmc",
+    "brand": "Starfive",
+    "soc": "StarFive JH7110",
+    "board_url": "https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite-emmc/"
   },
   {
     "slug": "steam-deck",

@@ -3,7 +3,7 @@ title: HardKernel ODROID Go Super
 description: REG Linux on HardKernel ODROID Go Super powered by Rockchip RK3326.
 manufacturer: HardKernel
 slug: hardkernel/odroid-go-super
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # HardKernel ODROID Go Super

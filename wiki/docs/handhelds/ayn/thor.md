@@ -3,7 +3,7 @@ title: Ayn Thor
 description: REG Linux on Ayn Thor powered by Qualcomm 8gen2 (SM8550).
 manufacturer: Ayn
 slug: ayn/thor
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # Ayn Thor

@@ -3,7 +3,7 @@ title: Anbernic RG35XX SP
 description: REG Linux on Anbernic RG35XX SP powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg35xx-sp
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # Anbernic RG35XX SP

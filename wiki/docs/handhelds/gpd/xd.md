@@ -3,7 +3,7 @@ title: GPD XD
 description: REG Linux on GPD XD powered by Rockchip RK3288.
 manufacturer: GPD
 slug: gpd/xd
-generated: 2026-11-24 01:51:28
+generated: 2026-11-24 01:55:59
 ---
 
 # GPD XD

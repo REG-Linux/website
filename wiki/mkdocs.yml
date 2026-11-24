@@ -129,6 +129,7 @@ nav:
   - Handhelds:
     - Overview: handhelds/index.md
     - Anbernic:
+      - "Anbernic": handhelds/anbernic/rg-vita.md
       - "Anbernic RG ARC": handhelds/anbernic/rgarc.md
       - "Anbernic RG CubeXX": handhelds/anbernic/rg-cubexx.md
       - "Anbernic RG DS": handhelds/anbernic/rg-ds.md
@@ -167,6 +168,7 @@ nav:
       - "Ayn Odin": handhelds/ayn/odin.md
       - "Ayn Odin 2": handhelds/ayn/odin2.md
       - "Ayn Odin 2 Portal": handhelds/ayn/odin2-portal.md
+      - "Ayn Odin M2": handhelds/ayn/odin-m2.md
       - "Ayn ODIN2MINI": handhelds/ayn/odin2-mini.md
       - "Ayn Thor": handhelds/ayn/thor.md
     - Gameforce:
@@ -198,6 +200,7 @@ nav:
       - "PocketGo S30": handhelds/pocketgo/s30.md
     - Powkiddy:
       - "PocketGo 2": handhelds/powkiddy/pocketgo-2.md
+      - "Powkiddy A13": handhelds/powkiddy/a13.md
       - "Powkiddy RGB20SX": handhelds/powkiddy/rgb20sx.md
       - "Powkiddy RGB30": handhelds/powkiddy/rgb30.md
       - "Powkiddy RK2023": handhelds/powkiddy/rk2023.md
@@ -207,8 +210,12 @@ nav:
     - Retroid:
       - "Retroid Pocket 5": handhelds/retroid/pocket-5.md
       - "Retroid Pocket Flip2": handhelds/retroid/pocket-flip2.md
+      - "Retroid Pocket FLIP2 Visionox": handhelds/retroid/pocket-flip2-visionox.md
       - "Retroid Pocket Mini": handhelds/retroid/pocket-mini.md
+      - "Retroid Pocket RP5 Visionox": handhelds/retroid/pocket-rp5-visionox.md
       - "Retroid Pocket RP6": handhelds/retroid/pocket-6.md
+      - "Retroid Pocket RPMINIV2": handhelds/retroid/pocket-rpminiv2.md
+      - "Retroid Pocket Rpnova": handhelds/retroid/pocket-rpnova.md
     - TrimUI:
       - "TrimUI Brick": handhelds/trimui/brick.md
       - "TrimUI Smart Pro": handhelds/trimui/smart-pro.md
