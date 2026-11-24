@@ -10,18 +10,24 @@ theme:
   logo: assets/logo.svg
   favicon: assets/favicon.png
   palette:
-  - scheme: default
-    primary: blue
-    accent: light blue
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: custom
+    accent: custom
     toggle:
       icon: material/brightness-7
       name: Switch to dark mode
-  - scheme: slate
-    primary: blue
-    accent: light blue
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: custom
+    accent: custom
     toggle:
       icon: material/brightness-4
-      name: Switch to light mode
+      name: Switch to system preference
   features:
   - navigation.sections
   - search.suggest
@@ -503,7 +509,11 @@ plugins:
       - devices/compatibility.md
 markdown_extensions:
 - admonition
-- codehilite
+- pymdownx.details
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.superfences
 - toc:
     permalink: true
 - footnotes
