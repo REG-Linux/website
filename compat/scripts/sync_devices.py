@@ -197,7 +197,7 @@ HANDHELD_PATTERNS = [
     "pocket", "steam-deck", "rog-ally", "gameforce", "ayaneo",
     "magicx", "odroid-go", "powkiddy", "game-console", "rk3326-clone",
     "trimui", "miniloong", "mangmi", "batlexp", "ps5000", "ps7000",
-    "retroid",
+    "retroid", "ayn-", "gpd-", "miyoo", "pocketgo", "anbernic",
 ]
 
 SBC_PATTERNS = [
@@ -1198,28 +1198,36 @@ def main() -> None:
         device_id = dev["device_id"]
         if device_id not in existing_devices:
             device_type = detect_type(device_id)
-            wiki_type_dir = {
-                "handheld": "handhelds",
-                "sbc": "sbc",
-                "console": "consoles",
-                "pc": "pc",
-            }.get(device_type, "other")
-
             brand_slug = dev["brand"].lower().replace(" ", "-")
             name_slug = device_id.replace(f"{brand_slug}-", "").replace(brand_slug, "")
             name_slug = name_slug.strip("-")
+            # Same layout as generate_wiki.py: handhelds and TV boxes per
+            # brand, everything else flat under sbcs/
+            if device_type in ("handheld", "console"):
+                wiki_path = f"handhelds/{brand_slug}/{name_slug}"
+            elif device_type == "tvbox":
+                wiki_path = f"tvboxes/{brand_slug}/{name_slug}"
+            elif device_type == "pc":
+                wiki_path = f"handhelds/x86_64/{name_slug}"
+            else:
+                wiki_path = f"sbcs/{device_id}"
 
             soc_display = dev["soc_name"]
-            new_entries[device_id] = {
+            entry = {
                 "title": dev["title"],
                 "brand": dev["brand"],
                 "manufacturer": [dev["brand"]],
                 "soc": [soc_display] if soc_display else [],
                 "image": f"/assets/images/{device_id}.webp",
-                "board_url": f"https://reglinux.org/wiki/{wiki_type_dir}/{brand_slug}/{name_slug}/",
+                "board_url": f"https://reglinux.org/wiki/{wiki_path}/",
                 "description": f"REG Linux image for {dev['title']} powered by {soc_display}.",
                 "lede": f"{dev['title']} pairs the {soc_display} SoC with the REG Linux stack for a polished retro console.",
             }
+            # The wiki files a page by `type`; without it every new device lands in sbcs/
+            if device_type != "unknown":
+                entry = {"title": entry.pop("title"), "brand": entry.pop("brand"),
+                         "type": device_type, **entry}
+            new_entries[device_id] = entry
 
     # --- Check for missing SoCs ---
     missing_socs: dict[str, dict] = {}

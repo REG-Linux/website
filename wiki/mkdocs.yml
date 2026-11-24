@@ -171,12 +171,14 @@ nav:
       - "Ayn Odin M2": handhelds/ayn/odin-m2.md
       - "Ayn ODIN2MINI": handhelds/ayn/odin2-mini.md
       - "Ayn Thor": handhelds/ayn/thor.md
+      - "Ayn Thorlite": handhelds/ayn/thorlite.md
     - Gameforce:
       - "Gameforce ACE": handhelds/gameforce/ace.md
       - "Gameforce CHI": handhelds/gameforce/chi.md
     - GCW:
       - "GCW Zero": handhelds/gcw/zero.md
     - GPD:
+      - "GPD Q9": handhelds/gpd/q9.md
       - "GPD XD": handhelds/gpd/xd.md
     - HardKernel:
       - "HardKernel ODROID Go Super": handhelds/hardkernel/odroid-go-super.md
@@ -188,11 +190,14 @@ nav:
       - "MagicX Zero 28": handhelds/magicx/zero-28.md
       - "MagicX Zero 40": handhelds/magicx/zero-40.md
     - Mangmi:
+      - "Mangmi Air Y": handhelds/mangmi/air-y.md
+      - "Mangmi Air Y Pro": handhelds/mangmi/air-y-pro.md
       - "Mangmi Pocketmax": handhelds/mangmi/pocketmax.md
     - MiniLoong:
       - "MiniLoong Pocket 1": handhelds/miniloong/pocket1.md
     - Miyoo:
       - "Miyoo A30": handhelds/miyoo/a30.md
+      - "Miyoo Flip": handhelds/miyoo/flip.md
     - Nintendo:
       - "Nintendo Nes Classic": handhelds/unbranded/nes-classic.md
       - "Nintendo Super Nes Classic": handhelds/unbranded/snes-classic.md
