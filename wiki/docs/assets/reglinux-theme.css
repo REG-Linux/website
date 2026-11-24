@@ -1,79 +1,118 @@
+/*
+ * REG Linux wiki colours on top of Material for MkDocs.
+ *
+ * Both schemes set every colour Material reads, so nothing falls back to
+ * the other scheme's values. Text on background stays at WCAG AA (4.5:1)
+ * or better: the contrast ratios are noted next to each pair.
+ */
+
 :root {
-  --reg-bg: #05060a;
-  --reg-bg-soft: #0c101c;
-  --reg-bg-glow: radial-gradient(circle at top, rgba(21, 118, 206, 0.45), transparent 55%);
-  --reg-text: #f4f6fb;
-  --reg-text-muted: #b2bed1;
-  --reg-accent: #2bb0e9;
-  --reg-accent-strong: #ffdb59;
-  --reg-card: rgba(12, 16, 28, 0.75);
-  --reg-border: rgba(255, 255, 255, 0.08);
+  --reg-blue: #2bb0e9;        /* brand accent (reglinux.org) */
+  --reg-blue-deep: #0d6bb8;   /* same hue, dark enough for white backgrounds */
+  --reg-yellow: #ffdb59;      /* brand highlight, dark scheme only */
+  --reg-ink: #0c101c;         /* header bar in both schemes */
 }
 
-[data-md-color-scheme="default"],
+/* Light scheme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--reg-ink);
+  --md-primary-fg-color--light: #1b2233;
+  --md-primary-fg-color--dark: #05070d;
+  --md-primary-bg-color: #f4f6fb;
+  --md-primary-bg-color--light: rgba(244, 246, 251, 0.7);
+  --md-accent-fg-color: var(--reg-blue-deep);
+  --md-accent-fg-color--transparent: rgba(13, 107, 184, 0.1);
+
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: rgba(12, 16, 28, 0.9);          /* 14.7:1 */
+  --md-default-fg-color--light: rgba(12, 16, 28, 0.68);  /* 6.7:1 */
+  --md-default-fg-color--lighter: rgba(12, 16, 28, 0.32);
+  --md-default-fg-color--lightest: rgba(12, 16, 28, 0.08);
+
+  --md-typeset-color: var(--md-default-fg-color);
+  --md-typeset-a-color: var(--reg-blue-deep);            /* 5.5:1 on white */
+
+  --md-code-fg-color: #1f2937;
+  --md-code-bg-color: #f3f5f9;
+  --md-code-hl-color: rgba(13, 107, 184, 0.12);
+
+  --md-footer-bg-color: var(--reg-ink);
+  --md-footer-bg-color--dark: #05070d;
+}
+
+/* Dark scheme: the reglinux.org look, with readable greys */
 [data-md-color-scheme="slate"] {
-  /* Base background + text */
-  --md-default-bg-color: var(--reg-bg);
-  --md-default-fg-color: var(--reg-text);
-  --md-default-fg-color--light: var(--reg-text-muted);
-  --md-default-fg-color--lighter: var(--reg-text-muted);
-  --md-typeset-color: var(--reg-text);
+  --md-hue: 222;
 
-  /* Primary / accent */
-  --md-primary-fg-color: var(--reg-accent);
-  --md-primary-bg-color: var(--reg-bg-soft);
-  --md-accent-fg-color: var(--reg-accent-strong);
+  --md-primary-fg-color: var(--reg-ink);
+  --md-primary-fg-color--light: #1b2233;
+  --md-primary-fg-color--dark: #05070d;
+  --md-primary-bg-color: #f4f6fb;
+  --md-primary-bg-color--light: rgba(244, 246, 251, 0.7);
+  --md-accent-fg-color: var(--reg-yellow);
+  --md-accent-fg-color--transparent: rgba(255, 219, 89, 0.12);
 
-  /* Surfaces */
-  --md-code-bg-color: #050915;
-  --md-shadow-z2: 0 25px 60px rgba(3, 9, 27, 0.55);
-  --md-border-color: var(--reg-border);
+  --md-default-bg-color: #0e1320;
+  --md-default-bg-color--light: rgba(14, 19, 32, 0.54);
+  --md-default-bg-color--lighter: rgba(14, 19, 32, 0.26);
+  --md-default-bg-color--lightest: rgba(14, 19, 32, 0.07);
+  --md-default-fg-color: #e8ecf4;                        /* 15.7:1 */
+  --md-default-fg-color--light: #b4bfd2;                 /* 10.0:1 */
+  --md-default-fg-color--lighter: #7d8aa1;               /* 5.3:1 */
+  --md-default-fg-color--lightest: rgba(232, 236, 244, 0.1);
+
+  --md-typeset-color: var(--md-default-fg-color);
+  --md-typeset-a-color: var(--reg-blue);                 /* 7.5:1 */
+  --md-typeset-mark-color: rgba(255, 219, 89, 0.3);
+  --md-typeset-table-color: rgba(232, 236, 244, 0.14);
+  --md-typeset-table-color--light: rgba(232, 236, 244, 0.04);
+
+  --md-code-fg-color: #dbe2ee;
+  --md-code-bg-color: #161d2e;
+  --md-code-hl-color: rgba(43, 176, 233, 0.18);
+
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: #131a2a;
+
+  --md-footer-fg-color: #e8ecf4;
+  --md-footer-fg-color--light: #b4bfd2;
+  --md-footer-fg-color--lighter: #7d8aa1;
+  --md-footer-bg-color: var(--reg-ink);
+  --md-footer-bg-color--dark: #05070d;
+
+  --md-shadow-z1: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  --md-shadow-z2: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.45);
+  --md-shadow-z3: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.6);
 }
 
-/* Header – sticky glassy bar similar to reglinux.org */
+/* Code colours (pymdownx.highlight / Pygments) for the dark scheme:
+   Material's defaults are tuned for its own grey slate, these for ours. */
+[data-md-color-scheme="slate"] .highlight {
+  --md-code-hl-comment-color: #8794ab;
+  --md-code-hl-keyword-color: #6cb6ff;
+  --md-code-hl-string-color: #a5d6a7;
+  --md-code-hl-number-color: #f5c26b;
+  --md-code-hl-name-color: var(--md-code-fg-color);
+  --md-code-hl-function-color: #d2a8ff;
+  --md-code-hl-constant-color: #f5c26b;
+  --md-code-hl-special-color: #ff9e9e;
+  --md-code-hl-operator-color: #b4bfd2;
+  --md-code-hl-punctuation-color: #b4bfd2;
+  --md-code-hl-variable-color: #e8ecf4;
+  --md-code-hl-generic-color: #b4bfd2;
+}
+
+/* Brand touches that do not cost contrast */
 .md-header {
-  background-color: rgba(5, 7, 15, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--reg-border);
-  color: var(--reg-text);
+  border-bottom: 2px solid var(--reg-blue);
 }
 
-.md-header__inner,
-.md-header__title,
-.md-header__topic,
-.md-header .md-nav__link,
-.md-header .md-icon {
-  color: var(--reg-text);
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--reg-yellow);
 }
 
-/* Footer on a soft panel */
-.md-footer {
-  background-color: var(--reg-bg-soft);
-  border-top: 1px solid var(--reg-border);
-  color: var(--reg-text-muted);
-}
-
-.md-footer a {
-  color: var(--reg-accent);
-}
-
-/* Side navigation background */
-.md-nav,
-.md-sidebar {
-  background-color: var(--reg-bg-soft);
-}
-
-/* Main content with gentle glow at the top */
-.md-main {
-  background-image: var(--reg-bg-glow);
-  background-color: var(--reg-bg);
-}
-
-/* Link colors */
-.md-typeset a {
-  color: var(--reg-accent);
-}
-
-.md-typeset a:hover {
-  color: var(--reg-accent-strong);
+/* Tables: header row stands out, long device tables stay readable */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 700;
 }
