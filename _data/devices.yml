@@ -816,12 +816,13 @@ ayn-thor:
 ayn-thorlite:
   title: Ayn Thorlite
   brand: Ayn
+  type: handheld
   manufacturer:
   - Ayn
   soc:
   - Qualcomm SD865 (SM8250)
   image: /assets/images/ayn-thorlite.webp
-  board_url: https://reglinux.org/wiki/other/ayn/thorlite/
+  board_url: https://reglinux.org/wiki/handhelds/ayn/thorlite/
   description: REG Linux image for Ayn Thorlite powered by Qualcomm SD865 (SM8250).
   lede: Ayn Thorlite pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
 banana-pi-f3:
@@ -980,7 +981,7 @@ deepcomputing-fml13v01:
   soc:
   - StarFive JH7110
   image: /assets/images/deepcomputing-fml13v01.webp
-  board_url: https://reglinux.org/wiki/other/deepcomputing/fml13v01/
+  board_url: https://reglinux.org/wiki/sbcs/deepcomputing-fml13v01/
   description: REG Linux image for DeepComputing FML13V01 powered by StarFive JH7110.
   lede: DeepComputing FML13V01 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 firefly-renegade:
@@ -1130,12 +1131,13 @@ generic-x86-64-v3:
 gpd-q9:
   title: GPD Q9
   brand: GPD
+  type: handheld
   manufacturer:
   - GPD
   soc:
   - Rockchip RK3288
   image: /assets/images/gpd-q9.webp
-  board_url: https://reglinux.org/wiki/other/gpd/q9/
+  board_url: https://reglinux.org/wiki/handhelds/gpd/q9/
   description: REG Linux image for GPD Q9 powered by Rockchip RK3288.
   lede: GPD Q9 pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
 gpd-xd:
@@ -1569,6 +1571,7 @@ mangmi-air-x:
 mangmi-air-y:
   title: Mangmi Air Y
   brand: Mangmi
+  type: handheld
   manufacturer:
   - Mangmi
   soc:
@@ -1580,6 +1583,7 @@ mangmi-air-y:
 mangmi-air-y-pro:
   title: Mangmi Air Y Pro
   brand: Mangmi
+  type: handheld
   manufacturer:
   - Mangmi
   soc:
@@ -1607,7 +1611,7 @@ microsoft-wsl2:
   soc:
   - Microsoft WSL2 (x86_64)
   image: /assets/images/microsoft-wsl2.webp
-  board_url: https://reglinux.org/wiki/other/microsoft/wsl2/
+  board_url: https://reglinux.org/wiki/sbcs/microsoft-wsl2/
   description: REG Linux image for Microsoft powered by Microsoft WSL2 (x86_64).
   lede: Microsoft pairs the Microsoft WSL2 (x86_64) SoC with the REG Linux stack for a polished retro console.
 milk-v-jupiter:
@@ -1642,7 +1646,7 @@ milk-v-marscm-emmc:
   soc:
   - StarFive JH7110
   image: /assets/images/milk-v-marscm-emmc.webp
-  board_url: https://reglinux.org/wiki/sbc/milk-v/marscm-emmc/
+  board_url: https://reglinux.org/wiki/sbcs/milk-v-marscm-emmc/
   description: REG Linux image for Milk-V Marscm Emmc powered by StarFive JH7110.
   lede: Milk-V Marscm Emmc pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 milk-v-marscm-lite:
@@ -1653,7 +1657,7 @@ milk-v-marscm-lite:
   soc:
   - StarFive JH7110
   image: /assets/images/milk-v-marscm-lite.webp
-  board_url: https://reglinux.org/wiki/sbc/milk-v/marscm-lite/
+  board_url: https://reglinux.org/wiki/sbcs/milk-v-marscm-lite/
   description: REG Linux image for Milk-V Marscm Lite powered by StarFive JH7110.
   lede: Milk-V Marscm Lite pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 milk-v-meles:
@@ -1719,12 +1723,13 @@ miyoo-a30:
 miyoo-flip:
   title: Miyoo Flip
   brand: Miyoo
+  type: handheld
   manufacturer:
   - Miyoo
   soc:
   - Rockchip RK3566/RK3568
   image: /assets/images/miyoo-flip.webp
-  board_url: https://reglinux.org/wiki/other/miyoo/flip/
+  board_url: https://reglinux.org/wiki/handhelds/miyoo/flip/
   description: REG Linux image for Miyoo Flip powered by Rockchip RK3566/RK3568.
   lede: Miyoo Flip pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
 mqmaker-miqi:
@@ -2039,7 +2044,7 @@ orange-pi-rv:
   soc:
   - StarFive JH7110
   image: /assets/images/orange-pi-rv.webp
-  board_url: https://reglinux.org/wiki/sbc/orange-pi/rv/
+  board_url: https://reglinux.org/wiki/sbcs/orange-pi-rv/
   description: REG Linux image for Orange Pi Rv powered by StarFive JH7110.
   lede: Orange Pi Rv pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 orange-pi-rv2:
@@ -2133,7 +2138,7 @@ pine64-star64:
   soc:
   - StarFive JH7110
   image: /assets/images/pine64-star64.webp
-  board_url: https://reglinux.org/wiki/sbc/pine64/star64/
+  board_url: https://reglinux.org/wiki/sbcs/pine64-star64/
   description: REG Linux image for Pine64 STAR64 powered by StarFive JH7110.
   lede: Pine64 STAR64 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 pocketgo-2:
@@ -2336,7 +2341,7 @@ radxa-cubie-a5e:
   soc:
   - Allwinner T527
   image: /assets/images/radxa-cubie-a5e.webp
-  board_url: https://reglinux.org/wiki/sbc/radxa/cubie-a5e/
+  board_url: https://reglinux.org/wiki/sbcs/radxa-cubie-a5e/
   description: REG Linux image for Radxa Rock A5E powered by Allwinner T527.
   lede: Radxa Rock A5E pairs the Allwinner T527 SoC with the REG Linux stack for a polished retro console.
 radxa-dragon-q6a:
@@ -2693,7 +2698,7 @@ sipeed-k3-com260:
   soc:
   - SpacemiT K3
   image: /assets/images/sipeed-k3-com260.webp
-  board_url: https://reglinux.org/wiki/sbc/sipeed/k3-com260/
+  board_url: https://reglinux.org/wiki/sbcs/sipeed-k3-com260/
   description: REG Linux image for Sipeed COM260 powered by SpacemiT K3.
   lede: Sipeed COM260 pairs the SpacemiT K3 SoC with the REG Linux stack for a polished retro console.
 sipeed-lichee-pi-4a:
@@ -2728,7 +2733,7 @@ starfive-visionfive-2-lite:
   soc:
   - StarFive JH7110
   image: /assets/images/starfive-visionfive-2-lite.webp
-  board_url: https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite/
+  board_url: https://reglinux.org/wiki/sbcs/starfive-visionfive-2-lite/
   description: REG Linux image for Starfive 2 Lite powered by StarFive JH7110.
   lede: Starfive 2 Lite pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 starfive-visionfive-2-lite-emmc:
@@ -2739,7 +2744,7 @@ starfive-visionfive-2-lite-emmc:
   soc:
   - StarFive JH7110
   image: /assets/images/starfive-visionfive-2-lite-emmc.webp
-  board_url: https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite-emmc/
+  board_url: https://reglinux.org/wiki/sbcs/starfive-visionfive-2-lite-emmc/
   description: REG Linux image for Starfive 2 Lite Emmc powered by StarFive JH7110.
   lede: Starfive 2 Lite Emmc pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 steam-deck:
