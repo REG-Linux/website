@@ -84,6 +84,17 @@ anbernic-rg-ds:
 
 
     Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
+anbernic-rg-vita:
+  title: Anbernic
+  brand: Anbernic
+  manufacturer:
+  - Anbernic
+  soc:
+  - Unisoc T618 (UMS512)
+  image: /assets/images/anbernic-rg-vita.webp
+  board_url: https://reglinux.org/wiki/handhelds/anbernic/rg-vita/
+  description: REG Linux image for Anbernic powered by Unisoc T618 (UMS512).
+  lede: Anbernic pairs the Unisoc T618 (UMS512) SoC with the REG Linux stack for a polished retro console.
 anbernic-rg-vita-pro:
   title: Anbernic Rg Vita Pro
   brand: Anbernic
@@ -743,6 +754,17 @@ ayn-odin:
   board_url: https://reglinux.org/wiki/handhelds/ayn/odin/
   description: REG Linux for Ayn Odin (Qualcomm SDM845).
   lede: Ayn Odin — handheld powered by Qualcomm SDM845.
+ayn-odin-m2:
+  title: Ayn Odin M2
+  brand: Ayn
+  manufacturer:
+  - Ayn
+  soc:
+  - Qualcomm SDM845
+  image: /assets/images/ayn-odin-m2.webp
+  board_url: https://reglinux.org/wiki/handhelds/ayn/odin-m2/
+  description: REG Linux image for Ayn Odin M2 powered by Qualcomm SDM845.
+  lede: Ayn Odin M2 pairs the Qualcomm SDM845 SoC with the REG Linux stack for a polished retro console.
 ayn-odin2:
   title: Ayn Odin 2
   brand: Ayn
@@ -791,6 +813,17 @@ ayn-thor:
   board_url: https://reglinux.org/wiki/handhelds/ayn/thor/
   description: REG Linux for Ayn Thor (Qualcomm 8gen2 (SM8550)).
   lede: Ayn Thor — device powered by Qualcomm 8gen2 (SM8550).
+ayn-thorlite:
+  title: Ayn Thorlite
+  brand: Ayn
+  manufacturer:
+  - Ayn
+  soc:
+  - Qualcomm SD865 (SM8250)
+  image: /assets/images/ayn-thorlite.webp
+  board_url: https://reglinux.org/wiki/other/ayn/thorlite/
+  description: REG Linux image for Ayn Thorlite powered by Qualcomm SD865 (SM8250).
+  lede: Ayn Thorlite pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
 banana-pi-f3:
   title: Banana Pi F3
   brand: Banana Pi
@@ -939,6 +972,17 @@ capcom-home-arcade:
   board_url: https://reglinux.org/wiki/handhelds/koch-media/capcom-home-arcade/
   description: REG Linux for Capcom Home Arcade (Allwinner H3).
   lede: Capcom Home Arcade — console powered by Allwinner H3.
+deepcomputing-fml13v01:
+  title: DeepComputing FML13V01
+  brand: DeepComputing
+  manufacturer:
+  - DeepComputing
+  soc:
+  - StarFive JH7110
+  image: /assets/images/deepcomputing-fml13v01.webp
+  board_url: https://reglinux.org/wiki/other/deepcomputing/fml13v01/
+  description: REG Linux image for DeepComputing FML13V01 powered by StarFive JH7110.
+  lede: DeepComputing FML13V01 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 firefly-renegade:
   title: Firefly Renegade
   brand: Firefly
@@ -1083,6 +1127,31 @@ generic-x86-64-v3:
   board_url: https://reglinux.org/wiki/sbcs/generic-x86-64-v3/
   description: REG Linux for Generic PC (x86-64-v3) (AMD/Intel x86_64-v3).
   lede: Generic PC (x86-64-v3) — device powered by AMD/Intel x86_64-v3.
+gpd-q9:
+  title: GPD Q9
+  brand: GPD
+  manufacturer:
+  - GPD
+  soc:
+  - Rockchip RK3288
+  image: /assets/images/gpd-q9.webp
+  board_url: https://reglinux.org/wiki/other/gpd/q9/
+  description: REG Linux image for GPD Q9 powered by Rockchip RK3288.
+  lede: GPD Q9 pairs the Rockchip RK3288 SoC with the REG Linux stack for a polished retro console.
+gpd-xd:
+  title: GPD XD
+  brand: GPD
+  manufacturer:
+  - GPD
+  soc:
+  - Rockchip RK3288
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/gpd/xd/
+  description: REG Linux for the GPD XD (Rockchip RK3288).
+  lede: GPD XD, a handheld powered by the Rockchip RK3288, running REG Linux from a microSD card.
 h96-max:
   title: H96 Max
   brand: H96
@@ -1497,6 +1566,28 @@ mangmi-air-x:
   board_url: https://reglinux.org/wiki/sbcs/mangmi-air-x/
   description: REG Linux for Mangmi Air X (Qualcomm SM6115).
   lede: Mangmi Air X — handheld powered by Qualcomm SM6115.
+mangmi-air-y:
+  title: Mangmi Air Y
+  brand: Mangmi
+  manufacturer:
+  - Mangmi
+  soc:
+  - Qualcomm SM6115
+  image: /assets/images/mangmi-air-y.webp
+  board_url: https://reglinux.org/wiki/handhelds/mangmi/air-y/
+  description: REG Linux image for Mangmi Air Y powered by Qualcomm SM6115.
+  lede: Mangmi Air Y pairs the Qualcomm SM6115 SoC with the REG Linux stack for a polished retro console.
+mangmi-air-y-pro:
+  title: Mangmi Air Y Pro
+  brand: Mangmi
+  manufacturer:
+  - Mangmi
+  soc:
+  - Qualcomm SD865 (SM8250)
+  image: /assets/images/mangmi-air-y-pro.webp
+  board_url: https://reglinux.org/wiki/handhelds/mangmi/air-y-pro/
+  description: REG Linux image for Mangmi Air Y Pro powered by Qualcomm SD865 (SM8250).
+  lede: Mangmi Air Y Pro pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
 mangmi-pocketmax:
   title: Mangmi Pocketmax
   brand: Mangmi
@@ -1508,6 +1599,17 @@ mangmi-pocketmax:
   board_url: https://reglinux.org/wiki/handhelds/mangmi/pocketmax/
   description: REG Linux image for Mangmi Pocketmax powered by Qualcomm SD865 (SM8250).
   lede: Mangmi Pocketmax pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
+microsoft-wsl2:
+  title: Microsoft
+  brand: Microsoft
+  manufacturer:
+  - Microsoft
+  soc:
+  - Microsoft WSL2 (x86_64)
+  image: /assets/images/microsoft-wsl2.webp
+  board_url: https://reglinux.org/wiki/other/microsoft/wsl2/
+  description: REG Linux image for Microsoft powered by Microsoft WSL2 (x86_64).
+  lede: Microsoft pairs the Microsoft WSL2 (x86_64) SoC with the REG Linux stack for a polished retro console.
 milk-v-jupiter:
   title: Milk-V Jupiter
   brand: Milk-V
@@ -1532,6 +1634,28 @@ milk-v-mars:
   board_url: https://reglinux.org/wiki/sbcs/milk-v-mars/
   description: REG Linux for Milk-V Mars (StarFive JH7110).
   lede: Milk-V Mars — single-board computer powered by StarFive JH7110.
+milk-v-marscm-emmc:
+  title: Milk-V Marscm Emmc
+  brand: Milk-V
+  manufacturer:
+  - Milk-V
+  soc:
+  - StarFive JH7110
+  image: /assets/images/milk-v-marscm-emmc.webp
+  board_url: https://reglinux.org/wiki/sbc/milk-v/marscm-emmc/
+  description: REG Linux image for Milk-V Marscm Emmc powered by StarFive JH7110.
+  lede: Milk-V Marscm Emmc pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
+milk-v-marscm-lite:
+  title: Milk-V Marscm Lite
+  brand: Milk-V
+  manufacturer:
+  - Milk-V
+  soc:
+  - StarFive JH7110
+  image: /assets/images/milk-v-marscm-lite.webp
+  board_url: https://reglinux.org/wiki/sbc/milk-v/marscm-lite/
+  description: REG Linux image for Milk-V Marscm Lite powered by StarFive JH7110.
+  lede: Milk-V Marscm Lite pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 milk-v-meles:
   title: Milk-V Meles
   brand: Milk-V
@@ -1578,6 +1702,31 @@ minix-neo-x8:
   board_url: https://reglinux.org/wiki/sbcs/minix-neo-x8/
   description: REG Linux for Minix Neo X8 (Amlogic S812).
   lede: Minix Neo X8 — device powered by Amlogic S812.
+miyoo-a30:
+  title: Miyoo A30
+  brand: Miyoo
+  manufacturer:
+  - Miyoo
+  soc:
+  - Allwinner A33
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/miyoo/a30/
+  description: REG Linux for the Miyoo A30 (Allwinner A33).
+  lede: Miyoo A30, a handheld powered by the Allwinner A33, running REG Linux from a microSD card.
+miyoo-flip:
+  title: Miyoo Flip
+  brand: Miyoo
+  manufacturer:
+  - Miyoo
+  soc:
+  - Rockchip RK3566/RK3568
+  image: /assets/images/miyoo-flip.webp
+  board_url: https://reglinux.org/wiki/other/miyoo/flip/
+  description: REG Linux image for Miyoo Flip powered by Rockchip RK3566/RK3568.
+  lede: Miyoo Flip pairs the Rockchip RK3566/RK3568 SoC with the REG Linux stack for a polished retro console.
 mqmaker-miqi:
   title: MQMaker MiQi
   brand: MQMaker
@@ -1882,6 +2031,17 @@ orange-pi-r2s:
   board_url: https://reglinux.org/wiki/sbcs/orange-pi-r2s/
   description: REG Linux for Orange Pi R2S (SpacemiT K1).
   lede: Orange Pi R2S — single-board computer powered by SpacemiT K1.
+orange-pi-rv:
+  title: Orange Pi Rv
+  brand: Orange Pi
+  manufacturer:
+  - Orange Pi
+  soc:
+  - StarFive JH7110
+  image: /assets/images/orange-pi-rv.webp
+  board_url: https://reglinux.org/wiki/sbc/orange-pi/rv/
+  description: REG Linux image for Orange Pi Rv powered by StarFive JH7110.
+  lede: Orange Pi Rv pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 orange-pi-rv2:
   title: Orange Pi RV2
   brand: Orange Pi
@@ -1965,6 +2125,17 @@ pine64-rockpro64:
   board_url: https://reglinux.org/wiki/sbcs/pine64-rockpro64/
   description: REG Linux for Pine64 RockPro64 (Rockchip RK3399).
   lede: Pine64 RockPro64 — single-board computer powered by Rockchip RK3399.
+pine64-star64:
+  title: Pine64 STAR64
+  brand: Pine64
+  manufacturer:
+  - Pine64
+  soc:
+  - StarFive JH7110
+  image: /assets/images/pine64-star64.webp
+  board_url: https://reglinux.org/wiki/sbc/pine64/star64/
+  description: REG Linux image for Pine64 STAR64 powered by StarFive JH7110.
+  lede: Pine64 STAR64 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 pocketgo-2:
   title: PocketGo 2
   brand: Powkiddy
@@ -1976,6 +2147,20 @@ pocketgo-2:
   board_url: https://reglinux.org/wiki/handhelds/powkiddy/pocketgo-2/
   description: REG Linux for PocketGo 2 (Ingenic JZ4770).
   lede: PocketGo 2 — handheld powered by Ingenic JZ4770.
+pocketgo-s30:
+  title: PocketGo S30
+  brand: PocketGo
+  manufacturer:
+  - PocketGo
+  soc:
+  - Allwinner A33
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/pocketgo/s30/
+  description: REG Linux for the PocketGo S30 (Allwinner A33).
+  lede: PocketGo S30, a handheld powered by the Allwinner A33, running REG Linux from a microSD card.
 powkiddy:
   title: Unknown Powkiddy
   brand: Unknown
@@ -1987,6 +2172,18 @@ powkiddy:
   board_url: https://reglinux.org/wiki/handhelds/unknown/powkiddy/
   description: REG Linux image for Unknown Powkiddy powered by Allwinner A133.
   lede: Unknown Powkiddy pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
+  dropped: true
+powkiddy-a13:
+  title: Powkiddy A13
+  brand: Powkiddy
+  manufacturer:
+  - Powkiddy
+  soc:
+  - Rockchip RK3128
+  image: /assets/images/powkiddy-a13.webp
+  board_url: https://reglinux.org/wiki/handhelds/powkiddy/a13/
+  description: REG Linux image for Powkiddy A13 powered by Rockchip RK3128.
+  lede: Powkiddy A13 pairs the Rockchip RK3128 SoC with the REG Linux stack for a polished retro console.
 powkiddy-rgb10-max-3:
   title: RGB10 Max 3
   brand: Powkiddy
@@ -2131,6 +2328,17 @@ powkiddy-x55:
 
 
     Download the current RK3566/RK3568 REG Linux image from the REG Linux download page. Flash it to an SD card.'
+radxa-cubie-a5e:
+  title: Radxa Rock A5E
+  brand: Radxa
+  manufacturer:
+  - Radxa
+  soc:
+  - Allwinner T527
+  image: /assets/images/radxa-cubie-a5e.webp
+  board_url: https://reglinux.org/wiki/sbc/radxa/cubie-a5e/
+  description: REG Linux image for Radxa Rock A5E powered by Allwinner T527.
+  lede: Radxa Rock A5E pairs the Allwinner T527 SoC with the REG Linux stack for a polished retro console.
 radxa-dragon-q6a:
   title: Radxa Dragon Q6A
   brand: Radxa
@@ -2407,6 +2615,18 @@ retroid-pocket-flip2:
   description: REG Linux for Retroid Pocket Flip2 (Qualcomm SD865 (SM8250)).
   lede: Retroid Pocket Flip2 — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
+retroid-pocket-flip2-visionox:
+  title: Retroid Pocket FLIP2 Visionox
+  brand: Retroid
+  manufacturer:
+  - Retroid
+  soc:
+  - Qualcomm SD865 (SM8250)
+  image: /assets/images/retroid-pocket-flip2-visionox.webp
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-flip2-visionox/
+  description: REG Linux image for Retroid Pocket FLIP2 Visionox powered by Qualcomm SD865 (SM8250).
+  lede: Retroid Pocket FLIP2 Visionox pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro
+    console.
 retroid-pocket-mini:
   title: Retroid Pocket Mini
   brand: Retroid
@@ -2421,6 +2641,39 @@ retroid-pocket-mini:
   description: REG Linux for Retroid Pocket Mini (Qualcomm SD865 (SM8250)).
   lede: Retroid Pocket Mini — handheld powered by Qualcomm SD865 (SM8250).
   has_fan: true
+retroid-pocket-rp5-visionox:
+  title: Retroid Pocket RP5 Visionox
+  brand: Retroid
+  manufacturer:
+  - Retroid
+  soc:
+  - Qualcomm SD865 (SM8250)
+  image: /assets/images/retroid-pocket-rp5-visionox.webp
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-rp5-visionox/
+  description: REG Linux image for Retroid Pocket RP5 Visionox powered by Qualcomm SD865 (SM8250).
+  lede: Retroid Pocket RP5 Visionox pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
+retroid-pocket-rpminiv2:
+  title: Retroid Pocket RPMINIV2
+  brand: Retroid
+  manufacturer:
+  - Retroid
+  soc:
+  - Qualcomm SD865 (SM8250)
+  image: /assets/images/retroid-pocket-rpminiv2.webp
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-rpminiv2/
+  description: REG Linux image for Retroid Pocket RPMINIV2 powered by Qualcomm SD865 (SM8250).
+  lede: Retroid Pocket RPMINIV2 pairs the Qualcomm SD865 (SM8250) SoC with the REG Linux stack for a polished retro console.
+retroid-pocket-rpnova:
+  title: Retroid Pocket Rpnova
+  brand: Retroid
+  manufacturer:
+  - Retroid
+  soc:
+  - Qualcomm 8gen2 (SM8550)
+  image: /assets/images/retroid-pocket-rpnova.webp
+  board_url: https://reglinux.org/wiki/handhelds/retroid/pocket-rpnova/
+  description: REG Linux image for Retroid Pocket Rpnova powered by Qualcomm 8gen2 (SM8550).
+  lede: Retroid Pocket Rpnova pairs the Qualcomm 8gen2 (SM8550) SoC with the REG Linux stack for a polished retro console.
 rs97:
   title: RS-97
   brand: Unbranded
@@ -2432,6 +2685,17 @@ rs97:
   board_url: https://reglinux.org/wiki/sbcs/rs97/
   description: REG Linux for RS-97 (Ingenic JZ4770).
   lede: RS-97 — device powered by Ingenic JZ4770.
+sipeed-k3-com260:
+  title: Sipeed COM260
+  brand: Sipeed
+  manufacturer:
+  - Sipeed
+  soc:
+  - SpacemiT K3
+  image: /assets/images/sipeed-k3-com260.webp
+  board_url: https://reglinux.org/wiki/sbc/sipeed/k3-com260/
+  description: REG Linux image for Sipeed COM260 powered by SpacemiT K3.
+  lede: Sipeed COM260 pairs the SpacemiT K3 SoC with the REG Linux stack for a polished retro console.
 sipeed-lichee-pi-4a:
   title: Sipeed LicheePi 4A
   brand: Sipeed
@@ -2456,6 +2720,28 @@ starfive-visionfive-2:
   board_url: https://reglinux.org/wiki/sbcs/starfive-visionfive-2/
   description: REG Linux for StarFive VisionFive 2 (StarFive JH7110).
   lede: StarFive VisionFive 2 — single-board computer powered by StarFive JH7110.
+starfive-visionfive-2-lite:
+  title: Starfive 2 Lite
+  brand: Starfive
+  manufacturer:
+  - Starfive
+  soc:
+  - StarFive JH7110
+  image: /assets/images/starfive-visionfive-2-lite.webp
+  board_url: https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite/
+  description: REG Linux image for Starfive 2 Lite powered by StarFive JH7110.
+  lede: Starfive 2 Lite pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
+starfive-visionfive-2-lite-emmc:
+  title: Starfive 2 Lite Emmc
+  brand: Starfive
+  manufacturer:
+  - Starfive
+  soc:
+  - StarFive JH7110
+  image: /assets/images/starfive-visionfive-2-lite-emmc.webp
+  board_url: https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite-emmc/
+  description: REG Linux image for Starfive 2 Lite Emmc powered by StarFive JH7110.
+  lede: Starfive 2 Lite Emmc pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
 steam-deck:
   title: Steam Deck
   brand: Valve
@@ -2491,6 +2777,20 @@ trimui-smart-pro:
   board_url: https://reglinux.org/wiki/handhelds/trimui/smart-pro/
   description: REG Linux image for TrimUI Smart Pro powered by Allwinner A133.
   lede: TrimUI Smart Pro pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
+trimui-smart-pro-s:
+  title: TrimUI Smart Pro S
+  brand: TrimUI
+  manufacturer:
+  - TrimUI
+  soc:
+  - Allwinner T527
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/trimui/smart-pro-s/
+  description: REG Linux for the TrimUI Smart Pro S (Allwinner T527).
+  lede: TrimUI Smart Pro S, a handheld powered by the Allwinner T527, running REG Linux from a microSD card.
 tronsmart-s82:
   title: Tronsmart S82
   brand: Tronsmart
@@ -2524,6 +2824,20 @@ tx3-mini:
   board_url: https://reglinux.org/wiki/tvboxes/tanix/tx3-mini/
   description: REG Linux for Tanix TX3 Mini (Amlogic S905(X)).
   lede: Tanix TX3 Mini — TV box powered by Amlogic S905(X).
+unbranded-g28:
+  title: G28
+  brand: Unbranded
+  manufacturer:
+  - Unbranded
+  soc:
+  - Rockchip RK3128
+  type: handheld
+  image: /assets/images/device-placeholder.svg
+  image_width: 220
+  image_height: 130
+  board_url: https://reglinux.org/wiki/handhelds/unbranded/g28/
+  description: REG Linux for the G28 (Rockchip RK3128).
+  lede: G28, a handheld powered by the Rockchip RK3128, running REG Linux from a microSD card.
 unbranded-ps5000:
   title: PS5000
   brand: Unbranded
@@ -2634,6 +2948,7 @@ xpi-3128:
   board_url: https://reglinux.org/wiki/sbcs/xpi-3128/
   description: REG Linux for XPi 3128 (Rockchip RK3128).
   lede: XPi 3128 — device powered by Rockchip RK3128.
+  dropped: true
 xu20:
   title: Unknown XU20
   brand: Unknown
@@ -2645,73 +2960,4 @@ xu20:
   board_url: https://reglinux.org/wiki/sbcs/xu20/
   description: REG Linux image for Unknown XU20 powered by Allwinner A133.
   lede: Unknown XU20 pairs the Allwinner A133 SoC with the REG Linux stack for a polished retro console.
-miyoo-a30:
-  title: Miyoo A30
-  brand: Miyoo
-  manufacturer:
-  - Miyoo
-  soc:
-  - Allwinner A33
-  type: handheld
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/miyoo/a30/
-  description: REG Linux for the Miyoo A30 (Allwinner A33).
-  lede: Miyoo A30, a handheld powered by the Allwinner A33, running REG Linux from a microSD card.
-pocketgo-s30:
-  title: PocketGo S30
-  brand: PocketGo
-  manufacturer:
-  - PocketGo
-  soc:
-  - Allwinner A33
-  type: handheld
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/pocketgo/s30/
-  description: REG Linux for the PocketGo S30 (Allwinner A33).
-  lede: PocketGo S30, a handheld powered by the Allwinner A33, running REG Linux from a microSD card.
-trimui-smart-pro-s:
-  title: TrimUI Smart Pro S
-  brand: TrimUI
-  manufacturer:
-  - TrimUI
-  soc:
-  - Allwinner T527
-  type: handheld
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/trimui/smart-pro-s/
-  description: REG Linux for the TrimUI Smart Pro S (Allwinner T527).
-  lede: TrimUI Smart Pro S, a handheld powered by the Allwinner T527, running REG Linux from a microSD card.
-unbranded-g28:
-  title: G28
-  brand: Unbranded
-  manufacturer:
-  - Unbranded
-  soc:
-  - Rockchip RK3128
-  type: handheld
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/unbranded/g28/
-  description: REG Linux for the G28 (Rockchip RK3128).
-  lede: G28, a handheld powered by the Rockchip RK3128, running REG Linux from a microSD card.
-gpd-xd:
-  title: GPD XD
-  brand: GPD
-  manufacturer:
-  - GPD
-  soc:
-  - Rockchip RK3288
-  type: handheld
-  image: /assets/images/device-placeholder.svg
-  image_width: 220
-  image_height: 130
-  board_url: https://reglinux.org/wiki/handhelds/gpd/xd/
-  description: REG Linux for the GPD XD (Rockchip RK3288).
-  lede: GPD XD, a handheld powered by the Rockchip RK3288, running REG Linux from a microSD card.
+  dropped: true
