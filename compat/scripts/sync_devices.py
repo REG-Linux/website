@@ -59,6 +59,9 @@ DTS_SOC_PREFIXES = [
     r"sun\d+i-h\d+-(?:plus-)?",
     r"sun\d+i-r\d+-",
     r"sun\d+i-t\d+-",
+    r"sun\d+i-a\d+-",
+    # Unisoc
+    r"ums\d+-",
     # Rockchip
     r"rk\d+s?-",
     # Broadcom
@@ -171,6 +174,14 @@ BRAND_RULES = [
     (r"^tronsmart-",      "Tronsmart",     "tronsmart-"),
     (r"^nintendo-",       "Nintendo",      "nintendo-"),
     (r"^odin$",           "Ayn",           "ayn-odin"),
+    (r"^rg-vita",         "Anbernic",      "anbernic-rg-vita"),
+    (r"^cubie-",          "Radxa",         "radxa-cubie-"),
+    (r"^gpd",             "GPD",           "gpd-"),
+    (r"^miyoo-",          "Miyoo",         "miyoo-"),
+    (r"^pine64-",         "Pine64",        "pine64-"),
+    (r"^deepcomputing-",  "DeepComputing", "deepcomputing-"),
+    (r"^k3_",             "Sipeed",        "sipeed-k3-"),
+    (r"^wsl2$",           "Microsoft",     "microsoft-wsl2"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -222,6 +233,7 @@ BOARD_ARCH_MAP = {
     "SM8250": "aarch64", "SM8550": "aarch64",
     "MT8395": "aarch64",
     "JH7110": "riscv64", "K1": "riscv64", "TH1520": "riscv64",
+    "K3": "riscv64", "UMS512": "aarch64", "WSL2": "x86_64",
     "ASAHI": "aarch64", "L4T": "aarch64",
     "JZ4770": "mipsel", "DE10NANO": "armv7",
 }
@@ -301,6 +313,9 @@ SOC_DISPLAY_NAMES = {
     "MT8395": ("MediaTek", "Genio 1200 (MT8395)"),
     "JH7110": ("StarFive", "JH7110"),
     "K1": ("SpacemiT", "K1"),
+    "K3": ("SpacemiT", "K3"),
+    "UMS512": ("Unisoc", "T618 (UMS512)"),
+    "WSL2": ("Microsoft", "WSL2 (x86_64)"),
     "TH1520": ("T-Head", "TH1520"),
     "ASAHI": ("Apple", "M1/M2"),
     "L4T": ("NVIDIA", "Tegra X1"),
@@ -351,6 +366,9 @@ SOC_TARGET_TO_SLUG = {
     "MT8395": "genio-1200-mt8395",
     "JH7110": "starfive-jh7110",
     "K1": "spacemit-k1",
+    "K3": "spacemit-k3",
+    "UMS512": "unisoc-ums512",
+    "WSL2": "microsoft-wsl2",
     "TH1520": "th1520",
     "ASAHI": "apple-m1",
     "L4T": "nvidia-tegra-x1",
@@ -644,8 +662,29 @@ MANUAL_DTS_TO_DEVICE_ID = {
     # Qualcomm SDM845
     "ayn-odin": "ayn-odin",
 
-    # Qualcomm SM6115
+    # Qualcomm SM6115: one page for the Air X board revisions
     "mangmi-air-x": "mangmi-air-x",
+    "mangmi-air-x-mq65": "mangmi-air-x",
+    "mangmi-air-x-mq66": "mangmi-air-x",
+    "mangmi-air-x-mq66b": "mangmi-air-x",
+
+    # Qualcomm SM8250
+    "mangmi-pocket-max": "mangmi-pocketmax",
+
+    # Qualcomm SM8550: one page for the Pocket S versions
+    "ayaneo-pockets1k": "ayaneo-pockets",
+    "ayaneo-pockets2k": "ayaneo-pockets",
+    "ayaneo-pocketsmini": "ayaneo-pockets",
+
+    # -----------------------------------------------------------------------
+    # Boards whose website id predates their device tree name
+    # -----------------------------------------------------------------------
+    "miyoo-pocketgo-s30": "pocketgo-s30",     # A33
+    "magicx-zero28": "magicx-zero-28",        # A133
+    "magicx-zero40": "magicx-zero-40",        # A133
+    "trimui-smartpro": "trimui-smart-pro",    # A133
+    "gpdxd": "gpd-xd",                        # RK3288
+    "g28": "unbranded-g28",                   # RK3128
 
     # Qualcomm QCS6490
     "radxa-dragon-q6a": "radxa-dragon-q6a",
@@ -797,6 +836,11 @@ def parse_board_file(path: Path) -> dict:
         if f"BR2_PACKAGE_{flag}=y" in text or f"BR2_PACKAGE_SYSTEM_{flag}=y" in text:
             info["gpu_driver"] = driver
             break
+
+    # Images, when the .board overrides the Config.in.targets default
+    m = re.search(r'^BR2_TARGET_REGLINUX_IMAGES="([^"]+)"', text, re.M)
+    if m:
+        info["images"] = m.group(1).split()
 
     # SoC target
     m = re.search(r'BR2_PACKAGE_SYSTEM_TARGET_(\w+)=y', text)
@@ -980,6 +1024,11 @@ def main() -> None:
     # --- Parse Config.in.targets ---
     print("Parsing Config.in.targets...")
     target_boards = parse_config_in_targets(TARGETS_FILE)
+    # A .board file that sets BR2_TARGET_REGLINUX_IMAGES overrides the
+    # Config.in.targets default for its target (a133 and rk3128 do).
+    for target, info in board_info.items():
+        if info.get("images"):
+            target_boards[target] = info["images"]
     total_images = sum(len(v) for v in target_boards.values())
     print(f"  Found {total_images} board image paths across {len(target_boards)} targets")
 
@@ -1128,6 +1177,21 @@ def main() -> None:
         for did in sorted(in_yml_not_board):
             print(f"  ? {did}")
 
+    # --- Mark devices no longer built as dropped, clear the mark on return ---
+    # The site keeps their pages (links stay valid) but hides them from the
+    # download list and says they are no longer supported.
+    newly_dropped = sorted(d for d in in_yml_not_board if not existing_devices[d].get("dropped"))
+    back = sorted(d for d, e in existing_devices.items()
+                  if e.get("dropped") and d not in in_yml_not_board)
+    if newly_dropped:
+        print(f"\n--- Marking dropped ({len(newly_dropped)}) ---")
+        for did in newly_dropped:
+            print(f"  - {did}")
+    if back:
+        print(f"\n--- Built again, clearing dropped ({len(back)}) ---")
+        for did in back:
+            print(f"  + {did}")
+
     # --- Generate new devices.yml entries ---
     new_entries: dict[str, dict] = {}
     for dev in sorted(dts_devices.values(), key=lambda d: d["device_id"]):
@@ -1189,13 +1253,19 @@ def main() -> None:
 
     # --- Write updated files ---
     if args.dry_run:
-        print(f"\n[DRY RUN] Would add {len(new_entries)} devices and {len(missing_socs)} SoCs")
+        print(f"\n[DRY RUN] Would add {len(new_entries)} devices and {len(missing_socs)} SoCs, "
+              f"mark {len(newly_dropped)} dropped, clear {len(back)}")
         return
 
-    if new_entries:
-        print(f"\nAppending {len(new_entries)} new devices to devices.yml...")
+    if new_entries or newly_dropped or back:
+        print(f"\nWriting devices.yml: {len(new_entries)} new, {len(newly_dropped)} dropped, "
+              f"{len(back)} back...")
         merged = dict(existing_devices)
         merged.update(new_entries)
+        for did in newly_dropped:
+            merged[did] = {**merged[did], "dropped": True}
+        for did in back:
+            merged[did] = {k: v for k, v in merged[did].items() if k != "dropped"}
         # Sort alphabetically
         sorted_devices = dict(sorted(merged.items()))
         with open(DEVICES_YML, "w") as f:
@@ -1214,7 +1284,7 @@ def main() -> None:
                       sort_keys=False, width=120)
         print(f"  Written to {SOCS_YML}")
 
-    if not new_entries and not missing_socs:
+    if not new_entries and not missing_socs and not newly_dropped and not back:
         print("\nEverything is in sync!")
 
     # --- Write board_device_map.json ---
@@ -1267,6 +1337,11 @@ def main() -> None:
     board_map.update(extra)
 
     board_map_file = REPO_ROOT / "compat" / "scripts" / "board_device_map.json"
+    # Keep mappings of boards no longer built: images already in the field
+    # still report them to the compat tool.
+    if board_map_file.exists():
+        with open(board_map_file) as f:
+            board_map = {**json.load(f), **board_map}
     with open(board_map_file, "w") as f:
         json.dump(board_map, f, indent=2, sort_keys=True)
     print(f"\nWrote {len(board_map)} board path mappings to {board_map_file}")
