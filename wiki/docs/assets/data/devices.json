@@ -319,7 +319,7 @@
     "title": "Ayn Thorlite",
     "brand": "Ayn",
     "soc": "Qualcomm SD865 (SM8250)",
-    "board_url": "https://reglinux.org/wiki/other/ayn/thorlite/"
+    "board_url": "https://reglinux.org/wiki/handhelds/ayn/thorlite/"
   },
   {
     "slug": "banana-pi-f3",
@@ -410,7 +410,7 @@
     "title": "DeepComputing FML13V01",
     "brand": "DeepComputing",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/other/deepcomputing/fml13v01/"
+    "board_url": "https://reglinux.org/wiki/sbcs/deepcomputing-fml13v01/"
   },
   {
     "slug": "firefly-renegade",
@@ -487,7 +487,7 @@
     "title": "GPD Q9",
     "brand": "GPD",
     "soc": "Rockchip RK3288",
-    "board_url": "https://reglinux.org/wiki/other/gpd/q9/"
+    "board_url": "https://reglinux.org/wiki/handhelds/gpd/q9/"
   },
   {
     "slug": "gpd-xd",
@@ -732,7 +732,7 @@
     "title": "Microsoft",
     "brand": "Microsoft",
     "soc": "Microsoft WSL2 (x86_64)",
-    "board_url": "https://reglinux.org/wiki/other/microsoft/wsl2/"
+    "board_url": "https://reglinux.org/wiki/sbcs/microsoft-wsl2/"
   },
   {
     "slug": "milk-v-jupiter",
@@ -753,14 +753,14 @@
     "title": "Milk-V Marscm Emmc",
     "brand": "Milk-V",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/sbc/milk-v/marscm-emmc/"
+    "board_url": "https://reglinux.org/wiki/sbcs/milk-v-marscm-emmc/"
   },
   {
     "slug": "milk-v-marscm-lite",
     "title": "Milk-V Marscm Lite",
     "brand": "Milk-V",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/sbc/milk-v/marscm-lite/"
+    "board_url": "https://reglinux.org/wiki/sbcs/milk-v-marscm-lite/"
   },
   {
     "slug": "milk-v-meles",
@@ -802,7 +802,7 @@
     "title": "Miyoo Flip",
     "brand": "Miyoo",
     "soc": "Rockchip RK3566/RK3568",
-    "board_url": "https://reglinux.org/wiki/other/miyoo/flip/"
+    "board_url": "https://reglinux.org/wiki/handhelds/miyoo/flip/"
   },
   {
     "slug": "mqmaker-miqi",
@@ -991,7 +991,7 @@
     "title": "Orange Pi Rv",
     "brand": "Orange Pi",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/sbc/orange-pi/rv/"
+    "board_url": "https://reglinux.org/wiki/sbcs/orange-pi-rv/"
   },
   {
     "slug": "orange-pi-rv2",
@@ -1047,7 +1047,7 @@
     "title": "Pine64 STAR64",
     "brand": "Pine64",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/sbc/pine64/star64/"
+    "board_url": "https://reglinux.org/wiki/sbcs/pine64-star64/"
   },
   {
     "slug": "pocketgo-2",
@@ -1124,7 +1124,7 @@
     "title": "Radxa Rock A5E",
     "brand": "Radxa",
     "soc": "Allwinner T527",
-    "board_url": "https://reglinux.org/wiki/sbc/radxa/cubie-a5e/"
+    "board_url": "https://reglinux.org/wiki/sbcs/radxa-cubie-a5e/"
   },
   {
     "slug": "radxa-dragon-q6a",
@@ -1327,7 +1327,7 @@
     "title": "Sipeed COM260",
     "brand": "Sipeed",
     "soc": "SpacemiT K3",
-    "board_url": "https://reglinux.org/wiki/sbc/sipeed/k3-com260/"
+    "board_url": "https://reglinux.org/wiki/sbcs/sipeed-k3-com260/"
   },
   {
     "slug": "sipeed-lichee-pi-4a",
@@ -1348,14 +1348,14 @@
     "title": "Starfive 2 Lite",
     "brand": "Starfive",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite/"
+    "board_url": "https://reglinux.org/wiki/sbcs/starfive-visionfive-2-lite/"
   },
   {
     "slug": "starfive-visionfive-2-lite-emmc",
     "title": "Starfive 2 Lite Emmc",
     "brand": "Starfive",
     "soc": "StarFive JH7110",
-    "board_url": "https://reglinux.org/wiki/sbc/starfive/visionfive-2-lite-emmc/"
+    "board_url": "https://reglinux.org/wiki/sbcs/starfive-visionfive-2-lite-emmc/"
   },
   {
     "slug": "steam-deck",

@@ -58,6 +58,7 @@ install REG Linux. The status comes from the compatibility matrix.
 - [Ayn Odin M2](ayn/odin-m2.md)
 - [Ayn ODIN2MINI](ayn/odin2-mini.md)
 - [Ayn Thor](ayn/thor.md)
+- [Ayn Thorlite](ayn/thorlite.md)
 
 ## Gameforce
 
@@ -70,6 +71,7 @@ install REG Linux. The status comes from the compatibility matrix.
 
 ## GPD
 
+- [GPD Q9](gpd/q9.md)
 - [GPD XD](gpd/xd.md)
 
 ## HardKernel
@@ -89,6 +91,8 @@ install REG Linux. The status comes from the compatibility matrix.
 
 ## Mangmi
 
+- [Mangmi Air Y](mangmi/air-y.md)
+- [Mangmi Air Y Pro](mangmi/air-y-pro.md)
 - [Mangmi Pocketmax](mangmi/pocketmax.md)
 
 ## MiniLoong
@@ -98,6 +102,7 @@ install REG Linux. The status comes from the compatibility matrix.
 ## Miyoo
 
 - [Miyoo A30](miyoo/a30.md)
+- [Miyoo Flip](miyoo/flip.md)
 
 ## Nintendo
 

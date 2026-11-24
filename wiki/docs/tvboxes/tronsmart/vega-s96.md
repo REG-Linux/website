@@ -3,7 +3,7 @@ title: Tronsmart Vega S96
 description: REG Linux on Tronsmart Vega S96 powered by Amlogic S912.
 manufacturer: Tronsmart
 slug: tronsmart/vega-s96
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Tronsmart Vega S96

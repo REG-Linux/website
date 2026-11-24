@@ -3,7 +3,7 @@ title: Anbernic
 description: REG Linux on Anbernic powered by Unisoc T618 (UMS512).
 manufacturer: Anbernic
 slug: anbernic/rg-vita
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Anbernic

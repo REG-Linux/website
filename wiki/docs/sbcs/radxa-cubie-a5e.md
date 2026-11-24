@@ -1,7 +1,7 @@
 ---
 title: Radxa Rock A5E
 description: Radxa Rock A5E pairs the Allwinner T527 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Radxa Rock A5E

@@ -1,7 +1,7 @@
 ---
 title: Pine64 Rock64
 description: Pine64 Rock64 — single-board computer powered by Rockchip RK3328.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Pine64 Rock64

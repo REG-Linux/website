@@ -1,7 +1,7 @@
 ---
 title: Orange Pi Zero 3
 description: Orange Pi Zero 3 — single-board computer powered by Allwinner H618.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Orange Pi Zero 3

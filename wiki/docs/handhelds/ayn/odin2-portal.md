@@ -3,7 +3,7 @@ title: Ayn Odin 2 Portal
 description: REG Linux on Ayn Odin 2 Portal powered by Qualcomm 8gen2 (SM8550).
 manufacturer: Ayn
 slug: ayn/odin2-portal
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Ayn Odin 2 Portal

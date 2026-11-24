@@ -1,7 +1,7 @@
 ---
 title: DeepComputing FML13V01
 description: DeepComputing FML13V01 pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # DeepComputing FML13V01

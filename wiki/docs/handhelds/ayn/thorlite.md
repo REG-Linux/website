@@ -3,7 +3,7 @@ title: Ayn Thorlite
 description: REG Linux on Ayn Thorlite powered by Qualcomm SD865 (SM8250).
 manufacturer: Ayn
 slug: ayn/thorlite
-generated: 2026-11-24 11:58:25
+generated: 2026-11-24 11:02:08
 ---
 
 # Ayn Thorlite

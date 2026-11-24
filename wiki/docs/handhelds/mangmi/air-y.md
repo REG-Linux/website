@@ -3,7 +3,7 @@ title: Mangmi Air Y
 description: REG Linux on Mangmi Air Y powered by Qualcomm SM6115.
 manufacturer: Mangmi
 slug: mangmi/air-y
-generated: 2026-11-24 11:58:25
+generated: 2026-11-24 11:02:08
 ---
 
 # Mangmi Air Y

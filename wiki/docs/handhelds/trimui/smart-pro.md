@@ -3,7 +3,7 @@ title: TrimUI Smart Pro
 description: REG Linux on TrimUI Smart Pro powered by Allwinner A133.
 manufacturer: TrimUI
 slug: trimui/smart-pro
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # TrimUI Smart Pro

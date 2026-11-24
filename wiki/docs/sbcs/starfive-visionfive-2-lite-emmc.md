@@ -1,7 +1,7 @@
 ---
 title: Starfive 2 Lite Emmc
 description: Starfive 2 Lite Emmc pairs the StarFive JH7110 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Starfive 2 Lite Emmc

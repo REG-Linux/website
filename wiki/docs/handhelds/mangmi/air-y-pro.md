@@ -3,7 +3,7 @@ title: Mangmi Air Y Pro
 description: REG Linux on Mangmi Air Y Pro powered by Qualcomm SD865 (SM8250).
 manufacturer: Mangmi
 slug: mangmi/air-y-pro
-generated: 2026-11-24 11:58:25
+generated: 2026-11-24 11:02:08
 ---
 
 # Mangmi Air Y Pro

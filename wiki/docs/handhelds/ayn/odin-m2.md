@@ -3,7 +3,7 @@ title: Ayn Odin M2
 description: REG Linux on Ayn Odin M2 powered by Qualcomm SDM845.
 manufacturer: Ayn
 slug: ayn/odin-m2
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Ayn Odin M2

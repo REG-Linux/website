@@ -1,7 +1,7 @@
 ---
 title: HardKernel ODROID C5
 description: HardKernel ODROID C5 — single-board computer powered by Amlogic S905X5M.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # HardKernel ODROID C5

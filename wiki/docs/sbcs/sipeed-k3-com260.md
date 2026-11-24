@@ -1,7 +1,7 @@
 ---
 title: Sipeed COM260
 description: Sipeed COM260 pairs the SpacemiT K3 SoC with the REG Linux stack for a polished retro console.
-generated: 2026-11-24 01:55:59
+generated: 2026-11-24 11:02:08
 ---
 
 # Sipeed COM260
