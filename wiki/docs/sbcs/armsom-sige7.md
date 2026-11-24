@@ -1,7 +1,7 @@
 ---
 title: ArmSoM SIGE7
 description: ArmSoM SIGE7 — single-board computer powered by Rockchip RK3588.
-generated: 2026-11-23 18:05:31
+generated: 2026-11-24 01:51:28
 ---
 
 # ArmSoM SIGE7

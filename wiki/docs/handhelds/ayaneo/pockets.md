@@ -3,7 +3,7 @@ title: AYANEO Pocket S
 description: REG Linux on AYANEO Pocket S powered by Qualcomm 8gen2 (SM8550).
 manufacturer: AYANEO
 slug: ayaneo/pockets
-generated: 2026-11-23 18:05:31
+generated: 2026-11-24 01:51:28
 ---
 
 # AYANEO Pocket S

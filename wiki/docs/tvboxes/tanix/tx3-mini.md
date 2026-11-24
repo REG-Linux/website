@@ -3,7 +3,7 @@ title: Tanix TX3 Mini
 description: REG Linux on Tanix TX3 Mini powered by Amlogic S905(X).
 manufacturer: Tanix
 slug: tanix/tx3-mini
-generated: 2026-11-23 18:05:31
+generated: 2026-11-24 01:51:28
 ---
 
 # Tanix TX3 Mini

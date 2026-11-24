@@ -3,7 +3,7 @@ title: Anbernic RG35XX Plus
 description: REG Linux on Anbernic RG35XX Plus powered by Allwinner H700.
 manufacturer: Anbernic
 slug: anbernic/rg35xx-plus
-generated: 2026-11-23 18:05:31
+generated: 2026-11-24 01:51:28
 ---
 
 # Anbernic RG35XX Plus

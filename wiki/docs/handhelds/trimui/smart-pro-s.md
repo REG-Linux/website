@@ -3,7 +3,7 @@ title: TrimUI Smart Pro S
 description: REG Linux on TrimUI Smart Pro S powered by Allwinner T527.
 manufacturer: TrimUI
 slug: trimui/smart-pro-s
-generated: 2026-11-23 18:05:31
+generated: 2026-11-24 01:51:28
 ---
 
 # TrimUI Smart Pro S

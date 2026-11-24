@@ -3,7 +3,7 @@ title: GCW Zero
 description: REG Linux on GCW Zero powered by Ingenic JZ4770.
 manufacturer: GCW
 slug: gcw/zero
-generated: 2026-11-23 18:05:31
+generated: 2026-11-24 01:51:28
 ---
 
 # GCW Zero
