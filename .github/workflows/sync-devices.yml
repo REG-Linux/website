@@ -1,5 +1,12 @@
 name: Sync Devices
+
+# Keeps _data/devices.yml, _data/socs.yml and board_device_map.json in step
+# with what REG-WIP builds: new boards are added (bring-up ones included, the
+# compat tool needs them), boards no longer built are marked `dropped`.
+# Changes go to a pull request on the bot/sync-devices branch, never to main.
 on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
   workflow_dispatch:
     inputs:
       source:
@@ -7,24 +14,33 @@ on:
         required: true
         type: choice
         options:
-          - REG-Linux/REG-Linux
           - REG-Linux/REG-WIP
-        default: REG-Linux/REG-Linux
+          - REG-Linux/REG-Linux
+        default: REG-Linux/REG-WIP
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: sync-devices
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      SOURCE: ${{ inputs.source || 'REG-Linux/REG-WIP' }}
+      BRANCH: bot/sync-devices
     steps:
       - name: Checkout website
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REG_REPO_PAT }}
 
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
-          repository: ${{ inputs.source }}
+          repository: ${{ env.SOURCE }}
           path: reglinux
           fetch-depth: 1
           token: ${{ secrets.REG_REPO_PAT }}
@@ -35,17 +51,44 @@ jobs:
       - run: pip install pyyaml
 
       - name: Run sync_devices.py
-        run: python3 compat/scripts/sync_devices.py
+        run: python3 compat/scripts/sync_devices.py | tee "$RUNNER_TEMP/sync-report.txt"
         env:
           REG_LINUX_PATH: ${{ github.workspace }}/reglinux
 
-      - name: Commit if changed
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ secrets.REG_REPO_PAT }}
         run: |
           git add _data/devices.yml _data/socs.yml compat/scripts/board_device_map.json
-          git diff --cached --quiet || {
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git commit -m "chore: sync devices from ${{ inputs.source }}"
-            git pull --rebase
-            git push
-          }
+          if git diff --cached --quiet; then
+            echo "Nothing to sync."
+            exit 0
+          fi
+          src_sha=$(git -C reglinux rev-parse --short HEAD)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git commit -m "chore: sync devices from $SOURCE@$src_sha"
+          git push --force origin "$BRANCH"
+
+          {
+            echo "Automatic sync of the device list from \`$SOURCE\` at \`$src_sha\`."
+            echo
+            echo "Review before merging: new boards include bring-up ones. Each new entry gets"
+            echo "generic text and a placeholder image; set its status in"
+            echo "\`_data/device_overrides.yml\` and fix the title if needed. Boards marked"
+            echo "\`dropped: true\` are no longer built: their page stays, they leave the download list."
+            echo
+            echo '```'
+            sed -n '/SYNC REPORT/,$p' "$RUNNER_TEMP/sync-report.txt"
+            echo '```'
+          } > "$RUNNER_TEMP/body.md"
+
+          num=$(gh pr list --head "$BRANCH" --state open --json number -q '.[0].number')
+          if [ -n "$num" ]; then
+            # REST, not `gh pr edit`: the latter trips on the Projects (classic) sunset
+            gh api -X PATCH "repos/${{ github.repository }}/pulls/$num" -F "body=@$RUNNER_TEMP/body.md" >/dev/null
+          else
+            gh pr create --base main --head "$BRANCH" \
+              --title "Sync devices from $SOURCE" --body-file "$RUNNER_TEMP/body.md"
+          fi

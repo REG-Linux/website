@@ -50,6 +50,7 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
       {% for entry in sorted_devices %}
         {% assign slug = entry[0] %}
         {% assign device = entry[1] %}
+        {% if device.dropped %}{% continue %}{% endif %}
         {% assign soc_name = device.soc | first | default: "" %}
         {% assign device_type = "unknown" %}
         {% if slug contains "rg" or slug contains "rgb" or slug contains "pocket" or slug contains "odin" or slug contains "gameforce" or slug contains "powkiddy" or slug contains "odroid-go" or slug contains "ayaneo" or slug contains "trimui" or slug contains "miniloong" or slug contains "mangmi" %}
@@ -105,7 +106,7 @@ description: Download REG Linux for your device — 186 handhelds, SBCs, TV boxe
       {% for mfr in sorted_manufacturers %}
         {% assign mfr_count = 0 %}
         {% for d in devices_data %}
-          {% if d[1].brand == mfr.id %}
+          {% if d[1].brand == mfr.id and d[1].dropped != true %}
             {% assign mfr_count = mfr_count | plus: 1 %}
           {% endif %}
         {% endfor %}

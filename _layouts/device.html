@@ -22,6 +22,7 @@ layout: default
 {% unless site.data.release.available %}{% assign device_download = "https://github.com/REG-Linux/REG-Linux/releases" %}{% endunless %}
 {% assign device_override = site.data.device_overrides[device_slug] %}
 {% assign device_status = device_override.status | default: "todo" %}
+{% if device_lookup.dropped %}{% assign device_status = "dropped" %}{% endif %}
 {% include site-header.html nav_current="download" ghost_label="All devices" ghost_href="/download/" %}
 
 <main>
@@ -35,7 +36,9 @@ layout: default
 
   {% include release-banner.html %}
 
-  {% if device_status == "testing" %}
+  {% if device_status == "dropped" %}
+    <div class="dev-status-banner dev-status-todo">REG Linux no longer builds an image for this device.</div>
+  {% elsif device_status == "testing" %}
     <div class="dev-status-banner dev-status-testing">This device image is in testing. Feedback welcome on <a href="https://discord.gg/a9HH4ZpVqp">Discord</a>.</div>
   {% elsif device_status == "wip" %}
     <div class="dev-status-banner dev-status-wip">Work in progress — not ready for daily use yet.</div>
@@ -55,7 +58,9 @@ layout: default
       <h1>{{ device_title | escape }}</h1>
       <p class="dev-meta">{{ device_brand }} &middot; {{ soc_text }}</p>
       <div class="dev-cta">
-        {% if device_status == "todo" or site.data.release.available != true %}
+        {% if device_status == "dropped" %}
+          <span class="btn primary" style="opacity: 0.4; pointer-events: none;">No longer supported</span>
+        {% elsif device_status == "todo" or site.data.release.available != true %}
           <span class="btn primary" style="opacity: 0.4; pointer-events: none;">Coming soon</span>
         {% else %}
           <a class="btn primary" href="{{ device_download }}" target="_blank" rel="noreferrer">Download{% if device_status == "testing" %} (testing){% endif %}</a>
